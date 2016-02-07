@@ -1,0 +1,37 @@
+===============================================================================
+===== wmaker crash on archlinux 4.3.3-3-arch x86_64: windowmaker 0.95.7-1 =====
+===============================================================================
+
+Feb 06 18:45:46 radicz580 kernel: traps: wmaker[439] general protection
+                                  ip:7f684e73e5ce sp:7ffca5ea25a0 error:0
+                                  in libX11.so.6.3.0[7f684e719000+13b000]
+
+Feb 06 18:45:46 radicz580 wmaker[431]: (MonitorLoop(monitor.c:134)): warning:
+                                       Window Maker exited due to a crash
+                                       (signal 11) and will be restarted.
+
+Feb 06 18:45:46 radicz580 systemd-coredump[669]: Process 439 (wmaker) of user
+                                                 1000 dumped core.
+
+                Stack trace of thread 439:
+                #0  0x00007f684e73e5ce XFreeColors           (libX11.so.6)
+                #1  0x00007f684f2ba737 WMReleaseColor        (libWINGs.so.3)
+                #2  0x00007f684f2ca11e n/a                   (libWINGs.so.3)
+                #3  0x00007f684f2c36e6 W_CallDestroyHandlers (libWINGs.so.3)
+                #4  0x00007f684f2dff3c n/a                   (libWINGs.so.3)
+                #5  0x00007f684f2dff1f n/a                   (libWINGs.so.3)
+                #6  0x00007f684f2cda39 WMDestroyInputPanel   (libWINGs.so.3)
+                #7  0x000000000041d888 n/a                   (wmaker)
+                #8  0x0000000000463546 n/a                   (wmaker)
+                #9  0x0000000000440ac9 n/a                   (wmaker)
+                #10 0x0000000000435839 n/a                   (wmaker)
+                #11 0x0000000000443777 n/a                   (wmaker)
+                #12 0x000000000042b50b n/a                   (wmaker)
+                #13 0x000000000042c537 n/a                   (wmaker)
+                #14 0x00007f684f2c3871 WMHandleEvent         (libWINGs.so.3)
+                #15 0x000000000042d5f9 n/a                   (wmaker)
+                #16 0x000000000040b757 n/a                   (wmaker)
+                #17 0x00007f684de85610 __libc_start_main     (libc.so.6)
+                #18 0x000000000040bc19 n/a                   (wmaker)
+
+===============================================================================
