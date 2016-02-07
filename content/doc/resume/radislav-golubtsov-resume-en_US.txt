@@ -18,7 +18,7 @@ Hardware        * Intel x86 (i686 / x86-64)
 
 Operating       Unices and derivatives (FreeBSD, OpenBSD, Arch Linux, Debian
 Systems         GNU/Linux, Ubuntu, Fedora, CentOS, Red Hat Enterprise Linux,
-                Mac OS X, HP-UX, IBM AIX,Sun Solaris)
+                Mac OS X, HP-UX, IBM AIX, Sun Solaris)
 
 Programming     Perl 5, Java, JavaScript, Bash Shell Script, ISO C/C++,
 Languages       Objective-C 2.0, ISO Fortran 95, FORTRAN 77, Assembly (i80x86)
@@ -162,8 +162,8 @@ Dec. 2014
 
                 Personal role in the project: Automating the process of
                 creating the WAR archive for a web app (containing a lending)
-                for its future use during one of endorsed partner programs. The
-                installing, deployment, and testing this WAR archive on
+                for its future use during one of endorsed partner programs.
+                Installing, deploying, and testing this WAR archive on
                 supported Java EE app servers.
 
                 Tools and technologies used:
@@ -611,7 +611,7 @@ Sep. 2008
                 Project description: AIS "KDT" is the management information
                 system having its purpose to control and maintain the process
                 of delivering the particular groups of commodities inside
-                complex economical systems such as trade system.
+                complex economical systems such as a trade system.
 
                 Personal role in the project: Java modules coding and
                 performing related tasks. Having responsibilities for part of
@@ -664,7 +664,7 @@ May  2008
                 Project description: AIS "KDT" is the management information
                 system having its purpose to control and maintain the process
                 of delivering the particular groups of commodities inside
-                complex economical systems such as trade system.
+                complex economical systems such as a trade system.
 
                 Personal role in the project: Java modules coding and
                 performing related tasks. Having responsibilities for part of
