@@ -37,9 +37,9 @@ Technologies    * Perl and related modules, libraries, and frameworks (DBI,
                   Struts / Struts 2, JavaServer Faces (JSF), Java Database
                   Connectivity (JDBC), JavaMail, Java Abstract Window Toolkit
                   (AWT), Java Swing, iText (Java-PDF Library), jQuery
-                  (JavaScript Library), HTML, CSS, XML, YAML, JSON, SQL,
-                  GNUstep / Cocoa API, Eclipse Standard Widget Toolkit (SWT),
-                  IBM Portal User Management Architecture (PUMA) SPI
+                  (JavaScript Library), Harpjs.com, HTML, CSS, XML, YAML, JSON,
+                  SQL, GNUstep / Cocoa API, Eclipse Standard Widget Toolkit
+                  (SWT), IBM Portal User Management Architecture (PUMA) SPI
 
 Development     * Vim / vi, Oracle JDeveloper, Eclipse Platform (Eclipse SDK),
 Tools             MyEclipse Blue Edition, IBM Rational Software Architect
