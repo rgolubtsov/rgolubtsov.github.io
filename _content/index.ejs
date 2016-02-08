@@ -1,12 +1,16 @@
-<!--
- * index.ejs
- * ============================================================================
- * A mug of Radicchio. Version 0.1
- * ============================================================================
- * A mug of Radicchio: A personal website of a power looper and web devver.
- * ============================================================================
- * Copyright (C) 2016 Radislav (Radicchio) Golubtsov
--->
+<% /*
+* index.ejs
+* =============================================================================
+* A mug of Radicchio. Version 0.1
+* =============================================================================
+* A mug of Radicchio: A personal website of a power looper and web devver.
+* =============================================================================
+* Copyright (C) 2016 Radislav (Radicchio) Golubtsov
+*/ %>
+
+<% var SITENAME = "A mug of Radicchio";                        %>
+<% var DEVVER   = "Radislav (Radicchio) Golubtsov";            %>
+<% var TITLE    = SITENAME + " ===&gt; 11111001 Markov Chain"; %>
 
 <!DOCTYPE html>
 <html lang="en-US" dir="ltr">
@@ -18,16 +22,16 @@
 <meta http-equiv="Expires"         content="Thu, 01 Dec 1994 16:00:00 GMT"       /> <!-- * Proxies.  -->
 <meta http-equiv="Pragma"          content="no-cache"                            /> <!-- * HTTP/1.0. -->
 <meta       name="viewport"        content="width=device-width,initial-scale=1" />
-<meta       name="description"     content="A mug of Radicchio: A personal website of a power looper and web devver." />
-<meta       name="author"          content="Radislav (Radicchio) Golubtsov" />
-<meta       name="copyright"       content="Copyright (C) 2016 Radislav (Radicchio) Golubtsov" />
-<title>A mug of Radicchio</title>
+<meta       name="description"     content="<%= SITENAME %>: A personal website of a power looper and web devver." />
+<meta       name="author"          content="<%= DEVVER %>" />
+<meta       name="copyright"       content="Copyright (C) 2016 <%= DEVVER %>" />
+<title><%- TITLE %></title>
 </head>
 <body id="radicchio">
-<h1>A mug of Radicchio ===&gt; 11111001 Markov Chain</h1>
+<h1><%- TITLE %></h1>
 </body>
 </html>
 
-<!-- ====================================================================== -->
-<!-- vim:set nu:et:ts=4:sw=4:                                               -->
-<!-- ====================================================================== -->
+<% // ====================================================================== %>
+<% // vim:set nu:et:ts=4:sw=4:                                               %>
+<% // ====================================================================== %>
