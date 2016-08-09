@@ -1,0 +1,80 @@
+# === Fitness Halls Attendance ================================================
+# --- June 2016 ---------------------------------------------------------------
+# --- National Library of Belarus (GYM) ---------------------------------------
+14 (Tu)
+
+# --- N-FITNESS -- http://n-fitness.by/ ---------------------------------------
+15 (We)
+
+# --- Platforma -- http://platforma-gym.by/ -----------------------------------
+16 (Th)
+
+# --- Lifestyle Fitness & GYM -- http://fitness-club.by/ ----------------------
+18 (Sa)
+
+# --- Global Fitness -- http://fitness-gym.by/ --------------------------------
+19 (Su)
+
+# --- Platforma -- http://platforma-gym.by/ -----------------------------------
+21 (Tu)
+Voucher:
+22 (We)
+23 (Th)
+
+# --- Lifestyle Fitness & GYM -- http://fitness-club.by/ ----------------------
+25 (Sa)
+26 (Su)
+
+# --- Platforma -- http://platforma-gym.by/ -----------------------------------
+Voucher:
+28 (Tu)
+29 (We)
+30 (Th)
+
+# --- Total: 13 sessions ------------------------------------------------------
+# --- July 2016 ---------------------------------------------------------------
+# --- Platforma -- http://platforma-gym.by/ -----------------------------------
+Voucher:
+ 4 (Mo)
+ 6 (We)
+ 8 (Fr)
+
+# --- Lifestyle Fitness & GYM -- http://fitness-club.by/ ----------------------
+ 9 (Sa)
+
+# --- Platforma -- http://platforma-gym.by/ -----------------------------------
+Voucher:
+10 (Su)
+12 (Tu)
+15 (Fr)
+
+# --- Lifestyle Fitness & GYM -- http://fitness-club.by/ ----------------------
+16 (Sa)
+
+# --- Platforma -- http://platforma-gym.by/ -----------------------------------
+Voucher:
+18 (Mo)
+22 (Fr)
+
+# --- Platforma -- http://platforma-gym.by/ -----------------------------------
+Voucher-2:
+26 (Tu)
+28 (Th)
+
+# --- Total: 12 sessions ------------------------------------------------------
+# --- August 2016 -------------------------------------------------------------
+# --- Platforma -- http://platforma-gym.by/ -----------------------------------
+Voucher-2:
+ 2 (Tu)
+ 4 (Th)
+
+# --- Lifestyle Fitness & GYM -- http://fitness-club.by/ ----------------------
+ 6 (Sa)
+ 7 (Su)
+
+# --- Platforma -- http://platforma-gym.by/ -----------------------------------
+Voucher-2:
+ 8 (Mo)
+
+# --- Total: 5+ sessions ------------------------------------------------------
+# =============================================================================
