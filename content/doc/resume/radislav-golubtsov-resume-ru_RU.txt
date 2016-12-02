@@ -4,9 +4,9 @@
  *        ЦЕЛЬ: Получить должность Software Developer /
  *                          Senior Software Developer
  *
- *              Суммарный опыт работы в сфере ИТ - 15 лет
+ *              Суммарный опыт работы в сфере ИТ - 16 лет
  * ============================================================================
- *              [ 03.02.2016 ]
+ *              [ 03.12.2016 ]
  */
 
 // === РЕЗЮМЕ =================================================================
@@ -20,10 +20,16 @@
 системы         GNU/Linux, Ubuntu, Fedora, CentOS, Red Hat Enterprise Linux,
                 Mac OS X, HP-UX, IBM AIX, Sun Solaris)
 
-Языки програм-  Perl 5, Java, JavaScript, Bash Shell Script, ISO C/C++,
-мирования       Objective-C 2.0, ISO Fortran 95, FORTRAN 77, Assembly (i80x86)
+Языки програм-  Python 3, Go (golang), Perl 5, Java, JavaScript, Bash Shell
+мирования       Script, ISO C/C++, Objective-C 2.0, ISO Fortran 95, FORTRAN 77,
+                Assembly (i80x86)
 
-Технологии      * Perl и связанные модули, библиотеки и фреймворки (DBI, CGI,
+Технологии      * Python и связанные модули, библиотеки и фреймворки (Python
+                  Standard Library, Django REST framework, ReportLab PDF
+                  Toolkit и др.)
+                * API ядра Linux, модули ядра Linux (драйвер блочного
+                  устройства)
+                * Perl и связанные модули, библиотеки и фреймворки (DBI, CGI,
                   LWP, Mojolicious, Text::Xslate, Asterisk::AGI и др.)
                 * IVR (интерактивные голосовые сервисы) на основе АТС Asterisk
                 * GNU libmicrohttpd (C-библиотека для создания легковесного
@@ -45,9 +51,9 @@
 разработки        MyEclipse Blue Edition, IBM Rational Software Architect
                   (RSA), IBM Rational Application Developer (RAD), IBM
                   WebSphere Studio Application Developer (WSAD)
-                * GNU Bash, GNU Toolchain: GNU Make, GNU Compiler Collection
-                  (GCC): gcc, g++, gcc-objc, gfortran; GNU Binutils, GNU
-                  Debugger (GDB), GNUstep, sed, etc. Clang (C / C++ /
+                * GNU Bash, GNU Screen, GNU Toolchain: GNU Make, GNU Compiler
+                  Collection (GCC): gcc, g++, gcc-objc, gfortran; GNU Binutils,
+                  GNU Debugger (GDB), GNUstep, sed и др. Clang (C / C++ /
                   Objective-C LLVM compiler front-end), TCC (Fabrice Bellard's
                   Tiny C Compiler)
                 * Apache Maven, Apache Ant, Netwide Assembler (NASM)
@@ -55,22 +61,24 @@
 СУБД            PostgreSQL, MySQL, Oracle Database, IBM DB2 Universal Database,
                 SQLite, Redis
 
-Серверы         * Perl-based app-servers: Twiggy, Hypnotoad, Morbo
-приложений /    * Apache Tomcat, JBoss Application Server, IBM WebSphere
-веб-серверы       Application Server, IBM WebSphere Portal Server, Apache Pluto
+Серверы         * Python/WSGI (uWSGI) application server
+приложений /    * Perl-based app-servers: Twiggy, Hypnotoad, Morbo
+веб-серверы     * Apache Tomcat, JBoss Application Server, IBM WebSphere
+                  Application Server, IBM WebSphere Portal Server, Apache Pluto
                 * Apache HTTP Server, Nginx
 
-Приложения      Git, GitHub, GitLab, Perforce, Subversion (SVN), Concurrent
-промежуточного  Versions System (CVS), IBM Directory Server (LDAP), Redmine,
-слоя / разные   Trac, MediaWiki, Travis CI (continuous integration service),
-                Koding (cloud-based dev env + VM), Samba
+Приложения      Git, GitHub, GitLab, Bitbucket, Perforce, Subversion (SVN),
+промежуточного  Concurrent Versions System (CVS), IBM Directory Server (LDAP),
+слоя / разные   JIRA, Redmine, Trac, MediaWiki, Doxygen, Travis CI и Jenkins
+                (continuous integration services), Docker (software containers
+                infrastructure), Koding (cloud-based dev env + VM), Samba
 
 // === Языки ==================================================================
 
-Английский      Уровень, достаточный для повседневной работы:
+Английский      Уровень, достаточный для повседневной работы и общения:
                 * чтение / письмо - свободное владение
                 * способность вести деловую переписку на хорошем уровне
-                * разговорная речь - на среднем уровне
+                * разговорная речь - уровень Upper Intermediate
 
 Русский         Родной язык
 
@@ -89,6 +97,132 @@
                 имени П. О. Сухого, Гомель, Беларусь (диплом "с отличием")
 
 // === Профессиональный опыт ==================================================
+
+Февр. 2016 - сент. 2016, работа по разработке ПО в ООО "Devicepros",
+                         Минск (8 месяцев)
+
+Должность: инженер-программист подразделения разработки программного
+           обеспечения
+
+// ----------------------------------------------------------------------------
+
+Авг.  2016 -    Проект: Test Infrastructure (TI): Виртуальный драйвер блочного
+сент. 2016              устройства Linux для сбора и замера задержек операций
+                        ввода-вывода
+
+                Краткое описание: Backend-веб-служба тестовой инфраструктуры
+                (TI) (см. предыдущий проект) работает с DUT-устройствами
+                (тестируемыми устройствами). В Linux существует два типа
+                устройств: символьные и блочные. Для символьных устройств уже
+                создан и используется специальный драйвер, но для блочных
+                устройств он пока не создан. Поэтому целью данного проекта
+                является разработка виртуального драйвера блочного устройства
+                (в виде загружаемого модуля ядра Linux), который должен
+                производить сбор и замер величин задержки (latency) операций
+                ввода-вывода.
+
+                (Заказчиком проекта разработки платформы TI является компания
+                Stellus Technologies, ранее подразделение Samsung Electronics.)
+
+                Роль и выполняемые задачи: Ответственен за проект в целом -
+                разработка драйвера блочного устройства Linux и небольшой
+                утилиты для тестирования (и отладки) его работы без каких-либо
+                взаимодействий с ним со стороны Backend-а тестовой
+                инфраструктуры. Документирование его исходного кода.
+
+                Используемые технологии и средства разработки:
+                *    Dev OS: Arch Linux x86-64
+                *   Test OS: Ubuntu Server amd64 (VM: QEMU-KVM)
+                * ISO C, API ядра Linux, GNU C Library (glibc)
+                * Vim, Doxygen
+                * GNU Make, Flexible I/O Tester (fio)
+                * Git, GitHub, JIRA
+
+// ----------------------------------------------------------------------------
+
+Май  2016 -     Проект: Test Infrastructure (TI): REST Backend Service
+июль 2016
+                Краткое описание: Backend-веб-служба тестовой инфраструктуры
+                (TI) взаимодействует с Frontend-веб-службой посредством вызовов
+                REST API и является объектом разработки и тестирования в рамках
+                данного проекта. Тестовая инфраструктура состоит из двух
+                больших частей-компонентов: Frontend-а и Backend-а. В то время
+                как Frontend-веб-служба используется непосредственно конечными
+                пользователями - специалистами по тестированию, и написана на
+                PHP и JavaScript, работа Backend-а скрыта от пользователей: она
+                отвечает за запуск и выполнение одиночных тестов и мульти-
+                тестовых задач на DUT-устройствах (тестируемых устройствах), и
+                написана, главным образом, на Python, за исключением отдельных,
+                критически важных в смысле производительности фрагментов,
+                которые переписаны на Go и C. Оба этих компонента - Frontend и
+                Backend - общаются друг с другом через методы REST API.
+
+                (Заказчиком проекта разработки платформы TI является компания
+                Stellus Technologies, ранее подразделение Samsung Electronics.)
+
+                Роль и выполняемые задачи: Обязанности по разработке агента
+                генератора отчетов, который предназначен для сбора данных обо
+                всех тестах и тестовых задачах, текущих и выполнявшихся ранее
+                на DUT-устройствах, и для генерирования сводного отчета
+                (в формате PDF или CSV) на основании этой информации, который
+                предоставляется для анализа тестировщикам и менеджерам.
+                Работа по исправлению ошибок в других частях продукта
+                и документирование его исходного кода.
+
+                Используемые технологии и средства разработки:
+                *    Dev OS: Arch Linux x86-64
+                * Server OS: Ubuntu Server amd64
+                * Python 3, Python Standard Library, Django REST framework,
+                              ReportLab PDF Toolkit, Virtualenv
+                * Python/WSGI (uWSGI) application server
+                * MySQL, PostgreSQL
+                * Vim, Doxygen
+                * Git, GitHub, JIRA
+
+// ----------------------------------------------------------------------------
+
+Февр. 2016 -    Проект: Test Infrastructure(TI): Имитационная среда Samsung AWS
+апр.  2016
+                Краткое описание: Создание имитационной среды AWS (Amazon Web
+                Services) для разработки и тестирования нового функционала
+                тестовой инфраструктуры (TI) локально, на собственных
+                вычислительных мощностях компании, с целью отказа от
+                использования удаленной рабочей среды Samsung AWS.
+
+                (Тестовая инфраструктура представляет собой модульную
+                программную платформу для запуска как одиночных тестов, так и
+                мульти-тестовых задач на DUT-устройствах (тестируемых
+                устройствах), например, на SSD-накопителях. Пользователи
+                платформы TI - разработчики и тестировщики. Она построена по
+                принципу "host/target" для выполнения тестовых задач на
+                нескольких машинах одновременно. Заказчиком проекта разработки
+                платформы TI является компания Stellus Technologies, ранее
+                подразделение Samsung Electronics.)
+
+                Роль и выполняемые задачи: Разработка имитационной тестовой
+                среды, отдаленно напоминающей AWS-среду, используемую в бизнес-
+                процессе компании Samsung по созданию систем хранения данных
+                различными командами программистов и тестировщиков. Обязанности
+                по разработке модулей и скриптов для последовательного запуска
+                программ сборки системы, написанных на разных языках
+                программирования: Perl, Bash Shell Script, Java, Python, Go.
+                Документирование.
+
+                Используемые технологии и средства разработки:
+                *    Dev OS: Arch Linux x86-64
+                * Server OS: Ubuntu Server amd64
+                * Perl 5, Bash Shell Script
+                * Java SE, Java Class Library
+                * Python 3, Go (с соответствующими стандартными библиотеками)
+                * Apache HTTP Server
+                * Jenkins (continuous integration service)
+                * Docker (software containers infrastructure)
+                * Koding (cloud-based dev env + VM)
+                * Vim
+                * GNU Make, Apache Maven
+                * Git, Bitbucket, JIRA
+
+// ============================================================================
 
 Янв. 2013 - апр. 2015, работа по разработке ПО в ООО "SMS Online"
                        (Гомельский филиал), Гомель (2 года и 4 месяца)
@@ -924,7 +1058,7 @@
 
 // === Личная информация ======================================================
 
-Дата рождения   27 июня 1977 г. (38 лет)
+Дата рождения   27 июня 1977 г. (39 лет)
 
 Гражданство     Республика Беларусь
 
@@ -946,6 +1080,4 @@
                 * Бег на средние дистанции
                 * Общий фитнес
 
-// ============================================================================
 // vim:set nu:et:ts=4:sw=4:
-// ============================================================================

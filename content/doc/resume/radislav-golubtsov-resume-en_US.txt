@@ -4,9 +4,9 @@
  *   OBJECTIVE: To obtain the position of a Software Developer /
  *                                   Senior Software Developer
  *
- *              Total IT experience - 15 years
+ *              Total IT experience - 16 years
  * ============================================================================
- *              [ 2016-02-03 ]
+ *              [ 2016-12-03 ]
  */
 
 // === SUMMARY ================================================================
@@ -20,10 +20,15 @@ Operating       Unices and derivatives (FreeBSD, OpenBSD, Arch Linux, Debian
 Systems         GNU/Linux, Ubuntu, Fedora, CentOS, Red Hat Enterprise Linux,
                 Mac OS X, HP-UX, IBM AIX, Sun Solaris)
 
-Programming     Perl 5, Java, JavaScript, Bash Shell Script, ISO C/C++,
-Languages       Objective-C 2.0, ISO Fortran 95, FORTRAN 77, Assembly (i80x86)
+Programming     Python 3, Go (golang), Perl 5, Java, JavaScript, Bash Shell
+Languages       Script, ISO C/C++, Objective-C 2.0, ISO Fortran 95, FORTRAN 77,
+                Assembly (i80x86)
 
-Technologies    * Perl and related modules, libraries, and frameworks (DBI,
+Technologies    * Python and related modules, libraries, and frameworks (Python
+                  Standard Library, Django REST framework, ReportLab PDF
+                  Toolkit, etc.)
+                * Linux kernel API, Linux kernel modules (block device driver)
+                * Perl and related modules, libraries, and frameworks (DBI,
                   CGI, LWP, Mojolicious, Text::Xslate, Asterisk::AGI, etc.)
                 * IVR (Interactive Voice Response) using Asterisk VoIP PBX
                 * GNU libmicrohttpd (C library to make a lightweight multi-
@@ -45,9 +50,9 @@ Development     * Vim / vi, Oracle JDeveloper, Eclipse Platform (Eclipse SDK),
 Tools             MyEclipse Blue Edition, IBM Rational Software Architect
                   (RSA), IBM Rational Application Developer (RAD), IBM
                   WebSphere Studio Application Developer (WSAD)
-                * GNU Bash, GNU Toolchain: GNU Make, GNU Compiler Collection
-                  (GCC): gcc, g++, gcc-objc, gfortran; GNU Binutils, GNU
-                  Debugger (GDB), GNUstep, sed, etc. Clang (C / C++ /
+                * GNU Bash, GNU Screen, GNU Toolchain: GNU Make, GNU Compiler
+                  Collection (GCC): gcc, g++, gcc-objc, gfortran; GNU Binutils,
+                  GNU Debugger (GDB), GNUstep, sed, etc. Clang (C / C++ /
                   Objective-C LLVM compiler front-end), TCC (Fabrice Bellard's
                   Tiny C Compiler)
                 * Apache Maven, Apache Ant, Netwide Assembler (NASM)
@@ -55,22 +60,24 @@ Tools             MyEclipse Blue Edition, IBM Rational Software Architect
 DBMS            PostgreSQL, MySQL, Oracle Database, IBM DB2 Universal Database,
                 SQLite, Redis
 
-Application /   * Perl-based app-servers: Twiggy, Hypnotoad, Morbo
-Web Servers     * Apache Tomcat, JBoss Application Server, IBM WebSphere
+Application /   * Python/WSGI (uWSGI) application server
+Web Servers     * Perl-based app-servers: Twiggy, Hypnotoad, Morbo
+                * Apache Tomcat, JBoss Application Server, IBM WebSphere
                   Application Server, IBM WebSphere Portal Server, Apache Pluto
                 * Apache HTTP Server, Nginx
 
-Middleware /    Git, GitHub, GitLab, Perforce, Subversion (SVN), Concurrent
-Misc. Apps      Versions System (CVS), IBM Directory Server (LDAP), Redmine,
-                Trac, MediaWiki, Travis CI (continuous integration service),
-                Koding (cloud-based dev env + VM), Samba
+Middleware /    Git, GitHub, GitLab, Bitbucket, Perforce, Subversion (SVN),
+Misc. Apps      Concurrent Versions System (CVS), IBM Directory Server (LDAP),
+                JIRA, Redmine, Trac, MediaWiki, Doxygen, Travis CI and Jenkins
+                (continuous integration services), Docker (software containers
+                infrastructure), Koding (cloud-based dev env + VM), Samba
 
 // === Languages ==============================================================
 
-English         Minimum Professional Proficiency:
+English         Full Professional Proficiency:
                 * Reading / writing freely
                 * Able to perform business correspondence at a strong level
-                * Speaking skills are moderate
+                * Speaking at upper intermediate level
 
 Russian         Native or Bilingual Proficiency
 
@@ -89,6 +96,116 @@ Oct 2001        University (Ph.D. student of the School for Advanced Studies)
                 Gomel, Belarus ("Diploma in Honor")
 
 // === Work experience ========================================================
+
+Feb 2016 - Sep 2016, Development work at Devicepros, LLC, Minsk (8 months)
+
+Job position: Software Developer of the Software Development Division
+
+// ----------------------------------------------------------------------------
+
+Aug 2016 -      Test Infrastructure (TI): Virtual Linux block device driver
+Sep 2016                           for collecting and measuring I/O latency
+
+                Project description: The backend web service as a TI component
+                (see prev project) operates on DUT (device under test) devices.
+                For character devices there is already such a driver in use,
+                but for block devices there isn't. The project's aim is to
+                develop a block device driver as a loadable kernel module (LKM)
+                for the Linux kernel that will perform collecting and measuring
+                latency for I/O operations.
+
+                (The customer of the TI project is Stellus Technologies,
+                formerly a division of Samsung Electronics.)
+
+                Personal role in the project: Responsible for the whole project
+                - development of the Linux block device driver and a small
+                utility to test (and debug) its work without any invocations
+                from the TI backend web service. Documenting the source code.
+
+                Tools and technologies used:
+                *    Dev OS: Arch Linux x86-64
+                *   Test OS: Ubuntu Server amd64 (VM: QEMU-KVM)
+                * ISO C, Linux kernel API, GNU C Library (glibc)
+                * Vim, Doxygen
+                * GNU Make, Flexible I/O Tester (fio)
+                * Git, GitHub, JIRA
+
+// ----------------------------------------------------------------------------
+
+May 2016 -      Test Infrastructure (TI): REST Backend Service
+Jul 2016
+                Project description: The backend web service for TI that
+                communicates with the frontend web service through the use of
+                REST API calls. The Test Infrastructure consists of two big
+                components: frontend and backend. Whilst the frontend is
+                responsible for communicating with the QA specialists and
+                written in PHP and JavaScript, the backend is doing its work
+                (run single tests or multi-test jobs on DUT (device under test)
+                devices) behind the scenes; it is written mainly in Python with
+                some performance-critical parts written in Go and C. Both
+                frontend and backend components talk to each other by utilizing
+                REST API techniques.
+
+                (The customer of the TI project is Stellus Technologies,
+                formerly a division of Samsung Electronics.)
+
+                Personal role in the project: Responsible for development of
+                the report generating facility (agent), which is intended to
+                collect information about all tests and test jobs are being ran
+                or currently running on DUT devices, and to produce
+                consolidated PDF or CSV report for QAs and managers.
+                Other activities include general bug fixing in other parts of
+                the project and documenting the source code.
+
+                Tools and technologies used:
+                *    Dev OS: Arch Linux x86-64
+                * Server OS: Ubuntu Server amd64
+                * Python 3, Python Standard Library, Django REST framework,
+                              ReportLab PDF Toolkit, Virtualenv
+                * Python/WSGI (uWSGI) application server
+                * MySQL, PostgreSQL
+                * Vim, Doxygen
+                * Git, GitHub, JIRA
+
+// ----------------------------------------------------------------------------
+
+Feb 2016 -      Test Infrastructure (TI): Simulating Samsung AWS
+Apr 2016
+                Project description: Building the simulating AWS (Amazon Web
+                Services) environment to develop and test new features for TI
+                locally, instead of using remote Samsung AWS environment.
+
+                (Test Infrastructure is the composite software platform aimed
+                at using by developers and QAs to run either single tests or
+                multi-test jobs on DUT (device under test) devices, for
+                example, on SSD drives. It utilizes host/target paradigm
+                to perform its tasks on multiple machines at once. The customer
+                of the TI project is Stellus Technologies, formerly a division
+                of Samsung Electronics.)
+
+                Personal role in the project: Development of the local build
+                and test environment, vaguely reminiscent of AWS environment
+                used during the Samsung storage software development process
+                by various dev/QA teams. Responsible for creating modules and
+                scripts for cascade execution of build sequences written in a
+                series of programming languages: Perl, Bash Shell Script, Java,
+                Python, Go. Documenting.
+
+                Tools and technologies used:
+                *    Dev OS: Arch Linux x86-64
+                * Server OS: Ubuntu Server amd64
+                * Perl 5, Bash Shell Script
+                * Java SE, Java Class Library
+                * Python 3, Go (along with their respective standard libraries)
+                * Apache HTTP Server
+                * Jenkins (continuous integration service)
+                * Docker (software containers infrastructure)
+                * Koding (cloud-based dev env + VM)
+                * Vim
+                * GNU Make, Apache Maven
+                * Git, Bitbucket, JIRA
+
+// ============================================================================
 
 Jan 2013 - Apr 2015, Development work at SMS Online, LLC (Gomel branch),
                      Gomel (2 years, 4 months)
@@ -890,7 +1007,7 @@ Dec 1999
 
 // === Personal information ===================================================
 
-Date of birth   June 27, 1977 (38yo)
+Date of birth   June 27, 1977 (39yo)
 Citizenship     Republic of Belarus
 Marital status  Married
 No. of children 2
@@ -905,6 +1022,4 @@ Activities      * Street skateboarding
                 * Middle-distance running
                 * General fitness
 
-// ============================================================================
 // vim:set nu:et:ts=4:sw=4:
-// ============================================================================
