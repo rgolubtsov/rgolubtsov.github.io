@@ -1,0 +1,2 @@
+# === Configuring the network to assign and utilize a static IP address =======
+# =============================================================================
