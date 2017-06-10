@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 /*
- *     $ wget -c http://rgolubtsov.github.io/docs/misc/find_equil_index.js && \
- *       chmod -v 700 find_equil_index.js                                  && \
- *                  ./find_equil_index.js
+ *     $ curl -O http://rgolubtsov.github.io/docs/misc/find_equil_index.js && \
+ *       chmod 700 find_equil_index.js                                     && \
+ *               ./find_equil_index.js
  *
  * This is a demo task.
  *
