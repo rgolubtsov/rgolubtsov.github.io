@@ -1,9 +1,11 @@
 #!/usr/bin/env node
 /*
+ * content/doc/misc/find_equil_index.js
+ * ============================================================================
  *     $ curl -O http://rgolubtsov.github.io/docs/misc/find_equil_index.js && \
  *       chmod 700 find_equil_index.js                                     && \
  *               ./find_equil_index.js
- *
+ * ============================================================================
  * This is a demo task.
  *
  * A zero-indexed array A consisting of N integers is given. An equilibrium
@@ -68,6 +70,10 @@
  *     (not counting the storage required for input arguments).
  *
  * Elements of input arrays can be modified.
+ * ============================================================================
+ * Copyright (C) 2017 Radislav (Radicchio) Golubtsov
+ *
+ * (See the LICENSE file at the top of the source tree.)
  */
 
 "use strict";
