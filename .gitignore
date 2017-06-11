@@ -13,4 +13,10 @@
 _site/
 .sass-cache/
 
+# === Object files ============================================================
+*.o
+
+# === Executables =============================================================
+content/dev/misc/dnsresolvd/c/dnsresolvd
+
 # vim:set nu:et:ts=4:sw=4:
