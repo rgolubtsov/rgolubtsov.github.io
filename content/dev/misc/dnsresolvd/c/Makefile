@@ -20,7 +20,8 @@ DEPS = $(EXEC).o
 #C_STD = c99
 C_STD = c11
 
-CFLAGS = -Wall -pedantic -std=$(C_STD) -O3
+CFLAGS = -Wall -pedantic -std=$(C_STD) -O3 \
+         -march=x86-64 -mtune=generic -pipe -fstack-protector-strong
 
 # Making the target.
 $(DEPS): %.o: %.c
