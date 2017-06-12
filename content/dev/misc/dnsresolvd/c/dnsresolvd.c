@@ -12,6 +12,23 @@
 
 #include "dnsresolvd.h"
 
+/* Main callback. Actually serving the request here. */
+int _request_handler(       void            *cls,
+                     struct MHD_Connection  *connection,
+                     const  char            *url,
+                     const  char            *method,
+                     const  char            *version,
+                     const  char            *upload_data,
+                            size_t          *upload_data_size,
+                            void           **con_cls) {
+
+    int ret = EXIT_SUCCESS;
+
+    /* TODO: Implement serving the request. */
+
+    return ret;
+}
+
 /* Helper function. Makes final buffer cleanups, closes streams, etc. */
 void _cleanups_fixate() {
     /* Closing the system logger. */
@@ -31,6 +48,10 @@ int main(int argc, char *const *argv) {
 
     char *daemon_name = argv[0];
     unsigned long port_number;
+
+    struct MHD_Daemon *daemon;
+
+    int c; /* <== Needs this for Ctrl+C hitting check only. */
 
     /* Opening the system logger. */
     openlog(NULL, LOG_CONS | LOG_PID, LOG_DAEMON);
@@ -90,6 +111,41 @@ int main(int argc, char *const *argv) {
 
         return ret;
     }
+
+    /* Creating, configuring, and starting the server. */
+    daemon = MHD_start_daemon(MHD_USE_INTERNAL_POLLING_THREAD,
+                              port_number, /*    ^^^^^^^    */
+                              NULL,        /*  Thread pool  */
+                              NULL,
+                              &_request_handler,
+                              NULL,
+    /* Thread pool >>>>>>> */ MHD_OPTION_THREAD_POOL_SIZE, 4, MHD_OPTION_END);
+
+    if (daemon == NULL) {
+        ret = EXIT_FAILURE;
+
+        fprintf(stderr, _ERR_CANNOT_START_SERVER _NEW_LINE _NEW_LINE,
+                         daemon_name);
+
+        syslog(LOG_ERR, _ERR_CANNOT_START_SERVER _NEW_LINE _NEW_LINE,
+                         daemon_name);
+
+        _cleanups_fixate();
+
+        return ret;
+    }
+
+    /* Serving the request. (Hit Ctrl+C to terminate the daemon.) */
+    printf(          _MSG_SERVER_STARTED_1 _NEW_LINE _MSG_SERVER_STARTED_2 \
+                     _NEW_LINE, port_number);
+
+    syslog(LOG_INFO, _MSG_SERVER_STARTED_1 _NEW_LINE _MSG_SERVER_STARTED_2 \
+                     _NEW_LINE, port_number);
+
+    while ((c = getchar()) != EOF) {}
+
+    /* Stopping the server. */
+    MHD_stop_daemon(daemon);
 
     /* Making final cleanups. */
     _cleanups_fixate();
