@@ -18,6 +18,8 @@
 #include <string.h>
 #include <syslog.h>
 
+#include <microhttpd.h>
+
 /* Helper constants. */
 #define _EMPTY_STRING       ""
 #define _ONE_SPACE_STRING  " "
