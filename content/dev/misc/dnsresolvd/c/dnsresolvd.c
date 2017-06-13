@@ -22,9 +22,72 @@ int _request_handler(       void            *cls,
                             size_t          *upload_data_size,
                             void           **con_cls) {
 
-    int ret = EXIT_SUCCESS;
+    int ret = MHD_YES;
 
-    /* TODO: Implement serving the request. */
+    #define RESP_TEMPLATE_1 "<!DOCTYPE html>" _NEW_LINE                                  \
+"<html lang=\"en-US\" dir=\"ltr\">"           _NEW_LINE "<head>"               _NEW_LINE \
+"<meta http-equiv=\"Content-Type\"    content=\"text/html; charset=UTF-8\" />" _NEW_LINE \
+"<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\" />"         _NEW_LINE \
+"<!-- No caching at all for:                                                                          -->"     _NEW_LINE \
+"<meta http-equiv=\"Cache-Control\"   content=\"no-cache, no-store, must-revalidate\" /> <!-- * HTTP/1.1. -->" _NEW_LINE \
+"<meta http-equiv=\"Expires\"         content=\"Thu, 01 Dec 1994 16:00:00 GMT\"       /> <!-- * Proxies.  -->" _NEW_LINE \
+"<meta http-equiv=\"Pragma\"          content=\"no-cache\"                            /> <!-- * HTTP/1.0. -->" _NEW_LINE \
+"<meta       name=\"viewport\"        content=\"width=device-width,initial-scale=1\" />"                       _NEW_LINE \
+"<title>" _DMN_NAME "</title>" _NEW_LINE "</head>" _NEW_LINE \
+"<body id=\"dnsresolvd\">"     _NEW_LINE "<p>"
+
+    #define RESP_TEMPLATE_2 " ==&gt; "
+
+    #define RESP_TEMPLATE_3A _ERR_PREFIX _COLON_SPACE_SEP _ERR_COULD_NOT_LOOKUP
+    #define RESP_TEMPLATE_3B " (IPv"
+    #define RESP_TEMPLATE_3C ")"
+
+    #define RESP_TEMPLATE_4 "</p>" _NEW_LINE "</body>" _NEW_LINE "</html>" \
+                                   _NEW_LINE
+
+    char *resp_buffer = NULL;
+
+    struct MHD_Response *resp;
+
+    resp_buffer = malloc(sizeof(RESP_TEMPLATE_1)
+                       + sizeof(RESP_TEMPLATE_2)
+                       + sizeof(RESP_TEMPLATE_3A)
+                       + sizeof(RESP_TEMPLATE_3B)
+                       + sizeof(RESP_TEMPLATE_3C)
+                       + sizeof(RESP_TEMPLATE_4)
+                       + 1); /* <== One byte more for null terminator (NUL). */
+
+    resp_buffer = strcpy(resp_buffer, RESP_TEMPLATE_1  \
+                                      RESP_TEMPLATE_2  \
+                                      RESP_TEMPLATE_3A \
+                                      RESP_TEMPLATE_3B \
+                                      RESP_TEMPLATE_3C \
+                                      RESP_TEMPLATE_4);
+
+    /* Creating the response. */
+    resp = MHD_create_response_from_buffer(strlen(resp_buffer),
+                                           (void *) resp_buffer,
+                                           MHD_RESPMEM_MUST_FREE);
+
+    /*
+     * Note: Do not manually free the response buffer
+     *       due to the MHD_RESPMEM_MUST_FREE mode is selected --
+     *       MHD itself will take care of it.
+     *
+     *       free(resp_buffer);
+     */
+
+    if (resp == NULL) {
+        ret = MHD_NO;
+
+        return ret;
+    }
+
+    /* Enqueueing the response to transmit to. */
+    ret = MHD_queue_response(connection, MHD_HTTP_OK, resp);
+
+    /* Destroying the response. */
+    MHD_destroy_response(resp);
 
     return ret;
 }
