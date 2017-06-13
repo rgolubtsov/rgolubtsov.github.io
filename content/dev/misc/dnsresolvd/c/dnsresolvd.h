@@ -29,17 +29,16 @@
 
 /* Common error messages. */
 #define _ERR_PREFIX                    "Error"
-#define _ERR_PORT_MUST_BE_INT          "%s: <port_number> must be "      \
-                                       "an integer value."
-#define _ERR_PORT_MUST_BE_GREATER_1024 "%s: <port_number> must be "      \
-                                       "greater than 1024."
+#define _ERR_PORT_MUST_BE_POSITIVE_INT "%s: <port_number> must be "      \
+                                       "a positive integer value, "      \
+                                       "in the range 1024-49151."
 #define _ERR_CANNOT_START_SERVER       "%s: FATAL: Cannot start server " \
                                        "for an unknown reason. Exiting..."
 #define _ERR_COULD_NOT_LOOKUP          "Could not lookup hostname."
 
 /** Constant: Print this when there are no any args passed. */
 #define _ERR_MUST_BE_THE_ONLY_ARG "%s: There must be exactly one arg " \
-                                  "passed: %d args found"
+                                  "passed: %u args found"
 
 /**
  * Constant: Print this usage info just after
@@ -48,7 +47,7 @@
 #define _MSG_USAGE_TEMPLATE "Usage: %s <port_number>"
 
 /* Common notification messages. */
-#define _MSG_SERVER_STARTED_1 "Server started on port %lu"
+#define _MSG_SERVER_STARTED_1 "Server started on port %u"
 #define _MSG_SERVER_STARTED_2 "=== Hit Ctrl+C to terminate it."
 
 /* Daemon name, version, and copyright banners. */

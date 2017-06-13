@@ -47,7 +47,7 @@ int main(int argc, char *const *argv) {
     int ret = EXIT_SUCCESS;
 
     char *daemon_name = argv[0];
-    unsigned long port_number;
+    unsigned short port_number;
 
     struct MHD_Daemon *daemon;
 
@@ -82,30 +82,19 @@ int main(int argc, char *const *argv) {
         return ret;
     }
 
-    port_number = strtoul(argv[1], NULL, 0);
+    port_number = atoi(argv[1]);
 
-    if (port_number == 0L) {
+    /* Checking for port correctness. */
+    if ((port_number < 1024) || (port_number > 49151)) {
         ret = EXIT_FAILURE;
 
-        fprintf(stderr, _ERR_PORT_MUST_BE_INT _NEW_LINE _NEW_LINE,
+        fprintf(stderr, _ERR_PORT_MUST_BE_POSITIVE_INT _NEW_LINE _NEW_LINE,
                          daemon_name);
 
-        syslog(LOG_ERR, _ERR_PORT_MUST_BE_INT _NEW_LINE _NEW_LINE,
+        syslog(LOG_ERR, _ERR_PORT_MUST_BE_POSITIVE_INT _NEW_LINE _NEW_LINE,
                          daemon_name);
 
-        _cleanups_fixate();
-
-        return ret;
-    }
-
-    if (port_number <= 1024L) {
-        ret = EXIT_FAILURE;
-
-        fprintf(stderr, _ERR_PORT_MUST_BE_GREATER_1024 _NEW_LINE _NEW_LINE,
-                         daemon_name);
-
-        syslog(LOG_ERR, _ERR_PORT_MUST_BE_GREATER_1024 _NEW_LINE _NEW_LINE,
-                         daemon_name);
+        fprintf(stderr, _MSG_USAGE_TEMPLATE _NEW_LINE _NEW_LINE, daemon_name);
 
         _cleanups_fixate();
 
