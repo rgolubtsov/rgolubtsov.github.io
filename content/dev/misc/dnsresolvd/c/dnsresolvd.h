@@ -40,10 +40,7 @@
 #define _ERR_MUST_BE_THE_ONLY_ARG "%s: There must be exactly one arg " \
                                   "passed: %u args found"
 
-/**
- * Constant: Print this usage info just after
- *           the <code>_ERR_MUST_BE_THE_ONLY_ARG</code> error message.
- */
+/** Constant: Print this usage info just after any inappropriate input. */
 #define _MSG_USAGE_TEMPLATE "Usage: %s <port_number>"
 
 /* Common notification messages. */
