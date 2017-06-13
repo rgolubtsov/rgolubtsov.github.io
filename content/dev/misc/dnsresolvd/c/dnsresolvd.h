@@ -62,6 +62,9 @@
 #define _DMN_COPYRIGHT__ "Copyright (C) 2017"
 #define _DMN_AUTHOR      "Radislav Golubtsov <ragolubtsov@my.com>"
 
+/** The effective hostname to look up to. */
+char *hostname;
+
 #endif /* __DNSRESOLVD_H */
 
 /* vim:set nu:et:ts=4:sw=4: */
