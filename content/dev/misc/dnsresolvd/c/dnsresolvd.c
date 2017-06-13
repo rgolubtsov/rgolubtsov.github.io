@@ -12,6 +12,39 @@
 
 #include "dnsresolvd.h"
 
+/*
+ * Query parse callback. Iterates over query params given as key-value pairs.
+ */
+int _query_params_iterator(      void          *cls,
+                           enum  MHD_ValueKind  kind,
+                           const char          *key,
+                           const char          *value) {
+
+    int ret = MHD_YES;
+
+    hostname = _EMPTY_STRING;
+
+    if (kind != MHD_GET_ARGUMENT_KIND) {
+        ret = MHD_NO; /* Processing "GET" requests only. */
+
+        return ret;
+    }
+
+    if (strcmp(key, "h") != 0) {
+        ret = MHD_NO;
+
+        return ret;
+    }
+
+    if (value != NULL) {
+        hostname = value;
+
+//      printf("%s" _COLON_SPACE_SEP "%s" _NEW_LINE, key, hostname);
+    }
+
+    return ret;
+}
+
 /* Main callback. Actually serving the request here. */
 int _request_handler(       void            *cls,
                      struct MHD_Connection  *connection,
@@ -36,11 +69,11 @@ int _request_handler(       void            *cls,
 "<title>" _DMN_NAME "</title>" _NEW_LINE "</head>" _NEW_LINE \
 "<body id=\"dnsresolvd\">"     _NEW_LINE "<p>"
 
-    #define RESP_TEMPLATE_2 " ==&gt; "
+    #define RESP_TEMPLATE_2A " ==&gt; "
+    #define RESP_TEMPLATE_2B " (IPv"
+    #define RESP_TEMPLATE_2C ")"
 
-    #define RESP_TEMPLATE_3A _ERR_PREFIX _COLON_SPACE_SEP _ERR_COULD_NOT_LOOKUP
-    #define RESP_TEMPLATE_3B " (IPv"
-    #define RESP_TEMPLATE_3C ")"
+    #define RESP_TEMPLATE_3 _ERR_PREFIX _COLON_SPACE_SEP _ERR_COULD_NOT_LOOKUP
 
     #define RESP_TEMPLATE_4 "</p>" _NEW_LINE "</body>" _NEW_LINE "</html>" \
                                    _NEW_LINE
@@ -49,20 +82,34 @@ int _request_handler(       void            *cls,
 
     struct MHD_Response *resp;
 
+    if (strcmp(method, MHD_HTTP_METHOD_GET) != 0) {
+        ret = MHD_NO; /* Unexpected method; should be "GET". */
+
+        return ret;
+    }
+
+    /* Parsing and validating query params. */
+    MHD_get_connection_values(connection,
+                              MHD_GET_ARGUMENT_KIND,
+                             _query_params_iterator,
+                              NULL);
+
     resp_buffer = malloc(sizeof(RESP_TEMPLATE_1)
-                       + sizeof(RESP_TEMPLATE_2)
-                       + sizeof(RESP_TEMPLATE_3A)
-                       + sizeof(RESP_TEMPLATE_3B)
-                       + sizeof(RESP_TEMPLATE_3C)
+                       + strlen(hostname)
+                       + sizeof(RESP_TEMPLATE_2A)
+                       + sizeof(RESP_TEMPLATE_2B)
+                       + sizeof(RESP_TEMPLATE_2C)
                        + sizeof(RESP_TEMPLATE_4)
                        + 1); /* <== One byte more for null terminator (NUL). */
 
-    resp_buffer = strcpy(resp_buffer, RESP_TEMPLATE_1  \
-                                      RESP_TEMPLATE_2  \
-                                      RESP_TEMPLATE_3A \
-                                      RESP_TEMPLATE_3B \
-                                      RESP_TEMPLATE_3C \
+    resp_buffer = strcpy(resp_buffer, RESP_TEMPLATE_1);
+    resp_buffer = strcat(resp_buffer, hostname);
+    resp_buffer = strcat(resp_buffer, RESP_TEMPLATE_2A \
+                                      RESP_TEMPLATE_2B \
+                                      RESP_TEMPLATE_2C \
                                       RESP_TEMPLATE_4);
+
+//  printf("*" _COLON_SPACE_SEP "%s", resp_buffer);
 
     /* Creating the response. */
     resp = MHD_create_response_from_buffer(strlen(resp_buffer),
