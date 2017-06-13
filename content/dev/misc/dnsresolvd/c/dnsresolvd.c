@@ -148,7 +148,7 @@ int main(int argc, char *const *argv) {
     port_number = atoi(argv[1]);
 
     /* Checking for port correctness. */
-    if ((port_number < 1024) || (port_number > 49151)) {
+    if ((port_number < _MIN_PORT) || (port_number > _MAX_PORT)) {
         ret = EXIT_FAILURE;
 
         fprintf(stderr, _ERR_PORT_MUST_BE_POSITIVE_INT _NEW_LINE _NEW_LINE,

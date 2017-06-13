@@ -43,6 +43,12 @@
 /** Constant: Print this usage info just after any inappropriate input. */
 #define _MSG_USAGE_TEMPLATE "Usage: %s <port_number>"
 
+/** Constant: The minimum port number allowed. */
+#define _MIN_PORT 1024
+
+/** Constant: The maximum port number allowed. */
+#define _MAX_PORT 49151
+
 /* Common notification messages. */
 #define _MSG_SERVER_STARTED_1 "Server started on port %u"
 #define _MSG_SERVER_STARTED_2 "=== Hit Ctrl+C to terminate it."
