@@ -23,9 +23,8 @@ var dns  = require("dns");
     var _PORT_NUMBER = 8765;
 
     /* HTTP header properties. */
-    var _HTTP_200_OK      = 200;
-    var _CONTENT_TYPE_KEY = "Content-Type";
-    var _CONTENT_TYPE_VAL = "text/html; charset=UTF-8";
+    var _HTTP_200_OK  = 200;
+    var _CONTENT_TYPE = "text/html; charset=UTF-8";
 
     /* Constant: The default hostname to look up to. */
     var _HOSTNAME = "archlinux.org";
@@ -51,7 +50,7 @@ var dns  = require("dns");
         // Performing DNS lookup for the given hostname.
         dns.lookup(hostname, function(e, addr, ver) {
             resp.writeHead(_HTTP_200_OK, {
-                _CONTENT_TYPE_KEY : _CONTENT_TYPE_VAL
+                "Content-Type" : _CONTENT_TYPE
             });
 
             resp.write("<!DOCTYPE html>" + _NEW_LINE
