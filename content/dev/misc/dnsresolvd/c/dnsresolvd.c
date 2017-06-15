@@ -38,8 +38,6 @@ int _query_params_iterator(      void          *cls,
 
     if (value != NULL) {
         hostname = value;
-
-//      printf("%s" _COLON_SPACE_SEP "%s" _NEW_LINE, key, hostname);
     }
 
     return ret;
@@ -121,11 +119,6 @@ int _request_handler(       void            *cls,
     resp_buffer = strcat(resp_buffer, RESP_TEMPLATE_2C \
                                       RESP_TEMPLATE_4);
 
-//  printf("*" _COLON_SPACE_SEP "%s", resp_buffer);
-//  printf("*" _COLON_SPACE_SEP "%s" _NEW_LINE, hostname);
-//  printf("*" _COLON_SPACE_SEP "%s" _NEW_LINE, addr);
-//  printf("*" _COLON_SPACE_SEP "%s" _NEW_LINE, ver_str);
-
     free(addr);
 
     /* Creating the response. */
@@ -189,9 +182,6 @@ char *dns_lookup(char *addr, const char *hostname) {
 
         ver  = 6;
     }
-
-//  printf(">" _COLON_SPACE_SEP "%s" _NEW_LINE, addr);
-//  printf("*" _COLON_SPACE_SEP "%u" _NEW_LINE, ver);
 
     return addr;
 }
