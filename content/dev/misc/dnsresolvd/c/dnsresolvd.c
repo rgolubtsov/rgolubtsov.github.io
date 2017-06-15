@@ -80,8 +80,7 @@ int _request_handler(       void            *cls,
 
     char *addr;
     char  ver_str[2];
-
-    char *resp_buffer = NULL;
+    char *resp_buffer;
 
     struct MHD_Response *resp;
 
@@ -111,8 +110,7 @@ int _request_handler(       void            *cls,
                        + sizeof(RESP_TEMPLATE_2B)
                        + strlen(ver_str)
                        + sizeof(RESP_TEMPLATE_2C)
-                       + sizeof(RESP_TEMPLATE_4)
-                       + 1); /* <== One byte more for null terminator (NUL). */
+                       + sizeof(RESP_TEMPLATE_4));
 
     resp_buffer = strcpy(resp_buffer, RESP_TEMPLATE_1);
     resp_buffer = strcat(resp_buffer, hostname);
