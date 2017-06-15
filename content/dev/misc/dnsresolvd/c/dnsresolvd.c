@@ -80,6 +80,8 @@ int _request_handler(       void            *cls,
     char  ver_str[2];
     char *resp_buffer;
 
+    bool lookup_error;
+
     struct MHD_Response *resp;
 
     if (strcmp(method, MHD_HTTP_METHOD_GET) != 0) {
@@ -99,25 +101,43 @@ int _request_handler(       void            *cls,
     /* Performing DNS lookup for the given hostname. */
     addr = dns_lookup(addr, hostname);
 
-    sprintf(ver_str, "%u", ver);
+    lookup_error = (strcmp(addr, _ERR_PREFIX) == 0);
 
-    resp_buffer = malloc(sizeof(RESP_TEMPLATE_1)
-                       + strlen(hostname)
-                       + sizeof(RESP_TEMPLATE_2A)
-                       + strlen(addr)
-                       + sizeof(RESP_TEMPLATE_2B)
-                       + strlen(ver_str)
-                       + sizeof(RESP_TEMPLATE_2C)
-                       + sizeof(RESP_TEMPLATE_4));
+    if (!lookup_error) {
+        sprintf(ver_str, "%u", ver);
+    }
+
+    if (lookup_error) {
+        resp_buffer = malloc(sizeof(RESP_TEMPLATE_1)
+                           + strlen(hostname)
+                           + sizeof(RESP_TEMPLATE_2A)
+                           + sizeof(RESP_TEMPLATE_3)
+                           + sizeof(RESP_TEMPLATE_4));
+    } else {
+        resp_buffer = malloc(sizeof(RESP_TEMPLATE_1)
+                           + strlen(hostname)
+                           + sizeof(RESP_TEMPLATE_2A)
+                           + strlen(addr)
+                           + sizeof(RESP_TEMPLATE_2B)
+                           + strlen(ver_str)
+                           + sizeof(RESP_TEMPLATE_2C)
+                           + sizeof(RESP_TEMPLATE_4));
+    }
 
     resp_buffer = strcpy(resp_buffer, RESP_TEMPLATE_1);
     resp_buffer = strcat(resp_buffer, hostname);
     resp_buffer = strcat(resp_buffer, RESP_TEMPLATE_2A);
-    resp_buffer = strcat(resp_buffer, addr);
-    resp_buffer = strcat(resp_buffer, RESP_TEMPLATE_2B);
-    resp_buffer = strcat(resp_buffer, ver_str);
-    resp_buffer = strcat(resp_buffer, RESP_TEMPLATE_2C \
-                                      RESP_TEMPLATE_4);
+
+    if (lookup_error) {
+        resp_buffer = strcat(resp_buffer, RESP_TEMPLATE_3);
+    } else {
+        resp_buffer = strcat(resp_buffer, addr);
+        resp_buffer = strcat(resp_buffer, RESP_TEMPLATE_2B);
+        resp_buffer = strcat(resp_buffer, ver_str);
+        resp_buffer = strcat(resp_buffer, RESP_TEMPLATE_2C);
+    }
+
+    resp_buffer = strcat(resp_buffer, RESP_TEMPLATE_4);
 
     free(addr);
 
