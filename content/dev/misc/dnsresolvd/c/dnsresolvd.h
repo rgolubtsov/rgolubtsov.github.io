@@ -17,6 +17,8 @@
 #include <stdio.h>
 #include <string.h>
 #include <syslog.h>
+#include <netdb.h>
+#include <arpa/inet.h>
 
 #include <microhttpd.h>
 
@@ -64,6 +66,12 @@
 
 /** The effective hostname to look up to. */
 char *hostname;
+
+/*
+ * Performs DNS lookup action for the given hostname,
+ * i.e. (in this case) IP address retrieval by hostname.
+ */
+char *dns_lookup(char *, const char *);
 
 #endif /* __DNSRESOLVD_H */
 

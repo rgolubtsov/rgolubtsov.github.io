@@ -78,6 +78,7 @@ int _request_handler(       void            *cls,
     #define RESP_TEMPLATE_4 "</p>" _NEW_LINE "</body>" _NEW_LINE "</html>" \
                                    _NEW_LINE
 
+    char *addr;
     char *resp_buffer = NULL;
 
     struct MHD_Response *resp;
@@ -110,6 +111,16 @@ int _request_handler(       void            *cls,
                                       RESP_TEMPLATE_4);
 
 //  printf("*" _COLON_SPACE_SEP "%s", resp_buffer);
+//  printf("*" _COLON_SPACE_SEP "%s" _NEW_LINE, hostname);
+
+    addr = malloc(INET6_ADDRSTRLEN);
+
+    /* Performing DNS lookup for the given hostname. */
+    addr = dns_lookup(addr, hostname);
+
+//  printf("*" _COLON_SPACE_SEP "%s" _NEW_LINE, addr);
+
+    free(addr);
 
     /* Creating the response. */
     resp = MHD_create_response_from_buffer(strlen(resp_buffer),
@@ -137,6 +148,38 @@ int _request_handler(       void            *cls,
     MHD_destroy_response(resp);
 
     return ret;
+}
+
+/**
+ * Performs DNS lookup action for the given hostname,
+ * i.e. (in this case) IP address retrieval by hostname.
+ *
+ * @param addr     The buffer to store the IP address retrieved.
+ * @param hostname The effective hostname to look up to.
+ *
+ * @return The IP address of the analyzing host/service.
+ */
+char *dns_lookup(char *addr, const char *hostname) {
+    struct hostent *hent;
+
+    hent = gethostbyname2(hostname, AF_INET6);
+
+    /* If the host is not IPv6-ready, trying IPv4. */
+    if (hent == NULL) {
+        hent = gethostbyname2(hostname, AF_INET);
+
+        if (hent == NULL) {
+            addr = strcpy(addr, _ERR_PREFIX);
+        } else {
+            addr = inet_ntop(AF_INET, hent->h_addr_list[0], addr, INET_ADDRSTRLEN);
+        }
+    } else {
+        addr = inet_ntop(AF_INET6, hent->h_addr_list[0], addr, INET6_ADDRSTRLEN);
+    }
+
+//  printf(">" _COLON_SPACE_SEP "%s" _NEW_LINE, addr);
+
+    return addr;
 }
 
 /* Helper function. Makes final buffer cleanups, closes streams, etc. */
