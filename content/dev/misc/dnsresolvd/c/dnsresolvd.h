@@ -67,6 +67,15 @@
 /** The effective hostname to look up to. */
 char *hostname;
 
+/**
+ * The IP version (family) used to look up to:
+ * <ul>
+ * <li><code>4</code> &ndash; IPv4</li>
+ * <li><code>6</code> &ndash; IPv6</li>
+ * </ul>
+ */
+unsigned short ver;
+
 /*
  * Performs DNS lookup action for the given hostname,
  * i.e. (in this case) IP address retrieval by hostname.

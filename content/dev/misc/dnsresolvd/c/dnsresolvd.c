@@ -79,6 +79,8 @@ int _request_handler(       void            *cls,
                                    _NEW_LINE
 
     char *addr;
+    char  ver_str[2];
+
     char *resp_buffer = NULL;
 
     struct MHD_Response *resp;
@@ -95,30 +97,36 @@ int _request_handler(       void            *cls,
                              _query_params_iterator,
                               NULL);
 
+    addr = malloc(INET6_ADDRSTRLEN);
+
+    /* Performing DNS lookup for the given hostname. */
+    addr = dns_lookup(addr, hostname);
+
+    sprintf(ver_str, "%u", ver);
+
     resp_buffer = malloc(sizeof(RESP_TEMPLATE_1)
                        + strlen(hostname)
                        + sizeof(RESP_TEMPLATE_2A)
+                       + strlen(addr)
                        + sizeof(RESP_TEMPLATE_2B)
+                       + strlen(ver_str)
                        + sizeof(RESP_TEMPLATE_2C)
                        + sizeof(RESP_TEMPLATE_4)
                        + 1); /* <== One byte more for null terminator (NUL). */
 
     resp_buffer = strcpy(resp_buffer, RESP_TEMPLATE_1);
     resp_buffer = strcat(resp_buffer, hostname);
-    resp_buffer = strcat(resp_buffer, RESP_TEMPLATE_2A \
-                                      RESP_TEMPLATE_2B \
-                                      RESP_TEMPLATE_2C \
+    resp_buffer = strcat(resp_buffer, RESP_TEMPLATE_2A);
+    resp_buffer = strcat(resp_buffer, addr);
+    resp_buffer = strcat(resp_buffer, RESP_TEMPLATE_2B);
+    resp_buffer = strcat(resp_buffer, ver_str);
+    resp_buffer = strcat(resp_buffer, RESP_TEMPLATE_2C \
                                       RESP_TEMPLATE_4);
 
 //  printf("*" _COLON_SPACE_SEP "%s", resp_buffer);
 //  printf("*" _COLON_SPACE_SEP "%s" _NEW_LINE, hostname);
-
-    addr = malloc(INET6_ADDRSTRLEN);
-
-    /* Performing DNS lookup for the given hostname. */
-    addr = dns_lookup(addr, hostname);
-
 //  printf("*" _COLON_SPACE_SEP "%s" _NEW_LINE, addr);
+//  printf("*" _COLON_SPACE_SEP "%s" _NEW_LINE, ver_str);
 
     free(addr);
 
@@ -170,14 +178,22 @@ char *dns_lookup(char *addr, const char *hostname) {
 
         if (hent == NULL) {
             addr = strcpy(addr, _ERR_PREFIX);
+            ver  = 0;
         } else {
-            addr = inet_ntop(AF_INET, hent->h_addr_list[0], addr, INET_ADDRSTRLEN);
+            addr = inet_ntop(AF_INET, hent->h_addr_list[0], addr,
+                                INET_ADDRSTRLEN);
+
+            ver  = 4;
         }
     } else {
-        addr = inet_ntop(AF_INET6, hent->h_addr_list[0], addr, INET6_ADDRSTRLEN);
+        addr = inet_ntop(AF_INET6, hent->h_addr_list[0], addr,
+                            INET6_ADDRSTRLEN);
+
+        ver  = 6;
     }
 
 //  printf(">" _COLON_SPACE_SEP "%s" _NEW_LINE, addr);
+//  printf("*" _COLON_SPACE_SEP "%u" _NEW_LINE, ver);
 
     return addr;
 }
