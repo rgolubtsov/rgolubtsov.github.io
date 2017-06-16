@@ -189,7 +189,6 @@ char *dns_lookup(char *addr, const char *hostname) {
 
         if (hent == NULL) {
             addr = strcpy(addr, _ERR_PREFIX);
-            ver  = 0;
         } else {
             addr = inet_ntop(AF_INET, hent->h_addr_list[0], addr,
                                 INET_ADDRSTRLEN);
