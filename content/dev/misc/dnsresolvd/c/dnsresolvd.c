@@ -64,6 +64,7 @@ int _request_handler(       void            *cls,
 "<meta http-equiv=\"" MHD_HTTP_HEADER_EXPIRES "\"         content=\"" _HDR_EXPIRES "\"       /> <!-- * Proxies.  -->"                     _NEW_LINE \
 "<meta http-equiv=\"" MHD_HTTP_HEADER_PRAGMA "\"          content=\"" _HDR_PRAGMA "\"                            /> <!-- * HTTP/1.0. -->" _NEW_LINE \
 "<meta       name=\"viewport\"        content=\"width=device-width,initial-scale=1\" />"                                                  _NEW_LINE \
+"<meta       name=\"description\"     content=\"" _DMN_DESCRIPTION "\" />"                                                                _NEW_LINE \
 "<title>" _DMN_NAME "</title>" _NEW_LINE "</head>"                                                                                        _NEW_LINE \
 "<body id=\"dnsresolvd\">"     _NEW_LINE "<p>"
 
