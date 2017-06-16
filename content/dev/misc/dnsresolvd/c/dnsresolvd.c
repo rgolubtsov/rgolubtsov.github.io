@@ -55,16 +55,16 @@ int _request_handler(       void            *cls,
 
     int ret = MHD_YES;
 
-    #define RESP_TEMPLATE_1 "<!DOCTYPE html>" _NEW_LINE                                  \
-"<html lang=\"en-US\" dir=\"ltr\">"           _NEW_LINE "<head>"               _NEW_LINE \
-"<meta http-equiv=\"Content-Type\"    content=\"text/html; charset=UTF-8\" />" _NEW_LINE \
-"<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\" />"         _NEW_LINE \
-"<!-- No caching at all for:                                                                          -->"     _NEW_LINE \
-"<meta http-equiv=\"Cache-Control\"   content=\"no-cache, no-store, must-revalidate\" /> <!-- * HTTP/1.1. -->" _NEW_LINE \
-"<meta http-equiv=\"Expires\"         content=\"Thu, 01 Dec 1994 16:00:00 GMT\"       /> <!-- * Proxies.  -->" _NEW_LINE \
-"<meta http-equiv=\"Pragma\"          content=\"no-cache\"                            /> <!-- * HTTP/1.0. -->" _NEW_LINE \
-"<meta       name=\"viewport\"        content=\"width=device-width,initial-scale=1\" />"                       _NEW_LINE \
-"<title>" _DMN_NAME "</title>" _NEW_LINE "</head>" _NEW_LINE \
+    #define RESP_TEMPLATE_1 "<!DOCTYPE html>"                                                                                             _NEW_LINE \
+"<html lang=\"en-US\" dir=\"ltr\">" _NEW_LINE "<head>"                                                                                    _NEW_LINE \
+"<meta http-equiv=\"" MHD_HTTP_HEADER_CONTENT_TYPE "\"    content=\"" _HDR_CONTENT_TYPE "\" />"                                           _NEW_LINE \
+"<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\" />"                                                                    _NEW_LINE \
+"<!-- No caching at all for:                                                                          -->"                                _NEW_LINE \
+"<meta http-equiv=\"" MHD_HTTP_HEADER_CACHE_CONTROL "\"   content=\"" _HDR_CACHE_CONTROL "\" /> <!-- * HTTP/1.1. -->"                     _NEW_LINE \
+"<meta http-equiv=\"" MHD_HTTP_HEADER_EXPIRES "\"         content=\"" _HDR_EXPIRES "\"       /> <!-- * Proxies.  -->"                     _NEW_LINE \
+"<meta http-equiv=\"" MHD_HTTP_HEADER_PRAGMA "\"          content=\"" _HDR_PRAGMA "\"                            /> <!-- * HTTP/1.0. -->" _NEW_LINE \
+"<meta       name=\"viewport\"        content=\"width=device-width,initial-scale=1\" />"                                                  _NEW_LINE \
+"<title>" _DMN_NAME "</title>" _NEW_LINE "</head>"                                                                                        _NEW_LINE \
 "<body id=\"dnsresolvd\">"     _NEW_LINE "<p>"
 
     #define RESP_TEMPLATE_2A " ==&gt; "
@@ -159,6 +159,19 @@ int _request_handler(       void            *cls,
 
         return ret;
     }
+
+    /* Adding headers to the response. */
+    if (MHD_add_response_header(resp, MHD_HTTP_HEADER_CONTENT_TYPE,
+                               _HDR_CONTENT_TYPE)  == MHD_NO) return MHD_NO;
+
+    if (MHD_add_response_header(resp, MHD_HTTP_HEADER_CACHE_CONTROL,
+                               _HDR_CACHE_CONTROL) == MHD_NO) return MHD_NO;
+
+    if (MHD_add_response_header(resp, MHD_HTTP_HEADER_EXPIRES,
+                               _HDR_EXPIRES)       == MHD_NO) return MHD_NO;
+
+    if (MHD_add_response_header(resp, MHD_HTTP_HEADER_PRAGMA,
+                               _HDR_PRAGMA)        == MHD_NO) return MHD_NO;
 
     /* Enqueueing the response to transmit to. */
     ret = MHD_queue_response(connection, MHD_HTTP_OK, resp);
