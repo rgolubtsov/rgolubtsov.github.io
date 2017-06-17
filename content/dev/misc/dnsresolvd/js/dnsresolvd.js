@@ -12,6 +12,7 @@
 
 "use strict";
 
+var path = require("path");
 var http = require("http");
 var url  = require("url");
 var dns  = require("dns");
@@ -20,11 +21,9 @@ var __DNSRESOLVD_H = require("./dnsresolvd.h");
 
 var aux = new __DNSRESOLVD_H();
 
-/** The daemon entry point. */
-var main = function() {
-    var ret = aux._EXIT_SUCCESS;
+var dns_lookup = function(port_number, _ret) {
+    var ret = _ret;
 
-    // Creating the server and serving the request.
     http.createServer(function(req, resp) {
         var query = url.parse(req.url, true).query;
 
@@ -34,7 +33,6 @@ var main = function() {
             hostname = aux._DEF_HOSTNAME;
         }
 
-        // Performing DNS lookup for the given hostname.
         dns.lookup(hostname, function(e, addr, ver) {
             resp.writeHead(200, {
                 "Content-Type" : aux._HDR_CONTENT_TYPE
@@ -66,16 +64,77 @@ var main = function() {
 
             resp.end();
         });
-    }).listen(aux._DEF_PORT);
+    }).listen(port_number);
 
     return ret;
 };
 
-var ret = main();
+/* Helper function. Draws a horizontal separator banner. */
+var _separator_draw = function(banner_text) {
+    var i = banner_text.length;
 
-if (ret === aux._EXIT_SUCCESS) {
-    console.log(aux._MSG_SERVER_STARTED_1 + aux._DEF_PORT + aux._NEW_LINE
+    do { process.stdout.write('='); i--; } while (i); console.log();
+};
+
+/** The daemon entry point. */
+var main = function(argc, argv) {
+    var ret = aux._EXIT_SUCCESS;
+
+    var daemon_name = path.basename(argv[1]);
+    var port_number = parseInt(argv[2], 10);
+
+    _separator_draw(aux._DMN_DESCRIPTION);
+
+    console.log(aux._DMN_NAME + aux._COMMA_SPACE_SEP  + aux._DMN_VERSION_S__
+      + aux._ONE_SPACE_STRING + aux._DMN_VERSION      + aux._NEW_LINE
+      + aux._DMN_DESCRIPTION                          + aux._NEW_LINE
+      + aux._DMN_COPYRIGHT__  + aux._ONE_SPACE_STRING + aux._DMN_AUTHOR);
+
+    _separator_draw(aux._DMN_DESCRIPTION);
+
+    // Checking for args presence.
+    if (argc !== 3) {
+        ret = aux._EXIT_FAILURE;
+
+        console.error(daemon_name + aux._ERR_MUST_BE_THE_ONLY_ARG_1
+                     + (argc - 2) + aux._ERR_MUST_BE_THE_ONLY_ARG_2
+                     + aux._NEW_LINE);
+
+        console.error(aux._MSG_USAGE_TEMPLATE_1 + daemon_name
+                    + aux._MSG_USAGE_TEMPLATE_2 + aux._NEW_LINE);
+
+        return ret;
+    }
+
+    // Checking for port correctness.
+    if (isNaN(port_number) || (port_number < aux._MIN_PORT)
+                           || (port_number > aux._MAX_PORT)) {
+
+        ret = aux._EXIT_FAILURE;
+
+        console.error(daemon_name + aux._ERR_PORT_MUST_BE_POSITIVE_INT
+                    + aux._NEW_LINE);
+
+        console.error(aux._MSG_USAGE_TEMPLATE_1 + daemon_name
+                    + aux._MSG_USAGE_TEMPLATE_2 + aux._NEW_LINE);
+
+        return ret;
+    }
+
+    ret = dns_lookup(port_number, ret);
+
+    console.log(aux._MSG_SERVER_STARTED_1 + port_number + aux._NEW_LINE
               + aux._MSG_SERVER_STARTED_2);
-}
+
+    return ret;
+};
+
+var argv = process.argv;
+var argc = argv.length;
+
+// Starting up the daemon.
+var ret = main(argc, argv);
+
+process.exitCode = ret;
 
 // vim:set nu:et:ts=4:sw=4:

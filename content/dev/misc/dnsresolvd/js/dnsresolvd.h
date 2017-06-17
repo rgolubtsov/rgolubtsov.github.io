@@ -30,28 +30,27 @@ var __DNSRESOLVD_H = function() {
 
     /* Common error messages. */
     this._ERR_PREFIX                    = "Error";
-    this._ERR_PORT_MUST_BE_POSITIVE_INT = "%s: <port_number> must be "
+    this._ERR_PORT_MUST_BE_POSITIVE_INT = ": <port_number> must be "
                                         + "a positive integer value, "
                                         + "in the range 1024-49151.";
-    this._ERR_CANNOT_START_SERVER       = "%s: FATAL: Cannot start server "
+    this._ERR_CANNOT_START_SERVER       = ": FATAL: Cannot start server "
                                         + "for an unknown reason. Exiting...";
     this._ERR_COULD_NOT_LOOKUP          = "Could not lookup hostname.";
 
-    /** Constant: Print this when there are no any args passed. */
-    this._ERR_MUST_BE_THE_ONLY_ARG = "%s: There must be exactly one arg "
-                                  + "passed: %u args found";
+    /* Print this error message when there are no any args passed. */
+    this._ERR_MUST_BE_THE_ONLY_ARG_1 = ": There must be exactly one arg passed"
+                                     + ": ";
+    this._ERR_MUST_BE_THE_ONLY_ARG_2 = " args found";
 
-    /** Constant: Print this usage info just after any inappropriate input. */
-    this._MSG_USAGE_TEMPLATE = "Usage: %s <port_number>";
+    /* Print this usage info just after any inappropriate input. */
+    this._MSG_USAGE_TEMPLATE_1 = "Usage: ";
+    this._MSG_USAGE_TEMPLATE_2 = " <port_number>";
 
     /** Constant: The minimum port number allowed. */
     this._MIN_PORT = 1024;
 
     /** Constant: The maximum port number allowed. */
     this._MAX_PORT = 49151;
-
-    /** Constant: The default port number to run the daemon on. */
-    this._DEF_PORT = 8765;
 
     /* Common notification messages. */
     this._MSG_SERVER_STARTED_1 = "Server started on port ";
