@@ -24,7 +24,7 @@ var aux = new __DNSRESOLVD_H();
 /**
  * Performs DNS lookup action for the given hostname,
  * i.e. (in this case) IP address retrieval by hostname.
- * <br />
+ *
  * It first prepares and runs the server instance, then does all the rest.
  *
  * @param _ret        The status code passed in from the caller.
