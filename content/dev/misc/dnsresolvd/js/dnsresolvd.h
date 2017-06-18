@@ -77,8 +77,8 @@ var __DNSRESOLVD_H = function() {
     this._DMN_COPYRIGHT__ = "Copyright (C) 2017";
     this._DMN_AUTHOR      = "Radislav Golubtsov <ragolubtsov@my.com>";
 
-    /** Constant: The default hostname to look up to. */
-    this._DEF_HOSTNAME = "archlinux.org";
+    /** Constant: The default hostname to look up DNS in. */
+    this._DEF_HOSTNAME = "openbsd.org";
 };
 
 module.exports = exports = __DNSRESOLVD_H;
