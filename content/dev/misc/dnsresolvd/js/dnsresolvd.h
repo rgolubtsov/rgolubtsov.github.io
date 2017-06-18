@@ -28,14 +28,17 @@ var __DNSRESOLVD_H = function() {
     this._COMMA_SPACE_SEP  = ", ";
     this._NEW_LINE         = "\n";
 
-    /* Common error messages. */
+    /* Common error messages and codes. */
     this._ERR_PREFIX                    = "Error";
     this._ERR_PORT_MUST_BE_POSITIVE_INT = ": <port_number> must be "
                                         + "a positive integer value, "
                                         + "in the range 1024-49151.";
-    this._ERR_CANNOT_START_SERVER       = ": FATAL: Cannot start server "
-                                        + "for an unknown reason. Exiting...";
+    this._ERR_CANNOT_START_SERVER       = ": FATAL: Cannot start server ";
+    this._ERR_SRV_UNKNOWN_REASON        = "for an unknown reason. Exiting...";
+    this._ERR_SRV_PORT_IS_IN_USE        = "due to the port requested "
+                                        + "is in use. Exiting...";
     this._ERR_COULD_NOT_LOOKUP          = "Could not lookup hostname.";
+    this._ERR_EADDRINUSE                = "EADDRINUSE";
 
     /* Print this error message when there are no any args passed. */
     this._ERR_MUST_BE_THE_ONLY_ARG_1 = ": There must be exactly one arg passed"
@@ -45,6 +48,10 @@ var __DNSRESOLVD_H = function() {
     /* Print this usage info just after any inappropriate input. */
     this._MSG_USAGE_TEMPLATE_1 = "Usage: ";
     this._MSG_USAGE_TEMPLATE_2 = " <port_number>";
+
+    /* Daemon class events. */
+    this._EVE_ERROR     = "error";
+    this._EVE_LISTENING = "listening";
 
     /** Constant: The minimum port number allowed. */
     this._MIN_PORT = 1024;

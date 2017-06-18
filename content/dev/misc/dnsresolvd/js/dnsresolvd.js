@@ -21,18 +21,49 @@ var __DNSRESOLVD_H = require("./dnsresolvd.h");
 
 var aux = new __DNSRESOLVD_H();
 
-var dns_lookup = function(port_number, _ret) {
+/**
+ * Performs DNS lookup action for the given hostname,
+ * i.e. (in this case) IP address retrieval by hostname.
+ * <br />
+ * It first prepares and runs the server instance, then does all the rest.
+ *
+ * @param _ret        The status code passed in from the caller.
+ * @param port_number The server port number to listen on.
+ * @param daemon_name The daemon name (executable/script name).
+ *
+ * @return The status code indicating the daemon overall execution outcome.
+ */
+var dns_lookup = function(_ret, port_number, daemon_name) {
     var ret = _ret;
 
-    http.createServer(function(req, resp) {
+    /*
+     * Creating, configuring, and starting the server.
+     *
+     * @param req  The HTTP request object.
+     * @param resp The HTTP response object.
+     *
+     * @return The HTTP server object.
+     */
+    var daemon = http.createServer(function(req, resp) {
+        // Parsing and validating query params.
         var query = url.parse(req.url, true).query;
 
-        var hostname = query.h; // <== http://localhost:8765/?h=<hostname>
+        // http://localhost:<port_number>/?h=<hostname>
+        //                                 |
+        var hostname = query.h; // <-------+
 
         if (!hostname) {
             hostname = aux._DEF_HOSTNAME;
         }
 
+        /*
+         * Performing DNS lookup for the given hostname
+         * and writing the response.
+         *
+         * @param e    The Error object (if any error occurs).
+         * @param addr The IP address retrieved.
+         * @param ver  The IP version (family) used to look up to.
+         */
         dns.lookup(hostname, function(e, addr, ver) {
             resp.writeHead(200, {
                 "Content-Type" : aux._HDR_CONTENT_TYPE
@@ -65,6 +96,27 @@ var dns_lookup = function(port_number, _ret) {
             resp.end();
         });
     }).listen(port_number);
+
+    daemon.on(aux._EVE_ERROR, function(e) {
+        ret = aux._EXIT_FAILURE;
+
+        if (e.code === aux._ERR_EADDRINUSE) {
+            console.error(daemon_name + aux._ERR_CANNOT_START_SERVER
+                                      + aux._ERR_SRV_PORT_IS_IN_USE
+                                      + aux._NEW_LINE);
+        } else {
+            console.error(daemon_name + aux._ERR_CANNOT_START_SERVER
+                                      + aux._ERR_SRV_UNKNOWN_REASON
+                                      + aux._NEW_LINE);
+        }
+
+        return ret;
+    });
+
+    daemon.on(aux._EVE_LISTENING, function(e) {
+        console.log(aux._MSG_SERVER_STARTED_1 + port_number + aux._NEW_LINE
+                  + aux._MSG_SERVER_STARTED_2);
+    });
 
     return ret;
 };
@@ -121,10 +173,7 @@ var main = function(argc, argv) {
         return ret;
     }
 
-    ret = dns_lookup(port_number, ret);
-
-    console.log(aux._MSG_SERVER_STARTED_1 + port_number + aux._NEW_LINE
-              + aux._MSG_SERVER_STARTED_2);
+    ret = dns_lookup(ret, port_number, daemon_name);
 
     return ret;
 };
