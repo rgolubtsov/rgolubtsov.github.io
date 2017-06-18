@@ -65,8 +65,12 @@ var dns_lookup = function(_ret, port_number, daemon_name) {
          * @param ver  The IP version (family) used to look up to.
          */
         dns.lookup(hostname, function(e, addr, ver) {
-            resp.writeHead(200, {
-                "Content-Type" : aux._HDR_CONTENT_TYPE
+            // Adding headers to the response.
+            resp.writeHead(aux._RSC_HTTP_200_OK, {
+                "Content-Type"  : aux._HDR_CONTENT_TYPE,
+                "Cache-Control" : aux._HDR_CACHE_CONTROL,
+                "Expires"       : aux._HDR_EXPIRES,
+                "Pragma"        : aux._HDR_PRAGMA
             });
 
             resp.write("<!DOCTYPE html>" + aux._NEW_LINE
