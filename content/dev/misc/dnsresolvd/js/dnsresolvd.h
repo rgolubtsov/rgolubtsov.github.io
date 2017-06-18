@@ -22,7 +22,6 @@ var __DNSRESOLVD_H = function() {
     /* Helper constants. */
     this._EXIT_FAILURE     =    1; //    Failing exit status.
     this._EXIT_SUCCESS     =    0; // Successful exit status.
-    this._EMPTY_STRING     =   "";
     this._ONE_SPACE_STRING =  " ";
     this._COLON_SPACE_SEP  = ": ";
     this._COMMA_SPACE_SEP  = ", ";
