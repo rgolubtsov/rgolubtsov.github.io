@@ -62,11 +62,12 @@ var __DNSRESOLVD_H = function() {
     this._MSG_SERVER_STARTED_1 = "Server started on port ";
     this._MSG_SERVER_STARTED_2 = "=== Hit Ctrl+C to terminate it.";
 
-    /* HTTP response headers. */
+    /* HTTP response headers and status codes. */
     this._HDR_CONTENT_TYPE  = "text/html; charset=UTF-8";
     this._HDR_CACHE_CONTROL = "no-cache, no-store, must-revalidate";
     this._HDR_EXPIRES       = "Thu, 01 Dec 1994 16:00:00 GMT";
     this._HDR_PRAGMA        = "no-cache";
+    this._RSC_HTTP_200_OK   = 200;
 
     /* Daemon name, version, and copyright banners. */
     this._DMN_NAME        = "DNS Resolver Daemon (dnsresolvd)";
