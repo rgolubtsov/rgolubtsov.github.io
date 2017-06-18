@@ -58,13 +58,40 @@ var dns_lookup = function(_ret, port_number, daemon_name) {
 
         /*
          * Performing DNS lookup for the given hostname
-         * and writing the response.
+         * and writing the response out.
          *
-         * @param e    The Error object (if any error occurs).
-         * @param addr The IP address retrieved.
-         * @param ver  The IP version (family) used to look up to.
+         * @param hostname The effective hostname to look up to.
+         * @param e        The Error object (if any error occurs).
+         * @param addr     The IP address retrieved.
+         * @param ver      The IP version (family) used to look up to.
          */
         dns.lookup(hostname, function(e, addr, ver) {
+            var resp_buffer = "<!DOCTYPE html>"                                                                              + aux._NEW_LINE
++ "<html lang=\"en-US\" dir=\"ltr\">" + aux._NEW_LINE + "<head>"                                                             + aux._NEW_LINE
++ "<meta http-equiv=\"Content-Type\"    content=\"" + aux._HDR_CONTENT_TYPE + "\" />"                                        + aux._NEW_LINE
++ "<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\" />"                                                     + aux._NEW_LINE
++ "<!-- No caching at all for:                                                                       -->"                    + aux._NEW_LINE
++ "<meta http-equiv=\"Cache-Control\"   content=\"" + aux._HDR_CACHE_CONTROL + "\" /> <!-- HTTP/1.1 -->"                     + aux._NEW_LINE
++ "<meta http-equiv=\"Expires\"         content=\"" + aux._HDR_EXPIRES + "\"       /> <!-- Proxies  -->"                     + aux._NEW_LINE
++ "<meta http-equiv=\"Pragma\"          content=\"" + aux._HDR_PRAGMA + "\"                            /> <!-- HTTP/1.0 -->" + aux._NEW_LINE
++ "<meta       name=\"viewport\"        content=\"width=device-width,initial-scale=1\" />"                                   + aux._NEW_LINE
++ "<meta       name=\"description\"     content=\"" + aux._DMN_DESCRIPTION + "\" />"                                         + aux._NEW_LINE
++ "<title>" + aux._DMN_NAME + "</title>" + aux._NEW_LINE + "</head>"                                                         + aux._NEW_LINE
++ "<body id=\"dnsresolvd\">"             + aux._NEW_LINE + "<p>"
++ hostname + " ==&gt; ";
+
+            if (e) {
+                resp_buffer += aux._ERR_PREFIX
+                            +  aux._COLON_SPACE_SEP
+                            +  aux._ERR_COULD_NOT_LOOKUP;
+            } else {
+                resp_buffer += addr + " (IPv" + ver + ")";
+            }
+
+            resp_buffer += "</p>"    + aux._NEW_LINE
+                        +  "</body>" + aux._NEW_LINE
+                        +  "</html>" + aux._NEW_LINE;
+
             // Adding headers to the response.
             resp.writeHead(aux._RSC_HTTP_200_OK, {
                 "Content-Type"  : aux._HDR_CONTENT_TYPE,
@@ -73,30 +100,10 @@ var dns_lookup = function(_ret, port_number, daemon_name) {
                 "Pragma"        : aux._HDR_PRAGMA
             });
 
-            resp.write("<!DOCTYPE html>" + aux._NEW_LINE
-+ "<html lang=\"en-US\" dir=\"ltr\">"    + aux._NEW_LINE + "<head>"              + aux._NEW_LINE
-+ "<meta http-equiv=\"Content-Type\"    content=\"text/html; charset=UTF-8\" />" + aux._NEW_LINE
-+ "<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\" />"         + aux._NEW_LINE
-+ "<!-- No caching at all for:                                                                          -->"     + aux._NEW_LINE
-+ "<meta http-equiv=\"Cache-Control\"   content=\"no-cache, no-store, must-revalidate\" /> <!-- * HTTP/1.1. -->" + aux._NEW_LINE
-+ "<meta http-equiv=\"Expires\"         content=\"Thu, 01 Dec 1994 16:00:00 GMT\"       /> <!-- * Proxies.  -->" + aux._NEW_LINE
-+ "<meta http-equiv=\"Pragma\"          content=\"no-cache\"                            /> <!-- * HTTP/1.0. -->" + aux._NEW_LINE
-+ "<meta       name=\"viewport\"        content=\"width=device-width,initial-scale=1\" />"                       + aux._NEW_LINE
-            + "<title>DNS Resolver Daemon (dnsresolvd)</title>"      + aux._NEW_LINE
-            + "</head>" + aux._NEW_LINE + "<body id=\"dnsresolvd\">" + aux._NEW_LINE
-            + "<p>"     +      hostname + " ==&gt; ");
+            // Writing the response out.
+            resp.write(resp_buffer);
 
-            if (e) {
-                resp.write(aux._ERR_PREFIX + aux._COLON_SPACE_SEP
-                         + aux._ERR_COULD_NOT_LOOKUP);
-            } else {
-                resp.write(addr + " (IPv" + ver + ")");
-            }
-
-            resp.write("</p>" + aux._NEW_LINE
-                  + "</body>" + aux._NEW_LINE
-                  + "</html>" + aux._NEW_LINE);
-
+            // Closing the response stream.
             resp.end();
         });
     }).listen(port_number);
