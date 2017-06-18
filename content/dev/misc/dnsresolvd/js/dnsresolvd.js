@@ -184,6 +184,11 @@ var main = function(argc, argv) {
         return ret;
     }
 
+    /*
+     * Preparing and running the server instance,
+     * then making DNS lookup upon request
+     * for the hostname provided.
+     */
     ret = dns_lookup(ret, port_number, daemon_name);
 
     return ret;
