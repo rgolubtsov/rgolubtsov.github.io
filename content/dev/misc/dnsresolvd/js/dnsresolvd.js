@@ -17,6 +17,8 @@ var http = require("http");
 var url  = require("url");
 var dns  = require("dns");
 
+var posix = require("posix");
+
 var __DNSRESOLVD_H = require("./dnsresolvd.h");
 
 var aux = new __DNSRESOLVD_H();
@@ -115,11 +117,23 @@ var dns_lookup = function(_ret, port_number, daemon_name) {
             console.error(daemon_name + aux._ERR_CANNOT_START_SERVER
                                       + aux._ERR_SRV_PORT_IS_IN_USE
                                       + aux._NEW_LINE);
+
+            posix.syslog(aux._LOG_PRIORITY_ERR,
+                          daemon_name + aux._ERR_CANNOT_START_SERVER
+                                      + aux._ERR_SRV_PORT_IS_IN_USE
+                                      + aux._NEW_LINE);
         } else {
             console.error(daemon_name + aux._ERR_CANNOT_START_SERVER
                                       + aux._ERR_SRV_UNKNOWN_REASON
                                       + aux._NEW_LINE);
+
+            posix.syslog(aux._LOG_PRIORITY_ERR,
+                          daemon_name + aux._ERR_CANNOT_START_SERVER
+                                      + aux._ERR_SRV_UNKNOWN_REASON
+                                      + aux._NEW_LINE);
         }
+
+        _cleanups_fixate();
 
         return ret;
     });
@@ -127,10 +141,19 @@ var dns_lookup = function(_ret, port_number, daemon_name) {
     daemon.on(aux._EVE_LISTENING, function(e) {
         console.log(aux._MSG_SERVER_STARTED_1 + port_number + aux._NEW_LINE
                   + aux._MSG_SERVER_STARTED_2);
+
+        posix.syslog(aux._LOG_PRIORITY_INFO, aux._MSG_SERVER_STARTED_1
+             + port_number + aux._NEW_LINE + aux._MSG_SERVER_STARTED_2);
     });
 
     return ret;
 };
+
+/* Helper function. Makes final buffer cleanups, closes streams, etc. */
+var _cleanups_fixate = function() {
+    // Closing the system logger.
+    posix.closelog();
+}
 
 /* Helper function. Draws a horizontal separator banner. */
 var _separator_draw = function(banner_text) {
@@ -145,6 +168,10 @@ var main = function(argc, argv) {
 
     var daemon_name = path.basename(argv[1]);
     var port_number = parseInt(argv[2], 10);
+
+    // Opening the system logger.
+    posix.openlog(path.basename(daemon_name, aux._LOG_DAEMON_EXT),
+                  {cons : true, pid : true}, aux._LOG_FACILITY_DAEMON);
 
     _separator_draw(aux._DMN_DESCRIPTION);
 
@@ -163,8 +190,15 @@ var main = function(argc, argv) {
                      + (argc - 2) + aux._ERR_MUST_BE_THE_ONLY_ARG_2
                      + aux._NEW_LINE);
 
+        posix.syslog(aux._LOG_PRIORITY_ERR,
+                      daemon_name + aux._ERR_MUST_BE_THE_ONLY_ARG_1
+                     + (argc - 2) + aux._ERR_MUST_BE_THE_ONLY_ARG_2
+                     + aux._NEW_LINE);
+
         console.error(aux._MSG_USAGE_TEMPLATE_1 + daemon_name
                     + aux._MSG_USAGE_TEMPLATE_2 + aux._NEW_LINE);
+
+        _cleanups_fixate();
 
         return ret;
     }
@@ -178,8 +212,14 @@ var main = function(argc, argv) {
         console.error(daemon_name + aux._ERR_PORT_MUST_BE_POSITIVE_INT
                     + aux._NEW_LINE);
 
+        posix.syslog(aux._LOG_PRIORITY_ERR,
+                      daemon_name + aux._ERR_PORT_MUST_BE_POSITIVE_INT
+                    + aux._NEW_LINE);
+
         console.error(aux._MSG_USAGE_TEMPLATE_1 + daemon_name
                     + aux._MSG_USAGE_TEMPLATE_2 + aux._NEW_LINE);
+
+        _cleanups_fixate();
 
         return ret;
     }
@@ -190,6 +230,9 @@ var main = function(argc, argv) {
      * for the hostname provided.
      */
     ret = dns_lookup(ret, port_number, daemon_name);
+
+    // Making final cleanups. */
+    _cleanups_fixate();
 
     return ret;
 };

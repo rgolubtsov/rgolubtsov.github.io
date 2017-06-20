@@ -50,6 +50,12 @@ var __DNSRESOLVD_H = function() {
     this._MSG_USAGE_TEMPLATE_1 = "Usage: ";
     this._MSG_USAGE_TEMPLATE_2 = " <port_number>";
 
+    /* Syslog-related constants. */
+    this._LOG_DAEMON_EXT      = ".js";
+    this._LOG_FACILITY_DAEMON = "daemon";
+    this._LOG_PRIORITY_ERR    = "err";
+    this._LOG_PRIORITY_INFO   = "info";
+
     /* Daemon class events. */
     this._EVE_ERROR     = "error";
     this._EVE_LISTENING = "listening";
