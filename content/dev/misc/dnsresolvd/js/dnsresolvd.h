@@ -12,6 +12,8 @@
 
 "use strict";
 
+var os = require("os");
+
 /**
  * The helper class for the main daemon module.
  * It aimed at accumulating such pieces like constants, globals, etc.,
@@ -25,7 +27,7 @@ var __DNSRESOLVD_H = function() {
     this._ONE_SPACE_STRING =  " ";
     this._COLON_SPACE_SEP  = ": ";
     this._COMMA_SPACE_SEP  = ", ";
-    this._NEW_LINE         = "\n";
+    this._NEW_LINE         = os.EOL;
 
     /* Common error messages and codes. */
     this._ERR_PREFIX                    = "Error";
