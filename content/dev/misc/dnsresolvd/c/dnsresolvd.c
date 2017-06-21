@@ -20,24 +20,39 @@ int _query_params_iterator(      void          *cls,
                            const char          *key,
                            const char          *value) {
 
-    int ret = MHD_YES;
+    int ret = MHD_NO;
 
-    hostname = _EMPTY_STRING;
+    hostname = _DEF_HOSTNAME;
 
     if (kind != MHD_GET_ARGUMENT_KIND) {
-        ret = MHD_NO; /* Processing "GET" requests only. */
-
-        return ret;
+        return ret; /* Processing "GET" requests only. */
     }
 
-    if (strcmp(key, "h") != 0) {
-        ret = MHD_NO;
-
-        return ret;
-    }
-
-    if (value != NULL) {
-        hostname = value;
+    /*
+     * http://localhost:<port_number>/?h=<hostname>
+     *                                 |
+     *               +-----------------+
+     *               |
+     *               V
+     */
+    if (strcmp(key, "h") == 0) {
+        /*
+         * /?h_____
+         *      |
+         *      V
+         */
+        if (value != NULL) {
+            /*
+             *     /?h=_____
+             *           |
+             *           V
+             */
+            if (strcmp(value, _EMPTY_STRING) != 0) {
+                hostname = value;
+            }
+        }
+    } else {
+        ret = MHD_YES;
     }
 
     return ret;
@@ -77,6 +92,8 @@ int _request_handler(       void            *cls,
     #define RESP_TEMPLATE_4 "</p>" _NEW_LINE "</body>" _NEW_LINE "</html>" \
                                    _NEW_LINE
 
+    int num_hdrs;
+
     char *addr;
     char  ver_str[2];
     char *resp_buffer;
@@ -91,11 +108,24 @@ int _request_handler(       void            *cls,
         return ret;
     }
 
-    /* Parsing and validating query params. */
-    MHD_get_connection_values(connection,
-                              MHD_GET_ARGUMENT_KIND,
-                             _query_params_iterator,
-                              NULL);
+    /* --------------------------------------------------------------------- */
+    /* --- Parsing and validating query params - Begin --------------------- */
+    /* --------------------------------------------------------------------- */
+    num_hdrs = MHD_get_connection_values(connection,
+                                         MHD_GET_ARGUMENT_KIND,
+                                         NULL, NULL);
+
+    if (num_hdrs > 0) {
+        MHD_get_connection_values(connection,
+                                  MHD_GET_ARGUMENT_KIND,
+                                 _query_params_iterator,
+                                  NULL);
+    } else {
+        hostname = _DEF_HOSTNAME;
+    }
+    /* --------------------------------------------------------------------- */
+    /* --- Parsing and validating query params - End ----------------------- */
+    /* --------------------------------------------------------------------- */
 
     addr = malloc(INET6_ADDRSTRLEN);
 

@@ -39,11 +39,11 @@
                                        "for an unknown reason. Exiting..."
 #define _ERR_COULD_NOT_LOOKUP          "Could not lookup hostname."
 
-/** Constant: Print this when there are no any args passed. */
+/* Print this error message when there are no any args passed. */
 #define _ERR_MUST_BE_THE_ONLY_ARG "%s: There must be exactly one arg " \
                                   "passed: %u args found"
 
-/** Constant: Print this usage info just after any inappropriate input. */
+/* Print this usage info just after any inappropriate input. */
 #define _MSG_USAGE_TEMPLATE "Usage: %s <port_number>"
 
 /** Constant: The minimum port number allowed. */
@@ -70,6 +70,9 @@
 #define _DMN_VERSION     "0.1"
 #define _DMN_COPYRIGHT__ "Copyright (C) 2017"
 #define _DMN_AUTHOR      "Radislav Golubtsov <ragolubtsov@my.com>"
+
+/** Constant: The default hostname to look up for. */
+#define _DEF_HOSTNAME "openbsd.org"
 
 /** The effective hostname to look up for. */
 char *hostname;
