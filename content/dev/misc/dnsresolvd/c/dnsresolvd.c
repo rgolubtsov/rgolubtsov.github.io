@@ -195,25 +195,28 @@ int _request_handler(       void            *cls,
 char *dns_lookup(char *addr, const char *hostname) {
     struct hostent *hent;
 
-    hent = gethostbyname2(hostname, AF_INET6);
+    hent = gethostbyname2(hostname, AF_INET);
 
-    /* If the host is not IPv6-ready, trying IPv4. */
+    /*
+     * If the host doesn't have the A record (IPv4),
+     * trying to find its AAAA record (IPv6).
+     */
     if (hent == NULL) {
-        hent = gethostbyname2(hostname, AF_INET);
+        hent = gethostbyname2(hostname, AF_INET6);
 
         if (hent == NULL) {
             addr = strcpy(addr, _ERR_PREFIX);
         } else {
-            addr = inet_ntop(AF_INET, hent->h_addr_list[0], addr,
-                                INET_ADDRSTRLEN);
+            addr = inet_ntop(AF_INET6, hent->h_addr_list[0], addr,
+                                INET6_ADDRSTRLEN);
 
-            ver  = 4;
+            ver  = 6;
         }
     } else {
-        addr = inet_ntop(AF_INET6, hent->h_addr_list[0], addr,
-                            INET6_ADDRSTRLEN);
+        addr = inet_ntop(AF_INET, hent->h_addr_list[0], addr,
+                            INET_ADDRSTRLEN);
 
-        ver  = 6;
+        ver  = 4;
     }
 
     return addr;
