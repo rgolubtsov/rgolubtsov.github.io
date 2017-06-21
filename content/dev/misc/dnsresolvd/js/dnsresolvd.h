@@ -86,7 +86,7 @@ var __DNSRESOLVD_H = function() {
     this._DMN_COPYRIGHT__ = "Copyright (C) 2017";
     this._DMN_AUTHOR      = "Radislav Golubtsov <ragolubtsov@my.com>";
 
-    /** Constant: The default hostname to look up DNS in. */
+    /** Constant: The default hostname to look up for. */
     this._DEF_HOSTNAME = "openbsd.org";
 };
 

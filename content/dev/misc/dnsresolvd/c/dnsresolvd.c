@@ -188,7 +188,7 @@ int _request_handler(       void            *cls,
  * i.e. (in this case) IP address retrieval by hostname.
  *
  * @param addr     The buffer to store the IP address retrieved.
- * @param hostname The effective hostname to look up to.
+ * @param hostname The effective hostname to look up for.
  *
  * @return The IP address of the analyzing host/service.
  */

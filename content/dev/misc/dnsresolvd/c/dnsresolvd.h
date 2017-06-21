@@ -71,11 +71,11 @@
 #define _DMN_COPYRIGHT__ "Copyright (C) 2017"
 #define _DMN_AUTHOR      "Radislav Golubtsov <ragolubtsov@my.com>"
 
-/** The effective hostname to look up to. */
+/** The effective hostname to look up for. */
 char *hostname;
 
 /**
- * The IP version (family) used to look up to:
+ * The IP version (family) used to look up in DNS:
  * <ul>
  * <li><code>4</code> &ndash; IPv4</li>
  * <li><code>6</code> &ndash; IPv6</li>

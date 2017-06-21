@@ -62,10 +62,10 @@ var dns_lookup = function(_ret, port_number, daemon_name) {
          * Performing DNS lookup for the given hostname
          * and writing the response out.
          *
-         * @param hostname The effective hostname to look up to.
+         * @param hostname The effective hostname to look up for.
          * @param e        The Error object (if any error occurs).
          * @param addr     The IP address retrieved.
-         * @param ver      The IP version (family) used to look up to.
+         * @param ver      The IP version (family) used to look up in DNS.
          */
         dns.lookup(hostname, function(e, addr, ver) {
             var resp_buffer = "<!DOCTYPE html>"                                                                              + aux._NEW_LINE
