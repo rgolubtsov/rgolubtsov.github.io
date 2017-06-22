@@ -325,7 +325,18 @@ int main(int argc, char *const *argv) {
     }
 
     /* Creating, configuring, and starting the server. */
-    daemon = MHD_start_daemon(MHD_USE_INTERNAL_POLLING_THREAD,
+    daemon = MHD_start_daemon(/* MHD_USE_INTERNAL_POLLING_THREAD, */
+/*
+ * The following commit deprecates the use of the MHD_USE_SELECT_INTERNALLY
+ * flag and introduces the new one instead -- MHD_USE_INTERNAL_POLLING_THREAD:
+ *
+ *     https://gnunet.org/git/libmicrohttpd.git/commit/src/include/microhttpd.h
+ *                                 ?id=a48ca85fb74479a8a81e137138a30fab58f3eb1e
+ *
+ * In Ubuntu 16.04 LTS the GNU libmicrohttpd package is of version 0.9.44,
+ * hence it needs to use the old one as the only option to go.))
+ */
+                              MHD_USE_SELECT_INTERNALLY,
                               port_number, /*    ^^^^^^^    */
                               NULL,        /*  Thread pool  */
                               NULL,
