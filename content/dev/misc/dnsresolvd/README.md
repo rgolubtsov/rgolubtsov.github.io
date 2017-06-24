@@ -148,7 +148,7 @@ dnsresolvd: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically lin
 
 #### Building under Arch Linux (kernel 4.11.3-1-ARCH x86-64)
 
-This is quite equal to building the daemon under Ubuntu. Install the necessary dependencies:
+This is quite equal to the process of building the daemon under Ubuntu. Install the necessary dependencies:
 
 ```
 $ sudo pacman -Syu
