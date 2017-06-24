@@ -83,7 +83,7 @@ drwxr-xr-x  4 radic  radic    512 Jun 10 21:57 ..
 -rw-r--r--  1 radic  radic  12645 Jun 22 00:45 dnsresolvd.c
 -rw-r--r--  1 radic  radic   3267 Jun 22 00:45 dnsresolvd.h
 -rw-r--r--  1 radic  radic  10584 Jun 22 00:47 dnsresolvd.o
-
+$
 $ file dnsresolvd
 dnsresolvd: ELF 64-bit LSB shared object, x86-64, version 1
 ```
@@ -141,7 +141,7 @@ drwxrwxr-x 4 radic radic  4096 Jun 22 15:05 ..
 -rw-rw-r-- 1 radic radic  3267 Jun 22 15:05 dnsresolvd.h
 -rw-rw-r-- 1 radic radic  9488 Jun 22 16:40 dnsresolvd.o
 -rw-rw-r-- 1 radic radic  1038 Jun 22 15:05 Makefile
-
+$
 $ file dnsresolvd
 dnsresolvd: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=438019fc2026fa3374d8dd612a25b10b078b0a1a, not stripped
 ```
@@ -215,7 +215,7 @@ drwxr-xr-x 5 radic radic  4096 Jun 24 13:17 ..
 -rw-r--r-- 1 radic radic  3267 Jun 22 01:25 dnsresolvd.h
 -rw-r--r-- 1 radic radic  9520 Jun 24 13:30 dnsresolvd.o
 -rw-r--r-- 1 radic radic  1038 Jun 22 01:25 Makefile
-
+$
 $ file dnsresolvd
 dnsresolvd: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=0baa436fc9efa4ee5ea40d925950522d4811a01d, not stripped
 ```
