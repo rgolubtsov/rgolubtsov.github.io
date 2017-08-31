@@ -1,4 +1,4 @@
-#!/usr/bin/env lua5.3
+#!/usr/bin/env lua
 --[[ content/dev/misc/dnsresolvd/lua/dnsresolvd.lua
  * ============================================================================
  * DNS Resolver Daemon (dnsresolvd). Version 0.1
