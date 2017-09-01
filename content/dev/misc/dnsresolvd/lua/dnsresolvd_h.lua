@@ -49,7 +49,7 @@ local __dh = {}
     __dh._MSG_USAGE_TEMPLATE_2 = " <port_number>"
 
     -- Syslog-related constants.
-    __dh._LOG_DAEMON_EXT      = ".js"
+    __dh._LOG_DAEMON_EXT      = ".lua"
     __dh._LOG_FACILITY_DAEMON = "daemon"
     __dh._LOG_PRIORITY_ERR    = "err"
     __dh._LOG_PRIORITY_INFO   = "info"
