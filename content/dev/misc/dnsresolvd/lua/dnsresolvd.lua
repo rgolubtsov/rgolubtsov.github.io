@@ -20,6 +20,7 @@ local __dh = require("dnsresolvd_h")
 -- The daemon entry point.
 function main(argc, argv)
     local ret = __dh._EXIT_SUCCESS
+--  local ret = __dh._EXIT_FAILURE
 
     local daemon_name = ""--path.basename(argv[1])
     local port_number = tonumber(argv, 10)--tonumber(argv[2], 10)
