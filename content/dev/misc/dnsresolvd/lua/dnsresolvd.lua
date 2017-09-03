@@ -1,4 +1,4 @@
-#!/usr/bin/env lua
+#!/usr/bin/env luvit
 --[[ content/dev/misc/dnsresolvd/lua/dnsresolvd.lua
  * ============================================================================
  * DNS Resolver Daemon (dnsresolvd). Version 0.1
