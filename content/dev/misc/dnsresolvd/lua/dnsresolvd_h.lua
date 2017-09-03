@@ -25,7 +25,7 @@ local __dh = {}
     __dh._ONE_SPACE_STRING =  " "
     __dh._COLON_SPACE_SEP  = ": "
     __dh._COMMA_SPACE_SEP  = ", "
-    __dh._NEW_LINE         = os.EOL
+    __dh._NEW_LINE         = "\n"
 
     -- Common error messages and codes.
     __dh._ERR_PREFIX                    = "Error"
