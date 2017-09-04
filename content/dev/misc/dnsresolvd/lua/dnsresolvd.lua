@@ -110,6 +110,31 @@ local dns_lookup = function(_ret, port_number, daemon_name)
 --      end)
     end):listen(port_number)
 
+    -- FIXME: Ported one-to-one from Node.js impl. Not working.
+    daemon:on(aux._EVE_ERROR, function(e)
+        ret = aux._EXIT_FAILURE
+
+        if (e.code == aux._ERR_EADDRINUSE) then
+            print(daemon_name .. aux._ERR_CANNOT_START_SERVER
+                              .. aux._ERR_SRV_PORT_IS_IN_USE
+                              .. aux._NEW_LINE)
+        else
+            print(daemon_name .. aux._ERR_CANNOT_START_SERVER
+                              .. aux._ERR_SRV_UNKNOWN_REASON
+                              .. aux._NEW_LINE)
+        end
+
+        _cleanups_fixate()
+
+        return ret
+    end)
+
+    -- FIXME: Ported one-to-one from Node.js impl. Not working.
+    daemon:on(aux._EVE_LISTENING, function(e)
+        print(aux._MSG_SERVER_STARTED_1 .. port_number .. aux._NEW_LINE
+           .. aux._MSG_SERVER_STARTED_2)
+    end)
+
     print(aux._MSG_SERVER_STARTED_1 .. port_number .. aux._NEW_LINE
        .. aux._MSG_SERVER_STARTED_2)
 
