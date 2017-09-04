@@ -11,11 +11,11 @@
 --]]
 
 local path = require("path")
---local http = require("http")
---local url  = require("url")
---local dns  = require("dns")
+local http = require("http")
+local url  = require("url")
+local dns  = require("dns")
 
-local aux = require("dnsresolvd_h")
+local aux  = require("dnsresolvd_h")
 
 --[[
  * Performs DNS lookup action for the given hostname,
@@ -32,7 +32,44 @@ local aux = require("dnsresolvd_h")
 local dns_lookup = function(_ret, port_number, daemon_name)
     local ret = _ret
 
-    -- TODO: Implement DNS lookup stuff.
+    --[[
+     * Creating, configuring, and starting the server.
+     *
+     * @param req  The HTTP request object.
+     * @param resp The HTTP response object.
+     *
+     * @return The HTTP server object.
+    --]]
+    local daemon = http.createServer(function(req, resp)
+        -- Parsing and validating query params.
+        local query = url.parse(req.url, true).query
+
+        -- http://localhost:<port_number>/?h=<hostname>
+        --                                 |
+        local hostname = query.h -- <------+
+
+        if (hostname == nil) then
+            hostname = aux._DEF_HOSTNAME
+        end
+
+        --[[
+         * Performing DNS lookup for the given hostname
+         * and writing the response out.
+         *
+         * @param hostname The effective hostname to look up for.
+         * @param e        The Error object (if any error occurs).
+         * @param addr     The IP address retrieved.
+         * @param ver      The IP version (family) used to look up in DNS.
+        --]]
+--        dns.lookup(hostname, function(e, addr, ver)
+            print(hostname)
+
+            -- TODO: Implement DNS lookup stuff.
+--        end)
+    end):listen(port_number)
+
+    print(aux._MSG_SERVER_STARTED_1 .. port_number .. aux._NEW_LINE
+       .. aux._MSG_SERVER_STARTED_2)
 
     return ret
 end
