@@ -12,7 +12,8 @@ The following implementations are on the bench (:small_blue_diamond: &ndash; com
 
 * :small_blue_diamond: **C ([GNU libmicrohttpd](https://gnu.org/software/libmicrohttpd "GNU libmicrohttpd"))**: `content/dev/misc/dnsresolvd/c/`
 * :small_blue_diamond: **JavaScript ([Node.js](https://nodejs.org "Node.js"))**: `content/dev/misc/dnsresolvd/js/`
-* :small_orange_diamond: **Lua ([Luvit](https://luvit.io "Luvit"))**: `content/dev/misc/dnsresolvd/lua/`
+* :cd: **Lua ([Luvit](https://luvit.io "Luvit"))**: `content/dev/misc/dnsresolvd/lua/`
+* :small_orange_diamond: **Perl 5 ([Mojolicious](http://mojolicious.org "Mojolicious"))**: `content/dev/misc/dnsresolvd/perl/`
 
 ## Building
 
@@ -221,6 +222,18 @@ dnsresolvd: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically lin
 ```
 
 ### JavaScript (Node.js)
+
+#### Building/installing dependencies
+
+**TODO:** Describe the daemon's dependencies' build/install process under OpenBSD, Ubuntu Server, and Arch Linux.
+
+### Lua (Luvit)
+
+#### Building/installing dependencies
+
+**TODO:** Describe the daemon's dependencies' build/install process under OpenBSD, Ubuntu Server, and Arch Linux.
+
+### Perl 5 (Mojolicious)
 
 #### Building/installing dependencies
 
