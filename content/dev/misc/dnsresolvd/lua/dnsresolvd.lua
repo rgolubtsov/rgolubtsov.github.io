@@ -61,11 +61,53 @@ local dns_lookup = function(_ret, port_number, daemon_name)
          * @param addr     The IP address retrieved.
          * @param ver      The IP version (family) used to look up in DNS.
         --]]
---        dns.lookup(hostname, function(e, addr, ver)
-            print(hostname)
+--      dns.lookup(hostname, function(e, addr, ver)
+        --- Debug vars - Begin ------------------------------------------------
+            local e    = nil
+            local addr = "129.128.5.194"
+            local ver  = 4
+        --- Debug vars - End --------------------------------------------------
 
-            -- TODO: Implement DNS lookup stuff.
---        end)
+            local resp_buffer = "<!DOCTYPE html>"                                                                               .. aux._NEW_LINE
+.. "<html lang=\"en-US\" dir=\"ltr\">" .. aux._NEW_LINE .. "<head>"                                                             .. aux._NEW_LINE
+.. "<meta http-equiv=\"Content-Type\"    content=\"" .. aux._HDR_CONTENT_TYPE .. "\" />"                                        .. aux._NEW_LINE
+.. "<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\" />"                                                       .. aux._NEW_LINE
+.. "<!-- No caching at all for:                                                                       -->"                      .. aux._NEW_LINE
+.. "<meta http-equiv=\"Cache-Control\"   content=\"" .. aux._HDR_CACHE_CONTROL .. "\" /> <!-- HTTP/1.1 -->"                     .. aux._NEW_LINE
+.. "<meta http-equiv=\"Expires\"         content=\"" .. aux._HDR_EXPIRES .. "\"       /> <!-- Proxies  -->"                     .. aux._NEW_LINE
+.. "<meta http-equiv=\"Pragma\"          content=\"" .. aux._HDR_PRAGMA .. "\"                            /> <!-- HTTP/1.0 -->" .. aux._NEW_LINE
+.. "<meta       name=\"viewport\"        content=\"width=device-width,initial-scale=1\" />"                                     .. aux._NEW_LINE
+.. "<meta       name=\"description\"     content=\"" .. aux._DMN_DESCRIPTION .. "\" />"                                         .. aux._NEW_LINE
+.. "<title>" .. aux._DMN_NAME .. "</title>" .. aux._NEW_LINE .. "</head>"                                                       .. aux._NEW_LINE
+.. "<body id=\"dnsresolvd\">"             .. aux._NEW_LINE .. "<p>"
+.. hostname .. " ==&gt; "
+
+            if (e ~= nil) then
+                resp_buffer = resp_buffer .. aux._ERR_PREFIX
+                                          .. aux._COLON_SPACE_SEP
+                                          .. aux._ERR_COULD_NOT_LOOKUP
+            else
+                resp_buffer = resp_buffer .. addr .. " (IPv" .. ver .. ")"
+            end
+
+            resp_buffer = resp_buffer .. "</p>"    .. aux._NEW_LINE
+                                      .. "</body>" .. aux._NEW_LINE
+                                      .. "</html>" .. aux._NEW_LINE
+
+            -- Adding headers to the response.
+            resp:writeHead(aux._RSC_HTTP_200_OK, {
+                ["Content-Type"]  = aux._HDR_CONTENT_TYPE,
+                ["Cache-Control"] = aux._HDR_CACHE_CONTROL,
+                ["Expires"]       = aux._HDR_EXPIRES,
+                ["Pragma"]        = aux._HDR_PRAGMA
+            })
+
+            -- Writing the response out.
+            resp:write(resp_buffer)
+
+            -- Closing the response stream.
+            resp:finish()
+--      end)
     end):listen(port_number)
 
     print(aux._MSG_SERVER_STARTED_1 .. port_number .. aux._NEW_LINE
