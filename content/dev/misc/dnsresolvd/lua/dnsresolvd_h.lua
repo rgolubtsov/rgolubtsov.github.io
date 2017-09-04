@@ -10,8 +10,6 @@
  * (See the LICENSE file at the top of the source tree.)
 --]]
 
-local os = require("os")
-
 --[[
  * The helper module for the main daemon module.
  * It aimed at accumulating such pieces like constants, globals, etc.,
