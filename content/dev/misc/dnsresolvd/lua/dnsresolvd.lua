@@ -17,6 +17,31 @@ local path = require("path")
 
 local aux = require("dnsresolvd_h")
 
+--[[
+ * Performs DNS lookup action for the given hostname,
+ * i.e. (in this case) IP address retrieval by hostname.
+ *
+ * It first prepares and runs the server instance, then does all the rest.
+ *
+ * @param _ret        The status code passed in from the caller.
+ * @param port_number The server port number to listen on.
+ * @param daemon_name The daemon name (executable/script name).
+ *
+ * @return The status code indicating the daemon overall execution outcome.
+--]]
+local dns_lookup = function(_ret, port_number, daemon_name)
+    local ret = _ret
+
+    -- TODO: Implement DNS lookup stuff.
+
+    return ret
+end
+
+-- Helper function. Makes final buffer cleanups, closes streams, etc.
+local _cleanups_fixate = function()
+    -- TODO: Implement cleanup stuff.
+end
+
 -- Helper function. Draws a horizontal separator banner.
 local _separator_draw = function(banner_text)
     local i = banner_text:len()
@@ -35,14 +60,57 @@ local main = function(argc, argv)
     local daemon_name = path.basename(argv[1])
     local port_number = tonumber(argv[2], 10)
 
-    _separator_draw(aux._DMN_DESCRIPTION)
+--  _separator_draw(aux._DMN_DESCRIPTION)
 
     print(aux._DMN_NAME         .. aux._COMMA_SPACE_SEP .. aux._DMN_VERSION_S__
        .. aux._ONE_SPACE_STRING .. aux._DMN_VERSION      .. aux._NEW_LINE
        .. aux._DMN_DESCRIPTION                           .. aux._NEW_LINE
        .. aux._DMN_COPYRIGHT__  .. aux._ONE_SPACE_STRING .. aux._DMN_AUTHOR)
 
-    _separator_draw(aux._DMN_DESCRIPTION)
+--  _separator_draw(aux._DMN_DESCRIPTION)
+
+    -- Checking for args presence.
+    if (argc ~= 2) then
+        ret = aux._EXIT_FAILURE
+
+        print(daemon_name .. aux._ERR_MUST_BE_THE_ONLY_ARG_1
+            .. (argc - 1) .. aux._ERR_MUST_BE_THE_ONLY_ARG_2
+            .. aux._NEW_LINE)
+
+        print(aux._MSG_USAGE_TEMPLATE_1 .. daemon_name
+           .. aux._MSG_USAGE_TEMPLATE_2 .. aux._NEW_LINE)
+
+        _cleanups_fixate()
+
+        return ret
+    end
+
+    -- Checking for port correctness.
+    if ((port_number == nil) or (port_number < aux._MIN_PORT)
+                             or (port_number > aux._MAX_PORT)) then
+
+        ret = aux._EXIT_FAILURE
+
+        print(daemon_name .. aux._ERR_PORT_MUST_BE_POSITIVE_INT
+           .. aux._NEW_LINE)
+
+        print(aux._MSG_USAGE_TEMPLATE_1 .. daemon_name
+           .. aux._MSG_USAGE_TEMPLATE_2 .. aux._NEW_LINE)
+
+        _cleanups_fixate()
+
+        return ret
+    end
+
+    --[[
+     * Preparing and running the server instance,
+     * then making DNS lookup upon request
+     * for the hostname provided.
+    --]]
+    ret = dns_lookup(ret, port_number, daemon_name)
+
+    -- Making final cleanups.
+    _cleanups_fixate()
 
     return ret
 end
