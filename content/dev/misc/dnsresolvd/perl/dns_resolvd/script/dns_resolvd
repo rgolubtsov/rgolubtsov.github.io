@@ -1,11 +1,27 @@
 #!/usr/bin/env perl
+# content/dev/misc/dnsresolvd/perl/dns_resolvd/script/dns_resolvd
+# =============================================================================
+# DNS Resolver Daemon (dnsresolvd). Version 0.1
+# =============================================================================
+# A Mojolicious-boosted daemon for performing DNS lookups.
+# =============================================================================
+# Copyright (C) 2017 Radislav (Radicchio) Golubtsov
+#
+# (See the LICENSE file at the top of the source tree.)
+#
 
 use strict;
 use warnings;
+use utf8;
+use v5.10;
 
 use FindBin;
+
 BEGIN { unshift @INC, "$FindBin::Bin/../lib" }
+
 use Mojolicious::Commands;
 
-# Start command line interface for application
-Mojolicious::Commands->start_app('DnsResolvd');
+# Start command line interface for application.
+Mojolicious::Commands->start_app("DnsResolvd");
+
+# vim:set nu:et:ts=4:sw=4:
