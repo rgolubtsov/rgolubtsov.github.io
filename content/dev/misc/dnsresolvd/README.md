@@ -12,8 +12,8 @@ The following implementations are on the bench (:small_blue_diamond: &ndash; com
 
 * :small_blue_diamond: **C ([GNU libmicrohttpd](https://gnu.org/software/libmicrohttpd "GNU libmicrohttpd"))**: `content/dev/misc/dnsresolvd/c/`
 * :small_blue_diamond: **JavaScript ([Node.js](https://nodejs.org "Node.js"))**: `content/dev/misc/dnsresolvd/js/`
-* :cd: **Lua ([Luvit](https://luvit.io "Luvit"))**: `content/dev/misc/dnsresolvd/lua/`
-* :small_orange_diamond: **Perl 5 ([Mojolicious](http://mojolicious.org "Mojolicious"))**: `content/dev/misc/dnsresolvd/perl/`
+* :cd: :small_orange_diamond: **Lua ([Luvit](https://luvit.io "Luvit"))**: `content/dev/misc/dnsresolvd/lua/`
+* :cd: **Perl 5 ([Mojolicious](http://mojolicious.org "Mojolicious"))**: `content/dev/misc/dnsresolvd/perl/`
 
 ## Building
 
