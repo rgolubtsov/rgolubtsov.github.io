@@ -1,5 +1,5 @@
 #
-# content/dev/misc/dnsresolvd/perl/dns_resolvd/lib/DnsResolvd.pm
+# content/dev/misc/dnsresolvd/perl/lib/DNSResolvd.pm
 # =============================================================================
 # DNS Resolver Daemon (dnsresolvd). Version 0.1
 # =============================================================================
@@ -10,7 +10,7 @@
 # (See the LICENSE file at the top of the source tree.)
 #
 
-package DnsResolvd;
+package DNSResolvd;
 
 use strict;
 use warnings;
@@ -19,21 +19,30 @@ use v5.10;
 
 use Mojo::Base "Mojolicious";
 
-# This method will run once at server start.
-sub startup {
-    my $self = shift();
+use DNSResolvd::ControllerHelper
+    "_EXIT_SUCCESS";
 
-    # Load configuration from hash returned by "dns_resolvd.conf".
+##
+# Starts up the app.
+#
+# @param {String[]} args - The array of command-line arguments.
+#
+# @returns {Number} The exit code indicating the app overall execution status.
+#
+sub startup {
+    my  $self  = shift();
+    my ($args) = @_;
+
+    my $ret = _EXIT_SUCCESS;
+
+    # Load configuration from hash returned by "d_n_s_resolvd.conf".
     my $config = $self->plugin("Config");
 
-    # Documentation browser under "/perldoc".
-    $self->plugin("PODRenderer") if $config->{perldoc};
-
     # Router.
-    my $r = $self->routes;
+    my $router = $self->routes;
 
     # Normal route to controller.
-    $r->get("/")->to("example#welcome");
+    $router->get("/")->to("example#welcome");
 }
 
 1;

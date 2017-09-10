@@ -1,5 +1,5 @@
 #!/usr/bin/env perl
-# content/dev/misc/dnsresolvd/perl/dns_resolvd/script/dns_resolvd
+# content/dev/misc/dnsresolvd/perl/script/dnsresolvd
 # =============================================================================
 # DNS Resolver Daemon (dnsresolvd). Version 0.1
 # =============================================================================
@@ -21,7 +21,7 @@ BEGIN { unshift @INC, "$FindBin::Bin/../lib" }
 
 use Mojolicious::Commands;
 
-# Start command line interface for application.
-Mojolicious::Commands->start_app("DnsResolvd");
+# Starting up the app.
+Mojolicious::Commands->start_app("DNSResolvd");
 
 # vim:set nu:et:ts=4:sw=4:
