@@ -4,9 +4,9 @@
  *        ЦЕЛЬ: Получить должность Software Developer /
  *                          Senior Software Developer
  *
- *              Суммарный опыт работы в сфере ИТ - 16 лет
+ *              Суммарный опыт работы в сфере ИТ - 17 лет
  * ============================================================================
- *              [ 03.12.2016 ]
+ *              [ 27.09.2017 ]
  */
 
 // === РЕЗЮМЕ =================================================================
@@ -16,13 +16,13 @@
                 * IBM PowerPC
                 * Sun SPARCstation
 
-Операционные    Юниксы и их производные (FreeBSD, OpenBSD, Arch Linux, Debian
+Операционные    Юниксы и их производные (OpenBSD, FreeBSD, Arch Linux, Debian
 системы         GNU/Linux, Ubuntu, Fedora, CentOS, Red Hat Enterprise Linux,
                 Mac OS X, HP-UX, IBM AIX, Sun Solaris)
 
-Языки програм-  Python 3, Go (golang), Perl 5, Java, JavaScript, Bash Shell
-мирования       Script, ISO C/C++, Objective-C 2.0, ISO Fortran 95, FORTRAN 77,
-                Assembly (i80x86)
+Языки програм-  Python 3, Go (golang), Perl 5, Java, JavaScript (Node.js),
+мирования       Bash Shell Script, ISO C/C++, Vala/Genie, Objective-C 2.0,
+                ISO Fortran 95, Lua
 
 Технологии      * Python и связанные модули, библиотеки и фреймворки (Python
                   Standard Library, Django REST framework, ReportLab PDF
@@ -43,9 +43,9 @@
                   Struts / Struts 2, JavaServer Faces (JSF), Java Database
                   Connectivity (JDBC), JavaMail, Java Abstract Window Toolkit
                   (AWT), Java Swing, iText (Java-PDF Library), jQuery
-                  (JavaScript Library), Harpjs.com, HTML, CSS, XML, YAML, JSON,
-                  SQL, GNUstep / Cocoa API, Eclipse Standard Widget Toolkit
-                  (SWT), IBM Portal User Management Architecture (PUMA) SPI
+                  (JavaScript Library), Node.js, Harpjs.com, HTML, CSS, XML,
+                  YAML, JSON, SQL, GNUstep / Cocoa API, Eclipse Standard Widget
+                  Toolkit (SWT), IBM Portal User Management Architecture SPI
 
 Средства        * Vim / vi, Oracle JDeveloper, Eclipse Platform (Eclipse SDK),
 разработки        MyEclipse Blue Edition, IBM Rational Software Architect
@@ -56,22 +56,24 @@
                   GNU Debugger (GDB), GNUstep, sed и др. Clang (C / C++ /
                   Objective-C LLVM compiler front-end), TCC (Fabrice Bellard's
                   Tiny C Compiler)
-                * Apache Maven, Apache Ant, Netwide Assembler (NASM)
+                * Apache Maven, Apache Ant
 
 СУБД            PostgreSQL, MySQL, Oracle Database, IBM DB2 Universal Database,
                 SQLite, Redis
 
-Серверы         * Python/WSGI (uWSGI) application server
-приложений /    * Perl-based app-servers: Twiggy, Hypnotoad, Morbo
-веб-серверы     * Apache Tomcat, JBoss Application Server, IBM WebSphere
+Серверы         * Node.js, Luvit (Lua)
+приложений /    * Python/WSGI (uWSGI) application server
+веб-серверы     * Perl-based app-servers: Twiggy, Hypnotoad, Morbo
+                * Apache Tomcat, JBoss Application Server, IBM WebSphere
                   Application Server, IBM WebSphere Portal Server, Apache Pluto
                 * Apache HTTP Server, Nginx
 
 Приложения      Git, GitHub, GitLab, Bitbucket, Perforce, Subversion (SVN),
 промежуточного  Concurrent Versions System (CVS), IBM Directory Server (LDAP),
-слоя / разные   JIRA, Redmine, Trac, MediaWiki, Doxygen, Travis CI и Jenkins
-                (continuous integration services), Docker (software containers
-                infrastructure), Koding (cloud-based dev env + VM), Samba
+слоя / разные   JIRA, Redmine, Trac, Trello, MediaWiki, Doxygen, Travis CI
+                и Jenkins (continuous integration services), Docker (software
+                containers infrastructure), Koding (cloud-based dev env + VM),
+                Samba
 
 // === Языки ==================================================================
 
@@ -98,7 +100,77 @@
 
 // === Профессиональный опыт ==================================================
 
-Февр. 2016 - сент. 2016, работа по разработке ПО в ООО "Devicepros",
+Июль 2017 - авг. 2017, работа по разработке ПО в ООО "Эр-Стайл Лаб",
+                       Минск (2 месяца)
+
+Должность: инженер-программист подразделения разработки проектов
+           "интернета вещей"
+
+// ----------------------------------------------------------------------------
+
+Июль 2017 -     Проект: Splink Desktop
+авг. 2017
+                Краткое описание: Разработка системной службы Windows
+                для осуществления непрерывного захвата экрана и записи
+                видеопотока в набор видеофайлов, а затем для передачи их
+                на удаленный частный сервер.
+
+                Роль и выполняемые задачи: Исследовательская работа по поиску
+                и выбору стороннего фреймворка или библиотеки, подходящих
+                для быстрой записи видеопотока захвата экрана. Разработка
+                механизма ротирования видеофайлов.
+
+                Используемые технологии и средства разработки:
+                *    Dev OS: Microsoft Windows 7 x64, Arch Linux x86-64
+                *   Test OS: Microsoft Windows 7 x64
+                * ISO C++, Windows API (GDI), FFmpeg
+                * Visual Studio Professional 2017, Vim, GNU Make,
+                  TDM-GCC: tdm64-1 (g++)
+                * Git, GitLab, Redmine
+
+// ============================================================================
+
+Март 2017 - май 2017, работа по разработке ПО в ООО "Инватекс Софтвер",
+                      Минск (3 месяца)
+
+Должность: инженер-программист подразделения веб-разработки
+
+// ----------------------------------------------------------------------------
+
+Март 2017 -     Проект: Upmargin
+май  2017
+                URL проекта: http://dev.upmargin.com/
+
+                Краткое описание: Разработка компонентов панели управления (ПУ)
+                для веб-приложения, ориентированного на предоставление услуг
+                онлайн-бронирования отелей. Ключевым аспектом этого веб-
+                приложения является его глубокая интеграция с веб-службой
+                Google AdWords.
+
+                (Заказчиком проекта разработки ПУ является компания
+                Upmargin Ltd.)
+
+                Роль и выполняемые задачи: Разработка ряда новых веб-страниц
+                или их отдельных компонентов согласно техзадания, исправление
+                ошибок в рабочих компонентах веб-страниц ПУ. Сборка
+                и тестирование ПУ. (Разработка затрагивает как Frontend-,
+                так и Backend-слои ПУ, которые обмениваются между собой данными
+                через методы REST API. Оба слоя полностью написаны
+                на JavaScript.)
+
+                Используемые технологии и средства разработки:
+                *    Dev OS: OpenBSD/amd64, Ubuntu Server amd64
+                             (все: VM: QEMU-KVM)
+                * Server OS: Ubuntu Server amd64 (Cloud VM)
+                * JavaScript,MEAN stack (MongoDB, Express, AngularJS, Node.js),
+                             HTML, CSS
+                * Nginx
+                * Vim
+                * Git, Bitbucket, Trello
+
+// ============================================================================
+
+Февр. 2016 - сент. 2016, работа по разработке ПО в ООО "Девайспрос",
                          Минск (8 месяцев)
 
 Должность: инженер-программист подразделения разработки программного
@@ -558,7 +630,7 @@
                 Внутрикорпоративное веб-приложение, используемое менеджерами
                 компании для структурирования и распределения рекламных
                 баннеров и апплетов, отображающихся на мобильных устройствах
-                абонентов при их работе с мобильными приложениями и играми
+                абонентов при работе с мобильными приложениями и играми
                 производства компании, которые имеют статус бесплатных либо
                 условно бесплатных. Рекламный контент (баннеры и апплеты) могут
                 быть отфильтрованы, связаны между собой, удалены, активированы,
@@ -1058,7 +1130,7 @@
 
 // === Личная информация ======================================================
 
-Дата рождения   27 июня 1977 г. (39 лет)
+Дата рождения   27 июня 1977 г. (40 лет)
 
 Гражданство     Республика Беларусь
 
