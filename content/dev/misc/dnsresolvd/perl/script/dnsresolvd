@@ -21,7 +21,10 @@ BEGIN { unshift @INC, "$FindBin::Bin/../lib" }
 
 use Mojolicious::Commands;
 
-# Starting up the app.
-Mojolicious::Commands->start_app("DNSResolvd");
+## Constant: The main daemon class name.
+use constant DMN_CLASS_NAME => "DnsResolvd";
+
+# Starting up the daemon.
+Mojolicious::Commands->start_app(DMN_CLASS_NAME);
 
 # vim:set nu:et:ts=4:sw=4:

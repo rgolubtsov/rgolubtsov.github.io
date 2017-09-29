@@ -1,5 +1,5 @@
 #
-# content/dev/misc/dnsresolvd/perl/lib/DNSResolvd/ControllerHelper.pm
+# content/dev/misc/dnsresolvd/perl/lib/DnsResolvd/ControllerHelper.pm
 # =============================================================================
 # DNS Resolver Daemon (dnsresolvd). Version 0.1
 # =============================================================================
@@ -10,7 +10,7 @@
 # (See the LICENSE file at the top of the source tree.)
 #
 
-package DNSResolvd::ControllerHelper;
+package DnsResolvd::ControllerHelper;
 
 use strict;
 use warnings;
