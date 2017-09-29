@@ -20,25 +20,35 @@ use v5.10;
 use Mojo::Base "Mojolicious::Controller";
 
 use DnsResolvd::ControllerHelper
-    "_EXIT_SUCCESS";
+    "_EXIT_SUCCESS",
+# -----------------------------------------------------------------------------
+    "_DMN_NAME";
 
-## Constant: The HTTP response buffer template.
-use constant RESP_BUFFER => "dnsresolvd";
+## Constant: The HTTP response buffer.
+use constant RESP_BUFFER => "<!DOCTYPE html>"
+                          . "<html lang=\"en-US\" dir=\"ltr\">"
+                          . "<head>"
+                          . "<title>" . _DMN_NAME . "</title>"
+                          . "</head>"
+                          . "<body id=\"dnsresolvd\">"
+                          . "<p>==&gt;</p>"
+                          . "</body>"
+                          . "</html>";
 
 ##
 # Performs DNS lookup action for the given hostname,
 # i.e. (in this case) IP address retrieval by hostname.
 #
 # @return The HTTP response status code indicating the result
-#         of rendering the response buffer template.
+#         of rendering the response buffer.
 #
 sub dns_lookup {
     my $self = shift();
 
     my $ret = _EXIT_SUCCESS;
 
-    # Rendering the response buffer template.
-    $ret = $self->render(resp_buffer => RESP_BUFFER);
+    # Rendering the response buffer.
+    $ret = $self->render(inline => RESP_BUFFER);
 
     return $ret;
 }
