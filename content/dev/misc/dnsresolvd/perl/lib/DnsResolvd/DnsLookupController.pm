@@ -21,19 +21,45 @@ use Mojo::Base "Mojolicious::Controller";
 
 use DnsResolvd::ControllerHelper
     "_EXIT_SUCCESS",
+    "_COLON_SPACE_SEP",
+    "_NEW_LINE",
 # -----------------------------------------------------------------------------
-    "_DMN_NAME";
+    "_ERR_PREFIX",
+    "_ERR_COULD_NOT_LOOKUP",
+# -----------------------------------------------------------------------------
+    "_HDR_CONTENT_TYPE",
+    "_HDR_CACHE_CONTROL",
+    "_HDR_EXPIRES",
+    "_HDR_PRAGMA",
+# -----------------------------------------------------------------------------
+    "_DMN_NAME",
+    "_DMN_DESCRIPTION",
+# -----------------------------------------------------------------------------
+    "_DEF_HOSTNAME";
 
-## Constant: The HTTP response buffer.
-use constant RESP_BUFFER => "<!DOCTYPE html>"
-                          . "<html lang=\"en-US\" dir=\"ltr\">"
-                          . "<head>"
-                          . "<title>" . _DMN_NAME . "</title>"
-                          . "</head>"
-                          . "<body id=\"dnsresolvd\">"
-                          . "<p>==&gt;</p>"
-                          . "</body>"
-                          . "</html>";
+# HTTP response buffer template chunks.
+use constant RESP_TEMPLATE_1 => "<!DOCTYPE html>"                                                                              . _NEW_LINE
+. "<html lang=\"en-US\" dir=\"ltr\">" . _NEW_LINE . "<head>"                                                             . _NEW_LINE
+. "<meta http-equiv=\"Content-Type\"    content=\"" . _HDR_CONTENT_TYPE . "\" />"                                        . _NEW_LINE
+. "<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\" />"                                                     . _NEW_LINE
+. "<!-- No caching at all for:                                                                       -->"                    . _NEW_LINE
+. "<meta http-equiv=\"Cache-Control\"   content=\"" . _HDR_CACHE_CONTROL . "\" /> <!-- HTTP/1.1 -->"                     . _NEW_LINE
+. "<meta http-equiv=\"Expires\"         content=\"" . _HDR_EXPIRES . "\"       /> <!-- Proxies  -->"                     . _NEW_LINE
+. "<meta http-equiv=\"Pragma\"          content=\"" . _HDR_PRAGMA . "\"                            /> <!-- HTTP/1.0 -->" . _NEW_LINE
+. "<meta       name=\"viewport\"        content=\"width=device-width,initial-scale=1\" />"                                   . _NEW_LINE
+. "<meta       name=\"description\"     content=\"" . _DMN_DESCRIPTION . "\" />"                                         . _NEW_LINE
+. "<title>" . _DMN_NAME . "</title>" . _NEW_LINE . "</head>"                                                         . _NEW_LINE
+. "<body id=\"dnsresolvd\">"             . _NEW_LINE . "<p>";
+
+use constant RESP_TEMPLATE_2A => " ==&gt; ";
+use constant RESP_TEMPLATE_2B => " (IPv";
+use constant RESP_TEMPLATE_2C => ")";
+
+use constant RESP_TEMPLATE_3 => _ERR_PREFIX . _COLON_SPACE_SEP
+                              . _ERR_COULD_NOT_LOOKUP;
+
+use constant RESP_TEMPLATE_4 => "</p>" . _NEW_LINE . "</body>" . _NEW_LINE
+                                                   . "</html>" . _NEW_LINE;
 
 ##
 # Performs DNS lookup action for the given hostname,
@@ -47,8 +73,23 @@ sub dns_lookup {
 
     my $ret = _EXIT_SUCCESS;
 
+    my $hostname     = _DEF_HOSTNAME;
+    my $lookup_error =  0;
+    my $addr         = "129.128.5.194";
+    my $ver_str      = "4";
+
+    my $resp_buffer = RESP_TEMPLATE_1 . $hostname . RESP_TEMPLATE_2A;
+
+    if ($lookup_error) {
+        $resp_buffer .= RESP_TEMPLATE_3;
+    } else {
+        $resp_buffer .= $addr . RESP_TEMPLATE_2B . $ver_str . RESP_TEMPLATE_2C;
+    }
+
+    $resp_buffer .= RESP_TEMPLATE_4;
+
     # Rendering the response buffer.
-    $ret = $self->render(inline => RESP_BUFFER);
+    $ret = $self->render(inline => $resp_buffer);
 
     return $ret;
 }
