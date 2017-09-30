@@ -123,6 +123,18 @@ our @EXPORT_OK = (
     "_DEF_HOSTNAME",
 );
 
+# Helper function. Adds headers to the response.
+sub add_response_headers {
+    my $self = shift();
+
+    my $headers = $self->res()->headers();
+
+    $headers->content_type (          _HDR_CONTENT_TYPE );
+    $headers->cache_control(          _HDR_CACHE_CONTROL);
+    $headers->expires      (          _HDR_EXPIRES      );
+    $headers->header       (Pragma => _HDR_PRAGMA       );
+}
+
 1;
 
 # vim:set nu:et:ts=4:sw=4:

@@ -88,6 +88,9 @@ sub dns_lookup {
 
     $resp_buffer .= RESP_TEMPLATE_4;
 
+    # Adding headers to the response.
+    DnsResolvd::ControllerHelper::add_response_headers($self);
+
     # Rendering the response buffer.
     $ret = $self->render(inline => $resp_buffer);
 
