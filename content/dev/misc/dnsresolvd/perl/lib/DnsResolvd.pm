@@ -19,9 +19,6 @@ use v5.10;
 
 use Mojo::Base "Mojolicious";
 
-use DnsResolvd::ControllerHelper
-    "_EXIT_SUCCESS";
-
 ## Constant: The root route to make GET requests.
 use constant ROOT_ROUTE => "/";
 
@@ -31,18 +28,9 @@ use constant DNS_LOOKUP_CONTROLLER_ROUTE => "dns_lookup_controller";
 ## Constant: The DNS lookup action route.
 use constant DNS_LOOKUP_ACTION_ROUTE => "#dns_lookup";
 
-##
-# Starts up the daemon.
-#
-# @param args The array of command-line arguments.
-#
-# @return The status code indicating the daemon overall execution outcome.
-#
+## Starts up the daemon.
 sub startup {
-    my  $self  = shift();
-    my ($args) = @_;
-
-    my $ret = _EXIT_SUCCESS;
+    my $self = shift();
 
     # Getting the router object.
     my $router = $self->routes();
@@ -50,8 +38,6 @@ sub startup {
     # Routing to the DNS lookup controller and action route.
     $router->get(ROOT_ROUTE)->to(DNS_LOOKUP_CONTROLLER_ROUTE
                                . DNS_LOOKUP_ACTION_ROUTE);
-
-    return $ret;
 }
 
 1;
