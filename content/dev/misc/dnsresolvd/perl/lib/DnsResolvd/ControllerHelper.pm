@@ -20,8 +20,8 @@ use v5.10;
 use Exporter "import";
 
 # Helper constants.
-use constant _EXIT_FAILURE     =>    0; #    Failing exit status.
-use constant _EXIT_SUCCESS     =>    1; # Successful exit status.
+use constant _EXIT_FAILURE     =>    1; #    Failing exit status.
+use constant _EXIT_SUCCESS     =>    0; # Successful exit status.
 use constant _EMPTY_STRING     =>   "";
 use constant _ONE_SPACE_STRING =>  " ";
 use constant _COLON_SPACE_SEP  => ": ";
