@@ -22,6 +22,7 @@ use Exporter "import";
 # Helper constants.
 use constant _EXIT_FAILURE     =>    0; #    Failing exit status.
 use constant _EXIT_SUCCESS     =>    1; # Successful exit status.
+use constant _EMPTY_STRING     =>   "";
 use constant _ONE_SPACE_STRING =>  " ";
 use constant _COLON_SPACE_SEP  => ": ";
 use constant _COMMA_SPACE_SEP  => ", ";
@@ -138,6 +139,16 @@ sub add_response_headers {
     $headers->cache_control(          _HDR_CACHE_CONTROL);
     $headers->expires      (          _HDR_EXPIRES      );
     $headers->header       (Pragma => _HDR_PRAGMA       );
+}
+
+# Helper method. Draws a horizontal separator banner.
+sub _separator_draw {
+    my  $self         = shift();
+    my ($banner_text) = @_;
+
+    my $i = length($banner_text);
+
+    do { print('='); $i--; } while ($i); say(_EMPTY_STRING);
 }
 
 ## Default constructor.
