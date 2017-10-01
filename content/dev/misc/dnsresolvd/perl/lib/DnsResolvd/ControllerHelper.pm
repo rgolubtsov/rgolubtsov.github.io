@@ -123,16 +123,31 @@ our @EXPORT_OK = (
     "_DEF_HOSTNAME",
 );
 
-# Helper function. Adds headers to the response.
+##
+# Adds headers to the response.
+#
+# @param ctrl The controller instance object.
+#
 sub add_response_headers {
-    my $self = shift();
+    my  $self  = shift();
+    my ($ctrl) = @_;
 
-    my $headers = $self->res()->headers();
+    my $headers = $ctrl->res()->headers();
 
     $headers->content_type (          _HDR_CONTENT_TYPE );
     $headers->cache_control(          _HDR_CACHE_CONTROL);
     $headers->expires      (          _HDR_EXPIRES      );
     $headers->header       (Pragma => _HDR_PRAGMA       );
+}
+
+## Default constructor.
+sub new {
+    my $class = shift();
+    my $self  = [];
+
+    bless($self, $class);
+
+    return $self;
 }
 
 1;
