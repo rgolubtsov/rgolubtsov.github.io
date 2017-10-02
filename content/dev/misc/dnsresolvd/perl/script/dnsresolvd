@@ -19,6 +19,7 @@ use FindBin;
 
 BEGIN { unshift @INC, "$FindBin::Bin/../lib" }
 
+use Try::Tiny;
 use Mojolicious::Commands;
 
 use DnsResolvd::ControllerHelper
@@ -29,6 +30,10 @@ use DnsResolvd::ControllerHelper
     "_NEW_LINE",
 # -----------------------------------------------------------------------------
     "_ERR_PORT_MUST_BE_POSITIVE_INT",
+    "_ERR_CANNOT_START_SERVER",
+    "_ERR_SRV_UNKNOWN_REASON",
+    "_ERR_SRV_PORT_IS_IN_USE",
+    "_ERR_ADDR_ALREADY_IN_USE",
 # -----------------------------------------------------------------------------
     "_ERR_MUST_BE_THE_ONLY_ARG_1",
     "_ERR_MUST_BE_THE_ONLY_ARG_2",
@@ -38,6 +43,9 @@ use DnsResolvd::ControllerHelper
 # -----------------------------------------------------------------------------
     "_MIN_PORT",
     "_MAX_PORT",
+# -----------------------------------------------------------------------------
+    "_MSG_SERVER_STARTED_1",
+    "_MSG_SERVER_STARTED_2",
 # -----------------------------------------------------------------------------
     "_DMN_NAME",
     "_DMN_DESCRIPTION",
@@ -94,10 +102,29 @@ if (($port_number < _MIN_PORT) || ($port_number > _MAX_PORT)) {
     exit($ret);
 }
 
-# Starting up the daemon.
-Mojolicious::Commands->start_app(DMN_CLASS_NAME, "daemon",
-                                           "-l", "http://*:" . $port_number);
-#                                          "-l", "http://*:" . $port_number,
-#                                          "-m", "production");
+# Trying to start up the daemon.
+try {
+    say(_MSG_SERVER_STARTED_1 . $port_number . _NEW_LINE
+      . _MSG_SERVER_STARTED_2);
+
+    Mojolicious::Commands->start_app(DMN_CLASS_NAME, "daemon",
+                                               "-l", "http://*:" . $port_number);
+    #                                          "-l", "http://*:" . $port_number,
+    #                                          "-m", "production");
+} catch {
+    $ret = _EXIT_FAILURE;
+
+    if ($_ =~ _ERR_ADDR_ALREADY_IN_USE) {
+        say($daemon_name . _ERR_CANNOT_START_SERVER
+                         . _ERR_SRV_PORT_IS_IN_USE
+                         . _NEW_LINE);
+    } else {
+        say($daemon_name . _ERR_CANNOT_START_SERVER
+                         . _ERR_SRV_UNKNOWN_REASON
+                         . _NEW_LINE);
+    }
+};
+
+exit($ret);
 
 # vim:set nu:et:ts=4:sw=4:

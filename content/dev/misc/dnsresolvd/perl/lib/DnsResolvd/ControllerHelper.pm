@@ -39,7 +39,8 @@ use constant _ERR_SRV_UNKNOWN_REASON        => "for an unknown reason. "
 use constant _ERR_SRV_PORT_IS_IN_USE        => "due to the port requested "
                                              . "is in use. Exiting...";
 use constant _ERR_COULD_NOT_LOOKUP          => "Could not lookup hostname.";
-use constant _ERR_EADDRINUSE                => "EADDRINUSE";
+use constant _ERR_ADDR_ALREADY_IN_USE       =>
+                                          qr/^.*Address\ already\ in\ use.*$/;
 
 # Print this error message when there are no any args passed.
 use constant _ERR_MUST_BE_THE_ONLY_ARG_1 => ": There must be exactly one arg "
@@ -94,7 +95,7 @@ our @EXPORT_OK = (
     "_ERR_SRV_UNKNOWN_REASON",
     "_ERR_SRV_PORT_IS_IN_USE",
     "_ERR_COULD_NOT_LOOKUP",
-    "_ERR_EADDRINUSE",
+    "_ERR_ADDR_ALREADY_IN_USE",
 # -----------------------------------------------------------------------------
     "_ERR_MUST_BE_THE_ONLY_ARG_1",
     "_ERR_MUST_BE_THE_ONLY_ARG_2",
