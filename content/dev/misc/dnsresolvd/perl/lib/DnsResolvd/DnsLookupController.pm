@@ -18,6 +18,8 @@ use utf8;
 use v5.10;
 
 use Mojo::Base "Mojolicious::Controller";
+use Net::DNS::Native;
+use Socket;
 
 use DnsResolvd::ControllerHelper
     "_EXIT_SUCCESS",
@@ -73,10 +75,6 @@ sub dns_lookup {
 
     my $ret = _EXIT_SUCCESS;
 
-    my $lookup_error =  0;
-    my $addr         = "129.128.5.194";
-    my $ver_str      = "4";
-
     # Parsing and validating query params.
     my $query = $self->req()->query_params();
 
@@ -91,12 +89,28 @@ sub dns_lookup {
         $hostname = _DEF_HOSTNAME;
     }
 
+    # Performing DNS lookup for the given hostname
+    # and writing the response out.
+    my $dns = Net::DNS::Native->new();
+
+    my $hent = $dns->gethostbyname($hostname);
+
+    my $addr;
+    my $ver = "4";
+
+    # FIXME: Bad arg length for Socket::inet_ntoa, length is 15, should be 4.
+    if (!$hent) {
+        $addr = _ERR_PREFIX;
+    } else {
+        $addr = inet_ntoa($hent);
+    }
+
     my $resp_buffer = RESP_TEMPLATE_1 . $hostname . RESP_TEMPLATE_2A;
 
-    if ($lookup_error) {
+    if (0) {
         $resp_buffer .= RESP_TEMPLATE_3;
     } else {
-        $resp_buffer .= $addr . RESP_TEMPLATE_2B . $ver_str . RESP_TEMPLATE_2C;
+        $resp_buffer .= $addr . RESP_TEMPLATE_2B . $ver . RESP_TEMPLATE_2C;
     }
 
     $resp_buffer .= RESP_TEMPLATE_4;
