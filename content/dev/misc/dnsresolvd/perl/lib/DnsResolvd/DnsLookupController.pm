@@ -73,10 +73,23 @@ sub dns_lookup {
 
     my $ret = _EXIT_SUCCESS;
 
-    my $hostname     = _DEF_HOSTNAME;
     my $lookup_error =  0;
     my $addr         = "129.128.5.194";
     my $ver_str      = "4";
+
+    # Parsing and validating query params.
+    my $query = $self->req()->query_params();
+
+    # http://localhost:<port_number>/?h=<hostname>
+    #                                 |
+    #                             +---+
+    #                             |
+    #                             V
+    my $hostname = $query->param("h");
+
+    if (!$hostname) {
+        $hostname = _DEF_HOSTNAME;
+    }
 
     my $resp_buffer = RESP_TEMPLATE_1 . $hostname . RESP_TEMPLATE_2A;
 
