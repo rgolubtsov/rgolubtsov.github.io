@@ -21,6 +21,8 @@ use Mojo::Base "Mojolicious::Controller";
 use Net::DNS::Native;
 use Socket;
 
+use Data::Dumper;
+
 use DnsResolvd::ControllerHelper
     "_EXIT_SUCCESS",
     "_COLON_SPACE_SEP",
@@ -93,16 +95,27 @@ sub dns_lookup {
     # and writing the response out.
     my $dns = Net::DNS::Native->new();
 
-    my $hent = $dns->gethostbyname($hostname);
+    my $hostent = $dns->gethostbyname($hostname);
+
+    # FIXME: Play with sleep to get the $hostent object reliably
+    #        in a reasonable timeframe.
+    sleep(1);
 
     my $addr;
     my $ver = "4";
 
-    # FIXME: Bad arg length for Socket::inet_ntoa, length is 15, should be 4.
-    if (!$hent) {
+    print(Dumper($hostent));
+
+    if (!$hostent) {
         $addr = _ERR_PREFIX;
     } else {
-        $addr = inet_ntoa($hent);
+        $addr = $dns->get_result($hostent);
+
+        if (!$addr) {
+            $addr = _ERR_PREFIX;
+        } else {
+            $addr = inet_ntoa($addr); # <== From the Socket lib.
+        }
     }
 
     my $resp_buffer = RESP_TEMPLATE_1 . $hostname . RESP_TEMPLATE_2A;
