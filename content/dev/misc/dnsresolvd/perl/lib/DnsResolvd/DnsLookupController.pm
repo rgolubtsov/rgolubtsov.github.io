@@ -99,6 +99,7 @@ sub dns_lookup {
 
     # FIXME: Play with sleep to get the $hostent object reliably
     #        in a reasonable timeframe.
+    #        Or utilize the select() system call (preferably).
     sleep(1);
 
     my $addr;
