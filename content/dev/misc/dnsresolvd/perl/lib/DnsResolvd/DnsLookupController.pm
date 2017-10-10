@@ -19,6 +19,7 @@ use v5.10;
 
 use Mojo::Base "Mojolicious::Controller";
 use Net::DNS::Native;
+use IO::Select;
 use Socket;
 
 use Data::Dumper;
@@ -95,22 +96,23 @@ sub dns_lookup {
     # and writing the response out.
     my $dns = Net::DNS::Native->new();
 
-    my $hostent = $dns->gethostbyname($hostname);
+    my $sock = $dns->gethostbyname($hostname);
 
-    # FIXME: Play with sleep to get the $hostent object reliably
-    #        in a reasonable timeframe.
-    #        Or utilize the select() system call (preferably).
-    sleep(1);
+    # Instantiating the select() system call wrapper class.
+    my $sel = IO::Select->new($sock);
+
+    # Waiting until resolving done.
+    $sel->can_read();
+
+    print(Dumper($sel));
 
     my $addr;
     my $ver = "4";
 
-    print(Dumper($hostent));
-
-    if (!$hostent) {
+    if (!$sock) {
         $addr = _ERR_PREFIX;
     } else {
-        $addr = $dns->get_result($hostent);
+        $addr = $dns->get_result($sock);
 
         if (!$addr) {
             $addr = _ERR_PREFIX;
