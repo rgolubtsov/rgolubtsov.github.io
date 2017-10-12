@@ -22,7 +22,7 @@ use Net::DNS::Native;
 use IO::Select;
 use Socket;
 
-use Data::Dumper;
+#use Data::Dumper;
 
 use DnsResolvd::ControllerHelper
     "_EXIT_SUCCESS",
@@ -104,7 +104,7 @@ sub dns_lookup {
     # Waiting until resolving done.
     $sel->can_read();
 
-    print(Dumper($sel));
+#   print(Dumper($sel));
 
     my $addr;
     my $ver = "4";
