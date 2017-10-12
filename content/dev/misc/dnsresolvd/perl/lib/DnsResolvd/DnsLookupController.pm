@@ -123,7 +123,7 @@ sub dns_lookup {
 
     my $resp_buffer = RESP_TEMPLATE_1 . $hostname . RESP_TEMPLATE_2A;
 
-    if (0) {
+    if ($addr eq _ERR_PREFIX) {
         $resp_buffer .= RESP_TEMPLATE_3;
     } else {
         $resp_buffer .= $addr . RESP_TEMPLATE_2B . $ver . RESP_TEMPLATE_2C;
