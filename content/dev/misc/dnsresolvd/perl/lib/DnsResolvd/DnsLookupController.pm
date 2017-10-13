@@ -96,7 +96,7 @@ sub dns_lookup {
     # and writing the response out.
     my $dns = Net::DNS::Native->new();
 
-    my $sock = $dns->gethostbyname($hostname);
+    my $sock = $dns->getaddrinfo($hostname);
 
     # Instantiating the select() system call wrapper class.
     my $sel = IO::Select->new($sock);
@@ -107,19 +107,32 @@ sub dns_lookup {
 #   print(Dumper($sel));
 
     my $addr;
-    my $ver = "4";
+    my $ver;
 
     if (!$sock) {
         $addr = _ERR_PREFIX;
     } else {
-        $addr = $dns->get_result($sock);
+        my ($err, @res) = $dns->get_result($sock);
 
-        if (!$addr) {
+        if ($err) {
             $addr = _ERR_PREFIX;
         } else {
-            $addr = inet_ntoa($addr); # <== From the Socket lib.
-        }
-    }
+            $ver  = $res[0]->{family};
+            $addr = $res[0]->{ addr };
+
+            # If the host doesn't have the A record (IPv4),
+            # trying to find its AAAA record (IPv6).
+            if ($ver == AF_INET) {
+                $ver  = 4;
+                $addr = Socket::inet_ntop(AF_INET,
+                                         (unpack_sockaddr_in ($addr))[1]);
+            } else {
+                $ver  = 6;
+                $addr = Socket::inet_ntop(AF_INET6,
+                                         (unpack_sockaddr_in6($addr))[1]);
+            }   #                                   ^
+        }       #                                   |
+    }           # From the Socket lib. -------------+
 
     my $resp_buffer = RESP_TEMPLATE_1 . $hostname . RESP_TEMPLATE_2A;
 
