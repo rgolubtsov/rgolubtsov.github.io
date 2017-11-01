@@ -1,10 +1,11 @@
 # DNS Resolver Daemon (dnsresolvd)
 
-**Performs DNS lookups for the given hostname passed in an HTTP request**
+**A daemon that performs DNS lookups for the given hostname passed in an HTTP request,
+<br />with the focus on its implementation using various programming languages**
 
 ---
 
-**TODO:** Describe what this daemon is for, and emphasize its necessity to be tailored as a multilingual project (*as you usually love to do that as I see it*).
+**TODO:** Describe what this daemon is for, and emphasize its necessity to be tailored as a multilingual package.
 
 ---
 
@@ -12,7 +13,7 @@ The following implementations are on the bench (:small_blue_diamond: &ndash; com
 
 * :small_blue_diamond: **C ([GNU libmicrohttpd](https://gnu.org/software/libmicrohttpd "GNU libmicrohttpd"))**: `content/dev/misc/dnsresolvd/c/`
 * :small_blue_diamond: **JavaScript ([Node.js](https://nodejs.org "Node.js"))**: `content/dev/misc/dnsresolvd/js/`
-* :cd: :small_orange_diamond: **Lua ([Luvit](https://luvit.io "Luvit"))**: `content/dev/misc/dnsresolvd/lua/`
+* :small_blue_diamond: **Lua ([Luvit](https://luvit.io "Luvit"))**: `content/dev/misc/dnsresolvd/lua/`
 * :small_blue_diamond: **Perl 5 ([Mojolicious](http://mojolicious.org "Mojolicious"))**: `content/dev/misc/dnsresolvd/perl/`
 
 ## Building
