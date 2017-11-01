@@ -1,9 +1,11 @@
 #!/usr/bin/env perl
-# content/dev/misc/dnsresolvd/perl/script/dnsresolvd
+# content/dev/misc/dnsresolvd/perl/dnsresolvd
 # =============================================================================
 # DNS Resolver Daemon (dnsresolvd). Version 0.1
 # =============================================================================
-# A Mojolicious-boosted daemon for performing DNS lookups.
+# A daemon that performs DNS lookups for the given hostname
+# passed in an HTTP request, with the focus on its implementation
+# using various programming languages. (Mojolicious-boosted impl.)
 # =============================================================================
 # Copyright (C) 2017 Radislav (Radicchio) Golubtsov
 #
@@ -17,8 +19,9 @@ use v5.10;
 
 use FindBin;
 
-BEGIN { unshift @INC, "$FindBin::Bin/../lib" }
+BEGIN { unshift @INC, "$FindBin::Bin/lib" }
 
+use Scalar::Util "looks_like_number";
 use Try::Tiny;
 use Mojolicious::Commands;
 
@@ -57,6 +60,13 @@ use DnsResolvd::ControllerHelper
 ## Constant: The main daemon class name.
 use constant DMN_CLASS_NAME => "DnsResolvd";
 
+# Constants: Server start parameters.
+use constant DMN_DAEMON_CMD  => "daemon";
+use constant DMN_LISTEN_OPT  => "-l";
+use constant DMN_OP_MOD_OPT  => "-m";
+use constant DMN_LISTEN_HTTP => "http://*:";
+use constant DMN_OP_MOD_PROD => "production";
+
 my $ret = _EXIT_SUCCESS;
 
 my $argc        = @ARGV;
@@ -89,6 +99,11 @@ if ($argc != 1) {
     exit($ret);
 }
 
+# Validating the port number and discarding any rubbish it may contain.
+if (!looks_like_number($port_number)) {
+    $port_number = 0;
+}
+
 # Checking for port correctness.
 if (($port_number < _MIN_PORT) || ($port_number > _MAX_PORT)) {
     $ret = _EXIT_FAILURE;
@@ -107,10 +122,9 @@ try {
     say(_MSG_SERVER_STARTED_1 . $port_number . _NEW_LINE
       . _MSG_SERVER_STARTED_2);
 
-    Mojolicious::Commands->start_app(DMN_CLASS_NAME, "daemon",
-                                               "-l", "http://*:" . $port_number);
-    #                                          "-l", "http://*:" . $port_number,
-    #                                          "-m", "production");
+    Mojolicious::Commands->start_app(DMN_CLASS_NAME, DMN_DAEMON_CMD,
+                     DMN_LISTEN_OPT, DMN_LISTEN_HTTP . $port_number,
+                     DMN_OP_MOD_OPT, DMN_OP_MOD_PROD);
 } catch {
     $ret = _EXIT_FAILURE;
 
