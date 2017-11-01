@@ -3,7 +3,9 @@
  * ============================================================================
  * DNS Resolver Daemon (dnsresolvd). Version 0.1
  * ============================================================================
- * A Luvit (Lua)-boosted daemon for performing DNS lookups.
+ * A daemon that performs DNS lookups for the given hostname
+ * passed in an HTTP request, with the focus on its implementation
+ * using various programming languages. (Luvit-boosted impl.)
  * ============================================================================
  * Copyright (C) 2017 Radislav (Radicchio) Golubtsov
  *
@@ -15,7 +17,22 @@ local http = require("http")
 local url  = require("url")
 local dns  = require("dns")
 
-local aux  = require("dnsresolvd_h")
+--local pp = require("pretty-print")
+
+local aux  = require("dnsresolvh")
+
+-- Helper function. Draws a horizontal separator banner.
+local _separator_draw = function(banner_text)
+    local i = banner_text:len()
+    local s = aux._EMPTY_STRING
+
+    repeat s = s .. '=' i = i - 1 until (i == 0) print(s)
+end
+
+-- Helper function. Makes final buffer cleanups, closes streams, etc.
+local _cleanups_fixate = function()
+    -- TODO: Implement cleanup stuff.
+end
 
 --[[
  * Performs DNS lookup action for the given hostname,
@@ -35,12 +52,16 @@ local dns_lookup = function(_ret, port_number, daemon_name)
     --[[
      * Creating, configuring, and starting the server.
      *
-     * @param req  The HTTP request object.
+     * @param req  The HTTP request  object.
      * @param resp The HTTP response object.
      *
      * @return The HTTP server object.
     --]]
     local daemon = http.createServer(function(req, resp)
+--      _separator_draw(aux._DMN_DESCRIPTION)
+--      pp.prettyPrint(req)
+--      _separator_draw(aux._DMN_DESCRIPTION)
+
         -- Parsing and validating query params.
         local query = url.parse(req.url, true).query
 
@@ -53,21 +74,13 @@ local dns_lookup = function(_ret, port_number, daemon_name)
         end
 
         --[[
-         * Performing DNS lookup for the given hostname
-         * and writing the response out.
+         * Writes the response with the DNS record retrieved.
          *
          * @param hostname The effective hostname to look up for.
          * @param e        The Error object (if any error occurs).
-         * @param addr     The IP address retrieved.
-         * @param ver      The IP version (family) used to look up in DNS.
+         * @param rec      The DNS record retrieved.
         --]]
---      dns.lookup(hostname, function(e, addr, ver)
-        --- Debug vars - Begin ------------------------------------------------
-            local e    = nil
-            local addr = "129.128.5.194"
-            local ver  = 4
-        --- Debug vars - End --------------------------------------------------
-
+        local resp_write = function(hostname, e, rec)
             local resp_buffer = "<!DOCTYPE html>"                                                                               .. aux._NEW_LINE
 .. "<html lang=\"en-US\" dir=\"ltr\">" .. aux._NEW_LINE .. "<head>"                                                             .. aux._NEW_LINE
 .. "<meta http-equiv=\"Content-Type\"    content=\"" .. aux._HDR_CONTENT_TYPE .. "\" />"                                        .. aux._NEW_LINE
@@ -87,7 +100,24 @@ local dns_lookup = function(_ret, port_number, daemon_name)
                                           .. aux._COLON_SPACE_SEP
                                           .. aux._ERR_COULD_NOT_LOOKUP
             else
-                resp_buffer = resp_buffer .. addr .. " (IPv" .. ver .. ")"
+--              pp.prettyPrint(rec)
+
+                if (#rec == 0) then
+                    ret = aux._EXIT_FAILURE
+
+                    return ret
+                else
+                    local addr = rec[1].address --> The IP address for host.
+                    local ver  = rec[1].type    --> The IP version (family).
+
+                        if (ver == dns.TYPE_A   ) then
+                        ver = 4
+                    elseif (ver == dns.TYPE_AAAA) then
+                        ver = 6
+                    end
+
+                    resp_buffer = resp_buffer .. addr .. " (IPv" .. ver .. ")"
+                end
             end
 
             resp_buffer = resp_buffer .. "</p>"    .. aux._NEW_LINE
@@ -107,14 +137,33 @@ local dns_lookup = function(_ret, port_number, daemon_name)
 
             -- Closing the response stream.
             resp:finish()
---      end)
+        end
+
+        --[[
+         * Performing DNS lookup for the given hostname
+         * and writing the response out.
+         *
+         * Since Luvit actually doesn't have the dns.lookup() method,
+         * it needs to perform a so-called two-stage lookup operation:
+         *
+         *     If the host doesn't have the A record (IPv4),
+         *     trying to find its AAAA record (IPv6).
+        --]]
+        dns.resolve4        (hostname, function(e, rec)
+            ret = resp_write(hostname,          e, rec)
+
+            if (ret == aux._EXIT_FAILURE) then
+                dns.resolve6  (hostname, function(e, rec)
+                    resp_write(hostname,          e, rec)
+                end)
+            end
+        end)
     end):listen(port_number)
 
-    -- FIXME: Ported one-to-one from Node.js impl. Not working.
     daemon:on(aux._EVE_ERROR, function(e)
         ret = aux._EXIT_FAILURE
 
-        if (e.code == aux._ERR_EADDRINUSE) then
+        if (e == aux._ERR_EADDRINUSE) then
             print(daemon_name .. aux._ERR_CANNOT_START_SERVER
                               .. aux._ERR_SRV_PORT_IS_IN_USE
                               .. aux._NEW_LINE)
@@ -129,32 +178,20 @@ local dns_lookup = function(_ret, port_number, daemon_name)
         return ret
     end)
 
-    -- FIXME: Ported one-to-one from Node.js impl. Not working.
     daemon:on(aux._EVE_LISTENING, function(e)
         print(aux._MSG_SERVER_STARTED_1 .. port_number .. aux._NEW_LINE
            .. aux._MSG_SERVER_STARTED_2)
     end)
 
-    print(aux._MSG_SERVER_STARTED_1 .. port_number .. aux._NEW_LINE
-       .. aux._MSG_SERVER_STARTED_2)
+--  pp.prettyPrint(daemon)
+
+    -- FIXME: Investigate why do we need emitting events explicitly?
+    --        This does not affect error events anyway, perplexedly.
+    daemon:emit(aux._EVE_LISTENING                 )
+--  daemon:emit(aux._EVE_ERROR, aux._ERR_EADDRINUSE)
+--  daemon:emit(aux._EVE_ERROR                     )
 
     return ret
-end
-
--- Helper function. Makes final buffer cleanups, closes streams, etc.
-local _cleanups_fixate = function()
-    -- TODO: Implement cleanup stuff.
-end
-
--- Helper function. Draws a horizontal separator banner.
-local _separator_draw = function(banner_text)
-    local i = banner_text:len()
-
-    while (i > 0) do
-        process.stdout:write('='); i = i - 1
-    end
-
-    print()
 end
 
 -- The daemon entry point.
@@ -164,14 +201,14 @@ local main = function(argc, argv)
     local daemon_name = path.basename(argv[1])
     local port_number = tonumber(argv[2], 10)
 
---  _separator_draw(aux._DMN_DESCRIPTION)
+    _separator_draw(aux._DMN_DESCRIPTION)
 
     print(aux._DMN_NAME         .. aux._COMMA_SPACE_SEP .. aux._DMN_VERSION_S__
        .. aux._ONE_SPACE_STRING .. aux._DMN_VERSION      .. aux._NEW_LINE
        .. aux._DMN_DESCRIPTION                           .. aux._NEW_LINE
        .. aux._DMN_COPYRIGHT__  .. aux._ONE_SPACE_STRING .. aux._DMN_AUTHOR)
 
---  _separator_draw(aux._DMN_DESCRIPTION)
+    _separator_draw(aux._DMN_DESCRIPTION)
 
     -- Checking for args presence.
     if (argc ~= 2) then
