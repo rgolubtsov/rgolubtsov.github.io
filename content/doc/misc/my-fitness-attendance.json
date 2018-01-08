@@ -1,0 +1,519 @@
+{
+    "portions"        : [{
+        "pid"         : 1,
+        "year"        : "2016",
+        "month"       : "June",
+        "name"        : "National Library of Belarus (GYM)",
+        "url"         : "",
+        "voucher"     : false,
+        "sessions"    : [{
+            "sid"     : 1,
+            "day"     : 14,
+            "weekday" : "Tu"
+        }]
+    },
+    {
+        "pid"         : 2,
+        "year"        : "2016",
+        "month"       : "June",
+        "name"        : "N-FITNESS",
+        "url"         : "http://n-fitness.by",
+        "voucher"     : false,
+        "sessions"    : [{
+            "sid"     : 1,
+            "day"     : 15,
+            "weekday" : "We"
+        }]
+    },
+    {
+        "pid"         : 3,
+        "year"        : "2016",
+        "month"       : "June",
+        "name"        : "Platforma",
+        "url"         : "http://platforma-gym.by",
+        "voucher"     : false,
+        "sessions"    : [{
+            "sid"     : 1,
+            "day"     : 16,
+            "weekday" : "Th"
+        }]
+    },
+    {
+        "pid"         : 4,
+        "year"        : "2016",
+        "month"       : "June",
+        "name"        : "Lifestyle Fitness & GYM",
+        "url"         : "http://fitness-club.by",
+        "voucher"     : false,
+        "sessions"    : [{
+            "sid"     : 1,
+            "day"     : 18,
+            "weekday" : "Sa"
+        }]
+    },
+    {
+        "pid"         : 5,
+        "year"        : "2016",
+        "month"       : "June",
+        "name"        : "Global Fitness",
+        "url"         : "http://fitness-gym.by",
+        "voucher"     : false,
+        "sessions"    : [{
+            "sid"     : 1,
+            "day"     : 19,
+            "weekday" : "Su"
+        }]
+    },
+    {
+        "pid"         : 6,
+        "year"        : "2016",
+        "month"       : "June",
+        "name"        : "Platforma",
+        "url"         : "http://platforma-gym.by",
+        "voucher"     : false,
+        "sessions"    : [{
+            "sid"     : 1,
+            "day"     : 21,
+            "weekday" : "Tu"
+        }]
+    },
+    {
+        "pid"         : 7,
+        "year"        : "2016",
+        "month"       : "June",
+        "name"        : "Platforma",
+        "url"         : "http://platforma-gym.by",
+        "voucher"     : true,
+        "sessions"    : [{
+            "sid"     : 1,
+            "day"     : 22,
+            "weekday" : "We"
+        },
+        {
+            "sid"     : 2,
+            "day"     : 23,
+            "weekday" : "Th"
+        }]
+    },
+    {
+        "pid"         : 8,
+        "year"        : "2016",
+        "month"       : "June",
+        "name"        : "Lifestyle Fitness & GYM",
+        "url"         : "http://fitness-club.by",
+        "voucher"     : false,
+        "sessions"    : [{
+            "sid"     : 1,
+            "day"     : 25,
+            "weekday" : "Sa"
+        },
+        {
+            "sid"     : 2,
+            "day"     : 26,
+            "weekday" : "Su"
+        }]
+    },
+    {
+        "pid"         : 9,
+        "year"        : "2016",
+        "month"       : "June",
+        "name"        : "Platforma",
+        "url"         : "http://platforma-gym.by",
+        "voucher"     : true,
+        "sessions"    : [{
+            "sid"     : 1,
+            "day"     : 28,
+            "weekday" : "Tu"
+        },
+        {
+            "sid"     : 2,
+            "day"     : 29,
+            "weekday" : "We"
+        },
+        {
+            "sid"     : 3,
+            "day"     : 30,
+            "weekday" : "Th"
+        }]
+    },
+    {
+        "pid"         : 10,
+        "year"        : "2016",
+        "month"       : "July",
+        "name"        : "Platforma",
+        "url"         : "http://platforma-gym.by",
+        "voucher"     : true,
+        "sessions"    : [{
+            "sid"     : 1,
+            "day"     : 4,
+            "weekday" : "Mo"
+        },
+        {
+            "sid"     : 2,
+            "day"     : 6,
+            "weekday" : "We"
+        },
+        {
+            "sid"     : 3,
+            "day"     : 8,
+            "weekday" : "Fr"
+        }]
+    },
+    {
+        "pid"         : 11,
+        "year"        : "2016",
+        "month"       : "July",
+        "name"        : "Lifestyle Fitness & GYM",
+        "url"         : "http://fitness-club.by",
+        "voucher"     : false,
+        "sessions"    : [{
+            "sid"     : 1,
+            "day"     : 9,
+            "weekday" : "Sa"
+        }]
+    },
+    {
+        "pid"         : 12,
+        "year"        : "2016",
+        "month"       : "July",
+        "name"        : "Platforma",
+        "url"         : "http://platforma-gym.by",
+        "voucher"     : true,
+        "sessions"    : [{
+            "sid"     : 1,
+            "day"     : 10,
+            "weekday" : "Su"
+        },
+        {
+            "sid"     : 2,
+            "day"     : 12,
+            "weekday" : "Tu"
+        },
+        {
+            "sid"     : 3,
+            "day"     : 15,
+            "weekday" : "Fr"
+        }]
+    },
+    {
+        "pid"         : 13,
+        "year"        : "2016",
+        "month"       : "July",
+        "name"        : "Lifestyle Fitness & GYM",
+        "url"         : "http://fitness-club.by",
+        "voucher"     : false,
+        "sessions"    : [{
+            "sid"     : 1,
+            "day"     : 16,
+            "weekday" : "Sa"
+        }]
+    },
+    {
+        "pid"         : 14,
+        "year"        : "2016",
+        "month"       : "July",
+        "name"        : "Platforma",
+        "url"         : "http://platforma-gym.by",
+        "voucher"     : true,
+        "sessions"    : [{
+            "sid"     : 1,
+            "day"     : 18,
+            "weekday" : "Mo"
+        },
+        {
+            "sid"     : 2,
+            "day"     : 22,
+            "weekday" : "Fr"
+        }]
+    },
+    {
+        "pid"         : 15,
+        "year"        : "2016",
+        "month"       : "July",
+        "name"        : "Platforma",
+        "url"         : "http://platforma-gym.by",
+        "voucher"     : true,
+        "sessions"    : [{
+            "sid"     : 1,
+            "day"     : 26,
+            "weekday" : "Tu"
+        },
+        {
+            "sid"     : 2,
+            "day"     : 28,
+            "weekday" : "Th"
+        }]
+    },
+    {
+        "pid"         : 16,
+        "year"        : "2016",
+        "month"       : "August",
+        "name"        : "Platforma",
+        "url"         : "http://platforma-gym.by",
+        "voucher"     : true,
+        "sessions"    : [{
+            "sid"     : 1,
+            "day"     : 2,
+            "weekday" : "Tu"
+        },
+        {
+            "sid"     : 2,
+            "day"     : 4,
+            "weekday" : "Th"
+        }]
+    },
+    {
+        "pid"         : 17,
+        "year"        : "2016",
+        "month"       : "August",
+        "name"        : "Lifestyle Fitness & GYM",
+        "url"         : "http://fitness-club.by",
+        "voucher"     : false,
+        "sessions"    : [{
+            "sid"     : 1,
+            "day"     : 6,
+            "weekday" : "Sa"
+        },
+        {
+            "sid"     : 2,
+            "day"     : 7,
+            "weekday" : "Su"
+        }]
+    },
+    {
+        "pid"         : 18,
+        "year"        : "2016",
+        "month"       : "August",
+        "name"        : "Platforma",
+        "url"         : "http://platforma-gym.by",
+        "voucher"     : true,
+        "sessions"    : [{
+            "sid"     : 1,
+            "day"     : 8,
+            "weekday" : "Mo"
+        },
+        {
+            "sid"     : 2,
+            "day"     : 10,
+            "weekday" : "We"
+        },
+        {
+            "sid"     : 3,
+            "day"     : 11,
+            "weekday" : "Th"
+        }]
+    },
+    {
+        "pid"         : 19,
+        "year"        : "2016",
+        "month"       : "August",
+        "name"        : "Lifestyle Fitness & GYM",
+        "url"         : "http://fitness-club.by",
+        "voucher"     : false,
+        "sessions"    : [{
+            "sid"     : 1,
+            "day"     : 13,
+            "weekday" : "Sa"
+        },
+        {
+            "sid"     : 2,
+            "day"     : 14,
+            "weekday" : "Su"
+        },
+        {
+            "sid"     : 3,
+            "day"     : 20,
+            "weekday" : "Sa"
+        },
+        {
+            "sid"     : 4,
+            "day"     : 27,
+            "weekday" : "Sa"
+        },
+        {
+            "sid"     : 5,
+            "day"     : 28,
+            "weekday" : "Su"
+        }]
+    },
+    {
+        "pid"         : 20,
+        "year"        : "2016",
+        "month"       : "August",
+        "name"        : "Platforma",
+        "url"         : "http://platforma-gym.by",
+        "voucher"     : true,
+        "sessions"    : [{
+            "sid"     : 1,
+            "day"     : 31,
+            "weekday" : "We"
+        }]
+    },
+    {
+        "pid"         : 21,
+        "year"        : "2016",
+        "month"       : "September",
+        "name"        : "Platforma",
+        "url"         : "http://platforma-gym.by",
+        "voucher"     : true,
+        "sessions"    : [{
+            "sid"     : 1,
+            "day"     : 7,
+            "weekday" : "We"
+        },
+        {
+            "sid"     : 2,
+            "day"     : 8,
+            "weekday" : "Th"
+        }]
+    },
+    {
+        "pid"         : 22,
+        "year"        : "2016",
+        "month"       : "September",
+        "name"        : "Lifestyle Fitness & GYM",
+        "url"         : "http://fitness-club.by",
+        "voucher"     : false,
+        "sessions"    : [{
+            "sid"     : 1,
+            "day"     : 10,
+            "weekday" : "Sa"
+        },
+        {
+            "sid"     : 2,
+            "day"     : 11,
+            "weekday" : "Su"
+        }]
+    },
+    {
+        "pid"         : 23,
+        "year"        : "2016",
+        "month"       : "September",
+        "name"        : "Platforma",
+        "url"         : "http://platforma-gym.by",
+        "voucher"     : true,
+        "sessions"    : [{
+            "sid"     : 1,
+            "day"     : 13,
+            "weekday" : "Tu"
+        },
+        {
+            "sid"     : 2,
+            "day"     : 15,
+            "weekday" : "Th"
+        },
+        {
+            "sid"     : 3,
+            "day"     : 16,
+            "weekday" : "Fr"
+        }]
+    },
+    {
+        "pid"         : 24,
+        "year"        : "2016",
+        "month"       : "September",
+        "name"        : "Lifestyle Fitness & GYM",
+        "url"         : "http://fitness-club.by",
+        "voucher"     : false,
+        "sessions"    : [{
+            "sid"     : 1,
+            "day"     : 17,
+            "weekday" : "Sa"
+        }]
+    },
+    {
+        "pid"         : 25,
+        "year"        : "2016",
+        "month"       : "September",
+        "name"        : "Platforma",
+        "url"         : "http://platforma-gym.by",
+        "voucher"     : true,
+        "sessions"    : [{
+            "sid"     : 1,
+            "day"     : 19,
+            "weekday" : "Mo"
+        },
+        {
+            "sid"     : 2,
+            "day"     : 21,
+            "weekday" : "We"
+        },
+        {
+            "sid"     : 3,
+            "day"     : 28,
+            "weekday" : "We"
+        }]
+    },
+    {
+        "pid"         : 26,
+        "year"        : "2016",
+        "month"       : "October",
+        "name"        : "Lifestyle Fitness & GYM",
+        "url"         : "http://fitness-club.by",
+        "voucher"     : false,
+        "sessions"    : [{
+            "sid"     : 1,
+            "day"     : 4,
+            "weekday" : "Tu"
+        }]
+    },
+    {
+        "pid"         : 27,
+        "year"        : "2016",
+        "month"       : "October",
+        "name"        : "Platforma",
+        "url"         : "http://platforma-gym.by",
+        "voucher"     : true,
+        "sessions"    : [{
+            "sid"     : 1,
+            "day"     : 5,
+            "weekday" : "We"
+        },
+        {
+            "sid"     : 2,
+            "day"     : 16,
+            "weekday" : "Su"
+        }]
+    },
+    {
+        "pid"         : 28,
+        "year"        : "2017",
+        "month"       : "December",
+        "name"        : "Tonus Plus",
+        "url"         : "https://vk.com/tonusplus",
+        "voucher"     : true,
+        "sessions"    : [{
+            "sid"     : 1,
+            "day"     : 28,
+            "weekday" : "Th"
+        },
+        {
+            "sid"     : 2,
+            "day"     : 29,
+            "weekday" : "Fr"
+        }]
+    },
+    {
+        "pid"         : 29,
+        "year"        : "2018",
+        "month"       : "January",
+        "name"        : "Tonus Plus",
+        "url"         : "https://vk.com/tonusplus",
+        "voucher"     : true,
+        "sessions"    : [{
+            "sid"     : 1,
+            "day"     : 2,
+            "weekday" : "Tu"
+        },
+        {
+            "sid"     : 2,
+            "day"     : 3,
+            "weekday" : "We"
+        },
+        {
+            "sid"     : 3,
+            "day"     : 4,
+            "weekday" : "Th"
+        }]
+    }]
+}
