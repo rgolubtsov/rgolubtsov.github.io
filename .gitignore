@@ -1,9 +1,11 @@
 #
 # .gitignore
 # =============================================================================
-# A mug of Radicchio. Version 0.1
+# A Cup of Radicchio. Version 0.1
 # =============================================================================
-# A mug of Radicchio: A personal website of a power looper and web devver.
+# A Cup of Radicchio: A personal website of a power looper,
+#                                             skateboarder,
+#                                      and software devver.
 #
 # This is the configuration of the project Git ignorables,
 # i.e. objects that should not be put into the repository.
@@ -13,13 +15,10 @@
 _site/
 .sass-cache/
 
-# === Object files ============================================================
-*.o
+# === Libraries ===============================================================
+lib/
 
-# === Executables =============================================================
-content/dev/misc/dnsresolvd/c/dnsresolvd
-
-# === Node modules ============================================================
+# === 3rd-party libraries =====================================================
 node_modules/
 
 # vim:set nu:et:ts=4:sw=4:
