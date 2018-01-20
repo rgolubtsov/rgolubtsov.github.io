@@ -539,6 +539,11 @@
             "sid"     : 8,
             "day"     : 17,
             "weekday" : "We"
+        },
+        {
+            "sid"     : 9,
+            "day"     : 19,
+            "weekday" : "Fr"
         }]
     }]
 }
