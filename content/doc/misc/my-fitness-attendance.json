@@ -592,6 +592,11 @@
             "sid"     : 3,
             "day"     : 8,
             "weekday" : "Th"
+        },
+        {
+            "sid"     : 4,
+            "day"     : 14,
+            "weekday" : "We"
         }]
     }]
 }
