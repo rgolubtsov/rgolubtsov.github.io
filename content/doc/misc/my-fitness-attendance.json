@@ -597,6 +597,16 @@
             "sid"     : 4,
             "day"     : 14,
             "weekday" : "We"
+        },
+        {
+            "sid"     : 5,
+            "day"     : 19,
+            "weekday" : "Mo"
+        },
+        {
+            "sid"     : 6,
+            "day"     : 20,
+            "weekday" : "Tu"
         }]
     }]
 }
