@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+# utils/snd-files-rename
+# =============================================================================
+# A Cup of Radicchio. Version 0.1
+# =============================================================================
+# A Cup of Radicchio: A personal website of a power looper,
+#                                             skateboarder,
+#                                      and software devver.
+#
+# This helper script takes sound files in the current directory and renames
+# them according to a simple manifest where their proper names listed.
+# =============================================================================
+# Copyright (C) 2018 Radislav (Radicchio) Golubtsov
+#
+# (See the LICENSE file at the top of the source tree.)
+#
+
+# Helper constants.
+declare -r EXIT_FAILURE=1 #    Failing exit status.
+declare -r EXIT_SUCCESS=0 # Successful exit status.
+
+# --- Debug output - Begin ----------------------------------------------------
+echo -n "=== "; pwd; ls -al
+# --- Debug output - End ------------------------------------------------------
+
+# If there is an error -- telling the OS about this.
+if [ $? -eq ${EXIT_FAILURE} ]; then
+    exit ${EXIT_FAILURE}
+fi
+
+exit ${EXIT_SUCCESS}
+
+# vim:set nu et ts=4 sw=4:
