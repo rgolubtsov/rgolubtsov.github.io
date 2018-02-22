@@ -7,8 +7,9 @@
 #                                             skateboarder,
 #                                      and software devver.
 #
-# This helper script takes sound files in the current directory and renames
-# them according to a simple manifest where their proper names listed.
+# This helper script takes sound files in the current/specified directory
+# and renames them according to a simple manifest
+# where their proper names listed.
 # =============================================================================
 # Copyright (C) 2018 Radislav (Radicchio) Golubtsov
 #
@@ -19,12 +20,39 @@
 declare -r EXIT_FAILURE=1 #    Failing exit status.
 declare -r EXIT_SUCCESS=0 # Successful exit status.
 
+ARGC=$#
+ARG0=$0
+ARG1=$1
+ARG2=$2
+
+MANIFEST=/dev/null
 DIR=.
 
-# If no any args were passed to the script, reading files in the current dir.
-# Otherwise, reading files in a directory specified as the first argument.
-if [ $# -ne 0 ]; then
-    DIR=$1
+# Checking for args presence and validating them if any.
+if [ ${ARGC} -eq 0 ]; then
+    echo "Error: There must be at least one arg passed: ${ARGC} args found"
+    echo "Usage: ${ARG0} <manifest_filename> [target_directory]"
+
+    exit ${EXIT_FAILURE}
+else
+    MANIFEST=${ARG1}
+
+    if [ ! -f ${MANIFEST} ]; then
+        echo "Error: Given manifest file does not exist: ${MANIFEST}"
+
+        exit ${EXIT_FAILURE}
+    fi
+
+    if [ ${ARGC} -gt 1 ]; then
+        DIR=${ARG2}
+
+        if [ ! -d ${DIR} ]; then
+            echo "Error: Given directory does not exist: ${DIR}"
+            echo "Using the current directory..."
+
+            DIR=.
+        fi
+    fi
 fi
 
 # --- Debug output - Begin ----------------------------------------------------
