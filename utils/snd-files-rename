@@ -19,8 +19,16 @@
 declare -r EXIT_FAILURE=1 #    Failing exit status.
 declare -r EXIT_SUCCESS=0 # Successful exit status.
 
+DIR=.
+
+# If no any args were passed to the script, reading files in the current dir.
+# Otherwise, reading files in a directory specified as the first argument.
+if [ $# -ne 0 ]; then
+    DIR=$1
+fi
+
 # --- Debug output - Begin ----------------------------------------------------
-echo -n "=== "; pwd; ls -al
+echo -n "=== "; cd ${DIR}; pwd; ls -al
 # --- Debug output - End ------------------------------------------------------
 
 # If there is an error -- telling the OS about this.
