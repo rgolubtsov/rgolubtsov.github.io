@@ -25,9 +25,9 @@ echo -n "=== "; pwd; ls -al
 
 # If there is an error -- telling the OS about this.
 if [ $? -eq ${EXIT_FAILURE} ]; then
-    exit ${EXIT_FAILURE}
+    exit    ${EXIT_FAILURE}
 fi
 
-exit ${EXIT_SUCCESS}
+exit        ${EXIT_SUCCESS}
 
 # vim:set nu et ts=4 sw=4:
