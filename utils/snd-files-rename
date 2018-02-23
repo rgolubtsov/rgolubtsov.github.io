@@ -60,9 +60,6 @@ fi
 manifest=$(< ${MANIFEST})
 
 # --- Debug output - Begin ----------------------------------------------------
-echo "${manifest}"
-echo
-
 # Reading the manifest and printing its contents.
 #while read -r line; do
 #    echo "${line}"
@@ -76,8 +73,6 @@ i=0
 
 # Reading sound files and renaming them according to manifest records.
 for file in ${DIR}/${FILES}; do
-    echo "${manifest[i]}"
-
     mv -v ${file} ${DIR}/${manifest[i]}
 
     let i++
