@@ -60,7 +60,8 @@ fi
 manifest=$(< ${MANIFEST})
 
 # --- Debug output - Begin ----------------------------------------------------
-echo -n "=== "; pwd; echo "${manifest}"
+echo "${manifest}"
+echo
 
 # Reading the manifest and printing its contents.
 #while read -r line; do
@@ -68,8 +69,18 @@ echo -n "=== "; pwd; echo "${manifest}"
 #done < ${MANIFEST}
 # --- Debug output - End ------------------------------------------------------
 
+# Splitting the manifest (into an array).
+IFS=$'\n' manifest=(${manifest})
+
+i=0
+
+# Reading sound files and renaming them according to manifest records.
 for file in ${DIR}/${FILES}; do
-    echo "${file}"
+    echo "${manifest[i]}"
+
+    mv -v ${file} ${DIR}/${manifest[i]}
+
+    let i++
 done
 
 # If there is an error -- telling the OS about this.
