@@ -27,6 +27,7 @@ ARG2=$2
 
 MANIFEST=/dev/null
 DIR=.
+FILES=*.mp3
 
 # Checking for args presence and validating them if any.
 if [ ${ARGC} -eq 0 ]; then
@@ -55,14 +56,21 @@ else
     fi
 fi
 
+# Slurping the manifest.
+manifest=$(< ${MANIFEST})
+
 # --- Debug output - Begin ----------------------------------------------------
-echo -n "=== "; pwd; ls -al ${DIR}
+echo -n "=== "; pwd; echo "${manifest}"
+
+# Reading the manifest and printing its contents.
+#while read -r line; do
+#    echo "${line}"
+#done < ${MANIFEST}
 # --- Debug output - End ------------------------------------------------------
 
-# Reading the manifest and printing its contents (debug).
-while read -r line; do
-    echo "${line}"
-done < ${MANIFEST}
+for file in ${DIR}/${FILES}; do
+    echo "${file}"
+done
 
 # If there is an error -- telling the OS about this.
 if [ $? -eq ${EXIT_FAILURE} ]; then
