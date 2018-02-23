@@ -56,8 +56,13 @@ else
 fi
 
 # --- Debug output - Begin ----------------------------------------------------
-echo -n "=== "; cd ${DIR}; pwd; ls -al
+echo -n "=== "; pwd; ls -al ${DIR}
 # --- Debug output - End ------------------------------------------------------
+
+# Reading the manifest and printing its contents (debug).
+while read -r line; do
+    echo "${line}"
+done < ${MANIFEST}
 
 # If there is an error -- telling the OS about this.
 if [ $? -eq ${EXIT_FAILURE} ]; then
