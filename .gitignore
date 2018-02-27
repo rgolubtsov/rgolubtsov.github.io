@@ -21,4 +21,4 @@ lib/
 # === 3rd-party libraries =====================================================
 node_modules/
 
-# vim:set nu:et:ts=4:sw=4:
+# vim:set nu et ts=4 sw=4:
