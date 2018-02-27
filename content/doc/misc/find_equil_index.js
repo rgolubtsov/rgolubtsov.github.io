@@ -114,4 +114,4 @@ var i = solution(A);
 
 console.log(NEW_LINE + EQUIL_INDEX_MSG + i + NEW_LINE);
 
-// vim:set nu:et:ts=4:sw=4:
+// vim:set nu et ts=4 sw=4:
