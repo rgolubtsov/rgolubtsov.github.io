@@ -46,6 +46,7 @@ else
 
     if [ ! -f ${MANIFEST} ]; then
         echo ${_ERR_PREFIX} ${_ERR_MANIFEST_NOT_FOUND} ${MANIFEST}
+        echo ${_MSG_USAGE_TEMPLATE}
 
         exit ${EXIT_FAILURE}
     fi
