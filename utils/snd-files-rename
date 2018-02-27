@@ -68,7 +68,7 @@ manifest=$(< ${MANIFEST})
 # --- Debug output - Begin ----------------------------------------------------
 # Reading the manifest and printing its contents.
 #while read -r line; do
-#    echo "${line}"
+#    echo ${line}
 #done < ${MANIFEST}
 # --- Debug output - End ------------------------------------------------------
 
