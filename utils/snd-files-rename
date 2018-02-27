@@ -23,17 +23,29 @@ MANIFEST=/dev/null
 DIR=.
 FILES=*.mp3
 
+# Common error messages.
+declare -r _ERR_PREFIX="Error:"
+declare -r _ERR_MUST_BE_ONE_ARG_OR_MORE="There must be at least one arg "`
+                                       `"passed: ${ARGC} args found"
+declare -r _ERR_MANIFEST_NOT_FOUND="Given manifest file does not exist:"
+declare -r _ERR_DIR_NOT_FOUND="Given directory does not exist:"
+declare -r _ERR_WILL_USE_CUR_DIR="Using the current directory..."
+
+# Print this usage info just after any inappropriate input.
+declare -r _MSG_USAGE_TEMPLATE="Usage: ${ARG0} <manifest_filename> "`
+                              `"[target_directory]"
+
 # Checking for args presence and validating them if any.
 if [ ${ARGC} -eq 0 ]; then
-    echo "Error: There must be at least one arg passed: ${ARGC} args found"
-    echo "Usage: ${ARG0} <manifest_filename> [target_directory]"
+    echo ${_ERR_PREFIX} ${_ERR_MUST_BE_ONE_ARG_OR_MORE}
+    echo ${_MSG_USAGE_TEMPLATE}
 
     exit ${EXIT_FAILURE}
 else
     MANIFEST=${ARG1}
 
     if [ ! -f ${MANIFEST} ]; then
-        echo "Error: Given manifest file does not exist: ${MANIFEST}"
+        echo ${_ERR_PREFIX} ${_ERR_MANIFEST_NOT_FOUND} ${MANIFEST}
 
         exit ${EXIT_FAILURE}
     fi
@@ -42,8 +54,8 @@ else
         DIR=${ARG2}
 
         if [ ! -d ${DIR} ]; then
-            echo "Error: Given directory does not exist: ${DIR}"
-            echo "Using the current directory..."
+            echo ${_ERR_PREFIX} ${_ERR_DIR_NOT_FOUND} ${DIR}
+            echo ${_ERR_WILL_USE_CUR_DIR}
 
             DIR=.
         fi
