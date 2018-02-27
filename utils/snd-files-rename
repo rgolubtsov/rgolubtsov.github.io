@@ -1,12 +1,6 @@
 #!/usr/bin/env bash
 # utils/snd-files-rename
 # =============================================================================
-# A Cup of Radicchio. Version 0.1
-# =============================================================================
-# A Cup of Radicchio: A personal website of a power looper,
-#                                             skateboarder,
-#                                      and software devver.
-#
 # This helper script takes sound files in the current/specified directory
 # and renames them according to a simple manifest
 # where their proper names listed.
