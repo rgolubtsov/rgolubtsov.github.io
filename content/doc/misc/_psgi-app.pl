@@ -14,7 +14,9 @@ use warnings;
 use utf8;
 use v5.10;
 
-use constant TXT => "\nPSGI application template.\n";
+use Data::Dumper;
+
+use constant TXT => "PSGI application template.\n";
 
 use constant {
     HDR_CONTENT_TYPE => "text/plain",
@@ -26,7 +28,7 @@ my $app = sub {
     my $env = shift();
 
     my $resp = ["Content-Type" => HDR_CONTENT_TYPE];
-    my $_txt = [$env, TXT];
+    my $_txt = [Dumper($env), TXT];
 
     return [RSC_HTTP_200_OK, $resp, $_txt];
 };
