@@ -3,8 +3,12 @@
 # =============================================================================
 # PSGI application template.
 # Usage:
-#     $ uwsgi --http :8765 --http-modifier1 5 --psgi _psgi-app.pl
-#     $ curl localhost:8765
+#     $ uwsgi --http :8765 --master                      \
+#                          --processes      `nproc`      \
+#                          --http-modifier1  5           \
+#                          --psgi           _psgi-app.pl
+#
+#     $ curl localhost:8765; lynx localhost:8765
 # =============================================================================
 # See for ref.: https://uwsgi-docs.readthedocs.io/en/latest/PSGIquickstart.html
 #

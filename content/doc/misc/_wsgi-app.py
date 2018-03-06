@@ -3,8 +3,12 @@
 # =============================================================================
 # WSGI application template.
 # Usage:
-#     $ uwsgi --http :8765 --wsgi-file _wsgi-app.py
-#     $ curl localhost:8765
+#     $ uwsgi --http :8765 --master                 \
+#                          --processes `nproc`      \
+#                          --callable   app         \
+#                          --wsgi-file _wsgi-app.py
+#
+#     $ curl localhost:8765; lynx localhost:8765
 # =============================================================================
 # See for ref.: https://uwsgi-docs.readthedocs.io/en/latest/WSGIquickstart.html
 #
@@ -16,7 +20,7 @@ HDR_CONTENT_TYPE_N = "Content-Type"
 HDR_CONTENT_TYPE_V = "text/plain"
 
 # The application entry point.
-def application(env, resp):
+def app(env, resp):
     _env = str(env).encode()
     _txt = str(TXT).encode()
 
