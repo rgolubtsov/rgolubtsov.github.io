@@ -625,6 +625,21 @@
             "sid"     : 1,
             "day"     : 4,
             "weekday" : "Su"
+        },
+        {
+            "sid"     : 2,
+            "day"     : 7,
+            "weekday" : "We"
+        },
+        {
+            "sid"     : 3,
+            "day"     : 10,
+            "weekday" : "Sa"
+        },
+        {
+            "sid"     : 4,
+            "day"     : 11,
+            "weekday" : "Su"
         }]
     }]
 }
