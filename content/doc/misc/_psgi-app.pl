@@ -18,12 +18,13 @@ use warnings;
 use utf8;
 use v5.10;
 
+use JSON;
 use Data::Dumper;
 
-use constant TXT => "PSGI application template.\n";
+use constant APP_V => "PSGI application template";
 
 use constant {
-    HDR_CONTENT_TYPE => "text/plain",
+    HDR_CONTENT_TYPE => "application/json",
     RSC_HTTP_200_OK  => 200,
 };
 
@@ -31,10 +32,16 @@ use constant {
 my $app = sub {
     my $env = shift();
 
-    my $resp = ["Content-Type" => HDR_CONTENT_TYPE];
-    my $_txt = [Dumper($env), TXT];
+    # JSONifying the response.
+    my $resp_buffer = encode_json({
+        envvars => Dumper($env),
+        appname => APP_V,
+    });
 
-    return [RSC_HTTP_200_OK, $resp, $_txt];
+    # Adding headers to the response.
+    my $resp = ["Content-Type" => HDR_CONTENT_TYPE];
+
+    return [RSC_HTTP_200_OK, $resp, [$resp_buffer]];
 };
 
 # vim:set nu et ts=4 sw=4:
