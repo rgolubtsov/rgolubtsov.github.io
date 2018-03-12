@@ -13,21 +13,29 @@
 # See for ref.: https://uwsgi-docs.readthedocs.io/en/latest/WSGIquickstart.html
 #
 
-TXT = "\nWSGI application template.\n"
+import json
+
+ENV_N = "envvars"
+APP_N = "appname"
+APP_V = "WSGI application template"
 
 RSC_HTTP_200_OK    = "200"
 HDR_CONTENT_TYPE_N = "Content-Type"
-HDR_CONTENT_TYPE_V = "text/plain"
+HDR_CONTENT_TYPE_V = "application/json"
 
 # The application entry point.
 def app(env, resp):
-    _env = str(env).encode()
-    _txt = str(TXT).encode()
+    # JSONifying the response.
+    resp_buffer = json.dumps({
+        ENV_N : str(env),
+        APP_N : APP_V
+    })
 
+    # Adding headers to the response.
     resp(RSC_HTTP_200_OK,
        [(HDR_CONTENT_TYPE_N,
          HDR_CONTENT_TYPE_V)])
 
-    return [_env, _txt]
+    return resp_buffer.encode()
 
 # vim:set nu et ts=4 sw=4:
