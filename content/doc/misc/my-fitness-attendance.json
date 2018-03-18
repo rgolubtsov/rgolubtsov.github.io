@@ -645,6 +645,11 @@
             "sid"     : 5,
             "day"     : 15,
             "weekday" : "Th"
+        },
+        {
+            "sid"     : 6,
+            "day"     : 18,
+            "weekday" : "Su"
         }]
     }]
 }
