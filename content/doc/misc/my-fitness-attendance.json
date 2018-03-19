@@ -650,6 +650,11 @@
             "sid"     : 6,
             "day"     : 18,
             "weekday" : "Su"
+        },
+        {
+            "sid"     : 7,
+            "day"     : 19,
+            "weekday" : "Mo"
         }]
     }]
 }
