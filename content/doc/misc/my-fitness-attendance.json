@@ -660,6 +660,11 @@
             "sid"     : 8,
             "day"     : 23,
             "weekday" : "Fr"
+        },
+        {
+            "sid"     : 9,
+            "day"     : 24,
+            "weekday" : "Sa"
         }]
     }]
 }
