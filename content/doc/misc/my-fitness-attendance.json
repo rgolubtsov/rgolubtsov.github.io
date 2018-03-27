@@ -670,6 +670,11 @@
             "sid"     : 10,
             "day"     : 25,
             "weekday" : "Su"
+        },
+        {
+            "sid"     : 11,
+            "day"     : 26,
+            "weekday" : "Mo"
         }]
     }]
 }
