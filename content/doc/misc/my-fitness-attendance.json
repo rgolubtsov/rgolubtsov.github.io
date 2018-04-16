@@ -713,6 +713,11 @@
             "sid"     : 5,
             "day"     : 14,
             "weekday" : "Sa"
+        },
+        {
+            "sid"     : 6,
+            "day"     : 16,
+            "weekday" : "Mo"
         }]
     }]
 }
