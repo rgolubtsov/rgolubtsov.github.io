@@ -723,6 +723,11 @@
             "sid"     : 7,
             "day"     : 25,
             "weekday" : "We"
+        },
+        {
+            "sid"     : 8,
+            "day"     : 29,
+            "weekday" : "Su"
         }]
     }]
 }
