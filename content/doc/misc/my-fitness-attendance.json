@@ -729,5 +729,18 @@
             "day"     : 29,
             "weekday" : "Su"
         }]
+    },
+    {
+        "pid"         : 33,
+        "year"        : "2018",
+        "month"       : "April",
+        "name"        : "Adrenalin",
+        "url"         : "https://gomel.adrenalin-fitness.by",
+        "voucher"     : false,
+        "sessions"    : [{
+            "sid"     : 1,
+            "day"     : 30,
+            "weekday" : "Mo"
+        }]
     }]
 }
