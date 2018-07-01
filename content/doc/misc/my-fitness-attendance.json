@@ -755,5 +755,18 @@
             "day"     : 5,
             "weekday" : "Sa"
         }]
+    },
+    {
+        "pid"         : 35,
+        "year"        : "2018",
+        "month"       : "July",
+        "name"        : "Tonus Plus",
+        "url"         : "https://vk.com/tonusplus",
+        "voucher"     : true,
+        "sessions"    : [{
+            "sid"     : 1,
+            "day"     : 1,
+            "weekday" : "Su"
+        }]
     }]
 }
