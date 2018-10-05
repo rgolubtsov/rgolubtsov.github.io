@@ -3,8 +3,8 @@
  * content/doc/misc/find_equil_index.js
  * ============================================================================
  *     $ curl -O http://rgolubtsov.github.io/docs/misc/find_equil_index.js && \
- *       chmod 700 find_equil_index.js                                     && \
- *               ./find_equil_index.js
+         chmod 700                                     find_equil_index.js && \
+                                                     ./find_equil_index.js
  * ============================================================================
  * This is a demo task.
  *
@@ -78,6 +78,7 @@
 
 "use strict";
 
+// Helper constants.
 var NEW_LINE        = "\n";
 var EQUIL_INDEX_MSG = "==> The equilibrium index of A is ";
 
