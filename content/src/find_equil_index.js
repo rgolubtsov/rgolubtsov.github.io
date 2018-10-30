@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /*
- * content/doc/misc/find_equil_index.js
+ * content/src/find_equil_index.js
  * ============================================================================
  *     $ curl -O http://rgolubtsov.github.io/docs/misc/find_equil_index.js && \
          chmod 700                                     find_equil_index.js && \

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# content/doc/misc/_wsgi-app.py
+# content/src/_wsgi-app.py
 # =============================================================================
 # WSGI application template.
 # Usage:

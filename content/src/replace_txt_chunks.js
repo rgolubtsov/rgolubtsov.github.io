@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /*
- * content/doc/misc/replace_txt_chunks.js
+ * content/src/replace_txt_chunks.js
  * ============================================================================
  *   $ curl -O http://rgolubtsov.github.io/docs/misc/replace_txt_chunks.js && \
        chmod 700                                     replace_txt_chunks.js && \
