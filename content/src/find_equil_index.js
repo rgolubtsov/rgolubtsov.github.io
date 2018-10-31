@@ -2,11 +2,11 @@
 /*
  * content/src/find_equil_index.js
  * ============================================================================
- *     $ curl -O http://rgolubtsov.github.io/docs/misc/find_equil_index.js && \
-         chmod 700                                     find_equil_index.js && \
-                                                     ./find_equil_index.js
+ *     $ curl -O http://rgolubtsov.github.io/srcs/find_equil_index.js && \
+         chmod 700                                find_equil_index.js && \
+                                                ./find_equil_index.js
  * ============================================================================
- * This is a demo task.
+ * This is a demo script.
  *
  * A zero-indexed array A consisting of N integers is given. An equilibrium
  * index of this array is any integer P such that 0 <= P < N and the sum
