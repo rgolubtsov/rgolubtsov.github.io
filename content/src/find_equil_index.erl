@@ -79,22 +79,36 @@
 -define(NEW_LINE,        "\n"                                ).
 -define(EQUIL_INDEX_MSG, "==> The equilibrium index of A is ").
 
+% Helper function. Calculates the sum of elements of lower  indices of A.
+sum_of_A_1(Sum_of_A_1, A_) ->
+    Sum_of_A_1 + A_.
+
+% Helper function. Calculates the sum of elements of higher indices of A.
+sum_of_A_2(Sum_of_A, Sum_of_A_1, A_) ->
+    Sum_of_A_2 = Sum_of_A - Sum_of_A_1,
+    Sum_of_A_2 - A_.
+
 %% @doc The solution function.
 solution(A) ->
     % Calculating the complete sum of elements of A.
     Sum_of_A = lists:sum(A),
 
-    io:write(A), io:write(Sum_of_A), io:nl(),
-
     % Searching for the equilibrium index of A.
-    lists:foldl (fun(A_, I) ->
-        Sum_of_A_1 = 0, % <== The sum of elements of lower  indices of A.
-        Sum_of_A_2 = 0, % <== The sum of elements of higher indices of A.
+    try
+        lists:foldl(fun(A_, I) ->
+            Sum_of_A_1 = sum_of_A_1(I, A_),
 
-        io:write(A_), io:nl(),
+            Sum_of_A_2 = sum_of_A_2(Sum_of_A, Sum_of_A_1, A_),
 
-        I + 1
-    end, 0, A).
+            if (Sum_of_A_1 =:= Sum_of_A_2) -> throw (I);
+               (true                     ) -> I + 1
+            end
+        end, 0, A),
+
+        -1 % Returning -1 if there's no such an equilibrium index exists.
+    catch
+        throw:I -> I % Okay, the equilibrium index found.
+    end.
 
 %% @doc The script entry point.
 main(_) ->
