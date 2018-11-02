@@ -1,6 +1,5 @@
 #!/usr/bin/env node
-/*
- * content/src/replace_txt_chunks.js
+/* content/src/replace_txt_chunks.js
  * ============================================================================
  *     $ curl -O http://rgolubtsov.github.io/srcs/replace_txt_chunks.js && \
          chmod 700                                replace_txt_chunks.js && \
@@ -30,6 +29,7 @@ var POINT        =    ".";
 var NEW_LINE     =   "\n";
 var DBG_PREF     = "==> ";
 
+// The replace function.
 function replace(text, pos, subst) {
     var text_        = EMPTY_STRING;
     var text_ary     = text.split(SPACE);
