@@ -1,6 +1,5 @@
 #!/usr/bin/env node
-/*
- * content/src/find_equil_index.js
+/* content/src/find_equil_index.js
  * ============================================================================
  *     $ curl -O http://rgolubtsov.github.io/srcs/find_equil_index.js && \
          chmod 700                                find_equil_index.js && \
@@ -82,6 +81,7 @@
 var NEW_LINE        = "\n";
 var EQUIL_INDEX_MSG = "==> The equilibrium index of A is ";
 
+// The solution function.
 function solution(A) {
     var num_of_A = A.length;
 
