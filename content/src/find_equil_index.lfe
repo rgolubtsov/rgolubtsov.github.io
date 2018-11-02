@@ -75,24 +75,40 @@
  | (See the LICENSE file at the top of the source tree.)
  |#
 
+(defun -sum-of-A-1 (sum-of-A-1 A-)
+    "Helper function. Calculates the sum of elements of lower  indices of A."
+
+    (+ sum-of-A-1 A-)
+)
+
+(defun -sum-of-A-2 (sum-of-A sum-of-A-1 A-)
+    "Helper function. Calculates the sum of elements of higher indices of A."
+
+    (let ((sum-of-A-2 (- sum-of-A sum-of-A-1)))
+    (- sum-of-A-2 A-))
+)
+
 (defun solution (A)
     "The solution function."
 
     ; Calculating the complete sum of elements of A.
     (let ((sum-of-A (: lists sum A)))
 
-    (: io write A) (: io write sum-of-A) (: io nl)
-
     ; Searching for the equilibrium index of A.
-    (: lists foldl (lambda (A- i)
-        (let ((sum-of-A-1 0)) ; <== The sum of elements of lower  indices of A.
-        (let ((sum-of-A-2 0)) ; <== The sum of elements of higher indices of A.
+    (try (progn
+        (: lists foldl (lambda (A- i)
+            (let ((sum-of-A-1 (-sum-of-A-1 i A-)))
 
-        (: io write A-) (: io nl)
+            (let ((sum-of-A-2 (-sum-of-A-2 sum-of-A sum-of-A-1 A-)))
 
-        (+ i 1)
-    ))) 0 A)
-    )
+            (if  (=:= sum-of-A-1 sum-of-A-2) (throw i)
+                                             (+ i 1) )
+        ))) 0 A)
+
+        -1 ; Returning -1 if there's no such an equilibrium index exists.
+    ) (catch
+        ((tuple 'throw i _) i) ; Okay, the equilibrium index found.
+    )))
 )
 
 (defun main (_)
