@@ -4,8 +4,8 @@
 # A Cup of Radicchio. Version 0.1
 # =============================================================================
 # A Cup of Radicchio: A personal website of a power looper,
-#                                             skateboarder,
-#                                      and software devver.
+#                                           a skateboarder,
+#                                       and a coder.
 # =============================================================================
 # Copyright (C) 2016-2018 Radislav (Radicchio) Golubtsov
 #
