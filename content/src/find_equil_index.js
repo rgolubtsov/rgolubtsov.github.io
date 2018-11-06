@@ -99,6 +99,11 @@ function solution(A) {
         sum_of_A_2  = sum_of_A - sum_of_A_1;
         sum_of_A_2 -= A[i];
 
+        console.log("==> sum_of_A_1: "   + sum_of_A_1
+                 + " ==> sum_of_A_2: "   + sum_of_A_2
+                 + " ==> i: "            + i
+                 + " ==> A[" + i + "]: " + A[i]);
+
         if (sum_of_A_1 === sum_of_A_2) {
             return i; // Okay, the equilibrium index found.
         }
