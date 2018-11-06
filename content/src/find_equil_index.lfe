@@ -75,40 +75,39 @@
  | (See the LICENSE file at the top of the source tree.)
  |#
 
-(defun -sum-of-A-1 (sum-of-A-1 A-)
-    "Helper function. Calculates the sum of elements of lower  indices of A."
-
-    (+ sum-of-A-1 A-)
-)
-
-(defun -sum-of-A-2 (sum-of-A sum-of-A-1 A-)
-    "Helper function. Calculates the sum of elements of higher indices of A."
-
-    (let ((sum-of-A-2 (- sum-of-A sum-of-A-1)))
-    (- sum-of-A-2 A-))
-)
-
 (defun solution (A)
     "The solution function."
+
+    (macrolet ((NEW-LINE () "\n"))
 
     ; Calculating the complete sum of elements of A.
     (let ((sum-of-A (: lists sum A)))
 
     ; Searching for the equilibrium index of A.
     (try (progn
-        (: lists foldl (lambda (A- i)
-            (let ((sum-of-A-1 (-sum-of-A-1 i A-)))
+        (: lists foldl (lambda (A- ii-)
+            (let (((tuple i i-) ii-))
 
-            (let ((sum-of-A-2 (-sum-of-A-2 sum-of-A sum-of-A-1 A-)))
+            ; Calculating the sum of elements of lower  indices of A.
+            (let ((sum-of-A-1 i-))
+
+            ; Calculating the sum of elements of higher indices of A.
+            (let ((sum-of-A-2 (- (- sum-of-A sum-of-A-1) A-)))
+
+            (: io put_chars (++ "==> sum-of-A-1: " (integer_to_list sum-of-A-1)
+                               " ==> sum-of-A-2: " (integer_to_list sum-of-A-2)
+                               " ==> i: "          (integer_to_list i)
+                               " ==> A-: "         (integer_to_list A-)
+            (NEW-LINE)))
 
             (if  (=:= sum-of-A-1 sum-of-A-2) (throw i)
-                                             (+ i 1) )
-        ))) 0 A)
+                                             (tuple (+ i 1) (+ i- A-)))
+        )))) (tuple 0 0) A)
 
         -1 ; Returning -1 if there's no such an equilibrium index exists.
     ) (catch
         ((tuple 'throw i _) i) ; Okay, the equilibrium index found.
-    )))
+    ))))
 )
 
 (defun main (_)

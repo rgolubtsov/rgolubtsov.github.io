@@ -82,17 +82,6 @@ defmodule S do
     def _NEW_LINE,        do: "\n"
     def _EQUIL_INDEX_MSG, do: "==> The equilibrium index of A is "
 
-    # Helper function. Calculates the sum of elements of lower  indices of A.
-    defp _sum_of_A_1(sum_of_A_1, a_) do
-        sum_of_A_1 + a_
-    end
-
-    # Helper function. Calculates the sum of elements of higher indices of A.
-    defp _sum_of_A_2(sum_of_A, sum_of_A_1, a_) do
-        sum_of_A_2 = sum_of_A - sum_of_A_1
-        sum_of_A_2 - a_
-    end
-
     @doc """
     The solution function.
     """
@@ -102,13 +91,22 @@ defmodule S do
 
         # Searching for the equilibrium index of A.
         try do
-            List.foldl(a, 0, fn(a_, i) ->
-                sum_of_A_1 = _sum_of_A_1(i, a_)
+            List.foldl(a, {0, 0}, fn(a_, ii_) ->
+                {i, i_} = ii_
 
-                sum_of_A_2 = _sum_of_A_2(sum_of_A, sum_of_A_1, a_)
+                # Calculating the sum of elements of lower  indices of A.
+                sum_of_A_1 = i_
+
+                # Calculating the sum of elements of higher indices of A.
+                sum_of_A_2 = (sum_of_A - sum_of_A_1) - a_
+
+                IO.puts("==> sum_of_A_1: " <> to_string(sum_of_A_1)
+                    <> " ==> sum_of_A_2: " <> to_string(sum_of_A_2)
+                    <> " ==> i: "          <> to_string(i)
+                    <> " ==> a_: "         <> to_string(a_))
 
                 if (sum_of_A_1 === sum_of_A_2), do: throw(i),
-                                              else: i + 1
+                                              else: {i + 1, i_ + a_}
             end)
 
             -1 # Returning -1 if there's no such an equilibrium index exists.
