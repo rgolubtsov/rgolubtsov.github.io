@@ -79,15 +79,6 @@
 -define(NEW_LINE,        "\n"                                ).
 -define(EQUIL_INDEX_MSG, "==> The equilibrium index of A is ").
 
-% Helper function. Calculates the sum of elements of lower  indices of A.
-sum_of_A_1(Sum_of_A_1, A_) ->
-    Sum_of_A_1 + A_.
-
-% Helper function. Calculates the sum of elements of higher indices of A.
-sum_of_A_2(Sum_of_A, Sum_of_A_1, A_) ->
-    Sum_of_A_2 = Sum_of_A - Sum_of_A_1,
-    Sum_of_A_2 - A_.
-
 %% @doc The solution function.
 solution(A) ->
     % Calculating the complete sum of elements of A.
@@ -95,15 +86,24 @@ solution(A) ->
 
     % Searching for the equilibrium index of A.
     try
-        lists:foldl(fun(A_, I) ->
-            Sum_of_A_1 = sum_of_A_1(I, A_),
+        lists:foldl(fun(A_, II_) ->
+            {I, I_} = II_,
 
-            Sum_of_A_2 = sum_of_A_2(Sum_of_A, Sum_of_A_1, A_),
+            % Calculating the sum of elements of lower  indices of A.
+            Sum_of_A_1 = I_,
 
-            if (Sum_of_A_1 =:= Sum_of_A_2) -> throw (I);
-               (true                     ) -> I + 1
+            % Calculating the sum of elements of higher indices of A.
+            Sum_of_A_2 = (Sum_of_A - Sum_of_A_1) - A_,
+
+            io:put_chars("==> Sum_of_A_1: " ++ integer_to_list(Sum_of_A_1)
+                     ++ " ==> Sum_of_A_2: " ++ integer_to_list(Sum_of_A_2)
+                     ++ " ==> I: "          ++ integer_to_list(I)
+                     ++ " ==> A_: "         ++ integer_to_list(A_)++?NEW_LINE),
+
+            if (Sum_of_A_1 =:= Sum_of_A_2) -> throw(I);
+               (true                     ) -> {I + 1, I_ + A_}
             end
-        end, 0, A),
+        end, {0, 0}, A),
 
         -1 % Returning -1 if there's no such an equilibrium index exists.
     catch
