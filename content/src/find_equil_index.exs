@@ -1,11 +1,15 @@
 #!/usr/bin/env elixir
 # content/src/find_equil_index.exs
 # =============================================================================
+# Usage:
 #     $ curl -O http://rgolubtsov.github.io/srcs/find_equil_index.exs && \
 #       chmod 700                                find_equil_index.exs && \
 #                                              ./find_equil_index.exs
 # =============================================================================
-# This is a demo script.
+# This is a demo script. It has to be run in the Elixir runtime environment.
+# Tested and known to run exactly the same way on modern versions
+# of OpenBSD/amd64, Ubuntu Server LTS x86-64, Arch Linux / Arch Linux 32
+# operating systems.
 #
 # A zero-indexed array A consisting of N integers is given. An equilibrium
 # index of this array is any integer P such that 0 <= P < N and the sum

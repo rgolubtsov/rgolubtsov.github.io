@@ -1,11 +1,15 @@
 #!/usr/bin/env node
 /* content/src/find_equil_index.js
  * ============================================================================
+ * Usage:
  *     $ curl -O http://rgolubtsov.github.io/srcs/find_equil_index.js && \
          chmod 700                                find_equil_index.js && \
                                                 ./find_equil_index.js
  * ============================================================================
- * This is a demo script.
+ * This is a demo script. It has to be run in the Node.js runtime environment.
+ * Tested and known to run exactly the same way on modern versions
+ * of OpenBSD/amd64, Ubuntu Server LTS x86-64, Arch Linux / Arch Linux 32
+ * operating systems.
  *
  * A zero-indexed array A consisting of N integers is given. An equilibrium
  * index of this array is any integer P such that 0 <= P < N and the sum
