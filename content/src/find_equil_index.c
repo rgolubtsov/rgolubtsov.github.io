@@ -4,7 +4,7 @@
  * Usage:
  *     $ curl -O http://rgolubtsov.github.io/srcs/find_equil_index.c && \
          chmod 700                                find_equil_index.c && \
-                                                ./find_equil_index.c
+                                                ./find_equil_index.c; echo $?
  * ============================================================================
  * This is a demo script. It has to be run as a C script using TCC
  * (Fabrice Bellard's Tiny C Compiler). Tested and known to run

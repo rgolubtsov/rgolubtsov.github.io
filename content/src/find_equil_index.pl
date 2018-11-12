@@ -4,7 +4,7 @@
 # Usage:
 #     $ curl -O http://rgolubtsov.github.io/srcs/find_equil_index.pl && \
 #       chmod 700                                find_equil_index.pl && \
-#                                              ./find_equil_index.pl
+#                                              ./find_equil_index.pl; echo $?
 # =============================================================================
 # This is a demo script. It has to be run in the Perl 5 (5.10+) runtime
 # environment. Tested and known to run exactly the same way on modern versions
