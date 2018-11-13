@@ -36,6 +36,7 @@ var DBG_PREF     = "==> ";
 // The replace function.
 function replace(text, pos, subst) {
     var text_        = EMPTY_STRING;
+    var text__       = EMPTY_STRING;
     var text_ary     = text.split(SPACE);
     var text_ary_len = text_ary.length;
 
@@ -48,13 +49,13 @@ function replace(text, pos, subst) {
             && (text_ary[i].substring(pos - 1) !== COMMA)
             && (text_ary[i].substring(pos - 1) !== POINT)) {
 
-//          console.log(DBG_PREF + text_ary[i]
-//                        .replace(text_ary[i].substring(pos - 1), subst)
-//                        +        text_ary[i].substring(pos    ));
-
-            text_ += text_ary[i]
+            text__ = text_ary[i]
             .replace(text_ary[i].substring(pos - 1), subst)
             +        text_ary[i].substring(pos    );
+
+//          console.log(DBG_PREF + text__     );
+
+            text_ += text__;
         } else {
 //          console.log(DBG_PREF + text_ary[i]);
 
