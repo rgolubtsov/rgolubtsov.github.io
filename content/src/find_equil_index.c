@@ -121,7 +121,7 @@ int solution(const int *A, const int num_of_A) {
 
 /* The script entry point. */
 int main() {
-    int A[] = {-1, 3, -4, 5, 1, -6, 2, 1};
+    const int A[] = {-1, 3, -4, 5, 1, -6, 2, 1};
 
     int i = solution(A, (sizeof(A) / sizeof(A[0])));
 
