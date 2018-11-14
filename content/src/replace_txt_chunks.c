@@ -34,62 +34,68 @@
 #define POINT           "."
 #define NEW_LINE       "\n"
 #define DBG_PREF     "==> "
+#define S_FMT          "%s"
+#define D_FMT          "%d"
 
-/* The helper function. */
-char *_replace(const char *text, const int pos, const char *subst) {
-    char *text_, *text__;
-    int   text_len;
+/* The replace helper function. */
+char *_replace(const char *word,
+               const int   pos,
+               const char *subst,
+               const int   subst_len) {
 
-    text_len = strlen(text);
+    char *word_;
+    int   word_len;
 
-    printf(DBG_PREF "%s %d" NEW_LINE, text, text_len);
+    word_len = strlen(word);
 
-    text_ = malloc(strlen(text) + strlen(subst) + sizeof(SPACE));
+/*  printf(DBG_PREF S_FMT NEW_LINE, word);*/
 
-    text_ = strcpy(text_, EMPTY_STRING);
+    word_ = malloc((word_len - 1) + subst_len + sizeof(SPACE));
+    word_ = strcpy(word_, EMPTY_STRING);
 
-    if ((pos - 1 < text_len)
-/*      && (strcmp(text[pos - 1], COMMA) != 0)
-        && (strcmp(text[pos - 1], POINT) != 0)*/) {
+    if ((pos - 1 < word_len)
+        && (strcmp(&word[pos - 1], COMMA) != 0)
+        && (strcmp(&word[pos - 1], POINT) != 0)) {
 
-/*      text__ = strings.Replace(text,
-                                 text[pos - 1], subst, -1) +
-                                 text[pos    ];
-*/
-
-        text__ = strdup(text);
-
-        printf(DBG_PREF "%s" NEW_LINE, text__);
-
-        text_ = strcat(text_, text__);
-
-        free(text__);
+        word_ = strncat(word_, word, pos - 1);
+        word_ =  strcat(word_, subst);
+        word_ =  strcat(word_, &word[pos]);
     } else {
-        printf(DBG_PREF "%s" NEW_LINE, text  );
-
-        text_ = strcat(text_, text  );
+        word_ =  strcat(word_, word);
     }
 
-    text_ = strcat(text_, SPACE);
+/*  printf(DBG_PREF S_FMT NEW_LINE, word_);*/
 
-    return text_;
+    word_ = strcat(word_, SPACE);
+
+    return word_;
 }
 
 /* The replace function. */
 char *replace(const char *text, const int pos, const char *subst) {
-    char *text_, *text__, *text___, *text____;
+    char *text_, *text0, *text1, *word, *word_;
+    int   subst_len, word_len_;
 
-    text___ = text__ = strdup(text);
+    subst_len = strlen(subst);
+    word_len_ = sizeof(EMPTY_STRING);
 
-    while (text_ = strsep(&text__, SPACE)) {
-        text____ = _replace(text_, pos, subst);
+    text_ = malloc(word_len_);
+    text_ = strcpy(text_, EMPTY_STRING);
 
-        printf(DBG_PREF "%s.o.oo..ooo...oo....o." NEW_LINE, text____);
+    text1 = text0 = strdup(text);
 
-        free(text____);
+    while (word = strsep(&text0, SPACE)) {
+        word_ = _replace(word, pos, subst, subst_len);
+
+        text_ = realloc(text_, word_len_ += strlen(word_));
+        text_ =  strcat(text_, word_);
+
+        free(word_);
     }
 
-    free(text___);
+    free(text1);
+
+    return text_;
 }
 
 /* The script entry point. */
@@ -107,14 +113,15 @@ evaluates to 'true'.\
     const char *subst = "+-=";
 */  const char *subst = "|";
 
-    printf(DBG_PREF "%d" NEW_LINE,            pos);
-    printf(DBG_PREF "%s" NEW_LINE NEW_LINE, subst);
+    printf(DBG_PREF D_FMT NEW_LINE,            pos);
+    printf(DBG_PREF S_FMT NEW_LINE NEW_LINE, subst);
 
-    replace(text, pos, subst);
+    char *text_ = replace(text, pos, subst);
 
-    printf(NEW_LINE DBG_PREF "%s" NEW_LINE, text );
-/*  printf(         DBG_PREF "%s" NEW_LINE, text_);
-*/
+    printf(NEW_LINE DBG_PREF S_FMT NEW_LINE, text );
+    printf(         DBG_PREF S_FMT NEW_LINE, text_);
+
+    free(text_);
 
     return EXIT_SUCCESS;
 }
