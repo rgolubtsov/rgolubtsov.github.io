@@ -84,7 +84,7 @@ func main() {
 "evaluates to 'true'."                                                 +
              EMPTY_STRING
 
-    pos   := 3 // <== Can be set to either from 1 to infinity.
+    const pos int = 3 // <== Can be set to either from 1 to infinity.
 //  subst := "callable entity"
 //  subst := "AAA"
 //  subst := "+-="
