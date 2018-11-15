@@ -125,7 +125,7 @@ func solution(A []int) int {
 
 // The script entry point.
 func main() {
-    A := []int {-1, 3, -4, 5, 1, -6, 2, 1}
+    A := []int{-1, 3, -4, 5, 1, -6, 2, 1}
 
     i := solution(A)
 
