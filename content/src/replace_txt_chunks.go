@@ -53,8 +53,8 @@ func replace(text string, pos int, subst string) string {
 //      fmt.Printf(DBG_PREF + text_ary[i] + NEW_LINE)
 
         if ((pos - 1 < text_ary_i_len)       &&
-            (text_ary[i][:pos - 1] != COMMA) &&
-            (text_ary[i][:pos - 1] != POINT)) {
+            (text_ary[i][pos - 1:] != COMMA) &&
+            (text_ary[i][pos - 1:] != POINT)) {
 
             text__ = strings.Replace(text_ary[i],
                                      text_ary[i][pos - 1:], subst, -1) +
