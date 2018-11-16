@@ -118,9 +118,9 @@ solution() {
     return -1 # Returning -1 if there's no such an equilibrium index exists.
 }
 
-A=(-1 3 -4 5 1 -6 2 1)
+declare -r a=(-1 3 -4 5 1 -6 2 1)
 
-solution A[@]; i=$?; if [ ${i} -eq 255 ]; then i=-1; fi
+solution a[@]; i=$?; if [ ${i} -eq 255 ]; then i=-1; fi
 
 echo -e ${NEW_LINE}${EQUIL_INDEX_MSG}${i}${NEW_LINE}
 
