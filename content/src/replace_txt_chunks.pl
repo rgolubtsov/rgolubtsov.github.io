@@ -30,65 +30,72 @@ use v5.10;
 
 # Helper constants.
 use constant {
-    SPACE    => " ",
-    COMMA    => ",",
-    POINT    => ".",
-    NEW_LINE => "\n",
-    DBG_PREF => "==> ",
+    EMPTY_STRING =>     "",
+    SPACE        =>    " ",
+    COMMA        =>    ",",
+    POINT        =>    ".",
+    NEW_LINE     =>   "\n",
+    DBG_PREF     => "==> ",
+    SPACES       =>  qr/ /,
 };
 
 # The replace function.
 sub replace {
-#    text=$1; pos=$2; subst=$3
+    my $text  = shift();
+    my $pos_  = shift();
+    my $subst = shift();
 
-#    text_ary=(${text})
-#    text_ary_ind=${!text_ary[@]}
+    my $text_;
+    my $text__;
+    my @text_ary     = split(SPACES, $text);
+    my $text_ary_len = scalar(@text_ary);
 
-#    for i in ${text_ary_ind}; do
-#        text_ary_i_len=${#text_ary[${i}]}
+    for (my $i = 0; $i < $text_ary_len; $i++) {
+        my $text_ary_i_len = length($text_ary[$i]);
 
-#       echo ${DBG_PREF}${text_ary[${i}]}
+#       say(DBG_PREF . $text_ary[$i]);
 
-#        if [ $((pos - 1)) -lt ${text_ary_i_len}\
-#            -a "${text_ary[${i}]:$((pos - 1))}" != ${COMMA}\
-#            -a "${text_ary[${i}]:$((pos - 1))}" != ${POINT} ]; then
+        if (($pos_ - 1 < $text_ary_i_len)
+            && (substr($text_ary[$i], $pos_ - 1) ne COMMA)
+            && (substr($text_ary[$i], $pos_ - 1) ne POINT)) {
 
-#            text__=${text_ary[${i}]/${text_ary[${i}]:$((pos - 1))}/${subst}}\
-#${text_ary[${i}]:${pos}}
+            $text__ = substr($text_ary[$i], 0, $pos_ - 1) . $subst
+                    . substr($text_ary[$i],    $pos_    );
 
-#           echo ${DBG_PREF}${text__}
+#           say(DBG_PREF . $text__      );
 
-#            text_=${text_}${text__}
-#        else
-#           echo ${DBG_PREF}${text_ary[${i}]}
+            $text_ .= $text__;
+        } else {
+#           say(DBG_PREF . $text_ary[$i]);
 
-#            text_=${text_}${text_ary[${i}]}
-#        fi
+            $text_ .= $text_ary[$i];
+        }
 
-#        text_=${text_}${SPACE}
-#    done
-    return 0;
+        $text_ .= SPACE;
+    }
+
+    return $text_;
 }
 
 use constant {
-    text  => "\
-A guard sequence is either a single guard or a series of guards, \
-separated by semicolons (';'). The guard sequence 'G1; G2; ...; Gn' \
-is true if at least one of the guards 'G1', 'G2', ..., 'Gn' \
-evaluates to 'true'.\
-",
+    text  => EMPTY_STRING
+. "A guard sequence is either a single guard or a series of guards, "
+. "separated by semicolons (';'). The guard sequence 'G1; G2; ...; Gn' "
+. "is true if at least one of the guards 'G1', 'G2', ..., 'Gn' "
+. "evaluates to 'true'."
+.            EMPTY_STRING,
 
-    POS   => 3, # <== Can be set to either from 1 to infinity.
-#    subst => "callable entity",
-#    subst => "AAA",
-#    subst => "+-=",
+    pos_  => 3, # <== Can be set to either from 1 to infinity.
+#   subst => "callable entity",
+#   subst => "AAA",
+#   subst => "+-=",
     subst => "|",
 };
 
-say(DBG_PREF . POS              );
+say(DBG_PREF . pos_             );
 say(DBG_PREF . subst . NEW_LINE );
 
-my $text_ = replace(text . POS . subst);
+my $text_ = replace(text, pos_, subst);
 
 say(NEW_LINE . DBG_PREF .  text );
 say(           DBG_PREF . $text_);
