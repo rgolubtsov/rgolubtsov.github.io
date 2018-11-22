@@ -31,19 +31,11 @@ local POINT        =    "."
 local NEW_LINE     =   "\n"
 local DBG_PREF     = "==> "
 local SPACES       =  "%S+"
-local PP1          =   "%("
-local PP2          =   "%)"
-local PA1          =    "("
-local PA2          =    ")"
-local AB1          =    "<"
-local AB2          =    ">"
 
 -- The replace function.
 function replace(text, pos, subst)
     local text_        = EMPTY_STRING
     local text__       = EMPTY_STRING
-    text= text:gsub(PP1, AB1)
-    text= text:gsub(PP2, AB2)
     local text_ary     = {}
     for i in text:gmatch(SPACES) do table.insert(text_ary, i) end
     local text_ary_len = #text_ary
@@ -57,9 +49,8 @@ function replace(text, pos, subst)
             and (text_ary[i]:sub(pos) ~= COMMA)
             and (text_ary[i]:sub(pos) ~= POINT)) then
 
-            text__ = text_ary[i]
-            :gsub(   text_ary[i]:sub(pos    ), subst)
-            ..       text_ary[i]:sub(pos + 1)
+            text__ = text_ary[i]:sub(1, pos - 1) .. subst
+                  .. text_ary[i]:sub(   pos + 1)
 
 --          print(DBG_PREF .. text__     )
 
@@ -73,8 +64,7 @@ function replace(text, pos, subst)
         text_ = text_ .. SPACE
     end
 
-    text_= text_:gsub(AB1, PA1)
-    return text_:gsub(AB2, PA2)
+    return text_
 end
 
 local text  = EMPTY_STRING
