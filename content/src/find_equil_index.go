@@ -2,9 +2,9 @@
 /* content/src/find_equil_index.go
  * ============================================================================
  * Usage:
- *     $ curl -O http://rgolubtsov.github.io/srcs/find_equil_index.go && \
-         chmod 700                                find_equil_index.go && \
-                                                ./find_equil_index.go; echo $?
+ *   $ curl -sO http://rgolubtsov.github.io/srcs/find_equil_index.go && \
+       chmod 700                                 find_equil_index.go && \
+                                               ./find_equil_index.go; echo $?
  * ============================================================================
  * This is a demo script. It has to be run as a Go script using the Go tool's
  * runtime facility. Tested and known to run exactly the same way

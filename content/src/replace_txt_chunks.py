@@ -2,9 +2,9 @@
 # content/src/replace_txt_chunks.py
 # =============================================================================
 # Usage:
-#   $ curl -O http://rgolubtsov.github.io/srcs/replace_txt_chunks.py && \
-#     chmod 700                                replace_txt_chunks.py && \
-#                                            ./replace_txt_chunks.py; echo $?
+# $ curl -sO http://rgolubtsov.github.io/srcs/replace_txt_chunks.py && \
+#   chmod 700                                 replace_txt_chunks.py && \
+#                                           ./replace_txt_chunks.py; echo $?
 # =============================================================================
 # This is a demo script. It has to be run in the Python 3 runtime environment.
 # Tested and known to run exactly the same way on modern versions

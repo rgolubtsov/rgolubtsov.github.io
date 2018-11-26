@@ -2,9 +2,9 @@
 # content/src/replace_txt_chunks.sh
 # =============================================================================
 # Usage:
-#   $ curl -O http://rgolubtsov.github.io/srcs/replace_txt_chunks.sh && \
-#     chmod 700                                replace_txt_chunks.sh && \
-#                                            ./replace_txt_chunks.sh; echo $?
+# $ curl -sO http://rgolubtsov.github.io/srcs/replace_txt_chunks.sh && \
+#   chmod 700                                 replace_txt_chunks.sh && \
+#                                           ./replace_txt_chunks.sh; echo $?
 # =============================================================================
 # This is a demo script. It has to be run using the Bash 3.1+ shell.
 # Tested and known to run exactly the same way on modern versions
