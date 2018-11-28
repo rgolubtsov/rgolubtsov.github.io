@@ -4,7 +4,7 @@
 
 ---
 
-Install Harp on OpenBSD/amd64:
+Install **Harp** on **OpenBSD/amd64**:
 
 ```
 $ sudo CXX=c++ LIBSASS_EXT="no" npm i harp -g --unsafe-perm
@@ -14,7 +14,7 @@ $ sudo CXX=c++ LIBSASS_EXT="no" npm i harp -g --unsafe-perm
 + harp@0.29.0
 ```
 
-Install Harp on Arch Linux:
+Install **Harp** on **Arch Linux**:
 
 ```
 $ sudo npm i harp -g --unsafe-perm
