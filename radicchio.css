@@ -19,12 +19,44 @@ body {
     font-family:      arial, sans-serif;
 }
 
-h1 {
-    color:            #7aef17;
+#header {
+    width:            100%;
+    font-weight:      bold;
 }
 
-h3 {
+#header td {
+    padding:          4px;
+}
+
+#title {
+    color:            #7aef17;
+    font-size:        2em;
+}
+
+#header #v-bar {
+    border-right:     4px solid #69df06;
+}
+
+#header #title-td {
+    padding-top:      10px;
+}
+
+#subtitle {
     color:            #69df06;
+    font-size:        1.2em;
+}
+
+#body-- {
+    width:            100%;
+}
+
+#body-- td {
+    padding:          4px;
+    color:            #36ac03;
+}
+
+#body-- #top---td {
+    padding-top:      10px;
 }
 
 /* vim:set nu et ts=4 sw=4: */
