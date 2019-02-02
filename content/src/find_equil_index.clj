@@ -78,11 +78,41 @@
 ; (See the LICENSE file at the top of the source tree.)
 ;
 
+; Helper constants.
+(defmacro EQUIL-INDEX-MSG [] "==> The equilibrium index of A is ")
+
+(defn solution
+    "The solution function."
+    [A]
+
+    (let [num-of-A (count    A)]
+    (println num-of-A)
+
+    ; Calculating the complete sum of elements of A.
+    (let [sum-of-A (reduce + A)]
+    (println sum-of-A)
+
+    ; Searching for the equilibrium index of A.
+    (map (fn [A- ii-]
+        (let [i- ii-]
+
+        (println A-)
+        (println i-))
+    ) A))
+
+    num-of-A)
+)
+
 (defn main
     "The script entry point."
     []
 
-    (println "==>")
+    (let [A (list -1  3 -4  5  1 -6  2  1)]
+
+    (let [i (solution A)]
+
+    (println (str (newline) (EQUIL-INDEX-MSG) i))
+                  (newline)                    ))
 )
 
 (main)
