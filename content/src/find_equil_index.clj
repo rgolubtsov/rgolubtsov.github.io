@@ -85,22 +85,35 @@
     "The solution function."
     [A]
 
-    (let [num-of-A (count    A)]
-    (println num-of-A)
-
     ; Calculating the complete sum of elements of A.
     (let [sum-of-A (reduce + A)]
     (println sum-of-A)
+    (println        A)
 
     ; Searching for the equilibrium index of A.
-    (map (fn [A- ii-]
-        (let [i- ii-]
+    (try (do
+        (loop [AA A i 0 i- 0] (when (seq AA)
+            (let [A- (first AA)]
 
-        (println A-)
-        (println i-))
-    ) A))
+            ; Calculating the sum of elements of lower  indices of A.
+            (let [sum-of-A-1 i-]
 
-    num-of-A)
+            ; Calculating the sum of elements of higher indices of A.
+            (let [sum-of-A-2 (- (- sum-of-A sum-of-A-1) A-)]
+
+            (println (str "==> sum-of-A-1: " sum-of-A-1
+                         " ==> sum-of-A-2: " sum-of-A-2
+                         " ==> i: "          i
+                         " ==> A-: "         A-))
+
+            (if (not= sum-of-A-1 sum-of-A-2) i;(throw (Exception. i))
+                (recur (rest AA) (inc i) (+ i- A-)))
+        )))))
+
+        -1 ; Returning -1 if there's no such an equilibrium index exists.
+    ) (catch
+        Exception i ; Okay, the equilibrium index found.
+    )))
 )
 
 (defn main
