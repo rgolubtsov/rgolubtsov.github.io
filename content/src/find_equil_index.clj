@@ -87,11 +87,9 @@
 
     ; Calculating the complete sum of elements of A.
     (let [sum-of-A (reduce + A)]
-    (println sum-of-A)
-    (println        A)
 
     ; Searching for the equilibrium index of A.
-    (try (do
+    (try
         (loop [AA A i 0 i- 0] (when (seq AA)
             (let [A- (first AA)]
 
@@ -106,13 +104,13 @@
                          " ==> i: "          i
                          " ==> A-: "         A-))
 
-            (if (not= sum-of-A-1 sum-of-A-2) i;(throw (Exception. i))
-                (recur (rest AA) (inc i) (+ i- A-)))
+            (if (= sum-of-A-1 sum-of-A-2) (throw (Exception. (.toString i)))
+                                          (recur (rest AA) (inc i) (+ i- A-)))
         )))))
 
         -1 ; Returning -1 if there's no such an equilibrium index exists.
-    ) (catch
-        Exception i ; Okay, the equilibrium index found.
+    (catch
+        Exception e (.getMessage e) ; Okay, the equilibrium index found.
     )))
 )
 
