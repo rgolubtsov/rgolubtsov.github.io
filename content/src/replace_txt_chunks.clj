@@ -25,6 +25,8 @@
 ; Helper constants.
 (defmacro EMPTY-STRING []     "")
 (defmacro SPACE        []    " ")
+(defmacro COMMA        []    ",")
+(defmacro POINT        []    ".")
 (defmacro NEW-LINE     []   "\n")
 (defmacro DBG-PREF     [] "==> ")
 (defmacro SPACE-       []  #"\ ")
@@ -38,22 +40,25 @@
         (when (seq words)
             (let [word     (first words)]
             (let [word-len (count word )]
-            (let [word-pos (if (< (- pos 1) word-len) (subs word pos)
+            (let [word-pos (if (< (- pos 1) word-len) (subs word (- pos 1))
                                                       (EMPTY-STRING))]
 
-            (println (str (DBG-PREF) word))
+;           (println (str (DBG-PREF) word))
 
             (if (= word (last words)) (throw (Exception.  (str text- word)))
                                       (recur (rest words) (str text- (cond
-                (< (- pos 1) word-len)
+                (and (< (- pos 1) word-len)
+                    (not= word-pos (COMMA))
+                    (not= word-pos (POINT)))
+
                     (let [word- (str (subs word 0 (- pos 1)) subst
                                      (subs word      pos  ))]
 
-                    (println (str (DBG-PREF) word-))
+;                   (println (str (DBG-PREF) word-))
 
                     word-)
                 :else (do
-                    (println (str (DBG-PREF) word ))
+;                   (println (str (DBG-PREF) word ))
 
                     word))
                 (SPACE))))
@@ -73,7 +78,7 @@
 "evaluates to 'true'."
                      (EMPTY-STRING))]
 
-    (let [pos   7] ; <== Can be set to either from 1 to infinity.
+    (let [pos   3] ; <== Can be set to either from 1 to infinity.
 ;   (let [subst "callable entity"]
 ;   (let [subst "AAA"]
 ;   (let [subst "+-="]
