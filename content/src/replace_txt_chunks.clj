@@ -43,7 +43,19 @@
             (println (str (DBG-PREF) word))
 
             (if (= word (last words)) (throw (Exception.  (str text- word)))
-                                      (recur (rest words) (str text- word)))
+                                      (recur (rest words) (str text- (cond
+                (< (- pos 1) word-len)
+                    (let [word- (str (subs word (- pos 1)) subst
+                                     (subs word    pos  ))]
+
+;                   (println (str (DBG-PREF) word-))
+
+                    word-)
+                :else
+;                   (println (str (DBG-PREF) word ))
+
+                    word))))
+
         )))))
     (catch
         Exception e (.getMessage e)
