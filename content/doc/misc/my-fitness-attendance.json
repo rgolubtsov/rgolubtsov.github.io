@@ -3,8 +3,7 @@
         "pid"         : 1,
         "year"        : "2016",
         "month"       : "June",
-        "name"        : "National Library of Belarus (GYM)",
-        "url"         : "",
+        "name"        : "National Library GYM",
         "voucher"     : false,
         "sessions"    : [{
             "sid"     : 1,
@@ -17,7 +16,6 @@
         "year"        : "2016",
         "month"       : "June",
         "name"        : "N-FITNESS",
-        "url"         : "http://n-fitness.by",
         "voucher"     : false,
         "sessions"    : [{
             "sid"     : 1,
@@ -30,7 +28,6 @@
         "year"        : "2016",
         "month"       : "June",
         "name"        : "Platforma",
-        "url"         : "http://platforma-gym.by",
         "voucher"     : false,
         "sessions"    : [{
             "sid"     : 1,
@@ -43,7 +40,6 @@
         "year"        : "2016",
         "month"       : "June",
         "name"        : "Lifestyle Fitness & GYM",
-        "url"         : "http://fitness-club.by",
         "voucher"     : false,
         "sessions"    : [{
             "sid"     : 1,
@@ -56,7 +52,6 @@
         "year"        : "2016",
         "month"       : "June",
         "name"        : "Global Fitness",
-        "url"         : "http://fitness-gym.by",
         "voucher"     : false,
         "sessions"    : [{
             "sid"     : 1,
@@ -69,7 +64,6 @@
         "year"        : "2016",
         "month"       : "June",
         "name"        : "Platforma",
-        "url"         : "http://platforma-gym.by",
         "voucher"     : false,
         "sessions"    : [{
             "sid"     : 1,
@@ -82,7 +76,6 @@
         "year"        : "2016",
         "month"       : "June",
         "name"        : "Platforma",
-        "url"         : "http://platforma-gym.by",
         "voucher"     : true,
         "sessions"    : [{
             "sid"     : 1,
@@ -100,7 +93,6 @@
         "year"        : "2016",
         "month"       : "June",
         "name"        : "Lifestyle Fitness & GYM",
-        "url"         : "http://fitness-club.by",
         "voucher"     : false,
         "sessions"    : [{
             "sid"     : 1,
@@ -118,7 +110,6 @@
         "year"        : "2016",
         "month"       : "June",
         "name"        : "Platforma",
-        "url"         : "http://platforma-gym.by",
         "voucher"     : true,
         "sessions"    : [{
             "sid"     : 1,
@@ -141,7 +132,6 @@
         "year"        : "2016",
         "month"       : "July",
         "name"        : "Platforma",
-        "url"         : "http://platforma-gym.by",
         "voucher"     : true,
         "sessions"    : [{
             "sid"     : 1,
@@ -164,7 +154,6 @@
         "year"        : "2016",
         "month"       : "July",
         "name"        : "Lifestyle Fitness & GYM",
-        "url"         : "http://fitness-club.by",
         "voucher"     : false,
         "sessions"    : [{
             "sid"     : 1,
@@ -177,7 +166,6 @@
         "year"        : "2016",
         "month"       : "July",
         "name"        : "Platforma",
-        "url"         : "http://platforma-gym.by",
         "voucher"     : true,
         "sessions"    : [{
             "sid"     : 1,
@@ -200,7 +188,6 @@
         "year"        : "2016",
         "month"       : "July",
         "name"        : "Lifestyle Fitness & GYM",
-        "url"         : "http://fitness-club.by",
         "voucher"     : false,
         "sessions"    : [{
             "sid"     : 1,
@@ -213,7 +200,6 @@
         "year"        : "2016",
         "month"       : "July",
         "name"        : "Platforma",
-        "url"         : "http://platforma-gym.by",
         "voucher"     : true,
         "sessions"    : [{
             "sid"     : 1,
@@ -231,7 +217,6 @@
         "year"        : "2016",
         "month"       : "July",
         "name"        : "Platforma",
-        "url"         : "http://platforma-gym.by",
         "voucher"     : true,
         "sessions"    : [{
             "sid"     : 1,
@@ -249,7 +234,6 @@
         "year"        : "2016",
         "month"       : "August",
         "name"        : "Platforma",
-        "url"         : "http://platforma-gym.by",
         "voucher"     : true,
         "sessions"    : [{
             "sid"     : 1,
@@ -267,7 +251,6 @@
         "year"        : "2016",
         "month"       : "August",
         "name"        : "Lifestyle Fitness & GYM",
-        "url"         : "http://fitness-club.by",
         "voucher"     : false,
         "sessions"    : [{
             "sid"     : 1,
@@ -285,7 +268,6 @@
         "year"        : "2016",
         "month"       : "August",
         "name"        : "Platforma",
-        "url"         : "http://platforma-gym.by",
         "voucher"     : true,
         "sessions"    : [{
             "sid"     : 1,
@@ -308,7 +290,6 @@
         "year"        : "2016",
         "month"       : "August",
         "name"        : "Lifestyle Fitness & GYM",
-        "url"         : "http://fitness-club.by",
         "voucher"     : false,
         "sessions"    : [{
             "sid"     : 1,
@@ -341,7 +322,6 @@
         "year"        : "2016",
         "month"       : "August",
         "name"        : "Platforma",
-        "url"         : "http://platforma-gym.by",
         "voucher"     : true,
         "sessions"    : [{
             "sid"     : 1,
@@ -354,7 +334,6 @@
         "year"        : "2016",
         "month"       : "September",
         "name"        : "Platforma",
-        "url"         : "http://platforma-gym.by",
         "voucher"     : true,
         "sessions"    : [{
             "sid"     : 1,
@@ -372,7 +351,6 @@
         "year"        : "2016",
         "month"       : "September",
         "name"        : "Lifestyle Fitness & GYM",
-        "url"         : "http://fitness-club.by",
         "voucher"     : false,
         "sessions"    : [{
             "sid"     : 1,
@@ -390,7 +368,6 @@
         "year"        : "2016",
         "month"       : "September",
         "name"        : "Platforma",
-        "url"         : "http://platforma-gym.by",
         "voucher"     : true,
         "sessions"    : [{
             "sid"     : 1,
@@ -413,7 +390,6 @@
         "year"        : "2016",
         "month"       : "September",
         "name"        : "Lifestyle Fitness & GYM",
-        "url"         : "http://fitness-club.by",
         "voucher"     : false,
         "sessions"    : [{
             "sid"     : 1,
@@ -426,7 +402,6 @@
         "year"        : "2016",
         "month"       : "September",
         "name"        : "Platforma",
-        "url"         : "http://platforma-gym.by",
         "voucher"     : true,
         "sessions"    : [{
             "sid"     : 1,
@@ -449,7 +424,6 @@
         "year"        : "2016",
         "month"       : "October",
         "name"        : "Lifestyle Fitness & GYM",
-        "url"         : "http://fitness-club.by",
         "voucher"     : false,
         "sessions"    : [{
             "sid"     : 1,
@@ -462,7 +436,6 @@
         "year"        : "2016",
         "month"       : "October",
         "name"        : "Platforma",
-        "url"         : "http://platforma-gym.by",
         "voucher"     : true,
         "sessions"    : [{
             "sid"     : 1,
@@ -480,7 +453,6 @@
         "year"        : "2017",
         "month"       : "December",
         "name"        : "Tonus Plus",
-        "url"         : "https://vk.com/tonusplus",
         "voucher"     : true,
         "sessions"    : [{
             "sid"     : 1,
@@ -498,7 +470,6 @@
         "year"        : "2018",
         "month"       : "January",
         "name"        : "Tonus Plus",
-        "url"         : "https://vk.com/tonusplus",
         "voucher"     : true,
         "sessions"    : [{
             "sid"     : 1,
@@ -576,7 +547,6 @@
         "year"        : "2018",
         "month"       : "February",
         "name"        : "Tonus Plus",
-        "url"         : "https://vk.com/tonusplus",
         "voucher"     : true,
         "sessions"    : [{
             "sid"     : 1,
@@ -619,7 +589,6 @@
         "year"        : "2018",
         "month"       : "March",
         "name"        : "Tonus Plus",
-        "url"         : "https://vk.com/tonusplus",
         "voucher"     : true,
         "sessions"    : [{
             "sid"     : 1,
@@ -687,7 +656,6 @@
         "year"        : "2018",
         "month"       : "April",
         "name"        : "Tonus Plus",
-        "url"         : "https://vk.com/tonusplus",
         "voucher"     : true,
         "sessions"    : [{
             "sid"     : 1,
@@ -735,7 +703,6 @@
         "year"        : "2018",
         "month"       : "April",
         "name"        : "Adrenalin",
-        "url"         : "https://gomel.adrenalin-fitness.by",
         "voucher"     : false,
         "sessions"    : [{
             "sid"     : 1,
@@ -748,7 +715,6 @@
         "year"        : "2018",
         "month"       : "May",
         "name"        : "Tonus Plus",
-        "url"         : "https://vk.com/tonusplus",
         "voucher"     : true,
         "sessions"    : [{
             "sid"     : 1,
@@ -761,7 +727,6 @@
         "year"        : "2018",
         "month"       : "July",
         "name"        : "Tonus Plus",
-        "url"         : "https://vk.com/tonusplus",
         "voucher"     : true,
         "sessions"    : [{
             "sid"     : 1,
@@ -794,7 +759,6 @@
         "year"        : "2018",
         "month"       : "August",
         "name"        : "Tonus Plus",
-        "url"         : "https://vk.com/tonusplus",
         "voucher"     : true,
         "sessions"    : [{
             "sid"     : 1,
