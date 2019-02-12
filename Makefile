@@ -14,8 +14,6 @@
 
 LIB_DIR = lib
 SRC_DIR = src
-_______ = header.html \
-          footer.html
 
 # Specify flags and other vars here.
 HARP      = harp
@@ -28,7 +26,6 @@ RMFLAGS   = -vR
 $(LIB_DIR) $(SRC_DIR):
 	$(HARP) $(HARPFLAGS) $(SRC_DIR) $(LIB_DIR)
 	$(CP) $(CPFLAGS) $(LIB_DIR)/* $(LIB_DIR)/..
-	$(RM) $(RMFLAGS) $(_______)
 
 .PHONY: all clean
 
