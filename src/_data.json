@@ -1,0 +1,10 @@
+{
+    "index"         : {
+        "layout"    : "_adicchio",
+        "sitename_" : ""
+    },
+    "404"           : {
+        "layout"    : "_adicchio",
+        "sitename_" : ": 404 Not Found"
+    }
+}
