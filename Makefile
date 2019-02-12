@@ -19,7 +19,7 @@ SRC_DIR = src
 HARP      = harp
 HARPFLAGS = compile
 CP        = cp
-CPFLAGS   = -vf
+CPFLAGS   = -vRf
 RMFLAGS   = -vR
 
 # Making the target.
