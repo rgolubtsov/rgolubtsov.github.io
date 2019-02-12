@@ -59,4 +59,53 @@ body {
     padding-top:      10px;
 }
 
+/* ------------------------------------------------------------------------- */
+
+h1 {
+    margin-left:      20px;
+    border-left:      4px solid #69df06;
+    padding-left:     4px;
+    color:            #7aef17;
+    font-size:        1.4em;
+}
+
+p {
+    margin:           0px 20px;
+    border-left:      4px solid #69df06;
+    padding:          0px 6px 14px;
+    line-height:      1.3em;
+    text-align:       justify;
+}
+
+p strong code {
+    color:            #69df06;
+    font-size:        1.2em;
+}
+
+ol {
+    margin:           0px 20px;
+    border-left:      4px solid #69df06;
+    padding:          0px 6px 14px 50px;
+    line-height:      1.3em;
+    text-align:       justify;
+}
+
+ol li {
+    padding-bottom:   6px;
+}
+
+p code {
+    border-radius:    5px;
+    padding:          3px;
+    background-color: #5db52a;
+    color:            #ffff00;
+}
+
+pre {
+    margin:           0px 50px 10px;
+    border-radius:    10px;
+    padding:          14px;
+    background-color: #5db52a;
+}
+
 /* vim:set nu et ts=4 sw=4: */
