@@ -33,18 +33,22 @@ body {
     font-size:        2em;
 }
 
-#header #v-bar {
-    width:            10px;
+#header #v-bar-h {
+    width:            6px;
     border-right:     4px solid #69df06;
 }
 
 #header #title-td {
-    padding-top:      10px;
+    padding:          10px 26px 0px 6px;
 }
 
 #subtitle {
     color:            #69df06;
     font-size:        1.2em;
+}
+
+#header #subtitle-td {
+    padding:          8px 26px 4px 6px;
 }
 
 #body-- {
@@ -55,12 +59,12 @@ body {
     padding:          4px;
 }
 
-#body-- #v-bar {
-    width:            10px;
+#body-- #v-bar-b {
+    width:            6px;
     border-right:     4px solid #69df06;
 }
 
-#body-- #top---td {
+#body-- #main--td {
     padding-top:      0px;
 }
 
