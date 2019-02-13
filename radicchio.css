@@ -34,6 +34,7 @@ body {
 }
 
 #header #v-bar {
+    width:            10px;
     border-right:     4px solid #69df06;
 }
 
@@ -52,39 +53,41 @@ body {
 
 #body-- td {
     padding:          4px;
-    color:            #36ac03;
+}
+
+#body-- #v-bar {
+    width:            10px;
+    border-right:     4px solid #69df06;
 }
 
 #body-- #top---td {
-    padding-top:      10px;
+    padding-top:      0px;
 }
 
 /* ------------------------------------------------------------------------- */
 
 h1 {
-    margin-left:      20px;
-    border-left:      4px solid #69df06;
+    margin-left:      10px;
     padding-left:     4px;
     color:            #7aef17;
     font-size:        1.4em;
 }
 
 p {
-    margin:           0px 20px;
-    border-left:      4px solid #69df06;
+    margin:           0px 20px 0px 10px;
     padding:          0px 6px 14px;
     line-height:      1.3em;
     text-align:       justify;
 }
 
 p strong code {
+    margin-left:      -4px;
     color:            #69df06;
     font-size:        1.2em;
 }
 
 ol {
     margin:           0px 20px;
-    border-left:      4px solid #69df06;
     padding:          0px 6px 14px 50px;
     line-height:      1.3em;
     text-align:       justify;
@@ -102,7 +105,8 @@ p code {
 }
 
 pre {
-    margin:           0px 50px 10px;
+    white-space:      pre-wrap;
+    margin:           0px 50px 14px 40px;
     border-radius:    10px;
     padding:          14px;
     background-color: #5db52a;
