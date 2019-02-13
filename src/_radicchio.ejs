@@ -40,7 +40,14 @@
 </tr>
 </tbody>
 </table>
-<%- yield %>
+<table width="0" border="0" cellspacing="0" cellpadding="0" id="body--">
+<tbody>
+<tr>
+<td id="v-bar"></td>
+<td id="top---td"><%- yield %></td>
+</tr>
+</tbody>
+</table>
 </body>
 </html>
 <%# vim:set nu et ts=4 sw=4: %>
