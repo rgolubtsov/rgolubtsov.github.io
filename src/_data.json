@@ -1,10 +1,12 @@
 {
     "index"         : {
-        "layout"    : "_adicchio",
-        "sitename_" : ""
+        "layout"    : "_radicchio",
+        "sitename_" : "",
+        "subtitle_" : ""
     },
     "404"           : {
-        "layout"    : "_adicchio",
-        "sitename_" : ": 404 Not Found"
+        "layout"    : "_radicchio",
+        "sitename_" : ": 404 Not Found",
+        "subtitle_" : ""
     }
 }
