@@ -1,7 +1,7 @@
 {
     "gotchas"       : {
         "layout"    : "../../_radicchio",
-        "sitename_" : "",
+        "sitename_" : ": Harp Installation Gotchas",
         "subtitle_" : ""
     }
 }
