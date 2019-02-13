@@ -1,0 +1,6 @@
+```
+$ journalctl -f
+...
+Feb 11 00:17:25 radicx101 systemd-coredump[29086]: Process 29073 (node-gyp) of user 0 dumped core.
+...
+```
