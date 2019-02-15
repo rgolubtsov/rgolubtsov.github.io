@@ -11,7 +11,7 @@ For the moment there are two independent algorithms were chosen and implemented 
 
 Both algorithms are implemented in the same set of programming languages, sequentially. Or sometimes simultaneously.
 
-Historically, the first programming language chosen to write a script implementing those two aforementioned algorithms was JavaScript, targeting the Node.js runtime environment. But actually the `find_equil_index.js` script (1) was the first and the only complete program that was resided in this repo alone for a year or so. Later on it was a decision to enrich the repo with similar snippets or pieces of code that might be considered to be standalone and independent scripts, but resembling the original one (1) as with inputs as well with outputs.
+Historically, the first programming language chosen to write a script implementing those two aforementioned algorithms was JavaScript, targeting the Node.js runtime environment. But actually the `find_equil_index.js` script (1) was the first and the only complete program that was resided in this repo alone for a year or so. Later on it was a decision to enrich the repo with similar snippets or pieces of code that might be considered to be standalone and independent scripts, but resembling the original one (1) as with their inputs as well with their outputs.
 
 However, prior to this there was a new script born, of course written again in JavaScript. It has implemented the second algorithm (2) &ndash; `replace_txt_chunks.js`. And right after that both directions were eloborated deeper by learning new programming languages and following the educational paradigm commonly known as **learning by doing** :smiley:.
 
@@ -25,7 +25,7 @@ In general, each subsequent script in both directions is based on their respecti
                                   +---> LFE ---> Clojure
 ```
 
-Scripts written in the following programming languages presented here:
+Scripts written in the following programming languages are presented here:
 
 1. JavaScript (ES5/Node.js)
 2. Erlang
