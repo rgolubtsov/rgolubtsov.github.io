@@ -2,7 +2,7 @@
 
 ### A one approach to bypass installing Node Sass which causes `node-gyp` segfaulting
 
-Consider the following situation when during installation of **Harp** it collects and installs all its dependencies and, at the time of installing Node Sass, it complains to unable fulfilling this procedure because Node Sass has to be built using `node-gyp`, but the latter causes segfault just after launching it.
+Consider a situation when during installation of **[Harp](http://harpjs.com "Harp, the static web server with built-in preprocessing")**, it collects and installs all its dependencies and, at the time of installing Node Sass, it complains to unable fulfilling this procedure because Node Sass has to be built using `node-gyp`, but the latter causes segfault just after launching it.
 
 The aforementioned error may occur during installation of **Harp** on a machine with limited system resources running **Arch Linux 32**. The following command/log entry shows this (intermediate output omitted):
 
@@ -39,7 +39,7 @@ https://github.com/sass/node-sass/releases/tag/v4.9.3
     at Object.<anonymous> (/usr/lib/node_modules/harp/node_modules/terraform/lib/stylesheet/processors/scss.js:1:74)
 ```
 
-However, if there is no need to use Node Sass at all but the **Harp** with other its facilities, this error can easily be bypassed just as simply editing the module shown in the last line of the stack trace &ndash; `scss.js`... and another one &ndash; `sass.js`:
+However, if there is no need to use Node Sass at all but the **Harp** with other its facilities, this error can easily be bypassed just by simply editing the module shown in the last line of the stack trace &ndash; `scss.js`... and another one &ndash; `sass.js`:
 
 ```
 $ sudo vim /usr/lib/node_modules/harp/node_modules/terraform/lib/stylesheet/processors/scss.js \
