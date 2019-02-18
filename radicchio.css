@@ -77,6 +77,21 @@ h1 {
     font-size:        1.4em;
 }
 
+h3 {
+    margin-left:      10px;
+    padding-left:     4px;
+    color:            #4ca419;
+    font-size:        1em;
+}
+
+h3 code {
+    border-radius:    5px;
+    padding:          3px;
+    background-color: #5db52a;
+    color:            #69df06;
+    font-size:        1.2em;
+}
+
 p {
     margin:           0px 20px 0px 10px;
     padding:          0px 6px 14px;
@@ -84,10 +99,11 @@ p {
     text-align:       justify;
 }
 
-p strong code {
-    margin-left:      -4px;
-    color:            #69df06;
-    font-size:        1.2em;
+p code {
+    border-radius:    5px;
+    padding:          3px;
+    background-color: #5db52a;
+    color:            #7aef17;
 }
 
 ol {
@@ -99,13 +115,6 @@ ol {
 
 ol li {
     padding-bottom:   6px;
-}
-
-p code {
-    border-radius:    5px;
-    padding:          3px;
-    background-color: #5db52a;
-    color:            #ffff00;
 }
 
 pre {

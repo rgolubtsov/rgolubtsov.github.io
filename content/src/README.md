@@ -1,6 +1,6 @@
 # Assorted sources
 
-**`srcs -> content/src`**
+### `srcs -> content/src`
 
 A series of scripts located here, written in various programming languages, is meant at demonstrating techniques to directly port the code from one programming language to another. This is very beneficial when learning new programming languages based on those already learned and used previously or currently.
 

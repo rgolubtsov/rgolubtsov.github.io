@@ -34,8 +34,7 @@
 <tbody>
 <tr>
 <td id="v-bar-b"></td>
-<td id="main--td"><h1>Harp Installation Gotchas</h1><p><strong>A one approach to bypass installing Node Sass which causes <code>node-gyp</code> segfaulting</strong></p>
-<p>Consider the following situation when during installation of <strong>Harp</strong> it collects and installs all its dependencies and, at the time of installing Node Sass, it complains to unable fulfilling this procedure because Node Sass has to be built using <code>node-gyp</code>, but the latter causes segfault just after launching it.</p>
+<td id="main--td"><h1>Harp Installation Gotchas</h1><h3>A one approach to bypass installing Node Sass which causes <code>node-gyp</code> segfaulting</h3><p>Consider the following situation when during installation of <strong>Harp</strong> it collects and installs all its dependencies and, at the time of installing Node Sass, it complains to unable fulfilling this procedure because Node Sass has to be built using <code>node-gyp</code>, but the latter causes segfault just after launching it.</p>
 <p>The aforementioned error may occur during installation of <strong>Harp</strong> on a machine with limited system resources running <strong>Arch Linux 32</strong>. The following command/log entry shows this (intermediate output omitted):</p>
 <pre><code>$ sudo LIBSASS_EXT=&quot;no&quot; npm i harp -g --unsafe-perm
 ...

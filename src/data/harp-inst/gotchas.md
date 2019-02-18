@@ -1,6 +1,6 @@
 # Harp Installation Gotchas
 
-**A one approach to bypass installing Node Sass which causes `node-gyp` segfaulting**
+### A one approach to bypass installing Node Sass which causes `node-gyp` segfaulting
 
 Consider the following situation when during installation of **Harp** it collects and installs all its dependencies and, at the time of installing Node Sass, it complains to unable fulfilling this procedure because Node Sass has to be built using `node-gyp`, but the latter causes segfault just after launching it.
 
