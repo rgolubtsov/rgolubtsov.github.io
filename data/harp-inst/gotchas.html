@@ -34,10 +34,36 @@
 <tbody>
 <tr>
 <td id="v-bar-b"></td>
-<td id="main--td"><pre><code>$ journalctl -f
+<td id="main--td"><h1>Harp Installation Gotchas</h1><p><strong>A one approach to bypass installing Node Sass which causes <code>node-gyp</code> segfaulting</strong></p>
+<p>Consider the following situation when during installation of <strong>Harp</strong> it collects and installs all its dependencies and, at the time of installing Node Sass, it complains to unable fulfilling this procedure because Node Sass has to be built using <code>node-gyp</code>, but the latter causes segfault just after launching it.</p>
+<p>The aforementioned error may occur during installation of <strong>Harp</strong> on a machine with limited system resources running <strong>Arch Linux 32</strong>. The following command/log entry shows this (intermediate output omitted):</p>
+<pre><code>$ sudo LIBSASS_EXT=&quot;no&quot; npm i harp -g --unsafe-perm
 ...
-Feb 11 00:17:25 radicx101 systemd-coredump[29086]: Process 29073 (node-gyp) of user 0 dumped core.
-...</code></pre></td>
+$
+$ journalctl -f
+...
+Feb 11 00:17:25 &lt;hostname&gt; systemd-coredump[29086]: Process 29073 (node-gyp) of user 0 dumped core.
+...</code></pre><p>Then when trying to run <strong>Harp</strong>, it prints out the following error along with respective stack trace:</p>
+<pre><code>$ harp
+/usr/lib/node_modules/harp/node_modules/node-sass/lib/binding.js:13
+      throw new Error(errors.unsupportedEnvironment());
+      ^
+
+Error: Node Sass does not yet support your current environment: Linux 32-bit with Unsupported runtime (67)
+For more information on which environments are supported please see:
+https://github.com/sass/node-sass/releases/tag/v4.9.3
+    at module.exports (/usr/lib/node_modules/harp/node_modules/node-sass/lib/binding.js:13:13)
+    at Object.&lt;anonymous&gt; (/usr/lib/node_modules/harp/node_modules/node-sass/lib/index.js:14:35)
+    at Module._compile (internal/modules/cjs/loader.js:734:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:745:10)
+    at Module.load (internal/modules/cjs/loader.js:626:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:566:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:558:3)
+    at Module.require (internal/modules/cjs/loader.js:663:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.&lt;anonymous&gt; (/usr/lib/node_modules/harp/node_modules/terraform/lib/stylesheet/processors/scss.js:1:74)</code></pre><p>However, if there is no need to use Node Sass at all but the <strong>Harp</strong> with other its facilities, this error can easily be bypassed just as simply editing the module shown in the last line of the stack trace &ndash; <code>scss.js</code>... and another one &ndash; <code>sass.js</code>:</p>
+<pre><code>$ sudo vim /usr/lib/node_modules/harp/node_modules/terraform/lib/stylesheet/processors/scss.js \
+           /usr/lib/node_modules/harp/node_modules/terraform/lib/stylesheet/processors/sass.js</code></pre><p>:cd:</p></td>
 </tr>
 </tbody>
 </table>
