@@ -1,8 +1,13 @@
 {
-    "globals"      : {
-        "sitename" : "A Cup of Radicchio",
-        "subtitle" : "A personal website of a power looper, a skateboarder, and a coder",
-        "coder"    : "Radislav (Radicchio) Golubtsov",
-        "css"      : "/radicchio.css"
+    "globals"        : {
+        "sitename"   : "A Cup of Radicchio",
+        "subtitle"   : "A personal website of a power looper, a skateboarder, and a coder",
+        "coder"      : "Radislav (Radicchio) Golubtsov",
+        "css"        : "/radicchio.css",
+        "nav_home_k" : "Home",    "nav_home_v" : "/",
+        "nav_docs_k" : "Docs",    "nav_docs_v" : "/data/docs",
+        "nav_srcs_k" : "Sources", "nav_srcs_v" : "/data/srcs",
+        "nav_blog_k" : "Blog",    "nav_blog_v" : "/data/harp-inst/gotchas",
+        "nav_ghub_k" : "GitHub",  "nav_ghub_v" : "https://github.com/rgolubtsov"
     }
 }

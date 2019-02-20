@@ -10,11 +10,11 @@
 * Copyright (C) 2016-2019 Radislav (Radicchio) Golubtsov
 */ %>
 
-<% var    TITLE = sitename + sitename_; var H = "#"; %>
-<% var SUBTITLE = subtitle + subtitle_; var D = "#"; %>
-<% var DESCR    = subtitle;             var S = "#"; %>
-<% var CODER    = coder;                var B = "#"; %>
-<% var CSS      = css;                  var G = "#"; %>
+<% var    TITLE = sitename + sitename_; var NHK = nav_home_k; var NHV = nav_home_v; %>
+<% var SUBTITLE = subtitle + subtitle_; var NDK = nav_docs_k; var NDV = nav_docs_v; %>
+<% var DESCR    = subtitle;             var NSK = nav_srcs_k; var NSV = nav_srcs_v; %>
+<% var CODER    = coder;                var NBK = nav_blog_k; var NBV = nav_blog_v; %>
+<% var CSS      = css;                  var NGK = nav_ghub_k; var NGV = nav_ghub_v; %>
 
 <!DOCTYPE html>
 <html lang="en-US" dir="ltr">
@@ -39,7 +39,7 @@
 <td id="subtitle-td"><%- SUBTITLE %></td>
 </tr>
 <tr id="navbar">
-<td id="navbar-td"><a href="<%- H %>">&nbsp;Home&nbsp;</a><a href="<%- D %>">&nbsp;Docs&nbsp;</a><a href="<%- S %>">&nbsp;Sources&nbsp;</a><a href="<%- B %>">&nbsp;Blog&nbsp;</a><a href="<%- G %>">&nbsp;GitHub&nbsp;</a></td>
+<td id="navbar-td"><a href="<%- NHV %>">&nbsp;<%- NHK %>&nbsp;</a><a href="<%- NDV %>">&nbsp;<%- NDK %>&nbsp;</a><a href="<%- NSV %>">&nbsp;<%- NSK %>&nbsp;</a><a href="<%- NBV %>">&nbsp;<%- NBK %>&nbsp;</a><a href="<%- NGV %>">&nbsp;<%- NGK %>&nbsp;</a></td>
 </tr>
 </tbody>
 </table>
