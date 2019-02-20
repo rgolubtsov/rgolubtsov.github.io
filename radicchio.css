@@ -10,8 +10,7 @@
  * Copyright (C) 2016-2019 Radislav (Radicchio) Golubtsov
  */
 
-html,
-body {
+html, body {
     margin:           0px;
     padding:          0px;
     background-color: #6ec63b;
@@ -51,6 +50,9 @@ body {
     padding:          8px 20px 4px 6px;
 }
 
+#navbar            {}
+#header #navbar-td {}
+
 #footer {
     width:            100%;
 }
@@ -66,6 +68,17 @@ body {
 
 #footer #footer-td {
     height:           8px;
+}
+
+a:link, a:visited, a:hover, a:active {
+    padding:          3px;
+    text-decoration:  none;
+    color:            #4ca419;
+}
+
+a:hover {
+    background-color: #5db52a;
+    color:            #7aef17;
 }
 
 /* ------------------------------------------------------------------------- */
