@@ -71,14 +71,12 @@ html, body {
 }
 
 a:link, a:visited, a:hover, a:active {
-    border:           1px solid #6ec63b;
     padding:          3px;
     text-decoration:  none;
     color:            #4ca419;
 }
 
 a:hover {
-    border:           1px solid #69df06;
     background-color: #5db52a;
     color:            #7aef17;
 }
