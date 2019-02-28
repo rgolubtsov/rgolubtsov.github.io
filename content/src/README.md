@@ -2,7 +2,7 @@
 
 ### `srcs -> content/src`
 
-A series of scripts located here, written in various programming languages, is meant at demonstrating techniques to directly port the code from one programming language to another. This is very beneficial when learning new programming languages based on those already learned and used previously or using currently.
+A series of scripts located **[here](https://github.com/rgolubtsov/rgolubtsov.github.io/tree/master/content/src "Assorted sources on GitHub")**, written in various programming languages, is meant at demonstrating techniques to directly port the code from one programming language to another. This is very beneficial when learning new programming languages based on those already learned and used previously or using currently.
 
 For the moment there are two independent algorithms were chosen and implemented as scripts:
 
@@ -29,12 +29,12 @@ Scripts written in the following programming languages are presented here:
 
 1. JavaScript (ES5/Node.js)
 2. Erlang
-3. LFE (Lisp Flavoured Erlang)
+3. LFE ([Lisp Flavoured Erlang](http://lfe.io "Lisp Flavoured Erlang"))
 4. Elixir
 5. Perl 5
 6. Python 3
 7. Lua
-8. C script (TCC)
+8. C script ([TCC](https://bellard.org/tcc "Tiny C Compiler"))
 9. Bash
 10. Go
 11. Clojure
