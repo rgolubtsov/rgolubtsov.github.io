@@ -16,10 +16,10 @@
 <meta       name="author"          content="Radislav (Radicchio) Golubtsov" />
 <meta       name="copyright"       content="Copyright (C) 2016-2019 Radislav (Radicchio) Golubtsov" />
 <title>A Cup of Radicchio: Harp Installation Gotchas</title>
-<link href="/radicchio.css" type="text/css" rel="stylesheet" media="screen,projection" />
+<link href="/radicchio.css" type="text/css" rel="stylesheet" media="screen" />
 </head>
 <body id="radicchio">
-<table width="0" border="0" cellspacing="0" cellpadding="0" id="header">
+<table id="header">
 <tbody>
 <tr id="title">
 <td rowspan="3" id="v-bar-h"></td>
@@ -62,7 +62,7 @@ https://github.com/sass/node-sass/releases/tag/v4.9.3
     at Object.&lt;anonymous&gt; (/usr/lib/node_modules/harp/node_modules/terraform/lib/stylesheet/processors/scss.js:1:74)</code></pre><p>However, if there is no need to use Node Sass at all but the <strong>Harp</strong> with other its facilities, this error can easily be bypassed just by simply editing the module shown in the last line of the stack trace &ndash; <code>scss.js</code>... and another one &ndash; <code>sass.js</code>:</p>
 <pre><code>$ sudo vim /usr/lib/node_modules/harp/node_modules/terraform/lib/stylesheet/processors/scss.js \
            /usr/lib/node_modules/harp/node_modules/terraform/lib/stylesheet/processors/sass.js</code></pre><p>:cd:</p>
-<table width="0" border="0" cellspacing="0" cellpadding="0" id="footer">
+<table id="footer">
 <tbody><tr><td id="v-bar-f"></td><td id="footer-td"></td></tr></tbody>
 </table>
 </body>
