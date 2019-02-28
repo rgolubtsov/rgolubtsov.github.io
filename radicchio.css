@@ -20,6 +20,8 @@ html, body {
 
 #header {
     width:            100%;
+    border-width:     0px;
+    border-spacing:   0px;
     font-weight:      bold;
 }
 
@@ -55,6 +57,8 @@ html, body {
 
 #footer {
     width:            100%;
+    border-width:     0px;
+    border-spacing:   0px;
 }
 
 #footer td {
