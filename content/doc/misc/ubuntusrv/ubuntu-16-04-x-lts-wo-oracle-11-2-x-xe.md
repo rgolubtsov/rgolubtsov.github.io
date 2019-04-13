@@ -1,13 +1,13 @@
-# Oracle Database 11*g* XE (11.2.0) on Ubuntu Server 16.04.4 LTS (x86-64) Deinstallation Instructions
+# Oracle Database 11*g* XE (11.2.X) on Ubuntu Server 16.04.X LTS (x86-64) Deinstallation Instructions
 
-## (1) Stop the running Oracle Database 11.2.0 XE instance
+## (1) Stop the running Oracle Database 11.2.X XE instance
 
 ```
 $ sudo /etc/init.d/oracle-xe stop
 [ ok ] Stopping oracle-xe (via systemctl): oracle-xe.service.
 ```
 
-## (2) Uninstall (and purge configuration files) the Oracle Database 11.2.0 XE instance and its components
+## (2) Uninstall (and purge configuration files) the Oracle Database 11.2.X XE instance and its components
 
 Use the `dpkg` utility to:
 

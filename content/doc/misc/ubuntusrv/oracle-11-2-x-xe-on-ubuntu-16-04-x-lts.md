@@ -1,8 +1,8 @@
-# Oracle Database 11*g* XE (11.2.0) on Ubuntu Server 16.04.4 LTS (x86-64) Installation Instructions
+# Oracle Database 11*g* XE (11.2.X) on Ubuntu Server 16.04.X LTS (x86-64) Installation Instructions
 
-(For instructions on deinstalling Oracle Database 11*g* XE see [this document](https://github.com/rgolubtsov/dotfiles/blob/master/ubuntusrv/ubuntu-16-04-4-lts-wo-oracle-11-2-0-xe.md "Oracle Database 11g XE (11.2.0) on Ubuntu Server 16.04.4 LTS (x86-64) Deinstallation Instructions.").)
+(For instructions on deinstalling Oracle Database 11*g* XE see [this document](https://github.com/rgolubtsov/dotfiles/blob/master/ubuntusrv/ubuntu-16-04-4-lts-wo-oracle-11-2-0-xe.md "Oracle Database 11g XE (11.2.X) on Ubuntu Server 16.04.X LTS (x86-64) Deinstallation Instructions.").)
 
-## (1) Download the Oracle Database 11.2.0 XE zipped RPM package
+## (1) Download the Oracle Database 11.2.X XE zipped RPM package
 
 It is freely downloadable from their OTN website. (**Note:** It needs to have an Oracle Account: sign in or sign up for a new one.) The link is named as "**Oracle Database Express Edition 11g Release 2 for Linux x64**".
 
@@ -13,7 +13,7 @@ $ scp -C oracle-xe-11.2.0-1.0.x86_64.rpm.zip <username>@<hostname>:/home/<userna
 oracle-xe-11.2.0-1.0.x86_64.rpm.zip                   100%  301MB   5.4MB/s   00:55
 ```
 
-## (2) Make the Oracle Database 11.2.0 XE DEB (Debian) package
+## (2) Make the Oracle Database 11.2.X XE DEB (Debian) package
 
 Do `unzip` the RPM package:
 
@@ -77,7 +77,7 @@ Processing triggers for ureadahead (0.100.0-19) ...
 Processing triggers for mime-support (3.59ubuntu1) ...
 ```
 
-## (4) Configure the installed Oracle Database 11.2.0 XE
+## (4) Configure the installed Oracle Database 11.2.X XE
 
 Adjust Kernel parameters' defaults using [this Bash script](https://raw.githubusercontent.com/rgolubtsov/dotfiles/master/ubuntusrv/oracle-11-2-0-xe-set-kernel-params "Adjust Kernel parameters required by the Oracle Database instance binary.") because it is required by the Oracle Database instance binary to run properly:
 
@@ -134,7 +134,7 @@ Installation completed successfully.
 
 ---
 
-## (5) Stop, start, check status, connect to the running Oracle Database 11.2.0 XE instance
+## (5) Stop, start, check status, connect to the running Oracle Database 11.2.X XE instance
 
 ### Stop the Oracle Database instance
 
