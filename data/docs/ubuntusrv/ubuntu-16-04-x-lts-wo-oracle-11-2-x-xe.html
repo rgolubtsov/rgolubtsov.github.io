@@ -1,0 +1,26 @@
+<h1>Oracle Database 11<em>g</em> XE (11.2.X) on Ubuntu Server 16.04.X LTS (x86-64) Deinstallation Instructions</h1><h2>(1) Stop the running Oracle Database 11.2.X XE instance</h2><pre><code>$ sudo /etc/init.d/oracle-xe stop
+[ ok ] Stopping oracle-xe (via systemctl): oracle-xe.service.</code></pre><h2>(2) Uninstall (and purge configuration files) the Oracle Database 11.2.X XE instance and its components</h2><p>Use the <code>dpkg</code> utility to:</p>
+<h3>(a) Ensure the <code>oracle-xe</code> package is installed and registered in the system package database (optional)</h3><pre><code>$ dpkg --get-selections | grep oracle-xe
+oracle-xe                                       install</code></pre><h3>(b) Purge (uninstall) the <code>oracle-xe</code> package from the system and unregister it from the system package database</h3><pre><code>$ sudo dpkg -P oracle-xe
+(Reading database ... 145312 files and directories currently installed.)
+Removing oracle-xe (11.2.0-2) ...
+Purging configuration files for oracle-xe (11.2.0-2) ...
+dpkg: warning: while removing oracle-xe, directory &#39;/u01/app/oracle/product/11.2.0/xe/lib&#39; not empty so not removed
+dpkg: warning: while removing oracle-xe, directory &#39;/u01/app/oracle/product/11.2.0/xe/config&#39; not empty so not removed
+dpkg: warning: while removing oracle-xe, directory &#39;/u01/app/oracle/product/11.2.0/xe/dbs&#39; not empty so not removed
+dpkg: warning: while removing oracle-xe, directory &#39;/u01/app/oracle/product/11.2.0/xe/network&#39; not empty so not removed
+Processing triggers for libc-bin (2.23-0ubuntu10) ...
+Processing triggers for mime-support (3.59ubuntu1) ...</code></pre><h3>Manually remove remaining directories and files from the system</h3><p>Notice from the previous command execution output there are a series of directories not removed, which are not actually needed. These directories should also be removed. For that simply delete the <code>/u01</code> directory recursively:</p>
+<pre><code>$ sudo rm -Rf /u01</code></pre><p>Remove remaining Oracle Database-related directories and files which are still exist in the system for any reason:</p>
+<pre><code>$ sudo rm -Rf /etc/default/oracle-xe \
+              /etc/oratab            \
+              /tmp/.oracle           \
+              /var/tmp/.oracle       \
+              ~/oradiag_&lt;username&gt;   \
+              ~/.rpmdb</code></pre><h2>(3) (Optional) Remove the user who acts as a DBA from the <code>dba</code> group</h2><pre><code>$ sudo gpasswd -d &lt;username&gt; dba
+Removing user &lt;username&gt; from group dba</code></pre><p>Do relogin and check the DBA user is not a DBA anymore:</p>
+<pre><code>$ groups
+&lt;usergroup&gt;</code></pre><p>&ndash; It previously was looked like the following:</p>
+<pre><code>$ groups
+&lt;usergroup&gt; dba</code></pre><hr>
+<p>Happy deliverance from Oracle in Ubuntu ! :+1: &ndash; Because <strong>PostgreSQL</strong> will rule the Universe ! :blue_heart:</p>

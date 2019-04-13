@@ -1,0 +1,126 @@
+<h1>Instructions to extract and repackage JRE, stored in an HP-UX JDK <code>.depot</code> bundle (on Linux)</h1><h2>(1) Download the HP-UX 11i Java Development Kit (JDK) <code>.depot</code> bundle (package)</h2><p>It is freely downloadable from the Software Depot homepage of the Hewlett Packard Enterprise (HPE) website. Actually the bundle can be downloaded from the HP-UX 11i Java Technology Software section of that homepage. They are provided each for various Java versions. Pick it up let&#39;s for 8.0.x &ndash; from the JDK/JRE 8.0.x Downloads and Documentation page. (<strong>Note:</strong> It needs to have an HPE Passport (account): sign in or sign up for a new one.) The link is named as &quot;<strong>Version 8.0.14 &ndash; June 2018 (includes Oracle update 8u172)</strong>&quot;.</p>
+<p>Transfer this bundle to a Linux box:</p>
+<pre><code>$ scp -C Itanium_JDK_8.0.14_June_2018_Z7550-63485_java8_18014_ia.depot &lt;username&gt;@&lt;hostname&gt;:/home/&lt;username&gt;
+Itanium_JDK_8.0.14_June_2018_Z7550-63485_java8_18014_ia.depot                   100%  141MB  11.2MB/s   00:12</code></pre><h2>(2) Unpack the <code>.depot</code> bundle</h2><p>Since in fact it is just an ordinary tar archive, it can be unpacked using the <code>tar</code> archiver:</p>
+<pre><code>$ tar -xvf Itanium_JDK_8.0.14_June_2018_Z7550-63485_java8_18014_ia.depot
+Jdk80/
+Jdk80/JDK80-COM/
+Jdk80/JDK80-COM/opt/
+Jdk80/JDK80-COM/opt/java8/
+Jdk80/JDK80-COM/opt/java8/COPYRIGHT
+Jdk80/JDK80-COM/opt/java8/LICENSE
+Jdk80/JDK80-COM/opt/java8/README.html
+Jdk80/JDK80-COM/opt/java8/THIRDPARTYLICENSEREADME.txt
+Jdk80/JDK80-COM/opt/java8/bin/
+Jdk80/JDK80-COM/opt/java8/bin/HPUXChildWrapper
+Jdk80/JDK80-COM/opt/java8/bin/appletviewer
+Jdk80/JDK80-COM/opt/java8/bin/extcheck
+Jdk80/JDK80-COM/opt/java8/bin/idlj
+Jdk80/JDK80-COM/opt/java8/bin/jar
+Jdk80/JDK80-COM/opt/java8/bin/jarsigner
+Jdk80/JDK80-COM/opt/java8/bin/java
+Jdk80/JDK80-COM/opt/java8/bin/javac
+...</code></pre><h2>(3) Adjust file permissions on unpacked data</h2><p>After unpacking almost all files and directories will have the writable permission bit switched off for owner, group, and other users. It should be restored at least for owner to avoid problems during files&#39; manipulations (see the next section). The following one-liner Bash script will do restore the permissions. The first script is for directories, the second one is for files:</p>
+<pre><code>$ for d in `find . -type d`; do sudo chmod -v u+w ${d}; done
+mode of &#39;.&#39; retained as 0755 (rwxr-xr-x)
+mode of &#39;./Jre80&#39; retained as 0755 (rwxr-xr-x)
+mode of &#39;./Jre80/JRE80&#39; retained as 0755 (rwxr-xr-x)
+mode of &#39;./Jre80/JRE80-IPF32-HS&#39; retained as 0755 (rwxr-xr-x)
+mode of &#39;./Jre80/JRE80-IPF32-HS/opt&#39; retained as 0755 (rwxr-xr-x)
+mode of &#39;./Jre80/JRE80-IPF32-HS/opt/java8&#39; retained as 0755 (rwxr-xr-x)
+mode of &#39;./Jre80/JRE80-IPF32-HS/opt/java8/jre&#39; changed from 0555 (r-xr-xr-x) to 0755 (rwxr-xr-x)
+mode of &#39;./Jre80/JRE80-IPF32-HS/opt/java8/jre/lib&#39; changed from 0555 (r-xr-xr-x) to 0755 (rwxr-xr-x)
+mode of &#39;./Jre80/JRE80-IPF32-HS/opt/java8/jre/lib/IA64N&#39; changed from 0555 (r-xr-xr-x) to 0755 (rwxr-xr-x)
+mode of &#39;./Jre80/JRE80-IPF32-HS/opt/java8/jre/lib/IA64N/server&#39; changed from 0555 (r-xr-xr-x) to 0755 (rwxr-xr-x)
+mode of &#39;./Jre80/JRE80-IPF32&#39; retained as 0755 (rwxr-xr-x)
+mode of &#39;./Jre80/JRE80-IPF32/opt&#39; retained as 0755 (rwxr-xr-x)
+mode of &#39;./Jre80/JRE80-IPF32/opt/java8&#39; retained as 0755 (rwxr-xr-x)
+mode of &#39;./Jre80/JRE80-IPF32/opt/java8/jre&#39; changed from 0555 (r-xr-xr-x) to 0755 (rwxr-xr-x)
+mode of &#39;./Jre80/JRE80-IPF32/opt/java8/jre/bin&#39; changed from 0555 (r-xr-xr-x) to 0755 (rwxr-xr-x)
+mode of &#39;./Jre80/JRE80-IPF32/opt/java8/jre/bin/IA64N&#39; changed from 0555 (r-xr-xr-x) to 0755 (rwxr-xr-x)
+mode of &#39;./Jre80/JRE80-IPF32/opt/java8/jre/lib&#39; changed from 0555 (r-xr-xr-x) to 0755 (rwxr-xr-x)
+...</code></pre><pre><code>$ for f in `find . -type f`; do sudo chmod -v u+w ${f}; done
+mode of &#39;./Itanium_JDK_8.0.14_June_2018_Z7550-63485_java8_18014_ia.depot&#39; retained as 0644 (rw-r--r--)
+mode of &#39;./swagent.log&#39; retained as 0644 (rw-r--r--)
+mode of &#39;./Jre80/JRE80-IPF32-HS/opt/java8/jre/lib/IA64N/libjsig.so&#39; changed from 0555 (r-xr-xr-x) to 0755 (rwxr-xr-x)
+mode of &#39;./Jre80/JRE80-IPF32-HS/opt/java8/jre/lib/IA64N/server/Xusage.txt&#39; changed from 0444 (r--r--r--) to 0644 (rw-r--r--)
+mode of &#39;./Jre80/JRE80-IPF32-HS/opt/java8/jre/lib/IA64N/server/libjunwind64.so&#39; changed from 0555 (r-xr-xr-x) to 0755 (rwxr-xr-x)
+mode of &#39;./Jre80/JRE80-IPF32-HS/opt/java8/jre/lib/IA64N/server/libjvm.so&#39; changed from 0555 (r-xr-xr-x) to 0755 (rwxr-xr-x)
+mode of &#39;./Jre80/JRE80-IPF32/opt/java8/jre/bin/IA64N/keytool&#39; changed from 0555 (r-xr-xr-x) to 0755 (rwxr-xr-x)
+mode of &#39;./Jre80/JRE80-IPF32/opt/java8/jre/bin/IA64N/rmiregistry&#39; changed from 0555 (r-xr-xr-x) to 0755 (rwxr-xr-x)
+mode of &#39;./Jre80/JRE80-IPF32/opt/java8/jre/bin/IA64N/jjs&#39; changed from 0555 (r-xr-xr-x) to 0755 (rwxr-xr-x)
+mode of &#39;./Jre80/JRE80-IPF32/opt/java8/jre/bin/IA64N/tnameserv&#39; changed from 0555 (r-xr-xr-x) to 0755 (rwxr-xr-x)
+mode of &#39;./Jre80/JRE80-IPF32/opt/java8/jre/bin/IA64N/orbd&#39; changed from 0555 (r-xr-xr-x) to 0755 (rwxr-xr-x)
+mode of &#39;./Jre80/JRE80-IPF32/opt/java8/jre/bin/IA64N/servertool&#39; changed from 0555 (r-xr-xr-x) to 0755 (rwxr-xr-x)
+mode of &#39;./Jre80/JRE80-IPF32/opt/java8/jre/bin/IA64N/policytool&#39; changed from 0555 (r-xr-xr-x) to 0755 (rwxr-xr-x)
+mode of &#39;./Jre80/JRE80-IPF32/opt/java8/jre/bin/IA64N/unpack200&#39; changed from 0555 (r-xr-xr-x) to 0755 (rwxr-xr-x)
+mode of &#39;./Jre80/JRE80-IPF32/opt/java8/jre/bin/IA64N/rmid&#39; changed from 0555 (r-xr-xr-x) to 0755 (rwxr-xr-x)
+mode of &#39;./Jre80/JRE80-IPF32/opt/java8/jre/bin/IA64N/java_q4p&#39; changed from 0555 (r-xr-xr-x) to 0755 (rwxr-xr-x)
+mode of &#39;./Jre80/JRE80-IPF32/opt/java8/jre/bin/IA64N/java&#39; changed from 0555 (r-xr-xr-x) to 0755 (rwxr-xr-x)
+...</code></pre><p>Now it is safe to remove unneeded directories and files (JDK, post-installation scripts, etc.). It needs to keep the <code>Jre80/</code> directory only:</p>
+<pre><code>$ rm -vRf catalog/ Jdk80/ swagent.log
+removed &#39;catalog/Jre80/JRE80/INFO&#39;
+removed &#39;catalog/Jre80/JRE80/SIGNATURE&#39;
+removed &#39;catalog/Jre80/JRE80/INDEX&#39;
+removed directory &#39;catalog/Jre80/JRE80&#39;
+removed &#39;catalog/Jre80/JRE80-IPF32-HS/INFO&#39;
+removed &#39;catalog/Jre80/JRE80-IPF32-HS/SIGNATURE&#39;
+removed &#39;catalog/Jre80/JRE80-IPF32-HS/postinstall&#39;
+removed &#39;catalog/Jre80/JRE80-IPF32-HS/INDEX&#39;
+removed directory &#39;catalog/Jre80/JRE80-IPF32-HS&#39;
+removed &#39;catalog/Jre80/JRE80-IPF32/INFO&#39;
+removed &#39;catalog/Jre80/JRE80-IPF32/SIGNATURE&#39;
+removed &#39;catalog/Jre80/JRE80-IPF32/postinstall&#39;
+removed &#39;catalog/Jre80/JRE80-IPF32/INDEX&#39;
+removed &#39;catalog/Jre80/JRE80-IPF32/preinstall&#39;
+removed directory &#39;catalog/Jre80/JRE80-IPF32&#39;
+removed &#39;catalog/Jre80/JRE80-IPF64/INFO&#39;
+removed &#39;catalog/Jre80/JRE80-IPF64/SIGNATURE&#39;
+...</code></pre><h2>(4) Copy all separately located JRE directory branches into a consolidated one</h2><p>These directory structures will be expanded and underlying files will not be overwritten. So it is safe to do the following manipulations:</p>
+<pre><code>$ cp -vRf Jre80/JRE80-COM/opt/java8/jre/*      Jre80/JRE80/ &amp;&amp; \
+  cp -vRf Jre80/JRE80-COM-DOC/opt/java8/jre/*  Jre80/JRE80/ &amp;&amp; \
+  cp -vRf Jre80/JRE80-IPF32/opt/java8/jre/*    Jre80/JRE80/ &amp;&amp; \
+  cp -vRf Jre80/JRE80-IPF32-HS/opt/java8/jre/* Jre80/JRE80/ &amp;&amp; \
+  cp -vRf Jre80/JRE80-IPF64/opt/java8/jre/*    Jre80/JRE80/ &amp;&amp; \
+  cp -vRf Jre80/JRE80-IPF64-HS/opt/java8/jre/* Jre80/JRE80/</code></pre><p>Move the consolidated resulting JRE directory structure to the current directory and remove already unneeded stuff:</p>
+<pre><code>$ mv -v   Jre80/JRE80/* . &amp;&amp; \
+  rm -vRf Jre80/ *.depot</code></pre><h2>(5) Invoke the <code>gunzip</code> magic against all the JRE files</h2><p>In fact all the resulting JRE files are stored compressed as <code>gzip</code>ped:</p>
+<pre><code>$ file * bin/java
+bin:                         directory
+COPYRIGHT:                   gzip compressed data, from Unix
+lib:                         directory
+LICENSE:                     gzip compressed data, from Unix
+man:                         directory
+README:                      gzip compressed data, from Unix
+THIRDPARTYLICENSEREADME.txt: gzip compressed data, from Unix
+bin/java:                    gzip compressed data, from Unix</code></pre><p>It needs to <code>gunzip</code> each of them, but first give each file the <code>.gz</code> extension. The following one-liner Bash script does exactly this <em>magic</em> thing:</p>
+<pre><code>$ for f in `find . -type f`; do mv -v ${f} ${f}.gz; gunzip ${f}.gz; done</code></pre><p>Check them out again and ensure the JRE files are now ready for including them to form out a new package (archive):</p>
+<pre><code>$ file * bin/java
+bin:                         directory
+COPYRIGHT:                   ISO-8859 text, with very long lines
+lib:                         directory
+LICENSE:                     Non-ISO extended-ASCII text, with very long lines
+man:                         directory
+README:                      ASCII text
+THIRDPARTYLICENSEREADME.txt: UTF-8 Unicode text
+bin/java:                    ELF 32-bit MSB executable, IA-64, version 1, dynamically linked, interpreter /usr/lib/hpux32/uld.so:/usr/lib/hpux32/dld.so, not stripped</code></pre><h2>(6) Create a new package (zip-archive) containing Java Runtime Environment for HP-UX ready to run standalone</h2><pre><code>$ zip -r9 ../hpux_ia.zip *
+  adding: bin/ (stored 0%)
+  adding: bin/keytool (deflated 65%)
+  adding: bin/rmiregistry (deflated 65%)
+  adding: bin/jjs (deflated 65%)
+  adding: bin/IA64W/ (stored 0%)
+  adding: bin/IA64W/keytool (deflated 95%)
+  adding: bin/IA64W/rmiregistry (deflated 95%)
+  adding: bin/IA64W/jjs (deflated 95%)
+  adding: bin/IA64W/tnameserv (deflated 95%)
+  adding: bin/IA64W/orbd (deflated 95%)
+  adding: bin/IA64W/servertool (deflated 95%)
+  adding: bin/IA64W/policytool (deflated 95%)
+  adding: bin/IA64W/unpack200 (deflated 61%)
+  adding: bin/IA64W/rmid (deflated 95%)
+  adding: bin/IA64W/java_q4p (deflated 95%)
+  adding: bin/IA64W/java (deflated 95%)
+  adding: bin/IA64W/pack200 (deflated 95%)
+...</code></pre><pre><code>$ file ../hpux_ia.zip
+../hpux_ia.zip: Zip archive data, at least v1.0 to extract</code></pre><hr>
+<p>Happy Javing in HP-UX ! :+1:</p>
