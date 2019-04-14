@@ -1,6 +1,8 @@
-# Instructions to extract and repackage JRE, stored in an HP-UX JDK `.depot` bundle (on Linux)
+# Extract and repackage HP-UX JRE on Linux
 
-## (1) Download the HP-UX 11i Java Development Kit (JDK) `.depot` bundle (package)
+### Instructions to extract and repackage JRE, stored in an HP-UX JDK `.depot` bundle (on Linux)
+
+**(1) Download the HP-UX 11i Java Development Kit (JDK) `.depot` bundle (package)**
 
 It is freely downloadable from the Software Depot homepage of the Hewlett Packard Enterprise (HPE) website. Actually the bundle can be downloaded from the HP-UX 11i Java Technology Software section of that homepage. They are provided each for various Java versions. Pick it up let's for 8.0.x &ndash; from the JDK/JRE 8.0.x Downloads and Documentation page. (**Note:** It needs to have an HPE Passport (account): sign in or sign up for a new one.) The link is named as "**Version 8.0.14 &ndash; June 2018 (includes Oracle update 8u172)**".
 
@@ -11,7 +13,7 @@ $ scp -C Itanium_JDK_8.0.14_June_2018_Z7550-63485_java8_18014_ia.depot <username
 Itanium_JDK_8.0.14_June_2018_Z7550-63485_java8_18014_ia.depot                   100%  141MB  11.2MB/s   00:12
 ```
 
-## (2) Unpack the `.depot` bundle
+**(2) Unpack the `.depot` bundle**
 
 Since in fact it is just an ordinary tar archive, it can be unpacked using the `tar` archiver:
 
@@ -37,7 +39,7 @@ Jdk80/JDK80-COM/opt/java8/bin/javac
 ...
 ```
 
-## (3) Adjust file permissions on unpacked data
+**(3) Adjust file permissions on unpacked data**
 
 After unpacking almost all files and directories will have the writable permission bit switched off for owner, group, and other users. It should be restored at least for owner to avoid problems during files' manipulations (see the next section). The following one-liner Bash script will do restore the permissions. The first script is for directories, the second one is for files:
 
@@ -109,7 +111,7 @@ removed 'catalog/Jre80/JRE80-IPF64/SIGNATURE'
 ...
 ```
 
-## (4) Copy all separately located JRE directory branches into a consolidated one
+**(4) Copy all separately located JRE directory branches into a consolidated one**
 
 These directory structures will be expanded and underlying files will not be overwritten. So it is safe to do the following manipulations:
 
@@ -129,7 +131,7 @@ $ mv -v   Jre80/JRE80/* . && \
   rm -vRf Jre80/ *.depot
 ```
 
-## (5) Invoke the `gunzip` magic against all the JRE files
+**(5) Invoke the `gunzip` magic against all the JRE files**
 
 In fact all the resulting JRE files are stored compressed as `gzip`ped:
 
@@ -165,7 +167,7 @@ THIRDPARTYLICENSEREADME.txt: UTF-8 Unicode text
 bin/java:                    ELF 32-bit MSB executable, IA-64, version 1, dynamically linked, interpreter /usr/lib/hpux32/uld.so:/usr/lib/hpux32/dld.so, not stripped
 ```
 
-## (6) Create a new package (zip-archive) containing Java Runtime Environment for HP-UX ready to run standalone
+**(6) Create a new package (zip-archive) containing Java Runtime Environment for HP-UX ready to run standalone**
 
 ```
 $ zip -r9 ../hpux_ia.zip *
@@ -193,7 +195,5 @@ $ zip -r9 ../hpux_ia.zip *
 $ file ../hpux_ia.zip
 ../hpux_ia.zip: Zip archive data, at least v1.0 to extract
 ```
-
----
 
 Happy Javing in HP-UX ! :+1:

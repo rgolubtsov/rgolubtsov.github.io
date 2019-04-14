@@ -1,8 +1,45 @@
-<h1>Oracle Database 11<em>g</em> XE (11.2.X) on Ubuntu Server 16.04.X LTS (x86-64) Installation Instructions</h1><p>(For instructions on deinstalling Oracle Database 11<em>g</em> XE see <a href="https://github.com/rgolubtsov/dotfiles/blob/master/ubuntusrv/ubuntu-16-04-4-lts-wo-oracle-11-2-0-xe.md" title="Oracle Database 11g XE (11.2.X) on Ubuntu Server 16.04.X LTS (x86-64) Deinstallation Instructions.">this document</a>.)</p>
-<h2>(1) Download the Oracle Database 11.2.X XE zipped RPM package</h2><p>It is freely downloadable from their OTN website. (<strong>Note:</strong> It needs to have an Oracle Account: sign in or sign up for a new one.) The link is named as &quot;<strong>Oracle Database Express Edition 11g Release 2 for Linux x64</strong>&quot;.</p>
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<head>
+<meta http-equiv="Content-Type"    content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta       name="viewport"        content="width=device-width,initial-scale=1" />
+<meta       name="description"     content="A personal website of a power looper, a skateboarder, and a coder" />
+<meta       name="author"          content="Radislav (Radicchio) Golubtsov" />
+<meta       name="copyright"       content="Copyright (C) 2016-2019 Radislav (Radicchio) Golubtsov" />
+<title>A Cup of Radicchio: Install Oracle Database 11g XE on Ubuntu Server 16.04 LTS</title>
+<link href="/radicchio.css" type="text/css" rel="stylesheet" media="screen" />
+</head>
+<body id="radicchio">
+<table id="header">
+<tbody>
+<tr id="title">
+<td rowspan="3" id="v-bar-h"></td>
+<td id="title-td">A Cup of Radicchio: Install Oracle Database 11g XE on Ubuntu Server 16.04 LTS</td>
+</tr>
+<tr id="subtitle">
+<td id="subtitle-td">A personal website of a power looper, a skateboarder, and a coder</td>
+</tr>
+<tr id="navbar">
+<td id="navbar-td"><a href="/">&nbsp;Home&nbsp;</a><a href="/data/docs">&nbsp;Docs&nbsp;</a><a href="/data/srcs">&nbsp;Sources&nbsp;</a><a href="/data/blog">&nbsp;Blog&nbsp;</a><a href="https://github.com/rgolubtsov">&nbsp;GitHub&nbsp;</a></td>
+</tr>
+</tbody>
+</table>
+<h1>Install Oracle Database 11<em>g</em> XE on Ubuntu Server 16.04 LTS</h1><h3>Oracle Database 11<em>g</em> XE (11.2.X) on Ubuntu Server 16.04.X LTS (x86-64) Installation Instructions</h3><p>(For instructions on deinstalling Oracle Database 11<em>g</em> XE see <a href="https://github.com/rgolubtsov/dotfiles/blob/master/ubuntusrv/ubuntu-16-04-4-lts-wo-oracle-11-2-0-xe.md" title="Oracle Database 11g XE (11.2.X) on Ubuntu Server 16.04.X LTS (x86-64) Deinstallation Instructions.">this document</a>.)</p>
+<p><strong>(1) Download the Oracle Database 11.2.X XE zipped RPM package</strong></p>
+<p>It is freely downloadable from their OTN website. (<strong>Note:</strong> It needs to have an Oracle Account: sign in or sign up for a new one.) The link is named as &quot;<strong>Oracle Database Express Edition 11g Release 2 for Linux x64</strong>&quot;.</p>
 <p>Transfer this package to the Ubuntu Server box:</p>
 <pre><code>$ scp -C oracle-xe-11.2.0-1.0.x86_64.rpm.zip &lt;username&gt;@&lt;hostname&gt;:/home/&lt;username&gt;
-oracle-xe-11.2.0-1.0.x86_64.rpm.zip                   100%  301MB   5.4MB/s   00:55</code></pre><h2>(2) Make the Oracle Database 11.2.X XE DEB (Debian) package</h2><p>Do <code>unzip</code> the RPM package:</p>
+oracle-xe-11.2.0-1.0.x86_64.rpm.zip                   100%  301MB   5.4MB/s   00:55</code></pre><p><strong>(2) Make the Oracle Database 11.2.X XE DEB (Debian) package</strong></p>
+<p>Do <code>unzip</code> the RPM package:</p>
 <pre><code>$ unzip oracle-xe-11.2.0-1.0.x86_64.rpm.zip
 Archive:  oracle-xe-11.2.0-1.0.x86_64.rpm.zip
    creating: Disk1/
@@ -13,7 +50,8 @@ Archive:  oracle-xe-11.2.0-1.0.x86_64.rpm.zip
   inflating: Disk1/oracle-xe-11.2.0-1.0.x86_64.rpm</code></pre><p>Install the <strong>Alien</strong> package:</p>
 <pre><code>$ sudo apt-get update &amp;&amp; sudo apt-get install alien -y</code></pre><p>Convert the RPM package to the DEB one (Superuser rights are required):</p>
 <pre><code>$ cd Disk1 &amp;&amp; sudo alien -cd oracle-xe-11.2.0-1.0.x86_64.rpm
-oracle-xe_11.2.0-2_amd64.deb generated</code></pre><h2>(3) Install the DEB package into the system</h2><p>Adjust the <strong>AWK</strong> interpreter&#39;s invocation path (create a symlink) in order to allow the Oracle Database configuration utility find it:</p>
+oracle-xe_11.2.0-2_amd64.deb generated</code></pre><p><strong>(3) Install the DEB package into the system</strong></p>
+<p>Adjust the <strong>AWK</strong> interpreter&#39;s invocation path (create a symlink) in order to allow the Oracle Database configuration utility find it:</p>
 <pre><code>$ sudo ln -sfnv /usr/bin/awk /bin/awk
 &#39;/bin/awk&#39; -&gt; &#39;/usr/bin/awk&#39;</code></pre><p>Install the <strong>AIO</strong> library. It is required by the Oracle Database instance binary which is dynamically linked against this library:</p>
 <pre><code>$ sudo apt-get update &amp;&amp; sudo apt-get install libaio1 -y</code></pre><p>Install the created Oracle Database DEB package:</p>
@@ -32,7 +70,8 @@ You must run &#39;/etc/init.d/oracle-xe configure&#39; as the root user to confi
 Processing triggers for libc-bin (2.23-0ubuntu10) ...
 Processing triggers for systemd (229-4ubuntu21.2) ...
 Processing triggers for ureadahead (0.100.0-19) ...
-Processing triggers for mime-support (3.59ubuntu1) ...</code></pre><h2>(4) Configure the installed Oracle Database 11.2.X XE</h2><p>Adjust Kernel parameters&#39; defaults using <a href="https://raw.githubusercontent.com/rgolubtsov/dotfiles/master/ubuntusrv/oracle-11-2-0-xe-set-kernel-params" title="Adjust Kernel parameters required by the Oracle Database instance binary.">this Bash script</a> because it is required by the Oracle Database instance binary to run properly:</p>
+Processing triggers for mime-support (3.59ubuntu1) ...</code></pre><p><strong>(4) Configure the installed Oracle Database 11.2.X XE</strong></p>
+<p>Adjust Kernel parameters&#39; defaults using <a href="https://raw.githubusercontent.com/rgolubtsov/dotfiles/master/ubuntusrv/oracle-11-2-0-xe-set-kernel-params" title="Adjust Kernel parameters required by the Oracle Database instance binary.">this Bash script</a> because it is required by the Oracle Database instance binary to run properly:</p>
 <pre><code>$ curl  -O https://raw.githubusercontent.com/rgolubtsov/dotfiles/master/ubuntusrv/oracle-11-2-0-xe-set-kernel-params &amp;&amp; \
   chmod -v 700 oracle-11-2-0-xe-set-kernel-params                                                                    &amp;&amp; \
   sudo       ./oracle-11-2-0-xe-set-kernel-params
@@ -75,10 +114,13 @@ Do you want Oracle Database 11g Express Edition to be started on boot (y/n) [y]:
 Starting Oracle Net Listener...Done
 Configuring database...Done
 Starting Oracle Database 11g Express Edition instance...Done
-Installation completed successfully.</code></pre><hr>
-<h2>(5) Stop, start, check status, connect to the running Oracle Database 11.2.X XE instance</h2><h3>Stop the Oracle Database instance</h3><pre><code>$ sudo /etc/init.d/oracle-xe stop
-[ ok ] Stopping oracle-xe (via systemctl): oracle-xe.service.</code></pre><h3>Start the Oracle Database instance</h3><pre><code>$ sudo /etc/init.d/oracle-xe start
-[ ok ] Starting oracle-xe (via systemctl): oracle-xe.service.</code></pre><h3>Check the status of the Oracle Database instance</h3><pre><code>$ sudo /etc/init.d/oracle-xe status
+Installation completed successfully.</code></pre><p><strong>(5) Stop, start, check status, connect to the running Oracle Database 11.2.X XE instance</strong></p>
+<p><strong>(5.1) Stop the Oracle Database instance</strong></p>
+<pre><code>$ sudo /etc/init.d/oracle-xe stop
+[ ok ] Stopping oracle-xe (via systemctl): oracle-xe.service.</code></pre><p><strong>(5.2) Start the Oracle Database instance</strong></p>
+<pre><code>$ sudo /etc/init.d/oracle-xe start
+[ ok ] Starting oracle-xe (via systemctl): oracle-xe.service.</code></pre><p><strong>(5.3) Check the status of the Oracle Database instance</strong></p>
+<pre><code>$ sudo /etc/init.d/oracle-xe status
 ● oracle-xe.service - SYSV: This is a program that is responsible for taking care of
    Loaded: loaded (/etc/init.d/oracle-xe; bad; vendor preset: enabled)
    Active: active (exited) since Fri 2018-04-06 17:38:26 +03; 9min ago
@@ -94,7 +136,8 @@ Apr 06 17:38:19 &lt;hostname&gt; oracle-xe[10094]: Starting Oracle Database 11g 
 Apr 06 17:38:19 &lt;hostname&gt; su[10129]: Successful su for oracle by root
 Apr 06 17:38:19 &lt;hostname&gt; su[10129]: + ??? root:oracle
 Apr 06 17:38:19 &lt;hostname&gt; su[10129]: pam_unix(su:session): session opened for user oracle by (uid=0)
-Apr 06 17:38:26 &lt;hostname&gt; systemd[1]: Started SYSV: This is a program that is responsible for taking care of.</code></pre><h3>Connect to the running Oracle Database instance (and get data)</h3><p><strong>(Optional)</strong> Before executing any of Oracle Database utilities it needs to add the current user to the <code>dba</code> group and set appropriate environment variables:</p>
+Apr 06 17:38:26 &lt;hostname&gt; systemd[1]: Started SYSV: This is a program that is responsible for taking care of.</code></pre><p><strong>(5.4) Connect to the running Oracle Database instance (and get data)</strong></p>
+<p><strong>(Optional)</strong> Before executing any of Oracle Database utilities it needs to add the current user to the <code>dba</code> group and set appropriate environment variables:</p>
 <pre><code>$ sudo usermod -a -G dba &lt;username&gt;</code></pre><p><strong>(Optional)</strong> Do relogin and check the current user is now a DBA:</p>
 <pre><code>$ groups
 &lt;usergroup&gt; dba</code></pre><p>Set Oracle Database-related environment variables:</p>
@@ -130,5 +173,10 @@ SYS                                     0 28-AUG-11
 12 rows selected.
 
 SQL&gt; &lt;Ctrl+D&gt;
-SQL&gt; Disconnected from Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production</code></pre><hr>
-<p>Happy Oracling in Ubuntu ! :+1:</p>
+SQL&gt; Disconnected from Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production</code></pre><p>Happy Oracling in Ubuntu ! :+1:</p>
+<table id="footer">
+<tbody><tr><td id="v-bar-f"></td><td id="footer-td"></td></tr></tbody>
+</table>
+</body>
+</html>
+

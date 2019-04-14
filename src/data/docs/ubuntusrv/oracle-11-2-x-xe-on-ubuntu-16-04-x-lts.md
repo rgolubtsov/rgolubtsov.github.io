@@ -1,8 +1,10 @@
-# Oracle Database 11*g* XE (11.2.X) on Ubuntu Server 16.04.X LTS (x86-64) Installation Instructions
+# Install Oracle Database 11*g* XE on Ubuntu Server 16.04 LTS
+
+### Oracle Database 11*g* XE (11.2.X) on Ubuntu Server 16.04.X LTS (x86-64) Installation Instructions
 
 (For instructions on deinstalling Oracle Database 11*g* XE see [this document](https://github.com/rgolubtsov/dotfiles/blob/master/ubuntusrv/ubuntu-16-04-4-lts-wo-oracle-11-2-0-xe.md "Oracle Database 11g XE (11.2.X) on Ubuntu Server 16.04.X LTS (x86-64) Deinstallation Instructions.").)
 
-## (1) Download the Oracle Database 11.2.X XE zipped RPM package
+**(1) Download the Oracle Database 11.2.X XE zipped RPM package**
 
 It is freely downloadable from their OTN website. (**Note:** It needs to have an Oracle Account: sign in or sign up for a new one.) The link is named as "**Oracle Database Express Edition 11g Release 2 for Linux x64**".
 
@@ -13,7 +15,7 @@ $ scp -C oracle-xe-11.2.0-1.0.x86_64.rpm.zip <username>@<hostname>:/home/<userna
 oracle-xe-11.2.0-1.0.x86_64.rpm.zip                   100%  301MB   5.4MB/s   00:55
 ```
 
-## (2) Make the Oracle Database 11.2.X XE DEB (Debian) package
+**(2) Make the Oracle Database 11.2.X XE DEB (Debian) package**
 
 Do `unzip` the RPM package:
 
@@ -41,7 +43,7 @@ $ cd Disk1 && sudo alien -cd oracle-xe-11.2.0-1.0.x86_64.rpm
 oracle-xe_11.2.0-2_amd64.deb generated
 ```
 
-## (3) Install the DEB package into the system
+**(3) Install the DEB package into the system**
 
 Adjust the **AWK** interpreter's invocation path (create a symlink) in order to allow the Oracle Database configuration utility find it:
 
@@ -77,7 +79,7 @@ Processing triggers for ureadahead (0.100.0-19) ...
 Processing triggers for mime-support (3.59ubuntu1) ...
 ```
 
-## (4) Configure the installed Oracle Database 11.2.X XE
+**(4) Configure the installed Oracle Database 11.2.X XE**
 
 Adjust Kernel parameters' defaults using [this Bash script](https://raw.githubusercontent.com/rgolubtsov/dotfiles/master/ubuntusrv/oracle-11-2-0-xe-set-kernel-params "Adjust Kernel parameters required by the Oracle Database instance binary.") because it is required by the Oracle Database instance binary to run properly:
 
@@ -132,25 +134,23 @@ Starting Oracle Database 11g Express Edition instance...Done
 Installation completed successfully.
 ```
 
----
+**(5) Stop, start, check status, connect to the running Oracle Database 11.2.X XE instance**
 
-## (5) Stop, start, check status, connect to the running Oracle Database 11.2.X XE instance
-
-### Stop the Oracle Database instance
+**(5.1) Stop the Oracle Database instance**
 
 ```
 $ sudo /etc/init.d/oracle-xe stop
 [ ok ] Stopping oracle-xe (via systemctl): oracle-xe.service.
 ```
 
-### Start the Oracle Database instance
+**(5.2) Start the Oracle Database instance**
 
 ```
 $ sudo /etc/init.d/oracle-xe start
 [ ok ] Starting oracle-xe (via systemctl): oracle-xe.service.
 ```
 
-### Check the status of the Oracle Database instance
+**(5.3) Check the status of the Oracle Database instance**
 
 ```
 $ sudo /etc/init.d/oracle-xe status
@@ -172,7 +172,7 @@ Apr 06 17:38:19 <hostname> su[10129]: pam_unix(su:session): session opened for u
 Apr 06 17:38:26 <hostname> systemd[1]: Started SYSV: This is a program that is responsible for taking care of.
 ```
 
-### Connect to the running Oracle Database instance (and get data)
+**(5.4) Connect to the running Oracle Database instance (and get data)**
 
 **(Optional)** Before executing any of Oracle Database utilities it needs to add the current user to the `dba` group and set appropriate environment variables:
 
@@ -229,7 +229,5 @@ SYS                                     0 28-AUG-11
 SQL> <Ctrl+D>
 SQL> Disconnected from Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
 ```
-
----
 
 Happy Oracling in Ubuntu ! :+1:

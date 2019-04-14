@@ -1,0 +1,17 @@
+{
+    "oracle-11-2-x-xe-on-ubuntu-16-04-x-lts"                        : {
+        "layout"                                                    : "../../../_radicchio",
+        "sitename_"                                                 : ": Install Oracle Database 11g XE on Ubuntu Server 16.04 LTS",
+        "subtitle_"                                                 : ""
+    },
+    "ubuntu-16-04-x-lts-wo-oracle-11-2-x-xe"                        : {
+        "layout"                                                    : "../../../_radicchio",
+        "sitename_"                                                 : ": Uninstall Oracle Database 11g XE on Ubuntu Server 16.04 LTS",
+        "subtitle_"                                                 : ""
+    },
+    "extract-and-repackage-jre-from-hpux-jdk-depot-bundle-on-linux" : {
+        "layout"                                                    : "../../../_radicchio",
+        "sitename_"                                                 : ": Extract and repackage HP-UX JRE on Linux",
+        "subtitle_"                                                 : ""
+    }
+}
