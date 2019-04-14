@@ -33,7 +33,7 @@
 </tr>
 </tbody>
 </table>
-<h1>Install Oracle Database 11<em>g</em> XE on Ubuntu Server 16.04 LTS</h1><h3>Oracle Database 11<em>g</em> XE (11.2.X) on Ubuntu Server 16.04.X LTS (x86-64) Installation Instructions</h3><p>(For instructions on deinstalling Oracle Database 11<em>g</em> XE see <a href="https://github.com/rgolubtsov/dotfiles/blob/master/ubuntusrv/ubuntu-16-04-4-lts-wo-oracle-11-2-0-xe.md" title="Oracle Database 11g XE (11.2.X) on Ubuntu Server 16.04.X LTS (x86-64) Deinstallation Instructions.">this document</a>.)</p>
+<h1>Install Oracle Database 11<em>g</em> XE on Ubuntu Server 16.04 LTS</h1><h3>Oracle Database 11<em>g</em> XE (11.2.X) on Ubuntu Server 16.04.X LTS (x86-64) Installation Instructions</h3><p>(For instructions on deinstalling Oracle Database 11<em>g</em> XE see <a href="/data/docs/ubuntusrv/ubuntu-16-04-x-lts-wo-oracle-11-2-x-xe" title="Oracle Database 11g XE (11.2.X) on Ubuntu Server 16.04.X LTS (x86-64) Deinstallation Instructions.">this document</a>.)</p>
 <p><strong>(1) Download the Oracle Database 11.2.X XE zipped RPM package</strong></p>
 <p>It is freely downloadable from their OTN website. (<strong>Note:</strong> It needs to have an Oracle Account: sign in or sign up for a new one.) The link is named as &quot;<strong>Oracle Database Express Edition 11g Release 2 for Linux x64</strong>&quot;.</p>
 <p>Transfer this package to the Ubuntu Server box:</p>
@@ -71,12 +71,12 @@ Processing triggers for libc-bin (2.23-0ubuntu10) ...
 Processing triggers for systemd (229-4ubuntu21.2) ...
 Processing triggers for ureadahead (0.100.0-19) ...
 Processing triggers for mime-support (3.59ubuntu1) ...</code></pre><p><strong>(4) Configure the installed Oracle Database 11.2.X XE</strong></p>
-<p>Adjust Kernel parameters&#39; defaults using <a href="https://raw.githubusercontent.com/rgolubtsov/dotfiles/master/ubuntusrv/oracle-11-2-0-xe-set-kernel-params" title="Adjust Kernel parameters required by the Oracle Database instance binary.">this Bash script</a> because it is required by the Oracle Database instance binary to run properly:</p>
-<pre><code>$ curl  -O https://raw.githubusercontent.com/rgolubtsov/dotfiles/master/ubuntusrv/oracle-11-2-0-xe-set-kernel-params &amp;&amp; \
-  chmod -v 700 oracle-11-2-0-xe-set-kernel-params                                                                    &amp;&amp; \
-  sudo       ./oracle-11-2-0-xe-set-kernel-params
+<p>Adjust Kernel parameters&#39; defaults using <a href="/data/docs/ubuntusrv/oracle-11-2-x-xe-set-kernel-params" title="Adjust Kernel parameters required by the Oracle Database instance binary.">this Bash script</a> because it is required by the Oracle Database instance binary to run properly:</p>
+<pre><code>$ curl  -O http://rgolubtsov.github.io/data/docs/ubuntusrv/oracle-11-2-x-xe-set-kernel-params &amp;&amp; \
+  chmod -v 700 oracle-11-2-x-xe-set-kernel-params                                             &amp;&amp; \
+  sudo       ./oracle-11-2-x-xe-set-kernel-params
 ...
-mode of &#39;oracle-11-2-0-xe-set-kernel-params&#39; changed from 0644 (rw-r--r--) to 0700 (rwx------)
+mode of &#39;oracle-11-2-x-xe-set-kernel-params&#39; changed from 0644 (rw-r--r--) to 0700 (rwx------)
 
 === Current values of Kernel parameters:
 fs.file-max = 810275
