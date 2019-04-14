@@ -2,7 +2,7 @@
 
 ### Oracle Database 11*g* XE (11.2.X) on Ubuntu Server 16.04.X LTS (x86-64) Installation Instructions
 
-(For instructions on deinstalling Oracle Database 11*g* XE see [this document](https://github.com/rgolubtsov/dotfiles/blob/master/ubuntusrv/ubuntu-16-04-4-lts-wo-oracle-11-2-0-xe.md "Oracle Database 11g XE (11.2.X) on Ubuntu Server 16.04.X LTS (x86-64) Deinstallation Instructions.").)
+(For instructions on deinstalling Oracle Database 11*g* XE see [this document](/data/docs/ubuntusrv/ubuntu-16-04-x-lts-wo-oracle-11-2-x-xe "Oracle Database 11g XE (11.2.X) on Ubuntu Server 16.04.X LTS (x86-64) Deinstallation Instructions.").)
 
 **(1) Download the Oracle Database 11.2.X XE zipped RPM package**
 
@@ -81,14 +81,14 @@ Processing triggers for mime-support (3.59ubuntu1) ...
 
 **(4) Configure the installed Oracle Database 11.2.X XE**
 
-Adjust Kernel parameters' defaults using [this Bash script](https://raw.githubusercontent.com/rgolubtsov/dotfiles/master/ubuntusrv/oracle-11-2-0-xe-set-kernel-params "Adjust Kernel parameters required by the Oracle Database instance binary.") because it is required by the Oracle Database instance binary to run properly:
+Adjust Kernel parameters' defaults using [this Bash script](/data/docs/ubuntusrv/oracle-11-2-x-xe-set-kernel-params "Adjust Kernel parameters required by the Oracle Database instance binary.") because it is required by the Oracle Database instance binary to run properly:
 
 ```
-$ curl  -O https://raw.githubusercontent.com/rgolubtsov/dotfiles/master/ubuntusrv/oracle-11-2-0-xe-set-kernel-params && \
-  chmod -v 700 oracle-11-2-0-xe-set-kernel-params                                                                    && \
-  sudo       ./oracle-11-2-0-xe-set-kernel-params
+$ curl  -O http://rgolubtsov.github.io/data/docs/ubuntusrv/oracle-11-2-x-xe-set-kernel-params && \
+  chmod -v 700 oracle-11-2-x-xe-set-kernel-params                                             && \
+  sudo       ./oracle-11-2-x-xe-set-kernel-params
 ...
-mode of 'oracle-11-2-0-xe-set-kernel-params' changed from 0644 (rw-r--r--) to 0700 (rwx------)
+mode of 'oracle-11-2-x-xe-set-kernel-params' changed from 0644 (rw-r--r--) to 0700 (rwx------)
 
 === Current values of Kernel parameters:
 fs.file-max = 810275
