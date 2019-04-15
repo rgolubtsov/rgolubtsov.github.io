@@ -6,4 +6,4 @@ Various documents collected here were written to show up the essence on how impo
 
 * [Install Oracle Database 11g XE on Ubuntu Server 16.04 LTS](/data/docs/ubuntusrv/oracle-11-2-x-xe-on-ubuntu-16-04-x-lts)
 * [Uninstall Oracle Database 11g XE on Ubuntu Server 16.04 LTS](/data/docs/ubuntusrv/ubuntu-16-04-x-lts-wo-oracle-11-2-x-xe)
-* [Extract and repackage HP-UX JRE on Linux](/data/docs/ubuntusrv/extract-and-repackage-jre-from-hpux-jdk-depot-bundle-on-linux)
+* [Extract and repackage HP-UX JRE on Linux](/data/docs/hpuxiasrv/extract-and-repackage-jre-from-hpux-jdk-depot-bundle-on-linux)

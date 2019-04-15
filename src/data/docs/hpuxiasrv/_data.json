@@ -1,0 +1,7 @@
+{
+    "extract-and-repackage-jre-from-hpux-jdk-depot-bundle-on-linux" : {
+        "layout"                                                    : "../../../_radicchio",
+        "sitename_"                                                 : ": Extract and repackage HP-UX JRE on Linux",
+        "subtitle_"                                                 : ""
+    }
+}
