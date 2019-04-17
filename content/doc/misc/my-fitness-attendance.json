@@ -840,6 +840,16 @@
             "sid"     : 4,
             "day"     : 11,
             "weekday" : "Th"
+        },
+        {
+            "sid"     : 5,
+            "day"     : 15,
+            "weekday" : "Mo"
+        },
+        {
+            "sid"     : 6,
+            "day"     : 17,
+            "weekday" : "We"
         }]
     }]
 }
