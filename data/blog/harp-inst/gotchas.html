@@ -61,7 +61,32 @@ https://github.com/sass/node-sass/releases/tag/v4.9.3
     at require (internal/modules/cjs/helpers.js:20:18)
     at Object.&lt;anonymous&gt; (/usr/lib/node_modules/harp/node_modules/terraform/lib/stylesheet/processors/scss.js:1:74)</code></pre><p>However, if there is no need to use Node Sass at all but the <strong>Harp</strong> with other its facilities, this error can easily be bypassed just by simply editing the module shown in the last line of the stack trace &ndash; <code>scss.js</code>... and another one &ndash; <code>sass.js</code>:</p>
 <pre><code>$ sudo vim /usr/lib/node_modules/harp/node_modules/terraform/lib/stylesheet/processors/scss.js \
-           /usr/lib/node_modules/harp/node_modules/terraform/lib/stylesheet/processors/sass.js</code></pre><p>:cd:</p>
+           /usr/lib/node_modules/harp/node_modules/terraform/lib/stylesheet/processors/sass.js</code></pre><p>The modified modules <code>scss.js</code> and <code>sass.js</code> can be downloaded (<a href="/data/blog/harp-inst/scss.js">scss.js</a>, <a href="/data/blog/harp-inst/sass.js">sass.js</a>) to watch on how exactly they need to be modified, but they are not exposed completely here on this page because they are very similar to each other. The only thing it needs to do is to comment out both <code>var</code>s at the top of both modules and to comment out the whole body of the <code>exports.compile</code> function:</p>
+<pre><code>//var scss = require(&quot;node-sass&quot;)
+//var TerraformError = require(&quot;../../error&quot;).TerraformError
+
+exports.compile = function(filePath, dirs, fileContents, callback){
+/*  scss.render({
+...
+  });*/
+}</code></pre><p>After that <strong>Harp</strong> is ready to use with its full inventory, except of course Node Sass, which is supposed here not needed to deal with:</p>
+<pre><code>$ harp
+
+  Usage: harp [options] [command]
+
+  Commands:
+
+    init [options] [path]  Initialize a new Harp project in current directory
+    server [options] [path] Start a Harp server in current directory
+    multihost [options] [path] Start a Harp server to host a directory of Harp projects
+    compile [options] [projectPath] [outputPath] Compile project to static assets (HTML, JS and CSS)
+
+  Options:
+
+    -h, --help     output usage information
+    -V, --version  output the version number
+
+  Use &#39;harp &lt;command&gt; --help&#39; to get more information or visit http://harpjs.com/ to learn more.</code></pre><p>Happy Harping in Arch Linux 32 ! :+1:</p>
 <table id="footer">
 <tbody><tr><td id="v-bar-f"></td><td id="footer-td"></td></tr></tbody>
 </table>
