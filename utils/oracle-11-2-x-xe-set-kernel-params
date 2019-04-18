@@ -17,7 +17,7 @@
 # Kernel parameters' defaults in Ubuntu Server 16.04.X LTS (x86-64):
 #
 #   $ sysctl fs.file-max
-#   fs.file-max = 810275
+#   fs.file-max = 117228
 #
 #   $ sysctl net.ipv4.ip_local_port_range
 #   net.ipv4.ip_local_port_range = 32768 60999

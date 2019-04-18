@@ -91,7 +91,7 @@ $ curl  -O http://rgolubtsov.github.io/data/docs/ubuntusrv/oracle-11-2-x-xe-set-
 mode of 'oracle-11-2-x-xe-set-kernel-params' changed from 0644 (rw-r--r--) to 0700 (rwx------)
 
 === Current values of Kernel parameters:
-fs.file-max = 810275
+fs.file-max = 117228
 net.ipv4.ip_local_port_range = 32768 60999
 kernel.sem = 32000 1024000000 500 32000
 kernel.shmmax = 18446744073692774399
