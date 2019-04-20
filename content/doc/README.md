@@ -10,10 +10,10 @@ Various documents collected here were written to show up the essence on how impo
 
 A curious visitor may expect and have a willing to see Radicchio's IT-related resume or a Curriculum Vitae. &ndash; This one is presented below in two variants (formats): in plain text, formatted, including some attractive separation attribution, and in PDF, with the Radicchio's recent photo embedded. &ndash; In English:
 
-* [Curriculum Vitae, en-US, `text/plain`](/docs/cv/radislav-golubtsov-resume-en_US.txt)
-* [Curriculum Vitae, en-US, `application/pdf`](/docs/cv/radislav-golubtsov-resume-en_US.pdf)
+* [Curriculum Vitae, en-US, text](/docs/cv/radislav-golubtsov-resume-en_US.txt)
+* [Curriculum Vitae, en-US, PDF](/docs/cv/radislav-golubtsov-resume-en_US.pdf)
 
 And in Russian:
 
-* [Curriculum Vitae, ru-RU, `text/plain`](/docs/cv/radislav-golubtsov-resume-ru_RU.txt)
-* [Curriculum Vitae, ru-RU, `application/pdf`](/docs/cv/radislav-golubtsov-resume-ru_RU.pdf)
+* [Curriculum Vitae, ru-RU, text](/docs/cv/radislav-golubtsov-resume-ru_RU.txt)
+* [Curriculum Vitae, ru-RU, PDF](/docs/cv/radislav-golubtsov-resume-ru_RU.pdf)
