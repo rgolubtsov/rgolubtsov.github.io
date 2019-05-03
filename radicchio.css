@@ -129,6 +129,13 @@ p code {
     color:            #7aef17;
 }
 
+p .emoji {
+    width:            1.3em;
+    height:           1.3em;
+    position:         relative;
+    top:              0.3em;
+}
+
 ul, ol {
     margin:           0px 20px 0px;
     padding:          0px 10px 14px 64px;
