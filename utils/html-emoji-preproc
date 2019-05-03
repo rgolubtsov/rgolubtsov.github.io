@@ -34,7 +34,7 @@ sed  -i -e "s/\:smiley\:/${REPL_PREFIX}1f603${REPL_SUFFIX}/g"
 
 # --- Debug output - Begin ----------------------------------------------------
 # Searching for and printing out all the entries containing "emoji".
-echo; find ./data/ -type f | xargs grep "emoji"; echo
+#echo; find ./data/ -type f | xargs grep "emoji"; echo
 # --- Debug output - End ------------------------------------------------------
 
 # If there is an error -- telling the OS about this.
