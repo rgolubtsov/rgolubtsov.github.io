@@ -856,5 +856,17 @@
             "day"     : 18,
             "weekday" : "Th"
         }]
+    },
+    {
+        "pid"         : 40,
+        "year"        : "2019",
+        "month"       : "May",
+        "name"        : "Tonus Plus",
+        "voucher"     : true,
+        "sessions"    : [{
+            "sid"     : 1,
+            "day"     : 4,
+            "weekday" : "Sa"
+        }]
     }]
 }
