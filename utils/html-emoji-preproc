@@ -21,16 +21,27 @@ declare -r EXIT_SUCCESS=0 # Successful exit status.
 declare -r REPL_PREFIX="<img\ src=\"http\:\/\/github\.githubassets\.com\/images\/icons\/emoji\/unicode\/"
 declare -r REPL_SUFFIX="\.png\"\ class=\"emoji\"\ alt=\"\"\ \/>"
 
+declare -r EMOJI_CHARS=(
+    +1
+    blue_heart
+    smiley
+)
+declare -r EMOJI_CODES=(
+    1f44d
+    1f499
+    1f603
+)
+
+i=0
+
 echo "=== Making emoji replacements with images against their character sequences."
 
-grep -Rl   ":+1:"         ./data/ | xargs \
-sed  -i -e "s/\:+1\:/${REPL_PREFIX}1f44d${REPL_SUFFIX}/g"
+for emoji in ${EMOJI_CHARS[@]}; do
+    grep -Rl   ":${emoji}:" ./data/ | xargs \
+    sed  -i -e "s/\:${emoji}\:/${REPL_PREFIX}${EMOJI_CODES[i]}${REPL_SUFFIX}/g"
 
-grep -Rl   ":blue_heart:" ./data/ | xargs \
-sed  -i -e "s/\:blue_heart\:/${REPL_PREFIX}1f499${REPL_SUFFIX}/g"
-
-grep -Rl   ":smiley:"     ./data/ | xargs \
-sed  -i -e "s/\:smiley\:/${REPL_PREFIX}1f603${REPL_SUFFIX}/g"
+    let i++
+done
 
 # --- Debug output - Begin ----------------------------------------------------
 # Searching for and printing out all the entries containing "emoji".
