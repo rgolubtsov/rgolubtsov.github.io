@@ -44,4 +44,4 @@ They are all tailored and treated exactly as scripts, that means they are interp
 
 In the beginning of each script, in the header block comment there is the usage info showing how to run it: in all cases it is a compound one-liner command which downloads the script, makes it executable, and launches it up. The only prerequisite is the `curl` utility and, of course respective runtime environment. The latter is indicated just after the usage info in each script.
 
-The `_templates` subdirectory that resides here is not related to these scripts anyhow. It contains minimal application templates written in Perl and Python which are prepared to run on uWSGI application server, and the header block comment in both templates clearly shows this.
+The `_templates` subdirectory that resides here is not related to these scripts anyhow. It contains minimal application templates written in Perl and Python which are prepared to run on uWSGI application server, and a header block comment in both templates clearly explains this.
