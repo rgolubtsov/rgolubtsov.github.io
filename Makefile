@@ -26,7 +26,7 @@ RMFLAGS   = -vR
 $(LIB_DIR) $(SRC_DIR):
 	$(HARP) $(HARPFLAGS) $(SRC_DIR) $(LIB_DIR)
 	$(CP) $(CPFLAGS) $(LIB_DIR)/* $(LIB_DIR)/..
-	./utils/html-emoji-preproc
+	./utils/html-emoji-preproc ./data/
 
 .PHONY: all clean
 
