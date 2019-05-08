@@ -41,6 +41,7 @@ html, body {
 
 #header #title-td {
     padding:          10px 20px 0px 6px;
+    background-image: url("/static/img/misc/background-795x195.png");
 }
 
 #subtitle {
@@ -49,7 +50,9 @@ html, body {
 }
 
 #header #subtitle-td {
-    padding:          8px 20px 4px 6px;
+    padding:          8px 20px 15px 6px;
+    background-position: -75px -2px;
+    background-image: url("/static/img/misc/background-795x195.png");
 }
 
 #navbar            {}
@@ -67,7 +70,7 @@ html, body {
 
 #footer #v-bar-f {
     width:            20px;
-    border-right:     4px solid #6ec63b;
+    border-right:     0px solid #6ec63b;
 }
 
 #footer #footer-td {
