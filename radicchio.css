@@ -40,8 +40,8 @@ html, body {
 }
 
 #header #title-td {
-    padding:          16px 20px 8px 6px;
-    line-height:      26px;
+    padding:          12px 20px 8px 6px;
+    line-height:      28px;
     background-image: url("/static/img/misc/background-795x195.png");
 }
 
