@@ -68,12 +68,12 @@ html, body {
 
 #footer #v-bar-f {
     width:            20px;
-    border-right:     0px solid #6ec63b;
     border-right:     4px solid #69df06;
 }
 
 #footer #footer-td {
-    height:           24px;
+    height:           39px;
+    text-align:       right;
     background-image: url("/static/img/misc/background-795x195.png");
 }
 
