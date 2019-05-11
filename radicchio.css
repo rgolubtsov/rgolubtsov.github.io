@@ -46,8 +46,9 @@ html, body {
 }
 
 #subtitle {
+    line-height:      1;
     color:            #69df06;
-    font-size:        0.6em;
+    font-size:        .6em;
 }
 
 #navbar            {}
