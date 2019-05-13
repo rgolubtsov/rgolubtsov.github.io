@@ -16,6 +16,14 @@
 <% var CODER    = coder;                var NBK = nav_blog_k; var NBV = nav_blog_v; %>
 <% var CSS      = css;                  var NGK = nav_ghub_k; var NGV = nav_ghub_v; %>
 
+<% var VWAB_FOOTER_ICON_HRF = "http://anybrowser.org/campaign";                             %>
+<% var VCSS_FOOTER_ICON_HRF = "http://jigsaw.w3.org/css-validator/check/referer";           %>
+<% var VWAB_FOOTER_ICON_SRC = "http://anybrowser.org/campaign/bvgraphics/anybrowser4b.png"; %>
+<% var VCSS_FOOTER_ICON_SRC = "http://jigsaw.w3.org/css-validator/images/vcss";             %>
+<% var VWAB_FOOTER_ICON_TXT = "Viewable With Any Browser";                                  %>
+<% var VCSS_FOOTER_ICON_TXT = "Valid CSS!";                                                 %>
+<% var      FOOTER_ICON_CSS = "border:0;width:88px;height:31px";                            %>
+
 <!DOCTYPE html>
 <html lang="en-US" dir="ltr">
 <head>
@@ -43,7 +51,7 @@
 </table>
 <%- yield %>
 <table id="footer">
-<tbody><tr><td id="v-bar-f"></td><td id="footer-td"><a href="http://anybrowser.org/campaign"><img style="border:0;width:88px;height:31px" src="http://anybrowser.org/campaign/bvgraphics/anybrowser4b.png" alt="Viewable With Any Browser" /></a><a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" /></a></td></tr></tbody>
+<tbody><tr><td id="v-bar-f"></td><td id="footer-td"><a href="<%= VWAB_FOOTER_ICON_HRF %>"><img style="<%= FOOTER_ICON_CSS %>" src="<%= VWAB_FOOTER_ICON_SRC %>" alt="<%= VWAB_FOOTER_ICON_TXT %>" /></a><a href="<%= VCSS_FOOTER_ICON_HRF %>"><img style="<%= FOOTER_ICON_CSS %>" src="<%= VCSS_FOOTER_ICON_SRC %>" alt="<%= VCSS_FOOTER_ICON_TXT %>" /></a></td></tr></tbody>
 </table>
 </body>
 </html>
