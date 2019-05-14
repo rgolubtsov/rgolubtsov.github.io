@@ -27,6 +27,7 @@ $(LIB_DIR) $(SRC_DIR):
 	$(HARP) $(HARPFLAGS) $(SRC_DIR) $(LIB_DIR)
 	$(CP) $(CPFLAGS) $(LIB_DIR)/* $(LIB_DIR)/..
 	./utils/html-emoji-preproc ./data/
+	./utils/http-404-preproc
 
 .PHONY: all clean
 
