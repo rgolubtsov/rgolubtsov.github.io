@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+# utils/http-404-preproc
+# =============================================================================
+# This helper script replaces a hyper-reference to a remote resource
+# (to validate CSS for the current static representation
+# of the HTTP 404 Not Found response) with something locally served.
+# =============================================================================
+# Copyright (C) 2019 Radislav (Radicchio) Golubtsov
+#
+# (See the LICENSE file at the top of the source tree.)
+#
+
+# Helper constants.
+declare -r EXIT_FAILURE=1 #    Failing exit status.
+declare -r EXIT_SUCCESS=0 # Successful exit status.
+
+declare -r HREF="http\:\/\/jigsaw\.w3\.org\/css-validator\/check\/referer"
+declare -r REPL="\/radicchio\.css"
+
+echo "=== Making the HTTP 404 response to be safe when surfing from there outside."
+
+sed -i -e "s/${HREF}/${REPL}/g" 404.html
+
+# If there is an error -- telling the OS about this.
+if [ $? -eq ${EXIT_FAILURE} ]; then
+    exit    ${EXIT_FAILURE}
+fi
+
+exit        ${EXIT_SUCCESS}
+
+# vim:set nu et ts=4 sw=4:
