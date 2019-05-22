@@ -14,7 +14,7 @@
 <% var SUBTITLE = subtitle + subtitle_; var NDK = nav_docs_k; var NDV = nav_docs_v; %>
 <% var DESCR    = subtitle;             var NSK = nav_srcs_k; var NSV = nav_srcs_v; %>
 <% var CODER    = coder;                var NBK = nav_blog_k; var NBV = nav_blog_v; %>
-<% var CSS      = css;                  var NGK = nav_ghub_k; var NGV = nav_ghub_v; %>
+<% var CSS      = css;   var ICO = ico; var NGK = nav_ghub_k; var NGV = nav_ghub_v; %>
 
 <% var VWAB_FOOTER_ICON_HRF = "http://anybrowser.org/campaign";                             %>
 <% var VCSS_FOOTER_ICON_HRF = "http://jigsaw.w3.org/css-validator/check/referer";           %>
@@ -36,7 +36,8 @@
 <meta       name="author"          content="<%= CODER %>" />
 <meta       name="copyright"       content="Copyright (C) 2016-2019 <%= CODER %>" />
 <title><%- TITLE %></title>
-<link href="<%= CSS %>" type="text/css" rel="stylesheet" media="screen" />
+<link href="<%= CSS %>" type="text/css"  rel="stylesheet" media="screen" />
+<link href="<%= ICO %>"   type="image/png" rel="icon" />
 </head>
 <body id="radicchio">
 <table id="header">

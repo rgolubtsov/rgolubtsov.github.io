@@ -4,6 +4,7 @@
         "subtitle"   : "A personal website of a power looper, a skateboarder, and a coder",
         "coder"      : "Radislav (Radicchio) Golubtsov",
         "css"        : "/radicchio.css",
+        "ico"        : "/favicon.ico",
         "nav_home_k" : "Home",    "nav_home_v" : "/",
         "nav_docs_k" : "Docs",    "nav_docs_v" : "/data/docs",
         "nav_srcs_k" : "Sources", "nav_srcs_v" : "/data/srcs",
