@@ -17,3 +17,5 @@ And in Russian:
 
 * [Curriculum Vitae, ru-RU, text](/docs/cv/radislav-golubtsov-resume-ru_RU.txt)
 * [Curriculum Vitae, ru-RU, PDF](/docs/cv/radislav-golubtsov-resume-ru_RU.pdf)
+
+<p style="padding-top:14px;text-align:center"><img src="/static/img/misc/window-maker-0.95.8-info-panel-on-arch-linux-384x278.png" style="border:0;width:192px;height:139px" alt="Window Maker 0.95.8 Info Panel on Arch Linux" /></p>
