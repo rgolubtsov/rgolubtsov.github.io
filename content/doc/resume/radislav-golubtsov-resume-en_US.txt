@@ -4,9 +4,9 @@
  *   OBJECTIVE: To obtain the position of a Software Developer /
  *                                   Senior Software Developer
  *
- *              Total IT experience - 17 years
+ *              Total IT experience - 19 years              An IT multilinguist
  * ============================================================================
- *              [ 2017-09-27 ]
+ *              [ 2019-05-30 ]
  */
 
 // === SUMMARY ================================================================
@@ -20,20 +20,22 @@ Operating       Unices and derivatives (OpenBSD, FreeBSD, Arch Linux, Debian
 Systems         GNU/Linux, Ubuntu, Fedora, CentOS, Red Hat Enterprise Linux,
                 Mac OS X, HP-UX, IBM AIX, Sun Solaris)
 
-Programming     Python 3, Go (golang), Perl 5, Java, JavaScript (Node.js),
-Languages       Bash Shell Script, ISO C/C++, Vala/Genie, Objective-C 2.0,
-                ISO Fortran 95, Lua
+Programming     Python 2/3, Perl 5, Go (golang), Java, JavaScript (ES5-6/
+Languages       Node.js), Bash Shell Script, ISO C/C++, GNOME Vala/Genie,
+                Objective-C 2.0, ISO Fortran 95, Lua, Erlang, Elixir, LFE,
+                Clojure
 
 Technologies    * Python and related modules, libraries, and frameworks (Python
-                  Standard Library, Django REST framework, ReportLab PDF
-                  Toolkit, etc.)
+                  Standard Library, Twisted Web, Klein, Falcon, Flask, Celery,
+                  Django REST framework, ReportLab PDF Toolkit, etc.)
                 * Linux kernel API, Linux kernel modules (block device driver)
                 * Perl and related modules, libraries, and frameworks (DBI,
-                  CGI, LWP, Mojolicious, Text::Xslate, Asterisk::AGI, etc.)
+                  CGI, LWP, Mojolicious, Text::Xslate, Asterisk::AGI,
+                  Net::DNS::Native, IO::Select, etc.)
                 * IVR (Interactive Voice Response) using Asterisk VoIP PBX
                 * GNU libmicrohttpd (C library to make a lightweight multi-
                   threaded HTTP server), GNU C Library (glibc), GNU C++ Library
-                  (libstdc++)
+                  (libstdc++), GNOME libsoup
                 * GTFS Realtime (General Transit Feed Specification), Google
                   Text-To-Speech API
                 * Java SE / EE, Java Servlet, JavaServer Pages (JSP), JSP
@@ -42,9 +44,17 @@ Technologies    * Python and related modules, libraries, and frameworks (Python
                   Struts / Struts 2, JavaServer Faces (JSF), Java Database
                   Connectivity (JDBC), JavaMail, Java Abstract Window Toolkit
                   (AWT), Java Swing, iText (Java-PDF Library), jQuery
-                  (JavaScript Library), Node.js, Harpjs.com, HTML, CSS, XML,
-                  YAML, JSON, SQL, GNUstep / Cocoa API, Eclipse Standard Widget
-                  Toolkit (SWT), IBM Portal User Management Architecture SPI
+                  (JavaScript Library), Node.js / Luvit, Harpjs.com, HTML, CSS,
+                  XML, YAML, JSON, SQL, GNUstep / Cocoa API, Eclipse Standard
+                  Widget Toolkit (SWT), HTTP(S), (S)FTP, SSH, SCP, RESTful
+                  microservices, etc.
+                * Erlang/OTP, ERTS (Erlang Run-Time System),
+                  Erlang Standard Library
+                * Elixir, Elixir Standard Library, Cowboy (web server library
+                  for Erlang/OTP)
+                * LFE (Lisp Flavoured Erlang) - Lisp-2 dialect for Erlang VM
+                * Clojure - Lisp-1 dialect for JVM, Clojure Standard Library,
+                  HTTP Kit (HTTP client/server library for Clojure)
 
 Development     * Vim / vi, Oracle JDeveloper, Eclipse Platform (Eclipse SDK),
 Tools             MyEclipse Blue Edition, IBM Rational Software Architect
@@ -55,16 +65,19 @@ Tools             MyEclipse Blue Edition, IBM Rational Software Architect
                   GNU Debugger (GDB), GNUstep, sed, etc. Clang (C / C++ /
                   Objective-C LLVM compiler front-end), TCC (Fabrice Bellard's
                   Tiny C Compiler)
-                * Apache Maven, Apache Ant
+                * Erlang Rebar, Apache Maven, Apache Ant
 
 DBMS            PostgreSQL, MySQL, Oracle Database, IBM DB2 Universal Database,
                 SQLite, Redis
 
 Application /   * Node.js, Luvit (Lua)
-Web Servers     * Python/WSGI (uWSGI) application server
+Web Servers     * uWSGI (Python/WSGI, Perl/PSGI), Gunicorn (Python/WSGI),
+                  Twisted Reactor
                 * Perl-based app-servers: Twiggy, Hypnotoad, Morbo
                 * Apache Tomcat, JBoss Application Server, IBM WebSphere
                   Application Server, IBM WebSphere Portal Server, Apache Pluto
+                * Cowboy (HTTP server for Erlang/OTP)
+                * HTTP Kit (HTTP server for Clojure)
                 * Apache HTTP Server, Nginx
 
 Middleware /    Git, GitHub, GitLab, Bitbucket, Perforce, Subversion (SVN),
@@ -78,7 +91,7 @@ Misc. Apps      Concurrent Versions System (CVS), IBM Directory Server (LDAP),
 
 English         Full Professional Proficiency:
                 * Reading / writing freely
-                * Able to perform business correspondence at a strong level
+                * Able to perform business correspondence at a polite level
                 * Speaking at upper intermediate level
 
 Russian         Native or Bilingual Proficiency
@@ -98,6 +111,52 @@ Oct 2001        University (Ph.D. student of the School for Advanced Studies)
                 Gomel, Belarus ("Diploma in Honor")
 
 // === Work experience ========================================================
+
+Nov 2017 - Mar 2019, Development work at Exadel, Inc. (Gomel branch),
+                     Gomel (1 year, 5 months)
+
+Job position: Software Developer of the Software Development Department 2
+
+// ----------------------------------------------------------------------------
+
+Nov 2018 -      Barracuda WSG Azure Orchestration Blueprint
+Mar 2019
+                Project description: Development of the Flask Blueprint-based
+                application component, so-called Orchestrator, inside
+                the Barracuda Web Security Gateway (WSG) proxy server backend
+                which is intended to integrate WSG with the Microsoft Azure
+                cloud platform to automate creating virtual infrastructure
+                appliances by invocating the Terraform tool (along with
+                the given infrastructure configuration) running in a Celery
+                task queue. WSG as well as Orchestrator both are written
+                in Python, and the latter uses the Celery task queue library
+                to asynchronously execute Terraform jobs.
+
+                (The customer of the project is Barracuda Networks, Inc.)
+
+                Personal role in the project: Development and configuration
+                activities in the part of handling and validating Terraform
+                data (configuration variables) and passing them to a Celery
+                task queue for further execution. Also taking part in
+                development of displaying Celery task execution results
+                and statuses on an asynchronous manner and test
+                the Orchestrator against a dedicated Azure account together
+                with a DevOps engineer.
+
+                Tools and technologies used:
+                *    Dev OS: Arch Linux, Ubuntu Server amd64 (VM: QEMU-KVM)
+                *   Test OS: Ubuntu Server amd64 (VM: Xen)
+                * Python 2, Python Standard Library, Flask, Flask Blueprints,
+                  Jinja2, Virtualenv
+                * Werkzeug, Nginx
+                * Redis, SQLite
+                * GNU Make, Terraform, curl, Vim
+                * Git, Bitbucket, JIRA
+
+// ----------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
+// ============================================================================
 
 Jul 2017 - Aug 2017, Development work at R-Style Lab, LLC, Minsk (2 months)
 
@@ -1075,7 +1134,7 @@ Dec 1999
 
 // === Personal information ===================================================
 
-Date of birth   June 27, 1977 (40yo)
+Date of birth   June 27, 1977 (41yo)
 Citizenship     Republic of Belarus
 Marital status  Married
 No. of children 2
