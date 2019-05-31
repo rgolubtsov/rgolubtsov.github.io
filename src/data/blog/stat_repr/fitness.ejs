@@ -1,0 +1,42 @@
+<%# src/data/blog/stat_repr/fitness.ejs %>
+
+<% var fitness       = public.data.blog.stat_repr._data.fitness; %>
+<% var header        = fitness.header;                           %>
+<% var header_len    = header.length;                            %>
+<% var subheader     = fitness.subheader;                        %>
+<% var subheader_len = subheader.length;                         %>
+
+<h1><%- fitness.sitename_.substring(2) %></h1>
+<h3><%- fitness.subtitle3 %></h3>
+<table id="stat-fit0">
+<tbody>
+<tr>
+<% for (var i = 0; i < header_len - 1; i++) { %>
+<td rowspan="2"><%- header[i] %></td>
+<% } %>
+<td colspan="<%= subheader_len %>"><%- header[header_len - 1] %></td>
+</tr>
+<tr>
+<% for (var i in subheader) { %>
+<td><%- subheader[i] %></td>
+<% } %>
+</tr>
+<tr>
+<% for (var i = 0; i < header_len - 1; i++) { %>
+<td rowspan="<%= header_len %>"><%- Math.trunc(Math.random() * 10) %></td>
+<% } %>
+<% for (var i in subheader) { %>
+<td><%- Math.trunc(Math.random() * 10) %></td>
+<% } %>
+</tr>
+<% for (var i = 0; i < header_len - 1; i++) { %>
+<tr>
+<% for (var j in subheader) { %>
+<td><%- Math.trunc(Math.random() * 10) %></td>
+<% } %>
+</tr>
+<% } %>
+</tbody>
+</table>
+
+<%# vim:set nu et ts=4 sw=4: %>

@@ -1,0 +1,19 @@
+{
+    "fitness"       : {
+        "layout"    : "../../../_radicchio",
+        "sitename_" : ": Assorted fitness",
+        "subtitle_" : "",
+        "subtitle3" : "Fitness attendance statistics",
+        "header"    : [
+            "Year",
+            "Month",
+            "Name",
+            "Voucher",
+            "Sessions"
+        ],
+        "subheader" : [
+            "Day",
+            "Weekday"
+        ]
+    }
+}
