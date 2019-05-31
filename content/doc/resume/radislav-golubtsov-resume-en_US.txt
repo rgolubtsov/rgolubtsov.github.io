@@ -192,6 +192,44 @@ Aug 2018
                 * Subversion, bTrade's internal bug tracking system
 
 // ----------------------------------------------------------------------------
+
+Nov 2017 -      Mercer Enhance: Machine Learning for Job Matching
+Apr 2018
+                Project description: Development of REST API microservices in
+                Python running inside Docker containers which are communicate
+                each other through the REST model. They are built on top of
+                business layer that is responsible for deep learning of a
+                series of data models, and returning sets of encumbents
+                (predictions and accuracy) for job matching user
+                infrastructure.
+
+                (The customer of the project is Mercer LLC)
+
+                Personal role in the project: Building and configuring
+                microservices using the Docker Compose tool, testing their work
+                and performance using various Python web app frameworks and
+                servers (see below). Doing prototyping work for experimental
+                development approaches using asynchronous web communication
+                scheme (Python) and porting a couple of microservices into
+                Go (golang) in order to increase their performance. Preparing
+                microservices for pre-deployment stage for Amazon AWS
+                computation environment. Documenting the source code and
+                architectural techniques/approaches which were implemented
+                in various prototyping branches.
+
+                Tools and technologies used:
+                *    Dev OS: Ubuntu Server amd64 (VM: QEMU-KVM / Xen)
+                * Server OS: Ubuntu Cloud amd64 VM
+                * Docker containers based on Ubuntu and CentOS images
+                * Python 2/3, Python Standard Library, Twisted Web, Klein,
+                  Falcon, Virtualenv
+                * Gunicorn (Python/WSGI), uWSGI (Python/WSGI),
+                  Twisted Reactor app servers
+                * TensorFlow Serving (machine learning library),
+                  Go, Go Standard Library, JSON
+                * GNU Make, Docker Compose, curl, Vim
+                * Git, Bitbucket, JIRA
+
 // ============================================================================
 
 Jul 2017 - Aug 2017, Development work at R-Style Lab, LLC, Minsk (2 months)
