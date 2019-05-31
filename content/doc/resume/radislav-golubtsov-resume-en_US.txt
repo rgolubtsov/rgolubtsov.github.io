@@ -154,7 +154,43 @@ Mar 2019
                 * Git, Bitbucket, JIRA
 
 // ----------------------------------------------------------------------------
-// ----------------------------------------------------------------------------
+
+May 2018 -      bTrade secureXchange app (bTrade TDXchange)
+Aug 2018
+                Project description: Development of the server-based solution
+                (TDXchange) for secure managed file transfer (MFT) between two
+                or more participants (endpoints) using a wide variety of
+                network protocols and incorporating symmetric and asymmetric
+                encryption methods. It is written in Java and incorporates
+                the JSF web application framework and the RichFaces library
+                with some excerpts from the OmniFaces library. It stores all
+                its internal configuration parameters in one of the following
+                RDBMSes, depending on initial configuration and build profile:
+                Oracle Database, MS SQL Server, H2 Database.
+
+                (The customer of the project is bTrade LLC)
+
+                Personal role in the project: Configuring and building
+                application bundles for a series of supported platforms:
+                Linux x86/x64, Solaris SPARC, IBM AIX 32/64-bit, HP-UX IA-64.
+                Deploying and testing application bundles on remote servers
+                having and running the aforementioned platforms. Performing
+                bug fixing operations and documenting various configuration
+                caveats and gotchas found during deployment of new versions
+                or custom builds of the application and its components.
+
+                Tools and technologies used:
+                *    Dev OS: Ubuntu Server amd64 (VM: Xen)
+                * Server OS: Red Hat Enterprise Linux x86-64, SUSE Linux
+                  Enterprise Server x86-64, Solaris SPARC V9, IBM AIX
+                  for PowerPC 32-bit and 64-bit, HP-UX (IA-64)
+                * Java EE, Java Class Library, JSTL, JSF, RichFaces, XML,
+                  XHTML, JavaScript, Bash Shell Script
+                * WildFly (JBoss) Application Server
+                * Oracle Database, H2 Database
+                * Apache Maven, curl, Vim
+                * Subversion, bTrade's internal bug tracking system
+
 // ----------------------------------------------------------------------------
 // ============================================================================
 
