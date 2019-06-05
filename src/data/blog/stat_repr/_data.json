@@ -5,13 +5,15 @@
         "subtitle_" : "",
         "subtitle3" : "Fitness attendance statistics",
         "header"    : [
+            "ID",
             "Year",
             "Month",
-            "Name",
+            "Gym Name",
             "Voucher",
             "Sessions"
         ],
         "subheader" : [
+            "ID",
             "Day",
             "Weekday"
         ]
