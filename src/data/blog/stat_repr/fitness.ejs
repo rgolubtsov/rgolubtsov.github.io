@@ -1,13 +1,14 @@
 <%# src/data/blog/stat_repr/fitness.ejs %>
 
-<% var fitness       = public.data.blog.stat_repr._data.fitness; %>
-<% var header        = fitness.header;                           %>
-<% var header_len    = header.length;                            %>
-<% var subheader     = fitness.subheader;                        %>
-<% var subheader_len = subheader.length;                         %>
+<% var fitness       = public.data.blog.stat_repr._data.fitness;           %>
+<% var header        = fitness.header;                                     %>
+<% var header_len    = header.length;                                      %>
+<% var subheader     = fitness.subheader;                                  %>
+<% var subheader_len = subheader.length;                                   %>
+<% var portions      = public.data.blog.stat_repr.fitness_._data.portions; %>
 
 <h1><%- fitness.sitename_.substring(2) %></h1>
-<h3><%- fitness.subtitle3 %></h3>
+<h3><%- fitness.subtitle3              %></h3>
 <table id="stat-fit0">
 <tbody>
 <tr>
@@ -21,21 +22,39 @@
 <td><%- subheader[i] %></td>
 <% } %>
 </tr>
+<% for (var i in portions) { %>
+<% var sessions_len = portions[i].sessions.length; %>
+<% var session0     = portions[i].sessions[0]    ; %>
+<tr>
+<td rowspan="<%= sessions_len %>"><%- portions[i].pid     %></td>
+<td rowspan="<%= sessions_len %>"><%- portions[i].year    %></td>
+<td rowspan="<%= sessions_len %>"><%- portions[i].month   %></td>
+<td rowspan="<%= sessions_len %>"><%- portions[i].name    %></td>
+<td rowspan="<%= sessions_len %>"><%- portions[i].voucher %></td>
+<td><%- session0.sid     %></td>
+<td><%- session0.day     %></td>
+<td><%- session0.weekday %></td>
+</tr>
+<% for (var j = 1; j < sessions_len; j++) { %>
+<% var session_ = portions[i].sessions[j]; %>
+<tr>
+<td><%- session_.sid     %></td>
+<td><%- session_.day     %></td>
+<td><%- session_.weekday %></td>
+</tr>
+<% } %>
+<% } %><%# <== for (var i in portions) { %>
 <tr>
 <% for (var i = 0; i < header_len - 1; i++) { %>
-<td rowspan="<%= header_len %>"><%- Math.trunc(Math.random() * 10) %></td>
+<td rowspan="2"><%- header[i] %></td>
 <% } %>
 <% for (var i in subheader) { %>
-<td><%- Math.trunc(Math.random() * 10) %></td>
+<td><%- subheader[i] %></td>
 <% } %>
 </tr>
-<% for (var i = 0; i < header_len - 1; i++) { %>
 <tr>
-<% for (var j in subheader) { %>
-<td><%- Math.trunc(Math.random() * 10) %></td>
-<% } %>
+<td colspan="<%= subheader_len %>"><%- header[header_len - 1] %></td>
 </tr>
-<% } %>
 </tbody>
 </table>
 
