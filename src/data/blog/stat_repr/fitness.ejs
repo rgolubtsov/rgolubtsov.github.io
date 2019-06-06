@@ -18,7 +18,7 @@
 <% for (var i = 0; i < p_header_len - 1; i++) { %>
 <td rowspan="2"><%- p_header[i] %></td>
 <% } %>
-<td colspan="<%= s_header_len %>"><%- p_header[p_header_len - 1] %></td>
+<td colspan="<%= s_header_len %>" class="s-header-h-td"><%- p_header[p_header_len - 1] %></td>
 </tr>
 <tr id="s-header-h">
 <% for (var i in s_header) { %>
@@ -52,7 +52,7 @@
 <td rowspan="2"><%- p_header[i] %></td>
 <% } %>
 <% for (var i in s_header) { %>
-<td><%- s_header[i] %></td>
+<td class="s-header-f-td"><%- s_header[i] %></td>
 <% } %>
 </tr>
 <tr id="s-header-f">
