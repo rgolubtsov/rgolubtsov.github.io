@@ -4,6 +4,7 @@
         "sitename_" : ": Assorted fitness",
         "subtitle_" : "",
         "subtitle3" : "Fitness attendance statistics",
+        "emoji_url" : "http://github.githubassets.com/images/icons/emoji/unicode/",
         "p_caption" : "Portions: Distinguished by Year, Month, Gym Name, or Voucher",
         "p_header"  : [
             "ID",
