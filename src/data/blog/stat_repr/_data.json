@@ -4,7 +4,8 @@
         "sitename_" : ": Assorted fitness",
         "subtitle_" : "",
         "subtitle3" : "Fitness attendance statistics",
-        "header"    : [
+        "p_caption" : "Portions: Distinguished by Year, Month, Gym Name, or Voucher",
+        "p_header"  : [
             "ID",
             "Year",
             "Month",
@@ -12,7 +13,7 @@
             "Voucher",
             "Sessions"
         ],
-        "subheader" : [
+        "s_header"  : [
             "ID",
             "Day",
             "Weekday"
