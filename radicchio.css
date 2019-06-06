@@ -199,4 +199,19 @@ pre {
     color:            #7aef17;
 }
 
+.p-id-td, .s-id-td, .s-day-td {
+    text-align:       right;
+}
+
+.p-year-td, .p-voucher-td {
+    text-align:       center;
+}
+
+td .emoji {
+    width:            1em;
+    height:           1em;
+    position:         relative;
+    top:              .2em;
+}
+
 /* vim:set nu et ts=4 sw=4: */
