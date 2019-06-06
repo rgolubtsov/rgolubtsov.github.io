@@ -1,30 +1,33 @@
 <%# src/data/blog/stat_repr/fitness.ejs %>
 
-<% var fitness       = public.data.blog.stat_repr._data.fitness;           %>
-<% var header        = fitness.header;                                     %>
-<% var header_len    = header.length;                                      %>
-<% var subheader     = fitness.subheader;                                  %>
-<% var subheader_len = subheader.length;                                   %>
-<% var portions      = public.data.blog.stat_repr.fitness_._data.portions; %>
+<% var fitness      = public.data.blog.stat_repr._data.fitness;           %>
+<% var p_header     = fitness.p_header;                                   %>
+<% var p_header_len = p_header.length;                                    %>
+<% var s_header     = fitness.s_header;                                   %>
+<% var s_header_len = s_header.length;                                    %>
+<% var portions     = public.data.blog.stat_repr.fitness_._data.portions; %>
 
 <h1><%- fitness.sitename_.substring(2) %></h1>
 <h3><%- fitness.subtitle3              %></h3>
-<table id="stat-fit0">
+<table id="stat-fit0" border="1">
 <tbody>
 <tr>
-<% for (var i = 0; i < header_len - 1; i++) { %>
-<td rowspan="2"><%- header[i] %></td>
-<% } %>
-<td colspan="<%= subheader_len %>"><%- header[header_len - 1] %></td>
+<td colspan="<%= p_header_len + s_header_len - 1 %>"><%- fitness.p_caption %></td>
 </tr>
 <tr>
-<% for (var i in subheader) { %>
-<td><%- subheader[i] %></td>
+<% for (var i = 0; i < p_header_len - 1; i++) { %>
+<td rowspan="2"><%- p_header[i] %></td>
+<% } %>
+<td colspan="<%= s_header_len %>"><%- p_header[p_header_len - 1] %></td>
+</tr>
+<tr>
+<% for (var i in s_header) { %>
+<td><%- s_header[i] %></td>
 <% } %>
 </tr>
 <% for (var i in portions) { %>
 <% var sessions_len = portions[i].sessions.length; %>
-<% var session0     = portions[i].sessions[0]    ; %>
+<% var session0     = portions[i].sessions[0];     %>
 <tr>
 <td rowspan="<%= sessions_len %>"><%- portions[i].pid     %></td>
 <td rowspan="<%= sessions_len %>"><%- portions[i].year    %></td>
@@ -45,15 +48,18 @@
 <% } %>
 <% } %><%# <== for (var i in portions) { %>
 <tr>
-<% for (var i = 0; i < header_len - 1; i++) { %>
-<td rowspan="2"><%- header[i] %></td>
+<% for (var i = 0; i < p_header_len - 1; i++) { %>
+<td rowspan="2"><%- p_header[i] %></td>
 <% } %>
-<% for (var i in subheader) { %>
-<td><%- subheader[i] %></td>
+<% for (var i in s_header) { %>
+<td><%- s_header[i] %></td>
 <% } %>
 </tr>
 <tr>
-<td colspan="<%= subheader_len %>"><%- header[header_len - 1] %></td>
+<td colspan="<%= s_header_len %>"><%- p_header[p_header_len - 1] %></td>
+</tr>
+<tr>
+<td colspan="<%= p_header_len + s_header_len - 1 %>"><%- fitness.p_caption %></td>
 </tr>
 </tbody>
 </table>
