@@ -9,18 +9,18 @@
 
 <h1><%- fitness.sitename_.substring(2) %></h1>
 <h3><%- fitness.subtitle3              %></h3>
-<table id="stat-fit0" border="1">
+<table id="stat-fit0">
 <tbody>
-<tr>
+<tr id="p-caption-h">
 <td colspan="<%= p_header_len + s_header_len - 1 %>"><%- fitness.p_caption %></td>
 </tr>
-<tr>
+<tr id="p-header-h">
 <% for (var i = 0; i < p_header_len - 1; i++) { %>
 <td rowspan="2"><%- p_header[i] %></td>
 <% } %>
 <td colspan="<%= s_header_len %>"><%- p_header[p_header_len - 1] %></td>
 </tr>
-<tr>
+<tr id="s-header-h">
 <% for (var i in s_header) { %>
 <td><%- s_header[i] %></td>
 <% } %>
@@ -47,7 +47,7 @@
 </tr>
 <% } %>
 <% } %><%# <== for (var i in portions) { %>
-<tr>
+<tr id="p-header-f">
 <% for (var i = 0; i < p_header_len - 1; i++) { %>
 <td rowspan="2"><%- p_header[i] %></td>
 <% } %>
@@ -55,10 +55,10 @@
 <td><%- s_header[i] %></td>
 <% } %>
 </tr>
-<tr>
+<tr id="s-header-f">
 <td colspan="<%= s_header_len %>"><%- p_header[p_header_len - 1] %></td>
 </tr>
-<tr>
+<tr id="p-caption-f">
 <td colspan="<%= p_header_len + s_header_len - 1 %>"><%- fitness.p_caption %></td>
 </tr>
 </tbody>
