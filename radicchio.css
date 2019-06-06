@@ -177,10 +177,26 @@ pre {
 #p-caption-h td, #p-header-h td, #s-header-h td,
 #p-caption-f td, #p-header-f td, #s-header-f td {
     text-align:       center;
+    font-weight:      bold;
 }
 
 #p-caption-f td, #p-header-f td, #s-header-f td {
     vertical-align:   bottom;
+}
+
+#p-caption-h td,
+#p-caption-f td {
+    background-color: #4ca419;
+}
+
+#p-header-h td, #s-header-h td,
+#p-header-f td, #s-header-f td {
+    background-color: #5db52a;
+}
+
+.s-header-h-td, #s-header-h td,
+.s-header-f-td, #s-header-f td {
+    color:            #7aef17;
 }
 
 /* vim:set nu et ts=4 sw=4: */
