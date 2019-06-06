@@ -1,65 +1,69 @@
 <%# src/data/blog/stat_repr/fitness.ejs %>
 
 <% var fitness      = public.data.blog.stat_repr._data.fitness;           %>
+<% var emoji_url    = fitness.emoji_url;                                  %>
+<% var p_caption    = fitness.p_caption;                                  %>
 <% var p_header     = fitness.p_header;                                   %>
 <% var p_header_len = p_header.length;                                    %>
 <% var s_header     = fitness.s_header;                                   %>
 <% var s_header_len = s_header.length;                                    %>
 <% var portions     = public.data.blog.stat_repr.fitness_._data.portions; %>
 
-<h1><%- fitness.sitename_.substring(2) %></h1>
-<h3><%- fitness.subtitle3              %></h3>
+<h1><%= fitness.sitename_.substring(2) %></h1>
+<h3><%= fitness.subtitle3              %></h3>
 <table id="stat-fit0">
 <tbody>
 <tr id="p-caption-h">
-<td colspan="<%= p_header_len + s_header_len - 1 %>"><%- fitness.p_caption %></td>
+<td colspan="<%- p_header_len + s_header_len - 1 %>"><%= p_caption %></td>
 </tr>
 <tr id="p-header-h">
-<% for (var i = 0; i < p_header_len - 1; i++) { %>
-<td rowspan="2"><%- p_header[i] %></td>
-<% } %>
-<td colspan="<%= s_header_len %>" class="s-header-h-td"><%- p_header[p_header_len - 1] %></td>
+<% for (var i = 0; i < p_header_len - 1; i++) { -%>
+<td rowspan="2"><%= p_header[i] %></td>
+<% } -%>
+<td colspan="<%- s_header_len %>" class="s-header-h-td"><%= p_header[p_header_len - 1] %></td>
 </tr>
 <tr id="s-header-h">
-<% for (var i in s_header) { %>
-<td><%- s_header[i] %></td>
-<% } %>
+<% for (var i in s_header) { -%>
+<td><%= s_header[i] %></td>
+<% } -%>
 </tr>
-<% for (var i in portions) { %>
-<% var sessions_len = portions[i].sessions.length; %>
-<% var session0     = portions[i].sessions[0];     %>
+<% for (var i in portions) { -%>
+<% var portion_     = portions[i];              -%>
+<% var sessions_len = portion_.sessions.length; -%>
+<% var session0     = portion_.sessions[0];     -%>
+<% var voucher      = portion_.voucher;         -%>
 <tr>
-<td rowspan="<%= sessions_len %>"><%- portions[i].pid     %></td>
-<td rowspan="<%= sessions_len %>"><%- portions[i].year    %></td>
-<td rowspan="<%= sessions_len %>"><%- portions[i].month   %></td>
-<td rowspan="<%= sessions_len %>"><%- portions[i].name    %></td>
-<td rowspan="<%= sessions_len %>"><%- portions[i].voucher %></td>
-<td><%- session0.sid     %></td>
-<td><%- session0.day     %></td>
-<td><%- session0.weekday %></td>
+<td rowspan="<%- sessions_len %>" class="p-id-td"><%=    portion_.pid   %></td>
+<td rowspan="<%- sessions_len %>" class="p-year-td"><%=  portion_.year  %></td>
+<td rowspan="<%- sessions_len %>" class="p-month-td"><%= portion_.month %></td>
+<td rowspan="<%- sessions_len %>" class="p-name-td"><%=  portion_.name  %></td>
+<td rowspan="<%- sessions_len %>" class="p-voucher-td"><img src="<%- emoji_url %><%- voucher ? 2714 : 2796 %>.png" class="emoji" alt="<%- voucher ? 'Yes' : 'No' %>" /></td>
+<td class="s-id-td"><%=      session0.sid     %></td>
+<td class="s-day-td"><%=     session0.day     %></td>
+<td class="s-weekday-td"><%= session0.weekday %></td>
 </tr>
-<% for (var j = 1; j < sessions_len; j++) { %>
-<% var session_ = portions[i].sessions[j]; %>
+<% for (var j = 1; j < sessions_len; j++) { -%>
+<% var session_ = portion_.sessions[j]; -%>
 <tr>
-<td><%- session_.sid     %></td>
-<td><%- session_.day     %></td>
-<td><%- session_.weekday %></td>
+<td class="s-id-td"><%=      session_.sid     %></td>
+<td class="s-day-td"><%=     session_.day     %></td>
+<td class="s-weekday-td"><%= session_.weekday %></td>
 </tr>
-<% } %>
-<% } %><%# <== for (var i in portions) { %>
+<% } -%>
+<% } -%><%# <== for (var i in portions) { -%>
 <tr id="p-header-f">
-<% for (var i = 0; i < p_header_len - 1; i++) { %>
-<td rowspan="2"><%- p_header[i] %></td>
-<% } %>
-<% for (var i in s_header) { %>
-<td class="s-header-f-td"><%- s_header[i] %></td>
-<% } %>
+<% for (var i = 0; i < p_header_len - 1; i++) { -%>
+<td rowspan="2"><%= p_header[i] %></td>
+<% } -%>
+<% for (var i in s_header) { -%>
+<td class="s-header-f-td"><%= s_header[i] %></td>
+<% } -%>
 </tr>
 <tr id="s-header-f">
-<td colspan="<%= s_header_len %>"><%- p_header[p_header_len - 1] %></td>
+<td colspan="<%- s_header_len %>"><%= p_header[p_header_len - 1] %></td>
 </tr>
 <tr id="p-caption-f">
-<td colspan="<%= p_header_len + s_header_len - 1 %>"><%- fitness.p_caption %></td>
+<td colspan="<%- p_header_len + s_header_len - 1 %>"><%= p_caption %></td>
 </tr>
 </tbody>
 </table>
