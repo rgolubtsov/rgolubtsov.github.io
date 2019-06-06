@@ -159,4 +159,28 @@ pre {
     background-color: #5db52a;
 }
 
+/* ------------------------------------------------------------------------- */
+
+#stat-fit0 {
+    width:            96%;
+    margin:           5px 28px 18px;
+    border-collapse:  collapse;
+    float:            left;
+}
+
+#stat-fit0 td {
+    border:           1px solid #4ca419;
+    padding:          6px;
+    vertical-align:   baseline;
+}
+
+#p-caption-h td, #p-header-h td, #s-header-h td,
+#p-caption-f td, #p-header-f td, #s-header-f td {
+    text-align:       center;
+}
+
+#p-caption-f td, #p-header-f td, #s-header-f td {
+    vertical-align:   bottom;
+}
+
 /* vim:set nu et ts=4 sw=4: */
