@@ -8,49 +8,73 @@
 <% var s_header     = fitness.s_header;                                   %>
 <% var s_header_len = s_header.length;                                    %>
 <% var portions     = public.data.blog.stat_repr.fitness_._data.portions; %>
+<% var weekdays     = fitness.weekdays;                                   %>
+
+<%# This function expands short names of days of the week %>
+<%# to their respective long names taken from metadata.   %>
+<% var weekday_expand = function(weekday) {
+   switch (weekday) {
+       case "Mo": return weekdays[0];
+       case "Tu": return weekdays[1];
+       case "We": return weekdays[2];
+       case "Th": return weekdays[3];
+       case "Fr": return weekdays[4];
+       case "Sa": return weekdays[5];
+       case "Su": return weekdays[6];
+   }
+}; %>
 
 <h1><%= fitness.sitename_.substring(2) %></h1>
 <h3><%= fitness.subtitle3              %></h3>
 <table id="stat-fit0">
 <tbody>
+<%# --- Heading caption - Table header ------------------------------------ -%>
 <tr id="p-caption-h">
 <td colspan="<%- p_header_len + s_header_len - 1 %>"><%= p_caption %></td>
 </tr>
+<%# --- Heading portions - Table header ----------------------------------- -%>
 <tr id="p-header-h">
 <% for (var i = 0; i < p_header_len - 1; i++) { -%>
 <td rowspan="2"><%= p_header[i] %></td>
 <% } -%>
 <td colspan="<%- s_header_len %>" class="s-header-h-td"><%= p_header[p_header_len - 1] %></td>
 </tr>
+<%# --- Heading sessions - Table header ----------------------------------- -%>
 <tr id="s-header-h">
 <% for (var i in s_header) { -%>
 <td><%= s_header[i] %></td>
 <% } -%>
 </tr>
+<%# --- Portions data - Table body ---------------------------------------- -%>
 <% for (var i in portions) { -%>
 <% var portion_     = portions[i];              -%>
 <% var sessions_len = portion_.sessions.length; -%>
 <% var session0     = portion_.sessions[0];     -%>
 <% var voucher      = portion_.voucher;         -%>
+<% var weekday0     = session0.weekday;         -%>
 <tr>
 <td rowspan="<%- sessions_len %>" class="p-id-td"><%=    portion_.pid   %></td>
 <td rowspan="<%- sessions_len %>" class="p-year-td"><%=  portion_.year  %></td>
 <td rowspan="<%- sessions_len %>" class="p-month-td"><%= portion_.month %></td>
 <td rowspan="<%- sessions_len %>" class="p-name-td"><%=  portion_.name  %></td>
-<td rowspan="<%- sessions_len %>" class="p-voucher-td"><img src="<%- emoji_url %><%- voucher ? 2714 : 2796 %>.png" class="emoji" alt="<%- voucher ? 'Yes' : 'No' %>" /></td>
-<td class="s-id-td"><%=      session0.sid     %></td>
-<td class="s-day-td"><%=     session0.day     %></td>
-<td class="s-weekday-td"><%= session0.weekday %></td>
+<td rowspan="<%- sessions_len %>" class="p-voucher-td"><img src="<%- emoji_url %><%- voucher ? 2714 : 2796 %>.png" class="emoji" alt="<%- voucher ? 'Yes' : 'No' %>" title="<%- voucher ? 'Yes' : 'No' %>" /></td>
+<%# --- Sessions data - First row - Table body ---------------------------- -%>
+<td class="s-id-td"><%=      session0.sid             %></td>
+<td class="s-day-td"><%=     session0.day             %></td>
+<td class="s-weekday-td"><%= weekday_expand(weekday0) %></td>
 </tr>
+<%# --- Sessions data - Rest of rows - Table body ------------------------- -%>
 <% for (var j = 1; j < sessions_len; j++) { -%>
 <% var session_ = portion_.sessions[j]; -%>
+<% var weekday_ = session_.weekday;     -%>
 <tr>
-<td class="s-id-td"><%=      session_.sid     %></td>
-<td class="s-day-td"><%=     session_.day     %></td>
-<td class="s-weekday-td"><%= session_.weekday %></td>
+<td class="s-id-td"><%=      session_.sid             %></td>
+<td class="s-day-td"><%=     session_.day             %></td>
+<td class="s-weekday-td"><%= weekday_expand(weekday_) %></td>
 </tr>
 <% } -%>
 <% } -%><%# <== for (var i in portions) { -%>
+<%# --- Heading portions - Table footer ----------------------------------- -%>
 <tr id="p-header-f">
 <% for (var i = 0; i < p_header_len - 1; i++) { -%>
 <td rowspan="2"><%= p_header[i] %></td>
@@ -59,12 +83,15 @@
 <td class="s-header-f-td"><%= s_header[i] %></td>
 <% } -%>
 </tr>
+<%# --- Heading sessions - Table footer ----------------------------------- -%>
 <tr id="s-header-f">
 <td colspan="<%- s_header_len %>"><%= p_header[p_header_len - 1] %></td>
 </tr>
+<%# --- Heading caption - Table footer ------------------------------------ -%>
 <tr id="p-caption-f">
 <td colspan="<%- p_header_len + s_header_len - 1 %>"><%= p_caption %></td>
 </tr>
+<%# ----------------------------------------------------------------------- -%>
 </tbody>
 </table>
 
