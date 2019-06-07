@@ -5,13 +5,13 @@
         "subtitle_" : "",
         "subtitle3" : "Fitness attendance statistics",
         "emoji_url" : "http://github.githubassets.com/images/icons/emoji/unicode/",
-        "p_caption" : "Portions: Distinguished by Year, Month, Gym Name, or Voucher",
+        "p_caption" : "Portions | Distinguished by Year, Month, Gym Name, or Voucher",
         "p_header"  : [
             "ID",
             "Year",
             "Month",
             "Gym Name",
-            "Voucher",
+            "Voucher<br />(Subscription)",
             "Sessions"
         ],
         "s_header"  : [
