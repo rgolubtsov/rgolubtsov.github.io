@@ -35,7 +35,7 @@
 <%# --- Heading portions - Table header ----------------------------------- -%>
 <tr id="p-header-h">
 <% for (var i = 0; i < p_header_len - 1; i++) { -%>
-<td rowspan="2"><%= p_header[i] %></td>
+<td rowspan="2"><%- p_header[i] %></td>
 <% } -%>
 <td colspan="<%- s_header_len %>" class="s-header-h-td"><%= p_header[p_header_len - 1] %></td>
 </tr>
@@ -77,7 +77,7 @@
 <%# --- Heading portions - Table footer ----------------------------------- -%>
 <tr id="p-header-f">
 <% for (var i = 0; i < p_header_len - 1; i++) { -%>
-<td rowspan="2"><%= p_header[i] %></td>
+<td rowspan="2"><%- p_header[i] %></td>
 <% } -%>
 <% for (var i in s_header) { -%>
 <td class="s-header-f-td"><%= s_header[i] %></td>
