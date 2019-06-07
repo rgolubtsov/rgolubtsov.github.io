@@ -18,6 +18,15 @@
             "ID",
             "Day",
             "Weekday"
+        ],
+        "weekdays"  : [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
         ]
     }
 }
