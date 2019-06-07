@@ -1,0 +1,28 @@
+    ,
+    {
+        "mid"        : ,
+        "year"       : "",
+        "month"      : "",
+        "day"        : ,
+        "weekday"    : "",
+        "player1"    : "Yaro",
+        "player2"    : "Radicchio",
+        "winner"     : "",
+        "result"     : "",
+        "games"      : [{
+            "gid"    : 1,
+            "scores" : ""
+        },{ "gid"    : 2,
+            "scores" : ""
+        },{ "gid"    : 3,
+            "scores" : ""
+        },{ "gid"    : 4,
+            "scores" : ""
+        },{ "gid"    : 5,
+            "scores" : ""
+        },{ "gid"    : 6,
+            "scores" : ""
+        },{ "gid"    : 7,
+            "scores" : ""
+        }]
+    }
