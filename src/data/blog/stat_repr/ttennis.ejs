@@ -1,0 +1,86 @@
+<%# src/data/blog/stat_repr/ttennis.ejs %>
+
+<% var ttennis      = public.data.blog.stat_repr._data.ttennis;          %>
+<% var m_caption    = ttennis.m_caption;                                 %>
+<% var m_header     = ttennis.m_header;                                  %>
+<% var m_header_len = m_header.length;                                   %>
+<% var matches      = public.data.blog.stat_repr.ttennis_._data.matches; %>
+<% var weekdays     = ttennis.weekdays;                                  %>
+
+<%# This function expands short names of days of the week %>
+<%# to their respective long names taken from metadata.   %>
+<% var weekday_expand = function(weekday) {
+   switch (weekday) {
+       case "Mo": return weekdays[0];
+       case "Tu": return weekdays[1];
+       case "We": return weekdays[2];
+       case "Th": return weekdays[3];
+       case "Fr": return weekdays[4];
+       case "Sa": return weekdays[5];
+       case "Su": return weekdays[6];
+   }
+}; %>
+
+<h1><%= ttennis.sitename_.substring(2) %></h1>
+<h3><%= ttennis.subtitle3              %></h3>
+<table id="stat-ttt0" border="1">
+<tbody>
+<%# --- Heading caption - Table header ------------------------------------ -%>
+<tr id="m-caption-h">
+<td colspan="<%- m_header_len - 1 + 7 %>"><%= m_caption %></td>
+</tr>
+<%# --- Heading matches - Table header ------------------------------------ -%>
+<tr id="m-header-h">
+<% for (var i = 0; i < m_header_len - 1; i++) { -%>
+<td rowspan="2"><%- m_header[i] %></td>
+<% } -%>
+<td colspan="7" class="g-header-h-td"><%= m_header[m_header_len - 1] %></td>
+</tr>
+<%# --- Heading games - Table header -------------------------------------- -%>
+<tr id="g-header-h">
+<% for (var i = 1; i <= 7; i++) { -%>
+<td><%= i %></td>
+<% } -%>
+</tr>
+<%# --- Matches data - Table body ----------------------------------------- -%>
+<% for (var i in matches) { -%>
+<% var match_    = matches[i];   -%>
+<% var games     = match_.games; -%>
+<tr>
+<td class="m-id-td"><%=      match_.mid                     %></td>
+<td class="m-year-td"><%=    match_.year                    %></td>
+<td class="m-month-td"><%=   match_.month                   %></td>
+<td class="m-day-td"><%=     match_.day                     %></td>
+<td class="m-weekday-td"><%= weekday_expand(match_.weekday) %></td>
+<td class="m-player1-td"><%= match_.player1                 %></td>
+<td class="m-player2-td"><%= match_.player2                 %></td>
+<td class="m-winner-td"><%=  match_.winner                  %></td>
+<td class="m-result-td"><%=  match_.result                  %></td>
+<%# --- Games data - Table body ------------------------------------------- -%>
+<% for (var j in games) { -%>
+<td class="g-score-td"><%= games[j].score %></td>
+<% } -%>
+</tr>
+<% } -%><%# <== for (var i in matches) { -%>
+<%# --- Heading matches - Table footer ------------------------------------ -%>
+<tr id="m-header-f">
+<% for (var i = 0; i < m_header_len - 1; i++) { -%>
+<td rowspan="2"><%- m_header[i] %></td>
+<% } -%>
+<% for (var i = 1; i <= 7; i++) { -%>
+<td class="g-header-f-td"><%= i %></td>
+<% } -%>
+</tr>
+<%# --- Heading games - Table footer -------------------------------------- -%>
+<tr id="g-header-f">
+<td colspan="7" class="g-header-f-td"><%= m_header[m_header_len - 1] %></td>
+</tr>
+<%# --- Heading caption - Table footer ------------------------------------ -%>
+<tr id="m-caption-f">
+<td colspan="<%- m_header_len - 1 + 7 %>"><%= m_caption %></td>
+</tr>
+<%# ----------------------------------------------------------------------- -%>
+</tbody>
+</table>
+
+<%# vim:set nu et ts=4 sw=4: %>
