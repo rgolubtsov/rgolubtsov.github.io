@@ -5,7 +5,7 @@
 <% var m_header     = ttennis.m_header;                                  %>
 <% var m_header_len = m_header.length;                                   %>
 <% var matches      = public.data.blog.stat_repr.ttennis_._data.matches; %>
-<% var weekdays     = ttennis.weekdays;                                  %>
+<% var weekdays     = public.data.blog.stat_repr._data.fitness.weekdays; %>
 
 <%# This function expands short names of days of the week %>
 <%# to their respective long names taken from metadata.   %>
@@ -23,7 +23,7 @@
 
 <h1><%= ttennis.sitename_.substring(2) %></h1>
 <h3><%= ttennis.subtitle3              %></h3>
-<table id="stat-ttt0" border="1">
+<table id="stat-ttt0">
 <tbody>
 <%# --- Heading caption - Table header ------------------------------------ -%>
 <tr id="m-caption-h">
