@@ -46,15 +46,6 @@
             "Winner",
             "Result",
             "Games"
-        ],
-        "weekdays"  : [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday",
-            "Sunday"
         ]
     }
 }
