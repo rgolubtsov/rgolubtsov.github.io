@@ -34,15 +34,13 @@
         "sitename_" : ": Assorted table tennis",
         "subtitle_" : "",
         "subtitle3" : "Table tennis trainings statistics",
-        "m_caption" : "Matches during trainings",
+        "m_caption" : "Matches during trainings with Yaro",
         "m_header"  : [
             "ID",
             "Year",
             "Month",
             "Day",
             "Weekday",
-            "Player 1",
-            "Player 2",
             "Winner",
             "Result",
             "Games"
