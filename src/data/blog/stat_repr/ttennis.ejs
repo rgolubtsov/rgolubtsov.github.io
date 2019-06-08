@@ -44,8 +44,8 @@
 </tr>
 <%# --- Matches data - Table body ----------------------------------------- -%>
 <% for (var i in matches) { -%>
-<% var match_    = matches[i];   -%>
-<% var games     = match_.games; -%>
+<% var match_ = matches[i];   -%>
+<% var games  = match_.games; -%>
 <tr>
 <td class="m-id-td"><%=      match_.mid                     %></td>
 <td class="m-year-td"><%=    match_.year                    %></td>
@@ -58,8 +58,18 @@
 <td class="m-result-td"><%=  match_.result                  %></td>
 <%# --- Games data - Table body ------------------------------------------- -%>
 <% for (var j in games) { -%>
-<td class="g-score-td"><%= games[j].score %></td>
-<% } -%>
+<% var game_ = games[j]; -%>
+<% if (game_.score === "") {
+              if (j == 4) { -%>
+<td colspan="3"></td>
+<% break;
+       } else if (j == 5) { -%>
+<td colspan="2"></td>
+<% break;
+       }
+   } -%>
+<td class="g-score-td"><%= game_.score %></td>
+<% } -%><%# <== for (var j in games) { -%>
 </tr>
 <% } -%><%# <== for (var i in matches) { -%>
 <%# --- Heading matches - Table footer ------------------------------------ -%>
