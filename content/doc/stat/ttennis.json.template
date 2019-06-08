@@ -1,28 +1,28 @@
     ,
     {
-        "mid"        : ,
-        "year"       : "",
-        "month"      : "",
-        "day"        : ,
-        "weekday"    : "",
-        "player1"    : "Yaro",
-        "player2"    : "Radicchio",
-        "winner"     : "",
-        "result"     : "",
-        "games"      : [{
-            "gid"    : 1,
-            "scores" : ""
-        },{ "gid"    : 2,
-            "scores" : ""
-        },{ "gid"    : 3,
-            "scores" : ""
-        },{ "gid"    : 4,
-            "scores" : ""
-        },{ "gid"    : 5,
-            "scores" : ""
-        },{ "gid"    : 6,
-            "scores" : ""
-        },{ "gid"    : 7,
-            "scores" : ""
+        "mid"       : ,
+        "year"      : "",
+        "month"     : "",
+        "day"       : ,
+        "weekday"   : "",
+        "player1"   : "Yaro",
+        "player2"   : "Radicchio",
+        "winner"    : "",
+        "result"    : "",
+        "games"     : [{
+            "gid"   : 1,
+            "score" : ""
+        },{ "gid"   : 2,
+            "score" : ""
+        },{ "gid"   : 3,
+            "score" : ""
+        },{ "gid"   : 4,
+            "score" : ""
+        },{ "gid"   : 5,
+            "score" : ""
+        },{ "gid"   : 6,
+            "score" : ""
+        },{ "gid"   : 7,
+            "score" : ""
         }]
     }
