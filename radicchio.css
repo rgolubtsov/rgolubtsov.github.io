@@ -161,49 +161,61 @@ pre {
 
 /* ------------------------------------------------------------------------- */
 
-#stat-fit0 {
+#stat-fit0, #stat-ttt0 {
     width:            96%;
     margin:           5px 28px 18px;
     border-collapse:  collapse;
     float:            left;
 }
 
-#stat-fit0 td {
+#stat-fit0 td, #stat-ttt0 td {
     border:           1px solid #4ca419;
     padding:          6px;
     vertical-align:   baseline;
 }
 
 #p-caption-h td, #p-header-h td, #s-header-h td,
-#p-caption-f td, #p-header-f td, #s-header-f td {
+#p-caption-f td, #p-header-f td, #s-header-f td,
+#m-caption-h td, #m-header-h td, #g-header-h td,
+#m-caption-f td, #m-header-f td, #g-header-f td {
     text-align:       center;
     font-weight:      bold;
 }
 
-#p-caption-f td, #p-header-f td, #s-header-f td {
+#p-caption-f td, #p-header-f td, #s-header-f td,
+#m-caption-f td, #m-header-f td, #g-header-f td {
     vertical-align:   bottom;
 }
 
 #p-caption-h td,
-#p-caption-f td {
+#p-caption-f td,
+#m-caption-h td,
+#m-caption-f td {
     background-color: #4ca419;
 }
 
 #p-header-h td, #s-header-h td,
-#p-header-f td, #s-header-f td {
+#p-header-f td, #s-header-f td,
+#m-header-h td, #g-header-h td,
+#m-header-f td, #g-header-f td {
     background-color: #5db52a;
 }
 
 .s-header-h-td, #s-header-h td,
-.s-header-f-td, #s-header-f td {
+.s-header-f-td, #s-header-f td,
+.g-header-h-td, #g-header-h td,
+.g-header-f-td, #g-header-f td {
     color:            #7aef17;
 }
 
-.p-id-td, .s-id-td, .s-day-td {
+.p-id-td, .s-id-td, .s-day-td,
+.m-id-td,           .m-day-td {
     text-align:       right;
 }
 
-.p-year-td, .p-voucher-td {
+.p-year-td,   .p-voucher-td,
+.m-year-td,   .m-player1-td, .m-player2-td,
+.m-winner-td, .m-result-td,  .g-score-td {
     text-align:       center;
 }
 
