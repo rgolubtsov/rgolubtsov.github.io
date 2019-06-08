@@ -5,8 +5,6 @@
         "month"     : "October",
         "day"       : 9,
         "weekday"   : "Tu",
-        "player1"   : "Yaro",
-        "player2"   : "Radicchio",
         "winner"    : "Yaro",
         "result"    : "4-2",
         "games"     : [{
@@ -32,8 +30,6 @@
         "month"     : "October",
         "day"       : 20,
         "weekday"   : "Sa",
-        "player1"   : "Yaro",
-        "player2"   : "Radicchio",
         "winner"    : "Radicchio",
         "result"    : "3-4",
         "games"     : [{
@@ -59,8 +55,6 @@
         "month"     : "October",
         "day"       : 21,
         "weekday"   : "Su",
-        "player1"   : "Yaro",
-        "player2"   : "Radicchio",
         "winner"    : "Radicchio",
         "result"    : "1-4",
         "games"     : [{
@@ -86,8 +80,6 @@
         "month"     : "October",
         "day"       : 27,
         "weekday"   : "Sa",
-        "player1"   : "Yaro",
-        "player2"   : "Radicchio",
         "winner"    : "Radicchio",
         "result"    : "3-4",
         "games"     : [{
@@ -113,8 +105,6 @@
         "month"     : "October",
         "day"       : 29,
         "weekday"   : "Mo",
-        "player1"   : "Yaro",
-        "player2"   : "Radicchio",
         "winner"    : "Yaro",
         "result"    : "4-3",
         "games"     : [{
@@ -140,8 +130,6 @@
         "month"     : "November",
         "day"       : 3,
         "weekday"   : "Sa",
-        "player1"   : "Yaro",
-        "player2"   : "Radicchio",
         "winner"    : "Yaro",
         "result"    : "4-3",
         "games"     : [{
@@ -167,8 +155,6 @@
         "month"     : "November",
         "day"       : 4,
         "weekday"   : "Su",
-        "player1"   : "Yaro",
-        "player2"   : "Radicchio",
         "winner"    : "Radicchio",
         "result"    : "0-4",
         "games"     : [{
@@ -194,8 +180,6 @@
         "month"     : "November",
         "day"       : 10,
         "weekday"   : "Sa",
-        "player1"   : "Yaro",
-        "player2"   : "Radicchio",
         "winner"    : "Radicchio",
         "result"    : "3-4",
         "games"     : [{
@@ -221,8 +205,6 @@
         "month"     : "November",
         "day"       : 11,
         "weekday"   : "Su",
-        "player1"   : "Yaro",
-        "player2"   : "Radicchio",
         "winner"    : "Yaro",
         "result"    : "4-3",
         "games"     : [{
@@ -248,8 +230,6 @@
         "month"     : "November",
         "day"       : 20,
         "weekday"   : "Tu",
-        "player1"   : "Yaro",
-        "player2"   : "Radicchio",
         "winner"    : "Yaro",
         "result"    : "4-2",
         "games"     : [{
@@ -275,8 +255,6 @@
         "month"     : "November",
         "day"       : 24,
         "weekday"   : "Sa",
-        "player1"   : "Yaro",
-        "player2"   : "Radicchio",
         "winner"    : "Radicchio",
         "result"    : "0-4",
         "games"     : [{
@@ -302,8 +280,6 @@
         "month"     : "November",
         "day"       : 25,
         "weekday"   : "Su",
-        "player1"   : "Yaro",
-        "player2"   : "Radicchio",
         "winner"    : "Radicchio",
         "result"    : "3-4",
         "games"     : [{
@@ -329,8 +305,6 @@
         "month"     : "December",
         "day"       : 1,
         "weekday"   : "Sa",
-        "player1"   : "Yaro",
-        "player2"   : "Radicchio",
         "winner"    : "Radicchio",
         "result"    : "1-4",
         "games"     : [{
@@ -356,8 +330,6 @@
         "month"     : "December",
         "day"       : 2,
         "weekday"   : "Su",
-        "player1"   : "Yaro",
-        "player2"   : "Radicchio",
         "winner"    : "Yaro",
         "result"    : "4-1",
         "games"     : [{
@@ -383,8 +355,6 @@
         "month"     : "December",
         "day"       : 8,
         "weekday"   : "Sa",
-        "player1"   : "Yaro",
-        "player2"   : "Radicchio",
         "winner"    : "Radicchio",
         "result"    : "2-4",
         "games"     : [{
@@ -410,8 +380,6 @@
         "month"     : "December",
         "day"       : 9,
         "weekday"   : "Su",
-        "player1"   : "Yaro",
-        "player2"   : "Radicchio",
         "winner"    : "Yaro",
         "result"    : "4-3",
         "games"     : [{
@@ -437,8 +405,6 @@
         "month"     : "December",
         "day"       : 15,
         "weekday"   : "Sa",
-        "player1"   : "Yaro",
-        "player2"   : "Radicchio",
         "winner"    : "Yaro",
         "result"    : "4-0",
         "games"     : [{
@@ -464,8 +430,6 @@
         "month"     : "December",
         "day"       : 16,
         "weekday"   : "Su",
-        "player1"   : "Yaro",
-        "player2"   : "Radicchio",
         "winner"    : "Radicchio",
         "result"    : "2-4",
         "games"     : [{
@@ -491,8 +455,6 @@
         "month"     : "December",
         "day"       : 23,
         "weekday"   : "Su",
-        "player1"   : "Yaro",
-        "player2"   : "Radicchio",
         "winner"    : "Radicchio",
         "result"    : "1-4",
         "games"     : [{
@@ -518,8 +480,6 @@
         "month"     : "December",
         "day"       : 24,
         "weekday"   : "Mo",
-        "player1"   : "Yaro",
-        "player2"   : "Radicchio",
         "winner"    : "Yaro",
         "result"    : "4-2",
         "games"     : [{
@@ -545,8 +505,6 @@
         "month"     : "December",
         "day"       : 25,
         "weekday"   : "Tu",
-        "player1"   : "Yaro",
-        "player2"   : "Radicchio",
         "winner"    : "Yaro",
         "result"    : "4-3",
         "games"     : [{
@@ -572,8 +530,6 @@
         "month"     : "December",
         "day"       : 30,
         "weekday"   : "Su",
-        "player1"   : "Yaro",
-        "player2"   : "Radicchio",
         "winner"    : "Radicchio",
         "result"    : "3-4",
         "games"     : [{
@@ -599,8 +555,6 @@
         "month"     : "December",
         "day"       : 31,
         "weekday"   : "Mo",
-        "player1"   : "Yaro",
-        "player2"   : "Radicchio",
         "winner"    : "Radicchio",
         "result"    : "0-4",
         "games"     : [{
@@ -626,8 +580,6 @@
         "month"     : "January",
         "day"       : 6,
         "weekday"   : "Su",
-        "player1"   : "Yaro",
-        "player2"   : "Radicchio",
         "winner"    : "Radicchio",
         "result"    : "2-4",
         "games"     : [{
@@ -653,8 +605,6 @@
         "month"     : "January",
         "day"       : 7,
         "weekday"   : "Mo",
-        "player1"   : "Yaro",
-        "player2"   : "Radicchio",
         "winner"    : "Yaro",
         "result"    : "4-2",
         "games"     : [{
@@ -680,8 +630,6 @@
         "month"     : "January",
         "day"       : 12,
         "weekday"   : "Sa",
-        "player1"   : "Yaro",
-        "player2"   : "Radicchio",
         "winner"    : "Yaro",
         "result"    : "4-2",
         "games"     : [{
@@ -707,8 +655,6 @@
         "month"     : "January",
         "day"       : 19,
         "weekday"   : "Sa",
-        "player1"   : "Yaro",
-        "player2"   : "Radicchio",
         "winner"    : "Radicchio",
         "result"    : "3-4",
         "games"     : [{
@@ -734,8 +680,6 @@
         "month"     : "January",
         "day"       : 20,
         "weekday"   : "Su",
-        "player1"   : "Yaro",
-        "player2"   : "Radicchio",
         "winner"    : "Radicchio",
         "result"    : "2-4",
         "games"     : [{
@@ -761,8 +705,6 @@
         "month"     : "January",
         "day"       : 26,
         "weekday"   : "Sa",
-        "player1"   : "Yaro",
-        "player2"   : "Radicchio",
         "winner"    : "Radicchio",
         "result"    : "2-4",
         "games"     : [{
@@ -788,8 +730,6 @@
         "month"     : "February",
         "day"       : 9,
         "weekday"   : "Sa",
-        "player1"   : "Yaro",
-        "player2"   : "Radicchio",
         "winner"    : "Radicchio",
         "result"    : "1-4",
         "games"     : [{
@@ -815,8 +755,6 @@
         "month"     : "February",
         "day"       : 10,
         "weekday"   : "Su",
-        "player1"   : "Yaro",
-        "player2"   : "Radicchio",
         "winner"    : "Radicchio",
         "result"    : "3-4",
         "games"     : [{
@@ -842,8 +780,6 @@
         "month"     : "February",
         "day"       : 16,
         "weekday"   : "Sa",
-        "player1"   : "Yaro",
-        "player2"   : "Radicchio",
         "winner"    : "Yaro",
         "result"    : "4-0",
         "games"     : [{
@@ -869,8 +805,6 @@
         "month"     : "February",
         "day"       : 17,
         "weekday"   : "Su",
-        "player1"   : "Yaro",
-        "player2"   : "Radicchio",
         "winner"    : "Radicchio",
         "result"    : "0-4",
         "games"     : [{
@@ -896,8 +830,6 @@
         "month"     : "February",
         "day"       : 23,
         "weekday"   : "Sa",
-        "player1"   : "Yaro",
-        "player2"   : "Radicchio",
         "winner"    : "Yaro",
         "result"    : "4-3",
         "games"     : [{
@@ -923,8 +855,6 @@
         "month"     : "March",
         "day"       : 2,
         "weekday"   : "Sa",
-        "player1"   : "Yaro",
-        "player2"   : "Radicchio",
         "winner"    : "Radicchio",
         "result"    : "3-4",
         "games"     : [{
@@ -950,8 +880,6 @@
         "month"     : "March",
         "day"       : 3,
         "weekday"   : "Su",
-        "player1"   : "Yaro",
-        "player2"   : "Radicchio",
         "winner"    : "Yaro",
         "result"    : "4-0",
         "games"     : [{
@@ -977,8 +905,6 @@
         "month"     : "March",
         "day"       : 9,
         "weekday"   : "Sa",
-        "player1"   : "Yaro",
-        "player2"   : "Radicchio",
         "winner"    : "Yaro",
         "result"    : "4-3",
         "games"     : [{
@@ -1004,8 +930,6 @@
         "month"     : "March",
         "day"       : 10,
         "weekday"   : "Su",
-        "player1"   : "Yaro",
-        "player2"   : "Radicchio",
         "winner"    : "Yaro",
         "result"    : "4-3",
         "games"     : [{
@@ -1031,8 +955,6 @@
         "month"     : "March",
         "day"       : 16,
         "weekday"   : "Sa",
-        "player1"   : "Yaro",
-        "player2"   : "Radicchio",
         "winner"    : "Yaro",
         "result"    : "4-2",
         "games"     : [{
@@ -1058,8 +980,6 @@
         "month"     : "March",
         "day"       : 17,
         "weekday"   : "Su",
-        "player1"   : "Yaro",
-        "player2"   : "Radicchio",
         "winner"    : "Radicchio",
         "result"    : "2-4",
         "games"     : [{
@@ -1085,8 +1005,6 @@
         "month"     : "March",
         "day"       : 23,
         "weekday"   : "Sa",
-        "player1"   : "Yaro",
-        "player2"   : "Radicchio",
         "winner"    : "Radicchio",
         "result"    : "1-4",
         "games"     : [{
@@ -1112,8 +1030,6 @@
         "month"     : "March",
         "day"       : 24,
         "weekday"   : "Su",
-        "player1"   : "Yaro",
-        "player2"   : "Radicchio",
         "winner"    : "Yaro",
         "result"    : "4-2",
         "games"     : [{
@@ -1139,8 +1055,6 @@
         "month"     : "March",
         "day"       : 27,
         "weekday"   : "We",
-        "player1"   : "Yaro",
-        "player2"   : "Radicchio",
         "winner"    : "Radicchio",
         "result"    : "1-4",
         "games"     : [{
@@ -1166,8 +1080,6 @@
         "month"     : "March",
         "day"       : 28,
         "weekday"   : "Th",
-        "player1"   : "Yaro",
-        "player2"   : "Radicchio",
         "winner"    : "Radicchio",
         "result"    : "1-4",
         "games"     : [{
@@ -1193,8 +1105,6 @@
         "month"     : "March",
         "day"       : 30,
         "weekday"   : "Sa",
-        "player1"   : "Yaro",
-        "player2"   : "Radicchio",
         "winner"    : "Yaro",
         "result"    : "4-0",
         "games"     : [{
@@ -1220,8 +1130,6 @@
         "month"     : "March",
         "day"       : 31,
         "weekday"   : "Su",
-        "player1"   : "Yaro",
-        "player2"   : "Radicchio",
         "winner"    : "Radicchio",
         "result"    : "2-4",
         "games"     : [{

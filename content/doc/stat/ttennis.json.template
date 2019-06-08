@@ -5,8 +5,6 @@
         "month"     : "",
         "day"       : ,
         "weekday"   : "",
-        "player1"   : "Yaro",
-        "player2"   : "Radicchio",
         "winner"    : "",
         "result"    : "",
         "games"     : [{
