@@ -175,22 +175,20 @@ pre {
 }
 
 #p-caption-h td, #p-header-h td, #s-header-h td,
-#p-caption-f td, #p-header-f td, #s-header-f td,
+                 #p-header-f td, #s-header-f td,
 #m-caption-h td, #m-header-h td, #g-header-h td,
-#m-caption-f td, #m-header-f td, #g-header-f td {
+                 #m-header-f td, #g-header-f td {
     text-align:       center;
     font-weight:      bold;
 }
 
-#p-caption-f td, #p-header-f td, #s-header-f td,
-#m-caption-f td, #m-header-f td, #g-header-f td {
+                 #p-header-f td, #s-header-f td,
+                 #m-header-f td, #g-header-f td {
     vertical-align:   bottom;
 }
 
 #p-caption-h td,
-#p-caption-f td,
-#m-caption-h td,
-#m-caption-f td {
+#m-caption-h td {
     background-color: #4ca419;
 }
 
