@@ -161,11 +161,14 @@ pre {
 
 /* ------------------------------------------------------------------------- */
 
-#stat-fit0, #stat-ttt0 {
-    width:            96%;
+#stat-cont {
     margin:           5px 28px 18px;
+    overflow:         auto;
+}
+
+#stat-fit0, #stat-ttt0 {
+    width:            100%;
     border-collapse:  collapse;
-    float:            left;
 }
 
 #stat-fit0 td, #stat-ttt0 td {
