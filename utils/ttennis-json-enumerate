@@ -1,0 +1,52 @@
+#!/usr/bin/env bash
+# utils/ttennis-json-enumerate
+# =============================================================================
+# This helper script enumerates matches in the JSON data source,
+# giving them true identity values to eliminate possible enumeration errors
+# previously made by hand.
+# =============================================================================
+# Copyright (C) 2019 Radislav (Radicchio) Golubtsov
+#
+# (See the LICENSE file at the top of the source tree.)
+#
+
+# Helper constants.
+declare -r EXIT_FAILURE=1 #    Failing exit status.
+declare -r EXIT_SUCCESS=0 # Successful exit status.
+
+JSON=/tmp/ttennis-json-enumerate
+
+if [ $# -ne 0 ]; then
+    JSON=$1
+else
+    touch ${JSON}-
+fi
+
+IFS='' # <== Keeping leading whitespace.
+
+i=1
+
+# Reading the JSON and replacing each "*mid*" line
+# with the one containing auto-incremental value everywhere.
+# This results in creating and populating a new JSON file.
+while read -r line; do
+    if [[ ${line} == *mid* ]]; then
+        echo "        \"mid\"       : ${i}," >> ${JSON}-
+
+        let i++
+    else
+        echo ${line} >> ${JSON}-
+    fi
+done < ${JSON}
+
+# Renaming the new JSON to the original one.
+mv ${JSON}- ${JSON}
+
+# If there is an error -- telling the OS about this.
+if [ $? -eq ${EXIT_FAILURE} ]; then
+    exit    ${EXIT_FAILURE}
+fi
+
+exit        ${EXIT_SUCCESS}
+
+# vim:set nu et ts=4 sw=4:
