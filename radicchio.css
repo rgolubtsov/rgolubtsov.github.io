@@ -205,7 +205,7 @@ pre {
 .s-header-h-td, #s-header-h td,
 .s-header-f-td, #s-header-f td,
 .g-header-h-td, #g-header-h td,
-.g-header-f-td, #g-header-f td {
+.g-header-f-td                 {
     color:            #7aef17;
 }
 
