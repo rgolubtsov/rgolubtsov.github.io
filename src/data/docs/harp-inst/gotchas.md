@@ -46,7 +46,7 @@ $ sudo vim /usr/lib/node_modules/harp/node_modules/terraform/lib/stylesheet/proc
            /usr/lib/node_modules/harp/node_modules/terraform/lib/stylesheet/processors/sass.js
 ```
 
-The modified modules `scss.js` and `sass.js` can be downloaded ([scss.js](/data/blog/harp-inst/scss.js), [sass.js](/data/blog/harp-inst/sass.js)) to watch on how exactly they need to be modified, but they are not exposed completely here on this page because they are very similar to each other. The only thing it needs to do is to comment out both `var`s at the top of both modules and to comment out the whole body of the `exports.compile` function:
+The modified modules `scss.js` and `sass.js` can be downloaded ([scss.js](/data/docs/harp-inst/scss.js), [sass.js](/data/docs/harp-inst/sass.js)) to watch on how exactly they need to be modified, but they are not exposed completely here on this page because they are very similar to each other. The only thing it needs to do is to comment out both `var`s at the top of both modules and to comment out the whole body of the `exports.compile` function:
 
 ```
 //var scss = require("node-sass")
