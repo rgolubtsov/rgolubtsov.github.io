@@ -14,20 +14,27 @@
 
 LIB_DIR = lib
 SRC_DIR = src
+DAT_DIR = data
 
 # Specify flags and other vars here.
 HARP      = harp
 HARPFLAGS = compile
 CP        = cp
 CPFLAGS   = -vRf
+CD        = cd
+LN        = ln
+LNFLAGS   = -sfnv
 RMFLAGS   = -vR
 
 # Making the target.
 $(LIB_DIR) $(SRC_DIR):
-	./utils/ttennis-json-enumerate ./docs/stat/ttennis.json
+	./utils/ttennis-json-enumerate docs/stat/ttennis.json
 	$(HARP) $(HARPFLAGS) $(SRC_DIR) $(LIB_DIR)
 	$(CP) $(CPFLAGS) $(LIB_DIR)/* $(LIB_DIR)/..
-	./utils/html-emoji-preproc ./data/
+	$(CD) $(DAT_DIR)/docs/ubuntusrv                                    && \
+	$(LN) $(LNFLAGS) ../../../utils/oracle-11-2-x-xe-set-kernel-params && \
+	$(CD) -
+	./utils/html-emoji-preproc $(DAT_DIR)
 	./utils/http-404-preproc
 
 .PHONY: all clean
@@ -35,6 +42,6 @@ $(LIB_DIR) $(SRC_DIR):
 all: $(LIB_DIR)
 
 clean:
-	$(RM) $(RMFLAGS) $(LIB_DIR)
+	$(RM) $(RMFLAGS) $(LIB_DIR) $(DAT_DIR)
 
 # vim:set nu ts=4 sw=4:
