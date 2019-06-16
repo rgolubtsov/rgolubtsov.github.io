@@ -13,7 +13,7 @@ $ sudo CXX=c++ LIBSASS_EXT="no" npm i harp -g --unsafe-perm
 ...
 /usr/local/bin/harp -> /usr/local/lib/node_modules/harp/bin/harp
 ...
-+ harp@0.29.0
++ harp@0.30.0
 ```
 
 Install **Harp** on **Ubuntu Server LTS x86-64**:
