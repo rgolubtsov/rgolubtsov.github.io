@@ -23,7 +23,7 @@ CP        = cp
 CPFLAGS   = -vRf
 CD        = cd
 LN        = ln
-LNFLAGS   = -sfnv
+LNFLAGS   = -sfn
 RMFLAGS   = -vR
 
 # Making the target.
