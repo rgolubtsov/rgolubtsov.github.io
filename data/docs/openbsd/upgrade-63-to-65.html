@@ -44,7 +44,114 @@
 </table>
 <h1>Upgrade OpenBSD 6.3 to 6.5</h1><h3>OpenBSD/amd64 6.3 to 6.5 Upgrade Instructions</h3><p>As clearly stated in the OpenBSD FAQ regarding upgrading one release to another, <em>upgrades are only supported from one release to the release immediately following it</em>. So what to do if it needs to upgrade the 6.3 release of OpenBSD to the 6.5 release is to upgrade sequentially, first to the 6.4 release, and then to the 6.5 release.</p>
 <p><strong>Upgrade OpenBSD 6.3 release to 6.4 release</strong></p>
-<p>TBD.</p>
+<p>Having installed and running the OpenBSD/amd64 6.3 release first of all it needs to download the new (6.4) ramdisk kernel <code>bsd.rd</code> and the checksum file <code>SHA256.sig</code> for the appropriate architecture, in this case <code>amd64</code>:</p>
+<pre><code>$ curl -sO https://cdn.openbsd.org/pub/OpenBSD/6.4/amd64/bsd.rd     \
+       -sO https://cdn.openbsd.org/pub/OpenBSD/6.4/amd64/SHA256.sig</code></pre><p>Verify checksum of the new ramdisk kernel:</p>
+<pre><code>$ signify -C -p /etc/signify/openbsd-64-base.pub -x SHA256.sig bsd.rd
+Signature Verified
+bsd.rd: OK</code></pre><p>Permanently set the new CDN URL (it was changed in the 6.4 release) which will be used during system upgrade and later on during upgrading the packages:</p>
+<pre><code>$ cat /etc/installurl
+https://ftp.openbsd.org/pub/OpenBSD    &lt;== The old one.
+$
+$ sudo su -
+# echo &quot;https://cdn.openbsd.org/pub/OpenBSD&quot; &gt; /etc/installurl
+$
+$ cat /etc/installurl
+https://cdn.openbsd.org/pub/OpenBSD    &lt;== The new one.</code></pre><p>Remove unneeded (unused) files:</p>
+<pre><code>$ sudo rm -vf /dev/audio /dev/audioctl
+/dev/audio
+/dev/audioctl
+$
+$ sudo rm -vf /etc/rc.d/rtadvd /usr/sbin/rtadvd \
+              /usr/share/man/man5/rtadvd.conf.5 \
+              /usr/share/man/man8/rtadvd.8
+/etc/rc.d/rtadvd
+/usr/sbin/rtadvd
+/usr/share/man/man5/rtadvd.conf.5
+/usr/share/man/man8/rtadvd.8
+$
+$ sudo rm -vf /usr/X11R6/lib/libxcb-xevie.*          \
+              /usr/X11R6/lib/libxcb-xprint.*         \
+              /usr/X11R6/lib/pkgconfig/xcb-xevie.pc  \
+              /usr/X11R6/lib/pkgconfig/xcb-xprint.pc
+/usr/X11R6/lib/libxcb-xevie.a
+/usr/X11R6/lib/libxcb-xevie.so.1.0
+/usr/X11R6/lib/libxcb-xprint.a
+/usr/X11R6/lib/libxcb-xprint.so.3.0
+/usr/X11R6/lib/pkgconfig/xcb-xevie.pc
+/usr/X11R6/lib/pkgconfig/xcb-xprint.pc</code></pre><p>Remove unneeded (unused) user and group:</p>
+<pre><code>$ sudo userdel _rtadvd &amp;&amp; sudo groupdel _rtadvd</code></pre><p>Disable starting up the <code>buildslave</code> (obsolete) daemon:</p>
+<pre><code>$ sudo rcctl disable buildslave</code></pre><p>Copy the new ramdisk kernel to the root filesystem:</p>
+<pre><code>$ sudo cp -vf bsd.rd /
+bsd.rd -&gt; /bsd.rd</code></pre><p><strong>== IT&#39;S THE TIME TO BOOT INTO THE NEW KERNEL ==</strong></p>
+<p>Reboot:</p>
+<pre><code>$ sudo shutdown -r now</code></pre><p>At the boot loader prompt type <code>bsd.rd</code> and hit <code>&lt;Enter&gt;</code>:</p>
+<pre><code>boot&gt; bsd.rd</code></pre><p>After the kernel is booted, hit <code>s</code> (that means <code>(S)hell</code>) to enter the shell to configure network if not already autoconfigured. In the shell make necessary network configuration, then hit <code>&lt;Ctrl-D&gt;</code> to return to the installation/upgrading program. (This step is very important if, for example, the OpenBSD box is installed and running as a virtual machine, like <a href="https://github.com/rgolubtsov/dotfiles/blob/master/openbsd/README.md" title="OpenBSD VM-boxes using QEMU">this one</a>):</p>
+<pre><code># ifconfig vio0 10.0.2.101/24
+# route add default 10.0.2.1
+add net default: gateway 10.0.2.1
+# ^D</code></pre><p>Hit <code>u</code> (that means <code>(U)pgrade</code>) and follow sequential prompts. In most cases for most questions just hit <code>&lt;Enter&gt;</code> for default choices.</p>
+<p>After reboot into the upgraded system...</p>
+<pre><code>OpenBSD 6.4 (GENERIC.MP) #364: Thu Oct 11 13:30:23 MDT 2018
+
+Welcome to OpenBSD: The proactively secure Unix-like operating system.
+
+Please use the sendbug(1) utility to report bugs in the system.
+Before reporting a bug, please try to reproduce it with the latest
+version of the code.  With bug reports, please try to ensure that
+enough information to reproduce the problem is enclosed, and if a
+known fix for it exists, include that as well.</code></pre><p>...and making initial network configuration...</p>
+<pre><code>$ sudo ifconfig vio0 10.0.2.101/24
+$ sudo route add default 10.0.2.1
+add net default: gateway 10.0.2.1</code></pre><p>...upgrade the packages:</p>
+<pre><code>$ sudo pkg_add -uv
+Update candidates: quirks-2.414 -&gt; quirks-3.16
+quirks-3.16 signed on 2018-10-12T15:26:25Z
+quirks-2.414-&gt;3.16: ok
+Update candidates: adwaita-icon-theme-3.26.1 -&gt; adwaita-icon-theme-3.28.0p1
+Update candidates: gtk-update-icon-cache-3.22.29 -&gt; gtk-update-icon-cache-3.22.30p1
+Update candidates: hicolor-icon-theme-0.17 -&gt; hicolor-icon-theme-0.17
+...
+Running tags: ok
+Read shared items: ok
+...
+Obsolete package: mozjs17-17.0p4 (no longer maintained and full of security holes)
+Couldn&#39;t find updates for mozjs17-17.0p4
+Extracted 2124668768 from 2265411565</code></pre><p>Make all the necessary removals and updates which were reported by the <code>pkg_add</code> command:</p>
+<pre><code>$ sudo rm -f /var/db/colord/mapping.db \
+             /var/db/colord/storage.db
+$
+$ sudo rm -rf /etc/dconf/db/*      \
+              /etc/dconf/profile/*
+$
+$ sudo rm -Rf /usr/local/lib/gcc/x86_64-unknown-openbsd6.3/
+$
+$ sudo rm -Rf /usr/local/share/mime/x-epoc/      \
+              /usr/local/share/mime/x-content/   \
+              /usr/local/share/mime/video/       \
+              /usr/local/share/mime/text/        \
+              /usr/local/share/mime/multipart/   \
+              /usr/local/share/mime/model/       \
+              /usr/local/share/mime/message/     \
+              /usr/local/share/mime/inode/       \
+              /usr/local/share/mime/image/       \
+              /usr/local/share/mime/font/        \
+              /usr/local/share/mime/audio/       \
+              /usr/local/share/mime/application/
+$
+$ sudo xmlcatalog /var/db/xmlcatalog
+$
+$ sudo update-desktop-database
+$
+$ sudo update-mime-database /usr/local/share/mime/
+$
+$ sudo pkg_delete -v mozjs17
+mozjs17-17.0p4: ok
+Read shared items: ok</code></pre><p>Remove previously downloaded and already unneeded ramdisk kernel and its checksum file which reside in the user home directory:</p>
+<pre><code>$ rm -vf bsd.rd SHA256.sig 
+bsd.rd
+SHA256.sig</code></pre><p><strong>== OPENBSD HAS BEEN UPGRADED TO THE 6.4 RELEASE ==</strong></p>
+<p><img src="http://github.githubassets.com/images/icons/emoji/unicode/1f603.png" class="emoji" alt="" /></p>
 <p><strong>Upgrade OpenBSD 6.4 release to 6.5 release</strong></p>
 <p>TBD.</p>
 <p>Freshly <strong>OpenBSD</strong>-ing your beings ! <img src="http://github.githubassets.com/images/icons/emoji/unicode/1f44d.png" class="emoji" alt="" /></p>
