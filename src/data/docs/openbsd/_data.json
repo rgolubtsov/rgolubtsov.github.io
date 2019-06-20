@@ -1,0 +1,7 @@
+{
+    "upgrade-63-to-65" : {
+        "layout"       : "../../../_radicchio",
+        "sitename_"    : ": Upgrade OpenBSD 6.3 to 6.5",
+        "subtitle_"    : ""
+    }
+}
