@@ -2273,5 +2273,30 @@
         },{ "gid"   : 7,
             "score" : ""
         }]
+    },
+    {
+        "mid"       : 92,
+        "year"      : "2019",
+        "month"     : "July",
+        "day"       : 1,
+        "weekday"   : "Mo",
+        "winner"    : "Yaro",
+        "result"    : "4-0",
+        "games"     : [{
+            "gid"   : 1,
+            "score" : "11:9"
+        },{ "gid"   : 2,
+            "score" : "11:9"
+        },{ "gid"   : 3,
+            "score" : "11:4"
+        },{ "gid"   : 4,
+            "score" : "12:10"
+        },{ "gid"   : 5,
+            "score" : ""
+        },{ "gid"   : 6,
+            "score" : ""
+        },{ "gid"   : 7,
+            "score" : ""
+        }]
     }]
 }
