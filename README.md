@@ -33,5 +33,5 @@ $ sudo LIBSASS_EXT="no" npm i harp -g --unsafe-perm
 ...
 /usr/bin/harp -> /usr/lib/node_modules/harp/bin/harp
 ...
-+ harp@0.29.0
++ harp@0.30.0
 ```
