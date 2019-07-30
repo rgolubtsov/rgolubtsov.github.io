@@ -6,7 +6,7 @@
  *
  *              Total IT experience - 19 years              An IT multilinguist
  * ============================================================================
- *              [ 2019-05-30 ]
+ *              [ 2019-07-30 ]
  */
 
 // === SUMMARY ================================================================
@@ -18,7 +18,8 @@ Hardware        * Intel x86 (i686 / x86-64)
 
 Operating       Unices and derivatives (OpenBSD, FreeBSD, Arch Linux, Debian
 Systems         GNU/Linux, Ubuntu, Fedora, CentOS, Red Hat Enterprise Linux,
-                Mac OS X, HP-UX, IBM AIX, Sun Solaris)
+                Mac OS X, HP-UX, IBM AIX, Sun Solaris). Microsoft Windows -
+                able to deal with it as a complete viable option.
 
 Programming     Python 2/3, Perl 5, Go (golang), Java, JavaScript (ES5-6/
 Languages       Node.js), Bash Shell Script, ISO C/C++, GNOME Vala/Genie,
@@ -1208,9 +1209,9 @@ Dec 1999
 
 // === Personal information ===================================================
 
-Date of birth   June 27, 1977 (41yo)
+Date of birth   June 27, 1977 (42yo)
 Citizenship     Republic of Belarus
-Marital status  Married
+Marital status  Single
 No. of children 2
 Driver's lic.   No
 
