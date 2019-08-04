@@ -28,6 +28,7 @@ RMFLAGS   = -vR
 
 # Making the target.
 $(LIB_DIR) $(SRC_DIR):
+	./utils/fitness-json-enumerate docs/stat/fitness.json
 	./utils/ttennis-json-enumerate docs/stat/ttennis.json
 	$(HARP) $(HARPFLAGS) $(SRC_DIR) $(LIB_DIR)
 	$(CP) $(CPFLAGS) $(LIB_DIR)/* $(LIB_DIR)/..
