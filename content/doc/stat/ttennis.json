@@ -2348,5 +2348,30 @@
         },{ "gid"   : 7,
             "score" : ""
         }]
+    },
+    {
+        "mid"       : 95,
+        "year"      : "2019",
+        "month"     : "August",
+        "day"       : 7,
+        "weekday"   : "We",
+        "winner"    : "Yaro",
+        "result"    : "4-0",
+        "games"     : [{
+            "gid"   : 1,
+            "score" : "11:8"
+        },{ "gid"   : 2,
+            "score" : "11:8"
+        },{ "gid"   : 3,
+            "score" : "11:8"
+        },{ "gid"   : 4,
+            "score" : "11:9"
+        },{ "gid"   : 5,
+            "score" : ""
+        },{ "gid"   : 6,
+            "score" : ""
+        },{ "gid"   : 7,
+            "score" : ""
+        }]
     }]
 }
