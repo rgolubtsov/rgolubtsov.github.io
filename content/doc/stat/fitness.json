@@ -901,6 +901,11 @@
             "sid"     : 3,
             "day"     : 8,
             "weekday" : "Th"
+        },
+        {
+            "sid"     : 4,
+            "day"     : 9,
+            "weekday" : "Fr"
         }]
     }]
 }
