@@ -1,0 +1,17 @@
+{
+    "63"            : {
+        "layout"    : "../../../_radicchio",
+        "sitename_" : ": Installed packages on OpenBSD 6.3 VM box",
+        "subtitle_" : ""
+    },
+    "64"            : {
+        "layout"    : "../../../_radicchio",
+        "sitename_" : ": Installed packages on OpenBSD 6.4 VM box",
+        "subtitle_" : ""
+    },
+    "65"            : {
+        "layout"    : "../../../_radicchio",
+        "sitename_" : ": Installed packages on OpenBSD 6.5 VM box",
+        "subtitle_" : ""
+    }
+}
