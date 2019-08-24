@@ -942,5 +942,17 @@
             "day"     : 23,
             "weekday" : "Fr"
         }]
+    },
+    {
+        "pid"         : 43,
+        "year"        : "2019",
+        "month"       : "August",
+        "name"        : "Joker Gym",
+        "voucher"     : false,
+        "sessions"    : [{
+            "sid"     : 1,
+            "day"     : 24,
+            "weekday" : "Sa"
+        }]
     }]
 }
