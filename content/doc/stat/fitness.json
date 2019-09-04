@@ -992,6 +992,11 @@
             "sid"     : 2,
             "day"     : 3,
             "weekday" : "Tu"
+        },
+        {
+            "sid"     : 3,
+            "day"     : 4,
+            "weekday" : "We"
         }]
     }]
 }
