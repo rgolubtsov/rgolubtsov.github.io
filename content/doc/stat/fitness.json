@@ -997,6 +997,11 @@
             "sid"     : 3,
             "day"     : 4,
             "weekday" : "We"
+        },
+        {
+            "sid"     : 4,
+            "day"     : 6,
+            "weekday" : "Fr"
         }]
     }]
 }
