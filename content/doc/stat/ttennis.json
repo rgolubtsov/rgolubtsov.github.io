@@ -2373,5 +2373,30 @@
         },{ "gid"   : 7,
             "score" : ""
         }]
+    },
+    {
+        "mid"       : 96,
+        "year"      : "2019",
+        "month"     : "September",
+        "day"       : 8,
+        "weekday"   : "Su",
+        "winner"    : "Yaro",
+        "result"    : "4-3",
+        "games"     : [{
+            "gid"   : 1,
+            "score" : "3:11"
+        },{ "gid"   : 2,
+            "score" : "12:10"
+        },{ "gid"   : 3,
+            "score" : "13:11"
+        },{ "gid"   : 4,
+            "score" : "10:12"
+        },{ "gid"   : 5,
+            "score" : "11:7"
+        },{ "gid"   : 6,
+            "score" : "7:11"
+        },{ "gid"   : 7,
+            "score" : "11:9"
+        }]
     }]
 }
