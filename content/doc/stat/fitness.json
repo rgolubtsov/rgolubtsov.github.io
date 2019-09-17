@@ -1017,6 +1017,11 @@
             "sid"     : 7,
             "day"     : 14,
             "weekday" : "Sa"
+        },
+        {
+            "sid"     : 8,
+            "day"     : 17,
+            "weekday" : "Tu"
         }]
     }]
 }
