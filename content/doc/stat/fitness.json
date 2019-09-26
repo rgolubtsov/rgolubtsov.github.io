@@ -1042,6 +1042,11 @@
             "sid"     : 12,
             "day"     : 24,
             "weekday" : "Tu"
+        },
+        {
+            "sid"     : 13,
+            "day"     : 26,
+            "weekday" : "Th"
         }]
     }]
 }
