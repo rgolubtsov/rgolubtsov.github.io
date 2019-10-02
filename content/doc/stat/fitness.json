@@ -1052,6 +1052,23 @@
             "sid"     : 14,
             "day"     : 27,
             "weekday" : "Fr"
+        },
+        {
+            "sid"     : 15,
+            "day"     : 30,
+            "weekday" : "Mo"
+        }]
+    },
+    {
+        "pid"         : 46,
+        "year"        : "2019",
+        "month"       : "October",
+        "name"        : "Tonus Plus",
+        "voucher"     : true,
+        "sessions"    : [{
+            "sid"     : 1,
+            "day"     : 1,
+            "weekday" : "Tu"
         }]
     }]
 }
