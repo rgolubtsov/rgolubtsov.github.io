@@ -2473,5 +2473,30 @@
         },{ "gid"   : 7,
             "score" : ""
         }]
+    },
+    {
+        "mid"       : 100,
+        "year"      : "2019",
+        "month"     : "October",
+        "day"       : 9,
+        "weekday"   : "We",
+        "winner"    : "Radicchio",
+        "result"    : "3-4",
+        "games"     : [{
+            "gid"   : 1,
+            "score" : "11:8"
+        },{ "gid"   : 2,
+            "score" : "8:11"
+        },{ "gid"   : 3,
+            "score" : "7:11"
+        },{ "gid"   : 4,
+            "score" : "6:11"
+        },{ "gid"   : 5,
+            "score" : "11:9"
+        },{ "gid"   : 6,
+            "score" : "11:5"
+        },{ "gid"   : 7,
+            "score" : "11:13"
+        }]
     }]
 }
