@@ -7,7 +7,7 @@
         "emoji_url" : "http://github.githubassets.com/images/icons/emoji/unicode/",
         "p_caption" : "Portions | Distinguished by Year, Month, Gym Name, or Voucher",
         "p_header"  : [
-            "ID",
+            "No.",
             "Year",
             "Month",
             "Gym Name",
@@ -15,7 +15,7 @@
             "Sessions"
         ],
         "s_header"  : [
-            "ID",
+            "No.",
             "Day",
             "Weekday"
         ],
@@ -36,7 +36,7 @@
         "subtitle3" : "Table tennis trainings statistics",
         "m_caption" : "Matches during trainings with Yaro",
         "m_header"  : [
-            "ID",
+            "No.",
             "Year",
             "Month",
             "Day",
