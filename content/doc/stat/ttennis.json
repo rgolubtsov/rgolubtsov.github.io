@@ -2723,5 +2723,30 @@
         },{ "gid"   : 7,
             "score" : ""
         }]
+    },
+    {
+        "mid"       : 110,
+        "year"      : "2019",
+        "month"     : "November",
+        "day"       : 17,
+        "weekday"   : "Su",
+        "winner"    : "Yaro",
+        "result"    : "4-2",
+        "games"     : [{
+            "gid"   : 1,
+            "score" : "10:12"
+        },{ "gid"   : 2,
+            "score" : "10:12"
+        },{ "gid"   : 3,
+            "score" : "11:9"
+        },{ "gid"   : 4,
+            "score" : "11:4"
+        },{ "gid"   : 5,
+            "score" : "11:6"
+        },{ "gid"   : 6,
+            "score" : "11:8"
+        },{ "gid"   : 7,
+            "score" : ""
+        }]
     }]
 }
