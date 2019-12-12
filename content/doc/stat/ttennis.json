@@ -2823,5 +2823,30 @@
         },{ "gid"   : 7,
             "score" : ""
         }]
+    },
+    {
+        "mid"       : 114,
+        "year"      : "2019",
+        "month"     : "December",
+        "day"       : 11,
+        "weekday"   : "We",
+        "winner"    : "Radicchio",
+        "result"    : "1-4",
+        "games"     : [{
+            "gid"   : 1,
+            "score" : "8:11"
+        },{ "gid"   : 2,
+            "score" : "9:11"
+        },{ "gid"   : 3,
+            "score" : "6:11"
+        },{ "gid"   : 4,
+            "score" : "11:7"
+        },{ "gid"   : 5,
+            "score" : "5:11"
+        },{ "gid"   : 6,
+            "score" : ""
+        },{ "gid"   : 7,
+            "score" : ""
+        }]
     }]
 }
