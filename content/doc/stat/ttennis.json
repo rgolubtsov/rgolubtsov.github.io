@@ -2873,5 +2873,30 @@
         },{ "gid"   : 7,
             "score" : ""
         }]
+    },
+    {
+        "mid"       : 116,
+        "year"      : "2019",
+        "month"     : "December",
+        "day"       : 18,
+        "weekday"   : "We",
+        "winner"    : "Yaro",
+        "result"    : "4-0",
+        "games"     : [{
+            "gid"   : 1,
+            "score" : "11:7"
+        },{ "gid"   : 2,
+            "score" : "11:7"
+        },{ "gid"   : 3,
+            "score" : "11:5"
+        },{ "gid"   : 4,
+            "score" : "11:6"
+        },{ "gid"   : 5,
+            "score" : ""
+        },{ "gid"   : 6,
+            "score" : ""
+        },{ "gid"   : 7,
+            "score" : ""
+        }]
     }]
 }
