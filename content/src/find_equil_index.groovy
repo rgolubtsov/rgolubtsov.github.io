@@ -73,7 +73,7 @@
  *
  * Elements of input arrays can be modified.
  * ============================================================================
- * Copyright (C) 2017-2019 Radislav (Radicchio) Golubtsov
+ * Copyright (C) 2017-2020 Radislav (Radicchio) Golubtsov
  *
  * (See the LICENSE file at the top of the source tree.)
  */
