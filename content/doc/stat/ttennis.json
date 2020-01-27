@@ -3148,5 +3148,30 @@
         },{ "gid"   : 7,
             "score" : ""
         }]
+    },
+    {
+        "mid"       : 127,
+        "year"      : "2020",
+        "month"     : "January",
+        "day"       : 26,
+        "weekday"   : "Su",
+        "winner"    : "Yaro",
+        "result"    : "4-2",
+        "games"     : [{
+            "gid"   : 1,
+            "score" : "11:8"
+        },{ "gid"   : 2,
+            "score" : "11:9"
+        },{ "gid"   : 3,
+            "score" : "11:6"
+        },{ "gid"   : 4,
+            "score" : "7:11"
+        },{ "gid"   : 5,
+            "score" : "3:11"
+        },{ "gid"   : 6,
+            "score" : "11:9"
+        },{ "gid"   : 7,
+            "score" : ""
+        }]
     }]
 }
