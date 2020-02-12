@@ -19,11 +19,11 @@ $ sudo CXX=c++ LIBSASS_EXT="no" npm i harp -g --unsafe-perm
 Install **Harp** on **Ubuntu Server LTS x86-64**:
 
 ```
-$ sudo npm i harp -g
+$ sudo npm i harp -g --unsafe-perm
 ...
-/usr/local/bin/harp -> /usr/local/lib/node_modules/harp/bin/harp
+/usr/bin/harp -> /usr/lib/node_modules/harp/bin/harp
 ...
-└─┬ harp@0.30.1
++ harp@0.31.0
 ```
 
 Install **Harp** on **Arch Linux** / **Arch Linux 32**:
@@ -33,5 +33,5 @@ $ sudo LIBSASS_EXT="no" npm i harp -g --unsafe-perm
 ...
 /usr/bin/harp -> /usr/lib/node_modules/harp/bin/harp
 ...
-+ harp@0.30.1
++ harp@0.31.0
 ```
