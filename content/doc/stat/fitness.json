@@ -1080,5 +1080,17 @@
             "day"     : 4,
             "weekday" : "Fr"
         }]
+    },
+    {
+        "pid"         : 47,
+        "year"        : "2020",
+        "month"       : "February",
+        "name"        : "Tonus Plus",
+        "voucher"     : false,
+        "sessions"    : [{
+            "sid"     : 1,
+            "day"     : 15,
+            "weekday" : "Sa"
+        }]
     }]
 }
