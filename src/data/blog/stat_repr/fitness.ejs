@@ -52,14 +52,14 @@
 <% var portion_     = portions[i];              -%>
 <% var sessions_len = portion_.sessions.length; -%>
 <% var session0     = portion_.sessions[0];     -%>
-<% var voucher      = portion_.voucher;         -%>
+<% var subscription = portion_.subscrn;         -%>
 <% var weekday0     = session0.weekday;         -%>
 <tr>
 <td rowspan="<%- sessions_len %>" class="p-id-td"><%=    portion_.pid   %></td>
 <td rowspan="<%- sessions_len %>" class="p-year-td"><%=  portion_.year  %></td>
 <td rowspan="<%- sessions_len %>" class="p-month-td"><%= portion_.month %></td>
 <td rowspan="<%- sessions_len %>" class="p-name-td"><%=  portion_.name  %></td>
-<td rowspan="<%- sessions_len %>" class="p-voucher-td"><img src="<%- emoji_url %><%- voucher ? 2714 : 2796 %>.png" class="emoji" alt="<%- voucher ? 'Yes' : 'No' %>" title="<%- voucher ? 'Yes' : 'No' %>" /></td>
+<td rowspan="<%- sessions_len %>" class="p-subscrn-td"><img src="<%- emoji_url %><%- subscription ? 2714 : 2796 %>.png" class="emoji" alt="<%- subscription ? 'Yes' : 'No' %>" title="<%- subscription ? 'Yes' : 'No' %>" /></td>
 <%# --- Sessions data - First row - Table body ---------------------------- -%>
 <td class="s-id-td"><%=      session0.sid             %></td>
 <td class="s-day-td"><%=     session0.day             %></td>
