@@ -1,15 +1,14 @@
-/*
- *              Radislav Golubtsov
- * ============================================================================
- *   OBJECTIVE: To obtain the position of a Software Developer /
- *                                   Senior Software Developer
- *
- *              Total IT experience - 19 years              An IT multilinguist
- * ============================================================================
- *              [ 2019-07-30 ]
- */
 
-// === SUMMARY ================================================================
+                Radislav Golubtsov
+===============================================================================
+     OBJECTIVE: To obtain the position of a Software Developer /
+                                     Senior Software Developer
+
+                Total IT experience - 19 years              An IT multilinguist
+===============================================================================
+                [ 2019-07-30 ]
+
+====== SUMMARY ================================================================
 
 Hardware        * Intel x86 (i686 / x86-64)
                 * HP PA-RISC
@@ -18,13 +17,11 @@ Hardware        * Intel x86 (i686 / x86-64)
 
 Operating       Unices and derivatives (OpenBSD, FreeBSD, Arch Linux, Debian
 Systems         GNU/Linux, Ubuntu, Fedora, CentOS, Red Hat Enterprise Linux,
-                Mac OS X, HP-UX, IBM AIX, Sun Solaris). Microsoft Windows -
-                able to deal with it as a complete viable option.
+                Mac OS X, HP-UX, IBM AIX, Sun Solaris). Microsoft Windows
 
-Programming     Python 2/3, Perl 5, Go (golang), Java, JavaScript (ES5-6/
-Languages       Node.js), Bash Shell Script, ISO C/C++, GNOME Vala/Genie,
-                Objective-C 2.0, ISO Fortran 95, Lua, Erlang, Elixir, LFE,
-                Clojure
+Programming     C, Go, Java, Perl 5, Python 2/3, Bash Shell Script, JavaScript
+Languages       (ES5-6/Node.js), GNOME Vala/Genie, Lua, C++, Objective-C 2.0,
+                Fortran 95, Erlang, Elixir, LFE(Lisp Flavoured Erlang), Clojure
 
 Technologies    * Python and related modules, libraries, and frameworks (Python
                   Standard Library, Twisted Web, Klein, Falcon, Flask, Celery,
@@ -88,7 +85,7 @@ Misc. Apps      Concurrent Versions System (CVS), IBM Directory Server (LDAP),
                 containers infrastructure), Koding (cloud-based dev env + VM),
                 Samba
 
-// === Languages ==============================================================
+====== Languages ==============================================================
 
 English         Full Professional Proficiency:
                 * Reading / writing freely
@@ -97,7 +94,7 @@ English         Full Professional Proficiency:
 
 Russian         Native or Bilingual Proficiency
 
-// === Education ==============================================================
+====== Education (in reverse order) ===========================================
 
 May 2002 -      Ph.D. student of the School for Advanced Studies,
 Jul 2003        Pavel Sukhoi Gomel State Technical University
@@ -111,14 +108,14 @@ Oct 2001        University (Ph.D. student of the School for Advanced Studies)
 1994-1999       Student of the Pavel Sukhoi Gomel State Technical University,
                 Gomel, Belarus ("Diploma in Honor")
 
-// === Work experience ========================================================
+====== Work experience (in reverse order) =====================================
 
 Nov 2017 - Mar 2019, Development work at Exadel, Inc. (Gomel branch),
                      Gomel (1 year, 5 months)
 
 Job position: Software Developer of the Software Development Department 2
 
-// ----------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 Nov 2018 -      Barracuda WSG Azure Orchestration Blueprint
 Mar 2019
@@ -154,7 +151,7 @@ Mar 2019
                 * GNU Make, Terraform, curl, Vim
                 * Git, Bitbucket, JIRA
 
-// ----------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 May 2018 -      bTrade secureXchange app (bTrade TDXchange)
 Aug 2018
@@ -192,7 +189,7 @@ Aug 2018
                 * Apache Maven, curl, Vim
                 * Subversion, bTrade's internal bug tracking system
 
-// ----------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 Nov 2017 -      Mercer Enhance: Machine Learning for Job Matching
 Apr 2018
@@ -231,13 +228,13 @@ Apr 2018
                 * GNU Make, Docker Compose, curl, Vim
                 * Git, Bitbucket, JIRA
 
-// ============================================================================
+===============================================================================
 
 Jul 2017 - Aug 2017, Development work at R-Style Lab, LLC, Minsk (2 months)
 
 Job position: Software Developer of the IoT Development Division
 
-// ----------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 Jul 2017 -      Splink Desktop
 Aug 2017
@@ -259,14 +256,14 @@ Aug 2017
                   TDM-GCC: tdm64-1 (g++)
                 * Git, GitLab, Redmine
 
-// ============================================================================
+===============================================================================
 
 Mar 2017 - May 2017, Development work at Invatechs Software, LLC,
                      Minsk (3 months)
 
 Job position: Software Developer of the Web Development Division
 
-// ----------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 Mar 2017 -      Upmargin
 May 2017
@@ -297,13 +294,13 @@ May 2017
                 * Vim
                 * Git, Bitbucket, Trello
 
-// ============================================================================
+===============================================================================
 
 Feb 2016 - Sep 2016, Development work at Devicepros, LLC, Minsk (8 months)
 
 Job position: Software Developer of the Software Development Division
 
-// ----------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 Aug 2016 -      Test Infrastructure (TI): Virtual Linux block device driver
 Sep 2016                           for collecting and measuring I/O latency
@@ -332,7 +329,7 @@ Sep 2016                           for collecting and measuring I/O latency
                 * GNU Make, Flexible I/O Tester (fio)
                 * Git, GitHub, JIRA
 
-// ----------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 May 2016 -      Test Infrastructure (TI): REST Backend Service
 Jul 2016
@@ -369,7 +366,7 @@ Jul 2016
                 * Vim, Doxygen
                 * Git, GitHub, JIRA
 
-// ----------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 Feb 2016 -      Test Infrastructure (TI): Simulating Samsung AWS
 Apr 2016
@@ -407,7 +404,7 @@ Apr 2016
                 * GNU Make, Apache Maven
                 * Git, Bitbucket, JIRA
 
-// ============================================================================
+===============================================================================
 
 Jan 2013 - Apr 2015, Development work at SMS Online, LLC (Gomel branch),
                      Gomel (2 years, 4 months)
@@ -426,7 +423,7 @@ comparable (approx. 1:1) throughput.
 Key technologies throughout the projects: Perl 5, PostgreSQL, and occasionally
                                           Java EE, ISO C, Asterisk.
 
-// ----------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 Jan 2015 -      IVR Services: Optimization and Maintenance
 Apr 2015
@@ -470,7 +467,7 @@ Apr 2015
                 * GNU Make
                 * Git, GitLab, MediaWiki, Redmine
 
-// ----------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 Nov 2014 -      Partner Services (Mobile Subscriptions)
 Dec 2014
@@ -494,7 +491,7 @@ Dec 2014
                 * GNU Make, Apache Maven
                 * Git (including Git submodules), GitLab, Redmine
 
-// ----------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 Jul 2014 -      Gate Admin CP II (SMS Billing Control Panel: Next Gen)
 Oct 2014
@@ -525,7 +522,7 @@ Oct 2014
                 * GNU Make
                 * Git, GitLab, Redmine
 
-// ----------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 Mar 2014 -      Partner Services (Spb Transport / Spb Subway)
 Jun 2014
@@ -583,7 +580,7 @@ Jun 2014
                 * GNU Make, GCC, TCC
                 * Git, GitLab, Redmine
 
-// ----------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 Dec 2013 -      Bulk Admin CP (SMS Bulk Control Panel)
 Feb 2014
@@ -610,7 +607,7 @@ Feb 2014
                 * Apache Ant
                 * Git, Redmine
 
-// ----------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 Mar 2013 -      Gate Admin CP (SMS Billing Control Panel)
 Nov 2013
@@ -645,7 +642,7 @@ Nov 2013
                 * GNU Make
                 * Git, MediaWiki, Redmine
 
-// ----------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 Jan 2013 -      Java Bulk Client (SMS Bulk Platform API for Java Client)
 Feb 2013
@@ -671,7 +668,7 @@ Feb 2013
                 * Apache Maven
                 * Git, Redmine
 
-// ============================================================================
+===============================================================================
 
 Aug 2012 - Oct 2012, Development work at Intervale, CJSC (Gomel branch),
                      Gomel (3 months)
@@ -679,7 +676,7 @@ Aug 2012 - Oct 2012, Development work at Intervale, CJSC (Gomel branch),
 Job position: Senior Software Developer of the Mobile Banking Solutions
               Development Department
 
-// ----------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 Aug 2012 -      Sberbank of Russia Uniform Mobile Banking Payment System
 Oct 2012
@@ -715,7 +712,7 @@ Oct 2012
                 * Apache Maven
                 * Subversion, Samba
 
-// ============================================================================
+===============================================================================
 
 Jan 2012 - May 2012, Development work at XIMAD, Inc. (Gomel branch),
                      Gomel (5 months)
@@ -724,7 +721,7 @@ Jan 2012 - May 2012, Development work at XIMAD, Inc. (Gomel branch),
 
 Job position: Senior Software Developer of the Wireless Division
 
-// ----------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 Mar 2012 -      Ad Optimizer, XIMAD, Inc.
 May 2012
@@ -765,7 +762,7 @@ May 2012
                 * MySQL
                 * Subversion, Redmine
 
-// ----------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 Jan 2012 -      Zuma iOS/Zuminja (2D-game for Apple iPhone/iPad/iPod touch),
 Feb 2012        XIMAD, Inc.
@@ -797,7 +794,7 @@ Feb 2012        XIMAD, Inc.
                                      and iOS Simulator), MacPorts, vi
                 * Redmine
 
-// ============================================================================
+===============================================================================
 
 Sep 2010 - Dec 2011, Development work at XIM, Inc. (Gomel branch),
                      Gomel (1 year, 4 months)
@@ -806,7 +803,7 @@ Sep 2010 - Dec 2011, Development work at XIM, Inc. (Gomel branch),
 
 Job position: Senior Software Developer of the Web Development Department
 
-// ----------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 Jul 2011 -      Mobility Traffic Mediation Solution
 Dec 2011        (Media Optimizer and Web Optimizer),
@@ -841,7 +838,7 @@ Dec 2011        (Media Optimizer and Web Optimizer),
                 * Perforce, Openwave's internal Issue Tracking System (ITS)
                             + Trac
 
-// ----------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 Sep 2010 -      Atlas Information Governance Suite (Policy Atlas),
 Jun 2011        PSS Systems, an IBM Company (off-site)
@@ -875,7 +872,7 @@ Jun 2011        PSS Systems, an IBM Company (off-site)
                 * Oracle Database
                 * Perforce, Trac
 
-// ============================================================================
+===============================================================================
 
 Mar 2009 - Aug 2010, Development work at the Dubna Technopark, Dubna,
                      including development work at the FE Brickbuild
@@ -885,7 +882,7 @@ Mar 2009 - Aug 2010, Development work at the Dubna Technopark, Dubna,
 Job position: Senior Software Developer
               of the Expert Systems Development Centre
 
-// ----------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 Mar 2009 -      Intellectual automated control system (IACS) "Trainflow",
 Aug 2010        Dubna Technopark
@@ -917,13 +914,13 @@ Aug 2010        Dubna Technopark
                 * Oracle Database
                 * Subversion
 
-// ============================================================================
+===============================================================================
 
 Sep 2003 - Sep 2008, Development work at the FE IBA-Gomel, Gomel (5 years)
 
 Job position: Senior Software Developer of the E-Business Division
 
-// ----------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 Jul 2008 -      Automated information system "KDT", IBA-Gomel
 Sep 2008
@@ -952,7 +949,7 @@ Sep 2008
                 * IBM DB2 Universal Database
                 * Concurrent Versions System, Trac
 
-// ----------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 May 2008 -      IBM AS RM Metro, IBM Netherlands, IBM Germany (off-site)
 Jul 2008
@@ -976,7 +973,7 @@ Jul 2008
                 * IBM DB2 Universal Database
                 * Subversion, Trac
 
-// ----------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 Feb 2008 -      Automated information system "KDT", IBA-Gomel
 May 2008
@@ -999,7 +996,7 @@ May 2008
                 * IBM DB2 Universal Database
                 * Concurrent Versions System
 
-// ----------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 May 2006 -      IBM Web Solutions Enabler (WSE), IBM Italy, IBM France
 Feb 2008        (on-site/off-site)
@@ -1027,7 +1024,7 @@ Feb 2008        (on-site/off-site)
                 * IBM DB2 Universal Database
                 * Concurrent Versions System
 
-// ----------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 Jul 2004 -      GME Engineering Business Systems Sustain (EBSS),
 May 2006        General Motors Europe, IBM Germany (on-site/off-site)
@@ -1060,7 +1057,7 @@ May 2006        General Motors Europe, IBM Germany (on-site/off-site)
                 * Oracle Database
                 * Concurrent Versions System
 
-// ----------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 Feb 2004 -      IBM Web Solutions Enabler (WSE), IBM Italy, IBM France
 Jul 2004        (on-site/off-site)
@@ -1086,7 +1083,7 @@ Jul 2004        (on-site/off-site)
                 * IBM DB2 Universal Database
                 * Concurrent Versions System
 
-// ----------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 Nov 2003 -      IBA Business Intelligence System (BIS), IBA-Gomel
 Feb 2004
@@ -1111,7 +1108,7 @@ Feb 2004
                 * IBM DB2 Universal Database
                 * Concurrent Versions System
 
-// ----------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 Sep 2003 -      IBA Database Manager, IBA-Gomel
 Nov 2003
@@ -1132,7 +1129,7 @@ Nov 2003
                 * GNU Compiler Collection (GCC)
                 * IBM DB2 Universal Database
 
-// ============================================================================
+===============================================================================
 
 Sep 1999 - Jul 2003, Research work at the Pavel Sukhoi Gomel State Technical
                      University, Gomel, including research work
@@ -1141,7 +1138,7 @@ Sep 1999 - Jul 2003, Research work at the Pavel Sukhoi Gomel State Technical
 
 Job position: Research Assistant of the Department of Economics and Management
 
-// ----------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 Nov 2002 -      Linear and Nonlinear Optimization Toolkit for Study Courses
 Jul 2003        in Operations Research
@@ -1160,7 +1157,7 @@ Jul 2003        in Operations Research
                 * GNU Make
                 * GNU Compiler Collection (GCC)
 
-// ----------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 Dec 1999 -      Nonlinear Optimization Packages for Scientific Work
 Nov 2002
@@ -1185,7 +1182,7 @@ Nov 2002
                 * IBM Jikes Compiler
                 * GNU Compiler Collection (GCC)
 
-// ----------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 Sep 1999 -      Scientific Data Conversion and Visualizing Utilities
 Dec 1999
@@ -1207,7 +1204,7 @@ Dec 1999
                 * GNU Compiler Collection (GCC)
                 * AutoCAD Development System Runtime Extension (ADSRX)
 
-// === Personal information ===================================================
+====== Personal information ===================================================
 
 Date of birth   June 27, 1977 (42yo)
 Citizenship     Republic of Belarus
@@ -1215,7 +1212,7 @@ Marital status  Single
 No. of children 2
 Driver's lic.   No
 
-// === Other notes ============================================================
+====== Other notes ============================================================
 
 My GitHub       https://github.com/rgolubtsov
 
@@ -1224,4 +1221,4 @@ Activities      * Street skateboarding
                 * Middle-distance running
                 * General fitness
 
-// vim:set nu et ts=4 sw=4:
+vim:set nu et ts=4 sw=4:
