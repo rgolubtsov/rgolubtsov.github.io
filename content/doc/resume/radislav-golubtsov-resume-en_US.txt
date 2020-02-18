@@ -6,7 +6,7 @@
 
                 Total IT experience - 19 years              An IT multilinguist
 ===============================================================================
-                [ 2019-07-30 ]
+                [ 2020-02-17 ]
 
 ====== SUMMARY ================================================================
 
@@ -109,6 +109,50 @@ Oct 2001        University (Ph.D. student of the School for Advanced Studies)
                 Gomel, Belarus ("Diploma in Honor")
 
 ====== Work experience (in reverse order) =====================================
+
+Nov 2019 - Jan 2020, Development work at Success Craft, LLC (Gomel branch),
+                     Gomel (3 months)
+
+Job position: Salesforce Developer of the Software Development Department
+
+-------------------------------------------------------------------------------
+
+Nov 2019 -      Flosum ALM: Application Lifecycle Management Solution
+Jan 2020
+                Project description: Continuous development of the application
+                lifecycle management solution (Flosum), built on the Salesforce
+                platform, and the Dataplier app - a data migrator, metadata-
+                driven Salesforce app, aimed at transferring arbitrary data
+                between Salesforce orgs.
+
+                (The customer of the project is Flosum, Inc.)
+
+                Personal role in the project: Testing the workability and
+                documenting the whole process of migrating data, based on the
+                Knowledge Article objects, using the Dataplier app. Creating
+                the Customers Community prototype, a Salesforce community, and
+                making initial development on its main page, including applying
+                the design and partial content to it, taken from the Zendesk
+                support website, dedicated to Flosum. Enabling, activating, and
+                initially populating the knowledge base, targeting the
+                Customers Community. Training the Flosum customers enablement
+                management representative (by recording a series of screen
+                videos) how to create knowledge articles and close cases using
+                those knowledge articles. Other activities include bug fixing
+                in backend components of the Flosum app and improving their
+                developer documentation.
+
+                Tools and technologies used:
+                * Dev OS: Arch Linux, Ubuntu Server amd64 (VM: QEMU-KVM) -
+                  solely to run web browsers and local HTML/CSS-based
+                  prototyping tasks
+                * Salesforce Developer Edition, Salesforce Enterprise Edition
+                  (CRM in the Cloud)
+                * Apex, Lightning Aura Components, HTML, CSS, JavaScript
+                * Salesforce Developer Console, Vim
+                * Git, JIRA
+
+===============================================================================
 
 Nov 2017 - Mar 2019, Development work at Exadel, Inc. (Gomel branch),
                      Gomel (1 year, 5 months)
