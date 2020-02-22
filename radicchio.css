@@ -222,6 +222,36 @@ pre {
     text-align:       center;
 }
 
+#stat-contp {
+    margin:           0px 28px 14px;
+}
+
+#stat-pager {
+    width:            100%;
+    border-collapse:  collapse;
+}
+
+#stat-pager td {
+    border:           0px solid #4ca419;
+    vertical-align:   baseline;
+}
+
+#stat-pager td#stat-footnote {
+    width:            100%;
+}
+
+#stat-pager td#stat-pager-nav {
+    text-align:       right;
+}
+
+#stat-pager td#stat-pager-nav span#stat-pager-nav-prev {
+    margin-right:     5px;
+}
+
+#stat-pager td#stat-pager-nav span#stat-pager-nav-next {
+    margin-left:      5px;
+}
+
 td .emoji {
     width:            1em;
     height:           1em;
