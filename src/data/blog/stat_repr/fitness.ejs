@@ -61,18 +61,18 @@
 <td rowspan="<%- sessions_len %>" class="p-name-td"><%=  portion_.name  %></td>
 <td rowspan="<%- sessions_len %>" class="p-subscrn-td"><img src="<%- emoji_url %><%- subscription ? 2714 : 2796 %>.png" class="emoji" alt="<%- subscription ? 'Yes' : 'No' %>" title="<%- subscription ? 'Yes' : 'No' %>" /></td>
 <%# --- Sessions data - First row - Table body ---------------------------- -%>
-<td class="s-id-td"><%=      session0.sid             %></td>
 <td class="s-day-td"><%=     session0.day             %></td>
 <td class="s-weekday-td"><%= weekday_expand(weekday0) %></td>
+<td class="s-id-td"><%=      session0.sid             %></td>
 </tr>
 <%# --- Sessions data - Rest of rows - Table body ------------------------- -%>
 <% for (var j = 1; j < sessions_len; j++) { -%>
 <% var session_ = portion_.sessions[j]; -%>
 <% var weekday_ = session_.weekday;     -%>
 <tr>
-<td class="s-id-td"><%=      session_.sid             %></td>
 <td class="s-day-td"><%=     session_.day             %></td>
 <td class="s-weekday-td"><%= weekday_expand(weekday_) %></td>
+<td class="s-id-td"><%=      session_.sid             %></td>
 </tr>
 <% } -%>
 <% } -%><%# <== for (var i in portions) { -%>

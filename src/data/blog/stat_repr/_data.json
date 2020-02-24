@@ -15,9 +15,9 @@
             "Sessions"
         ],
         "s_header"  : [
-            "No.",
             "Day",
-            "Weekday"
+            "Weekday",
+            "No."
         ],
         "weekdays"  : [
             "Monday",
