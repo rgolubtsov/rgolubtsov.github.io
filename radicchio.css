@@ -216,6 +216,10 @@ pre {
     text-align:       right;
 }
 
+          .s-id-td {
+    color:            #4ca419;
+}
+
 .p-year-td,   .p-subscrn-td,
 .m-year-td,
 .m-winner-td, .m-result-td,  .g-score-td {
