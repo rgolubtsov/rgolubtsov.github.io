@@ -4,6 +4,8 @@
         "sitename_" : ": Assorted fitness",
         "subtitle_" : "",
         "subtitle3" : "Fitness attendance statistics",
+        "preamble1" : "The table given below was auto-generated at site build time from ",
+        "preamble2" : " JSON data source. It will stay unchanged until a new entry will be added to the data source.",
         "emoji_url" : "http://github.githubassets.com/images/icons/emoji/unicode/",
         "p_caption" : "Portions | Distinguished by Year, Month, Gym Name, or Subscription",
         "p_header"  : [
@@ -44,6 +46,17 @@
             "Winner",
             "Result",
             "Games"
-        ]
+        ],
+        "rows_max"  : 100,
+        "walkover"  : "* &ndash; W.O. (Walkover for any reason.)",
+        "prev_page" : "&lt;&nbsp;Prev",
+        "next_page" : "Next&nbsp;&gt;",
+        "prev_hint" : "Go to previous page",
+        "next_hint" : "Go to next page"
+    },
+    "ttennis2"      : {
+        "layout"    : "../../../_radicchio",
+        "sitename_" : ": Assorted table tennis",
+        "subtitle_" : ""
     }
 }
