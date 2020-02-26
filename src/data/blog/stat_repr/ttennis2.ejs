@@ -1,4 +1,4 @@
-<%# src/data/blog/stat_repr/ttennis.ejs %>
+<%# src/data/blog/stat_repr/ttennis2.ejs %>
 
 <% var ttennis      = public.data.blog.stat_repr._data.ttennis;          %>
 <% var m_caption    = ttennis.m_caption;                                 %>
@@ -51,7 +51,7 @@
 <% for (var i in matches) { -%>
 <% var match_ = matches[i];   -%>
 <% var games  = match_.games; -%>
-<% if (match_.mid <= (1 * rows_max)) { -%>
+<% if ((match_.mid > (1 * rows_max)) && (match_.mid <= (2 * rows_max))) { -%>
 <tr>
 <td class="m-id-td"><%=      match_.mid                     %></td>
 <td class="m-year-td"><%=    match_.year                    %></td>
@@ -108,7 +108,7 @@
 <tbody>
 <tr>
 <td id="stat-footnote"><%- ttennis.walkover %></td>
-<td id="stat-pager-nav"><span id="stat-pager-nav-prev" title="<%= ttennis.prev_hint %>"><%- ttennis.prev_page %></span><span id="stat-pager-nav-next"><a href="/data/blog/stat_repr/ttennis2" title="<%= ttennis.next_hint %>"><%- ttennis.next_page %></a></span></td>
+<td id="stat-pager-nav"><span id="stat-pager-nav-prev"><a href="/data/blog/stat_repr/ttennis" title="<%= ttennis.prev_hint %>"><%- ttennis.prev_page %></a></span><span id="stat-pager-nav-next" title="<%= ttennis.next_hint %>" style="margin-right:4px"><%- ttennis.next_page %></span></td>
 </tr>
 </tbody>
 </table>
