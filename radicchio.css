@@ -250,10 +250,12 @@ pre {
 
 #stat-pager td#stat-pager-nav span#stat-pager-nav-prev {
     margin-right:     5px;
+    color:            #5db52a;
 }
 
 #stat-pager td#stat-pager-nav span#stat-pager-nav-next {
     margin-left:      5px;
+    color:            #5db52a;
 }
 
 td .emoji {
