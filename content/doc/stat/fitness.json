@@ -1123,6 +1123,11 @@
             "sid"     : 5,
             "day"     : 25,
             "weekday" : "Tu"
+        },
+        {
+            "sid"     : 6,
+            "day"     : 27,
+            "weekday" : "Th"
         }]
     }]
 }
