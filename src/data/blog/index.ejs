@@ -1,0 +1,25 @@
+<%# src/data/blog/index.ejs %>
+
+<h1><%= sitename_.substring(2) %></h1>
+<h3><%= subtitle3              %></h3>
+<div   id="stat-cont">
+<table id="stat-fit0">
+<tbody>
+<tr>
+<td colspan="5"><a href="/data/blog/stat_repr/fitness">Assorted fitness</a></td>
+</tr>
+<tr>
+<td colspan="5"><a href="/data/blog/stat_repr/ttennis">Assorted table tennis</a></td>
+</tr>
+<tr>
+<td>Installed packages on OpenBSD VM box:</td>
+<% for (var i  = OPENBSD_MINOR_VERSION_S;
+            i <= OPENBSD_MINOR_VERSION_E; i++) { -%>
+<td class="p-year-td"><a href="/data/blog/pkg_info/<%- OPENBSD_MAJOR_VERSION %><%- i %>"><%- OPENBSD_MAJOR_VERSION %>.<%- i %></a></td>
+<% } -%>
+</tr>
+</tbody>
+</table>
+</div>
+
+<%# vim:set nu et ts=4 sw=4: %>

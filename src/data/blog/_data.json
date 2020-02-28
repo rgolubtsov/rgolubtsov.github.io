@@ -1,7 +1,11 @@
 {
     "index"         : {
         "layout"    : "../../_radicchio",
-        "sitename_" : ": Blog",
-        "subtitle_" : ""
+        "sitename_" : ": Selective blog posts",
+        "subtitle_" : "",
+        "subtitle3" : "This is not actually a blog but let it be that",
+        "OPENBSD_MAJOR_VERSION"   : 6,
+        "OPENBSD_MINOR_VERSION_S" : 3,
+        "OPENBSD_MINOR_VERSION_E" : 6
     }
 }
