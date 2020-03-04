@@ -1129,5 +1129,17 @@
             "day"     : 27,
             "weekday" : "Th"
         }]
+    },
+    {
+        "pid"         : 49,
+        "year"        : "2020",
+        "month"       : "March",
+        "name"        : "Tonus Plus",
+        "subscrn"     : true,
+        "sessions"    : [{
+            "sid"     : 1,
+            "day"     : 4,
+            "weekday" : "We"
+        }]
     }]
 }
