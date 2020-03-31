@@ -1179,6 +1179,11 @@
             "sid"     : 1,
             "day"     : 25,
             "weekday" : "We"
+        },
+        {
+            "sid"     : 2,
+            "day"     : 28,
+            "weekday" : "Sa"
         }]
     }]
 }
