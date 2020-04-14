@@ -49,6 +49,7 @@
         ],
         "rows_max"  : 100,
         "walkover"  : "* &ndash; W.O. (Walkover for any reason.)",
+        "hometran"  : "^ &ndash; HoMe (Home training for any reason.)",
         "prev_page" : "&lt;&nbsp;Prev",
         "next_page" : "Next&nbsp;&gt;",
         "prev_hint" : "Go to previous page",
