@@ -240,8 +240,18 @@ pre {
     vertical-align:   baseline;
 }
 
-#stat-pager td#stat-footnote {
+#stat-pager td.stat-footnote-ndash {
+    padding-left:     8px;
+}
+
+#stat-pager td.stat-footnote-abbrv {
+    padding-left:     8px;
+    font-weight:      bold;
+}
+
+#stat-pager td.stat-footnote-descr {
     width:            100%;
+    padding-left:     8px;
 }
 
 #stat-pager td#stat-pager-nav {
