@@ -3423,5 +3423,30 @@
         },{ "gid"   : 7,
             "score" : ""
         }]
+    },
+    {
+        "mid"       : 138,
+        "year"      : "2020",
+        "month"     : "April",
+        "day"       : 12,
+        "weekday"   : "Su",
+        "winner"    : "Radicchio",
+        "result"    : "3-4^",
+        "games"     : [{
+            "gid"   : 1,
+            "score" : "11:8"
+        },{ "gid"   : 2,
+            "score" : "7:11"
+        },{ "gid"   : 3,
+            "score" : "11:4"
+        },{ "gid"   : 4,
+            "score" : "8:11"
+        },{ "gid"   : 5,
+            "score" : "11:3"
+        },{ "gid"   : 6,
+            "score" : "2:11"
+        },{ "gid"   : 7,
+            "score" : "9:11"
+        }]
     }]
 }
