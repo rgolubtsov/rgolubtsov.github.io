@@ -1238,6 +1238,16 @@
             "sid"     : 1,
             "day"     : 13,
             "weekday" : "We"
+        },
+        {
+            "sid"     : 2,
+            "day"     : 15,
+            "weekday" : "Fr"
+        },
+        {
+            "sid"     : 3,
+            "day"     : 19,
+            "weekday" : "Tu"
         }]
     }]
 }
