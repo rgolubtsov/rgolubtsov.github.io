@@ -2,7 +2,7 @@
 
 ### OpenBSD/amd64 6.3 to 6.5 Upgrade Instructions
 
-As clearly stated in the OpenBSD FAQ regarding upgrading one release to another, *upgrades are only supported from one release to the release immediately following it*. So what to do if it needs to upgrade the 6.3 release of OpenBSD to the 6.5 release is to upgrade sequentially, first to the 6.4 release, and then to the 6.5 release.
+As clearly stated in the OpenBSD FAQ regarding upgrading one release to another, *upgrades are only supported from one release to the release immediately following it*. So what to do if it needs to upgrade the 6.3 release of OpenBSD to the 6.5 release, is to upgrade sequentially, first to the 6.4 release, and then to the 6.5 release.
 
 **Upgrade OpenBSD 6.3 release to 6.4 release**
 
@@ -264,7 +264,7 @@ $ sudo rm -vf /usr/bin/c2ph                                      \
 
 Perform actions from the previous section &ndash; subsections **(g)** to **(k)**, then:
 
-After reboot into the upgraded system...
+After rebooting into the upgraded system...
 
 ```
 OpenBSD 6.5 (GENERIC.MP) #3: Sat Apr 13 14:48:43 MDT 2019
@@ -286,7 +286,7 @@ $ sudo route add default 10.0.2.1
 add net default: gateway 10.0.2.1
 ```
 
-...it's the time to upgrade the packages: `$ sudo pkg_add -uv`; but first check the package database:
+...it's the time to upgrade packages: `$ sudo pkg_add -uv`; but first check the package database:
 
 ```
 $ pkg_info
@@ -314,7 +314,7 @@ $ mkdir        xyz                                                              
   sudo rm -Rf  xyz/
 ```
 
-Now package-manipulation commands (`pkg_info`, `pkg_add`, `pkg_delete`, etc.) should be working fine:
+Now package manipulation commands (`pkg_info`, `pkg_add`, `pkg_delete`, etc.) should be working fine:
 
 ```
 $ pkg_info
@@ -344,6 +344,7 @@ Read shared items: ok
 Couldn't find updates for rebar19-2.6.2p0
 Extracted 2530483626 from 2530564521
 ```
+
 Make all the necessary removals and updates which were reported by the `pkg_add` command:
 
 ```
