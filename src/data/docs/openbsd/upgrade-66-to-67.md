@@ -11,7 +11,7 @@ Fcntl.c: loadable library and perl binaries are mismatched (got handshake key 0x
 
 The command above doesn't work, and as it is clearly seeing in the output, something gets wrong with Perl binaries and libraries. &ndash; Obviously, the version of installed Perl binaries doesn't match the version of its loadable library.
 
-This can be repaired by replacing the whole Perl base module set with that one freshly downloaded from the OpenBSD CDN. It is contained in the `base67.tgz` tarball. The following compound one-liner command will replace the old Perl base module set with the new one with minimal effort from the user side:
+This can be repaired by replacing the whole Perl base module set with that one freshly downloaded from the OpenBSD CDN. It is contained in the `base67.tgz` tarball. The following compound one-liner command will replace the old Perl base module set with the new one, with minimal effort from the user side:
 
 ```
 $ mkdir        xyz                                                                                  && \
@@ -39,7 +39,7 @@ zip-3.0p1           create/update ZIP files compatible with PKZip(tm)
 zstd-1.4.3          zstandard fast real-time compression algorithm
 ```
 
-* Upgrade the packages:
+* Upgrade packages:
 
 ```
 $ sudo pkg_add -uv

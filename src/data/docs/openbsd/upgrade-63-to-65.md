@@ -21,7 +21,7 @@ Signature Verified
 bsd.rd: OK
 ```
 
-**(c)** Permanently set the new CDN URL (it was changed in the 6.4 release) which will be using during system upgrade and later on during upgrading the packages:
+**(c)** Permanently set the new CDN URL (it was changed in the 6.4 release) which will be using during system upgrade and later on during upgrading packages:
 
 ```
 $ cat /etc/installurl
@@ -94,7 +94,7 @@ $ sudo shutdown -r now
 boot> bsd.rd
 ```
 
-**(j)** After the kernel is booted, hit `s` (that means `(S)hell`) to enter the shell to configure network if not already autoconfigured. In the shell make necessary network configuration, then hit `<Ctrl-D>` to return to the installation/upgrading program. (This step is very important if, for example, the OpenBSD box is installed and running as a virtual machine, like [this one](https://github.com/rgolubtsov/dotfiles/blob/master/openbsd/README.md "OpenBSD VM-boxes using QEMU")):
+**(j)** After the kernel is booted, hit `s` (that means `(S)hell`) to enter the shell to configure network if not already autoconfigured. In the shell make necessary network configurations, then hit `<Ctrl-D>` to return to the installation/upgrading program. (This step is very important if, for example, OpenBSD is installed and running inside a virtual machine, like [this one](https://github.com/rgolubtsov/dotfiles/blob/master/openbsd/README.md "OpenBSD VM-boxes using QEMU")):
 
 ```
 # ifconfig vio0 10.0.2.101/24
@@ -105,7 +105,7 @@ add net default: gateway 10.0.2.1
 
 **(k)** Hit `u` (that means `(U)pgrade`) and follow sequential prompts. In most cases for most questions just hit `<Enter>` for default choices.
 
-After reboot into the upgraded system...
+After rebooting into the upgraded system...
 
 ```
 OpenBSD 6.4 (GENERIC.MP) #364: Thu Oct 11 13:30:23 MDT 2018
@@ -119,7 +119,7 @@ enough information to reproduce the problem is enclosed, and if a
 known fix for it exists, include that as well.
 ```
 
-...and making initial network configuration...
+...and making initial network configurations...
 
 ```
 $ sudo ifconfig vio0 10.0.2.101/24
@@ -127,7 +127,7 @@ $ sudo route add default 10.0.2.1
 add net default: gateway 10.0.2.1
 ```
 
-...upgrade the packages:
+...upgrade packages:
 
 ```
 $ sudo pkg_add -uv
@@ -278,7 +278,7 @@ enough information to reproduce the problem is enclosed, and if a
 known fix for it exists, include that as well.
 ```
 
-...and making initial network configuration...
+...and making initial network configurations...
 
 ```
 $ sudo ifconfig vio0 10.0.2.101/24
@@ -301,7 +301,7 @@ Compilation failed in require at /usr/libdata/perl5/OpenBSD/PackageInfo.pm line 
 
 The command above doesn't work, and as it is clearly seeing in the output, something gets wrong with the Perl module `Cwd`. But further investigations show out that this module (as being an XS-module) was compiled to use with the previous version of Perl, hence it is incompatible with the currently installed Perl release.
 
-Obviously, the easiest solution to repair this crucial Perl module is to replace the whole Perl base module set with that one freshly downloaded from the OpenBSD CDN. It is contained in the `base65.tgz` tarball. The following compound one-liner command will replace the old Perl base module set with the new one with minimal effort from the user side:
+Obviously, the easiest solution to repair this crucial Perl module is to replace the whole Perl base module set with that one freshly downloaded from the OpenBSD CDN. It is contained in the `base65.tgz` tarball. The following compound one-liner command will replace the old Perl base module set with the new one, with minimal effort from the user side:
 
 ```
 $ mkdir        xyz                                                                                  && \
@@ -327,7 +327,7 @@ zip-3.0p0           create/update ZIP files compatible with PKZip(tm)
 zstd-1.3.5p0        zstandard fast real-time compression algorithm
 ```
 
-Upgrade the packages:
+Upgrade packages:
 
 ```
 $ sudo pkg_add -uv
