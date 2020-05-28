@@ -3,5 +3,10 @@
         "layout"       : "../../../_radicchio",
         "sitename_"    : ": Upgrade OpenBSD 6.3 to 6.5",
         "subtitle_"    : ""
+    },
+    "upgrade-66-to-67" : {
+        "layout"       : "../../../_radicchio",
+        "sitename_"    : ": OpenBSD 6.6 to 6.7 Upgrade Gotchas",
+        "subtitle_"    : ""
     }
 }
