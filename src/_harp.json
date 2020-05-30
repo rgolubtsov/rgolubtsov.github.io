@@ -5,10 +5,10 @@
         "coder"      : "Radislav (Radicchio) Golubtsov",
         "css"        : "/radicchio.css",
         "ico"        : "/favicon.ico",
-        "nav_home_k" : "Home",    "nav_home_v" : "/",
-        "nav_docs_k" : "Docs",    "nav_docs_v" : "/data/docs",
-        "nav_srcs_k" : "Sources", "nav_srcs_v" : "/data/srcs",
-        "nav_blog_k" : "Blog",    "nav_blog_v" : "/data/blog",
-        "nav_ghub_k" : "GitHub",  "nav_ghub_v" : "https://github.com/rgolubtsov"
+        "nav_home_k" : "Home",    "nav_home_v" : "/",                             "nav_home_id" : "nav-home",
+        "nav_docs_k" : "Docs",    "nav_docs_v" : "/data/docs",                    "nav_docs_id" : "nav-docs",
+        "nav_srcs_k" : "Sources", "nav_srcs_v" : "/data/srcs",                    "nav_srcs_id" : "nav-srcs",
+        "nav_blog_k" : "Blog",    "nav_blog_v" : "/data/blog",                    "nav_blog_id" : "nav-blog",
+        "nav_ghub_k" : "GitHub",  "nav_ghub_v" : "https://github.com/rgolubtsov", "nav_ghub_id" : "nav-ghub"
     }
 }
