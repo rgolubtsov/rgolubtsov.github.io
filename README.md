@@ -1,4 +1,4 @@
-# [![A Cup of Radicchio](http://rgolubtsov.github.io/favicon.ico)](http://rgolubtsov.github.io) A Cup of Radicchio
+# [![A Cup of Radicchio](http://rgolubtsov.github.io/favicon.ico)](http://rgolubtsov.github.io) A Cup of Radicchio :coffee:
 
 **[A Cup of Radicchio](http://rgolubtsov.github.io "A Cup of Radicchio: A personal website of a power looper, a skateboarder, and a coder"):** A personal website of a power looper, a skateboarder, and a coder.
 
