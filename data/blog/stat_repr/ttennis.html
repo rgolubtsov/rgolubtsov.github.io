@@ -1650,37 +1650,7 @@
 <table id="footer">
 <tbody><tr><td id="v-bar-f"></td><td id="footer-td"><a href="http://anybrowser.org/campaign"><img style="border:0;width:88px;height:31px" src="/static/img/misc/vwab" alt="Viewable With Any Browser" /></a><a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px" src="/static/img/misc/vcss" alt="Valid CSS!" /></a></td></tr></tbody>
 </table>
-<script>
-// <![CDATA[
-var URL_ITEM_PREFIX  = /\/data/;
-var NAV_ITEM_PREFIX  = "nav-";
-var BACKGROUND_COLOR = "#5db52a";
-var COLOR            = "#7aef17";
-
-var page_url = document.URL;
-
-console.log(page_url);
-
-var x = page_url.search(URL_ITEM_PREFIX);
-
-console.log(x);
-
-if (x > -1) {
-    var url_item = page_url.substring(x + 6, x + 10);
-
-    console.log(url_item);
-
-    var nav_item = document.getElementById(NAV_ITEM_PREFIX + url_item);
-
-    console.log(nav_item);
-
-    if (nav_item != null) {
-        nav_item.style.backgroundColor = BACKGROUND_COLOR;
-        nav_item.style.color           = COLOR;
-    }
-}
-// ]]>
-</script>
+<script src="/radicchio.js"></script>
 </body>
 </html>
 
