@@ -20,21 +20,11 @@
     var COLOR            = "#7aef17";
 
     var page_url = document.URL;
-
-    console.log(page_url);
-
     var x = page_url.search(URL_ITEM_PREFIX);
-
-    console.log(x);
 
     if (x > -1) {
         var url_item = page_url.substring(x + 6, x + 10);
-
-        console.log(url_item);
-
         var nav_item = document.getElementById(NAV_ITEM_PREFIX + url_item);
-
-        console.log(nav_item);
 
         if (nav_item != null) {
             nav_item.style.backgroundColor = BACKGROUND_COLOR;
