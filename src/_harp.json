@@ -5,6 +5,7 @@
         "coder"      : "Radislav (Radicchio) Golubtsov",
         "css"        : "/radicchio.css",
         "ico"        : "/favicon.ico",
+        "js"         : "/radicchio.js",
         "nav_home_k" : "Home",    "nav_home_v" : "/",                             "nav_home_id" : "nav-home",
         "nav_docs_k" : "Docs",    "nav_docs_v" : "/data/docs",                    "nav_docs_id" : "nav-docs",
         "nav_srcs_k" : "Sources", "nav_srcs_v" : "/data/srcs",                    "nav_srcs_id" : "nav-srcs",
