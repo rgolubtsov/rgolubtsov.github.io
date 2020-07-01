@@ -11,7 +11,7 @@ For the moment there are two independent algorithms were chosen and implemented 
 
 Both algorithms are implemented in the same set of programming languages, sequentially. Or sometimes simultaneously.
 
-Historically, the first programming language chosen to write a script implementing those two aforementioned algorithms was JavaScript, targeting the Node.js runtime environment. But actually the `find_equil_index.js` script (1) was the first and the only complete program that was resided in this repo alone for a year or so. Later on it was a decision to enrich the repo with similar snippets or pieces of code that might be considered like standalone and independent scripts, but resembling the original one (1) as with their inputs as well with their outputs.
+Historically, the first programming language chosen to write a script implementing those two aforementioned algorithms was JavaScript, targeting the [Node.js](https://nodejs.org "JavaScript runtime built on Chrome's V8 JavaScript engine") runtime environment. But actually the `find_equil_index.js` script (1) was the first and the only complete program that was resided in this repo alone for a year or so. Later on it was a decision to enrich the repo with similar snippets or pieces of code that might be considered like standalone and independent scripts, but resembling the original one (1) as with their inputs as well with their outputs.
 
 However, prior to this there was a new script born, of course written again in JavaScript. It has implemented the second algorithm (2) &ndash; `replace_txt_chunks.js`. And right after that both directions were eloborated deeper by learning new programming languages and following the educational paradigm commonly known as **learning by doing**. :smiley:
 
@@ -44,4 +44,4 @@ They are all tailored and treated exactly as scripts, that means they are interp
 
 In the beginning of each script, in the header block comment there is the usage info showing how to run it: in all cases it is a compound one-liner command which downloads the script, makes it executable, and launches it up. The only prerequisite is the `curl` utility and, of course respective runtime environment. The latter is indicated just after the usage info in each script.
 
-The `_templates` subdirectory that resides here is not related to these scripts anyhow. It contains minimal application templates written in Perl and Python which are prepared to run on [uWSGI](https://uwsgi-docs.readthedocs.io "The uWSGI project") application server, and a header block comment in both templates clearly explains this.
+The `_templates` subdirectory that resides here is not related to these scripts anyhow. It contains minimal application templates written in Perl and Python which are prepared to run on the [uWSGI](https://uwsgi-docs.readthedocs.io "The uWSGI project") application server, and a header block comment in both templates clearly explains this.
