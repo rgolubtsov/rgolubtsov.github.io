@@ -4,9 +4,9 @@
           ЦЕЛЬ: Получить должность Software Developer /
                             Senior Software Developer
 
-                Суммарный опыт работы в сфере ИТ - 19 лет     IT-мультилингвист
+                Суммарный опыт работы в сфере ИТ - 20 лет     IT-мультилингвист
 ===============================================================================
-                [ 17.02.2020 ]
+                [ 01.07.2020 ]
 
 ====== РЕЗЮМЕ =================================================================
 
@@ -38,15 +38,15 @@
                 * GTFS Realtime (General Transit Feed Specification), Google
                   Text-To-Speech API
                 * Java SE / EE, Java Servlet, JavaServer Pages (JSP), JSP
-                  Standard Tag Library (JSTL), Java Portlet, Vaadin Framework,
-                  Spring Web MVC / Spring Security, Play! Framework, Apache
-                  Struts / Struts 2, JavaServer Faces (JSF), Java Database
-                  Connectivity (JDBC), JavaMail, Java Abstract Window Toolkit
-                  (AWT), Java Swing, iText (Java-PDF Library), jQuery
-                  (JavaScript Library), Node.js / Luvit, Harpjs.com, HTML, CSS,
-                  XML, YAML, JSON, SQL, GNUstep / Cocoa API, Eclipse Standard
-                  Widget Toolkit (SWT), HTTP(S), (S)FTP, SSH, SCP, REST-
-                  микросервисы и др.
+                  Standard Tag Library (JSTL), Java Portlet, Spring Boot,
+                  Spring Web MVC, Spring Security, Play! Framework, Vaadin
+                  Framework, Apache Struts / Struts 2, JavaServer Faces (JSF),
+                  Java Database Connectivity (JDBC), JavaMail, Java Abstract
+                  Window Toolkit (AWT), Java Swing, iText (Java-PDF Library),
+                  jQuery (JavaScript Library), Node.js / Luvit, Harpjs.com,
+                  HTML, CSS, XML, YAML, JSON, SQL, GNUstep / Cocoa API, Eclipse
+                  Standard Widget Toolkit (SWT), HTTP(S), (S)FTP, SSH, SCP,
+                  REST-микросервисы и др.
                 * Erlang/OTP, ERTS (Erlang Run-Time System),
                   Erlang Standard Library
                 * Elixir, Elixir Standard Library, Cowboy (библиотека
@@ -68,14 +68,14 @@
                 * Erlang Rebar, Apache Maven, Apache Ant
 
 СУБД            PostgreSQL, MySQL, Oracle Database, IBM DB2 Universal Database,
-                SQLite, Redis
+                SQLite, MongoDB, Redis
 
 Серверы         * Node.js, Luvit (Lua)
 приложений /    * uWSGI (Python/WSGI, Perl/PSGI), Gunicorn (Python/WSGI),
 веб-серверы       Twisted Reactor
                 * Серверы приложений, основанные на Perl: Twiggy, Hypnotoad,
                   Morbo
-                * Apache Tomcat, JBoss Application Server, IBM WebSphere
+                * Netty, Apache Tomcat, JBoss Application Server, IBM WebSphere
                   Application Server, IBM WebSphere Portal Server, Apache Pluto
                 * Cowboy (веб-сервер для Erlang/OTP)
                 * HTTP Kit (веб-сервер для Clojure)
@@ -351,7 +351,7 @@
                 * Server OS: Ubuntu Server amd64 (Cloud VM)
                 * JavaScript,MEAN stack (MongoDB, Express, AngularJS, Node.js),
                              HTML, CSS
-                * Nginx
+                * Nginx, MongoDB
                 * Vim
                 * Git, Bitbucket, Trello
 
@@ -1317,7 +1317,7 @@
 
 ====== Личная информация ======================================================
 
-Дата рождения   27 июня 1977 г. (42 года)
+Дата рождения   27 июня 1977 г. (43 года)
 
 Гражданство     Республика Беларусь
 

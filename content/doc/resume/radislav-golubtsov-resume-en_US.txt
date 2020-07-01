@@ -4,9 +4,9 @@
      OBJECTIVE: To obtain the position of a Software Developer /
                                      Senior Software Developer
 
-                Total IT experience - 19 years              An IT multilinguist
+                Total IT experience - 20 years              An IT multilinguist
 ===============================================================================
-                [ 2020-02-17 ]
+                [ 2020-07-01 ]
 
 ====== SUMMARY ================================================================
 
@@ -37,15 +37,15 @@ Technologies    * Python and related modules, libraries, and frameworks (Python
                 * GTFS Realtime (General Transit Feed Specification), Google
                   Text-To-Speech API
                 * Java SE / EE, Java Servlet, JavaServer Pages (JSP), JSP
-                  Standard Tag Library (JSTL), Java Portlet, Vaadin Framework,
-                  Spring Web MVC / Spring Security, Play! Framework, Apache
-                  Struts / Struts 2, JavaServer Faces (JSF), Java Database
-                  Connectivity (JDBC), JavaMail, Java Abstract Window Toolkit
-                  (AWT), Java Swing, iText (Java-PDF Library), jQuery
-                  (JavaScript Library), Node.js / Luvit, Harpjs.com, HTML, CSS,
-                  XML, YAML, JSON, SQL, GNUstep / Cocoa API, Eclipse Standard
-                  Widget Toolkit (SWT), HTTP(S), (S)FTP, SSH, SCP, RESTful
-                  microservices, etc.
+                  Standard Tag Library (JSTL), Java Portlet, Spring Boot,
+                  Spring Web MVC, Spring Security, Play! Framework, Vaadin
+                  Framework, Apache Struts / Struts 2, JavaServer Faces (JSF),
+                  Java Database Connectivity (JDBC), JavaMail, Java Abstract
+                  Window Toolkit (AWT), Java Swing, iText (Java-PDF Library),
+                  jQuery (JavaScript Library), Node.js / Luvit, Harpjs.com,
+                  HTML, CSS, XML, YAML, JSON, SQL, GNUstep / Cocoa API, Eclipse
+                  Standard Widget Toolkit (SWT), HTTP(S), (S)FTP, SSH, SCP,
+                  RESTful microservices, etc.
                 * Erlang/OTP, ERTS (Erlang Run-Time System),
                   Erlang Standard Library
                 * Elixir, Elixir Standard Library, Cowboy (web server library
@@ -66,13 +66,13 @@ Tools             MyEclipse Blue Edition, IBM Rational Software Architect
                 * Erlang Rebar, Apache Maven, Apache Ant
 
 DBMS            PostgreSQL, MySQL, Oracle Database, IBM DB2 Universal Database,
-                SQLite, Redis
+                SQLite, MongoDB, Redis
 
 Application /   * Node.js, Luvit (Lua)
 Web Servers     * uWSGI (Python/WSGI, Perl/PSGI), Gunicorn (Python/WSGI),
                   Twisted Reactor
                 * Perl-based app-servers: Twiggy, Hypnotoad, Morbo
-                * Apache Tomcat, JBoss Application Server, IBM WebSphere
+                * Netty, Apache Tomcat, JBoss Application Server, IBM WebSphere
                   Application Server, IBM WebSphere Portal Server, Apache Pluto
                 * Cowboy (HTTP server for Erlang/OTP)
                 * HTTP Kit (HTTP server for Clojure)
@@ -334,7 +334,7 @@ May 2017
                 * Server OS: Ubuntu Server amd64 (Cloud VM)
                 * JavaScript,MEAN stack (MongoDB, Express, AngularJS, Node.js),
                              HTML, CSS
-                * Nginx
+                * Nginx, MongoDB
                 * Vim
                 * Git, Bitbucket, Trello
 
@@ -1250,7 +1250,7 @@ Dec 1999
 
 ====== Personal information ===================================================
 
-Date of birth   June 27, 1977 (42yo)
+Date of birth   June 27, 1977 (43yo)
 Citizenship     Republic of Belarus
 Marital status  Single
 No. of children 2
