@@ -2,7 +2,8 @@
 # utils/aur-pkg-snapshots-download
 # =============================================================================
 # This helper script downloads package snapshots from the Arch User Repository
-# (AUR) for selected packages, to the current directory.
+# (AUR) for --foreign packages currently installed on the system,
+# to the current directory.
 # =============================================================================
 # Copyright (C) 2020 Radislav (Radicchio) Golubtsov
 #
@@ -13,38 +14,11 @@
 declare -r EXIT_FAILURE=1 #    Failing exit status.
 declare -r EXIT_SUCCESS=0 # Successful exit status.
 
-declare -r CURL="curl"
-declare -r CURLFLAGS="-LO"
-
 declare -r AUR_URL="https://aur.archlinux.org/cgit/aur.git/snapshot/"
 declare -r PKG_EXT=".tar.gz"
 
-declare -r PKG_LIST=(
-    arkanoidsb
-    deb2targz
-    jmtpfs
-    libdockapp
-    lit
-    luvi-bin
-    luvit
-    normalize
-    openjpeg
-    pm-utils
-    pygtk
-    python2-prettytable
-    python2-werkzeug
-    rxvt-unicode-better-wheel-scrolling
-    skypeforlinux-stable-bin
-    windowmaker
-    wmclockmon
-    wmcpuload
-    wmnetload
-    wmsystemtray
-    zoom
-)
-
-for pkg_name in ${PKG_LIST[@]}; do
-    ${CURL} ${CURLFLAGS} ${AUR_URL}${pkg_name}${PKG_EXT}
+for pkg_name in `pacman -Qmq`; do
+    curl -LO ${AUR_URL}${pkg_name}${PKG_EXT}
 done
 
 # If there is an error -- telling the OS about this.
