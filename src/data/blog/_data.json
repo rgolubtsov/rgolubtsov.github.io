@@ -12,6 +12,7 @@
         "layout"    : "../../_radicchio",
         "sitename_" : ": Editor",
         "subtitle_" : "",
-        "subtitle3" : "An editor for everything and nothing in particular"
+        "subtitle3" : "An editor for everything and nothing in particular",
+        "preamble_" : "<strong>In those days</strong> when <code>vim</code> is not reachable for some reason, or it is <em>intentionally</em> :raising_hand: considered to be inapplicable in a particular kind of case, &mdash; one can use, reuse, or abuse the editor below. &mdash; Surely this is when <code>vim</code> is actually unreachable for some reason: :smiley:"
     }
 }
