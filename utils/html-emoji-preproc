@@ -29,11 +29,13 @@ declare -r EMOJI_CHARS=(
     +1
     blue_heart
     smiley
+    raising_hand
 )
 declare -r EMOJI_CODES=(
     1f44d
     1f499
     1f603
+    1f64b
 )
 
 DIR=.
