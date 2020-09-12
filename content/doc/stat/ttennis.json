@@ -3598,5 +3598,30 @@
         },{ "gid"   : 7,
             "score" : ""
         }]
+    },
+    {
+        "mid"       : 145,
+        "year"      : "2020",
+        "month"     : "September",
+        "day"       : 12,
+        "weekday"   : "Sa",
+        "winner"    : "Yaro",
+        "result"    : "4-1",
+        "games"     : [{
+            "gid"   : 1,
+            "score" : "11:7"
+        },{ "gid"   : 2,
+            "score" : "7:11"
+        },{ "gid"   : 3,
+            "score" : "11:9"
+        },{ "gid"   : 4,
+            "score" : "11:6"
+        },{ "gid"   : 5,
+            "score" : "15:13"
+        },{ "gid"   : 6,
+            "score" : ""
+        },{ "gid"   : 7,
+            "score" : ""
+        }]
     }]
 }
