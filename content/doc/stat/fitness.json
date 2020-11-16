@@ -1249,5 +1249,17 @@
             "day"     : 19,
             "weekday" : "Tu"
         }]
+    },
+    {
+        "pid"         : 54,
+        "year"        : "2020",
+        "month"       : "November",
+        "name"        : "Just Fitness",
+        "subscrn"     : false,
+        "sessions"    : [{
+            "sid"     : 1,
+            "day"     : 15,
+            "weekday" : "Su"
+        }]
     }]
 }
