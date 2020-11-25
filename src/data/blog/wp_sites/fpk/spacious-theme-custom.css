@@ -1,0 +1,122 @@
+
+/* === FPK.I-BTEU.BY Spacious Theme Custom CSS ============================= */
+
+/* --- Masthead - Begin ---------------------------------------------------- */
+img.header-image,
+div#header-text-nav-container {
+    border: 0;
+}
+.better-responsive-menu #site-navigation,
+.better-responsive-menu #header-text-nav-container {
+    margin: 0;
+}
+div#header-text-nav-wrap {
+    display: none;
+}
+.spacious-header-display-four .bottom-menu .main-navigation {
+    width: 100%;
+}
+div.bottom-menu.clearfix {
+    background-color: #0fbe7c;
+}
+div.inner-wrap.clearfix {
+    width:  100%;
+/*  margin: 0;*/
+}
+nav#site-navigation.main-navigation.clearfix {
+    padding: 0;
+}
+li.mega-menu-item > a.mega-menu-link {
+    font-size: 1.3em !important;
+}
+ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link {
+    font-size: 1.4em !important;
+}
+@media screen and (max-width: 768px) {
+    div.bottom-menu.clearfix {
+        background-color: #ffffff;
+    }
+}
+/* --- Masthead - End ------------------------------------------------------ */
+
+/* --- Footer - Begin ------------------------------------------------------ */
+h2.fpk-footer-sidebar-caption {
+    margin-bottom:     10px;
+    border-bottom:     3px solid #0fbe7c;
+    padding-bottom:    5px;
+    text-align:        center;
+    color:             #0fbe7c;
+    font-size:         1.9em;
+    font-weight:       bold;
+    font-variant-caps: all-small-caps;
+}
+ul#menu-footer-menu {
+    margin: 15px 5px;
+}
+li#menu-item-1210,
+li#menu-item-1211,
+li#menu-item-1212,
+li#menu-item-435 {
+    font-size: 1.3em;
+}
+p.fpk-footer-sidebar-paragraph {
+    margin:      0;
+    padding-top: 15px;
+    text-align:  center !important;
+    font-size:   1.3em  !important;
+}
+p.fpk-footer-sidebar-paragraph-ex {
+    color: #cccccc !important;
+}
+img.fpk-footer-sidebar-logo {
+    width:         80px;
+    height:        80px;
+    border:        0;
+    border-radius: 8px;
+}
+div.fpk-footer-sidebar-contact-us-button {
+    margin:            .6em 3.5em;
+    border:            2px solid #0fbe7c;
+    border-radius:     8px;
+    padding:           10px 20px 12px;
+    text-align:        center;
+    color:             #0fbe7c;
+    font-size:         1.6em;
+    font-weight:       bold;
+    font-variant-caps: all-small-caps;
+}
+div.fpk-footer-sidebar-contact-us-button:hover,
+div.fpk-footer-sidebar-contact-us-button:active {
+    background-color: #0fbe7c;
+    color:            #ffffff !important;
+}
+div.fpk-footer-sidebar-copyright {
+    padding-top: 2px;
+    text-align:  center;
+    color:       #cccccc;
+    font-size:   1.3em
+}
+.footer-socket-wrapper {
+    display: none;
+}
+div.tg-one-third,
+div.tg-one-third.tg-column-2,
+div.tg-one-third.tg-after-two-blocks-clearfix {
+    padding-bottom: 0 !important;
+}
+#colophon .widget {
+    padding: 0;
+}
+.widget_text .textwidget {
+    padding: 0;
+}
+/* --- Footer - End -------------------------------------------------------- */
+
+/* --- Content - Begin ----------------------------------------------------- */
+#fpk-staff td,
+#fpk-povyshenie-kvalifikaczii td {
+    width:  100%;
+    border: none;
+}
+/* --- Content - End ------------------------------------------------------- */
+
