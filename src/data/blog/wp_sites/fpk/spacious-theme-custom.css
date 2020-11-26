@@ -75,7 +75,7 @@ img.fpk-footer-sidebar-logo {
     border-radius: 8px;
 }
 div.fpk-footer-sidebar-contact-us-button {
-    margin:            .6em 3.5em;
+    margin:            1.4em 3.5em;
     border:            2px solid #0fbe7c;
     border-radius:     8px;
     padding:           10px 20px 12px;
@@ -90,14 +90,30 @@ div.fpk-footer-sidebar-contact-us-button:active {
     background-color: #0fbe7c;
     color:            #ffffff !important;
 }
-div.fpk-footer-sidebar-copyright {
+/*div.fpk-footer-sidebar-copyright {
     padding-top: 2px;
     text-align:  center;
     color:       #cccccc;
-    font-size:   1.3em
+    font-size:   1.3em;
+}*/
+div.footer-socket-wrapper {
+    height:           25px;
+    border:           0;
+    padding-top:      5px;
+    background-color: #0fbe7c;
+/*  display:          none;*/
 }
-.footer-socket-wrapper {
-    display: none;
+div.copyright {
+    color: #000000 !important;
+}
+div.footer-socket-wrapper div.copyright {
+    max-width:  100%;
+    text-align: center;
+    font-size:  medium;
+    float:      none;
+}
+div.copyright a {
+    color: #ffffff !important;
 }
 div.tg-one-third,
 div.tg-one-third.tg-column-2,
