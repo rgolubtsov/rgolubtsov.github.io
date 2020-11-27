@@ -160,5 +160,10 @@ div.tg-one-third.tg-after-two-blocks-clearfix {
     background-color: #0fbe7c;
     color:            #ffffff;
 }
+.download-button {
+    width:     80%;
+    padding:   10px;
+    font-size: 1.3em;
+}
 /* --- Content - End ------------------------------------------------------- */
 
