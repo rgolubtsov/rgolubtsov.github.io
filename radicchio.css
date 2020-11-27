@@ -77,6 +77,10 @@ html, body {
     background-image: url("/static/img/misc/background-795x195.png");
 }
 
+/*
+ * Styling links according to the LVHA-order:
+ * :link --> :visited --> :hover --> :active.
+ */
 a:link, a:visited, a:hover, a:active {
     border:           1px solid #6ec63b;
     padding:          3px;
