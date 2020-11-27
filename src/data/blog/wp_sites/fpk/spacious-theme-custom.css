@@ -134,5 +134,31 @@ div.tg-one-third.tg-after-two-blocks-clearfix {
     width:  100%;
     border: none;
 }
+#fpk-submenu-on-the-page {
+    margin:    0 !important;
+    padding:   0 !important;
+    font-size: 1.3em;
+}
+#fpk-submenu-on-the-page li {
+    display: grid;
+}
+#fpk-submenu-on-the-page a {
+    border-radius: 8px;
+    transition:    none;
+}
+/*
+ * Styling links according to the LVHA-order:
+ * :link --> :visited --> :hover --> :active.
+ */
+#fpk-submenu-on-the-page a:link,
+#fpk-submenu-on-the-page a:visited,
+#fpk-submenu-on-the-page a:hover,
+#fpk-submenu-on-the-page a:active {
+    padding: 8px 18px;
+}
+#fpk-submenu-on-the-page a:hover {
+    background-color: #0fbe7c;
+    color:            #ffffff;
+}
 /* --- Content - End ------------------------------------------------------- */
 
