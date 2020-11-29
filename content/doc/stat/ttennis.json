@@ -3998,5 +3998,30 @@
         },{ "gid"   : 7,
             "score" : "5:11"
         }]
+    },
+    {
+        "mid"       : ,
+        "year"      : "2020",
+        "month"     : "November",
+        "day"       : 29,
+        "weekday"   : "Su",
+        "winner"    : "Yaro",
+        "result"    : "4-1",
+        "games"     : [{
+            "gid"   : 1,
+            "score" : "11:6"
+        },{ "gid"   : 2,
+            "score" : "11:7"
+        },{ "gid"   : 3,
+            "score" : "11:9"
+        },{ "gid"   : 4,
+            "score" : "9:11"
+        },{ "gid"   : 5,
+            "score" : "12:10"
+        },{ "gid"   : 6,
+            "score" : ""
+        },{ "gid"   : 7,
+            "score" : ""
+        }]
     }]
 }
