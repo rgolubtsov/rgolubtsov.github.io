@@ -1,7 +1,0 @@
-/** Push menu onto new line **/
-#{$wrap} {
-    clear: both;
-}
-.mega-menu-primary .site-header .menu-toggle {
-    display: none;
-}
