@@ -274,10 +274,17 @@ pre {
 
 #edit-cont {
     margin:           5px 28px 18px;
-    overflow:         auto;
 }
 
 #editor {
+    min-width:        100%;
+    max-width:        100%;
+    width:            100%;
+    min-height:       4.7em;
+    border:           1px solid #3b9308;
+    border-radius:    10px;
+    padding:          8px;
+    line-height:      1.3em;
     background-color: #cdefed;
 }
 
