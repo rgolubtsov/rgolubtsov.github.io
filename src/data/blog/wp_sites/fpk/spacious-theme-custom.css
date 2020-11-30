@@ -135,9 +135,12 @@ div.tg-one-third.tg-after-two-blocks-clearfix {
     border: none;
 }
 #fpk-submenu-on-the-page {
-    margin:    0 !important;
-    padding:   0 !important;
-    font-size: 1.3em;
+    margin:        0;
+    border:        1px solid #eaeaea;
+    border-radius: 10px;
+    padding:       3px;
+    font-size:     1.3em;
+    box-shadow:    0 0 30px rgba(0, 0, 0, 0.05) inset;
 }
 #fpk-submenu-on-the-page li {
     display: grid;
