@@ -129,8 +129,25 @@ div.tg-one-third.tg-after-two-blocks-clearfix {
 /* --- Footer - End -------------------------------------------------------- */
 
 /* --- Content - Begin ----------------------------------------------------- */
-#fpk-staff td,
-#fpk-povyshenie-kvalifikaczii td {
+div#page-is-under-construction {
+    margin-bottom:    15px;
+    border-radius:    8px;
+    padding:          10px;
+    text-align:       center;
+    background-color: #0fbe7c;
+    color:            #ffffff;
+    font-weight:      bold;
+}
+article#post-15  p,
+article#post-493 p,
+article#post-493 ul,
+article#post-499 p {
+    text-align:  justify;
+    text-indent: 1.7em;
+    line-height: 1.4em;
+    font-size:   1.3em;
+}
+#fpk-staff td {
     width:  100%;
     border: none;
 }
@@ -166,7 +183,7 @@ div.tg-one-third.tg-after-two-blocks-clearfix {
 .download-button {
     width:     80%;
     padding:   10px;
-    font-size: 1.3em;
+    font-size: 1.1em;
 }
 /* --- Content - End ------------------------------------------------------- */
 
