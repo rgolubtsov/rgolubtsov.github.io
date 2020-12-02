@@ -147,6 +147,30 @@ article#post-499 p {
     line-height: 1.4em;
     font-size:   1.3em;
 }
+#fpk-about-specialties-cont {
+    border-radius: 10px;
+    overflow:      auto;
+}
+#fpk-about-specialties {
+    font-size: 1.2em;
+}
+#fpk-about-specialties td {
+    border: 1px solid #0fbe7c;
+}
+#fpk-a-s-header-0 td,
+#fpk-a-s-header-1 td {
+    text-align:       center;
+    background-color: #0fbe7c;
+    color:            #ffffff;
+    font-weight:      bold;
+}
+#fpk-a-s-header-1 td {
+    background-color: #1fcf8d;
+    font-size: 0.8em;
+}
+.fpk-a-s-body-td-right {
+    text-align: right;
+}
 #fpk-staff td {
     width:  100%;
     border: none;
