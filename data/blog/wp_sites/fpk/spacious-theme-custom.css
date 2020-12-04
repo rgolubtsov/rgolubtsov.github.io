@@ -148,8 +148,7 @@ article#post-499 p {
     font-size:   1.3em;
 }
 #fpk-about-specialties-cont {
-    border-radius: 10px;
-    overflow:      auto;
+    overflow: auto;
 }
 #fpk-about-specialties {
     font-size: 1.2em;
@@ -166,7 +165,7 @@ article#post-499 p {
 }
 #fpk-a-s-header-1 td {
     background-color: #1fcf8d;
-    font-size: 0.8em;
+    font-size:        0.8em;
 }
 .fpk-a-s-body-td-right {
     text-align: right;
