@@ -4023,5 +4023,30 @@
         },{ "gid"   : 7,
             "score" : ""
         }]
+    },
+    {
+        "mid"       : ,
+        "year"      : "2020",
+        "month"     : "December",
+        "day"       : 5,
+        "weekday"   : "Sa",
+        "winner"    : "Radicchio",
+        "result"    : "1-4",
+        "games"     : [{
+            "gid"   : 1,
+            "score" : "3:11"
+        },{ "gid"   : 2,
+            "score" : "11:5"
+        },{ "gid"   : 3,
+            "score" : "6:11"
+        },{ "gid"   : 4,
+            "score" : "8:11"
+        },{ "gid"   : 5,
+            "score" : "6:11"
+        },{ "gid"   : 6,
+            "score" : ""
+        },{ "gid"   : 7,
+            "score" : ""
+        }]
     }]
 }
