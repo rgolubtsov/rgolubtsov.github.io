@@ -138,17 +138,18 @@ div#page-is-under-construction {
     color:            #ffffff;
     font-weight:      bold;
 }
-article#post-15  p,
-article#post-493 p,
-article#post-493 ul,
-article#post-499 p {
+article#post-15   p,
+article#post-493  p,
+article#post-493  ul,
+article#post-499  p,
+article#post-1492 p {
     text-align:  justify;
     text-indent: 1.7em;
     line-height: 1.4em;
     font-size:   1.3em;
 }
 #fpk-about-specialties-cont {
-    overflow: auto;
+    overflow:      auto;
 }
 #fpk-about-specialties {
     font-size: 1.2em;
@@ -207,6 +208,33 @@ article#post-499 p {
     width:     80%;
     padding:   10px;
     font-size: 1.1em;
+}
+div.nf-form-fields-required {
+    margin-bottom: 10px;
+    text-align:    center;
+    font-size:     1.1em;
+    font-weight:   bold;
+}
+textarea {
+    border:        1px solid #0fbe7c !important;
+    border-radius: 8px !important;
+}
+input[type="button"]#nf-field-16 {
+    border:            2px solid #0fbe7c;
+    border-radius:     8px;
+    padding:           10px 30px 14px;
+    background-color:  #0fbe7c;
+    color:             #ffffff;
+    font-size:         1.6em;
+    font-weight:       bold;
+    font-variant-caps: all-small-caps;
+}
+input[type="button"]#nf-field-16:hover,
+input[type="button"]#nf-field-16:active {
+    border:           2px solid #0fbe7c;
+    background-color: #ffffff;
+    color:            #0fbe7c;
+    transition:       none;
 }
 /* --- Content - End ------------------------------------------------------- */
 
