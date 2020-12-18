@@ -78,10 +78,10 @@ img.fpk-footer-sidebar-logo {
     border-radius: 8px;
 }
 div.fpk-footer-sidebar-contact-us-button {
-    margin:            1.4em 3.5em;
+    margin:            0.5em 3.5em;
     border:            2px solid #0fbe7c;
     border-radius:     8px;
-    padding:           10px 20px 12px;
+    padding:           6px 20px 8px;
     text-align:        center;
     color:             #0fbe7c;
     font-size:         1.6em;
@@ -93,12 +93,14 @@ div.fpk-footer-sidebar-contact-us-button:active {
     background-color: #0fbe7c;
     color:            #ffffff !important;
 }
-/*div.fpk-footer-sidebar-copyright {
-    padding-top: 2px;
-    text-align:  center;
-    color:       #cccccc;
-    font-size:   1.3em;
-}*/
+div.fpk-social-media-icons {
+    max-height:       2.8em;
+    border-radius:    8px;
+    padding-top:      4px;
+    padding-bottom:   0px;
+    background-color: #0fbe7c;
+    display:          inline-block;
+}
 div.footer-socket-wrapper {
     height:           25px;
     border:           0;
