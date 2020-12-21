@@ -133,6 +133,9 @@ div.tg-one-third.tg-after-two-blocks-clearfix {
 /* --- Footer - End -------------------------------------------------------- */
 
 /* --- Content - Begin ----------------------------------------------------- */
+div#comments.comments-area {
+    display: none;
+}
 div#page-is-under-construction {
     margin-bottom:    15px;
     border-radius:    8px;
