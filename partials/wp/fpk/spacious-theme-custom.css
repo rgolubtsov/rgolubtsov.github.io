@@ -1,4 +1,3 @@
-
 /* === FPK.I-BTEU.BY Spacious Theme Custom CSS ============================= */
 
 a {
@@ -160,6 +159,16 @@ div.tg-one-third.tg-after-two-blocks-clearfix {
 /* --- Footer - End -------------------------------------------------------- */
 
 /* --- Content - Begin ----------------------------------------------------- */
+h1.header-post-title-class {
+    color:       #0fbe7c;
+    font-weight: bold;
+}
+div.breadcrumb {
+    font-size: 1.1em;
+}
+div.breadcrumb .breadcrumb-title {
+    color: #000000;
+}
 div#comments.comments-area {
     display: none;
 }
@@ -182,6 +191,10 @@ article ol {
 }
 article ol {
     text-indent: 0;
+}
+article ol ul li {
+    text-indent: -24px;
+    font-size:   0.75em;
 }
 article#post-689 div.contacts {
     padding-top:  10px;
@@ -360,6 +373,19 @@ input[type="button"]#nf-field-16:active {
     background-color: #ffffff;
     color:            #0fbe7c;
     transition:       none;
+}
+div.fpk-news-cont {
+    margin-bottom: 10px;
+    border-bottom: 2px solid #0fbe7c;
+}
+div.fpk-news-img-cont {
+    padding:       2px;
+    margin-bottom: 30px;
+    text-align:    center;
+}
+img.fpk-news-img {
+    margin:        0;
+    border-radius: 10px;
 }
 /* --- Content - End ------------------------------------------------------- */
 
