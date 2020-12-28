@@ -1,3 +1,4 @@
+
 /* === FPK.I-BTEU.BY Spacious Theme Custom CSS ============================= */
 
 a {
@@ -201,6 +202,19 @@ article#post-689 div.contacts {
     padding-left: 1.7em;
     font-size:    larger;
 }
+.fpk-tabs-on-the-page-wrap ul li {
+    text-indent: 1em;
+}
+.fpk-tabs-on-the-page-wrap ol {
+    padding-left: 2.8em;
+}
+.fpk-tabs-on-the-page-wrap input[type="button"] {
+    border-radius:     8px;
+    padding:           10px 30px 12px;
+    font-size:         larger;
+    font-weight:       bold;
+    font-variant-caps: all-small-caps;
+}
 #fpk-about-specialties-cont {
     overflow: auto;
 }
@@ -288,7 +302,7 @@ article#post-689 div.contacts {
 }
 .fpk-tabs-on-the-page-cont div div {
     width:            100%;
-    min-height:       500px;
+    min-height:       1000px;
     top:             -4px;
     border-top:       2px solid #0fbe7c;
     padding-top:      30px;
@@ -329,7 +343,7 @@ article#post-689 div.contacts {
     visibility: hidden;
 }
 .fpk-tabs-on-the-page-wrap {
-    min-height: 500px;
+    min-height: 1000px;
     position:   relative;
 }
 #retraining:target,
