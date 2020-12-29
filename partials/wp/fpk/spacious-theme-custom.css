@@ -194,7 +194,8 @@ article ol {
     text-indent: 0;
 }
 article ol ul li {
-    text-indent: -24px;
+    text-indent: -1.2em;
+    line-height: 1.4em;
     font-size:   0.75em;
 }
 article#post-689 div.contacts {
@@ -202,19 +203,19 @@ article#post-689 div.contacts {
     padding-left: 1.7em;
     font-size:    larger;
 }
-.fpk-tabs-on-the-page-wrap ul li {
+/*.fpk-tabs-on-the-page-wrap ul li {
     text-indent: 1em;
-}
-.fpk-tabs-on-the-page-wrap ol {
+}*/
+/*.fpk-tabs-on-the-page-wrap ol {
     padding-left: 2.8em;
-}
-.fpk-tabs-on-the-page-wrap input[type="button"] {
+}*/
+/*.fpk-tabs-on-the-page-wrap input[type="button"] {
     border-radius:     8px;
     padding:           10px 30px 12px;
     font-size:         larger;
     font-weight:       bold;
     font-variant-caps: all-small-caps;
-}
+}*/
 #fpk-about-specialties-cont {
     overflow: auto;
 }
@@ -297,10 +298,10 @@ article#post-689 div.contacts {
     background-color: #0fbe7c;
     color:            #ffffff;
 }
-.fpk-tabs-on-the-page-cont {
+/*.fpk-tabs-on-the-page-cont {
     margin-bottom: 4px;
-}
-.fpk-tabs-on-the-page-cont div div {
+}*/
+/*.fpk-tabs-on-the-page-cont div div {
     width:            100%;
     min-height:       1000px;
     top:             -4px;
@@ -308,17 +309,17 @@ article#post-689 div.contacts {
     padding-top:      30px;
     position:         absolute;
     background-color: #ffffff;
-}
-.fpk-tabs-on-the-page {
+}*/
+/*.fpk-tabs-on-the-page {
     margin:    0px !important;
     padding:   0px !important;
     font-size: 1.3em;
-}
-.fpk-tabs-on-the-page li {
+}*/
+/*.fpk-tabs-on-the-page li {
     list-style: none;
     display:    inline;
-}
-.fpk-tabs-on-the-page li a {
+}*/
+/*.fpk-tabs-on-the-page li a {
     margin:           0px 2px 2px 0px;
     border:           2px solid #0fbe7c;
     border-radius:    8px 8px 0px 0px;
@@ -327,32 +328,32 @@ article#post-689 div.contacts {
     float:            left;
     background-color: #0fbe7c;
     color:            #ffffff;
-}
-.fpk-tabs-on-the-page a:hover,
+}*/
+/*.fpk-tabs-on-the-page a:hover,
 .fpk-tabs-on-the-page a:active {
     border:           2px solid #eaeaea;
     background-color: #eaeaea;
     color:            #333333;
-}
-.fpk-tabs-group:after {
+}*/
+/*.fpk-tabs-group:after {
     height:     0;
     font-size:  0;
     content:    " ";
     display:    block;
     clear:      both;
     visibility: hidden;
-}
-.fpk-tabs-on-the-page-wrap {
+}*/
+/*.fpk-tabs-on-the-page-wrap {
     min-height: 1000px;
     position:   relative;
-}
-#retraining:target,
+}*/
+/*#retraining:target,
 #documents:target,
 #diploma:target,
 #specialties:target,
 #cost-of-edu:target {
     z-index: 1;
-}
+}*/
 .download-button {
     width:     80%;
     padding:   10px;
@@ -391,6 +392,12 @@ input[type="button"]#nf-field-16:active {
 div.fpk-news-cont {
     margin-bottom: 10px;
     border-bottom: 2px solid #0fbe7c;
+}
+div.fpk-news-date-cont {
+    padding:     0px 2px 8px;
+    text-align:  right;
+    font-size:   0.85em;
+    font-weight: bold;
 }
 div.fpk-news-img-cont {
     padding:       2px;
