@@ -86,7 +86,7 @@ ul#menu-footer-menu {
 li#menu-item-1210,
 li#menu-item-1211,
 li#menu-item-1212,
-li#menu-item-435 {
+li#menu-item-1740 {
     font-size: 1.3em;
 }
 p.fpk-footer-sidebar-paragraph {
@@ -160,6 +160,18 @@ div.tg-one-third.tg-after-two-blocks-clearfix {
 /* --- Footer - End -------------------------------------------------------- */
 
 /* --- Content - Begin ----------------------------------------------------- */
+.widget_service_block .widget-title {
+    font-weight: bold;
+}
+.widget_service_block .widget-title a {
+    color: #0fbe7c;
+}
+.widget_service_block .more-link-wrap {
+    display: none;
+}
+.widget_service_block .more-link-wrap .more-link {
+    font-size: 1em;
+}
 h1.header-post-title-class {
     color:       #0fbe7c;
     font-weight: bold;
