@@ -401,9 +401,21 @@ input[type="button"]#nf-field-16:active {
     color:            #0fbe7c;
     transition:       none;
 }
-div.fpk-news-cont {
-    margin-bottom: 10px;
-    border-bottom: 2px solid #0fbe7c;
+span.fpk-generic-button-on-the-page {
+    border:            2px solid #0fbe7c;
+    border-radius:     8px;
+    padding:           0px 30px 4px;
+    background-color:  #0fbe7c;
+    color:             #ffffff;
+    font-size:         1.5em;
+    font-weight:       bold;
+    font-variant-caps: all-small-caps;
+}
+span.fpk-generic-button-on-the-page:hover,
+span.fpk-generic-button-on-the-page:active {
+    border:           2px solid #eaeaea;
+    background-color: #eaeaea;
+    color:            #333333;
 }
 div.fpk-news-date-cont {
     padding:     0px 2px 8px;
