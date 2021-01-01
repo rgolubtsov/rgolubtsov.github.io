@@ -417,6 +417,10 @@ span.fpk-generic-button-on-the-page:active {
     background-color: #eaeaea;
     color:            #333333;
 }
+div.fpk-news-cont {
+    margin-bottom: 10px;
+    border-bottom: 2px solid #0fbe7c;
+}
 div.fpk-news-date-cont {
     padding:     0px 2px 8px;
     text-align:  right;
