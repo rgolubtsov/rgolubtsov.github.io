@@ -228,23 +228,35 @@ article#post-689 div.contacts {
     font-weight:       bold;
     font-variant-caps: all-small-caps;
 }*/
-#fpk-about-specialties-cont {
+#fpk-about-specialties-cont,
+#fpk-retraining-specialties-cont,
+#fpk-retraining-specialties-cont-ex {
     overflow: auto;
 }
-#fpk-about-specialties {
+#fpk-about-specialties,
+#fpk-retraining-specialties,
+#fpk-retraining-specialties-ex {
     font-size: 1.2em;
 }
-#fpk-about-specialties td {
+#fpk-about-specialties         td,
+#fpk-retraining-specialties    td,
+#fpk-retraining-specialties-ex td {
     border: 1px solid #0fbe7c;
 }
-#fpk-a-s-header-0 td,
-#fpk-a-s-header-1 td {
+#fpk-a-s-header-0    td,
+#fpk-a-s-header-1    td,
+#fpk-r-s-header-0    td,
+#fpk-r-s-header-1    td,
+#fpk-r-s-header-0-ex td,
+#fpk-r-s-header-1-ex td {
     text-align:       center;
     background-color: #0fbe7c;
     color:            #ffffff;
     font-weight:      bold;
 }
-#fpk-a-s-header-1 td {
+#fpk-a-s-header-1    td,
+#fpk-r-s-header-1    td,
+#fpk-r-s-header-1-ex td {
     background-color: #1fcf8d;
     font-size:        0.8em;
 }
@@ -425,6 +437,24 @@ span.fpk-generic-button-on-the-page:active {
     border:           2px solid #eaeaea;
     background-color: #eaeaea;
     color:            #333333;
+}
+div.fpk-diploma-img-cont {
+    margin-bottom: 10px;
+    text-align:    center;
+}
+img.fpk-diploma-img {
+    margin:           0;
+    border-radius:    10px;
+    padding:          10px;
+    background-color: #000000;
+}
+p.fpk-diploma-img-p {
+    margin:       0px 50px 25px;
+    text-align:   center;
+    text-indent:  0;
+    color:        #333333;
+    font-size:    1.1em;
+    font-weight:  bold;
 }
 div.fpk-news-cont {
     margin-bottom: 10px;
