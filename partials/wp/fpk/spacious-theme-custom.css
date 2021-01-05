@@ -384,27 +384,36 @@ textarea {
     border:        1px solid #0fbe7c !important;
     border-radius: 8px               !important;
 }
-input[type="button"]#nf-field-16 {
+div.one-half {
+    width: 100% !important;
+}
+div#nf-field-46-container {
+    margin-left: 0;
+}
+input[type="button"]#nf-field-16,
+input[type="button"]#nf-field-53 {
     border:            2px solid #0fbe7c;
     border-radius:     8px;
-    padding:           10px 30px 14px;
+    padding:           0px 30px 2px;
     background-color:  #0fbe7c;
     color:             #ffffff;
-    font-size:         1.6em;
+    font-size:         1.5em;
     font-weight:       bold;
     font-variant-caps: all-small-caps;
 }
 input[type="button"]#nf-field-16:hover,
-input[type="button"]#nf-field-16:active {
-    border:           2px solid #0fbe7c;
-    background-color: #ffffff;
-    color:            #0fbe7c;
+input[type="button"]#nf-field-53:hover,
+input[type="button"]#nf-field-16:active,
+input[type="button"]#nf-field-53:active {
+    border:           2px solid #eaeaea;
+    background-color: #eaeaea;
+    color:            #333333;
     transition:       none;
 }
 span.fpk-generic-button-on-the-page {
     border:            2px solid #0fbe7c;
     border-radius:     8px;
-    padding:           0px 30px 4px;
+    padding:           0px 30px 2px;
     background-color:  #0fbe7c;
     color:             #ffffff;
     font-size:         1.5em;
