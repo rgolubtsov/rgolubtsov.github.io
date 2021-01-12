@@ -230,33 +230,48 @@ article#post-689 div.contacts {
 }*/
 #fpk-about-specialties-cont,
 #fpk-retraining-specialties-cont,
-#fpk-retraining-specialties-cont-ex {
+#fpk-retraining-specialties-cont-ex,
+#fpk-retraining-cost-of-education-cont,
+#fpk-retraining-cost-of-education-cont-ex {
     overflow: auto;
 }
 #fpk-about-specialties,
 #fpk-retraining-specialties,
-#fpk-retraining-specialties-ex {
+#fpk-retraining-specialties-ex,
+#fpk-retraining-cost-of-education,
+#fpk-retraining-cost-of-education-ex {
     font-size: 1.2em;
 }
-#fpk-about-specialties         td,
-#fpk-retraining-specialties    td,
-#fpk-retraining-specialties-ex td {
+#fpk-about-specialties               td,
+#fpk-retraining-specialties          td,
+#fpk-retraining-specialties-ex       td,
+#fpk-retraining-cost-of-education    td,
+#fpk-retraining-cost-of-education-ex td {
     border: 1px solid #0fbe7c;
 }
-#fpk-a-s-header-0    td,
-#fpk-a-s-header-1    td,
-#fpk-r-s-header-0    td,
-#fpk-r-s-header-1    td,
-#fpk-r-s-header-0-ex td,
-#fpk-r-s-header-1-ex td {
+#fpk-a-s-header-0      td,
+#fpk-a-s-header-1      td,
+#fpk-r-s-header-0      td,
+#fpk-r-s-header-1      td,
+#fpk-r-s-header-0-ex   td,
+#fpk-r-s-header-1-ex   td,
+#fpk-r-c-header-0      td,
+#fpk-r-c-header-0-1    td,
+#fpk-r-c-header-1      td,
+#fpk-r-c-header-0-ex   td,
+#fpk-r-c-header-0-1-ex td,
+#fpk-r-c-header-0-2-ex td,
+#fpk-r-c-header-1-ex   td {
     text-align:       center;
     background-color: #0fbe7c;
     color:            #ffffff;
     font-weight:      bold;
 }
-#fpk-a-s-header-1    td,
-#fpk-r-s-header-1    td,
-#fpk-r-s-header-1-ex td {
+#fpk-a-s-header-1      td,
+#fpk-r-s-header-1      td,
+#fpk-r-s-header-1-ex   td,
+#fpk-r-c-header-1      td,
+#fpk-r-c-header-1-ex   td {
     background-color: #1fcf8d;
     font-size:        0.8em;
 }
