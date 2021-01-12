@@ -232,47 +232,63 @@ article#post-689 div.contacts {
 #fpk-retraining-specialties-cont,
 #fpk-retraining-specialties-cont-ex,
 #fpk-retraining-cost-of-education-cont,
-#fpk-retraining-cost-of-education-cont-ex {
+#fpk-retraining-cost-of-education-cont-ex,
+#fpk-retraining-cost-of-education-cont-ex-1,
+#fpk-retraining-cost-of-education-cont-ex-2 {
     overflow: auto;
 }
 #fpk-about-specialties,
 #fpk-retraining-specialties,
 #fpk-retraining-specialties-ex,
 #fpk-retraining-cost-of-education,
-#fpk-retraining-cost-of-education-ex {
+#fpk-retraining-cost-of-education-ex,
+#fpk-retraining-cost-of-education-ex-1,
+#fpk-retraining-cost-of-education-ex-2 {
     font-size: 1.2em;
 }
-#fpk-about-specialties               td,
-#fpk-retraining-specialties          td,
-#fpk-retraining-specialties-ex       td,
-#fpk-retraining-cost-of-education    td,
-#fpk-retraining-cost-of-education-ex td {
+#fpk-about-specialties                 td,
+#fpk-retraining-specialties            td,
+#fpk-retraining-specialties-ex         td,
+#fpk-retraining-cost-of-education      td,
+#fpk-retraining-cost-of-education-ex   td,
+#fpk-retraining-cost-of-education-ex-1 td,
+#fpk-retraining-cost-of-education-ex-2 td {
     border: 1px solid #0fbe7c;
 }
-#fpk-a-s-header-0      td,
-#fpk-a-s-header-1      td,
-#fpk-r-s-header-0      td,
-#fpk-r-s-header-1      td,
-#fpk-r-s-header-0-ex   td,
-#fpk-r-s-header-1-ex   td,
-#fpk-r-c-header-0      td,
-#fpk-r-c-header-0-1    td,
-#fpk-r-c-header-1      td,
-#fpk-r-c-header-0-ex   td,
-#fpk-r-c-header-0-1-ex td,
-#fpk-r-c-header-0-2-ex td,
-#fpk-r-c-header-1-ex   td {
+#fpk-a-s-header-0        td,
+#fpk-a-s-header-1        td,
+#fpk-r-s-header-0        td,
+#fpk-r-s-header-1        td,
+#fpk-r-s-header-0-ex     td,
+#fpk-r-s-header-1-ex     td,
+#fpk-r-c-header-0        td,
+#fpk-r-c-header-0-1      td,
+#fpk-r-c-header-1        td,
+#fpk-r-c-header-0-ex     td,
+#fpk-r-c-header-0-1-ex   td,
+#fpk-r-c-header-0-2-ex   td,
+#fpk-r-c-header-1-ex     td,
+#fpk-r-c-header-0-ex-1   td,
+#fpk-r-c-header-0-1-ex-1 td,
+#fpk-r-c-header-0-2-ex-1 td,
+#fpk-r-c-header-1-ex-1   td,
+#fpk-r-c-header-0-ex-2   td,
+#fpk-r-c-header-0-1-ex-2 td,
+#fpk-r-c-header-0-2-ex-2 td,
+#fpk-r-c-header-1-ex-2   td {
     text-align:       center;
-    background-color: #0fbe7c;
+    background-color: #1fcf8d;
     color:            #ffffff;
     font-weight:      bold;
 }
-#fpk-a-s-header-1      td,
-#fpk-r-s-header-1      td,
-#fpk-r-s-header-1-ex   td,
-#fpk-r-c-header-1      td,
-#fpk-r-c-header-1-ex   td {
-    background-color: #1fcf8d;
+#fpk-a-s-header-1        td,
+#fpk-r-s-header-1        td,
+#fpk-r-s-header-1-ex     td,
+#fpk-r-c-header-1        td,
+#fpk-r-c-header-1-ex     td,
+#fpk-r-c-header-1-ex-1   td,
+#fpk-r-c-header-1-ex-2   td {
+    background-color: #2fdf9e;
     font-size:        0.8em;
 }
 .fpk-a-s-body-td-center {
@@ -432,9 +448,8 @@ input[type="button"]#nf-field-16:hover,
 input[type="button"]#nf-field-53:hover,
 input[type="button"]#nf-field-16:active,
 input[type="button"]#nf-field-53:active {
-    border:           2px solid #eaeaea;
-    background-color: #eaeaea;
-    color:            #333333;
+    border:           2px solid #1fcf8d;
+    background-color: #1fcf8d;
     transition:       none;
 }
 span.fpk-generic-button-on-the-page {
@@ -449,9 +464,8 @@ span.fpk-generic-button-on-the-page {
 }
 span.fpk-generic-button-on-the-page:hover,
 span.fpk-generic-button-on-the-page:active {
-    border:           2px solid #eaeaea;
-    background-color: #eaeaea;
-    color:            #333333;
+    border:           2px solid #1fcf8d;
+    background-color: #1fcf8d;
 }
 div.fpk-diploma-img-cont {
     margin-bottom: 10px;
