@@ -239,12 +239,14 @@ article#post-689 div.contacts {
 }
 #fpk-about-specialties,
 #fpk-retraining-specialties,
-#fpk-retraining-specialties-ex,
+#fpk-retraining-specialties-ex {
+    font-size: 1.2em;
+}
 #fpk-retraining-cost-of-education,
 #fpk-retraining-cost-of-education-ex,
 #fpk-retraining-cost-of-education-ex-1,
 #fpk-retraining-cost-of-education-ex-2 {
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 #fpk-about-specialties                 td,
 #fpk-retraining-specialties            td,
