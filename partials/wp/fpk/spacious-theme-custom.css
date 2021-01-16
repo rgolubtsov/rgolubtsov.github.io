@@ -6,6 +6,28 @@ a {
 }
 
 /* --- Masthead - Begin ---------------------------------------------------- */
+div#fpk-header-topbar {
+    padding:          4px 4px 4px 8px;
+    background-color: #0fbe7c;
+    font-size:        0.8em;
+    display:          flex;
+    justify-content:  space-between;
+}
+div.fpk-social-media-icons-ex {
+    border:           1px solid #0ead6b;
+    padding-top:      0px     !important;
+    background-color: #0ead6b !important;
+    font-size:        0.94em  !important;
+}
+div.fpk-social-media-icons-ex:hover,
+div.fpk-social-media-icons-ex:active {
+    border:           1px solid #0fbe7c;
+    background-color: #0fbe7c !important;
+}
+a.bvi-link-shortcode {
+    vertical-align: top !important;
+    font-size: 0.95em;
+}
 img.header-image,
 div#header-text-nav-container {
     border: 0;
