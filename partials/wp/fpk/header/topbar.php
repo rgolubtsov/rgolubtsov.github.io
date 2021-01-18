@@ -1,19 +1,19 @@
 <div id="fpk-header-topbar">
 <div>
 <div class="fpk-social-media-icons fpk-social-media-icons-ex" style="margin-right:4px;padding-right:1px;padding-left:1px">
-<a href="https://vk.com/bteu_official" target="_blank" rel="noopener noreferrer"><h2><i class="fa fa-vk"></i></h2></a>
+<a href="https://vk.com/id509207616"                           target="_blank" rel="noopener noreferrer"><h2><i class="fa fa-vk"></i></h2></a>
 </div>
 <div class="fpk-social-media-icons fpk-social-media-icons-ex" style="margin-right:4px;padding-right:4px;padding-left:4px">
-<a href="https://instagram.com/bteu.official" target="_blank" rel="noopener noreferrer"><h2><i class="fa fa-instagram"></i></h2></a>
+<a href="https://instagram.com/bteu.official"                  target="_blank" rel="noopener noreferrer"><h2><i class="fa fa-instagram"></i></h2></a>
 </div>
 <div class="fpk-social-media-icons fpk-social-media-icons-ex" style="margin-right:4px;padding-right:8px;padding-left:8px">
-<a href="https://facebook.com/bteu.gomel" target="_blank" rel="noopener noreferrer"><h2><i class="fa fa-facebook"></i></h2></a>
+<a href="https://facebook.com/bteu.gomel"                      target="_blank" rel="noopener noreferrer"><h2><i class="fa fa-facebook"></i></h2></a>
 </div>
 <div class="fpk-social-media-icons fpk-social-media-icons-ex" style="margin-right:4px;padding-right:4px;padding-left:4px">
 <a href="https://youtube.com/channel/UC_VnzxWFkAufvPvGAOZtrZg" target="_blank" rel="noopener noreferrer"><h2><i class="fa fa-youtube"></i></h2></a>
 </div>
 <div class="fpk-social-media-icons fpk-social-media-icons-ex" style="padding-right:6px;padding-left:6px">
-<a href="https://ok.ru/postupl" target="_blank" rel="noopener noreferrer"><h2><i class="fa fa-odnoklassniki"></i></h2></a>
+<a href="https://ok.ru/postupl"                                target="_blank" rel="noopener noreferrer"><h2><i class="fa fa-odnoklassniki"></i></h2></a>
 </div>
 </div>
 <div>
