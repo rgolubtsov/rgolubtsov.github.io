@@ -57,6 +57,10 @@ li.mega-menu-item > a.mega-menu-link {
 ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link {
     font-size: 1.4em !important;
 }
+li#mega-menu-item-534 > a.mega-menu-link > span.mega-indicator,
+li#mega-menu-item-538 > a.mega-menu-link > span.mega-indicator {
+    float: none !important;
+}
 @media screen and (max-width: 768px) {
     div.bottom-menu.clearfix {
         background-color: #ffffff;
