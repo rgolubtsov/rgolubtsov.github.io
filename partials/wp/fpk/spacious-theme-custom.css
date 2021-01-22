@@ -325,6 +325,43 @@ article#post-689 div.contacts {
 .fpk-a-s-body-td-right {
     text-align: right;
 }
+.fpk-a-s-tooltip-anchor {
+    position: relative;
+}
+.fpk-a-s-tooltip-anchor span.fpk-a-s-tooltip {
+    margin-left: -999em;
+    position:    absolute;
+}
+.fpk-a-s-tooltip-anchor:hover span.fpk-a-s-tooltip {
+    top:         1.2em;
+    left:        0;
+    width:       560px;
+    margin-left: -0.2em;
+    z-index:     999;
+}
+.fpk-a-s-tooltip {
+    border-radius:    10px;
+    padding:          6px;
+    background-color: #eaeaea;
+    box-shadow:       0 0 15px 10px #acacac;
+}
+.fpk-a-s-tooltip-txt {
+    border-radius:    6px;
+    padding:          6px;
+    background-color: #0fbe7c;
+    color:            #ffffff;
+    text-align:       center;
+    font-size:        0.8em;
+    font-weight:      bold;
+    display:          block;
+}
+.fpk-a-s-tooltip-img {
+    padding-top: 6px;
+    display:     block;
+}
+.fpk-a-s-tooltip-img img {
+    border-radius: 6px;
+}
 #fpk-staff td {
     width:       100%;
     border:      none;
