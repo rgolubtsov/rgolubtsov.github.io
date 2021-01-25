@@ -4,10 +4,10 @@
 <a href="https://vk.com/id509207616"                           target="_blank" rel="noopener noreferrer"><h2><i class="fa fa-vk"></i></h2></a>
 </div>
 <div class="fpk-social-media-icons fpk-social-media-icons-ex" style="margin-right:4px;padding-right:4px;padding-left:4px">
-<a href="https://instagram.com/bteu.official"                  target="_blank" rel="noopener noreferrer"><h2><i class="fa fa-instagram"></i></h2></a>
+<a href="https://instagram.com/fpk_bteu"                       target="_blank" rel="noopener noreferrer"><h2><i class="fa fa-instagram"></i></h2></a>
 </div>
 <div class="fpk-social-media-icons fpk-social-media-icons-ex" style="margin-right:4px;padding-right:8px;padding-left:8px">
-<a href="https://facebook.com/bteu.gomel"                      target="_blank" rel="noopener noreferrer"><h2><i class="fa fa-facebook"></i></h2></a>
+<a href="https://facebook.com/100014032668632"                 target="_blank" rel="noopener noreferrer"><h2><i class="fa fa-facebook"></i></h2></a>
 </div>
 <div class="fpk-social-media-icons fpk-social-media-icons-ex" style="margin-right:4px;padding-right:4px;padding-left:4px">
 <a href="https://youtube.com/channel/UC_VnzxWFkAufvPvGAOZtrZg" target="_blank" rel="noopener noreferrer"><h2><i class="fa fa-youtube"></i></h2></a>
