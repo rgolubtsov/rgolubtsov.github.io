@@ -347,16 +347,14 @@ article#post-689 div.contacts {
 #fpk-a-s-tooltip-anchor-21:hover span.fpk-a-s-tooltip,
 #fpk-a-s-tooltip-anchor-23:hover span.fpk-a-s-tooltip,
 #fpk-a-s-tooltip-anchor-24:hover span.fpk-a-s-tooltip,
-#fpk-a-s-tooltip-anchor-25:hover span.fpk-a-s-tooltip,
-#fpk-a-s-tooltip-anchor-26:hover span.fpk-a-s-tooltip {
+#fpk-a-s-tooltip-anchor-25:hover span.fpk-a-s-tooltip {
     top: -19.6em;
 }
 #fpk-a-s-tooltip-anchor-20:hover span.fpk-a-s-tooltip,
+#fpk-a-s-tooltip-anchor-22:hover span.fpk-a-s-tooltip,
+#fpk-a-s-tooltip-anchor-26:hover span.fpk-a-s-tooltip,
 #fpk-a-s-tooltip-anchor-27:hover span.fpk-a-s-tooltip {
     top: -19.7em;
-}
-#fpk-a-s-tooltip-anchor-22:hover span.fpk-a-s-tooltip {
-    top: -44em;
 }
 .fpk-a-s-tooltip {
     border-radius:    10px;
