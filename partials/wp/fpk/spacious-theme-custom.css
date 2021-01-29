@@ -28,6 +28,34 @@ a.bvi-link-shortcode {
     vertical-align: top !important;
     font-size: 0.95em;
 }
+div.quotescollection-quote-wrapper {
+    margin:      10px 15em 0px;
+    text-align:  center;
+    color:       #ffffff;
+    font-size:   1.2em;
+    font-weight: bold;
+    position:    absolute;
+}
+div.quotescollection-quote-wrapper p {
+    font-size: 1.2em;
+}
+div.quotescollection-quote-wrapper div.attribution {
+    padding-left: 30em;
+}
+@media screen and (max-width: 768px) {
+    div.quotescollection-quote-wrapper {
+        margin:      5px 20px 0px;
+        line-height: 1em;
+        font-size:   1em;
+    }
+    div.quotescollection-quote-wrapper p {
+        line-height: 1em;
+        font-size:   1em;
+    }
+    div.quotescollection-quote-wrapper div.attribution {
+        padding-left: 15em;
+    }
+}
 img.header-image,
 div#header-text-nav-container {
     border: 0;
