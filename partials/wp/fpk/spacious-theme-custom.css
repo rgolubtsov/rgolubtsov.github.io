@@ -41,16 +41,17 @@ div.quotescollection-quote-wrapper p {
 }
 div.quotescollection-quote-wrapper div.attribution {
     padding-left: 30em;
+    color:        #3fefaf;
 }
 @media screen and (max-width: 768px) {
     div.quotescollection-quote-wrapper {
         margin:      5px 20px 0px;
         line-height: 1em;
-        font-size:   1em;
+        font-size:   0.9em;
     }
     div.quotescollection-quote-wrapper p {
         line-height: 1em;
-        font-size:   1em;
+        font-size:   1.1em;
     }
     div.quotescollection-quote-wrapper div.attribution {
         padding-left: 15em;
