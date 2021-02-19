@@ -1261,5 +1261,17 @@
             "day"     : 15,
             "weekday" : "Su"
         }]
+    },
+    {
+        "pid"         : 55,
+        "year"        : "2021",
+        "month"       : "February",
+        "name"        : "Just Fitness",
+        "subscrn"     : true,
+        "sessions"    : [{
+            "sid"     : 1,
+            "day"     : 18,
+            "weekday" : "Th"
+        }]
     }]
 }
