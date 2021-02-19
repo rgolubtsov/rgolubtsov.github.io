@@ -261,7 +261,7 @@ article ol {
     text-indent: 0;
 }
 article ol ul li {
-    text-indent: -1.2em;
+    text-indent: 0;
     line-height: 1.4em;
     font-size:   0.75em;
 }
@@ -360,11 +360,19 @@ article#post-689 div.contacts {
 .fpk-a-s-tooltip-anchor {
     position: relative;
 }
-.fpk-a-s-tooltip-anchor span.fpk-a-s-tooltip {
+.fpk-a-s-tooltip-anchor span.fpk-a-s-tooltip,
+.fpk-a-s-tooltip-anchor div.fpk-a-s-tooltip {
     margin-left: -999em;
     position:    absolute;
 }
-.fpk-a-s-tooltip-anchor:hover span.fpk-a-s-tooltip {
+div.fpk-a-s-tooltip-anchor p.fpk-a-s-tooltip-name {
+    margin:      0;
+    text-indent: 0;
+    color:       #0fbe7c;
+    font-size:   1em;
+}
+.fpk-a-s-tooltip-anchor:hover span.fpk-a-s-tooltip,
+.fpk-a-s-tooltip-anchor:hover div.fpk-a-s-tooltip {
     top:         1.2em;
     left:        0;
     width:       560px;
@@ -401,12 +409,28 @@ article#post-689 div.contacts {
     font-weight:      bold;
     display:          block;
 }
+div.fpk-a-s-tooltip .fpk-a-s-tooltip-txt {
+    padding:     0;
+    text-indent: 0;
+    font-size:   0.6em;
+}
 .fpk-a-s-tooltip-img {
     padding-top: 6px;
     display:     block;
 }
 .fpk-a-s-tooltip-img img {
     border-radius: 6px;
+}
+.fpk-a-s-tooltip-descr {
+    padding: 0px 10px;
+    color:   #333333;
+}
+.fpk-a-s-tooltip-descr p,
+.fpk-a-s-tooltip-descr ol {
+    font-size: 0.8em;
+}
+.fpk-a-s-tooltip-descr ol {
+    padding-left: 2.8em;
 }
 #fpk-staff td {
     width:       100%;
