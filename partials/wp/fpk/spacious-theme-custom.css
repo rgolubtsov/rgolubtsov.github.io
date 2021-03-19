@@ -357,6 +357,13 @@ article#post-689 div.contacts {
 .fpk-a-s-body-td-right {
     text-align: right;
 }
+table.fpk-td-align   tr td:nth-child(1),
+table.fpk-td-align-3 tr td:nth-child(1) {
+    text-align: right;
+}
+table.fpk-td-align tr td:nth-child(4) {
+    text-align: center;
+}
 .fpk-a-s-tooltip-anchor {
     position: relative;
 }
@@ -384,7 +391,11 @@ div.fpk-a-s-tooltip-anchor p.fpk-a-s-tooltip-name {
 #fpk-a-s-tooltip-anchor-21:hover span.fpk-a-s-tooltip,
 #fpk-a-s-tooltip-anchor-23:hover span.fpk-a-s-tooltip,
 #fpk-a-s-tooltip-anchor-24:hover span.fpk-a-s-tooltip,
-#fpk-a-s-tooltip-anchor-25:hover span.fpk-a-s-tooltip {
+#fpk-a-s-tooltip-anchor-25:hover span.fpk-a-s-tooltip,
+#fpk-t-c-tooltip-anchor-10:hover span.fpk-a-s-tooltip,
+#fpk-t-c-tooltip-anchor-11:hover span.fpk-a-s-tooltip,
+#fpk-t-c-tooltip-anchor-13:hover span.fpk-a-s-tooltip,
+#fpk-t-c-tooltip-anchor-14:hover span.fpk-a-s-tooltip {
     top: -19.6em;
 }
 #fpk-a-s-tooltip-anchor-20:hover span.fpk-a-s-tooltip,
