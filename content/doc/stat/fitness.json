@@ -1319,6 +1319,11 @@
             "sid"     : 6,
             "day"     : 18,
             "weekday" : "Th"
+        },
+        {
+            "sid"     : 7,
+            "day"     : 25,
+            "weekday" : "Th"
         }]
     }]
 }
