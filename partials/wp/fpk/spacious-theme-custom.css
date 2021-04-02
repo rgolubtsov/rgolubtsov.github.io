@@ -276,7 +276,8 @@ article#post-689 div.contacts {
 #fpk-retraining-cost-of-education-cont,
 #fpk-retraining-cost-of-education-cont-ex,
 #fpk-retraining-cost-of-education-cont-ex-1,
-#fpk-retraining-cost-of-education-cont-ex-2 {
+#fpk-retraining-cost-of-education-cont-ex-2,
+#fpk-retraining-cost-of-education-cont-ex-3 {
     overflow: auto;
 }
 #fpk-retraining-specialties-cont {
@@ -290,7 +291,8 @@ article#post-689 div.contacts {
 #fpk-retraining-cost-of-education,
 #fpk-retraining-cost-of-education-ex,
 #fpk-retraining-cost-of-education-ex-1,
-#fpk-retraining-cost-of-education-ex-2 {
+#fpk-retraining-cost-of-education-ex-2,
+#fpk-retraining-cost-of-education-ex-3 {
     font-size: 1.1em;
 }
 #fpk-about-specialties                 td,
@@ -299,7 +301,8 @@ article#post-689 div.contacts {
 #fpk-retraining-cost-of-education      td,
 #fpk-retraining-cost-of-education-ex   td,
 #fpk-retraining-cost-of-education-ex-1 td,
-#fpk-retraining-cost-of-education-ex-2 td {
+#fpk-retraining-cost-of-education-ex-2 td,
+#fpk-retraining-cost-of-education-ex-3 td {
     border: 1px solid #0fbe7c;
 }
 #fpk-a-s-header-0        td,
@@ -322,7 +325,11 @@ article#post-689 div.contacts {
 #fpk-r-c-header-0-ex-2   td,
 #fpk-r-c-header-0-1-ex-2 td,
 #fpk-r-c-header-0-2-ex-2 td,
-#fpk-r-c-header-1-ex-2   td {
+#fpk-r-c-header-1-ex-2   td,
+#fpk-r-c-header-0-ex-3   td,
+#fpk-r-c-header-0-1-ex-3 td,
+#fpk-r-c-header-0-2-ex-3 td,
+#fpk-r-c-header-1-ex-3   td {
     text-align:       center;
     background-color: #1fcf8d;
     color:            #ffffff;
@@ -507,11 +514,11 @@ textarea {
 div.one-half {
     width: 100% !important;
 }
-div#nf-field-46-container {
+div#nf-field-46_1-container {
     margin-left: 0;
 }
-input[type="button"]#nf-field-16,
-input[type="button"]#nf-field-53 {
+input[type="button"]#nf-field-16_1,
+input[type="button"]#nf-field-53_1 {
     border:            2px solid #0fbe7c;
     border-radius:     8px;
     padding:           0px 30px 2px;
@@ -521,10 +528,10 @@ input[type="button"]#nf-field-53 {
     font-weight:       bold;
     font-variant-caps: all-small-caps;
 }
-input[type="button"]#nf-field-16:hover,
-input[type="button"]#nf-field-53:hover,
-input[type="button"]#nf-field-16:active,
-input[type="button"]#nf-field-53:active {
+input[type="button"]#nf-field-16_1:hover,
+input[type="button"]#nf-field-53_1:hover,
+input[type="button"]#nf-field-16_1:active,
+input[type="button"]#nf-field-53_1:active {
     border:           2px solid #1fcf8d;
     background-color: #1fcf8d;
     transition:       none;
