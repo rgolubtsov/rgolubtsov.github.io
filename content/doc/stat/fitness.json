@@ -1341,6 +1341,11 @@
             "sid"     : 1,
             "day"     : 1,
             "weekday" : "Th"
+        },
+        {
+            "sid"     : 2,
+            "day"     : 15,
+            "weekday" : "Th"
         }]
     }]
 }
