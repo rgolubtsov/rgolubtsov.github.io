@@ -1,13 +1,13 @@
-<%# src/data/blog/stat_repr/ttennis2.ejs %>
+<%# src/data/blog/stats/ttennis2.ejs %>
 
-<% var ttennis      = public.data.blog.stat_repr._data.ttennis;          %>
-<% var m_caption    = ttennis.m_caption;                                 %>
-<% var m_header     = ttennis.m_header;                                  %>
-<% var m_header_len = m_header.length;                                   %>
-<% var matches      = public.data.blog.stat_repr.ttennis_._data.matches; %>
-<% var fitness      = public.data.blog.stat_repr._data.fitness;          %>
-<% var weekdays     = fitness.weekdays;                                  %>
-<% var rows_max     = ttennis.rows_max;                                  %>
+<% var ttennis      = public.data.blog.stats._data.ttennis;          %>
+<% var m_caption    = ttennis.m_caption;                             %>
+<% var m_header     = ttennis.m_header;                              %>
+<% var m_header_len = m_header.length;                               %>
+<% var matches      = public.data.blog.stats.ttennis_._data.matches; %>
+<% var fitness      = public.data.blog.stats._data.fitness;          %>
+<% var weekdays     = fitness.weekdays;                              %>
+<% var rows_max     = ttennis.rows_max;                              %>
 
 <%# This function expands short names of days of the week %>
 <%# to their respective long names taken from metadata.   %>
@@ -111,7 +111,7 @@
 <td class="stat-footnote-ndash">&ndash;</td>
 <td class="stat-footnote-abbrv">W.O.</td>
 <td class="stat-footnote-descr"><%- ttennis.walkover %></td>
-<td id="stat-pager-nav"><span id="stat-pager-nav-prev"><a href="/data/blog/stat_repr/ttennis" title="<%= ttennis.prev_hint %>"><%- ttennis.prev_page %></a></span><span id="stat-pager-nav-next" title="<%= ttennis.next_hint %>" style="margin-right:4px"><%- ttennis.next_page %></span></td>
+<td id="stat-pager-nav"><span id="stat-pager-nav-prev"><a href="/data/blog/stats/ttennis" title="<%= ttennis.prev_hint %>"><%- ttennis.prev_page %></a></span><span id="stat-pager-nav-next" title="<%= ttennis.next_hint %>" style="margin-right:4px"><%- ttennis.next_page %></span></td>
 </tr>
 <tr>
 <td>^</td>
