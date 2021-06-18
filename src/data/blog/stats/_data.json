@@ -59,5 +59,10 @@
         "layout"    : "../../../_radicchio",
         "sitename_" : ": Assorted table tennis",
         "subtitle_" : ""
+    },
+    "ttennis3"      : {
+        "layout"    : "../../../_radicchio",
+        "sitename_" : ": Assorted table tennis",
+        "subtitle_" : ""
     }
 }
