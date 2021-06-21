@@ -5023,5 +5023,30 @@
         },{ "gid"   : 7,
             "score" : ""
         }]
+    },
+    {
+        "mid"       : 202,
+        "year"      : "2021",
+        "month"     : "June",
+        "day"       : 20,
+        "weekday"   : "Su",
+        "winner"    : "Yaro",
+        "result"    : "4-2",
+        "games"     : [{
+            "gid"   : 1,
+            "score" : "11:6"
+        },{ "gid"   : 2,
+            "score" : "11:13"
+        },{ "gid"   : 3,
+            "score" : "9:11"
+        },{ "gid"   : 4,
+            "score" : "11:6"
+        },{ "gid"   : 5,
+            "score" : "11:9"
+        },{ "gid"   : 6,
+            "score" : "11:3"
+        },{ "gid"   : 7,
+            "score" : ""
+        }]
     }]
 }
