@@ -1,0 +1,16 @@
+%#
+%# templates/exception.html.ep
+%# ============================================================================
+%# Magistracy Admission Decree.
+%# Приказ о зачислении в магистратуру.
+%# ============================================================================
+%# Written by Radislav (Radicchio) Golubtsov, 2021
+%#
+
+% layout "exception";
+
+<div id="header">Приказ о зачислении в магистратуру</div>
+<div class="flex-container">
+<div id="msg"><strong>Произошла непредвиденная ошибка.</strong><br /><br /><a style="border:1px solid #d0cdd9;border-radius:3px;padding:4px 12px;text-decoration:none;background-color:#f0effb;color:#000000" href="/login">Авторизуйтесь</a></div>
+</div>
+<div id="footer">Powered by 2021 <a href="//mojolicio.us" target="_blank"><strong>Mojolicious</strong></a></div>

@@ -1,0 +1,88 @@
+%#
+%# templates/layouts/decree.html.ep
+%# ============================================================================
+%# Magistracy Admission Decree.
+%# Приказ о зачислении в магистратуру.
+%# ============================================================================
+%# Written by Radislav (Radicchio) Golubtsov, 2021
+%#
+
+<% my $title1 = "Приказ о зачислении в магистратуру"; %>
+
+<!DOCTYPE html>
+<html lang="ru-RU" dir="ltr">
+<head>
+<meta http-equiv="Content-Type"    content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta       name="viewport"        content="width=device-width,initial-scale=1" />
+<meta       name="description"     content="<%= $title1 %>" />
+<meta       name="author"          content="Radislav (Radicchio) Golubtsov" />
+<title><%= $title1 %></title>
+<link href="//xn--90a8ad3b.xn--90ais/images/favicon.png" type="image/png" rel="shortcut icon" />
+<style>
+body {
+    margin:           0;
+    padding:          0;
+    text-align:       center;
+    background-color: #f0effb;
+    color:            #002060;
+    font-family:      sans-serif;
+}
+#header {
+    padding:          20px 0px;
+    background-color: #2d364c;
+    color:            #ffffff;
+    font-size:        1.5em;
+    font-weight:      bold;
+}
+.flex-container {
+    padding-top:      40px;
+    display:          flex;
+}
+#msg,
+#form {
+    margin:           auto;
+    border:           1px solid #d0cdd9;
+    padding:          20px 30px;
+    line-height:      1.4em;
+    background-color: #ffffff;
+}
+#msg {
+    text-align:       left;
+}
+#form {
+    border:           0;
+    background-color: #f0effb;
+}
+#form #logout_id {
+    margin:           4px 0px 12px;
+    border:           1px solid #2d364c;
+    border-radius:    4px;
+    padding:          8px 20px;
+    background-color: #2d364c;
+    color:            #ffffff;
+}
+#footer {
+    width:            100%;
+    bottom:           0;
+    padding:          6px 0px;
+    background-color: #2d364c;
+    color:            #ffffff;
+    font-size:        0.9em;
+    position:         absolute;
+}
+/*
+ * Styling links according to the LVHA-order:
+ * :link --> :visited --> :hover --> :active.
+ */
+#footer a:link,
+#footer a:visited,
+#footer a:hover,
+#footer a:active {
+    text-decoration:  none;
+    color:            #e0deea;
+}
+</style>
+</head>
+<body><%= content %></body>
+</html>
