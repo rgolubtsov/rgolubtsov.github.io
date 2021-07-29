@@ -38,7 +38,7 @@ use constant {
 # @param {Object} self - The object instance of the class.
 #
 sub show_login($self) {
-    $self->session(expires => 1);
+#   $self->session(expires => 1);
 
     $self->render(
         template => "login",
