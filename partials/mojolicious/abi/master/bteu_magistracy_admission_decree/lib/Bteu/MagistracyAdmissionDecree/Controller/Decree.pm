@@ -37,6 +37,11 @@ sub go_decree($self) {
     );
 }
 
+##
+# Pushes the decree document out to the client to download.
+#
+# @param {Object} self - The object instance of the class.
+#
 sub get_decree($self) {
     if (!$self->is_user_authenticated()) {
         return $self->redirect_to("/login");
