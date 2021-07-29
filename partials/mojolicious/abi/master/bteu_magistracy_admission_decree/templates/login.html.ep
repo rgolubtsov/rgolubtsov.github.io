@@ -21,7 +21,7 @@
 <div class="label"><label for="username_id">Имя пользователя</label></div>
 <div class="input"><input type="text" name="username" value="" placeholder="Фамилия абитуриента" maxlength="30" size="25" id="username_id" /></div>
 <div class="label"><label for="password_id">Пароль</label></div>
-<div class="input"><input type="password" name="password" value="" placeholder="Номер паспорта" maxlength="9" size="25" id="password_id" /></div>
+<div class="input"><input type="password" name="password" value="" placeholder="Номер паспорта" maxlength="7" size="25" id="password_id" /></div>
 <div class="submit"><input type="submit" name="login" value="<%= $title2 %>" id="login_id" /></div>
 </form>
 </div>
