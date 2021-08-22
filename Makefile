@@ -18,7 +18,7 @@ DAT_DIR = data
 
 # Specify flags and other vars here.
 HARP      = harp
-HARPFLAGS = compile
+#HARPFLAGS= compile
 CP        = cp
 CPFLAGS   = -vRf
 CD        = cd
