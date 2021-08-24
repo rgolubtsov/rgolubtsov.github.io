@@ -13,9 +13,6 @@
 
 
 
-
-
-
 <!DOCTYPE html>
 <html lang="en-US" dir="ltr">
 <head>
@@ -46,10 +43,14 @@
 <p><strong>Upgrade OpenBSD 6.3 release to 6.4 release</strong></p>
 <p><strong>(a)</strong> Having installed and running the OpenBSD/amd64 6.3 release, first of all it needs to download the new (6.4) ramdisk kernel <code>bsd.rd</code> and the checksum file <code>SHA256.sig</code> for the appropriate architecture, in this case <code>amd64</code>:</p>
 <pre><code>$ curl -sO https://cdn.openbsd.org/pub/OpenBSD/6.4/amd64/bsd.rd     \
-       -sO https://cdn.openbsd.org/pub/OpenBSD/6.4/amd64/SHA256.sig</code></pre><p><strong>(b)</strong> Verify checksum of the new ramdisk kernel:</p>
+       -sO https://cdn.openbsd.org/pub/OpenBSD/6.4/amd64/SHA256.sig
+</code></pre>
+<p><strong>(b)</strong> Verify checksum of the new ramdisk kernel:</p>
 <pre><code>$ signify -C -p /etc/signify/openbsd-64-base.pub -x SHA256.sig bsd.rd
 Signature Verified
-bsd.rd: OK</code></pre><p><strong>(c)</strong> Permanently set the new CDN URL (it was changed in the 6.4 release) which will be using during system upgrade and later on during upgrading packages:</p>
+bsd.rd: OK
+</code></pre>
+<p><strong>(c)</strong> Permanently set the new CDN URL (it was changed in the 6.4 release) which will be using during system upgrade and later on during upgrading packages:</p>
 <pre><code>$ cat /etc/installurl
 https://ftp.openbsd.org/pub/OpenBSD    &lt;== The old one.
 $
@@ -57,7 +58,9 @@ $ sudo su -
 # echo &quot;https://cdn.openbsd.org/pub/OpenBSD&quot; &gt; /etc/installurl
 $
 $ cat /etc/installurl
-https://cdn.openbsd.org/pub/OpenBSD    &lt;== The new one.</code></pre><p><strong>(d)</strong> Remove unneeded (unused) files:</p>
+https://cdn.openbsd.org/pub/OpenBSD    &lt;== The new one.
+</code></pre>
+<p><strong>(d)</strong> Remove unneeded (unused) files:</p>
 <pre><code>$ sudo rm -vf /dev/audio /dev/audioctl
 /dev/audio
 /dev/audioctl
@@ -79,18 +82,32 @@ $ sudo rm -vf /usr/X11R6/lib/libxcb-xevie.*          \
 /usr/X11R6/lib/libxcb-xprint.a
 /usr/X11R6/lib/libxcb-xprint.so.3.0
 /usr/X11R6/lib/pkgconfig/xcb-xevie.pc
-/usr/X11R6/lib/pkgconfig/xcb-xprint.pc</code></pre><p><strong>(e)</strong> Remove unneeded (unused) user and group:</p>
-<pre><code>$ sudo userdel _rtadvd &amp;&amp; sudo groupdel _rtadvd</code></pre><p><strong>(f)</strong> Disable starting up the <code>buildslave</code> (obsolete) daemon:</p>
-<pre><code>$ sudo rcctl disable buildslave</code></pre><p><strong>(g)</strong> Copy the new ramdisk kernel to the root filesystem:</p>
+/usr/X11R6/lib/pkgconfig/xcb-xprint.pc
+</code></pre>
+<p><strong>(e)</strong> Remove unneeded (unused) user and group:</p>
+<pre><code>$ sudo userdel _rtadvd &amp;&amp; sudo groupdel _rtadvd
+</code></pre>
+<p><strong>(f)</strong> Disable starting up the <code>buildslave</code> (obsolete) daemon:</p>
+<pre><code>$ sudo rcctl disable buildslave
+</code></pre>
+<p><strong>(g)</strong> Copy the new ramdisk kernel to the root filesystem:</p>
 <pre><code>$ sudo cp -vf bsd.rd /
-bsd.rd -&gt; /bsd.rd</code></pre><p><strong>== IT&#39;S THE TIME TO BOOT INTO THE NEW KERNEL ==</strong></p>
+bsd.rd -&gt; /bsd.rd
+</code></pre>
+<p><strong>== IT&#39;S THE TIME TO BOOT INTO THE NEW KERNEL ==</strong></p>
 <p><strong>(h)</strong> Reboot:</p>
-<pre><code>$ sudo shutdown -r now</code></pre><p><strong>(i)</strong> At the boot loader prompt type <code>bsd.rd</code> and hit <code>&lt;Enter&gt;</code>:</p>
-<pre><code>boot&gt; bsd.rd</code></pre><p><strong>(j)</strong> After the kernel is booted, hit <code>s</code> (that means <code>(S)hell</code>) to enter the shell to configure network if not already autoconfigured. In the shell make necessary network configurations, then hit <code>&lt;Ctrl-D&gt;</code> to return to the installation/upgrading program. (This step is very important if, for example, OpenBSD is installed and running inside a virtual machine, like <a href="https://github.com/rgolubtsov/dotfiles/blob/master/openbsd/README.md" title="OpenBSD VM-boxes using QEMU">this one</a>):</p>
+<pre><code>$ sudo shutdown -r now
+</code></pre>
+<p><strong>(i)</strong> At the boot loader prompt type <code>bsd.rd</code> and hit <code>&lt;Enter&gt;</code>:</p>
+<pre><code>boot&gt; bsd.rd
+</code></pre>
+<p><strong>(j)</strong> After the kernel is booted, hit <code>s</code> (that means <code>(S)hell</code>) to enter the shell to configure network if not already autoconfigured. In the shell make necessary network configurations, then hit <code>&lt;Ctrl-D&gt;</code> to return to the installation/upgrading program. (This step is very important if, for example, OpenBSD is installed and running inside a virtual machine, like <a href="https://github.com/rgolubtsov/dotfiles/blob/master/openbsd/README.md" title="OpenBSD VM-boxes using QEMU">this one</a>):</p>
 <pre><code># ifconfig vio0 10.0.2.101/24
 # route add default 10.0.2.1
 add net default: gateway 10.0.2.1
-# ^D</code></pre><p><strong>(k)</strong> Hit <code>u</code> (that means <code>(U)pgrade</code>) and follow sequential prompts. In most cases for most questions just hit <code>&lt;Enter&gt;</code> for default choices.</p>
+# ^D
+</code></pre>
+<p><strong>(k)</strong> Hit <code>u</code> (that means <code>(U)pgrade</code>) and follow sequential prompts. In most cases for most questions just hit <code>&lt;Enter&gt;</code> for default choices.</p>
 <p>After rebooting into the upgraded system...</p>
 <pre><code>OpenBSD 6.4 (GENERIC.MP) #364: Thu Oct 11 13:30:23 MDT 2018
 
@@ -100,10 +117,14 @@ Please use the sendbug(1) utility to report bugs in the system.
 Before reporting a bug, please try to reproduce it with the latest
 version of the code.  With bug reports, please try to ensure that
 enough information to reproduce the problem is enclosed, and if a
-known fix for it exists, include that as well.</code></pre><p>...and making initial network configurations...</p>
+known fix for it exists, include that as well.
+</code></pre>
+<p>...and making initial network configurations...</p>
 <pre><code>$ sudo ifconfig vio0 10.0.2.101/24
 $ sudo route add default 10.0.2.1
-add net default: gateway 10.0.2.1</code></pre><p>...upgrade packages:</p>
+add net default: gateway 10.0.2.1
+</code></pre>
+<p>...upgrade packages:</p>
 <pre><code>$ sudo pkg_add -uv
 Update candidates: quirks-2.414 -&gt; quirks-3.16
 quirks-3.16 signed on 2018-10-12T15:26:25Z
@@ -117,7 +138,9 @@ Read shared items: ok
 ...
 Obsolete package: mozjs17-17.0p4 (no longer maintained and full of security holes)
 Couldn&#39;t find updates for mozjs17-17.0p4
-Extracted 2124668768 from 2265411565</code></pre><p><strong>(l)</strong> Make all the necessary removals and updates which were reported by the <code>pkg_add</code> command:</p>
+Extracted 2124668768 from 2265411565
+</code></pre>
+<p><strong>(l)</strong> Make all the necessary removals and updates which were reported by the <code>pkg_add</code> command:</p>
 <pre><code>$ sudo rm -f /var/db/colord/mapping.db \
              /var/db/colord/storage.db
 $
@@ -147,18 +170,26 @@ $ sudo update-mime-database /usr/local/share/mime/
 $
 $ sudo pkg_delete -v mozjs17
 mozjs17-17.0p4: ok
-Read shared items: ok</code></pre><p><strong>(m)</strong> Remove previously downloaded and already unneeded ramdisk kernel and its checksum file which reside in the user home directory:</p>
+Read shared items: ok
+</code></pre>
+<p><strong>(m)</strong> Remove previously downloaded and already unneeded ramdisk kernel and its checksum file which reside in the user home directory:</p>
 <pre><code>$ rm -vf bsd.rd SHA256.sig
 bsd.rd
-SHA256.sig</code></pre><p><strong>== OPENBSD HAS BEEN UPGRADED TO THE 6.4 RELEASE ==</strong></p>
+SHA256.sig
+</code></pre>
+<p><strong>== OPENBSD HAS BEEN UPGRADED TO THE 6.4 RELEASE ==</strong></p>
 <p><img src="http://github.githubassets.com/images/icons/emoji/unicode/1f603.png" class="emoji" alt="" /></p>
 <p><strong>Upgrade OpenBSD 6.4 release to 6.5 release</strong></p>
 <p>Now having installed and running the OpenBSD/amd64 6.4 release, there is a need to download the new (6.5) ramdisk kernel <code>bsd.rd</code> and the checksum file <code>SHA256.sig</code> for the appropriate architecture, in this case <code>amd64</code>, just like as it is stated in the beginning of the previous section &ndash; subsection <strong>(a)</strong>:</p>
 <pre><code>$ curl -sO https://cdn.openbsd.org/pub/OpenBSD/6.5/amd64/bsd.rd     \
-       -sO https://cdn.openbsd.org/pub/OpenBSD/6.5/amd64/SHA256.sig</code></pre><p>Verify checksum of the new ramdisk kernel:</p>
+       -sO https://cdn.openbsd.org/pub/OpenBSD/6.5/amd64/SHA256.sig
+</code></pre>
+<p>Verify checksum of the new ramdisk kernel:</p>
 <pre><code>$ signify -C -p /etc/signify/openbsd-65-base.pub -x SHA256.sig bsd.rd
 Signature Verified
-bsd.rd: OK</code></pre><p>Remove unneeded (unused) files:</p>
+bsd.rd: OK
+</code></pre>
+<p>Remove unneeded (unused) files:</p>
 <pre><code>$ sudo rm -vf /usr/include/openssl/asn1_mac.h
 /usr/include/openssl/asn1_mac.h
 $
@@ -205,7 +236,9 @@ $ sudo rm -vf /usr/bin/c2ph                                      \
 /usr/libdata/perl5/unicore/lib/Sc/Zzzz.pl
 /usr/share/man/man1/c2ph.1
 /usr/share/man/man1/pstruct.1
-/usr/share/man/man3p/Locale::Codes::API.3p</code></pre><p>Perform actions from the previous section &ndash; subsections <strong>(g)</strong> to <strong>(k)</strong>, then:</p>
+/usr/share/man/man3p/Locale::Codes::API.3p
+</code></pre>
+<p>Perform actions from the previous section &ndash; subsections <strong>(g)</strong> to <strong>(k)</strong>, then:</p>
 <p>After rebooting into the upgraded system...</p>
 <pre><code>OpenBSD 6.5 (GENERIC.MP) #3: Sat Apr 13 14:48:43 MDT 2019
 
@@ -215,10 +248,14 @@ Please use the sendbug(1) utility to report bugs in the system.
 Before reporting a bug, please try to reproduce it with the latest
 version of the code.  With bug reports, please try to ensure that
 enough information to reproduce the problem is enclosed, and if a
-known fix for it exists, include that as well.</code></pre><p>...and making initial network configurations...</p>
+known fix for it exists, include that as well.
+</code></pre>
+<p>...and making initial network configurations...</p>
 <pre><code>$ sudo ifconfig vio0 10.0.2.101/24
 $ sudo route add default 10.0.2.1
-add net default: gateway 10.0.2.1</code></pre><p>...it&#39;s the time to upgrade packages: <code>$ sudo pkg_add -uv</code>; but first check the package database:</p>
+add net default: gateway 10.0.2.1
+</code></pre>
+<p>...it&#39;s the time to upgrade packages: <code>$ sudo pkg_add -uv</code>; but first check the package database:</p>
 <pre><code>$ pkg_info
 perl:/usr/local/libdata/perl5/site_perl/amd64-openbsd/auto/Cwd/Cwd.so: undefined symbol &#39;PL_sv_undef&#39;
 Can&#39;t load &#39;/usr/local/libdata/perl5/site_perl/amd64-openbsd/auto/Cwd/Cwd.so&#39; for module Cwd: Cannot load specified object at /usr/local/libdata/perl5/site_perl/amd64-openbsd/XSLoader.pm line 96.
@@ -226,7 +263,9 @@ Can&#39;t load &#39;/usr/local/libdata/perl5/site_perl/amd64-openbsd/auto/Cwd/Cw
 Compilation failed in require at /usr/local/libdata/perl5/site_perl/amd64-openbsd/File/Spec/Unix.pm line 4.
 BEGIN failed--compilation aborted at /usr/local/libdata/perl5/site_perl/amd64-openbsd/File/Spec/Unix.pm line 4.
 Compilation failed in require at /usr/local/libdata/perl5/site_perl/amd64-openbsd/File/Spec.pm line 21.
-Compilation failed in require at /usr/libdata/perl5/OpenBSD/PackageInfo.pm line 168.</code></pre><p>The command above doesn&#39;t work, and as it is clearly seeing in the output, something gets wrong with the Perl module <code>Cwd</code>. But further investigations show out that this module (as being an XS-module) was compiled to use with the previous version of Perl, hence it is incompatible with the currently installed Perl release.</p>
+Compilation failed in require at /usr/libdata/perl5/OpenBSD/PackageInfo.pm line 168.
+</code></pre>
+<p>The command above doesn&#39;t work, and as it is clearly seeing in the output, something gets wrong with the Perl module <code>Cwd</code>. But further investigations show out that this module (as being an XS-module) was compiled to use with the previous version of Perl, hence it is incompatible with the currently installed Perl release.</p>
 <p>Obviously, the easiest solution to repair this crucial Perl module is to replace the whole Perl base module set with that one freshly downloaded from the OpenBSD CDN. It is contained in the <code>base65.tgz</code> tarball. The following compound one-liner command will replace the old Perl base module set with the new one, with minimal effort from the user side:</p>
 <pre><code>$ mkdir        xyz                                                                                  &amp;&amp; \
   cd           xyz/                                                                                 &amp;&amp; \
@@ -235,7 +274,9 @@ Compilation failed in require at /usr/libdata/perl5/OpenBSD/PackageInfo.pm line 
   sudo rm -Rf  /usr/local/libdata/perl5/site_perl/amd64-openbsd/*                                   &amp;&amp; \
   sudo cp -Rf ./usr/libdata/perl5/amd64-openbsd/* /usr/local/libdata/perl5/site_perl/amd64-openbsd/ &amp;&amp; \
   cd -                                                                                              &amp;&amp; \
-  sudo rm -Rf  xyz/</code></pre><p>Now package manipulation commands (<code>pkg_info</code>, <code>pkg_add</code>, <code>pkg_delete</code>, etc.) should be working fine:</p>
+  sudo rm -Rf  xyz/
+</code></pre>
+<p>Now package manipulation commands (<code>pkg_info</code>, <code>pkg_add</code>, <code>pkg_delete</code>, etc.) should be working fine:</p>
 <pre><code>$ pkg_info
 adwaita-icon-theme-3.28.0p1 base icon theme for GNOME
 at-spi2-atk-2.26.2  atk-bridge for at-spi2
@@ -243,7 +284,9 @@ at-spi2-core-2.28.0p0 service interface for assistive technologies
 ...
 xz-5.2.4            LZMA compression and decompression tools
 zip-3.0p0           create/update ZIP files compatible with PKZip(tm)
-zstd-1.3.5p0        zstandard fast real-time compression algorithm</code></pre><p>Upgrade packages:</p>
+zstd-1.3.5p0        zstandard fast real-time compression algorithm
+</code></pre>
+<p>Upgrade packages:</p>
 <pre><code>$ sudo pkg_add -uv
 Update candidates: quirks-3.16 -&gt; quirks-3.124
 quirks-3.124 signed on 2019-04-15T12:10:16Z
@@ -256,7 +299,9 @@ Running tags: ok
 Read shared items: ok
 ...
 Couldn&#39;t find updates for rebar19-2.6.2p0
-Extracted 2530483626 from 2530564521</code></pre><p>Make all the necessary removals and updates which were reported by the <code>pkg_add</code> command:</p>
+Extracted 2530483626 from 2530564521
+</code></pre>
+<p>Make all the necessary removals and updates which were reported by the <code>pkg_add</code> command:</p>
 <pre><code>$ sudo rm -f /var/db/colord/mapping.db \
              /var/db/colord/storage.db
 $
@@ -267,13 +312,15 @@ $ sudo xmlcatalog /var/db/xmlcatalog
 $
 $ sudo update-desktop-database
 $
-$ sudo update-mime-database /usr/local/share/mime/</code></pre><p>Perform the action from the previous section, subsection <strong>(m)</strong>.</p>
+$ sudo update-mime-database /usr/local/share/mime/
+</code></pre>
+<p>Perform the action from the previous section, subsection <strong>(m)</strong>.</p>
 <p><strong>== OPENBSD HAS BEEN UPGRADED TO THE 6.5 RELEASE ==</strong></p>
 <p>Freshly <strong>OpenBSD</strong>-ing your beings ! <img src="http://github.githubassets.com/images/icons/emoji/unicode/1f44d.png" class="emoji" alt="" /></p>
+
 <table id="footer">
 <tbody><tr><td id="v-bar-f"></td><td id="footer-td"><a href="http://anybrowser.org/campaign"><img style="border:0;width:88px;height:31px" src="/static/img/misc/vwab" alt="Viewable With Any Browser" /></a><a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px" src="/static/img/misc/vcss" alt="Valid CSS!" /></a></td></tr></tbody>
 </table>
 <script src="/radicchio.js"></script>
 </body>
 </html>
-

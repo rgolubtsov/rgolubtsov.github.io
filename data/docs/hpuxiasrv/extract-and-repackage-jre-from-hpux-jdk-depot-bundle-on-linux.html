@@ -13,9 +13,6 @@
 
 
 
-
-
-
 <!DOCTYPE html>
 <html lang="en-US" dir="ltr">
 <head>
@@ -46,7 +43,9 @@
 <p>It is freely downloadable from the Software Depot homepage of the Hewlett Packard Enterprise (HPE) website. Actually the bundle can be downloaded from the HP-UX 11i Java Technology Software section of that homepage. They are provided each for various Java versions. Pick it up let&#39;s for 8.0.x &ndash; from the JDK/JRE 8.0.x Downloads and Documentation page. (<strong>Note:</strong> It needs to have an HPE Passport (account): sign in or sign up for a new one.) The link is named as &quot;<strong>Version 8.0.14 &ndash; June 2018 (includes Oracle update 8u172)</strong>&quot;.</p>
 <p>Transfer this bundle to a Linux box:</p>
 <pre><code>$ scp -C Itanium_JDK_8.0.14_June_2018_Z7550-63485_java8_18014_ia.depot &lt;username&gt;@&lt;hostname&gt;:/home/&lt;username&gt;
-Itanium_JDK_8.0.14_June_2018_Z7550-63485_java8_18014_ia.depot                   100%  141MB  11.2MB/s   00:12</code></pre><p><strong>(2) Unpack the <code>.depot</code> bundle</strong></p>
+Itanium_JDK_8.0.14_June_2018_Z7550-63485_java8_18014_ia.depot                   100%  141MB  11.2MB/s   00:12
+</code></pre>
+<p><strong>(2) Unpack the <code>.depot</code> bundle</strong></p>
 <p>Since in fact it is just an ordinary tar archive, it can be unpacked using the <code>tar</code> archiver:</p>
 <pre><code>$ tar -xvf Itanium_JDK_8.0.14_June_2018_Z7550-63485_java8_18014_ia.depot
 Jdk80/
@@ -66,7 +65,9 @@ Jdk80/JDK80-COM/opt/java8/bin/jar
 Jdk80/JDK80-COM/opt/java8/bin/jarsigner
 Jdk80/JDK80-COM/opt/java8/bin/java
 Jdk80/JDK80-COM/opt/java8/bin/javac
-...</code></pre><p><strong>(3) Adjust file permissions on unpacked data</strong></p>
+...
+</code></pre>
+<p><strong>(3) Adjust file permissions on unpacked data</strong></p>
 <p>After unpacking almost all files and directories will have the writable permission bit switched off for owner, group, and other users. It should be restored at least for owner to avoid problems during files&#39; manipulations (see the next section). The following one-liner Bash script will do restore the permissions. The first script is for directories, the second one is for files:</p>
 <pre><code>$ for d in `find . -type d`; do sudo chmod -v u+w ${d}; done
 mode of &#39;.&#39; retained as 0755 (rwxr-xr-x)
@@ -86,7 +87,9 @@ mode of &#39;./Jre80/JRE80-IPF32/opt/java8/jre&#39; changed from 0555 (r-xr-xr-x
 mode of &#39;./Jre80/JRE80-IPF32/opt/java8/jre/bin&#39; changed from 0555 (r-xr-xr-x) to 0755 (rwxr-xr-x)
 mode of &#39;./Jre80/JRE80-IPF32/opt/java8/jre/bin/IA64N&#39; changed from 0555 (r-xr-xr-x) to 0755 (rwxr-xr-x)
 mode of &#39;./Jre80/JRE80-IPF32/opt/java8/jre/lib&#39; changed from 0555 (r-xr-xr-x) to 0755 (rwxr-xr-x)
-...</code></pre><pre><code>$ for f in `find . -type f`; do sudo chmod -v u+w ${f}; done
+...
+</code></pre>
+<pre><code>$ for f in `find . -type f`; do sudo chmod -v u+w ${f}; done
 mode of &#39;./Itanium_JDK_8.0.14_June_2018_Z7550-63485_java8_18014_ia.depot&#39; retained as 0644 (rw-r--r--)
 mode of &#39;./swagent.log&#39; retained as 0644 (rw-r--r--)
 mode of &#39;./Jre80/JRE80-IPF32-HS/opt/java8/jre/lib/IA64N/libjsig.so&#39; changed from 0555 (r-xr-xr-x) to 0755 (rwxr-xr-x)
@@ -104,7 +107,9 @@ mode of &#39;./Jre80/JRE80-IPF32/opt/java8/jre/bin/IA64N/unpack200&#39; changed 
 mode of &#39;./Jre80/JRE80-IPF32/opt/java8/jre/bin/IA64N/rmid&#39; changed from 0555 (r-xr-xr-x) to 0755 (rwxr-xr-x)
 mode of &#39;./Jre80/JRE80-IPF32/opt/java8/jre/bin/IA64N/java_q4p&#39; changed from 0555 (r-xr-xr-x) to 0755 (rwxr-xr-x)
 mode of &#39;./Jre80/JRE80-IPF32/opt/java8/jre/bin/IA64N/java&#39; changed from 0555 (r-xr-xr-x) to 0755 (rwxr-xr-x)
-...</code></pre><p>Now it is safe to remove unneeded directories and files (JDK, post-installation scripts, etc.). It needs to keep the <code>Jre80/</code> directory only:</p>
+...
+</code></pre>
+<p>Now it is safe to remove unneeded directories and files (JDK, post-installation scripts, etc.). It needs to keep the <code>Jre80/</code> directory only:</p>
 <pre><code>$ rm -vRf catalog/ Jdk80/ swagent.log
 removed &#39;catalog/Jre80/JRE80/INFO&#39;
 removed &#39;catalog/Jre80/JRE80/SIGNATURE&#39;
@@ -123,16 +128,22 @@ removed &#39;catalog/Jre80/JRE80-IPF32/preinstall&#39;
 removed directory &#39;catalog/Jre80/JRE80-IPF32&#39;
 removed &#39;catalog/Jre80/JRE80-IPF64/INFO&#39;
 removed &#39;catalog/Jre80/JRE80-IPF64/SIGNATURE&#39;
-...</code></pre><p><strong>(4) Copy all separately located JRE directory branches into a consolidated one</strong></p>
+...
+</code></pre>
+<p><strong>(4) Copy all separately located JRE directory branches into a consolidated one</strong></p>
 <p>These directory structures will be expanded and underlying files will not be overwritten. So it is safe to do the following manipulations:</p>
 <pre><code>$ cp -vRf Jre80/JRE80-COM/opt/java8/jre/*      Jre80/JRE80/ &amp;&amp; \
   cp -vRf Jre80/JRE80-COM-DOC/opt/java8/jre/*  Jre80/JRE80/ &amp;&amp; \
   cp -vRf Jre80/JRE80-IPF32/opt/java8/jre/*    Jre80/JRE80/ &amp;&amp; \
   cp -vRf Jre80/JRE80-IPF32-HS/opt/java8/jre/* Jre80/JRE80/ &amp;&amp; \
   cp -vRf Jre80/JRE80-IPF64/opt/java8/jre/*    Jre80/JRE80/ &amp;&amp; \
-  cp -vRf Jre80/JRE80-IPF64-HS/opt/java8/jre/* Jre80/JRE80/</code></pre><p>Move the consolidated resulting JRE directory structure to the current directory and remove already unneeded stuff:</p>
+  cp -vRf Jre80/JRE80-IPF64-HS/opt/java8/jre/* Jre80/JRE80/
+</code></pre>
+<p>Move the consolidated resulting JRE directory structure to the current directory and remove already unneeded stuff:</p>
 <pre><code>$ mv -v   Jre80/JRE80/* . &amp;&amp; \
-  rm -vRf Jre80/ *.depot</code></pre><p><strong>(5) Invoke the <code>gunzip</code> magic against all the JRE files</strong></p>
+  rm -vRf Jre80/ *.depot
+</code></pre>
+<p><strong>(5) Invoke the <code>gunzip</code> magic against all the JRE files</strong></p>
 <p>In fact all the resulting JRE files are stored compressed as <code>gzip</code>ped:</p>
 <pre><code>$ file * bin/java
 bin:                         directory
@@ -142,8 +153,12 @@ LICENSE:                     gzip compressed data, from Unix
 man:                         directory
 README:                      gzip compressed data, from Unix
 THIRDPARTYLICENSEREADME.txt: gzip compressed data, from Unix
-bin/java:                    gzip compressed data, from Unix</code></pre><p>It needs to <code>gunzip</code> each of them, but first give each file the <code>.gz</code> extension. The following one-liner Bash script does exactly this <em>magic</em> thing:</p>
-<pre><code>$ for f in `find . -type f`; do mv -v ${f} ${f}.gz; gunzip ${f}.gz; done</code></pre><p>Check them out again and ensure the JRE files are now ready for including them to form out a new package (archive):</p>
+bin/java:                    gzip compressed data, from Unix
+</code></pre>
+<p>It needs to <code>gunzip</code> each of them, but first give each file the <code>.gz</code> extension. The following one-liner Bash script does exactly this <em>magic</em> thing:</p>
+<pre><code>$ for f in `find . -type f`; do mv -v ${f} ${f}.gz; gunzip ${f}.gz; done
+</code></pre>
+<p>Check them out again and ensure the JRE files are now ready for including them to form out a new package (archive):</p>
 <pre><code>$ file * bin/java
 bin:                         directory
 COPYRIGHT:                   ISO-8859 text, with very long lines
@@ -152,7 +167,9 @@ LICENSE:                     Non-ISO extended-ASCII text, with very long lines
 man:                         directory
 README:                      ASCII text
 THIRDPARTYLICENSEREADME.txt: UTF-8 Unicode text
-bin/java:                    ELF 32-bit MSB executable, IA-64, version 1, dynamically linked, interpreter /usr/lib/hpux32/uld.so:/usr/lib/hpux32/dld.so, not stripped</code></pre><p><strong>(6) Create a new package (zip-archive) containing Java Runtime Environment for HP-UX ready to run standalone</strong></p>
+bin/java:                    ELF 32-bit MSB executable, IA-64, version 1, dynamically linked, interpreter /usr/lib/hpux32/uld.so:/usr/lib/hpux32/dld.so, not stripped
+</code></pre>
+<p><strong>(6) Create a new package (zip-archive) containing Java Runtime Environment for HP-UX ready to run standalone</strong></p>
 <pre><code>$ zip -r9 ../hpux_ia.zip *
   adding: bin/ (stored 0%)
   adding: bin/keytool (deflated 65%)
@@ -171,12 +188,16 @@ bin/java:                    ELF 32-bit MSB executable, IA-64, version 1, dynami
   adding: bin/IA64W/java_q4p (deflated 95%)
   adding: bin/IA64W/java (deflated 95%)
   adding: bin/IA64W/pack200 (deflated 95%)
-...</code></pre><pre><code>$ file ../hpux_ia.zip
-../hpux_ia.zip: Zip archive data, at least v1.0 to extract</code></pre><p>Happy Javing in HP-UX ! <img src="http://github.githubassets.com/images/icons/emoji/unicode/1f44d.png" class="emoji" alt="" /></p>
+...
+</code></pre>
+<pre><code>$ file ../hpux_ia.zip
+../hpux_ia.zip: Zip archive data, at least v1.0 to extract
+</code></pre>
+<p>Happy Javing in HP-UX ! <img src="http://github.githubassets.com/images/icons/emoji/unicode/1f44d.png" class="emoji" alt="" /></p>
+
 <table id="footer">
 <tbody><tr><td id="v-bar-f"></td><td id="footer-td"><a href="http://anybrowser.org/campaign"><img style="border:0;width:88px;height:31px" src="/static/img/misc/vwab" alt="Viewable With Any Browser" /></a><a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px" src="/static/img/misc/vcss" alt="Valid CSS!" /></a></td></tr></tbody>
 </table>
 <script src="/radicchio.js"></script>
 </body>
 </html>
-
