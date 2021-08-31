@@ -1,0 +1,16 @@
+%#
+%# templates/not_found.html.ep
+%# ============================================================================
+%# Stage 1 Entrance Exams Results.
+%# Результаты вступительных испытаний.
+%# ============================================================================
+%# Written by Radislav (Radicchio) Golubtsov, 2021
+%#
+
+% layout "not_found";
+
+<div id="header">Результаты вступительных испытаний</div>
+<div class="flex-container">
+<div id="msg"><strong>Запрашиваемый вами ресурс не&nbsp;найден.</strong><br /><br /><a style="border:1px solid #d0cdd9;border-radius:3px;padding:4px 12px;text-decoration:none;background-color:#f0effb;color:#000000" href="/login">Авторизуйтесь</a></div>
+</div>
+<div id="footer">Powered by 2021 <a href="//mojolicio.us" target="_blank"><strong>Mojolicious</strong></a></div>
