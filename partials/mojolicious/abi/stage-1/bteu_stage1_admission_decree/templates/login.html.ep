@@ -1,0 +1,29 @@
+%#
+%# templates/login.html.ep
+%# ============================================================================
+%# Stage 1 Admission Decree.
+%# Приказ о зачислении на I ступень.
+%# ============================================================================
+%# Written by Radislav (Radicchio) Golubtsov, 2021
+%#
+
+% layout "login";
+
+<div id="header"><%= $title1 %></div>
+% if ($error) {
+<div class="flex-container">
+<div id="error"><%== $error %></div>
+</div>
+% }
+<div class="flex-container">
+<div id="form">
+<form action="/login" method="post">
+<div class="label"><label for="username_id">Имя пользователя</label></div>
+<div class="input"><input type="text" name="username" value="" placeholder="Фамилия абитуриента" maxlength="30" size="25" id="username_id" /></div>
+<div class="label"><label for="password_id">Пароль</label></div>
+<div class="input"><input type="password" name="password" value="" placeholder="Номер паспорта" maxlength="7" size="25" id="password_id" /></div>
+<div class="submit"><input type="submit" name="login" value="<%= $title2 %>" id="login_id" /></div>
+</form>
+</div>
+</div>
+<div id="footer">Powered by 2021 <a href="//mojolicio.us" target="_blank"><strong>Mojolicious</strong></a></div>
