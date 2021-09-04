@@ -1,0 +1,121 @@
+/* === x-abcd JD Seattle Template Custom CSS =============================== */
+
+/* --- Masthead - Begin ---------------------------------------------------- */
+/* --- Masthead - End ------------------------------------------------------ */
+
+/* --- Footer - Begin ------------------------------------------------------ */
+/* --- Footer - End -------------------------------------------------------- */
+
+/* --- Content - Begin ----------------------------------------------------- */
+div#abcd-page-is-under-construction {
+    margin:           -12px 6px 12px 12px;
+/*  border-radius:    3px;*/
+    line-height:      1.5em;
+    background-color: #cfd8ef;
+    font-size:        1em;
+    font-weight:      bold;
+    transform:        skew(-15deg);
+}
+div#abcd-page-is-under-construction-inner {
+    margin-right:     10px;
+    margin-left:      -12px;
+/*  border-radius:    3px;*/
+    padding:          4px 10px;
+    background-color: #cfd8ef;
+    transform:        skew(15deg);
+}
+div.abcd-page-is-under-construction-extra:empty {
+    height: 40em;
+}
+div.abcd-contacts-header-0-1 {
+    line-height: 1.5em;
+    font-size:   1.2em;
+    font-weight: bold;
+}
+div.abcd-contacts-header-0-2 {
+    line-height: 1em;
+    font-size:   1.5em;
+    font-weight: bold;
+}
+div.abcd-contacts-header-1 {
+    margin:           -12px 6px 12px 12px;
+/*  border-radius:    3px;*/
+    line-height:      1.5em;
+    background-color: #cfd8ef;
+    font-size:        1em;
+    font-weight:      bold;
+    transform:        skew(-15deg);
+}
+div.abcd-contacts-header-1-inner {
+    margin-right:     10px;
+    margin-left:      -12px;
+/*  border-radius:    3px;*/
+    padding:          4px 10px;
+    background-color: #cfd8ef;
+    transform:        skew(15deg);
+}
+div.abcd-contacts-header-1-1 {
+    width:            fit-content;
+    margin:           2px 0px 10px 2px;
+    line-height:      0;
+    background-color: #cfd8ef;
+    color:            rgba(0, 0, 0, 0);
+    font-size:        1em;
+    transform:        skew(-15deg);
+}
+div.abcd-contacts-header-1-1-inner {
+    margin-right:     1em;
+    margin-left:      -2px;
+    padding:          4px 0px;
+    background-color: #cfd8ef;
+    transform:        skew(15deg);
+}
+div.abcd-contacts-header-2 {
+    line-height: 1.5em;
+    font-size:   1em;
+    font-weight: bold;
+}
+div.abcd-contacts-text {
+    line-height: 1.5em;
+    font-size:   1em;
+}
+div.abcd-contacts-grid {
+    display:               grid;
+    grid-template-columns: max-content auto;
+    overflow:              auto;
+}
+span.abcd-contacts-white-on-navy {
+    background-color: #002060;
+    color:            #ffffff;
+    font-weight:      bold;
+}
+div.abcd-contacts-map {
+    margin-top: 15px;
+    border:     2px solid #cfd8ef;
+    padding:    2px;
+}
+iframe.abcd-contacts-map {
+    width:  100%;
+    height: 20em;
+    border: 0;
+}
+ div.abcd-font-bold,
+span.abcd-font-bold,
+   a.abcd-font-bold {
+    font-weight: bold;
+}
+div.abcd-block-indent {
+    margin-top:    1.25em;
+    margin-bottom: 1.2em;
+    border-left:   14px solid rgba(207, 216, 239, 0.25); /* #cfd8ef */
+    padding-left:  14px;
+}
+div.abcd-block-indent-first-line {
+    padding-bottom: 4px;
+    line-height:    1em;
+}
+div.abcd-block-indent-last-line {
+    padding-top: 5px;
+    line-height: 1em;
+}
+/* --- Content - End ------------------------------------------------------- */
