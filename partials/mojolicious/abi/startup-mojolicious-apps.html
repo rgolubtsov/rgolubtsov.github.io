@@ -56,11 +56,11 @@ a:hover {
 <h2>Starting up Mojolicious apps</h2>
 <p>To start up Mojolicious applications in production mode, in the background (like a daemon), redirecting all the console output to nowhere, i.e. suppressing it completely, use the following commands:</p>
 <pre>
-$ sudo -uwww-data /var/www/master/bteu_magistracy_admission_decree/script/bteu_magistracy_admission_decree daemon -m production -l http://*:8080 &gt; /dev/null 2&gt;&amp;1 &amp;
+$ sudo -uwww-data /var/www/master/abcd_magistracy_admission_decree/script/abcd_magistracy_admission_decree daemon -m production -l http://*:8080 &gt; /dev/null 2&gt;&amp;1 &amp;
 $
-$ sudo -uwww-data /var/www/results/bteu_stage1_entrance_exams_results/script/bteu_stage1_entrance_exams_results daemon -m production -l http://*:8081 &gt; /dev/null 2&gt;&amp;1 &amp;
+$ sudo -uwww-data /var/www/results/abcd_stage1_entrance_exams_results/script/abcd_stage1_entrance_exams_results daemon -m production -l http://*:8081 &gt; /dev/null 2&gt;&amp;1 &amp;
 $
-$ sudo -uwww-data /var/www/stage-1/bteu_stage1_admission_decree/script/bteu_stage1_admission_decree daemon -m production -l http://*:8082 &gt; /dev/null 2&gt;&amp;1 &amp;
+$ sudo -uwww-data /var/www/stage-1/abcd_stage1_admission_decree/script/abcd_stage1_admission_decree daemon -m production -l http://*:8082 &gt; /dev/null 2&gt;&amp;1 &amp;
 </pre>
 <p>They will be listening on specified TCP ports (in this example &ndash; on ports 8080, 8081, 8082 respectively) and serving HTTP requests from any client.</p>
 <p style="text-align:right"><a href="http://anybrowser.org/campaign"><img style="border:0;width:88px;height:31px" src="/static/img/misc/vwab" alt="Viewable With Any Browser" /></a><a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px" src="/static/img/misc/vcss" alt="Valid CSS!" /></a></p>
