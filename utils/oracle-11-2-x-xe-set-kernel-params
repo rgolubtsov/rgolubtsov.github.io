@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # utils/oracle-11-2-x-xe-set-kernel-params
 # =============================================================================
-# The Kernel Parameters' Defaults Modifier. Version 0.1
+# The Kernel Parameters' Defaults Modifier. Version 1.0.0
 # (To meet the needs of the Oracle Database 11.2.X XE instance binary.)
 # =============================================================================
 # This helper script automates adjusting some Kernel parameters
