@@ -50,6 +50,12 @@ $ git status && git fetch -p && git branch -a && git tag -l && git pull && git s
 <pre><code>$ # Find and print line(s) of text, based on a specified regex pattern.
 $ find . -type f -print0 | xargs -0 grep '&lt;regex&gt;'
 </code></pre>
+<p>The third one is a combination of <code>grep</code> and <code>sed</code> (or <code>perl</code>, where applicable):</p>
+<pre><code>$ # Find a text, based on a specified regex pattern, then pass corresponding filenames to Sed (or Perl) for replacing that text with another one.
+$ grep -Rl '&lt;regex_to_replace&gt;' | xargs sed   -i -e 's/&lt;regex_to_replace&gt;/&lt;regex-replacer&gt;/g'
+$ grep -Rl '&lt;regex_to_replace&gt;' | xargs perl -pi -e 's/&lt;regex_to_replace&gt;/&lt;regex-replacer&gt;/g'
+</code></pre>
+<p>Drink with <strong>pleasure</strong>, consume <strong>responsibly, at leisure</strong> ! <img src="http://github.githubassets.com/images/icons/emoji/unicode/1f603.png" class="emoji" alt="Ha-ha!))" /></p>
 
 <table id="footer">
 <tbody><tr><td id="v-bar-f"></td><td id="footer-td"><a href="http://anybrowser.org/campaign"><img style="border:0;width:88px;height:31px" src="/static/img/misc/vwab" alt="Viewable With Any Browser" /></a><a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px" src="/static/img/misc/vcss" alt="Valid CSS!" /></a></td></tr></tbody>
