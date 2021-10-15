@@ -6,7 +6,7 @@
         "subtitle3" : "Fitness attendance statistics",
         "preamble1" : "The table given below was auto-generated at site build time from ",
         "preamble2" : " JSON data source. It will stay unchanged until a new entry will be added to the data source.",
-        "emoji_url" : "http://github.githubassets.com/images/icons/emoji/unicode/",
+        "emoji_url" : "https://github.githubassets.com/images/icons/emoji/unicode/",
         "p_caption" : "Portions | Distinguished by Year, Month, Gym Name, or Subscription",
         "p_header"  : [
             "No.",

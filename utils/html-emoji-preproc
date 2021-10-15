@@ -18,7 +18,7 @@
 declare -r EXIT_FAILURE=1 #    Failing exit status.
 declare -r EXIT_SUCCESS=0 # Successful exit status.
 
-declare -r REPL_URL="http\:\/\/github\.githubassets\.com\/images\/icons\/emoji\/unicode\/"
+declare -r REPL_URL="https\:\/\/github\.githubassets\.com\/images\/icons\/emoji\/unicode\/"
 declare -r REPL_EXT="\.png"
 declare -r REPL_CSS="emoji"
 
