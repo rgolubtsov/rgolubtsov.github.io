@@ -23,7 +23,7 @@ And in Russian:
 
 Radicchio is using **[Window Maker](http://windowmaker.org "Window Maker: Window Manager for X")** as the only window manager on his desktops (Arch Linux / Arch Linux 32) and on OpenBSD VM-box when running of X Window System on the latter is required.
 
-**Q:** Why to use **Window Maker** if there is a series of high quality sophisticated comprehensive desktop environments (DE) full of daily-handy features and visual attractiveness available in both Arch Linux and OpenBSD?
+**Q:** Why to use **Window Maker** if there is a series of high quality sophisticated comprehensive desktop environments (DE) full of daily-handy features and visual attractiveness available for both Arch Linux and OpenBSD?
 
 **A:** (a) It is quite attractive, (b) it resembles full-featured DEs in most cases like the `<Alt-Tab>` window switching experience, having window decorations with multiple functions on windows, with virtual desktops, and with globally accessible right-clicked contextual menus, (c) with little memory footprint, and (d) well-known to its apologist user how to configure it, tweak it, and relax with it. Despite its 1997th inception and having a set of approximately little functional changes which led to considering it as an *ancient* window manager in some IT circles, **Window Maker** is continuously developing today and adopted by many Unix/Linux distros as [the interest-deserving project](http://repo.or.cz/wmaker-crm.git "The Window Maker window manager"). It is favourite and the only Radicchio's window manager in 2021 still.
 
