@@ -11,8 +11,8 @@
  */
 
 html, body {
-    margin:           0px;
-    padding:          0px;
+    margin:           0;
+    padding:          0;
     background-color: #6ec63b;
     color:            #000000;
     font-family:      "Open Sans", sans-serif;
@@ -240,7 +240,7 @@ pre {
 }
 
 #stat-pager td {
-    border:           0px solid #4ca419;
+    border:           0 solid #4ca419;
     vertical-align:   baseline;
 }
 
