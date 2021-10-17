@@ -13,6 +13,6 @@
         "sitename_" : ": Editor",
         "subtitle_" : "",
         "subtitle3" : "An editor for everything and nothing in particular",
-        "preamble_" : "In those days when <code>vim</code> is not an option at all :raising_hand: &ndash; one can use, reuse, or abuse a generic text editor below."
+        "preamble_" : "In those days when <code>vim</code> is not an option at all :raising_hand: &mdash; one can use, reuse, or abuse a generic text editor below."
     }
 }

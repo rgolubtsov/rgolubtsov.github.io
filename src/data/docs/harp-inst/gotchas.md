@@ -39,7 +39,7 @@ https://github.com/sass/node-sass/releases/tag/v4.9.3
     at Object.<anonymous> (/usr/lib/node_modules/harp/node_modules/terraform/lib/stylesheet/processors/scss.js:1:74)
 ```
 
-However, if there is no need to use Node Sass at all but the **Harp** with other its facilities, this error can easily be bypassed just by simply editing the module shown in the last line of the stack trace &ndash; `scss.js`... and another one &ndash; `sass.js`:
+However, if there is no need to use Node Sass at all but the **Harp** with other its facilities, this error can easily be bypassed just by simply editing the module shown in the last line of the stack trace &mdash; `scss.js`... and another one &mdash; `sass.js`:
 
 ```
 $ sudo vim /usr/lib/node_modules/harp/node_modules/terraform/lib/stylesheet/processors/scss.js \
