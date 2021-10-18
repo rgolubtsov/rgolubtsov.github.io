@@ -137,6 +137,7 @@ p code {
     background-color: #5db52a;
     color:            #7aef17;
     font-family:      "Roboto Mono", monospace;
+    font-size:        .95em;
 }
 
 p .emoji {
@@ -298,6 +299,7 @@ pre code {
     line-height:      1.3;
     background-color: #cdefed;
     font-family:      "Roboto Mono", monospace;
+    font-size:        .95em;
 }
 
 td .emoji {
