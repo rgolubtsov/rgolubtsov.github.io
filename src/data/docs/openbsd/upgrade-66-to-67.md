@@ -9,7 +9,7 @@ $ pkg_info
 Fcntl.c: loadable library and perl binaries are mismatched (got handshake key 0xb700000, needed 0xb600000)
 ```
 
-The command above doesn't work, and as it is clearly seeing in the output, something gets wrong with Perl binaries and libraries. &mdash; Obviously, the version of installed Perl binaries doesn't match the version of its loadable library.
+The command above doesn't work, and as it is clearly seeing in the output, something gets wrong with Perl binaries and libraries. &ndash; Obviously, the version of installed Perl binaries doesn't match the version of its loadable library.
 
 This can be repaired by replacing the whole Perl base module set with that one freshly downloaded from the OpenBSD CDN. It is contained in the `base67.tgz` tarball. The following compound one-liner command will replace the old Perl base module set with the new one, with minimal effort from the user side:
 
@@ -57,4 +57,4 @@ Couldn't find updates for rebar19-2.6.2p0
 Extracted 2729914590 from 2729997463
 ```
 
-Making **OpenBSD** work right for you ! &mdash; In any circumstances ! :+1:
+Making **OpenBSD** work right for you ! &ndash; In any circumstances ! :+1:

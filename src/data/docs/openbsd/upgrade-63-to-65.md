@@ -195,7 +195,7 @@ SHA256.sig
 
 **Upgrade OpenBSD 6.4 release to 6.5 release**
 
-Now having installed and running the OpenBSD/amd64 6.4 release, there is a need to download the new (6.5) ramdisk kernel `bsd.rd` and the checksum file `SHA256.sig` for the appropriate architecture, in this case `amd64`, just like as it is stated in the beginning of the previous section &mdash; subsection **(a)**:
+Now having installed and running the OpenBSD/amd64 6.4 release, there is a need to download the new (6.5) ramdisk kernel `bsd.rd` and the checksum file `SHA256.sig` for the appropriate architecture, in this case `amd64`, just like as it is stated in the beginning of the previous section &ndash; subsection **(a)**:
 
 ```
 $ curl -sO https://cdn.openbsd.org/pub/OpenBSD/6.5/amd64/bsd.rd     \
@@ -262,7 +262,7 @@ $ sudo rm -vf /usr/bin/c2ph                                      \
 /usr/share/man/man3p/Locale::Codes::API.3p
 ```
 
-Perform actions from the previous section &mdash; subsections **(g)** to **(k)**, then:
+Perform actions from the previous section &ndash; subsections **(g)** to **(k)**, then:
 
 After rebooting into the upgraded system...
 

@@ -4,7 +4,7 @@
 
 **(1) Download the HP-UX 11i Java Development Kit (JDK) `.depot` bundle (package)**
 
-It is freely downloadable from the Software Depot homepage of the Hewlett Packard Enterprise (HPE) website. Actually the bundle can be downloaded from the HP-UX 11i Java Technology Software section of that homepage. They are provided each for various Java versions. Pick it up let's for 8.0.x &mdash; from the JDK/JRE 8.0.x Downloads and Documentation page. (**Note:** It needs to have an HPE Passport (account): sign in or sign up for a new one.) The link is named as "**Version 8.0.14 &mdash; June 2018 (includes Oracle update 8u172)**".
+It is freely downloadable from the Software Depot homepage of the Hewlett Packard Enterprise (HPE) website. Actually the bundle can be downloaded from the HP-UX 11i Java Technology Software section of that homepage. They are provided each for various Java versions. Pick it up let's for 8.0.x &ndash; from the JDK/JRE 8.0.x Downloads and Documentation page. (**Note:** It needs to have an HPE Passport (account): sign in or sign up for a new one.) The link is named as "**Version 8.0.14 &ndash; June 2018 (includes Oracle update 8u172)**".
 
 Transfer this bundle to a Linux box:
 
