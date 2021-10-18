@@ -144,6 +144,11 @@ p .emoji {
     top:              .25em;
 }
 
+p     .orbit,
+p span.orbit {
+    font-family:      "Orbitron", sans-serif;
+}
+
 ul, ol {
     margin:           0px 20px 0px;
     padding:          0px 10px 14px 64px;
