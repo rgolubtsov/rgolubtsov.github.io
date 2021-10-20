@@ -29,12 +29,12 @@ Scripts written in the following programming languages are presented here:
 
 1. JavaScript (ES5/Node.js)
 2. Erlang
-3. LFE ([Lisp Flavoured Erlang](http://lfe.io "Lisp Flavoured Erlang"))
+3. LFE ([Lisp Flavoured Erlang](https://lfe.io "Lisp Flavoured Erlang"))
 4. Elixir
 5. Perl 5
 6. Python 3
 7. Lua
-8. C script ([TCC](https://bellard.org/tcc "Tiny C Compiler"))
+8. C script ([TCC](https://bellard.org/tcc/ "Tiny C Compiler"))
 9. Bash
 10. Go
 11. Clojure
