@@ -44,11 +44,12 @@ pre {
 }
 code {
     border-radius:    4px;
-    padding:          2px 6px;
+    padding:          1px 5px 3px;
     line-height:      1.5;
     background-color: #5db52a;
     color:            #7aef17;
     font-family:      "Roboto Mono", monospace;
+    font-size:        .95em;
 }
 /*
  * Styling links according to the LVHA-order:
@@ -70,7 +71,7 @@ a:hover {
 <body>
 <h2>Восстановление веб-сайта из бэкапа</h2>
 <p>Для восстановления из бэкапа веб-сайта (полной установки <strong>Joomla!</strong>) и базы данных к нему (<strong>MariaDB</strong>), необходимо проделать ряд операций. Все они несложные, но их нужно выполнять обязательно на самом веб-сервере в командной строке (в оболочке <strong>Bash</strong>, установленной там по умолчанию).</p>
-<p>Будем полагать, что мы уже залогинились по SSH на веб-сервер (виртуальная машина Ubuntu 20.04.2 LTS, 192.168.0.WEB):</p>
+<p>Будем полагать, что мы уже залогинились по SSH на веб-сервер (виртуальная машина <strong>Ubuntu 20.04.2 LTS</strong>, 192.168.0.WEB):</p>
 <pre>
 $ ssh -C &lt;vmusername&gt;@192.168.0.WEB
 Welcome to Ubuntu 20.04.2 LTS (GNU/Linux 5.4.0-74-generic x86_64)
