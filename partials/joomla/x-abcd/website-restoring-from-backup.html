@@ -82,7 +82,7 @@ Password:
 Remote system type is Windows_NT.
 ftp&gt;
 </pre>
-<p>Далее нужно скачать требующуюся версию бэкапа. Бэкапы делаются каждую ночь в 02:30. Идентифицируем необходимый нам бэкап &ndash; просто смотрим листинг каталога, где они размещены:</p>
+<p>Далее нужно скачать требующуюся версию бэкапа. Бэкапы делаются каждую ночь в 02:30. Идентифицируем необходимый нам бэкап &mdash; просто смотрим листинг каталога, где они размещены:</p>
 <pre>
 ftp&gt; cd tmp/abcd
 250 CWD command successful.
@@ -107,7 +107,7 @@ ftp&gt; ls
 226 Transfer complete.
 ftp&gt;
 </pre>
-<p>Здесь <code>*.txz</code> &ndash; тарболы каталога веб-сайта (полной установки <strong>Joomla!</strong>), <code>*.sql.xz</code> &ndash; сжатые дампы базы данных веб-сайта. Выбираем, например, бэкапы от 29 июня 2021 года &ndash; ими будут следующие файлы:</p>
+<p>Здесь <code>*.txz</code> &mdash; тарболы каталога веб-сайта (полной установки <strong>Joomla!</strong>), <code>*.sql.xz</code> &mdash; сжатые дампы базы данных веб-сайта. Выбираем, например, бэкапы от 29 июня 2021 года &mdash; ими будут следующие файлы:</p>
 <pre>
 x-abcd-joomla3-192.168.0.WEB-20210629-0230.txz
 xabcdjoomla3db-192.168.0.WEB-20210629-0230.sql.xz
@@ -136,7 +136,7 @@ local: xabcdjoomla3db-192.168.0.WEB-20210629-0230.sql.xz remote: xabcdjoomla3db-
 61300 bytes received in 0.00 secs (48.0759 MB/s)
 ftp&gt;
 </pre>
-<p>Оба бэкапа скачаны, можно выйти из FTP-клиента &ndash; комбинация клавиш <code>&lt;Ctrl-D&gt;</code> или команда <code>by</code>:</p>
+<p>Оба бэкапа скачаны, можно выйти из FTP-клиента &mdash; комбинация клавиш <code>&lt;Ctrl-D&gt;</code> или команда <code>by</code>:</p>
 <pre>
 ftp&gt;
 ftp&gt; 221 Goodbye.

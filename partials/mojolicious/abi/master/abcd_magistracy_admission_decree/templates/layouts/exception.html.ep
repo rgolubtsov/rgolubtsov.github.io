@@ -18,7 +18,7 @@
 <meta       name="viewport"        content="width=device-width,initial-scale=1" />
 <meta       name="description"     content="<%= $title1 %> - <%= $title2 %>" />
 <meta       name="author"          content="Radislav (Radicchio) Golubtsov" />
-<title><%= $title1 %> &ndash; <%= $title2 %></title>
+<title><%= $title1 %> &mdash; <%= $title2 %></title>
 <link href="//xn--90a8ad3b.xn--90ais/images/favicon.png" type="image/png" rel="shortcut icon" />
 <style>
 body {
