@@ -7,13 +7,18 @@
 <meta       name="description"     content="Starting up Mojolicious apps" />
 <meta       name="author"          content="Radislav (Radicchio) Golubtsov" />
 <title>Starting up Mojolicious apps</title>
+<link href="/favicon.ico" type="image/png" rel="icon" />
+<link href="https://fonts.googleapis.com"  rel="preconnect" />
+<link href="https://fonts.gstatic.com"     rel="preconnect" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
 <style>
 body {
     margin:           0px 0px 20px;
     padding:          0;
     background-color: #6ec63b;
     color:            #000000;
-    font-family:      "Liberation Sans", "DejaVu Sans", sans-serif;
+    font-family:      "Open Sans", sans-serif;
 }
 h2 {
     margin:           20px;
@@ -32,8 +37,9 @@ pre {
     border-radius:    10px;
     padding:          14px;
     overflow:         auto;
-    line-height:      1.5em;
+    line-height:      1.5;
     background-color: #5db52a;
+    font-family:      "Roboto Mono", monospace;
 }
 /*
  * Styling links according to the LVHA-order:
@@ -63,6 +69,6 @@ $
 $ sudo -uwww-data /var/www/stage-1/abcd_stage1_admission_decree/script/abcd_stage1_admission_decree daemon -m production -l http://*:8082 &gt; /dev/null 2&gt;&amp;1 &amp;
 </pre>
 <p>They will be listening on specified TCP ports (in this example &mdash; on ports 8080, 8081, 8082 respectively) and serving HTTP requests from any client.</p>
-<p style="text-align:right"><a href="http://anybrowser.org/campaign"><img style="border:0;width:88px;height:31px" src="/static/img/misc/vwab" alt="Viewable With Any Browser" /></a><a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px" src="/static/img/misc/vcss" alt="Valid CSS!" /></a></p>
+<p style="text-align:right"><a href="https://anybrowser.org/campaign/" target="_blank" rel="nofollow noopener"><img style="border:0;width:88px;height:31px" src="/static/img/misc/vwab" alt="Viewable With Any Browser" /></a><a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank" rel="nofollow noopener"><img style="border:0;width:88px;height:31px" src="/static/img/misc/vcss" alt="Valid CSS!" /></a></p>
 </body>
 </html>
