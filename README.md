@@ -21,7 +21,7 @@ Install **Harp** on **Ubuntu Server LTS x86-64**:
 ```
 $ sudo npm i harp -g --unsafe-perm
 ...
-/usr/bin/harp -> /usr/lib/node_modules/harp/bin/harp
+/usr/local/bin/harp -> /usr/local/lib/node_modules/harp/bin/harp
 ...
 + harp@0.41.0
 ```
