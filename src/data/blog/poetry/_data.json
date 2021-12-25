@@ -1,0 +1,8 @@
+{
+    "poetry"        : {
+        "layout"    : "../../../_radicchio",
+        "sitename_" : ": Assorted poetry",
+        "subtitle_" : "",
+        "subtitle3" : "(Mostly) Love lyrics"
+    }
+}
