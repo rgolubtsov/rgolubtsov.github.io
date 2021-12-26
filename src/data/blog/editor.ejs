@@ -1,0 +1,12 @@
+<%# src/data/blog/editor.ejs %>
+
+<% var editor = public.data.blog._data.editor; %>
+
+<h1><%= editor.sitename_.substring(2) %></h1>
+<h3><%= editor.subtitle3              %></h3>
+<p><%-  editor.preamble_ %></p>
+<div id="editor-cont">
+<textarea name="editor" rows="20" cols="40" id="editor"></textarea>
+</div>
+
+<%# vim:set nu et ts=4 sw=4: %>

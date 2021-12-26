@@ -8,7 +8,7 @@
         "OPENBSD_MINOR_VERSION_S" : 3,
         "OPENBSD_MINOR_VERSION_E" : 7
     },
-    "edit"          : {
+    "editor"        : {
         "layout"    : "../../_radicchio",
         "sitename_" : ": Editor",
         "subtitle_" : "",
