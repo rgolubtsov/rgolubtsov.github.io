@@ -1,7 +1,13 @@
 {
+    "index"         : {
+        "layout"    : "../../../_radicchio",
+        "sitename_" : ": Assorted poetry",
+        "subtitle_" : "",
+        "subtitle3" : "(Mostly) Love lyrics"
+    },
     "caroline-kozhukhova-birthday-23yo-19981219-ru" : {
-        "layout"                                    : "../../../_radicchio",
-        "sitename_"                                 : ": To Caroline Kozhukhova on her birthday, 23yo",
-        "subtitle_"                                 : ""
+        "layout"    : "../../../_radicchio",
+        "sitename_" : ": To Caroline Kozhukhova on her birthday, 23yo",
+        "subtitle_" : ""
     }
 }
