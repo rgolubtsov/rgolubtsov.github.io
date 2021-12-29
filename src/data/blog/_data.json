@@ -16,7 +16,7 @@
         "preamble_" : "In those days when <code>vim</code> is not an option at all :raising_hand: &ndash; one can use, reuse, or abuse a generic text editor below."
     },
     "poetry"        : {
-        "layout"    : "../../_radicchio",
+        "layout"    : "../../../_radicchio",
         "sitename_" : ": Assorted poetry",
         "subtitle_" : "",
         "subtitle3" : "(Mostly) Love lyrics"
