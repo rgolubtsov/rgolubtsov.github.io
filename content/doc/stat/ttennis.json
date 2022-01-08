@@ -5273,5 +5273,30 @@
         },{ "gid"   : 7,
             "score" : "8:11"
         }]
+    },
+    {
+        "mid"       : 212,
+        "year"      : "2022",
+        "month"     : "January",
+        "day"       : 7,
+        "weekday"   : "Fr",
+        "winner"    : "Yaro",
+        "result"    : "4-3",
+        "games"     : [{
+            "gid"   : 1,
+            "score" : "11:5"
+        },{ "gid"   : 2,
+            "score" : "12:10"
+        },{ "gid"   : 3,
+            "score" : "3:11"
+        },{ "gid"   : 4,
+            "score" : "10:12"
+        },{ "gid"   : 5,
+            "score" : "13:11"
+        },{ "gid"   : 6,
+            "score" : "13:15"
+        },{ "gid"   : 7,
+            "score" : "11:3"
+        }]
     }]
 }
