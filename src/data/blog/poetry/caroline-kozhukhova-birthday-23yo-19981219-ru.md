@@ -51,4 +51,4 @@
 И поздравленье тебе это отправляю!
 
 <br />*19th of December, 2021*<br />
-&copy; 2021 Radislav (Radicchio) Golubtsov
+&copy; 2021-2022 Radislav (Radicchio) Golubtsov

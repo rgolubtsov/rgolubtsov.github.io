@@ -17,7 +17,7 @@
  * in the given sentence that should be replaced by the third parameter.
  * That function should return the updated sentence.
  * ============================================================================
- * Copyright (C) 2018-2021 Radislav (Radicchio) Golubtsov
+ * Copyright (C) 2018-2022 Radislav (Radicchio) Golubtsov
  *
  * (See the LICENSE file at the top of the source tree.)
  */
