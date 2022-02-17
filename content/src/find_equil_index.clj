@@ -109,7 +109,7 @@
                                           (recur (rest AA) (inc i) (+ i- A-)))
         )))))
 
-        -1 ; Returning -1 if there's no such an equilibrium index exists.
+        -1 ; Returning -1 if there's no such an equilibrium index exist.
     (catch
         Exception e (.getMessage e) ; Okay, the equilibrium index found.
     )))

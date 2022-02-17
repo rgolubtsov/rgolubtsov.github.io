@@ -113,7 +113,7 @@ defmodule S do
                                               else: {i + 1, i_ + a_}
             end)
 
-            -1 # Returning -1 if there's no such an equilibrium index exists.
+            -1 # Returning -1 if there's no such an equilibrium index exist.
         catch
             i -> i
         end

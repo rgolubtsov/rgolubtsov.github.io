@@ -108,7 +108,7 @@
                                              (tuple (+ i 1) (+ i- A-)))
         )))) (tuple 0 0) A)
 
-        -1 ; Returning -1 if there's no such an equilibrium index exists.
+        -1 ; Returning -1 if there's no such an equilibrium index exist.
     ) (catch
         ((tuple 'throw i _) i) ; Okay, the equilibrium index found.
     ))))

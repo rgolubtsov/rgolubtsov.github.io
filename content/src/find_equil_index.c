@@ -116,7 +116,7 @@ int solution(const int *A, const int num_of_A) {
         sum_of_A_1 += A[i];
     }
 
-    return -1; /*Returning -1 if there's no such an equilibrium index exists.*/
+    return -1; /*Returning -1 if there's no such an equilibrium index exist.*/
 }
 
 /* The script entry point. */

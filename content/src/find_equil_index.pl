@@ -122,7 +122,7 @@ sub solution {
         $sum_of_A_1 += $A->[$i];
     }
 
-    return -1; # Returning -1 if there's no such an equilibrium index exists.
+    return -1; # Returning -1 if there's no such an equilibrium index exist.
 }
 
 my @A = (-1, 3, -4, 5, 1, -6, 2, 1);

@@ -109,7 +109,7 @@ solution(A) ->
             end
         end, {0, 0}, A),
 
-        -1 % Returning -1 if there's no such an equilibrium index exists.
+        -1 % Returning -1 if there's no such an equilibrium index exist.
     catch
         throw:I -> I % Okay, the equilibrium index found.
     end.
