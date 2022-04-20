@@ -1,0 +1,1268 @@
+
+                Radislav Golubtsov
+===============================================================================
+     OBJECTIVE: To obtain the position of a Software Developer /
+                                     Senior Software Developer
+
+                Total IT experience - 20 years              An IT multilinguist
+===============================================================================
+                [ 2020-07-01 ]
+
+====== SUMMARY ================================================================
+
+Hardware        * Intel x86 (i686 / x86-64)
+                * HP PA-RISC
+                * IBM PowerPC
+                * Sun SPARCstation
+
+Operating       Unices and derivatives (OpenBSD, FreeBSD, Arch Linux, Debian
+Systems         GNU/Linux, Ubuntu, Fedora, CentOS, Red Hat Enterprise Linux,
+                Mac OS X, HP-UX, IBM AIX, Sun Solaris). Microsoft Windows
+
+Programming     C, Go, Java, Perl 5, Python 2/3, Bash Shell Script, JavaScript
+Languages       (ES5-6/Node.js), GNOME Vala/Genie, Lua, C++, Objective-C 2.0,
+                Fortran 95, Erlang, Elixir, LFE(Lisp Flavoured Erlang), Clojure
+
+Technologies    * Python and related modules, libraries, and frameworks (Python
+                  Standard Library, Twisted Web, Klein, Falcon, Flask, Celery,
+                  Django REST framework, ReportLab PDF Toolkit, etc.)
+                * Linux kernel API, Linux kernel modules (block device driver)
+                * Perl and related modules, libraries, and frameworks (DBI,
+                  CGI, LWP, Mojolicious, Text::Xslate, Asterisk::AGI,
+                  Net::DNS::Native, IO::Select, etc.)
+                * IVR (Interactive Voice Response) using Asterisk VoIP PBX
+                * GNU libmicrohttpd (C library to make a lightweight multi-
+                  threaded HTTP server), GNU C Library (glibc), GNU C++ Library
+                  (libstdc++), GNOME libsoup
+                * GTFS Realtime (General Transit Feed Specification), Google
+                  Text-To-Speech API
+                * Java SE / EE, Java Servlet, JavaServer Pages (JSP), JSP
+                  Standard Tag Library (JSTL), Java Portlet, Spring Boot,
+                  Spring Web MVC, Spring Security, Play! Framework, Vaadin
+                  Framework, Apache Struts / Struts 2, JavaServer Faces (JSF),
+                  Java Database Connectivity (JDBC), JavaMail, Java Abstract
+                  Window Toolkit (AWT), Java Swing, iText (Java-PDF Library),
+                  jQuery (JavaScript Library), Node.js / Luvit, Harpjs.com,
+                  HTML, CSS, XML, YAML, JSON, SQL, GNUstep / Cocoa API, Eclipse
+                  Standard Widget Toolkit (SWT), HTTP(S), (S)FTP, SSH, SCP,
+                  RESTful microservices, etc.
+                * Erlang/OTP, ERTS (Erlang Run-Time System),
+                  Erlang Standard Library
+                * Elixir, Elixir Standard Library, Cowboy (web server library
+                  for Erlang/OTP)
+                * LFE (Lisp Flavoured Erlang) - Lisp-2 dialect for Erlang VM
+                * Clojure - Lisp-1 dialect for JVM, Clojure Standard Library,
+                  HTTP Kit (HTTP client/server library for Clojure)
+
+Development     * Vim / vi, Oracle JDeveloper, Eclipse Platform (Eclipse SDK),
+Tools             MyEclipse Blue Edition, IBM Rational Software Architect
+                  (RSA), IBM Rational Application Developer (RAD), IBM
+                  WebSphere Studio Application Developer (WSAD)
+                * GNU Bash, GNU Screen, GNU Toolchain: GNU Make, GNU Compiler
+                  Collection (GCC): gcc, g++, gcc-objc, gfortran; GNU Binutils,
+                  GNU Debugger (GDB), GNUstep, sed, etc. Clang (C / C++ /
+                  Objective-C LLVM compiler front-end), TCC (Fabrice Bellard's
+                  Tiny C Compiler)
+                * Erlang Rebar, Apache Maven, Apache Ant
+
+DBMS            PostgreSQL, MySQL, Oracle Database, IBM DB2 Universal Database,
+                SQLite, MongoDB, Redis
+
+Application /   * Node.js, Luvit (Lua)
+Web Servers     * uWSGI (Python/WSGI, Perl/PSGI), Gunicorn (Python/WSGI),
+                  Twisted Reactor
+                * Perl-based app-servers: Twiggy, Hypnotoad, Morbo
+                * Netty, Apache Tomcat, JBoss Application Server, IBM WebSphere
+                  Application Server, IBM WebSphere Portal Server, Apache Pluto
+                * Cowboy (HTTP server for Erlang/OTP)
+                * HTTP Kit (HTTP server for Clojure)
+                * Apache HTTP Server, Nginx
+
+Middleware /    Git, GitHub, GitLab, Bitbucket, Perforce, Subversion (SVN),
+Misc. Apps      Concurrent Versions System (CVS), IBM Directory Server (LDAP),
+                JIRA, Redmine, Trac, Trello, MediaWiki, Doxygen, Travis CI
+                and Jenkins (continuous integration services), Docker (software
+                containers infrastructure), Koding (cloud-based dev env + VM),
+                Samba
+
+====== Languages ==============================================================
+
+English         Full Professional Proficiency:
+                * Reading / writing freely
+                * Able to perform business correspondence at a polite level
+                * Speaking at upper intermediate level
+
+Russian         Native or Bilingual Proficiency
+
+====== Education (in reverse order) ===========================================
+
+May 2002 -      Ph.D. student of the School for Advanced Studies,
+Jul 2003        Pavel Sukhoi Gomel State Technical University
+
+Oct 2001 -      Master student of the Abdus Salam International Centre
+May 2002        for Theoretical Physics, Trieste, Italy
+
+Nov 1999 -      Postgraduate of the Pavel Sukhoi Gomel State Technical
+Oct 2001        University (Ph.D. student of the School for Advanced Studies)
+
+1994-1999       Student of the Pavel Sukhoi Gomel State Technical University,
+                Gomel, Belarus ("Diploma in Honor")
+
+====== Work experience (in reverse order) =====================================
+
+Nov 2019 - Jan 2020, Development work at Success Craft, LLC (Gomel branch),
+                     Gomel (3 months)
+
+Job position: Salesforce Developer of the Software Development Department
+
+-------------------------------------------------------------------------------
+
+Nov 2019 -      Flosum ALM: Application Lifecycle Management Solution
+Jan 2020
+                Project description: Continuous development of the application
+                lifecycle management solution (Flosum), built on the Salesforce
+                platform, and the Dataplier app - a data migrator, metadata-
+                driven Salesforce app, aimed at transferring arbitrary data
+                between Salesforce orgs.
+
+                (The customer of the project is Flosum, Inc.)
+
+                Personal role in the project: Testing the workability and
+                documenting the whole process of migrating data, based on the
+                Knowledge Article objects, using the Dataplier app. Creating
+                the Customers Community prototype, a Salesforce community, and
+                making initial development on its main page, including applying
+                the design and partial content to it, taken from the Zendesk
+                support website, dedicated to Flosum. Enabling, activating, and
+                initially populating the knowledge base, targeting the
+                Customers Community. Training the Flosum customers enablement
+                management representative (by recording a series of screen
+                videos) how to create knowledge articles and close cases using
+                those knowledge articles. Other activities include bug fixing
+                in backend components of the Flosum app and improving their
+                developer documentation.
+
+                Tools and technologies used:
+                * Dev OS: Arch Linux, Ubuntu Server amd64 (VM: QEMU-KVM) -
+                  solely to run web browsers and local HTML/CSS-based
+                  prototyping tasks
+                * Salesforce Developer Edition, Salesforce Enterprise Edition
+                  (CRM in the Cloud)
+                * Apex, Lightning Aura Components, HTML, CSS, JavaScript
+                * Salesforce Developer Console, Vim
+                * Git, JIRA
+
+===============================================================================
+
+Nov 2017 - Mar 2019, Development work at Exadel, Inc. (Gomel branch),
+                     Gomel (1 year, 5 months)
+
+Job position: Software Developer of the Software Development Department 2
+
+-------------------------------------------------------------------------------
+
+Nov 2018 -      Barracuda WSG Azure Orchestration Blueprint
+Mar 2019
+                Project description: Development of the Flask Blueprint-based
+                application component, so-called Orchestrator, inside
+                the Barracuda Web Security Gateway (WSG) proxy server backend
+                which is intended to integrate WSG with the Microsoft Azure
+                cloud platform to automate creating virtual infrastructure
+                appliances by invocating the Terraform tool (along with
+                the given infrastructure configuration) running in a Celery
+                task queue. WSG as well as Orchestrator both are written
+                in Python, and the latter uses the Celery task queue library
+                to asynchronously execute Terraform jobs.
+
+                (The customer of the project is Barracuda Networks, Inc.)
+
+                Personal role in the project: Development and configuration
+                activities in the part of handling and validating Terraform
+                data (configuration variables) and passing them to a Celery
+                task queue for further execution. Also taking part in
+                development of displaying Celery task execution results
+                and statuses on an asynchronous manner and test
+                the Orchestrator against a dedicated Azure account together
+                with a DevOps engineer.
+
+                Tools and technologies used:
+                *    Dev OS: Arch Linux, Ubuntu Server amd64 (VM: QEMU-KVM)
+                *   Test OS: Ubuntu Server amd64 (VM: Xen)
+                * Python 2, Python Standard Library, Flask, Flask Blueprints,
+                  Jinja2, Virtualenv
+                * Werkzeug, Nginx
+                * Redis, SQLite
+                * GNU Make, Terraform, curl, Vim
+                * Git, Bitbucket, JIRA
+
+-------------------------------------------------------------------------------
+
+May 2018 -      bTrade secureXchange app (bTrade TDXchange)
+Aug 2018
+                Project description: Development of the server-based solution
+                (TDXchange) for secure managed file transfer (MFT) between two
+                or more participants (endpoints) using a wide variety of
+                network protocols and incorporating symmetric and asymmetric
+                encryption methods. It is written in Java and incorporates
+                the JSF web application framework and the RichFaces library
+                with some excerpts from the OmniFaces library. It stores all
+                its internal configuration parameters in one of the following
+                RDBMSes, depending on initial configuration and build profile:
+                Oracle Database, MS SQL Server, H2 Database.
+
+                (The customer of the project is bTrade LLC)
+
+                Personal role in the project: Configuring and building
+                application bundles for a series of supported platforms:
+                Linux x86/x64, Solaris SPARC, IBM AIX 32/64-bit, HP-UX IA-64.
+                Deploying and testing application bundles on remote servers
+                having and running the aforementioned platforms. Performing
+                bug fixing operations and documenting various configuration
+                caveats and gotchas found during deployment of new versions
+                or custom builds of the application and its components.
+
+                Tools and technologies used:
+                *    Dev OS: Ubuntu Server amd64 (VM: Xen)
+                * Server OS: Red Hat Enterprise Linux x86-64, SUSE Linux
+                  Enterprise Server x86-64, Solaris SPARC V9, IBM AIX
+                  for PowerPC 32-bit and 64-bit, HP-UX (IA-64)
+                * Java EE, Java Class Library, JSTL, JSF, RichFaces, XML,
+                  XHTML, JavaScript, Bash Shell Script
+                * WildFly (JBoss) Application Server
+                * Oracle Database, H2 Database
+                * Apache Maven, curl, Vim
+                * Subversion, bTrade's internal bug tracking system
+
+-------------------------------------------------------------------------------
+
+Nov 2017 -      Mercer Enhance: Machine Learning for Job Matching
+Apr 2018
+                Project description: Development of REST API microservices in
+                Python running inside Docker containers which are communicate
+                each other through the REST model. They are built on top of
+                business layer that is responsible for deep learning of a
+                series of data models, and returning sets of encumbents
+                (predictions and accuracy) for job matching user
+                infrastructure.
+
+                (The customer of the project is Mercer LLC)
+
+                Personal role in the project: Building and configuring
+                microservices using the Docker Compose tool, testing their work
+                and performance using various Python web app frameworks and
+                servers (see below). Doing prototyping work for experimental
+                development approaches using asynchronous web communication
+                scheme (Python) and porting a couple of microservices into
+                Go (golang) in order to increase their performance. Preparing
+                microservices for pre-deployment stage for Amazon AWS
+                computation environment. Documenting the source code and
+                architectural techniques/approaches which were implemented
+                in various prototyping branches.
+
+                Tools and technologies used:
+                *    Dev OS: Ubuntu Server amd64 (VM: QEMU-KVM / Xen)
+                * Server OS: Ubuntu Cloud amd64 VM
+                * Docker containers based on Ubuntu and CentOS images
+                * Python 2/3, Python Standard Library, Twisted Web, Klein,
+                  Falcon, Virtualenv
+                * Gunicorn (Python/WSGI), uWSGI (Python/WSGI),
+                  Twisted Reactor app servers
+                * TensorFlow Serving (machine learning library),
+                  Go, Go Standard Library, JSON
+                * GNU Make, Docker Compose, curl, Vim
+                * Git, Bitbucket, JIRA
+
+===============================================================================
+
+Jul 2017 - Aug 2017, Development work at R-Style Lab, LLC, Minsk (2 months)
+
+Job position: Software Developer of the IoT Development Division
+
+-------------------------------------------------------------------------------
+
+Jul 2017 -      Splink Desktop
+Aug 2017
+                Project description: Development of the Windows system service
+                to make a continuous screen video capturing and recording it
+                as a sequence of video files, and later on to transmit them
+                to a remote private server.
+
+                Personal role in the project: Research and development
+                activities on selecting an appropriate third-party framework
+                or library, suitable for fast screen video capturing.
+                Also development of the video files rotating mechanism.
+
+                Tools and technologies used:
+                *    Dev OS: Microsoft Windows 7 x64, Arch Linux x86-64
+                *   Test OS: Microsoft Windows 7 x64
+                * ISO C++, Windows API (GDI), FFmpeg
+                * Visual Studio Professional 2017, Vim, GNU Make,
+                  TDM-GCC: tdm64-1 (g++)
+                * Git, GitLab, Redmine
+
+===============================================================================
+
+Mar 2017 - May 2017, Development work at Invatechs Software, LLC,
+                     Minsk (3 months)
+
+Job position: Software Developer of the Web Development Division
+
+-------------------------------------------------------------------------------
+
+Mar 2017 -      Upmargin
+May 2017
+                Project URL: http://dev.upmargin.com/
+
+                Project description: Development of control panel (CP)
+                components for the web application which is targeted onto
+                the Hotel Booking Services area. The key aspect of this web app
+                is the deep integration with the Google AdWords web service.
+
+                (The customer of the project is Upmargin Ltd.)
+
+                Personal role in the project: Development of new web pages
+                or their components according to the project guidelines and
+                requirements. Minor bug fixing in a series of web pages
+                of the CP. Building and testing the CP. (Development work
+                covers both frontend and backend layers, which talk to each
+                other by utilizing REST API techniques, and both written
+                in JavaScript.)
+
+                Tools and technologies used:
+                *    Dev OS: OpenBSD/amd64, Ubuntu Server amd64
+                             (both: VM: QEMU-KVM)
+                * Server OS: Ubuntu Server amd64 (Cloud VM)
+                * JavaScript,MEAN stack (MongoDB, Express, AngularJS, Node.js),
+                             HTML, CSS
+                * Nginx, MongoDB
+                * Vim
+                * Git, Bitbucket, Trello
+
+===============================================================================
+
+Feb 2016 - Sep 2016, Development work at Devicepros, LLC, Minsk (8 months)
+
+Job position: Software Developer of the Software Development Division
+
+-------------------------------------------------------------------------------
+
+Aug 2016 -      Test Infrastructure (TI): Virtual Linux block device driver
+Sep 2016                           for collecting and measuring I/O latency
+
+                Project description: The backend web service as a TI component
+                (see prev project) operates on DUT (device under test) devices.
+                For character devices there is already such a driver in use,
+                but for block devices there isn't. The project's aim is to
+                develop a block device driver as a loadable kernel module (LKM)
+                for the Linux kernel that will perform collecting and measuring
+                latency for I/O operations.
+
+                (The customer of the TI project is Stellus Technologies,
+                formerly a division of Samsung Electronics.)
+
+                Personal role in the project: Responsible for the whole project
+                - development of the Linux block device driver and a small
+                utility to test (and debug) its work without any invocations
+                from the TI backend web service. Documenting the source code.
+
+                Tools and technologies used:
+                *    Dev OS: Arch Linux x86-64
+                *   Test OS: Ubuntu Server amd64 (VM: QEMU-KVM)
+                * ISO C, Linux kernel API, GNU C Library (glibc)
+                * Vim, Doxygen
+                * GNU Make, Flexible I/O Tester (fio)
+                * Git, GitHub, JIRA
+
+-------------------------------------------------------------------------------
+
+May 2016 -      Test Infrastructure (TI): REST Backend Service
+Jul 2016
+                Project description: The backend web service for TI that
+                communicates with the frontend web service through the use of
+                REST API calls. The Test Infrastructure consists of two big
+                components: frontend and backend. Whilst the frontend is
+                responsible for communicating with the QA specialists and
+                written in PHP and JavaScript, the backend is doing its work
+                (run single tests or multi-test jobs on DUT (device under test)
+                devices) behind the scenes; it is written mainly in Python with
+                some performance-critical parts written in Go and C. Both
+                frontend and backend components talk to each other by utilizing
+                REST API techniques.
+
+                (The customer of the TI project is Stellus Technologies,
+                formerly a division of Samsung Electronics.)
+
+                Personal role in the project: Responsible for development of
+                the report generating facility (agent), which is intended to
+                collect information about all tests and test jobs are being ran
+                or currently running on DUT devices, and to produce
+                consolidated PDF or CSV report for QAs and managers.
+                Other activities include general bug fixing in other parts of
+                the project and documenting the source code.
+
+                Tools and technologies used:
+                *    Dev OS: Arch Linux x86-64
+                * Server OS: Ubuntu Server amd64
+                * Python 3, Python Standard Library, Django REST framework,
+                              ReportLab PDF Toolkit, Virtualenv
+                * Python/WSGI (uWSGI) application server
+                * MySQL, PostgreSQL
+                * Vim, Doxygen
+                * Git, GitHub, JIRA
+
+-------------------------------------------------------------------------------
+
+Feb 2016 -      Test Infrastructure (TI): Simulating Samsung AWS
+Apr 2016
+                Project description: Building the simulating AWS (Amazon Web
+                Services) environment to develop and test new features for TI
+                locally, instead of using remote Samsung AWS environment.
+
+                (Test Infrastructure is the composite software platform aimed
+                at using by developers and QAs to run either single tests or
+                multi-test jobs on DUT (device under test) devices, for
+                example, on SSD drives. It utilizes host/target paradigm
+                to perform its tasks on multiple machines at once. The customer
+                of the TI project is Stellus Technologies, formerly a division
+                of Samsung Electronics.)
+
+                Personal role in the project: Development of the local build
+                and test environment, vaguely reminiscent of AWS environment
+                used during the Samsung storage software development process
+                by various dev/QA teams. Responsible for creating modules and
+                scripts for cascade execution of build sequences written in a
+                series of programming languages: Perl, Bash Shell Script, Java,
+                Python, Go. Documenting.
+
+                Tools and technologies used:
+                *    Dev OS: Arch Linux x86-64
+                * Server OS: Ubuntu Server amd64
+                * Perl 5, Bash Shell Script
+                * Java SE, Java Class Library
+                * Python 3, Go (along with their respective standard libraries)
+                * Apache HTTP Server
+                * Jenkins (continuous integration service)
+                * Docker (software containers infrastructure)
+                * Koding (cloud-based dev env + VM)
+                * Vim
+                * GNU Make, Apache Maven
+                * Git, Bitbucket, JIRA
+
+===============================================================================
+
+Jan 2013 - Apr 2015, Development work at SMS Online, LLC (Gomel branch),
+                     Gomel (2 years, 4 months)
+
+Job position: Senior Software Developer of the Software Development Department
+              (Dev Dept)
+
+All the projects given below should not be considered as separate projects, but
+in contrary they are functional parts of a consolidated continuous development,
+improvement, and maintenance cycle of modules of the aggregated and unified
+bulk-billing SMS/IVR platform. This platform has been invented and developed
+exclusively by the SMS Online company for its internal ops., and currently it
+covers up to 90-95% of load for all the resources of the company with the
+comparable (approx. 1:1) throughput.
+
+Key technologies throughout the projects: Perl 5, PostgreSQL, and occasionally
+                                          Java EE, ISO C, Asterisk.
+
+-------------------------------------------------------------------------------
+
+Jan 2015 -      IVR Services: Optimization and Maintenance
+Apr 2015
+                Project description: Optimization and maintenance of the
+                company's IVR Services, analysis of the IVR statistics and its
+                periodical recalculation according to the requirements of
+                currently running business processes. IVR Services are
+                interactive voice response services (something like voice
+                menus) which are running on the dedicated server under the
+                control of the open source Asterisk VoIP PBX. They work either
+                in an isolated environment or in a part-to-part
+                intercommunication with the other IVR Services ran by partners
+                and VoIP telecom systems of mobile network operators, and with
+                abonents.
+
+                Personal role in the project: IVR statistics monitoring and
+                analysis, and its periodical recalculation. Modernization of a
+                series of auxiliary IVR services which let main services to
+                work properly in a completely autonomous mode, without changing
+                their source code in situations when IVR contexts are subject
+                to switch. Modernization of web control panels which provide
+                necessary functionality for configuring IVR services and to
+                collect and retrieval of IVR statistics. Taking part in the IVR
+                platform migrating from a hardware server to a cloud-based
+                virtual machine together with the system and network
+                administrators of the company. Carrying out post-migrating
+                activities and tasks, including Cron jobs setup, Asterisk VoIP
+                PBX configuring, IVR traffic and statistics analysis, and deep
+                functional testing of all active IVR services running on the
+                platform. Partially performing tasks as a DBA. Documenting.
+
+                Tools and technologies used:
+                *    Dev OS: Arch Linux i686; OpenBSD/amd64
+                * Server OS: Debian GNU/Linux amd64 (HW x 2 / Cloud VM)
+                * Perl 5, LWP, DBI, CGI, Asterisk::AGI, YAML::XS,
+                                                         Log::Log4perl, etc.
+                * YAML, SQL
+                * Asterisk VoIP PBX, Apache HTTP Server, Nginx
+                * PostgreSQL
+                * Vim
+                * GNU Make
+                * Git, GitLab, MediaWiki, Redmine
+
+-------------------------------------------------------------------------------
+
+Nov 2014 -      Partner Services (Mobile Subscriptions)
+Dec 2014
+                Project description: Making and providing the so-called lending
+                pages to partners to store company's content on their side (as
+                web services), and processing SMS billing ops. according to
+                requirements and conditions of active partner programs.
+
+                Personal role in the project: Automating the process of
+                creating the WAR archive for a web app (containing a lending)
+                for its future use during one of endorsed partner programs.
+                Installing, deploying, and testing this WAR archive on
+                supported Java EE app servers.
+
+                Tools and technologies used:
+                *    Dev OS: Arch Linux i686
+                * Server OS: Debian GNU/Linux amd64 (Cloud VM)
+                * Java EE, Java Class Library, Servlet / JSP API
+                * Apache Tomcat, JBoss Application Server
+                * Vim
+                * GNU Make, Apache Maven
+                * Git (including Git submodules), GitLab, Redmine
+
+-------------------------------------------------------------------------------
+
+Jul 2014 -      Gate Admin CP II (SMS Billing Control Panel: Next Gen)
+Oct 2014
+                Project description: Continuous deepest modernization of the
+                SMS Billing Platform Control Panel (CP). The CP is the web
+                administrative console that is built as a series of separate
+                modules written using CGI and Mojolicious MVC-framework. The CP
+                is used mostly by the company's tech support group 24x7. SMS
+                Billing is the multi-component composite software platform for
+                processing billing ops. with SMS message queues which are
+                moving between partners' services and mobile network operators.
+
+                Personal role in the project: Participating in the CP migrating
+                process from separate CP modules to a single unified
+                Mojolicious-based app combining all the managerial stuff in one
+                web app. General bug fixing in various obsolescent but still
+                active CP modules. (Presentation and business layers.)
+
+                Tools and technologies used:
+                *    Dev OS: Arch Linux x86-64
+                * Server OS: Debian GNU/Linux amd64 (Cloud VM)
+                * Perl 5, Mojolicious, Text::Xslate, DBI, CGI, MIME::Lite,
+                                       YAML::XS, Log::Log4perl, etc.
+                * YAML, HTML5, CSS, JavaScript, SQL
+                * Morbo / Hypnotoad, Apache HTTP Server, Nginx
+                * PostgreSQL, SQLite
+                * Vim
+                * GNU Make
+                * Git, GitLab, Redmine
+
+-------------------------------------------------------------------------------
+
+Mar 2014 -      Partner Services (Spb Transport / Spb Subway)
+Jun 2014
+                Project description: Composite mobile commerce (MC) project
+                consisting of two independent subprojects:
+
+                1. The MC system to communicate to the St.Petersburg Public
+                   Transport Portal for getting information about public
+                   transport traffic, timings, stations, etc., and to transmit
+                   this information to passengers' PDAs and mobile phones upon
+                   SMS requests. Main system components: (1) SMS billing
+                   gateway, (2) Daemon for incoming SMS messages; it also
+                   processes GTFS data.
+
+                2. The MC system to communicate to the Russian Standard Bank
+                   and to the St.Petersburg Subway Service for activating and
+                   recharging the Podorozhnik transport prepaid cards used
+                   inside St.Petersburg subway stations, from passengers' PDAs
+                   and mobile phones via SMS transactions and IVR interaction.
+                   Main system components: (1) SMS billing gateway, (2) IVR
+                   platform, (3) Embedded HTTP server with the high-speed
+                   request handling mechanism that is running on partner's
+                   side.
+
+                Personal role in the project:
+
+                1. Development of the daemon for incoming SMS messages that is
+                   also responsible for processing GTFS data (GTFS-realtime
+                   feed). To develop this daemon the company's internal Perl-
+                   based framework was used. It is tailored especially for
+                   constructing such daemons which are considered to be real-
+                   time ready. Also during the development of this daemon the
+                   third-party GTFS Realtime API was used.
+
+                2. Development of the IVR service using the third-party Google
+                   Text-To-Speech API which is running inside IVR platform
+                   under the control of Asterisk VoIP PBX. It operates as
+                   follows: as the input data it receives a prepaid card
+                   number, as the output data it says a secret code to activate
+                   the card (Perl). Also during this project I was responsible
+                   for development of the embedded HTTP server with the high-
+                   speed request handling mechanism. It was intended to run on
+                   partner's side (ISO C, GNU libmicrohttpd).
+
+                Tools and technologies used:
+                *    Dev OS: Arch Linux x86-64
+                * Server OS: Debian GNU/Linux amd64 (VM)
+                * Perl 5, LWP, DBI, AnyEvent, Redis, Asterisk::AGI,
+                                           Archive::Zip, Text::CSV, YAML::XS,
+                                                JSON::XS, Log::Log4perl, etc.
+                * ISO C, GNU C Library (glibc), GNU libmicrohttpd
+                * YAML, JSON, GTFS Realtime API, Google Text-To-Speech API
+                * Twiggy, Redis, Asterisk VoIP PBX
+                * Vim
+                * GNU Make, GCC, TCC
+                * Git, GitLab, Redmine
+
+-------------------------------------------------------------------------------
+
+Dec 2013 -      Bulk Admin CP (SMS Bulk Control Panel)
+Feb 2014
+                Project description: Further development and improvement of the
+                SMS Bulk Platform Control Panel (CP). The CP is the web
+                administrative console utilizing Vaadin Framework controls and
+                workflow. The CP is used mostly by the company's tech support
+                group 24x7. SMS Bulk is the software platform for mass
+                messaging.
+
+                Personal role in the project: Responsible for the whole project
+                (as the only Java developer in almost exclusively Perl-oriented
+                company). Development of the additional user controls according
+                to new business requirements and general bug fixing.
+                (Presentation layer.)
+
+                Tools and technologies used:
+                *    Dev OS: Arch Linux i686
+                * Server OS: Debian GNU/Linux amd64 (VM)
+                * Java EE, Vaadin Framework, JDBC, XML, SQL
+                * Apache Tomcat
+                * PostgreSQL
+                * Vim
+                * Apache Ant
+                * Git, Redmine
+
+-------------------------------------------------------------------------------
+
+Mar 2013 -      Gate Admin CP (SMS Billing Control Panel)
+Nov 2013
+                Project description: Further development and improvement of the
+                SMS Billing Platform Control Panel (CP). The CP is the web
+                administrative console that is built as a series of separate
+                modules written using CGI and Mojolicious MVC-framework. The CP
+                is used mostly by the company's tech support group 24x7. SMS
+                Billing is the multi-component composite software platform for
+                processing billing ops. with SMS message queues which are
+                moving between partners' services and mobile network operators.
+
+                Personal role in the project: Development of a bunch of new CP
+                modules including the following: "Preprocess Messages Search",
+                "MT-Subscriptions and Services Management", "Users and Roles
+                Management". Taking part in the CP migrating from a hardware
+                FreeBSD-based server to a virtual machine running Debian Stable
+                together with the system and network administrators of the
+                company. General bug fixing in various CP modules. Documenting.
+                (Presentation and business layers. Role-based user
+                authorization-expert.)
+
+                Tools and technologies used:
+                *    Dev OS: Arch Linux i686
+                * Server OS: FreeBSD/amd64 (HW); Debian GNU/Linux amd64 (VM)
+                * Perl 5, Mojolicious, Text::Xslate, DBI, MIME::Lite, YAML::XS,
+                                                           Log::Log4perl, etc.
+                * YAML, HTML5, CSS, JavaScript, SQL
+                * Morbo / Hypnotoad, Apache HTTP Server
+                * PostgreSQL
+                * Vim
+                * GNU Make
+                * Git, MediaWiki, Redmine
+
+-------------------------------------------------------------------------------
+
+Jan 2013 -      Java Bulk Client (SMS Bulk Platform API for Java Client)
+Feb 2013
+                Project description: Development of the SMS Bulk Platform API
+                easily accessible from within Java clients (used by business
+                partners). SMS Bulk is the software platform for mass
+                messaging.
+
+                Personal role in the project: Responsible for the whole project
+                (as the only Java developer in almost exclusively Perl-oriented
+                company). Development of the API library with the complete
+                Javadoc and installation/use notes. Also development of the
+                test/sample web app to demonstrate how to use the library
+                inside a client Java web app.
+
+                Tools and technologies used:
+                *    Dev OS: Arch Linux i686
+                * Server OS: FreeBSD/amd64
+                * Java EE, Java Class Library, Servlet / JSP API, JSTL, SLF4J
+                * XML, XHTML, CSS, JavaScript
+                * Apache Tomcat
+                * Vim
+                * Apache Maven
+                * Git, Redmine
+
+===============================================================================
+
+Aug 2012 - Oct 2012, Development work at Intervale, CJSC (Gomel branch),
+                     Gomel (3 months)
+
+Job position: Senior Software Developer of the Mobile Banking Solutions
+              Development Department
+
+-------------------------------------------------------------------------------
+
+Aug 2012 -      Sberbank of Russia Uniform Mobile Banking Payment System
+Oct 2012
+                Project description: Development of the complex composite
+                payment system for mobile banking (MB) that targets its area of
+                application to cover all divisions and subsidiaries of Sberbank
+                of Russia with the uniform MB system. This system provides bank
+                clients with the ability to make payments using their various
+                mobile devices (cellular phones with the Java ME technology
+                inside, smartphones, and tablets based on Symbian, Android, and
+                iOS operating systems). This system is developed consolidatedly
+                by a series of companies, one of them is the Intervale company.
+                It is responsible for R&D for building the following
+                components: SMS gateway, message queues, and client apps for
+                Java ME-based mobile phones.
+
+                Personal role in the project: Responsible for development of
+                the web administrative console intended to use by bank
+                operators and auditors to control and manage the assets and
+                processes which are underlie the SMS gateway and message
+                queues-related operations. Documenting. (Presentation and
+                (partially) business layers. Usability and accessibility-
+                expert. User authentication and authorization-expert.)
+
+                Tools and technologies used:
+                *    Dev OS: Arch Linux x86-64
+                * Server OS: Microsoft Windows Server 2008 x86-64
+                * Java EE, Java Class Library, Servlet / JSP API, JSTL, SLF4J
+                * Spring Web MVC + Spring Security, Apache Struts 2 (initially)
+                * XML, XHTML, CSS, JavaScript, jQuery
+                * Apache Tomcat, IBM WebSphere Application Server
+                * Vim
+                * Apache Maven
+                * Subversion, Samba
+
+===============================================================================
+
+Jan 2012 - May 2012, Development work at XIMAD, Inc. (Gomel branch),
+                     Gomel (5 months)
+
+                     (XIMAD, Inc. and XIM, Inc. have joint headquarters)
+
+Job position: Senior Software Developer of the Wireless Division
+
+-------------------------------------------------------------------------------
+
+Mar 2012 -      Ad Optimizer, XIMAD, Inc.
+May 2012
+                Project URL: http://devopt.ximad.com/
+
+                Project description: Literally this can be stated as an
+                advertising optimizer. This is a web app that is used by
+                company's managers to reorder and redistribute the ad banners
+                and applets which are displayed on abonents' mobile devices.
+                The items of such ad content (ad banners and applets) are only
+                displayed on those mobile client applications and games which
+                were produced and offered by the company and - that is very
+                important - are free of charge to download and use, in other
+                words, which are freeware or at least shareware. These ads are
+                subject to apply the following operations which might be
+                performed over them inside this web app: filter, connect,
+                delete, make active, discard, and reorder using the following
+                criteria: mobile platforms (mobile operating systems) and their
+                versions, mobile apps and games and their versions, and
+                localization parameters, abonents'/mobile devices' geographic
+                location (using the GeoLocation third-party web service API).
+
+                Personal role in the project: Development of new web pages
+                according to the project guidelines and requirements. Bug
+                fixing in most actively used web pages of the app. Building,
+                testing, and deploying the whole app in a production
+                environment along with making any required database schema
+                changes. Documenting. (Presentation and business layers.)
+
+                Tools and technologies used:
+                *    Dev OS: Ubuntu amd64 (Window Maker; generic kernel flavor)
+                * Server OS: FreeBSD/amd64
+                * Java EE, Play! Framework, JDBC, JavaMail, XML, XHTML, CSS,
+                                                            JavaScript, SQL
+                * Apache Tomcat
+                * Eclipse SDK, vi
+                * Apache Maven
+                * MySQL
+                * Subversion, Redmine
+
+-------------------------------------------------------------------------------
+
+Jan 2012 -      Zuma iOS/Zuminja (2D-game for Apple iPhone/iPad/iPod touch),
+Feb 2012        XIMAD, Inc.
+
+                Project description: Development of the 2D-game Zuma iOS
+                (alternate name Zuminja) intended to run on the Apple mobile
+                devices line-up. (The mobile app should look and behave similar
+                to already developed ports for Android- and BlackBerry-based
+                devices.)
+
+                Personal role in the project: Responsible for the whole project
+                except making game design scenes and related static graphical
+                components.
+
+                Tools and technologies used:
+
+                Preparation stage:
+                * Dev OS: CentOS x86_64 (Window Maker);
+                * Ubuntu amd64 (Window Maker)
+                * Objective-C 2.0
+                * GNUstep/Cocoa API, XML
+                * GNUstep object-oriented development kit, vi
+
+                Active stage:
+                * Dev OS: Mac OS X Lion (installed on a Mac mini workstation)
+                * Objective-C 2.0
+                * OpenGL ES, XML
+                * Apple Xcode IDE (along with additional tools
+                                     and iOS Simulator), MacPorts, vi
+                * Redmine
+
+===============================================================================
+
+Sep 2010 - Dec 2011, Development work at XIM, Inc. (Gomel branch),
+                     Gomel (1 year, 4 months)
+
+                     (XIM, Inc. and XIMAD, Inc. have joint headquarters)
+
+Job position: Senior Software Developer of the Web Development Department
+
+-------------------------------------------------------------------------------
+
+Jul 2011 -      Mobility Traffic Mediation Solution
+Dec 2011        (Media Optimizer and Web Optimizer),
+                Openwave Systems Inc. (off-site)
+
+                Project description: Integrated complex project that targets
+                the development of the NGP (Next Generation Proxy) proxy
+                server. This server together with its plugins Media Optimizer
+                and Web Optimizer is designed as a mediation layer to reduce
+                traffic loads which highly affect the network infrastructures
+                of Internet service providers and mobile network operators when
+                they operate on and transmit dense mobile traffic to the users'
+                and abonents' mobile devices.
+
+                Personal role in the project: General bug fixing activities in
+                the mainline branch of the Media Optimizer (Java) and Web
+                Optimizer (C++) plugins according to official bug reports
+                issued by the QA team. Mainly, having responsibilities on bug
+                fixing, rebuilding, deploying in a test env., and testing the
+                crucial component of the Media Optimizer plugin called ViDeO
+                (Video Delivery Optimizer). Documenting.
+
+                Tools and technologies used:
+                *    Dev OS: FreeBSD/amd64 (KDE);
+                             Ubuntu amd64 (Window Maker; generic kernel flavor)
+                * Server OS: CentOS x86_64;
+                             Red Hat Enterprise Linux Server x86_64
+                * Java SE / EE, ISO C++, Bash Shell Script, Perl 5, XML
+                * Apache HTTP Server, Apache Tomcat
+                * Vim
+                * MySQL
+                * Perforce, Openwave's internal Issue Tracking System (ITS)
+                            + Trac
+
+-------------------------------------------------------------------------------
+
+Sep 2010 -      Atlas Information Governance Suite (Policy Atlas),
+Jun 2011        PSS Systems, an IBM Company (off-site)
+
+                Project description: Policy Atlas is the web-based management
+                information system that unifies Legal, IT, Records Management,
+                Finance and Lines of Business to eliminate unnecessary
+                discovery and data management risk and cost. The Suite includes
+                enterprise workflow, decision support tools and a unified
+                inventory of assets and their legal obligations and business
+                value. Atlas enables company to meet its duties for legal
+                information governance and to identify and eliminate data with
+                no business value or legal obligation.
+
+                Personal role in the project: Java modules coding, JavaScript
+                modules coding, Bash scripts coding. The main task is to
+                develop and maintain complex, interactively overloaded web-page
+                "Matter Exceptions and Alerts". Bugfixing in other modules of
+                the application. Also having responsibilities for development
+                of the (auxiliary) patching utility intended to simplify and
+                accelerate Policy Atlas application deployment.
+
+                Tools and technologies used:
+                * Dev OS: Kubuntu i386 (server kernel flavor)
+                * Java EE, Java Servlet, JSP, JSTL, JSF, JDBC, XML, XHTML, CSS,
+                                                                           SQL
+                * JavaScript, Bash Shell Script
+                * JBoss Application Server, IBM WebSphere Application Server
+                * Oracle JDeveloper
+                * MyEclipse Blue Edition
+                * Oracle Database
+                * Perforce, Trac
+
+===============================================================================
+
+Mar 2009 - Aug 2010, Development work at the Dubna Technopark, Dubna,
+                     including development work at the FE Brickbuild
+                     (Belarusian branch of Dubna Technopark),
+                     Gomel (1 year, 5 months)
+
+Job position: Senior Software Developer
+              of the Expert Systems Development Centre
+
+-------------------------------------------------------------------------------
+
+Mar 2009 -      Intellectual automated control system (IACS) "Trainflow",
+Aug 2010        Dubna Technopark
+
+                Project description: IACS "Trainflow" is the centralized
+                management information system having its purpose to control and
+                maintain the real-time process of optimal timing and routing
+                the freight trains inside both Russian and Belarusian railway
+                systems with no any constraints.
+
+                Personal role in the project: G2 and ASP.NET modules coding,
+                JavaScript modules coding, creating, building and mastering the
+                original design for the web part of the application and
+                performing related tasks. Having responsibilities for part of
+                the project belonging to development of the subsystem for
+                dynamic generating the railway system interactive web reports
+                (presentation layer); usability and accessibility-expert.
+
+                Tools and technologies used:
+                * Gensym G2 Platform
+                * Gensym G2 Programming Language
+                * Gensym G2 Server and built-in HTTP Server
+                * Gensym G2 Telewindows
+                * JavaScript, jQuery
+                * Microsoft .NET Framework, ASP.NET, XML, XHTML, CSS, SQL
+                * Microsoft Visual Web Developer 2008 Express Edition
+                * Microsoft Visual Studio Team System 2008
+                * Microsoft Internet Information Services
+                * Oracle Database
+                * Subversion
+
+===============================================================================
+
+Sep 2003 - Sep 2008, Development work at the FE IBA-Gomel, Gomel (5 years)
+
+Job position: Senior Software Developer of the E-Business Division
+
+-------------------------------------------------------------------------------
+
+Jul 2008 -      Automated information system "KDT", IBA-Gomel
+Sep 2008
+                Project description: AIS "KDT" is the management information
+                system having its purpose to control and maintain the process
+                of delivering the particular groups of commodities inside
+                complex economical systems such as a trade system.
+
+                Personal role in the project: Java modules coding and
+                performing related tasks. Having responsibilities for part of
+                the project belonging to development of the managing the user
+                accounts portlet for large portal system (business and
+                presentation layers).
+
+                Tools and technologies used:
+                * Java EE
+                * Java Portlet, Java Servlet, JSP, JDBC, XML, XHTML, SQL,
+                                                                PUMA SPI
+                * IBM WebSphere Portal Server
+                * IBM WebSphere Application Server
+                * IBM Directory Server (LDAP)
+                * Apache Pluto
+                * Apache Tomcat
+                * IBM Rational Application Developer
+                * Checkstyle
+                * IBM DB2 Universal Database
+                * Concurrent Versions System, Trac
+
+-------------------------------------------------------------------------------
+
+May 2008 -      IBM AS RM Metro, IBM Netherlands, IBM Germany (off-site)
+Jul 2008
+                Project description: Web-based application that empowers
+                managers with the ability and functionality to perform capacity
+                planning and operational optimizations inside IBM. In other
+                words, this is the tool to manage any and all resource changes.
+
+                Personal role in the project: Java modules coding and
+                performing related tasks. Having responsibilities for parts of
+                the project belonging to front-end presentation layer, so
+                called "user interaction".
+
+                Tools and technologies used:
+                * Java EE
+                * Java Servlet, JSP, JDBC, JavaMail, XML, XHTML, SQL
+                * The Apache Struts Web Application Framework
+                * IBM WebSphere Application Server
+                * IBM Rational Software Architect
+                * Checkstyle
+                * IBM DB2 Universal Database
+                * Subversion, Trac
+
+-------------------------------------------------------------------------------
+
+Feb 2008 -      Automated information system "KDT", IBA-Gomel
+May 2008
+                Project description: AIS "KDT" is the management information
+                system having its purpose to control and maintain the process
+                of delivering the particular groups of commodities inside
+                complex economical systems such as a trade system.
+
+                Personal role in the project: Java modules coding and
+                performing related tasks. Having responsibilities for part of
+                the project belonging to the common graphical user interface
+                design and development (presentation layer).
+
+                Tools and technologies used:
+                * Java EE
+                * Eclipse SWT, JDBC, XML, SQL
+                * IBM WebSphere Application Server
+                * IBM Rational Application Developer
+                * Checkstyle
+                * IBM DB2 Universal Database
+                * Concurrent Versions System
+
+-------------------------------------------------------------------------------
+
+May 2006 -      IBM Web Solutions Enabler (WSE), IBM Italy, IBM France
+Feb 2008        (on-site/off-site)
+
+                Project description: Web-based project that provides functions
+                to allow the creation, maintenance and operation of a number of
+                IBM Intranet and Internet solutions (WSE eSolutions) according
+                to the end-users' and customers' needs through the "Application
+                Modeling" and "Application Runtime" interfaces. The project is
+                for IBM Italia S.p.A.
+
+                Personal role in the project: Java modules coding and
+                performing related tasks. Having responsibilities for parts of
+                the project belonging to application configure and runtime
+                stages in preparing certain eSolutions (business and
+                presentation layers).
+
+                Tools and technologies used:
+                * Java EE
+                * Java Servlet, JSP, JDBC, JavaMail, iText, XML, XHTML, SQL
+                * The Apache Struts Web Application Framework
+                * IBM WebSphere Application Server
+                * IBM Rational Application Developer
+                * Checkstyle
+                * IBM DB2 Universal Database
+                * Concurrent Versions System
+
+-------------------------------------------------------------------------------
+
+Jul 2004 -      GME Engineering Business Systems Sustain (EBSS),
+May 2006        General Motors Europe, IBM Germany (on-site/off-site)
+
+                Project description: Provides enterprise business maintenance
+                and sustain for a bunch of applications with the purposes to
+                manage and control business processes of production
+                infrastructure on various GME vehicle plants, in particular, on
+                Adam Opel AG plants. The project is for General Motors Europe.
+
+                Personal role in the project: Java modules coding, modifying
+                existing third-party code, general application bug-fixing and
+                performing related tasks; performing standard operations
+                (password reset, user account management, etc.) in the 24x7
+                schedule. Having responsibilities for maintenance and support
+                of the HMCS Global (Hazardous Material Control System) and
+                INFO2000 applications and for performing standard operations in
+                the 24x7 schedule for these two and for three other related
+                applications through the GME Help Desk.
+
+                Tools and technologies used:
+                * Sun Java 2 Platform Standard Edition (J2SE)
+                * Sun Java 2 Platform Enterprise Edition (J2EE)
+                * Java Swing, Java Servlet, JDBC, XML, XHTML, SQL
+                * Apache HTTP Server
+                * Apache JServ
+                * Apache Ant
+                * Eclipse Platform
+                * IBM VisualAge for Java
+                * Oracle Database
+                * Concurrent Versions System
+
+-------------------------------------------------------------------------------
+
+Feb 2004 -      IBM Web Solutions Enabler (WSE), IBM Italy, IBM France
+Jul 2004        (on-site/off-site)
+
+                Project description: Web-based project that provides functions
+                to allow the creation, maintenance and operation of a number of
+                IBM Intranet and Internet solutions (WSE eSolutions) according
+                to the end-users' and customers' needs through the "Application
+                Modeling" interface. The project is for IBM Italia S.p.A.
+
+                Personal role in the project: Java modules coding and
+                performing related tasks. Having responsibilities for part of
+                the project belonging to the application configure stage in
+                preparing certain eSolutions (business and presentation
+                layers).
+
+                Tools and technologies used:
+                * Sun Java 2 Platform Enterprise Edition (J2EE)
+                * Java Servlet, JSP, JDBC, XML, XHTML, SQL
+                * The Apache Struts Web Application Framework
+                * IBM WebSphere Application Server
+                * IBM WebSphere Studio Application Developer
+                * IBM DB2 Universal Database
+                * Concurrent Versions System
+
+-------------------------------------------------------------------------------
+
+Nov 2003 -      IBA Business Intelligence System (BIS), IBA-Gomel
+Feb 2004
+                Project description: Web-based project that allows customers to
+                analyze the intellectual resources of a company, to place
+                orders for software coders with skills needed and to hire new
+                workers.
+
+                Personal role in the project: Business-logic modeling, Java
+                modules coding and performing related tasks. Having
+                responsibilities for part of the project concerning internal
+                management processes, i.e. managing customers and orders lists,
+                accepting and rejecting customers' profiles processes (business
+                and presentation layers).
+
+                Tools and technologies used:
+                * Sun Java 2 Platform Enterprise Edition (J2EE)
+                * Java Servlet, JSP, JDBC, XML, XHTML, SQL
+                * The Apache Struts Web Application Framework
+                * IBM WebSphere Application Server
+                * IBM WebSphere Studio Application Developer
+                * IBM DB2 Universal Database
+                * Concurrent Versions System
+
+-------------------------------------------------------------------------------
+
+Sep 2003 -      IBA Database Manager, IBA-Gomel
+Nov 2003
+                Project description: Java AWT and C++ Win32 API GUI front-ends
+                for managing some databases. Advantages: fast adding, viewing
+                and removing records to/from database tables through JDBC/ODBC
+                interfaces.
+
+                Personal role in the project: Java and C++ modules coding,
+                database tables creating and modifying. Having responsibilities
+                for the whole project.
+
+                Tools and technologies used:
+                * Sun Java 2 Platform Standard Edition (J2SE)
+                * Java Abstract Window Toolkit (AWT), JDBC, ODBC, SQL
+                * GNU Make
+                * IBM Jikes Compiler
+                * GNU Compiler Collection (GCC)
+                * IBM DB2 Universal Database
+
+===============================================================================
+
+Sep 1999 - Jul 2003, Research work at the Pavel Sukhoi Gomel State Technical
+                     University, Gomel, including research work
+                     at the Abdus Salam International Centre for Theoretical
+                     Physics, Trieste, Italy (4 years)
+
+Job position: Research Assistant of the Department of Economics and Management
+
+-------------------------------------------------------------------------------
+
+Nov 2002 -      Linear and Nonlinear Optimization Toolkit for Study Courses
+Jul 2003        in Operations Research
+
+                Project description: Three packages for seeking optimal
+                solutions: dense linear programming (revised simplex method),
+                quadratic programming (using algorithm by Schittkowski),
+                general nonlinear programming (nonlinearly constrained
+                minimization).
+
+                Personal role in the project: Test problems formulating,
+                mathematical programming algorithms exploring and C packages
+                coding. Having responsibilities for the whole project.
+
+                Tools and technologies used:
+                * GNU Make
+                * GNU Compiler Collection (GCC)
+
+-------------------------------------------------------------------------------
+
+Dec 1999 -      Nonlinear Optimization Packages for Scientific Work
+Nov 2002
+                Project description:
+
+                * Java numerical implementation of the Hooke and Jeeves
+                  nonlinear optimization algorithm.
+
+                * C++ numerical implementation of the Nelder-Mead simplex
+                  method.
+
+                * Java numerical implementation of the Quasi-Newton nonlinear
+                  optimization technique.
+
+                Personal role in the project: Test problems formulating,
+                mathematical programming algorithms exploring and Java/C++
+                packages coding. Having responsibilities for the whole project.
+
+                Tools and technologies used:
+                * Sun Java 2 Platform Standard Edition (J2SE)
+                * GNU Make
+                * IBM Jikes Compiler
+                * GNU Compiler Collection (GCC)
+
+-------------------------------------------------------------------------------
+
+Sep 1999 -      Scientific Data Conversion and Visualizing Utilities
+Dec 1999
+                Project description:
+
+                * The template program for using applied scientific software
+                  calculations in AutoCAD system for visualizing numerical
+                  data.
+
+                * The utility program for converting applied scientific
+                  software output to AutoCAD DXF format.
+
+                Personal role in the project: Developing appropriate
+                algorithms; C and C++ packages coding. Having responsibilities
+                for the whole project.
+
+                Tools and technologies used:
+                * GNU Make
+                * GNU Compiler Collection (GCC)
+                * AutoCAD Development System Runtime Extension (ADSRX)
+
+====== Personal information ===================================================
+
+Date of birth   June 27, 1977 (43yo)
+Citizenship     Republic of Belarus
+Marital status  Single
+No. of children 2
+Driver's lic.   No
+
+====== Other notes ============================================================
+
+My GitHub       https://github.com/rgolubtsov
+
+Sport           * Table tennis
+Activities      * Street skateboarding
+                * Middle-distance running
+                * General fitness
+
+vim:set nu et ts=4 sw=4:
