@@ -4,9 +4,9 @@
      OBJECTIVE: To obtain the position of a Software Developer /
                                      Senior Software Developer
 
-                Total IT experience - 20 years              An IT multilinguist
+                Total IT experience - 20+ years             An IT multilinguist
 ===============================================================================
-                [ 2020-07-01 ]
+                [ 2022-04-20 ]
 
 ====== SUMMARY ================================================================
 
@@ -19,80 +19,84 @@ Operating       Unices and derivatives (OpenBSD, FreeBSD, Arch Linux, Debian
 Systems         GNU/Linux, Ubuntu, Fedora, CentOS, Red Hat Enterprise Linux,
                 Mac OS X, HP-UX, IBM AIX, Sun Solaris). Microsoft Windows
 
-Programming     C, Go, Java, Perl 5, Python 2/3, Bash Shell Script, JavaScript
-Languages       (ES5-6/Node.js), GNOME Vala/Genie, Lua, C++, Objective-C 2.0,
-                Fortran 95, Erlang, Elixir, LFE(Lisp Flavoured Erlang), Clojure
+Programming     Java, Clojure, Perl 5, Python, Bash Shell Script, JavaScript
+Languages       (ES5-6/Node.js), C, Go, GNOME Vala/Genie, Lua, C++,Objective-C,
+                Fortran 95, Erlang, Elixir, LFE (Lisp Flavoured Erlang)
 
-Technologies    * Python and related modules, libraries, and frameworks (Python
-                  Standard Library, Twisted Web, Klein, Falcon, Flask, Celery,
-                  Django REST framework, ReportLab PDF Toolkit, etc.)
-                * Linux kernel API, Linux kernel modules (block device driver)
+Technologies    * Java SE / EE, Spring Boot, Spring Web MVC, Spring Security,
+                  Java Servlet, JavaServer Pages (JSP), JSP Standard Tag
+                  Library(JSTL), Java Portlet, Eclipse Vert.x, Play! Framework,
+                  Vaadin Framework, Apache Struts / Struts 2, JavaServer Faces
+                  (JSF), Java Database Connectivity (JDBC), JavaMail,
+                  Java Swing, Eclipse Standard Widget Toolkit (SWT),
+                  iText (Java-PDF Library), JNA (Java Native Access),
+                  SLF4J, Log4j, Syslog4j, etc.
+                * Clojure - Lisp-1 dialect for the JVM, Clojure Standard
+                  Library, HTTP Kit (HTTP client/server library for Clojure),
+                  Extensible Data Notation (edn)
                 * Perl and related modules, libraries, and frameworks (DBI,
                   CGI, LWP, Mojolicious, Text::Xslate, Asterisk::AGI,
                   Net::DNS::Native, IO::Select, etc.)
-                * IVR (Interactive Voice Response) using Asterisk VoIP PBX
-                * GNU libmicrohttpd (C library to make a lightweight multi-
-                  threaded HTTP server), GNU C Library (glibc), GNU C++ Library
-                  (libstdc++), GNOME libsoup
-                * GTFS Realtime (General Transit Feed Specification), Google
-                  Text-To-Speech API
-                * Java SE / EE, Java Servlet, JavaServer Pages (JSP), JSP
-                  Standard Tag Library (JSTL), Java Portlet, Spring Boot,
-                  Spring Web MVC, Spring Security, Play! Framework, Vaadin
-                  Framework, Apache Struts / Struts 2, JavaServer Faces (JSF),
-                  Java Database Connectivity (JDBC), JavaMail, Java Abstract
-                  Window Toolkit (AWT), Java Swing, iText (Java-PDF Library),
-                  jQuery (JavaScript Library), Node.js / Luvit, Harpjs.com,
-                  HTML, CSS, XML, YAML, JSON, SQL, GNUstep / Cocoa API, Eclipse
-                  Standard Widget Toolkit (SWT), HTTP(S), (S)FTP, SSH, SCP,
+                * Python and related modules, libraries, and frameworks (Python
+                  Standard Library, Twisted Web, Klein, Falcon, Flask, Celery,
+                  Django REST framework, ReportLab PDF Toolkit, etc.)
+                * Node.js / Luvit, Harpjs.com, EJS, jQuery, HTML, CSS, XML,
+                  YAML, JSON, SQL, HTTP(S), (S)FTP, SSH, SCP,
                   RESTful microservices, etc.
+                * Linux kernel API, Linux kernel modules (block device driver)
+                * IVR (Interactive Voice Response) using Asterisk VoIP PBX
+                * GNU C Library (glibc), GNU C++ Library (libstdc++),
+                  GNU libmicrohttpd (C library to make a lightweight multi-
+                  threaded HTTP server), GNUstep / Cocoa API, GNOME libsoup
+                * GTFS Realtime (General Transit Feed Specification),
+                  Google Text-To-Speech API
                 * Erlang/OTP, ERTS (Erlang Run-Time System),
                   Erlang Standard Library
                 * Elixir, Elixir Standard Library, Cowboy (web server library
                   for Erlang/OTP)
                 * LFE (Lisp Flavoured Erlang) - Lisp-2 dialect for Erlang VM
-                * Clojure - Lisp-1 dialect for JVM, Clojure Standard Library,
-                  HTTP Kit (HTTP client/server library for Clojure)
+                * CMS: WordPress, TYPO3, Joomla!
 
-Development     * Vim / vi, Oracle JDeveloper, Eclipse Platform (Eclipse SDK),
-Tools             MyEclipse Blue Edition, IBM Rational Software Architect
-                  (RSA), IBM Rational Application Developer (RAD), IBM
-                  WebSphere Studio Application Developer (WSAD)
+Development     * Vim / vi, Eclipse Platform (Eclipse SDK), MyEclipse Blue
+Tools             Edition, Oracle JDeveloper, IBM Rational Software Architect
+                  (RSA),  IBM Rational Application Developer (RAD),
+                  IBM WebSphere Studio Application Developer (WSAD)
                 * GNU Bash, GNU Screen, GNU Toolchain: GNU Make, GNU Compiler
                   Collection (GCC): gcc, g++, gcc-objc, gfortran; GNU Binutils,
                   GNU Debugger (GDB), GNUstep, sed, etc. Clang (C / C++ /
                   Objective-C LLVM compiler front-end), TCC (Fabrice Bellard's
                   Tiny C Compiler)
-                * Erlang Rebar, Apache Maven, Apache Ant
+                * Apache Maven, Apache Ant, Leiningen, Erlang Rebar
 
-DBMS            PostgreSQL, MySQL, Oracle Database, IBM DB2 Universal Database,
-                SQLite, MongoDB, Redis
+DBMS            PostgreSQL, MySQL / MariaDB, Oracle Database, IBM DB2 Universal
+                Database, SQLite, MongoDB, Redis
 
-Application /   * Node.js, Luvit (Lua)
-Web Servers     * uWSGI (Python/WSGI, Perl/PSGI), Gunicorn (Python/WSGI),
+Application /   * Netty, Undertow, Apache Tomcat, JBoss Application Server /
+Web Servers       WildFly, IBM WebSphere Application Server / Portal Server,
+                  Apache Pluto
+                * HTTP Kit (HTTP server for Clojure),
+                  Cowboy (HTTP server for Erlang/OTP)
+                * Perl-based application servers: Twiggy, Mojo::Server::Daemon,
+                  Hypnotoad
+                * uWSGI (Python/WSGI, Perl/PSGI), Gunicorn (Python/WSGI),
                   Twisted Reactor
-                * Perl-based app-servers: Twiggy, Hypnotoad, Morbo
-                * Netty, Apache Tomcat, JBoss Application Server, IBM WebSphere
-                  Application Server, IBM WebSphere Portal Server, Apache Pluto
-                * Cowboy (HTTP server for Erlang/OTP)
-                * HTTP Kit (HTTP server for Clojure)
-                * Apache HTTP Server, Nginx
+                * Node.js, Luvit (Lua), PHP-FPM (FastCGI Process Manager)
+                * Nginx, Apache HTTP Server
 
-Middleware /    Git, GitHub, GitLab, Bitbucket, Perforce, Subversion (SVN),
-Misc. Apps      Concurrent Versions System (CVS), IBM Directory Server (LDAP),
-                JIRA, Redmine, Trac, Trello, MediaWiki, Doxygen, Travis CI
-                and Jenkins (continuous integration services), Docker (software
-                containers infrastructure), Koding (cloud-based dev env + VM),
-                Samba
+Middleware /    Git, GitHub, GitLab, Bitbucket, Perforce (P4), Subversion(SVN),
+Misc. Apps      Concurrent Versions System (CVS), JIRA, Redmine, Trac, Trello,
+                MediaWiki, Doxygen, Samba, Travis CI and Jenkins CI/CD, Docker
+                (and Docker Compose), Cron, QEMU, etc.
 
 ====== Languages ==============================================================
 
 English         Full Professional Proficiency:
                 * Reading / writing freely
-                * Able to perform business correspondence at a polite level
-                * Speaking at upper intermediate level
+                * Speaking at upper intermediate level (considered to be B1-B2)
 
 Russian         Native or Bilingual Proficiency
+
+Italian         Elementary Proficiency
 
 ====== Education (in reverse order) ===========================================
 
@@ -1250,13 +1254,13 @@ Dec 1999
 
 ====== Personal information ===================================================
 
-Date of birth   June 27, 1977 (43yo)
+Date of birth   June 27, 1977 (44yo)
 Citizenship     Republic of Belarus
 Marital status  Single
 No. of children 2
 Driver's lic.   No
 
-====== Other notes ============================================================
+====== Miscellaneous ==========================================================
 
 My GitHub       https://github.com/rgolubtsov
 

@@ -4,9 +4,9 @@
           ЦЕЛЬ: Получить должность Software Developer /
                             Senior Software Developer
 
-                Суммарный опыт работы в сфере ИТ - 20 лет     IT-мультилингвист
+          Суммарный опыт работы в сфере ИТ - более 20 лет     IT-мультилингвист
 ===============================================================================
-                [ 01.07.2020 ]
+                [ 20.04.2022 ]
 
 ====== РЕЗЮМЕ =================================================================
 
@@ -19,83 +19,87 @@
 системы         GNU/Linux, Ubuntu, Fedora, CentOS, Red Hat Enterprise Linux,
                 Mac OS X, HP-UX, IBM AIX, Sun Solaris). Microsoft Windows
 
-Языки програм-  C, Go, Java, Perl 5, Python 2/3, Bash Shell Script, JavaScript
-мирования       (ES5-6/Node.js), GNOME Vala/Genie, Lua, C++, Objective-C 2.0,
-                Fortran 95, Erlang, Elixir, LFE(Lisp Flavoured Erlang), Clojure
+Языки програм-  Java, Clojure, Perl 5, Python, Bash Shell Script, JavaScript
+мирования       (ES5-6/Node.js), C, Go, GNOME Vala/Genie, Lua, C++,Objective-C,
+                Fortran 95, Erlang, Elixir, LFE (Lisp Flavoured Erlang)
 
-Технологии      * Python и связанные модули, библиотеки и фреймворки (Python
-                  Standard Library, Twisted Web, Klein, Falcon, Flask, Celery,
-                  Django REST framework, ReportLab PDF Toolkit и др.)
-                * API ядра Linux, модули ядра Linux (драйвер блочного
-                  устройства)
+Технологии      * Java SE / EE, Spring Boot, Spring Web MVC, Spring Security,
+                  Java Servlet, JavaServer Pages (JSP), JSP Standard Tag
+                  Library(JSTL), Java Portlet, Eclipse Vert.x, Play! Framework,
+                  Vaadin Framework, Apache Struts / Struts 2, JavaServer Faces
+                  (JSF), Java Database Connectivity (JDBC), JavaMail,
+                  Java Swing, Eclipse Standard Widget Toolkit (SWT),
+                  iText (Java-PDF Library), JNA (Java Native Access),
+                  SLF4J, Log4j, Syslog4j и др.
+                * Clojure - диалект языка Lisp-1 для JVM, Clojure Standard
+                  Library,HTTP Kit(библиотека HTTP клиент-сервера для Clojure),
+                  Extensible Data Notation (edn)
                 * Perl и связанные модули, библиотеки и фреймворки (DBI, CGI,
                   LWP, Mojolicious, Text::Xslate, Asterisk::AGI,
                   Net::DNS::Native, IO::Select и др.)
-                * IVR (интерактивные голосовые сервисы) на основе АТС Asterisk
-                * GNU libmicrohttpd (C-библиотека для создания легковесного
-                  многопоточного HTTP-сервера), GNU C Library (glibc), GNU C++
-                  Library (libstdc++), GNOME libsoup
-                * GTFS Realtime (General Transit Feed Specification), Google
-                  Text-To-Speech API
-                * Java SE / EE, Java Servlet, JavaServer Pages (JSP), JSP
-                  Standard Tag Library (JSTL), Java Portlet, Spring Boot,
-                  Spring Web MVC, Spring Security, Play! Framework, Vaadin
-                  Framework, Apache Struts / Struts 2, JavaServer Faces (JSF),
-                  Java Database Connectivity (JDBC), JavaMail, Java Abstract
-                  Window Toolkit (AWT), Java Swing, iText (Java-PDF Library),
-                  jQuery (JavaScript Library), Node.js / Luvit, Harpjs.com,
-                  HTML, CSS, XML, YAML, JSON, SQL, GNUstep / Cocoa API, Eclipse
-                  Standard Widget Toolkit (SWT), HTTP(S), (S)FTP, SSH, SCP,
+                * Python и связанные модули, библиотеки и фреймворки (Python
+                  Standard Library, Twisted Web, Klein, Falcon, Flask, Celery,
+                  Django REST framework, ReportLab PDF Toolkit и др.)
+                * Node.js / Luvit, Harpjs.com, EJS, jQuery, HTML, CSS, XML,
+                  YAML, JSON, SQL, HTTP(S), (S)FTP, SSH, SCP,
                   REST-микросервисы и др.
+                * API ядра Linux, модули ядра Linux (драйвер блочного
+                  устройства)
+                * IVR (интерактивные голосовые сервисы) на основе АТС Asterisk
+                * GNU C Library (glibc), GNU C++ Library (libstdc++),
+                  GNU libmicrohttpd (C-библиотека для создания легковесного
+                  многопоточного HTTP-сервера), GNUstep / Cocoa API,
+                  GNOME libsoup
+                * GTFS Realtime (General Transit Feed Specification),
+                  Google Text-To-Speech API
                 * Erlang/OTP, ERTS (Erlang Run-Time System),
                   Erlang Standard Library
                 * Elixir, Elixir Standard Library, Cowboy (библиотека
                   веб-сервера для Erlang/OTP)
                 * LFE (Lisp Flavoured Erlang) - диалект языка Lisp-2
                   для Erlang VM
-                * Clojure - диалект языка Lisp-1 для JVM, Clojure Standard
-                  Library, HTTP Kit(библиотека HTTP клиент-сервера для Clojure)
+                * CMS: WordPress, TYPO3, Joomla!
 
-Средства        * Vim / vi, Oracle JDeveloper, Eclipse Platform (Eclipse SDK),
-разработки        MyEclipse Blue Edition, IBM Rational Software Architect
-                  (RSA), IBM Rational Application Developer (RAD), IBM
-                  WebSphere Studio Application Developer (WSAD)
+Средства        * Vim / vi, Eclipse Platform (Eclipse SDK), MyEclipse Blue
+разработки        Edition, Oracle JDeveloper, IBM Rational Software Architect
+                  (RSA),  IBM Rational Application Developer (RAD),
+                  IBM WebSphere Studio Application Developer (WSAD)
                 * GNU Bash, GNU Screen, GNU Toolchain: GNU Make, GNU Compiler
                   Collection (GCC): gcc, g++, gcc-objc, gfortran; GNU Binutils,
                   GNU Debugger (GDB), GNUstep, sed и др. Clang (C / C++ /
                   Objective-C LLVM compiler front-end), TCC (Fabrice Bellard's
                   Tiny C Compiler)
-                * Erlang Rebar, Apache Maven, Apache Ant
+                * Apache Maven, Apache Ant, Leiningen, Erlang Rebar
 
-СУБД            PostgreSQL, MySQL, Oracle Database, IBM DB2 Universal Database,
-                SQLite, MongoDB, Redis
+СУБД            PostgreSQL, MySQL / MariaDB, Oracle Database, IBM DB2 Universal
+                Database, SQLite, MongoDB, Redis
 
-Серверы         * Node.js, Luvit (Lua)
-приложений /    * uWSGI (Python/WSGI, Perl/PSGI), Gunicorn (Python/WSGI),
-веб-серверы       Twisted Reactor
+Серверы         * Netty, Undertow, Apache Tomcat, JBoss Application Server /
+приложений /      WildFly, IBM WebSphere Application Server / Portal Server,
+веб-серверы       Apache Pluto
+                * HTTP Kit (веб-сервер для Clojure),
+                  Cowboy (веб-сервер для Erlang/OTP)
                 * Серверы приложений, основанные на Perl: Twiggy, Hypnotoad,
-                  Morbo
-                * Netty, Apache Tomcat, JBoss Application Server, IBM WebSphere
-                  Application Server, IBM WebSphere Portal Server, Apache Pluto
-                * Cowboy (веб-сервер для Erlang/OTP)
-                * HTTP Kit (веб-сервер для Clojure)
-                * Apache HTTP Server, Nginx
+                  Mojo::Server::Daemon
+                * uWSGI (Python/WSGI, Perl/PSGI), Gunicorn (Python/WSGI),
+                  Twisted Reactor
+                * Node.js, Luvit (Lua), PHP-FPM (FastCGI Process Manager)
+                * Nginx, Apache HTTP Server
 
-Приложения      Git, GitHub, GitLab, Bitbucket, Perforce, Subversion (SVN),
-промежуточного  Concurrent Versions System (CVS), IBM Directory Server (LDAP),
-слоя / разные   JIRA, Redmine, Trac, Trello, MediaWiki, Doxygen, Travis CI
-                и Jenkins (continuous integration services), Docker (software
-                containers infrastructure), Koding (cloud-based dev env + VM),
-                Samba
+Приложения      Git, GitHub, GitLab, Bitbucket, Perforce (P4), Subversion(SVN),
+промежуточного  Concurrent Versions System (CVS), JIRA, Redmine, Trac, Trello,
+слоя / разные   MediaWiki, Doxygen, Samba, Travis CI и Jenkins CI/CD, Docker
+                (и Docker Compose), Cron, QEMU и др.
 
 ====== Языки ==================================================================
 
 Английский      Уровень, достаточный для повседневной работы и общения:
                 * чтение / письмо - свободное владение
-                * способность вести деловую переписку на хорошем уровне
-                * разговорная речь - уровень Upper Intermediate
+                * разговорная речь - уровень Upper Intermediate (B1-B2)
 
 Русский         Родной язык
+
+Итальянский     Начальный уровень
 
 ====== Образование (в обратном хронологическом порядке) =======================
 
@@ -1317,7 +1321,7 @@
 
 ====== Личная информация ======================================================
 
-Дата рождения   27 июня 1977 г. (43 года)
+Дата рождения   27 июня 1977 г. (44 года)
 
 Гражданство     Республика Беларусь
 
@@ -1330,7 +1334,7 @@
 Водительское    Нет
 удостоверение
 
-====== Другое =================================================================
+====== Разное =================================================================
 
 Мой GitHub      https://github.com/rgolubtsov
 
