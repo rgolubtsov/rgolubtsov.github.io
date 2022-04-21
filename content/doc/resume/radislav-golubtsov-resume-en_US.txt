@@ -552,16 +552,16 @@ Apr 2015
 
 Nov 2014 -      Partner Services (Mobile Subscriptions)
 Dec 2014
-                Project description: Making and providing the so-called lending
-                pages to partners to store company's content on their side (as
-                web services), and processing SMS billing ops. according to
-                requirements and conditions of active partner programs.
+                Project description: Making and providing landing pages
+                to partners to store company's content on their side
+                (as web services), and processing SMS billing ops according
+                to requirements and conditions of active partner programs.
 
                 Personal role in the project: Automating the process of
-                creating the WAR archive for a web app (containing a lending)
-                for its future use during one of endorsed partner programs.
-                Installing, deploying, and testing this WAR archive on
-                supported Java EE app servers.
+                creating the WAR archive for a web app (containing a landing
+                page) for its future use during one of endorsed partner
+                programs. Installing, deploying, and testing this WAR archive
+                on supported Java EE app servers.
 
                 Tools and technologies used:
                 *    Dev OS: Arch Linux i686
