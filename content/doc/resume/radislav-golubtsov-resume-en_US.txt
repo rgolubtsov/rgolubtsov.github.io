@@ -137,13 +137,88 @@ May 2021
 
 -------------------------------------------------------------------------------
 
-Dec 2020 -
-Feb 2021
+Dec 2020 -      Development, deployment, maintenance, and support
+Feb 2021        of the website for one of the faculties of the University
+                (Faculty of professional development and personnel retraining)
+
+                Project description: Development, deployment, content
+                management, web mastering, maintenance, and support of the
+                website of the Faculty of professional development and
+                personnel retraining of the University.
+
+                Personal role in the project: Development of the logical
+                structure, navigation elements of the website. Adaptation of
+                content elements of web pages for mobile web browsers, doing
+                content populating the web pages and their further editing upon
+                faculty staff requests (content management-related activities).
+                Non-standard or multiple/mass content data changes or special
+                data and metadata changes using database management tools
+                besides CMS (also various DBA-related activities). Regular
+                monitoring of scheduled site's backing up operations and
+                analysis of respective logs and notifications. Analysis of
+                client requests to special and selective web pages and to their
+                respective underlying data, grepping for them in web server
+                access logs. Performing the full cycle of activities regarding
+                updating and upgrading packages of and the operating system
+                itself which is used to run web server, CMS, database, and
+                various vital system services. Updating the CMS and its
+                modules, plugins, translations, etc. Keeping the virtual
+                machine and the respective operating system to adhere to the
+                principles of high availability, reliability, and readiness.
+                SEO-related activities regarding this website.
+
+                Tools and technologies used:
+                *    Dev OS: Arch Linux, Ubuntu Server LTS x86-64 (VM:QEMU-KVM)
+                * Server OS: Ubuntu Server LTS x86-64 (VM: VMware ESXi)
+                * CMS WordPress + MySQL Community Server
+                * HTML, CSS, JavaScript, SQL, SSH, SCP, FTP
+                * Apache HTTP Server
+                * Vim, LibreOffice, GIMP
 
 -------------------------------------------------------------------------------
 
-Sep 2020 -
-Nov 2020
+Sep 2020 -      Enhancement, maintenance, and support of supplementary
+Nov 2020                     and subsidiary websites of the University
+
+                Project description: Design enhancements, content management,
+                web mastering, maintenance, and support of four supplementary
+                and subsidiary websites of the University, which are targeted
+                and used as extra informational resources to complement the
+                main web portal of the University. Namely, these are:
+
+                * BTEU Academic Staff Personal Pages
+                * BTEU Admissions
+                * International Affairs Department of BTEU
+                * Publishing and Polygraphic Centre "Kopernik" of BTEU
+
+                Personal role in the project: Refinement of the overall
+                websites design, adaptation of content elements of web pages
+                for mobile web browsers, doing content populating the new
+                pages, editing the existing pages (content management-related
+                activities). Non-standard or multiple/mass content data changes
+                or special data and metadata changes using database management
+                tools besides CMS (also various DBA-related activities).
+                Regular monitoring of scheduled sites' backing up operations
+                and analysis of respective logs and notifications. Analysis of
+                client requests to special and selective web pages and to their
+                respective underlying data, grepping for them in web server
+                access logs. Performing the full cycle of activities regarding
+                updating and upgrading packages of and the operating system
+                itself which is used to run web server, CMS, database, and
+                various vital system services. Updating the CMS and its
+                modules, plugins, sites' themes, translations, etc. Keeping the
+                virtual machine and the respective operating system to adhere
+                to the principles of high availability, reliability, and
+                readiness. Basic load balancing activities between sites and
+                managed SEO-related activities.
+
+                Tools and technologies used:
+                *    Dev OS: Arch Linux, Ubuntu Server LTS x86-64 (VM:QEMU-KVM)
+                * Server OS: Ubuntu Server LTS x86-64 (VM: VMware ESXi)
+                * CMS WordPress + MySQL Community Server
+                * HTML, CSS, JavaScript, SQL, SSH, SCP, FTP
+                * Apache HTTP Server
+                * Vim, LibreOffice, GIMP
 
 ===============================================================================
 
