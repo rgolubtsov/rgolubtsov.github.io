@@ -132,8 +132,55 @@ Jul 2021
 
 -------------------------------------------------------------------------------
 
-Mar 2021 -
-May 2021
+Mar 2021 -      Analysis and selection of a CMS which is best fitted
+May 2021        to the new web portal of the University. Initial development
+                of the new web portal
+
+                Project description: Analysis of a series of freely
+                redistributable open source content management systems (CMS),
+                freely available extension modules (plugins) for them which are
+                required for building the new web portal of the University.
+                Selection of one of these CMSs and initial development of the
+                new web portal of the University based on the CMS chosen.
+
+                Personal role in the project: Selection of the front-end theme
+                (template) for the new portal. Proving the three selected CMSs
+                in action: installation, configuration, navigation, and minimal
+                content populating to create a set of sample web pages. Namely,
+                these are: October CMS, TYPO3, and Joomla. Installation, fine
+                tuning, and configuring a one of these three CMSs, that is best
+                fitted to the new web portal of the University, for its
+                building and evolving, and for the further management of its
+                parts and components during both development and normal
+                production use. The main requirements are: (1) the CMS needs to
+                provide extended permissions and user roles management
+                functionality out of the box, (2) the existence of rich
+                community and ecosystem having freely available plugins for
+                various purposes, (3) to provide the possibility to perform yet
+                simple content management-related tasks for users having too
+                diversed technical skills. Finally, the CMS chosen was Joomla!
+                and its accompanied RDBMS was MariaDB. Initial development of
+                the new web portal of the University based on this CMS:
+                selection of the front-end theme for the new portal,
+                development of the navigational structure, creating a set of
+                semi-dummy pages written in three languages (Russian,
+                Byelorussian, English). Also two special pages in these three
+                languages were completely designed, created, and populated
+                ("About the University" and "Contacts"). Performing a whole set
+                of tasks regarding the virtual machine maintenance, the web
+                server configuring and other duties (please see for their
+                description in the previous project).
+
+                Tools and technologies used:
+                *    Dev OS: Arch Linux, Ubuntu Server LTS x86-64 (VM:QEMU-KVM)
+                * Server OS: Ubuntu Server LTS x86-64 (VM: VMware ESXi)
+                * October CMS + PostgreSQL
+                * CMS TYPO3   + PostgreSQL
+                * CMS Joomla! + MariaDB
+                * HTML, CSS, JavaScript, SQL, SSH, SCP, FTP, Bash Shell Script,
+                  Cron, Composer
+                * Nginx + PHP-FPM
+                * Vim, LibreOffice, GIMP
 
 -------------------------------------------------------------------------------
 
