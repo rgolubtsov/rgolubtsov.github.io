@@ -23,7 +23,7 @@ $ sudo npm i harp -g --unsafe-perm
 ...
 /usr/local/bin/harp -> /usr/local/lib/node_modules/harp/bin/harp
 ...
-+ harp@0.41.0
++ harp@0.41.2
 ```
 
 Install **Harp** on **Arch Linux** / **Arch Linux 32**:
@@ -33,5 +33,5 @@ $ sudo LIBSASS_EXT="no" npm i harp -g --unsafe-perm
 ...
 /usr/bin/harp -> /usr/lib/node_modules/harp/bin/harp
 ...
-+ harp@0.41.0
++ harp@0.41.2
 ```
