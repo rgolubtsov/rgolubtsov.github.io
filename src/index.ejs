@@ -29,7 +29,9 @@ $ cat /sys/class/power_supply/BAT1/charge_full
 $ cat /sys/class/power_supply/BAT1/charge_now
 $ cat /sys/class/power_supply/BAT1/current_now
 </code></pre>
-<pre><code>$ sudo hwclock --set --date="CCYY-MM-DD hh:mm:ss" --localtime &amp;&amp; sudo date MMDDhhmmCCYY.ss
+<p>The sixth one is an infrequent, from time to time procedure of adjusting the Hardware Clock and the System Clock in the same time:</p>
+<pre><code>$ # Set the Hardware Clock and the System Clock unconditionally, non-synced.
+$ sudo hwclock --set --date="CCYY-MM-DD hh:mm:ss" --localtime &amp;&amp; sudo date MMDDhhmmCCYY.ss
 $ #                          ||      ||                                      ^^    ^^
 $ #                          ||      ||                                      ||    ||
 $ #                          ||      |+------------ Day of month ------------+|    ||
