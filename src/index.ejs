@@ -33,11 +33,11 @@ $ cat /sys/class/power_supply/BAT1/current_now
 <pre><code>$ # Set the Hardware Clock and the System Clock unconditionally, non-synced.
 $ sudo hwclock --set --date="CCYY-MM-DD hh:mm:ss" --localtime &amp;&amp; sudo date MMDDhhmmCCYY.ss
 $ #                          ||      ||                                      ^^    ^^
-$ #                          ||      ||                                      ||    ||
-$ #                          ||      |+------------ Day of month ------------+|    ||
-$ #                          ||      +----------------------------------------+    ||
-$ #                          |+---------------------- Century ---------------------+|
-$ #                          +------------------------------------------------------+
+$ #    YY - Year             ||      ||                                      ||    ||
+$ #    MM - Month            ||      |+------------ Day of month ------------+|    ||
+$ #    hh - Hour             ||      +----------------------------------------+    ||
+$ #    mm - Minute           |+---------------------- Century ---------------------+|
+$ #    ss - Second           +------------------------------------------------------+
 </code></pre>
 <p style="text-align:left">Drink with <strong>pleasure</strong>, consume <strong>responsibly</strong>, at leisure! <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f603.png" class="emoji" alt="Ha-ha!))" /></p>
 
