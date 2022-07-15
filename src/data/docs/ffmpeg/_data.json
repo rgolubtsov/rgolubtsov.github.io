@@ -1,0 +1,7 @@
+{
+    "x11-screencast" : {
+        "layout"     : "../../../_radicchio",
+        "sitename_"  : ": X11 screencast using FFmpeg",
+        "subtitle_"  : ""
+    }
+}

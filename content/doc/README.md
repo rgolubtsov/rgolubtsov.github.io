@@ -4,6 +4,7 @@
 
 Various documents collected here were written to show up the essence of how important to have certain instructions / guides in one place and at hand. Some of them may not be related closely to IT or CS somehow, but most of them did, and those are published first. Below are hyperlinks to these documents which are accessible on this site, and they are also located [on GitHub](https://github.com/rgolubtsov/rgolubtsov.github.io/tree/master/src/data/docs "Assorted docs on GitHub") for convenience.
 
+* [X11 screencast using FFmpeg](/data/docs/ffmpeg/x11-screencast)
 * [OpenBSD 6.6 to 6.7 Upgrade Gotchas](/data/docs/openbsd/upgrade-66-to-67)
 * [Upgrade OpenBSD 6.3 to 6.5](/data/docs/openbsd/upgrade-63-to-65)
 * [Install Oracle Database 11g XE on Ubuntu Server 16.04 LTS](/data/docs/ubuntusrv/oracle-11-2-x-xe-on-ubuntu-16-04-x-lts)
