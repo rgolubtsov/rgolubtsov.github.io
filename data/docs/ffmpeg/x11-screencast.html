@@ -44,13 +44,13 @@
 </tr>
 </tbody>
 </table>
-<h1>X11 screencast using FFmpeg</h1><p><strong>TBD</strong></p>
-<hr>
-<pre><code>$ ffmpeg -f x11grab -video_size 1920x1080 -framerate 24 -thread_queue_size 512 -i ${DISPLAY} -f pulse -ac 2 -thread_queue_size 512 -i default -c:v libx264 -preset ultrafast -c:a aac &lt;video_filename&gt;.mp4
+<h1>X11 screencast using FFmpeg</h1><pre><code>$ ffmpeg -f x11grab     -video_size 1920x1080  -framerate 24 &amp;&amp; \
+                        -thread_queue_size 512 -i ${DISPLAY} &amp;&amp; \
+         -f pulse -ac 2 -thread_queue_size 512 -i default    &amp;&amp; \
+                        -c:v libx264 -preset ultrafast       &amp;&amp; \
+                        -c:a aac  &lt;video_filename&gt;.mp4
 ...
 </code></pre>
-<hr>
-<p><strong>TBD</strong></p>
 
 <table id="footer">
 <tbody><tr><td id="v-bar-f"></td><td id="footer-td"><a href="https://anybrowser.org/campaign/" target="_blank" rel="nofollow noopener"><img style="border:0;width:88px;height:31px" src="/static/img/misc/vwab" alt="Viewable With Any Browser" /></a><a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank" rel="nofollow noopener"><img style="border:0;width:88px;height:31px" src="/static/img/misc/vcss" alt="Valid CSS!" /></a></td></tr></tbody>
