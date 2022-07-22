@@ -44,10 +44,10 @@
 </tr>
 </tbody>
 </table>
-<h1>X11 screencast using FFmpeg</h1><pre><code>$ ffmpeg -f x11grab     -video_size 1920x1080  -framerate 24 &amp;&amp; \
-                        -thread_queue_size 512 -i ${DISPLAY} &amp;&amp; \
-         -f pulse -ac 2 -thread_queue_size 512 -i default    &amp;&amp; \
-                        -c:v libx264 -preset ultrafast       &amp;&amp; \
+<h1>X11 screencast using FFmpeg</h1><pre><code>$ ffmpeg -f x11grab     -video_size 1920x1080  -framerate 24 \
+                        -thread_queue_size 512 -i ${DISPLAY} \
+         -f pulse -ac 2 -thread_queue_size 512 -i default    \
+                        -c:v libx264 -preset ultrafast       \
                         -c:a aac  &lt;video_filename&gt;.mp4
 ...
 </code></pre>
