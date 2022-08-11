@@ -44,7 +44,9 @@
 </tr>
 </tbody>
 </table>
-<h1>Install Redmine 5.0.2 + Nginx/Passenger + MariaDB on Ubuntu Server 22.04 LTS</h1><h3>Redmine 5.0.2 + Nginx/Passenger + MariaDB on Ubuntu Server 22.04 LTS (x86-64) Brief Installation Instructions</h3><p><strong>(1) Install the necessary dependencies</strong></p>
+<h1>Install Redmine 5.0.2 + Nginx/Passenger + MariaDB on Ubuntu Server 22.04 LTS</h1><h3>Redmine 5.0.2 + Nginx/Passenger + MariaDB on Ubuntu Server 22.04 LTS (x86-64) Brief Installation Instructions</h3><p>Let&#39;s consider installing the widely used project management system Redmine on the latest version of Ubuntu Server distribution &ndash; 22.04 LTS. Redmine was also selected as its latest stable release to be able to use new features and be aware there are fresh bugfixes incorporated. For the web and app server option the ideal candidate is Nginx with its integration of the Phusion Passenger app server. And for the database server option the stock Ubuntu MariaDB was chosen.</p>
+<p>Note that in these instructions some moments like manipulations with file/directory permissions might be omitted because of uniqueness of the installation process in each particular case. Instead, and maybe in addition there are inactive (commented out) hyperlinks to various sources regarding installation and configuration of the target components, which might be considered helpful.</p>
+<p><strong>(1) Install the necessary dependencies</strong></p>
 <pre><code>$ sudo apt-get update &amp;&amp; \
   sudo apt-get install build-essential libmariadb-dev ruby-dev imagemagick -y
 </code></pre>
