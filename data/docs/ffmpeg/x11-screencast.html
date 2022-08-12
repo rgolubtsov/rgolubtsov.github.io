@@ -44,13 +44,17 @@
 </tr>
 </tbody>
 </table>
-<h1>X11 screencast using FFmpeg</h1><pre><code>$ ffmpeg -f x11grab     -video_size 1920x1080  -framerate 24 \
+<h1>X11 screencast using FFmpeg</h1><p>Sometimes it needs to perform screen capturing of a desktop where a sequence of some live actions (for example, typing something in the editor, moving windows, playing video content, recording audio input, demonstrating various methods, techniques of something) should be saved into a video file that can be played and watched later on locally or somewehere &ndash; simply as the ordinary let&#39;s say MPEG-4 video file. There are plenty of cases and variants where it is helpful and desirable: for recording a webinar session, for preparing a task to implement, or visually and orally reporting about its carrying out progress or completeness, and many more. This is commonly known as screencasting.</p>
+<p>The very performant and easy to use tool for screencasting is the FFmpeg <em>versatile utility</em>. Under unices an X11-driven desktop can be easily captured and recorded along with all the corresponding audio streams (if any) to the MP4 video file using the following one-liner command:</p>
+<pre><code>$ ffmpeg -f x11grab     -video_size 1920x1080  -framerate 24 \
                         -thread_queue_size 512 -i ${DISPLAY} \
          -f pulse -ac 2 -thread_queue_size 512 -i default    \
                         -c:v libx264 -preset ultrafast       \
                         -c:a aac  &lt;video_filename&gt;.mp4
 ...
 </code></pre>
+<p>To finish recording, simply hit <code>&lt;Ctrl-C&gt;</code> in the terminal window where screencasting was started, and get a brand new video file just created.</p>
+<p>Happy X11-screencasting with FFmpeg ! <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f44d.png" class="emoji" alt="" /></p>
 
 <table id="footer">
 <tbody><tr><td id="v-bar-f"></td><td id="footer-td"><a href="https://anybrowser.org/campaign/" target="_blank" rel="nofollow noopener"><img style="border:0;width:88px;height:31px" src="/static/img/misc/vwab" alt="Viewable With Any Browser" /></a><a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank" rel="nofollow noopener"><img style="border:0;width:88px;height:31px" src="/static/img/misc/vcss" alt="Valid CSS!" /></a></td></tr></tbody>
