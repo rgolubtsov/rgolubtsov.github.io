@@ -142,4 +142,4 @@ $ sudo -u<username> RAILS_ENV=production bundle3.0 exec rake db:migrate
 $ sudo -u<username> RAILS_ENV=production REDMINE_LANG=ru bundle3.0 exec rake redmine:load_default_data
 ```
 
-**Conclusion: TBD**
+Happy Redmining in Ubuntu ! :+1:
