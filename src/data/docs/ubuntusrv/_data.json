@@ -13,5 +13,10 @@
         "layout"                                      : "../../../_radicchio",
         "sitename_"                                   : ": Install Redmine 5.0.2 + Nginx/Passenger + MariaDB on Ubuntu Server 22.04 LTS",
         "subtitle_"                                   : ""
+    },
+    "zabbix-nginx-php-fpm-mariadb-on-ubuntu-jammy"    : {
+        "layout"                                      : "../../../_radicchio",
+        "sitename_"                                   : ": Install Zabbix 6.0.7 + Nginx/PHP-FPM + MariaDB on Ubuntu Server 22.04 LTS",
+        "subtitle_"                                   : ""
     }
 }
