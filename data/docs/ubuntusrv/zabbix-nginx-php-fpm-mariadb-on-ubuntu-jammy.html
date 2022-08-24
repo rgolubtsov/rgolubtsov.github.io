@@ -1,0 +1,70 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<head>
+<meta http-equiv="Content-Type"    content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta       name="viewport"        content="width=device-width,initial-scale=1" />
+<meta       name="description"     content="A personal website of a power looper, a skateboarder, and a coder" />
+<meta       name="author"          content="Radislav (Radicchio) Golubtsov" />
+<meta       name="copyright"       content="Copyright (C) 2016-2022 Radislav (Radicchio) Golubtsov" />
+<title>A Cup of Radicchio: Install Zabbix 6.0.7 + Nginx/PHP-FPM + MariaDB on Ubuntu Server 22.04 LTS</title>
+<link href="/radicchio.css" type="text/css"  rel="stylesheet" />
+<link href="/favicon.ico"   type="image/png" rel="icon" />
+<link href="https://fonts.googleapis.com"    rel="preconnect" />
+<link href="https://fonts.gstatic.com"       rel="preconnect" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+</head>
+<body id="radicchio">
+<table id="header">
+<tbody>
+<tr id="title">
+<td rowspan="2" id="v-bar-h"></td>
+<td id="title-td">A Cup of Radicchio: Install Zabbix 6.0.7 + Nginx/PHP-FPM + MariaDB on Ubuntu Server 22.04 LTS<br />
+<span id="subtitle">A personal website of a power looper, a skateboarder, and a coder</span></td>
+</tr>
+<tr id="navbar">
+<td id="navbar-td"><a href="/" id="nav-home">&nbsp;Home&nbsp;</a><a href="/data/docs/" id="nav-docs">&nbsp;Docs&nbsp;</a><a href="/data/srcs/" id="nav-srcs">&nbsp;Sources&nbsp;</a><a href="/data/blog/" id="nav-blog">&nbsp;Blog&nbsp;</a><a href="https://github.com/rgolubtsov" id="nav-ghub" target="_blank" rel="nofollow noopener noreferrer">&nbsp;GitHub&nbsp;</a></td>
+</tr>
+</tbody>
+</table>
+<h1>Install Zabbix 6.0.7 + Nginx/PHP-FPM + MariaDB on Ubuntu Server 22.04 LTS</h1><h3>Zabbix 6.0.7 + Nginx/PHP-FPM + MariaDB on Ubuntu Server 22.04 LTS (x86-64) Brief Installation Instructions</h3><p>The main prerequisite here is to have MariaDB and Nginx servers already installed, configured, and run on the same host where Zabbix supposed being installed. Thus, the following instructions are based on what was installed and configured earlier, for the Redmine-carrying Ubuntu server &ndash; clearly described in <a href="/data/docs/ubuntusrv/redmine-nginx-passenger-mariadb-on-ubuntu-jammy" title="Install Redmine 5.0.2 + Nginx/Passenger + MariaDB on Ubuntu Server 22.04 LTS">this article</a>.</p>
+<p><strong>(1) Install the necessary dependencies</strong>
+<strong>(2) Install MariaDB Server and Nginx</strong></p>
+<p>For installation instructions of dependencies, MariaDB, and Nginx servers please refer to the article &quot;<strong>Install Redmine 5.0.2 + Nginx/Passenger + MariaDB on Ubuntu Server 22.04 LTS</strong>&quot; (the hyperlink is given above).</p>
+<p><strong>(3) Download and install Zabbix Ubuntu repo from the official Zabbix website</strong></p>
+<pre><code>$ # https://www.zabbix.com/download?zabbix=6.0&amp;os_distribution=ubuntu&amp;os_version=22.04_jammy&amp;db=mysql&amp;ws=nginx
+$
+$ curl -LO https://repo.zabbix.com/zabbix/6.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_6.0-3+ubuntu22.04_all.deb
+...
+$ sudo dpkg -i zabbix-release_6.0-3+ubuntu22.04_all.deb
+...
+</code></pre>
+<p><strong>(4) Install Zabbix server, Zabbix frontend (web interface / control panel), Zabbix configuration for Nginx, SQL scripts for Zabbix database backend, and Zabbix agent</strong></p>
+<pre><code>$ sudo apt-get update &amp;&amp; \
+  sudo apt-get install zabbix-server-mysql zabbix-frontend-php zabbix-nginx-conf zabbix-sql-scripts zabbix-agent -y
+</code></pre>
+<p><strong>== TBD later on ==</strong></p>
+
+<table id="footer">
+<tbody><tr><td id="v-bar-f"></td><td id="footer-td"><a href="https://anybrowser.org/campaign/" target="_blank" rel="nofollow noopener"><img style="border:0;width:88px;height:31px" src="/static/img/misc/vwab" alt="Viewable With Any Browser" /></a><a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank" rel="nofollow noopener"><img style="border:0;width:88px;height:31px" src="/static/img/misc/vcss" alt="Valid CSS!" /></a></td></tr></tbody>
+</table>
+<script src="/radicchio.js"></script>
+</body>
+</html>
