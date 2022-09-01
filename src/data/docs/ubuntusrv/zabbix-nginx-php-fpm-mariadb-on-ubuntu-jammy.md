@@ -20,11 +20,15 @@ $ sudo dpkg -i zabbix-release_6.0-3+ubuntu22.04_all.deb
 ...
 ```
 
-**(4) Install Zabbix server, Zabbix frontend (web interface / control panel), Zabbix configuration for Nginx, SQL scripts for Zabbix database backend, and Zabbix agent**
+**(4) Install Zabbix server, Zabbix frontend (web control panel), Zabbix configuration for Nginx, SQL scripts for Zabbix database backend, and Zabbix agent**
 
 ```
 $ sudo apt-get update && \
   sudo apt-get install zabbix-server-mysql zabbix-frontend-php zabbix-nginx-conf zabbix-sql-scripts zabbix-agent -y
 ```
+
+In this step PHP-FPM will be installed as a dependency along with numerous dependent `php-*` packages.
+
+If it is expected to use Zabbix frontend in languages other than English, the `php-gettext-languages` package must also be installed. In addition, for those languages appropriate system locales should be generated on the server where Zabbix frontend is installed.
 
 **== TBD later on ==**
