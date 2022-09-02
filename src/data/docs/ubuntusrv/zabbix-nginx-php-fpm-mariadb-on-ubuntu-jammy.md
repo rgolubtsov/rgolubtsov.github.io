@@ -31,4 +31,96 @@ In this step PHP-FPM will be installed as a dependency along with numerous depen
 
 If it is expected to use Zabbix frontend in languages other than English, the `php-gettext-languages` package must also be installed. In addition, for those languages appropriate system locales should be generated on the server where Zabbix frontend is installed.
 
-**== TBD later on ==**
+Also there is a couple of preconfigured scripts in Zabbix frontend which can be run against hosts monitored. So if it is supposed to "Traceroute" a host, it needs to install the `traceroute` package. And for OS detection using Nmap, it needs to install the `nmap` package.
+
+**(5) Configure MariaDB for Zabbix readiness**
+
+```
+$ mysql -uroot -p
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 920
+Server version: 10.6.7-MariaDB-2ubuntu1.1 Ubuntu 22.04
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]>
+MariaDB [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| redmine            |
+| sys                |
++--------------------+
+5 rows in set (0.000 sec)
+
+MariaDB [(none)]>
+MariaDB [(none)]> select user, host from mysql.user;
++-------------+-----------+
+| User        | Host      |
++-------------+-----------+
+| mariadb.sys | localhost |
+| mysql       | localhost |
+| redmine     | localhost |
+| root        | localhost |
++-------------+-----------+
+4 rows in set (0.000 sec)
+
+MariaDB [(none)]>
+MariaDB [(none)]> create database zabbix collate utf8mb4_bin;
+Query OK, 1 row affected (0.000 sec)
+
+MariaDB [(none)]>
+MariaDB [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| redmine            |
+| sys                |
+| zabbix             |
++--------------------+
+6 rows in set (0.000 sec)
+
+MariaDB [(none)]>
+MariaDB [(none)]> create user 'zabbix'@'localhost' identified by '<password>';
+Query OK, 0 rows affected (0.000 sec)
+
+MariaDB [(none)]>
+MariaDB [(none)]> select user, host from mysql.user;
++-------------+-----------+
+| User        | Host      |
++-------------+-----------+
+| mariadb.sys | localhost |
+| mysql       | localhost |
+| redmine     | localhost |
+| root        | localhost |
+| zabbix      | localhost |
++-------------+-----------+
+5 rows in set (0.000 sec)
+
+MariaDB [(none)]>
+MariaDB [(none)]> grant all privileges on zabbix.* to 'zabbix'@'localhost';
+Query OK, 0 rows affected (0.000 sec)
+
+MariaDB [(none)]>
+MariaDB [(none)]> flush privileges;
+Query OK, 0 rows affected (0.000 sec)
+
+MariaDB [(none)]>
+MariaDB [(none)]> ^DBye
+```
+
+**(6) Perform initial database migrations**
+
+```
+$ zcat /usr/share/doc/zabbix-sql-scripts/mysql/server.sql.gz | mysql -uzabbix -p zabbix
+```
+
+Happy Zabbixing in Ubuntu ! :+1:
