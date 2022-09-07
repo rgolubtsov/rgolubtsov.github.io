@@ -44,7 +44,8 @@
 </tr>
 </tbody>
 </table>
-<h1>Upgrade OpenBSD 6.3 to 6.5</h1><h3>OpenBSD/amd64 6.3 to 6.5 Upgrade Instructions</h3><p>As clearly stated in the OpenBSD FAQ regarding upgrading one release to another, <em>upgrades are only supported from one release to the release immediately following it</em>. So what to do if it needs to upgrade the 6.3 release of OpenBSD to the 6.5 release, is to upgrade sequentially, first to the 6.4 release, and then to the 6.5 release.</p>
+<h1>Upgrade OpenBSD 6.3 to 6.5</h1><h3>OpenBSD/amd64 6.3 to 6.5 Upgrade Instructions</h3><p><em>20th of June, 2019</em></p>
+<p>As clearly stated in the OpenBSD FAQ regarding upgrading one release to another, <em>upgrades are only supported from one release to the release immediately following it</em>. So what to do if it needs to upgrade the 6.3 release of OpenBSD to the 6.5 release, is to upgrade sequentially, first to the 6.4 release, and then to the 6.5 release.</p>
 <p><strong>Upgrade OpenBSD 6.3 release to 6.4 release</strong></p>
 <p><strong>(a)</strong> Having installed and running the OpenBSD/amd64 6.3 release, first of all it needs to download the new (6.4) ramdisk kernel <code>bsd.rd</code> and the checksum file <code>SHA256.sig</code> for the appropriate architecture, in this case <code>amd64</code>:</p>
 <pre><code>$ curl -sO https://cdn.openbsd.org/pub/OpenBSD/6.4/amd64/bsd.rd     \

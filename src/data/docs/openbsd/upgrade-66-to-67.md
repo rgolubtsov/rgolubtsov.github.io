@@ -2,6 +2,8 @@
 
 ### OpenBSD/amd64 6.6 to 6.7 upgrade gotchas regarding mismatching Perl binaries and libraries
 
+*27th of May, 2020*
+
 Once having the OpenBSD/amd64 6.7 release installed and running (after upgrading from the 6.6 release), base system, there is a need to upgrade packages: `$ sudo pkg_add -uv`. But first let's trying checking the package database:
 
 ```

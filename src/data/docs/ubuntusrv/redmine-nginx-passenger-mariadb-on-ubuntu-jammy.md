@@ -2,6 +2,8 @@
 
 ### Redmine 5.0.2 + Nginx/Passenger + MariaDB on Ubuntu Server 22.04 LTS (x86-64) Brief Installation Instructions
 
+*15th of August, 2022*
+
 Let's consider installing the widely used project management system Redmine on the latest version of Ubuntu Server distribution &ndash; 22.04 LTS. Redmine was also selected as its latest stable release to be able to use new features and be aware there are fresh bugfixes incorporated. For the web and app server option the ideal candidate is Nginx with its integration of the Phusion Passenger app server. And for the database server option the stock Ubuntu MariaDB was chosen.
 
 Note that in these instructions some moments like manipulations with file/directory permissions were omitted because of uniqueness of the installation process in each particular case. Instead, there are inactive (commented out) hyperlinks to various sources regarding installation and configuration of the target components provided, which might be considered helpful.

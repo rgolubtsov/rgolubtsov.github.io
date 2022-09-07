@@ -2,6 +2,8 @@
 
 ### Oracle Database 11*g* XE (11.2.X) on Ubuntu Server 16.04.X LTS (x86-64) Deinstallation Instructions
 
+*Circa middle of April 2019*
+
 **(1) Stop the running Oracle Database 11.2.X XE instance**
 
 ```

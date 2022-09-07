@@ -44,7 +44,8 @@
 </tr>
 </tbody>
 </table>
-<h1>OpenBSD 6.6 to 6.7 Upgrade Gotchas</h1><h3>OpenBSD/amd64 6.6 to 6.7 upgrade gotchas regarding mismatching Perl binaries and libraries</h3><p>Once having the OpenBSD/amd64 6.7 release installed and running (after upgrading from the 6.6 release), base system, there is a need to upgrade packages: <code>$ sudo pkg_add -uv</code>. But first let&#39;s trying checking the package database:</p>
+<h1>OpenBSD 6.6 to 6.7 Upgrade Gotchas</h1><h3>OpenBSD/amd64 6.6 to 6.7 upgrade gotchas regarding mismatching Perl binaries and libraries</h3><p><em>27th of May, 2020</em></p>
+<p>Once having the OpenBSD/amd64 6.7 release installed and running (after upgrading from the 6.6 release), base system, there is a need to upgrade packages: <code>$ sudo pkg_add -uv</code>. But first let&#39;s trying checking the package database:</p>
 <pre><code>$ pkg_info
 Fcntl.c: loadable library and perl binaries are mismatched (got handshake key 0xb700000, needed 0xb600000)
 </code></pre>
