@@ -34,5 +34,10 @@
         "layout"    : "../../../_radicchio",
         "sitename_" : ": A coupled congratulation on Tatyana's Day",
         "subtitle_" : ""
+    },
+    "tatyana-avsievich-birthday-18yo-20001231-ru" : {
+        "layout"    : "../../../_radicchio",
+        "sitename_" : ": To Tatyana Avsievich on her birthday, 18yo",
+        "subtitle_" : ""
     }
 }
