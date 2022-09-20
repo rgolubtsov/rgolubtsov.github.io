@@ -44,5 +44,10 @@
         "layout"    : "../../../_radicchio",
         "sitename_" : ": To Anastasia Markitan on her birthday, 27yo",
         "subtitle_" : ""
+    },
+    "irina-forum-birthday-xxyo-19xx0923-ru" : {
+        "layout"    : "../../../_radicchio",
+        "sitename_" : ": To Irina from Forum Woman.ru on her birthday",
+        "subtitle_" : ""
     }
 }
