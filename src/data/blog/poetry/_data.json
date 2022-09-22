@@ -49,5 +49,10 @@
         "layout"    : "../../../_radicchio",
         "sitename_" : ": To Irina from Forum Woman.ru on her birthday",
         "subtitle_" : ""
+    },
+    "olga-kotchenko-birthday-26yo-19931112-ru" : {
+        "layout"    : "../../../_radicchio",
+        "sitename_" : ": To Olga Kotchenko on her birthday, 26yo",
+        "subtitle_" : ""
     }
 }
