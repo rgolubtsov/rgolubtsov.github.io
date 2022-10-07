@@ -54,5 +54,10 @@
         "layout"    : "../../../_radicchio",
         "sitename_" : ": To Olga Kotchenko on her birthday, 26yo",
         "subtitle_" : ""
+    },
+    "to-whom-it-may-concern-bed-quatrain-ru" : {
+        "layout"    : "../../../_radicchio",
+        "sitename_" : ": Bed Quatrain For Those To Whom It May Concern",
+        "subtitle_" : ""
     }
 }
