@@ -59,5 +59,15 @@
         "layout"    : "../../../_radicchio",
         "sitename_" : ": Bed Quatrain For Those To Whom It May Concern",
         "subtitle_" : ""
+    },
+    "sometimes-a-gayme-is-over-basta" : {
+        "layout"    : "../../../_radicchio",
+        "sitename_" : ": Sometimes a GAYME is over. &mdash; Basta!",
+        "subtitle_" : ""
+    },
+    "aleksandra-ronishenko-wedding-day-2022xxxx-ru" : {
+        "layout"    : "../../../_radicchio",
+        "sitename_" : ": To Aleksandra Ronishenko on her wedding day",
+        "subtitle_" : ""
     }
 }
