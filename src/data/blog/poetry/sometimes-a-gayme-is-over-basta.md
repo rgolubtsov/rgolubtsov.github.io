@@ -1,3 +1,4 @@
+<style>p{text-align:left}</style>
 # Sometimes a GAYME is over. &mdash; Basta!
 
 ### ...But NEVER MIND &mdash; it's just a GAYME
