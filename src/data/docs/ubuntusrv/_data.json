@@ -18,5 +18,10 @@
         "layout"                                      : "../../../_radicchio",
         "sitename_"                                   : ": Install Zabbix 6.0.7 + Nginx/PHP-FPM + MariaDB on Ubuntu Server 22.04 LTS",
         "subtitle_"                                   : ""
+    },
+    "zabbix-607-to-608-upgrade-gotchas"               : {
+        "layout"                                      : "../../../_radicchio",
+        "sitename_"                                   : ": Zabbix 6.0.7 to 6.0.8 Upgrade Gotchas",
+        "subtitle_"                                   : ""
     }
 }

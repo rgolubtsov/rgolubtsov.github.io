@@ -4,6 +4,7 @@
 
 Various documents collected here were written to show up the essence of how important to have certain instructions / guides in one place and at hand. Some of them may not be related closely to IT or CS somehow, but most of them did, and those are published first. Below are hyperlinks to these documents which are accessible on this site, and they are also located [on GitHub](https://github.com/rgolubtsov/rgolubtsov.github.io/tree/master/src/data/docs "Assorted docs on GitHub") for convenience.
 
+* [Zabbix 6.0.7 to 6.0.8 Upgrade Gotchas](/data/docs/ubuntusrv/zabbix-607-to-608-upgrade-gotchas)
 * [Install Zabbix 6.0.7 + Nginx/PHP-FPM + MariaDB on Ubuntu Server 22.04 LTS](/data/docs/ubuntusrv/zabbix-nginx-php-fpm-mariadb-on-ubuntu-jammy)
 * [Install Redmine 5.0.2 + Nginx/Passenger + MariaDB on Ubuntu Server 22.04 LTS](/data/docs/ubuntusrv/redmine-nginx-passenger-mariadb-on-ubuntu-jammy)
 * [X11 screencast using FFmpeg](/data/docs/ffmpeg/x11-screencast)
