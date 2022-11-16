@@ -1,10 +1,10 @@
-# [![A Cup of Radicchio](http://rgolubtsov.github.io/favicon.ico)](http://rgolubtsov.github.io) A Cup of Radicchio :coffee:
+# [![A Cup of Radicchio](https://rgolubtsov.github.io/favicon.ico)](https://rgolubtsov.github.io) A Cup of Radicchio :coffee:
 
-**[A Cup of Radicchio](http://rgolubtsov.github.io "A Cup of Radicchio: A personal website of a power looper, a skateboarder, and a coder"):** A personal website of a power looper, a skateboarder, and a coder.
+**[A Cup of Radicchio](https://rgolubtsov.github.io "A Cup of Radicchio: A personal website of a power looper, a skateboarder, and a coder"):** A personal website of a power looper, a skateboarder, and a coder.
 
 ---
 
-The website might be rebuilt using **GNU Make** and **[Harp](http://harpjs.com "Harp, the static web server with built-in preprocessing")**: `$ make clean && make all`.
+The website might be rebuilt using **GNU Make** and **[Harp](https://harpjs.com "Harp, the static web server with built-in preprocessing")**: `$ make clean && make all`.
 
 Install **Harp** on **OpenBSD/amd64**:
 
