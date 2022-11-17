@@ -88,6 +88,79 @@ MariaDB [zabbix]> select distinct g.graphid,g.name,g.width,g.height,g.yaxismin,g
 Empty set (6.268 sec)
 ```
 
-**The solution**
+**- - - - - - - - The solution - - - - - - - -**
+
+The simplest thing is in the simple one: it needs to (re)create compound indexes which probably were vanished after the upgrade process:
+
+1. **==>**
+
+```
+MariaDB [zabbix]> show index in functions; -- <== Before ..::..::..::..::..
++-----------+------------+-------------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+---------+
+| Table     | Non_unique | Key_name    | Seq_in_index | Column_name | Collation | Cardinality | Sub_part | Packed | Null | Index_type | Comment | Index_comment | Ignored |
++-----------+------------+-------------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+---------+
+| functions |          0 | PRIMARY     |            1 | functionid  | A         |           0 |     NULL | NULL   |      | BTREE      |         |               | NO      |
+| functions |          1 | functions_1 |            1 | triggerid   | A         |           0 |     NULL | NULL   |      | BTREE      |         |               | NO      |
+| functions |          1 | functions_2 |            1 | itemid      | A         |           0 |     NULL | NULL   |      | BTREE      |         |               | NO      |
+| functions |          1 | functions_2 |            2 | name        | A         |           0 |     NULL | NULL   |      | BTREE      |         |               | NO      |
+| functions |          1 | functions_2 |            3 | parameter   | A         |           0 |     NULL | NULL   |      | BTREE      |         |               | NO      |
++-----------+------------+-------------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+---------+
+5 rows in set (0.000 sec)
+```
+
+```
+MariaDB [zabbix]> create index functions_t_i on functions (triggerid, itemid);
+Query OK, 0 rows affected (0.025 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+```
+
+```
+MariaDB [zabbix]> show index in functions; -- <== After ..::..::..::..::..
++-----------+------------+---------------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+---------+
+| Table     | Non_unique | Key_name      | Seq_in_index | Column_name | Collation | Cardinality | Sub_part | Packed | Null | Index_type | Comment | Index_comment | Ignored |
++-----------+------------+---------------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+---------+
+| functions |          0 | PRIMARY       |            1 | functionid  | A         |           0 |     NULL | NULL   |      | BTREE      |         |               | NO      |
+| functions |          1 | functions_1   |            1 | triggerid   | A         |           0 |     NULL | NULL   |      | BTREE      |         |               | NO      |
+| functions |          1 | functions_2   |            1 | itemid      | A         |           0 |     NULL | NULL   |      | BTREE      |         |               | NO      |
+| functions |          1 | functions_2   |            2 | name        | A         |           0 |     NULL | NULL   |      | BTREE      |         |               | NO      |
+| functions |          1 | functions_2   |            3 | parameter   | A         |           0 |     NULL | NULL   |      | BTREE      |         |               | NO      |
+| functions |          1 | functions_t_i |            1 | triggerid   | A         |           0 |     NULL | NULL   |      | BTREE      |         |               | NO      |
+| functions |          1 | functions_t_i |            2 | itemid      | A         |           0 |     NULL | NULL   |      | BTREE      |         |               | NO      |
++-----------+------------+---------------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+---------+
+7 rows in set (0.000 sec)
+```
+2. **==>**
+
+```
+MariaDB [zabbix]> show index in graphs_items;
++--------------+------------+----------------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+---------+
+| Table        | Non_unique | Key_name       | Seq_in_index | Column_name | Collation | Cardinality | Sub_part | Packed | Null | Index_type | Comment | Index_comment | Ignored |
++--------------+------------+----------------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+---------+
+| graphs_items |          0 | PRIMARY        |            1 | gitemid     | A         |           0 |     NULL | NULL   |      | BTREE      |         |               | NO      |
+| graphs_items |          1 | graphs_items_1 |            1 | itemid      | A         |           0 |     NULL | NULL   |      | BTREE      |         |               | NO      |
+| graphs_items |          1 | graphs_items_2 |            1 | graphid     | A         |           0 |     NULL | NULL   |      | BTREE      |         |               | NO      |
++--------------+------------+----------------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+---------+
+3 rows in set (0.000 sec)
+```
+
+```
+MariaDB [zabbix]> create index graphs_items_i_2 on graphs_items (graphid, itemid);
+Query OK, 0 rows affected (12.217 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+```
+
+```
+MariaDB [zabbix]> show index in graphs_items;
++--------------+------------+------------------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+---------+
+| Table        | Non_unique | Key_name         | Seq_in_index | Column_name | Collation | Cardinality | Sub_part | Packed | Null | Index_type | Comment | Index_comment | Ignored |
++--------------+------------+------------------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+---------+
+| graphs_items |          0 | PRIMARY          |            1 | gitemid     | A         |           0 |     NULL | NULL   |      | BTREE      |         |               | NO      |
+| graphs_items |          1 | graphs_items_1   |            1 | itemid      | A         |           0 |     NULL | NULL   |      | BTREE      |         |               | NO      |
+| graphs_items |          1 | graphs_items_2   |            1 | graphid     | A         |           0 |     NULL | NULL   |      | BTREE      |         |               | NO      |
+| graphs_items |          1 | graphs_items_i_2 |            1 | graphid     | A         |           0 |     NULL | NULL   |      | BTREE      |         |               | NO      |
+| graphs_items |          1 | graphs_items_i_2 |            2 | itemid      | A         |           0 |     NULL | NULL   |      | BTREE      |         |               | NO      |
++--------------+------------+------------------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+---------+
+5 rows in set (0.000 sec)
+```
 
 **TBD**
