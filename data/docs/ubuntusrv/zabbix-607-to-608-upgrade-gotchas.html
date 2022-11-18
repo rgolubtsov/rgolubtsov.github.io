@@ -44,10 +44,10 @@
 </tr>
 </tbody>
 </table>
-<h1>Zabbix 6.0.7 to 6.0.8 Upgrade Gotchas</h1><h3>Zabbix 6.0.7 to 6.0.8 upgrade gotchas regarding slow MariaDB SQL requests</h3><p><em>17th of November, 2022</em></p>
-<p>Once having the Zabbix 6.0.8 LTS release running after upgrading from the 6.0.7 LTS release, a one unexpected thing might occur during the monitoring process in a series of screens in Zabbix frontend (web interface). And this weird thing will appear repeatedly, again and again on some monitoring screens for a long time. What is this actually? &ndash; Well, this is very slow scanning and updating, for example, the list of hosts, host groups, and triggers... that&#39;s saying unacceptably slow scanning.</p>
-<p>The root cause seems to be in a communication between Zabbix frontend (running on Nginx/PHP-FPM) and Zabbix database backend (actually MariaDB database server). All the underlying carriers and stack regarding the analyzed setup are clearly described in <a href="/data/docs/ubuntusrv/zabbix-nginx-php-fpm-mariadb-on-ubuntu-jammy" title="Install Zabbix 6.0.7 + Nginx/PHP-FPM + MariaDB on Ubuntu Server 22.04 LTS">this article</a>. So this is not necessary to recount them here.</p>
-<p>Go ahead and see what&#39;s going on there. &ndash; First of all, MariaDB server is almost continuously consuming 90% to 100% CPU usage when scanning the list of hosts is underway. At the same time Zabbix server log complains about slow queries are in progress. On the MariaDB side this is actually seen:</p>
+<h1>Zabbix 6.0.7 to 6.0.8 Upgrade Gotchas</h1><h3>Zabbix 6.0.7 to 6.0.8 upgrade gotchas regarding slow MariaDB SQL requests</h3><p><em>18th of November, 2022</em></p>
+<p>Once having the Zabbix 6.0.8 LTS release running (after upgrading from the 6.0.7 LTS release), a one unexpected thing might occur during the monitoring process in a series of screens in Zabbix frontend (web interface). And this weird thing will appear repeatedly, again and again on some monitoring screens for a long time. What is this actually? &ndash; Well, this is very slow scanning and updating, for example, the list of hosts, host groups, and triggers... that&#39;s saying unacceptably slow scanning.</p>
+<p>The root cause of this misbehavior seems to be in a communication between Zabbix frontend (running on Nginx/PHP-FPM) and Zabbix database backend (actually MariaDB database server). All the underlying carriers and stack regarding the analyzed setup are clearly described in <a href="/data/docs/ubuntusrv/zabbix-nginx-php-fpm-mariadb-on-ubuntu-jammy" title="Install Zabbix 6.0.7 + Nginx/PHP-FPM + MariaDB on Ubuntu Server 22.04 LTS">this article</a>. So this is not necessary to recount them here.</p>
+<p>Go ahead <code>==&gt;</code> and see what&#39;s going on there. &ndash; First of all, MariaDB server is almost continuously consuming 90% to 100% CPU usage when scanning the list of hosts is underway. At the same time Zabbix server log complains about slow queries are in progress. On the MariaDB side this is actually seen as the following:</p>
 <pre><code>MariaDB [zabbix]&gt; show full processlist;
 +------+--------+-----------+--------+---------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------+
 | Id   | User   | Host      | db     | Command | Time | State        | Info                                                                                                                                                                                                                                                                                                                                                                                                     | Progress |
@@ -79,7 +79,7 @@
 +------+--------+-----------+--------+---------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------+
 24 rows in set (0.000 sec)
 </code></pre>
-<p>Obviously, the query with Id <code>6927</code> is the source of this slowdown. Executing it manually gives the following output:</p>
+<p>Obviously, the query with ID <code>6927</code> is one of the sources of this slowdown. Executing it manually gives the following output:</p>
 <pre><code>MariaDB [zabbix]&gt; SELECT DISTINCT t.triggerid FROM triggers t,functions f,items i WHERE i.hostid IN (10084,10528,10530) AND f.triggerid=t.triggerid AND f.itemid=i.itemid AND NOT EXISTS (SELECT NULL FROM functions f,items i,hosts h WHERE t.triggerid=f.triggerid AND f.itemid=i.itemid AND i.hostid=h.hostid AND (i.status&lt;&gt;0 OR h.status&lt;&gt;0)) AND t.status=0 AND t.flags IN (0,4);
 +-----------+
 | triggerid |
@@ -99,7 +99,7 @@
 114 rows in set (2.406 sec)
 </code></pre>
 <p><code>2.406 sec</code>... <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f603.png" class="emoji" alt="" /> Not so bad here, but why?</p>
-<p>Another similar query gives too inappropriate timings:</p>
+<p>Another similar query gives too inappropriate timings in a row:</p>
 <pre><code>MariaDB [zabbix]&gt; SELECT t.triggerid,t.priority,t.manual_close FROM triggers t WHERE t.triggerid IN (22387,23089,23126) AND NOT EXISTS (SELECT NULL FROM functions f,items i,hosts h WHERE t.triggerid=f.triggerid AND f.itemid=i.itemid AND i.hostid=h.hostid AND (i.status&lt;&gt;0 OR h.status&lt;&gt;0)) AND t.status=0 AND t.flags IN (0,4);
 +-----------+----------+--------------+
 | triggerid | priority | manual_close |
@@ -110,11 +110,78 @@
 +-----------+----------+--------------+
 3 rows in set (16.501 sec)
 </code></pre>
-<p>And what about the following one:</p>
+<p>And what&#39;s about the following one:</p>
 <pre><code>MariaDB [zabbix]&gt; select distinct g.graphid,g.name,g.width,g.height,g.yaxismin,g.yaxismax,g.show_work_period,g.show_triggers,g.graphtype,g.show_legend,g.show_3d,g.percent_left,g.percent_right,g.ymin_type,g.ymin_itemid,g.ymax_type,g.ymax_itemid,g.discover from graphs g,graphs_items gi,items i,item_discovery id where g.graphid=gi.graphid and gi.itemid=i.itemid and i.itemid=id.itemid and id.parent_itemid=44069;
 Empty set (6.268 sec)
 </code></pre>
-<p><strong>The solution</strong></p>
+<p><strong>- - - - - - - - The solution - - - - - - - -</strong></p>
+<p>The simplest thing is in the simple one: this needs to (re-)create <strong>composite</strong> indexes <em>which probably were vanished after the upgrade</em>:</p>
+<ol>
+<li><strong>==&gt;</strong></li>
+</ol>
+<p>Indexes in the original table <code>functions</code> are given below:</p>
+<pre><code>MariaDB [zabbix]&gt; show index in functions;
++-----------+------------+-------------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+---------+
+| Table     | Non_unique | Key_name    | Seq_in_index | Column_name | Collation | Cardinality | Sub_part | Packed | Null | Index_type | Comment | Index_comment | Ignored |
++-----------+------------+-------------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+---------+
+| functions |          0 | PRIMARY     |            1 | functionid  | A         |           0 |     NULL | NULL   |      | BTREE      |         |               | NO      |
+| functions |          1 | functions_1 |            1 | triggerid   | A         |           0 |     NULL | NULL   |      | BTREE      |         |               | NO      |
+| functions |          1 | functions_2 |            1 | itemid      | A         |           0 |     NULL | NULL   |      | BTREE      |         |               | NO      |
+| functions |          1 | functions_2 |            2 | name        | A         |           0 |     NULL | NULL   |      | BTREE      |         |               | NO      |
+| functions |          1 | functions_2 |            3 | parameter   | A         |           0 |     NULL | NULL   |      | BTREE      |         |               | NO      |
++-----------+------------+-------------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+---------+
+5 rows in set (0.000 sec)
+</code></pre>
+<p>Creating the composite index <code>functions_t_i</code> on the <code>functions</code> table:</p>
+<pre><code>MariaDB [zabbix]&gt; create index functions_t_i on functions (triggerid, itemid);
+Query OK, 0 rows affected (0.025 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+</code></pre>
+<p>Indexes in the altered table <code>functions</code> after creating a new composite index look like this:</p>
+<pre><code>MariaDB [zabbix]&gt; show index in functions;
++-----------+------------+---------------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+---------+
+| Table     | Non_unique | Key_name      | Seq_in_index | Column_name | Collation | Cardinality | Sub_part | Packed | Null | Index_type | Comment | Index_comment | Ignored |
++-----------+------------+---------------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+---------+
+| functions |          0 | PRIMARY       |            1 | functionid  | A         |           0 |     NULL | NULL   |      | BTREE      |         |               | NO      |
+| functions |          1 | functions_1   |            1 | triggerid   | A         |           0 |     NULL | NULL   |      | BTREE      |         |               | NO      |
+| functions |          1 | functions_2   |            1 | itemid      | A         |           0 |     NULL | NULL   |      | BTREE      |         |               | NO      |
+| functions |          1 | functions_2   |            2 | name        | A         |           0 |     NULL | NULL   |      | BTREE      |         |               | NO      |
+| functions |          1 | functions_2   |            3 | parameter   | A         |           0 |     NULL | NULL   |      | BTREE      |         |               | NO      |
+| functions |          1 | functions_t_i |            1 | triggerid   | A         |           0 |     NULL | NULL   |      | BTREE      |         |               | NO      |
+| functions |          1 | functions_t_i |            2 | itemid      | A         |           0 |     NULL | NULL   |      | BTREE      |         |               | NO      |
++-----------+------------+---------------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+---------+
+7 rows in set (0.000 sec)
+</code></pre>
+<ol start="2">
+<li><strong>==&gt;</strong></li>
+</ol>
+<p>Doing the same manipulations on the <code>graphs_items</code> table as in the <strong>point 1</strong> above:</p>
+<pre><code>MariaDB [zabbix]&gt; show index in graphs_items;
++--------------+------------+----------------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+---------+
+| Table        | Non_unique | Key_name       | Seq_in_index | Column_name | Collation | Cardinality | Sub_part | Packed | Null | Index_type | Comment | Index_comment | Ignored |
++--------------+------------+----------------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+---------+
+| graphs_items |          0 | PRIMARY        |            1 | gitemid     | A         |           0 |     NULL | NULL   |      | BTREE      |         |               | NO      |
+| graphs_items |          1 | graphs_items_1 |            1 | itemid      | A         |           0 |     NULL | NULL   |      | BTREE      |         |               | NO      |
+| graphs_items |          1 | graphs_items_2 |            1 | graphid     | A         |           0 |     NULL | NULL   |      | BTREE      |         |               | NO      |
++--------------+------------+----------------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+---------+
+3 rows in set (0.000 sec)
+</code></pre>
+<pre><code>MariaDB [zabbix]&gt; create index graphs_items_i_2 on graphs_items (graphid, itemid);
+Query OK, 0 rows affected (12.217 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+</code></pre>
+<pre><code>MariaDB [zabbix]&gt; show index in graphs_items;
++--------------+------------+------------------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+---------+
+| Table        | Non_unique | Key_name         | Seq_in_index | Column_name | Collation | Cardinality | Sub_part | Packed | Null | Index_type | Comment | Index_comment | Ignored |
++--------------+------------+------------------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+---------+
+| graphs_items |          0 | PRIMARY          |            1 | gitemid     | A         |           0 |     NULL | NULL   |      | BTREE      |         |               | NO      |
+| graphs_items |          1 | graphs_items_1   |            1 | itemid      | A         |           0 |     NULL | NULL   |      | BTREE      |         |               | NO      |
+| graphs_items |          1 | graphs_items_2   |            1 | graphid     | A         |           0 |     NULL | NULL   |      | BTREE      |         |               | NO      |
+| graphs_items |          1 | graphs_items_i_2 |            1 | graphid     | A         |           0 |     NULL | NULL   |      | BTREE      |         |               | NO      |
+| graphs_items |          1 | graphs_items_i_2 |            2 | itemid      | A         |           0 |     NULL | NULL   |      | BTREE      |         |               | NO      |
++--------------+------------+------------------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+---------+
+5 rows in set (0.000 sec)
+</code></pre>
 <p><strong>TBD</strong></p>
 
 <table id="footer">
