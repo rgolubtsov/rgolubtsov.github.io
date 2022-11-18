@@ -44,7 +44,7 @@
 </tr>
 </tbody>
 </table>
-<h1>Zabbix 6.0.7 to 6.0.8 Upgrade Gotchas</h1><h3>Zabbix 6.0.7 to 6.0.8 upgrade gotchas regarding slow MariaDB SQL requests</h3><p><em>18th of November, 2022</em></p>
+<h1>Zabbix 6.0.7 to 6.0.8 Upgrade Gotchas</h1><h3>Zabbix 6.0.7 to 6.0.8 upgrade gotchas regarding slow MariaDB SQL queries</h3><p><em>18th of November, 2022</em></p>
 <p>Once having the Zabbix 6.0.8 LTS release running (after upgrading from the 6.0.7 LTS release), a one unexpected thing might occur during the monitoring process in a series of screens in Zabbix frontend (web interface). And this weird thing will appear repeatedly, again and again on some monitoring screens for a long time. What is this actually? &ndash; Well, this is very slow scanning and updating, for example, the list of hosts, host groups, and triggers... that&#39;s saying unacceptably slow scanning.</p>
 <p>The root cause of this misbehavior seems to be in a communication between Zabbix frontend (running on Nginx/PHP-FPM) and Zabbix database backend (actually MariaDB database server). All the underlying carriers and stack regarding the analyzed setup are clearly described in <a href="/data/docs/ubuntusrv/zabbix-nginx-php-fpm-mariadb-on-ubuntu-jammy" title="Install Zabbix 6.0.7 + Nginx/PHP-FPM + MariaDB on Ubuntu Server 22.04 LTS">this article</a>. So this is not necessary to recount them here.</p>
 <p>Go ahead <code>==&gt;</code> and see what&#39;s going on there. &ndash; First of all, MariaDB server is almost continuously consuming 90% to 100% CPU usage when scanning the list of hosts is underway. At the same time Zabbix server log complains about slow queries are in progress. On the MariaDB side this is actually seen as the following:</p>
@@ -115,11 +115,11 @@
 Empty set (6.268 sec)
 </code></pre>
 <p><strong>- - - - - - - - The solution - - - - - - - -</strong></p>
-<p>The simplest thing is in the simple one: this needs to (re-)create <strong>composite</strong> indexes <em>which probably were vanished after the upgrade</em>:</p>
+<p>The simplest thing is in the simple one: it needs to (re-)create <strong>composite</strong> indexes <em>which probably were vanished after the upgrade</em>:</p>
 <ol>
-<li><strong>==&gt;</strong></li>
+<li>The table analyzed is <code>functions</code>.</li>
 </ol>
-<p>Indexes in the original table <code>functions</code> are given below:</p>
+<p>Indexes in the <em>original</em> table <code>functions</code> are given below:</p>
 <pre><code>MariaDB [zabbix]&gt; show index in functions;
 +-----------+------------+-------------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+---------+
 | Table     | Non_unique | Key_name    | Seq_in_index | Column_name | Collation | Cardinality | Sub_part | Packed | Null | Index_type | Comment | Index_comment | Ignored |
@@ -137,7 +137,7 @@ Empty set (6.268 sec)
 Query OK, 0 rows affected (0.025 sec)
 Records: 0  Duplicates: 0  Warnings: 0
 </code></pre>
-<p>Indexes in the altered table <code>functions</code> after creating a new composite index look like this:</p>
+<p>Indexes in the <em>altered</em> table <code>functions</code> after creating a new composite index look like this:</p>
 <pre><code>MariaDB [zabbix]&gt; show index in functions;
 +-----------+------------+---------------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+---------+
 | Table     | Non_unique | Key_name      | Seq_in_index | Column_name | Collation | Cardinality | Sub_part | Packed | Null | Index_type | Comment | Index_comment | Ignored |
@@ -153,9 +153,9 @@ Records: 0  Duplicates: 0  Warnings: 0
 7 rows in set (0.000 sec)
 </code></pre>
 <ol start="2">
-<li><strong>==&gt;</strong></li>
+<li>The table analyzed is <code>graphs_items</code>.</li>
 </ol>
-<p>Doing the same manipulations on the <code>graphs_items</code> table as in the <strong>point 1</strong> above:</p>
+<p>Let&#39;s perform same manipulations on the <code>graphs_items</code> table as in the <strong>point 1</strong> above:</p>
 <pre><code>MariaDB [zabbix]&gt; show index in graphs_items;
 +--------------+------------+----------------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+---------+
 | Table        | Non_unique | Key_name       | Seq_in_index | Column_name | Collation | Cardinality | Sub_part | Packed | Null | Index_type | Comment | Index_comment | Ignored |
