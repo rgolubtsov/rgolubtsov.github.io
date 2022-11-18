@@ -131,7 +131,7 @@ p {
     text-align:       justify;
 }
 
-p code {
+p code, li code {
     border-radius:    5px;
     padding:          1px 5px 3px;
     background-color: #5db52a;
