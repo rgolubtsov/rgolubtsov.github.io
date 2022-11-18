@@ -171,4 +171,13 @@ MariaDB [zabbix]> show index in graphs_items;
 5 rows in set (0.000 sec)
 ```
 
-**TBD**
+The *narrow* outcome after recreating of these indexes is given below &ndash; notice the execution time of the one of aforementioned problematic SQL queries:
+
+```
+MariaDB [zabbix]> select distinct g.graphid,g.name,g.width,g.height,g.yaxismin,g.yaxismax,g.show_work_period,g.show_triggers,g.graphtype,g.show_legend,g.show_3d,g.percent_left,g.percent_right,g.ymin_type,g.ymin_itemid,g.ymax_type,g.ymax_itemid,g.discover from graphs g,graphs_items gi,items i,item_discovery id where g.graphid=gi.graphid and gi.itemid=i.itemid and i.itemid=id.itemid and id.parent_itemid=44069;
+Empty set (0.016 sec)
+```
+
+The *wide* result concludes in moderate to low consuming CPU usage by the database in a whole and, of course, clearly visible in fast scanning and updating the list of hosts, host groups, triggers, whatever in Zabbix frontend, on a user side.
+
+Don't let your LAN to die, man ! &ndash; Bring it to manage again ! :+1:
