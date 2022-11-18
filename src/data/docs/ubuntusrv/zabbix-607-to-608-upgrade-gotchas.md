@@ -2,7 +2,7 @@
 
 ### Zabbix 6.0.7 to 6.0.8 upgrade gotchas regarding slow MariaDB SQL requests
 
-*17th of November, 2022*
+*18th of November, 2022*
 
 Once having the Zabbix 6.0.8 LTS release running (after upgrading from the 6.0.7 LTS release), a one unexpected thing might occur during the monitoring process in a series of screens in Zabbix frontend (web interface). And this weird thing will appear repeatedly, again and again on some monitoring screens for a long time. What is this actually? &ndash; Well, this is very slow scanning and updating, for example, the list of hosts, host groups, and triggers... that's saying unacceptably slow scanning.
 
@@ -67,7 +67,7 @@ MariaDB [zabbix]> SELECT DISTINCT t.triggerid FROM triggers t,functions f,items 
 
 `2.406 sec`... :smiley: Not so bad here, but why?
 
-Another similar query gives too inappropriate timings:
+Another similar query gives too inappropriate timings in a row:
 
 ```
 MariaDB [zabbix]> SELECT t.triggerid,t.priority,t.manual_close FROM triggers t WHERE t.triggerid IN (22387,23089,23126) AND NOT EXISTS (SELECT NULL FROM functions f,items i,hosts h WHERE t.triggerid=f.triggerid AND f.itemid=i.itemid AND i.hostid=h.hostid AND (i.status<>0 OR h.status<>0)) AND t.status=0 AND t.flags IN (0,4);
@@ -90,12 +90,14 @@ Empty set (6.268 sec)
 
 **- - - - - - - - The solution - - - - - - - -**
 
-The simplest thing is in the simple one: it needs to (re)create compound indexes which probably were vanished after the upgrade process:
+The simplest thing is in the simple one: this needs to (re-)create **composite** indexes *which probably were vanished after the upgrade*:
 
 1. **==>**
 
+Indexes in the original table `functions` are given below:
+
 ```
-MariaDB [zabbix]> show index in functions; -- <== Before ..::..::..::..::..
+MariaDB [zabbix]> show index in functions;
 +-----------+------------+-------------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+---------+
 | Table     | Non_unique | Key_name    | Seq_in_index | Column_name | Collation | Cardinality | Sub_part | Packed | Null | Index_type | Comment | Index_comment | Ignored |
 +-----------+------------+-------------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+---------+
@@ -108,14 +110,18 @@ MariaDB [zabbix]> show index in functions; -- <== Before ..::..::..::..::..
 5 rows in set (0.000 sec)
 ```
 
+Creating the composite index `functions_t_i` on the `functions` table:
+
 ```
 MariaDB [zabbix]> create index functions_t_i on functions (triggerid, itemid);
 Query OK, 0 rows affected (0.025 sec)
 Records: 0  Duplicates: 0  Warnings: 0
 ```
 
+Indexes in the altered table `functions` after creating a new composite index look like this:
+
 ```
-MariaDB [zabbix]> show index in functions; -- <== After ..::..::..::..::..
+MariaDB [zabbix]> show index in functions;
 +-----------+------------+---------------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+---------+
 | Table     | Non_unique | Key_name      | Seq_in_index | Column_name | Collation | Cardinality | Sub_part | Packed | Null | Index_type | Comment | Index_comment | Ignored |
 +-----------+------------+---------------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+---------+
@@ -130,6 +136,8 @@ MariaDB [zabbix]> show index in functions; -- <== After ..::..::..::..::..
 7 rows in set (0.000 sec)
 ```
 2. **==>**
+
+Doing the same manipulations on the `graphs_items` table as in the **point 1** above:
 
 ```
 MariaDB [zabbix]> show index in graphs_items;
