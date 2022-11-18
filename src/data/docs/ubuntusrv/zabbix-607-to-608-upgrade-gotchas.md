@@ -1,6 +1,6 @@
 # Zabbix 6.0.7 to 6.0.8 Upgrade Gotchas
 
-### Zabbix 6.0.7 to 6.0.8 upgrade gotchas regarding slow MariaDB SQL requests
+### Zabbix 6.0.7 to 6.0.8 upgrade gotchas regarding slow MariaDB SQL queries
 
 *18th of November, 2022*
 
@@ -90,11 +90,11 @@ Empty set (6.268 sec)
 
 **- - - - - - - - The solution - - - - - - - -**
 
-The simplest thing is in the simple one: this needs to (re-)create **composite** indexes *which probably were vanished after the upgrade*:
+The simplest thing is in the simple one: it needs to (re-)create **composite** indexes *which probably were vanished after the upgrade*:
 
-1. **==>**
+1. The table analyzed is `functions`.
 
-Indexes in the original table `functions` are given below:
+Indexes in the *original* table `functions` are given below:
 
 ```
 MariaDB [zabbix]> show index in functions;
@@ -118,7 +118,7 @@ Query OK, 0 rows affected (0.025 sec)
 Records: 0  Duplicates: 0  Warnings: 0
 ```
 
-Indexes in the altered table `functions` after creating a new composite index look like this:
+Indexes in the *altered* table `functions` after creating a new composite index look like this:
 
 ```
 MariaDB [zabbix]> show index in functions;
@@ -135,9 +135,9 @@ MariaDB [zabbix]> show index in functions;
 +-----------+------------+---------------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+---------+
 7 rows in set (0.000 sec)
 ```
-2. **==>**
+2. The table analyzed is `graphs_items`.
 
-Doing the same manipulations on the `graphs_items` table as in the **point 1** above:
+Let's perform same manipulations on the `graphs_items` table as in the **point 1** above:
 
 ```
 MariaDB [zabbix]> show index in graphs_items;
