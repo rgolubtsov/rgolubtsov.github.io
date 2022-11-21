@@ -8,7 +8,7 @@ Once having the Zabbix 6.0.8 LTS release running (after upgrading from the 6.0.7
 
 The root cause of this misbehavior seems to be in a communication between Zabbix frontend (running on Nginx/PHP-FPM) and Zabbix database backend (actually MariaDB database server). All the underlying carriers and stack regarding the analyzed setup are clearly described in [this article](/data/docs/ubuntusrv/zabbix-nginx-php-fpm-mariadb-on-ubuntu-jammy "Install Zabbix 6.0.7 + Nginx/PHP-FPM + MariaDB on Ubuntu Server 22.04 LTS"). So this is not necessary to recount them here.
 
-Go ahead `==>` and see what's going on there. &ndash; First of all, MariaDB server is almost continuously consuming 90% to 100% CPU usage when scanning the list of hosts is underway. At the same time Zabbix server log complains about slow queries are in progress. On the MariaDB side this is actually seen as the following:
+Go ahead `==>` and see what's going on there. &ndash; First of all, MariaDB server is almost continuously consuming 90% to 100% CPU usage when scanning the list of hosts is underway. At the same time Zabbix server log complains about slow queries. On the MariaDB side this is actually seen as the following:
 
 ```
 MariaDB [zabbix]> show full processlist;
