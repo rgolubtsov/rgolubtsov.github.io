@@ -15,7 +15,7 @@ qpdf: wrote file radislav-golubtsov-resume-ru_RU.pdf.~qpdf-temp#
 
 To read/clear/set metadata in a PDF document, one may use the [ExifTool](https://exiftool.org "ExifTool: A Perl library and a command-line utility for reading, writing and editing meta information") utility.
 
-**Read** metadata:
+1. **Read** metadata:
 
 ```
 $ exiftool -all:all *.pdf
@@ -44,7 +44,7 @@ Producer                        : LibreOffice 7.3
     2 image files read
 ```
 
-**Clear** metadata:
+2. **Clear** metadata:
 
 ```
 $ exiftool -all:all= *.pdf
@@ -53,7 +53,7 @@ Warning: [minor] ExifTool PDF edits are reversible. Deleted tags may be recovere
     2 image files updated
 ```
 
-**Read** metadata again:
+3. **Read** metadata again:
 
 ```
 $ rm -f *.pdf_original && exiftool -all:all *.pdf
@@ -78,7 +78,7 @@ Language                        : en-US
     2 image files read
 ```
 
-**Set** titles for the docs:
+4. **Set** titles for the docs:
 
 ```
 $ exiftool -Title="Radislav Golubtsov Resume | en_US" radislav-golubtsov-resume-en_US.pdf && \
@@ -87,7 +87,7 @@ $ exiftool -Title="Radislav Golubtsov Resume | en_US" radislav-golubtsov-resume-
     1 image files updated
 ```
 
-**Read** metadata again:
+5. **Read** metadata again:
 
 ```
 $ rm -f *.pdf_original && exiftool -all:all *.pdf
@@ -116,7 +116,7 @@ Title                           : Radislav Golubtsov Resume | ru_RU
     2 image files read
 ```
 
-**Linearize** the docs (see dedicated section above) and **read** metadata again:
+6. **Linearize** the docs (see dedicated section above) and (7) **read** metadata again:
 
 ```
 $ exiftool -all:all *.pdf
@@ -145,4 +145,4 @@ Page Count                      : 22
     2 image files read
 ```
 
-That's all... &mdash; Have fun!
+Play with PDFs that way! &mdash; Have fun! :smiley:
