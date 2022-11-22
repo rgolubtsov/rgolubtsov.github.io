@@ -6,7 +6,7 @@
 
                 Total IT experience - 20+ years             An IT multilinguist
 ===============================================================================
-                [ 2022-04-20 ]
+                [ 2022-11-22 ]
 
 ====== SUMMARY ================================================================
 
@@ -86,7 +86,7 @@ Web Servers       WildFly, IBM WebSphere Application Server / Portal Server,
 Middleware /    Git, GitHub, GitLab, Bitbucket, Perforce (P4), Subversion(SVN),
 Misc. Apps      Concurrent Versions System (CVS), JIRA, Redmine, Trac, Trello,
                 MediaWiki, Doxygen, Samba, Travis CI and Jenkins CI/CD, Docker
-                (and Docker Compose), Cron, QEMU, etc.
+                (and Docker Compose), Cron, QEMU, Zabbix, etc.
 
 ====== Languages ==============================================================
 
@@ -113,6 +113,20 @@ Oct 2001        University (Ph.D. student of the School for Advanced Studies)
                 Gomel, Belarus ("Diploma in Honor")
 
 ====== Work experience (in reverse order) =====================================
+
+Jul 2022 - Oct 2022, Various activities at Milkavita OJSC regarding improvement
+                     and actualization of the information security policies
+                     pack; optimization and maintenance of the corporate
+                     website; deployment, configuration, and maintenance
+                     of Redmine and Zabbix systems; configuration
+                     and maintenance of Linux servers; supplementary work
+                     on replacement of surveillance cameras and facilities |
+                     Gomel (4 months)
+
+Job position: Software Specialist of the Production Processes Automation
+              Department
+
+===============================================================================
 
 Sep 2020 - Sep 2021, Software design, development, testing, and maintenance
                      at the Belarusian Trade and Economics University
@@ -1487,7 +1501,7 @@ Dec 1999
 
 ====== Personal information ===================================================
 
-Date of birth   June 27, 1977 (44yo)
+Date of birth   June 27, 1977 (45yo)
 Citizenship     Republic of Belarus
 Marital status  Single
 No. of children 2
