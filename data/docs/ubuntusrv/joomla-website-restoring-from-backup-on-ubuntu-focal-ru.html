@@ -45,17 +45,17 @@
 </tbody>
 </table>
 <h1>Восстановление веб-сайта Joomla! из бэкапа под Ubuntu Server 20.04 LTS</h1><h3>Инструкция по восстановлению из бэкапа веб-сайта Joomla! и базы данных к нему (MariaDB)</h3><p><em>1st of September, 2021</em></p>
-<p>Для восстановления из бэкапа веб-сайта (полной установки <strong>Joomla!</strong> и базы данных к нему (<strong>MariaDB</strong>), необходимо проделать ряд операций. Все они несложные, но их нужно выполнять обязательно на самом веб-сервере в командной строке (в оболочке <strong>Bash</strong>, установленной там по умолчанию).</p>
+<p>Для восстановления из бэкапа веб-сайта (полной установки <strong>Joomla!</strong>) и базы данных к нему (<strong>MariaDB</strong>), необходимо проделать ряд операций. Все они несложные, но их нужно выполнять обязательно на самом веб-сервере в командной строке (в оболочке <strong>Bash</strong>, установленной там по умолчанию).</p>
 <ol>
 <li>Начальные условия и подготовительные действия.</li>
 </ol>
-<p>Будем полагать, что мы уже залогинились по SSH на веб-сервер (виртуальная машина <strong>Ubuntu 20.04.2 LTS</strong>, 192.168.0.<em><WEB></em>):</p>
+<p>Будем полагать, что мы уже залогинились по SSH на веб-сервер (виртуальная машина <strong>Ubuntu 20.04.2 LTS</strong>, 192.168.0.<em>&lt;WEB&gt;</em>):</p>
 <pre><code>$ ssh -C &lt;vmusername&gt;@192.168.0.&lt;WEB&gt;
 Welcome to Ubuntu 20.04.2 LTS (GNU/Linux 5.4.0-74-generic x86_64)
 ...
 $
 </code></pre>
-<p>Все бэкапы хранятся на FTP-сервере (192.168.0.<em><FTP></em>), поэтому необходимо зайти на этот сервер через FTP-клиент:</p>
+<p>Все бэкапы хранятся на FTP-сервере (192.168.0.<em>&lt;FTP&gt;</em>), поэтому необходимо зайти на этот сервер через FTP-клиент:</p>
 <pre><code>$ pftp 192.168.0.&lt;FTP&gt;
 Connected to 192.168.0.&lt;FTP&gt;.
 220 Microsoft FTP Service
@@ -134,7 +134,7 @@ total 11500
 -rw-rw-r-- 1 &lt;vmusername&gt; &lt;vmusergroup&gt; 10218440 Jun 29 16:25 x-abcd-joomla3-192.168.0.&lt;WEB&gt;-20210629-0230.txz
 -rw-rw-r-- 1 &lt;vmusername&gt; &lt;vmusergroup&gt;  1555738 Jun 29 16:25 xabcdjoomla3db-192.168.0.&lt;WEB&gt;-20210629-0230.sql
 </code></pre>
-<p>А теперь выполним собственно восстановление базы данных из этого дампа (<a href="https://mariadb.com/kb/en/mysqldump/#restoring" title="MariaDB | Restoring a database from backup">источник</a>):</p>
+<p>А теперь выполним собственно восстановление базы данных из этого дампа (<a href="https://mariadb.com/kb/en/mysqldump/#restoring" title="MariaDB | Restoring database from backup">источник</a>):</p>
 <pre><code>$ mysql -uroot -p xabcdjoomla3db &lt; xabcdjoomla3db-192.168.0.&lt;WEB&gt;-20210629-0230.sql
 Enter password:
 ...
