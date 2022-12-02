@@ -1,27 +1,32 @@
 {
-    "oracle-11-2-x-xe-on-ubuntu-16-04-x-lts"          : {
-        "layout"                                      : "../../../_radicchio",
-        "sitename_"                                   : ": Install Oracle Database 11g XE on Ubuntu Server 16.04 LTS",
-        "subtitle_"                                   : ""
+    "oracle-11-2-x-xe-on-ubuntu-16-04-x-lts"                  : {
+        "layout"                                              : "../../../_radicchio",
+        "sitename_"                                           : ": Install Oracle Database 11g XE on Ubuntu Server 16.04 LTS",
+        "subtitle_"                                           : ""
     },
-    "ubuntu-16-04-x-lts-wo-oracle-11-2-x-xe"          : {
-        "layout"                                      : "../../../_radicchio",
-        "sitename_"                                   : ": Uninstall Oracle Database 11g XE on Ubuntu Server 16.04 LTS",
-        "subtitle_"                                   : ""
+    "ubuntu-16-04-x-lts-wo-oracle-11-2-x-xe"                  : {
+        "layout"                                              : "../../../_radicchio",
+        "sitename_"                                           : ": Uninstall Oracle Database 11g XE on Ubuntu Server 16.04 LTS",
+        "subtitle_"                                           : ""
     },
-    "redmine-nginx-passenger-mariadb-on-ubuntu-jammy" : {
-        "layout"                                      : "../../../_radicchio",
-        "sitename_"                                   : ": Install Redmine 5.0.2 + Nginx/Passenger + MariaDB on Ubuntu Server 22.04 LTS",
-        "subtitle_"                                   : ""
+    "redmine-nginx-passenger-mariadb-on-ubuntu-jammy"         : {
+        "layout"                                              : "../../../_radicchio",
+        "sitename_"                                           : ": Install Redmine 5.0.2 + Nginx/Passenger + MariaDB on Ubuntu Server 22.04 LTS",
+        "subtitle_"                                           : ""
     },
-    "zabbix-nginx-php-fpm-mariadb-on-ubuntu-jammy"    : {
-        "layout"                                      : "../../../_radicchio",
-        "sitename_"                                   : ": Install Zabbix 6.0.7 + Nginx/PHP-FPM + MariaDB on Ubuntu Server 22.04 LTS",
-        "subtitle_"                                   : ""
+    "zabbix-nginx-php-fpm-mariadb-on-ubuntu-jammy"            : {
+        "layout"                                              : "../../../_radicchio",
+        "sitename_"                                           : ": Install Zabbix 6.0.7 + Nginx/PHP-FPM + MariaDB on Ubuntu Server 22.04 LTS",
+        "subtitle_"                                           : ""
     },
-    "zabbix-607-to-608-upgrade-gotchas"               : {
-        "layout"                                      : "../../../_radicchio",
-        "sitename_"                                   : ": Zabbix 6.0.7 to 6.0.8 Upgrade Gotchas",
-        "subtitle_"                                   : ""
+    "zabbix-607-to-608-upgrade-gotchas"                       : {
+        "layout"                                              : "../../../_radicchio",
+        "sitename_"                                           : ": Zabbix 6.0.7 to 6.0.8 Upgrade Gotchas",
+        "subtitle_"                                           : ""
+    },
+    "joomla-website-restoring-from-backup-on-ubuntu-focal-ru" : {
+        "layout"                                              : "../../../_radicchio",
+        "sitename_"                                           : ": Restore Joomla! website from backup on Ubuntu Server 20.04 LTS",
+        "subtitle_"                                           : ""
     }
 }

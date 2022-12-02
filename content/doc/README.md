@@ -8,6 +8,7 @@ Various documents collected here were written to show up the essence of how impo
 * [Install Zabbix 6.0.7 + Nginx/PHP-FPM + MariaDB on Ubuntu Server 22.04 LTS](/data/docs/ubuntusrv/zabbix-nginx-php-fpm-mariadb-on-ubuntu-jammy)
 * [Install Redmine 5.0.2 + Nginx/Passenger + MariaDB on Ubuntu Server 22.04 LTS](/data/docs/ubuntusrv/redmine-nginx-passenger-mariadb-on-ubuntu-jammy)
 * [X11 screencast using FFmpeg](/data/docs/ffmpeg/x11-screencast)
+* [Restore Joomla! website from backup on Ubuntu Server 20.04 LTS](/data/docs/ubuntusrv/joomla-website-restoring-from-backup-on-ubuntu-focal-ru)
 * [OpenBSD 6.6 to 6.7 Upgrade Gotchas](/data/docs/openbsd/upgrade-66-to-67)
 * [Upgrade OpenBSD 6.3 to 6.5](/data/docs/openbsd/upgrade-63-to-65)
 * [Install Oracle Database 11g XE on Ubuntu Server 16.04 LTS](/data/docs/ubuntusrv/oracle-11-2-x-xe-on-ubuntu-16-04-x-lts)
