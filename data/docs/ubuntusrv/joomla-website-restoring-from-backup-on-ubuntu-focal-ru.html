@@ -1,0 +1,177 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<head>
+<meta http-equiv="Content-Type"    content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta       name="viewport"        content="width=device-width,initial-scale=1" />
+<meta       name="description"     content="A personal website of a power looper, a skateboarder, and a coder" />
+<meta       name="author"          content="Radislav (Radicchio) Golubtsov" />
+<meta       name="copyright"       content="Copyright (C) 2016-2022 Radislav (Radicchio) Golubtsov" />
+<title>A Cup of Radicchio: Restore Joomla! website from backup on Ubuntu Server 20.04 LTS</title>
+<link href="/radicchio.css" type="text/css"  rel="stylesheet" />
+<link href="/favicon.ico"   type="image/png" rel="icon" />
+<link href="https://fonts.googleapis.com"    rel="preconnect" />
+<link href="https://fonts.gstatic.com"       rel="preconnect" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+</head>
+<body id="radicchio">
+<table id="header">
+<tbody>
+<tr id="title">
+<td rowspan="2" id="v-bar-h"></td>
+<td id="title-td">A Cup of Radicchio: Restore Joomla! website from backup on Ubuntu Server 20.04 LTS<br />
+<span id="subtitle">A personal website of a power looper, a skateboarder, and a coder</span></td>
+</tr>
+<tr id="navbar">
+<td id="navbar-td"><a href="/" id="nav-home">&nbsp;Home&nbsp;</a><a href="/data/docs/" id="nav-docs">&nbsp;Docs&nbsp;</a><a href="/data/srcs/" id="nav-srcs">&nbsp;Sources&nbsp;</a><a href="/data/blog/" id="nav-blog">&nbsp;Blog&nbsp;</a><a href="https://github.com/rgolubtsov" id="nav-ghub" target="_blank" rel="nofollow noopener noreferrer">&nbsp;GitHub&nbsp;</a></td>
+</tr>
+</tbody>
+</table>
+<h1>Восстановление веб-сайта Joomla! из бэкапа под Ubuntu Server 20.04 LTS</h1><h3>Инструкция по восстановлению из бэкапа веб-сайта Joomla! и базы данных к нему (MariaDB)</h3><p><em>1st of September, 2021</em></p>
+<p>Для восстановления из бэкапа веб-сайта (полной установки <strong>Joomla!</strong> и базы данных к нему (<strong>MariaDB</strong>), необходимо проделать ряд операций. Все они несложные, но их нужно выполнять обязательно на самом веб-сервере в командной строке (в оболочке <strong>Bash</strong>, установленной там по умолчанию).</p>
+<ol>
+<li>Начальные условия и подготовительные действия.</li>
+</ol>
+<p>Будем полагать, что мы уже залогинились по SSH на веб-сервер (виртуальная машина <strong>Ubuntu 20.04.2 LTS</strong>, 192.168.0.<em><WEB></em>):</p>
+<pre><code>$ ssh -C &lt;vmusername&gt;@192.168.0.&lt;WEB&gt;
+Welcome to Ubuntu 20.04.2 LTS (GNU/Linux 5.4.0-74-generic x86_64)
+...
+$
+</code></pre>
+<p>Все бэкапы хранятся на FTP-сервере (192.168.0.<em><FTP></em>), поэтому необходимо зайти на этот сервер через FTP-клиент:</p>
+<pre><code>$ pftp 192.168.0.&lt;FTP&gt;
+Connected to 192.168.0.&lt;FTP&gt;.
+220 Microsoft FTP Service
+Name (192.168.0.&lt;FTP&gt;:&lt;ftpusername&gt;): &lt;ftpusername&gt;
+331 Password required for &lt;ftpusername&gt;.
+Password:
+230 User logged in.
+Remote system type is Windows_NT.
+ftp&gt;
+</code></pre>
+<p>Далее нужно скачать требующуюся версию бэкапа. Бэкапы делаются <em>каждую ночь в 02:30</em>. Идентифицируем необходимый нам бэкап &ndash; просто смотрим листинг каталога, где они размещены:</p>
+<pre><code>ftp&gt; cd tmp/abcd
+250 CWD command successful.
+ftp&gt;
+ftp&gt; ls
+227 Entering Passive Mode (192,168,0,&lt;FTP&gt;,215,19).
+125 Data connection already open; Transfer starting.
+06-29-21  02:00PM             10217764 x-abcd-joomla3-192.168.0.&lt;WEB&gt;-20210624-2000.txz
+06-29-21  02:00PM             10217764 x-abcd-joomla3-192.168.0.&lt;WEB&gt;-20210624-2010.txz
+06-29-21  02:00PM             10218408 x-abcd-joomla3-192.168.0.&lt;WEB&gt;-20210625-0230.txz
+06-29-21  02:00PM             10218160 x-abcd-joomla3-192.168.0.&lt;WEB&gt;-20210626-0230.txz
+06-29-21  02:00PM             10218876 x-abcd-joomla3-192.168.0.&lt;WEB&gt;-20210627-0230.txz
+06-29-21  02:00PM             10218296 x-abcd-joomla3-192.168.0.&lt;WEB&gt;-20210628-0230.txz
+06-29-21  02:00PM             10218440 x-abcd-joomla3-192.168.0.&lt;WEB&gt;-20210629-0230.txz
+06-29-21  02:00PM                61816 xabcdjoomla3db-192.168.0.&lt;WEB&gt;-20210624-2000.sql.xz
+06-29-21  02:00PM                61816 xabcdjoomla3db-192.168.0.&lt;WEB&gt;-20210624-2010.sql.xz
+06-29-21  02:00PM                62360 xabcdjoomla3db-192.168.0.&lt;WEB&gt;-20210625-0230.sql.xz
+06-29-21  02:00PM                64940 xabcdjoomla3db-192.168.0.&lt;WEB&gt;-20210626-0230.sql.xz
+06-29-21  02:00PM                60568 xabcdjoomla3db-192.168.0.&lt;WEB&gt;-20210627-0230.sql.xz
+06-29-21  02:00PM                60996 xabcdjoomla3db-192.168.0.&lt;WEB&gt;-20210628-0230.sql.xz
+06-29-21  02:00PM                61300 xabcdjoomla3db-192.168.0.&lt;WEB&gt;-20210629-0230.sql.xz
+226 Transfer complete.
+</code></pre>
+<p>Здесь <code>*.txz</code> &ndash; тарболы каталога веб-сайта (полной установки <strong>Joomla!</strong>), <code>*.sql.xz</code> &ndash; сжатые дампы базы данных веб-сайта. Выбираем, например, бэкапы <em>от 29 июня 2021 года</em> &ndash; ими будут следующие файлы:</p>
+<pre><code>x-abcd-joomla3-192.168.0.&lt;WEB&gt;-20210629-0230.txz
+xabcdjoomla3db-192.168.0.&lt;WEB&gt;-20210629-0230.sql.xz
+</code></pre>
+<p>Отключаем запросы на подтверждение операций с несколькими файлами, а также включаем двоичный режим передачи данных:</p>
+<pre><code>ftp&gt; prom
+Interactive mode off.
+ftp&gt;
+ftp&gt; bi
+200 Type set to I.
+</code></pre>
+<p>Скачиваем эти бэкапы в свой домашний каталог на веб-сервере (то есть туда, где мы сейчас находимся):</p>
+<pre><code>ftp&gt; mg x-abcd-joomla3-192.168.0.&lt;WEB&gt;-20210629-0230.txz xabcdjoomla3db-192.168.0.&lt;WEB&gt;-20210629-0230.sql.xz
+local: x-abcd-joomla3-192.168.0.&lt;WEB&gt;-20210629-0230.txz remote: x-abcd-joomla3-192.168.0.&lt;WEB&gt;-20210629-0230.txz
+227 Entering Passive Mode (192,168,0,&lt;FTP&gt;,215,28).
+125 Data connection already open; Transfer starting.
+226 Transfer complete.
+10218440 bytes received in 0.09 secs (110.7645 MB/s)
+local: xabcdjoomla3db-192.168.0.&lt;WEB&gt;-20210629-0230.sql.xz remote: xabcdjoomla3db-192.168.0.&lt;WEB&gt;-20210629-0230.sql.xz
+227 Entering Passive Mode (192,168,0,&lt;FTP&gt;,215,29).
+125 Data connection already open; Transfer starting.
+226 Transfer complete.
+61300 bytes received in 0.00 secs (48.0759 MB/s)
+</code></pre>
+<p>Оба бэкапа скачаны, можно выйти из FTP-клиента &ndash; комбинация клавиш <code>&lt;Ctrl-D&gt;</code> или команда <code>by</code>:</p>
+<pre><code>ftp&gt; by
+ftp&gt; 221 Goodbye.
+</code></pre>
+<p>Теперь можно посмотреть на эти файлы локально в файловой системе веб-сервера:</p>
+<pre><code>$ ls -l
+total 10040
+-rw-rw-r-- 1 &lt;vmusername&gt; &lt;vmusergroup&gt; 10218440 Jun 29 16:25 x-abcd-joomla3-192.168.0.&lt;WEB&gt;-20210629-0230.txz
+-rw-rw-r-- 1 &lt;vmusername&gt; &lt;vmusergroup&gt;    61300 Jun 29 16:25 xabcdjoomla3db-192.168.0.&lt;WEB&gt;-20210629-0230.sql.xz
+</code></pre>
+<ol start="2">
+<li>Восстановление базы данных.</li>
+</ol>
+<p>Сначала выполним декомпрессию дампа базы данных:</p>
+<pre><code>$ unxz xabcdjoomla3db-192.168.0.&lt;WEB&gt;-20210629-0230.sql.xz
+$
+$ ls -l
+total 11500
+-rw-rw-r-- 1 &lt;vmusername&gt; &lt;vmusergroup&gt; 10218440 Jun 29 16:25 x-abcd-joomla3-192.168.0.&lt;WEB&gt;-20210629-0230.txz
+-rw-rw-r-- 1 &lt;vmusername&gt; &lt;vmusergroup&gt;  1555738 Jun 29 16:25 xabcdjoomla3db-192.168.0.&lt;WEB&gt;-20210629-0230.sql
+</code></pre>
+<p>А теперь выполним собственно восстановление базы данных из этого дампа (<a href="https://mariadb.com/kb/en/mysqldump/#restoring" title="MariaDB | Restoring a database from backup">источник</a>):</p>
+<pre><code>$ mysql -uroot -p xabcdjoomla3db &lt; xabcdjoomla3db-192.168.0.&lt;WEB&gt;-20210629-0230.sql
+Enter password:
+...
+</code></pre>
+<p><strong>База данных веб-сайта восстановлена и сразу же доступна для работы.</strong></p>
+<ol start="3">
+<li>Восстановление файлового каталога веб-сайта.</li>
+</ol>
+<p>Для восстановления каталога веб-сайта (полной установки <strong>Joomla!</strong>) в файловой системе, предварительно необходимо полностью удалить все файлы и подкаталоги из этого каталога, но сам его оставить, то есть оставить пустым:</p>
+<pre><code>$ sudo rm -Rf /var/www/x-abcd-joomla3/*
+$
+$ ls -al /var/www/x-abcd-joomla3/
+total 8
+drwxr-xr-x 2 www-data www-data 4096 Jul  1 16:07 .
+drwxrwxr-x 6 www-data www-data 4096 Jul  1 16:05 ..
+</code></pre>
+<p>Видим выше, что из этого каталога все удалено. Распаковываем тарбол, предварительно перейдя в корневой каталог (делаем это составной однострочной командой):</p>
+<pre><code>$ cd / &amp;&amp; sudo tar -xf ~/x-abcd-joomla3-192.168.0.&lt;WEB&gt;-20210629-0230.txz
+$
+$ ls -al /var/www/x-abcd-joomla3/
+total 120
+drwxr-xr-x 17 www-data www-data  4096 Jul  1 16:35 .
+drwxrwxr-x  6 www-data www-data  4096 Jul  1 16:05 ..
+drwxr-xr-x 11 www-data www-data  4096 Jul  1 16:35 administrator
+drwxr-xr-x  2 www-data www-data  4096 Jul  1 16:35 bin
+drwxr-xr-x  3 www-data www-data  4096 Jul  1 16:35 cache
+drwxr-xr-x  2 www-data www-data  4096 Jul  1 16:35 cli
+drwxr-xr-x 20 www-data www-data  4096 Jul  1 16:35 components
+-r--r--r--  1 www-data www-data  3759 Jul  1 16:35 configuration.php
+...
+</code></pre>
+<p><strong>Веб-сайт полностью восстановлен и доступен для работы. Можно логиниться и заходить в панель управления Joomla!</strong></p>
+<p>Restore website, refresh your mind ! &ndash; To publish bright, to be alright ! <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f44d.png" class="emoji" alt="" /></p>
+
+<table id="footer">
+<tbody><tr><td id="v-bar-f"></td><td id="footer-td"><a href="https://anybrowser.org/campaign/" target="_blank" rel="nofollow noopener"><img style="border:0;width:88px;height:31px" src="/static/img/misc/vwab" alt="Viewable With Any Browser" /></a><a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank" rel="nofollow noopener"><img style="border:0;width:88px;height:31px" src="/static/img/misc/vcss" alt="Valid CSS!" /></a></td></tr></tbody>
+</table>
+<script src="/radicchio.js"></script>
+</body>
+</html>
