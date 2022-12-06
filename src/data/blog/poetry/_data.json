@@ -74,5 +74,10 @@
         "layout"    : "../../../_radicchio",
         "sitename_" : ": Mother and son &mdash; a single touch!",
         "subtitle_" : ""
+    },
+    "after-a-very-long-stagnation-ru" : {
+        "layout"    : "../../../_radicchio",
+        "sitename_" : ": After a very long stagnation...",
+        "subtitle_" : ""
     }
 }
