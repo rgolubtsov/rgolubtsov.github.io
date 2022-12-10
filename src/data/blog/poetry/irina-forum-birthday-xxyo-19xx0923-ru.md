@@ -15,7 +15,7 @@
 <br />Эй, Ирина, под кроватью<br />
 Стерегу я твой покой.
 
-<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* * *
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\* \* \*
 
 Ой, Ирина, ты же знаешь, ты же веришь, ты же ждешь:<br />
 Ох, Ирина, я же помню, помню, помню, &mdash; ты поймешь!
@@ -29,7 +29,7 @@
 <br />Ой, Ирина, вот и славно, что прелюдии конец,<br />
 Ох, Ирина, нежно, плавно перейду я, наконец,
 
-<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* * *
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\* \* \*
 
 В поздравленье с Днем рожденья,<br />
 С днем великого прозренья,<br />

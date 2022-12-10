@@ -43,7 +43,7 @@
 В улыбку вашу я влюблен,<br />
 С ума сведен и обольщен!
 
-<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* * *
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\* \* \*
 
 <br />Виктория, скажу вам честно:<br />
 Мне с вами очень интересно!<br />

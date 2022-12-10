@@ -28,7 +28,7 @@
 Восхищаться, трепетать<br />
 И шептать, шептать, шептать...
 
-<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* * *
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\* \* \*
 
 <br />Таня, Танечка, Татьяна!<br />
 Не подумай, что я пьяный,<br />
