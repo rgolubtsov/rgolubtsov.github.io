@@ -13,5 +13,17 @@
 Всё увидел он воочию &mdash;<br />
 Окунулся в жизнь рабочую!
 
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\* \* \*
+
+После жизни заводской<br />
+Он опять ушел в запой:<br />
+Проработав три недели, &mdash;<br />
+Мирно спит в своей постели.
+
+<br />И никто ему не нужен:<br />
+Ни Макрон, ни Дмитрий Дюжев! &mdash;<br />
+Пробудившись, он побрился,<br />
+А затем опохмелился.
+
 <br />*6th of December, 2022*<br />
 &copy; 2022 Radislav (Radicchio) Golubtsov
