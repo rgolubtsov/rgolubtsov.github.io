@@ -15,6 +15,7 @@
 
 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\* \* \*
 
+**UPDATE:** (*27th of December, 2022*)<br />
 После жизни заводской<br />
 Он опять ушел в запой:<br />
 Проработав три недели, &mdash;<br />
