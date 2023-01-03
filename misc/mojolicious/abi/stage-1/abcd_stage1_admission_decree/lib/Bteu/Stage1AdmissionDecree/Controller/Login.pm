@@ -4,7 +4,7 @@
 # Stage 1 Admission Decree.
 # Приказ о зачислении на I ступень.
 # =============================================================================
-# Written by Radislav (Radicchio) Golubtsov, 2021
+# Written by Radislav (Radicchio) Golubtsov, 2021-2023
 #
 
 package Bteu::Stage1AdmissionDecree::Controller::Login;

@@ -4,7 +4,7 @@
 %# Stage 1 Entrance Exams Results.
 %# Результаты вступительных испытаний.
 %# ============================================================================
-%# Written by Radislav (Radicchio) Golubtsov, 2021
+%# Written by Radislav (Radicchio) Golubtsov, 2021-2023
 %#
 
 % layout "results";
@@ -20,4 +20,4 @@
 </form>
 </div>
 </div>
-<div id="footer">Powered by 2021 <a href="//mojolicio.us" target="_blank"><strong>Mojolicious</strong></a></div>
+<div id="footer">Powered by 2021-2023 <a href="//mojolicio.us" target="_blank"><strong>Mojolicious</strong></a></div>

@@ -9,7 +9,7 @@
 # emoji sequences, and replaces them with the HTML tag <img> referring
 # to those emoji images stored on the GitHub Assets site.
 # =============================================================================
-# Copyright (C) 2019-2022 Radislav (Radicchio) Golubtsov
+# Copyright (C) 2019-2023 Radislav (Radicchio) Golubtsov
 #
 # (See the LICENSE file at the top of the source tree.)
 #

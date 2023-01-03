@@ -4,7 +4,7 @@
 -- Stage 1 Admission Decree.
 -- Приказ о зачислении на I ступень.
 -- ============================================================================
--- Written by Radislav (Radicchio) Golubtsov, 2021
+-- Written by Radislav (Radicchio) Golubtsov, 2021-2023
 --
 
 insert into abcd_stage1_admission_decree_users (username, given_name, password, studying_form_id, contract_type_id) values ('FamilyName1', 'GivenName1', '1234567', 1, 2);

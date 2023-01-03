@@ -25,4 +25,4 @@
 <br />&mdash; Я думаю только о нас! :blue_heart:
 
 <br />*24th of June, 2021*<br />
-&copy; 2021-2022 Radislav (Radicchio) Golubtsov
+&copy; 2021-2023 Radislav (Radicchio) Golubtsov

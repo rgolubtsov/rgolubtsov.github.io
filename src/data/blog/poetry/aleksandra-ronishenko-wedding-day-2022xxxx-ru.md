@@ -42,4 +42,4 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Вселенная! &#127757;&#127758;&#127759;
 
 <br />*Circa beginning of Summer 2022*<br />
-&copy; 2022 Radislav (Radicchio) Golubtsov
+&copy; 2022-2023 Radislav (Radicchio) Golubtsov

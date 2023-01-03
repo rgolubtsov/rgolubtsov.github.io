@@ -4,7 +4,7 @@
 -- Stage 1 Entrance Exams Results.
 -- Результаты вступительных испытаний.
 -- ============================================================================
--- Written by Radislav (Radicchio) Golubtsov, 2021
+-- Written by Radislav (Radicchio) Golubtsov, 2021-2023
 --
 
 insert into abcd_stage1_entrance_exams_results_subjects (subject_name) values ('Экономика организации');

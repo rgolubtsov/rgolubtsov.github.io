@@ -51,4 +51,4 @@
 И добротой ее пленен!&raquo;
 
 <br />*29th of September, 2020*<br />
-&copy; 2020-2022 Radislav (Radicchio) Golubtsov
+&copy; 2020-2023 Radislav (Radicchio) Golubtsov

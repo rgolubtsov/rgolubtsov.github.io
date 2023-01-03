@@ -49,4 +49,4 @@
 Мать и сын &mdash; одно страданье!&raquo;
 
 <br />*28th of October, 2022*<br />
-&copy; 2022 Radislav (Radicchio) Golubtsov
+&copy; 2022-2023 Radislav (Radicchio) Golubtsov
