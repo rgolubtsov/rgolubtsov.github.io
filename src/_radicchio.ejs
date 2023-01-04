@@ -12,8 +12,8 @@
 
 <% var    TITLE = sitename + sitename_; var NHK = nav_home_k; var NHV = nav_home_v; var NHID = nav_home_id; %>
 <% var SUBTITLE = subtitle + subtitle_; var NDK = nav_docs_k; var NDV = nav_docs_v; var NDID = nav_docs_id; %>
-<% var DESCR    = subtitle;             var NSK = nav_srcs_k; var NSV = nav_srcs_v; var NSID = nav_srcs_id; %>
-<% var CODER    = coder;                var NBK = nav_blog_k; var NBV = nav_blog_v; var NBID = nav_blog_id; %>
+<% var DESCR=subtitle; var MOTTO=motto; var NSK = nav_srcs_k; var NSV = nav_srcs_v; var NSID = nav_srcs_id; %>
+<% var KEYWD=keywords; var CODER=coder; var NBK = nav_blog_k; var NBV = nav_blog_v; var NBID = nav_blog_id; %>
 <% var CSS=css; var ICO=ico; var JS=js; var NGK = nav_ghub_k; var NGV = nav_ghub_v; var NGID = nav_ghub_id; %>
 
 <% var VWAB_FOOTER_ICON_HRF = "https://anybrowser.org/campaign/";                            %>
@@ -33,6 +33,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta       name="viewport"        content="width=device-width,initial-scale=1" />
 <meta       name="description"     content="<%= DESCR %>" />
+<meta       name="keywords"        content="<%= KEYWD %>" />
+<meta       name="motto"           content="<%= MOTTO %>" />
 <meta       name="author"          content="<%= CODER %>" />
 <meta       name="copyright"       content="Copyright (C) 2016-2023 <%= CODER %>" />
 <title><%- TITLE %></title>
