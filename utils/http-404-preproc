@@ -14,7 +14,7 @@
 declare -r EXIT_FAILURE=1 #    Failing exit status.
 declare -r EXIT_SUCCESS=0 # Successful exit status.
 
-declare -r HREF="http\:\/\/jigsaw\.w3\.org\/css-validator\/check\/referer"
+declare -r HREF="https\:\/\/jigsaw\.w3\.org\/css-validator\/check\/referer"
 declare -r REPL="\/radicchio\.css"
 
 echo "=== Making the HTTP 404 response to be safe when surfing from there outside."
