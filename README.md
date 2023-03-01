@@ -1,4 +1,4 @@
-# A Cup of Radicchio :coffee: :small_blue_diamond: :small_orange_diamond:
+# A Cup of Radicchio :coffee: :small_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_orange_diamond:
 
 **[A Cup of Radicchio](https://rgolubtsov.github.io "A Cup of Radicchio: A personal website of a power looper, a skateboarder, and a coder"):** A personal website of a power looper, a skateboarder, and a coder.
 
