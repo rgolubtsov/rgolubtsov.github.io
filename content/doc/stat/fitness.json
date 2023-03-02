@@ -1423,5 +1423,17 @@
             "day"     : 28,
             "weekday" : "Tu"
         }]
+    },
+    {
+        "pid"         : 61,
+        "year"        : "2023",
+        "month"       : "March",
+        "name"        : "Just Fitness",
+        "subscrn"     : true,
+        "sessions"    : [{
+            "sid"     : 1,
+            "day"     : 2,
+            "weekday" : "Th"
+        }]
     }]
 }
