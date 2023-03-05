@@ -4,7 +4,15 @@
         "sitename_" : ": Curriculum Vitae",
         "subtitle_" : "",
         "subtitle3" : "OBJECTIVE: To obtain the position of a Software Developer / Senior Software Developer",
-        "preamble1" : "Total IT experience - 20+ years",
+        "preamble1" : "Total IT experience &ndash; 20+ years",
         "preamble2" : "An IT multilinguist"
+    },
+    "cv_ru_ru"      : {
+        "layout"    : "../../../_radicchio",
+        "sitename_" : ": Curriculum Vitae",
+        "subtitle_" : "",
+        "subtitle3" : "ЦЕЛЬ: Получить должность Software Developer / Senior Software Developer",
+        "preamble1" : "Суммарный опыт работы в сфере ИТ &ndash; более 20 лет",
+        "preamble2" : "IT-мультилингвист"
     }
 }
