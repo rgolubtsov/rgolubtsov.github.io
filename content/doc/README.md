@@ -16,13 +16,15 @@ Various documents collected here were written to show up the essence of how impo
 * [Extract and repackage HP-UX JRE on Linux](/data/docs/hpuxiasrv/extract-and-repackage-jre-from-hpux-jdk-depot-bundle-on-linux)
 * [Harp Installation Gotchas](/data/docs/harp-inst/gotchas)
 
-A curious visitor may expect and have a willing to see Radicchio's IT-related resume or a Curriculum Vitae. &ndash; This one is presented below in two variants (formats): in plain text, formatted, and in PDF, with a Radicchio's recent [photo](/static/img/radicchio/radicchio.jpg) embedded. &ndash; In English:
+A curious visitor may expect and have a willing to see Radicchio's IT-related resume or a Curriculum Vitae. &ndash; This one is presented below in three variants (formats): in HTML, in plain text, formatted, and in PDF, with a Radicchio's recent [photo](/static/img/radicchio/radicchio.jpg) embedded. &ndash; In English:
 
+* [Curriculum Vitae, en-US, HTML](/docs/cv/radislav-golubtsov-resume-en_US)
 * [Curriculum Vitae, en-US, text](/docs/cv/radislav-golubtsov-resume-en_US.txt)
 * [Curriculum Vitae, en-US, PDF](/docs/cv/radislav-golubtsov-resume-en_US.pdf)
 
 And in Russian:
 
+* [Curriculum Vitae, ru-RU, HTML](/docs/cv/radislav-golubtsov-resume-ru_RU)
 * [Curriculum Vitae, ru-RU, text](/docs/cv/radislav-golubtsov-resume-ru_RU.txt)
 * [Curriculum Vitae, ru-RU, PDF](/docs/cv/radislav-golubtsov-resume-ru_RU.pdf)
 
