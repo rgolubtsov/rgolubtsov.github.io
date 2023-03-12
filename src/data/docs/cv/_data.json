@@ -5,7 +5,8 @@
         "subtitle_" : "",
         "subtitle3" : "OBJECTIVE: To obtain the position of a Software Developer / Senior Software Developer",
         "preamble1" : "Total IT experience &ndash; 20+ years",
-        "preamble2" : "An IT multilinguist"
+        "preamble2" : "An IT multilinguist",
+        "preamble3" : "The content is under construction. Please wait for a while... :raising_hand:"
     },
     "cv_ru_ru"      : {
         "layout"    : "../../../_radicchio",
@@ -13,6 +14,7 @@
         "subtitle_" : "",
         "subtitle3" : "ЦЕЛЬ: Получить должность Software Developer / Senior Software Developer",
         "preamble1" : "Суммарный опыт работы в сфере ИТ &ndash; более 20 лет",
-        "preamble2" : "IT-мультилингвист"
+        "preamble2" : "IT-мультилингвист",
+        "preamble3" : "Страница находится в разработке. Пожалуйста, подождите немного... :raising_hand:"
     }
 }
