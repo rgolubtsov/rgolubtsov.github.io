@@ -177,19 +177,19 @@ pre code {
 
 /* ------------------------------------------------------------------------- */
 
-#stat-cont {
+#cv-cont, #stat-cont {
     margin:           5px 28px 18px;
     border-left:      1px solid #4ca419;
     overflow:         auto;
 }
 
-#stat-fit0, #stat-ttt0 {
+#cv-table0, #stat-fit0, #stat-ttt0 {
     width:            100%;
     margin-left:      -1px;
     border-collapse:  collapse;
 }
 
-#stat-fit0 td, #stat-ttt0 td {
+#cv-table0 td, #stat-fit0 td, #stat-ttt0 td {
     border:           1px solid #4ca419;
     padding:          6px;
     vertical-align:   baseline;
