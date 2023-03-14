@@ -195,6 +195,34 @@ pre code {
     vertical-align:   baseline;
 }
 
+#cv-table0 td {
+    padding-right:    10px;
+    padding-left:     10px;
+    line-height:      1.5;
+    text-align:       justify;
+}
+
+#cv-table0 td ul,    #cv-table0 td ol {
+    margin:           0;
+    padding:          0px 0px 0px 20px;
+}
+
+#cv-table0 td ul li, #cv-table0 td ol li {
+    padding-bottom:   0;
+}
+
+#cv-table0 td.cv-bold {
+    font-weight:      bold;
+}
+
+#cv-table0 td.cv-caption {
+    background-color: #4ca419;
+}
+
+#cv-table0 td.cv-header {
+    background-color: #5db52a;
+}
+
 #p-caption-h td, #p-header-h td, #s-header-h td,
                  #p-header-f td, #s-header-f td,
 #m-caption-h td, #m-header-h td, #g-header-h td,
