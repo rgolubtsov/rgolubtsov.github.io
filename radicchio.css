@@ -177,49 +177,99 @@ pre code {
 
 /* ------------------------------------------------------------------------- */
 
-#cv-cont, #stat-cont {
+#cv-cont0,
+#cv-cont1,
+#cv-cont2,
+#cv-cont3,
+#cv-cont4,
+#cv-cont5,
+#stat-cont {
     margin:           5px 28px 18px;
     border-left:      1px solid #4ca419;
     overflow:         auto;
 }
 
-#cv-table0, #stat-fit0, #stat-ttt0 {
+#cv-table0,
+#cv-table1,
+#cv-table2,
+#cv-table3,
+#cv-table4,
+#cv-table5,
+#stat-fit0,
+#stat-ttt0 {
     width:            100%;
     margin-left:      -1px;
     border-collapse:  collapse;
 }
 
-#cv-table0 td, #stat-fit0 td, #stat-ttt0 td {
+#cv-table0 td,
+#cv-table1 td,
+#cv-table2 td,
+#cv-table3 td,
+#cv-table4 td,
+#cv-table5 td,
+#stat-fit0 td,
+#stat-ttt0 td {
     border:           1px solid #4ca419;
     padding:          6px;
     vertical-align:   baseline;
 }
 
-#cv-table0 td {
+#cv-table0 td,
+#cv-table1 td,
+#cv-table2 td,
+#cv-table3 td,
+#cv-table4 td,
+#cv-table5 td {
     padding-right:    10px;
     padding-left:     10px;
     line-height:      1.5;
     text-align:       justify;
 }
 
-#cv-table0 td ul,    #cv-table0 td ol {
+#cv-table0 td ul,    #cv-table0 td ol,
+#cv-table1 td ul,    #cv-table1 td ol,
+#cv-table2 td ul,    #cv-table2 td ol,
+#cv-table3 td ul,    #cv-table3 td ol,
+#cv-table4 td ul,    #cv-table4 td ol,
+#cv-table5 td ul,    #cv-table5 td ol {
     margin:           0;
     padding:          0px 0px 0px 20px;
 }
 
-#cv-table0 td ul li, #cv-table0 td ol li {
+#cv-table0 td ul li, #cv-table0 td ol li,
+#cv-table1 td ul li, #cv-table1 td ol li,
+#cv-table2 td ul li, #cv-table2 td ol li,
+#cv-table3 td ul li, #cv-table3 td ol li,
+#cv-table4 td ul li, #cv-table4 td ol li,
+#cv-table5 td ul li, #cv-table5 td ol li {
     padding-bottom:   0;
 }
 
-#cv-table0 td.cv-bold {
+#cv-table0 td.cv-bold,
+#cv-table1 td.cv-bold,
+#cv-table2 td.cv-bold,
+#cv-table3 td.cv-bold,
+#cv-table4 td.cv-bold,
+#cv-table5 td.cv-bold {
     font-weight:      bold;
 }
 
-#cv-table0 td.cv-caption {
+#cv-table0 td.cv-caption,
+#cv-table1 td.cv-caption,
+#cv-table2 td.cv-caption,
+#cv-table3 td.cv-caption,
+#cv-table4 td.cv-caption,
+#cv-table5 td.cv-caption {
     background-color: #4ca419;
 }
 
-#cv-table0 td.cv-header {
+#cv-table0 td.cv-header,
+#cv-table1 td.cv-header,
+#cv-table2 td.cv-header,
+#cv-table3 td.cv-header,
+#cv-table4 td.cv-header,
+#cv-table5 td.cv-header {
     background-color: #5db52a;
 }
 
