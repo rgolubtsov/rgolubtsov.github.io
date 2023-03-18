@@ -1,18 +1,32 @@
 {
-    "cv_en_us"      : {
-        "layout"    : "../../../_radicchio",
-        "sitename_" : ": Curriculum Vitae",
-        "subtitle_" : "",
-        "subtitle3" : "Passionate Software Developer",
-        "lpubdate_" : "17th of March, 2023",
-        "preamble_" : "The content is under construction. Please wait for a while... :raising_hand:"
+    "cv_en_us"           : {
+        "layout"         : "../../../_radicchio",
+        "sitename_"      : ": Curriculum Vitae",
+        "subtitle_"      : "",
+        "subtitle3"      : "Passionate Software Developer",
+        "lpubdate_"      : "17th of March, 2023",
+        "preamble_"      : "The content is under construction. Please wait for a while... :raising_hand:",
+        "table0_caption" : "SUMMARY",
+        "table1_caption" : "Languages",
+        "table2_caption" : "Education",
+        "table3_caption" : "Work experience",
+        "table4_caption" : "Personal information",
+        "table5_caption" : "Miscellaneous",
+        "reverse_order_" : "(in reverse-chronological order)"
     },
-    "cv_ru_ru"      : {
-        "layout"    : "../../../_radicchio",
-        "sitename_" : ": Curriculum Vitae",
-        "subtitle_" : "",
-        "subtitle3" : "Passionate Software Developer",
-        "lpubdate_" : "17 марта 2023 г.",
-        "preamble_" : "Страница находится в разработке. Пожалуйста, подождите немного... :raising_hand:"
+    "cv_ru_ru"           : {
+        "layout"         : "../../../_radicchio",
+        "sitename_"      : ": Curriculum Vitae",
+        "subtitle_"      : "",
+        "subtitle3"      : "Passionate Software Developer",
+        "lpubdate_"      : "17 марта 2023 г.",
+        "preamble_"      : "Страница находится в разработке. Пожалуйста, подождите немного... :raising_hand:",
+        "table0_caption" : "РЕЗЮМЕ",
+        "table1_caption" : "Языки",
+        "table2_caption" : "Образование",
+        "table3_caption" : "Профессиональный опыт",
+        "table4_caption" : "Личная информация",
+        "table5_caption" : "Разное",
+        "reverse_order_" : "(в обратном хронологическом порядке)"
     }
 }
