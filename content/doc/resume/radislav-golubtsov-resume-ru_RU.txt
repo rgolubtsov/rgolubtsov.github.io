@@ -56,7 +56,7 @@
                   Erlang Standard Library
                 * Elixir, Elixir Standard Library, Cowboy (библиотека
                   веб-сервера для Erlang/OTP)
-                * LFE (Lisp Flavoured Erlang) - диалект языка Lisp-2
+                * LFE (Lisp Flavoured Erlang) - диалект языка Lisp-2+
                   для Erlang VM
                 * CMS: WordPress, TYPO3, Joomla!
 
@@ -69,7 +69,7 @@
                   GNU Debugger (GDB), GNUstep, sed и др. Clang (C / C++ /
                   Objective-C LLVM compiler front-end), TCC (Fabrice Bellard's
                   Tiny C Compiler)
-                * Apache Maven, Apache Ant, Leiningen, Erlang Rebar
+                * Apache Maven, Apache Ant, Leiningen, Rebar3
 
 СУБД            PostgreSQL, MySQL / MariaDB, Oracle Database, IBM DB2 Universal
                 Database, SQLite, MongoDB, Redis
@@ -113,7 +113,7 @@
 окт.  2001      имени П. О. Сухого
 
 1994-1999       Студент Гомельского государственного технического университета
-                имени П. О. Сухого, Гомель, Беларусь (диплом "с отличием")
+                имени П. О. Сухого, Гомель, Беларусь (диплом "С отличием")
 
 ====== Профессиональный опыт (в обратном хронологическом порядке) =============
 
