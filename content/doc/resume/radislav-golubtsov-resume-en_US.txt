@@ -99,7 +99,7 @@ Russian         Native or Bilingual Proficiency
 
 Italian         Elementary Proficiency
 
-====== Education (in reverse order) ===========================================
+====== Education (in reverse-chronological order) =============================
 
 May 2002 -      Ph.D. student of the School for Advanced Studies,
 Jul 2003        Pavel Sukhoi Gomel State Technical University
@@ -113,7 +113,7 @@ Oct 2001        University (Ph.D. student of the School for Advanced Studies)
 1994-1999       Student of the Pavel Sukhoi Gomel State Technical University,
                 Gomel, Belarus (M.Sc. Hons)
 
-====== Work experience (in reverse order) =====================================
+====== Work experience (in reverse-chronological order) =======================
 
 Jul 2022 - Oct 2022, Various activities at Milkavita OJSC regarding improvement
                      and actualization of the information security policies
