@@ -1,5 +1,23 @@
 <%# src/data/docs/cv/cv_en_us.ejs %>
 
+<%# Calculates the current age based on the date of birth. %>
+<% var get_age = function() {
+   var date    = new Date();
+   var year    = date.getFullYear();
+   var month   = date.getMonth();
+   var day     = date.getDate();
+
+   var age = year - 1977;
+
+   if ((month + 1) < 6) {
+       age -= 1;
+   } else if (day < 27) {
+       age += 1;
+   }
+
+   return age;
+}; %>
+
 <% var cv_en_us = public.data.docs.cv._data.cv_en_us; %>
 
 <h1><%=    cv_en_us.sitename_.substring(2) %></h1>
@@ -144,7 +162,7 @@
 </tr>
 <tr>
 <td>Date of birth</td>
-<td style="width:80%;white-space:nowrap">June 27, 1977 (45yo) | Zodiac sign: Cancer / Fire Snake</td>
+<td style="width:80%;white-space:nowrap">June 27, 1977 (<%= get_age() %>yo) | Zodiac sign: Cancer / Fire Snake</td>
 </tr>
 <tr>
 <td>Citizenship</td>
