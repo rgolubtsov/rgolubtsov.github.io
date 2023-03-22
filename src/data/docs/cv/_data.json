@@ -16,7 +16,7 @@
     },
     "cv_en_us_wrk_exp"   : {
         "layout"         : "../../../_radicchio",
-        "sitename_"      : ": CV: ",
+        "sitename_"      : ": CV | Work experience",
         "subtitle_"      : "",
         "preamble1"      : "Main CV sections see ",
         "preamble2"      : "here"
@@ -38,7 +38,7 @@
     },
     "cv_ru_ru_wrk_exp"   : {
         "layout"         : "../../../_radicchio",
-        "sitename_"      : ": CV: ",
+        "sitename_"      : ": CV | Work experience",
         "subtitle_"      : "",
         "preamble1"      : "Основные разделы CV см. ",
         "preamble2"      : "здесь"
