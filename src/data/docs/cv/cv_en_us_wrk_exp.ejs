@@ -1,0 +1,124 @@
+<%# src/data/docs/cv/cv_en_us_wrk_exp.ejs %>
+
+<% var cv_en_us_wrk_exp = public.data.docs.cv._data.cv_en_us_wrk_exp; %>
+<% var cv_en_us         = public.data.docs.cv._data.cv_en_us;         %>
+
+<h1><%= cv_en_us_wrk_exp.sitename_.substring(2) %><%= cv_en_us.table3_caption %></h1>
+<h3><%= cv_en_us.subtitle3 %></h3>
+<p><%=  cv_en_us_wrk_exp.preamble1 %><a href="/data/docs/cv/cv_en_us" rel="noreferrer"><%= cv_en_us_wrk_exp.preamble2 %></a>.</p>
+<!-- ====== Work experience =============================================== -->
+<div   id="cv-cont3">
+<table id="cv-table3">
+<tbody>
+<tr>
+<td colspan="2" class="cv-caption"><span style="letter-spacing:2px;font-weight:bold"><%= cv_en_us.table3_caption %></span> <%= cv_en_us.reverse_order_ %></td>
+</tr>
+<tr>
+<td colspan="2" class="cv-header">Jul 2022 &ndash; Oct 2022, Various activities at Milkavita OJSC regarding improvement and actualization of the information security policies pack; optimization and maintenance of the corporate website; deployment, configuration, and maintenance of Redmine and Zabbix systems; configuration and maintenance of Linux servers; supplementary work on replacement of surveillance cameras and facilities | Gomel (4 months)</td>
+</tr>
+<tr>
+<td colspan="2">Job position: <span style="font-weight:bold">Software Specialist of the Production Processes Automation Department</span></td>
+</tr>
+<tr>
+<td colspan="2" class="cv-header">Sep 2020 &ndash; Sep 2021, Software design, development, testing, and maintenance at the Belarusian Trade and Economics University of Consumer Cooperatives, Gomel (1 year)</td>
+</tr>
+<tr>
+<td colspan="2">Job position: <span style="font-weight:bold">Lead Software Developer of the Information Technology Centre</span></td>
+</tr>
+<tr>
+<td>Aug 2021 &ndash; Sep 2021</td>
+<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">Web apps for enrollees to get the information regarding entrance exams results and admission decrees</div>
+<div style="margin-bottom:10px"><span style="font-weight:bold">Project description:</span> Design, development, testing, and deployment of standalone web applications, targeted enrollees to get the information regarding their entrance exams results and admission decrees. These are the following apps:</div>
+<ul style="margin-bottom:10px">
+<li>Stage 1 Entrance Exams Results</li>
+<li>Stage 1 Admission Decree</li>
+<li>Magistracy Admission Decree</li>
+</ul>
+<div style="margin-bottom:10px;white-space:nowrap">The customer of the project is the admission committee of the University.</div>
+<div style="margin-bottom:10px"><span style="font-weight:bold">Personal role in the project:</span> Creating the database schema and designing the common apps architecture. Development of business logic modules of the apps and corresponding web pages. Implementing the user authentication and authorization mechanism for enrollees to allow them to get access to their personal data regarding entrance exams results and admission decrees. Making configuration changes in the application server, web server, and database server setups. Creating the database and populating it with the enrollees data taken from the admission committee of the University. Testing and deploying the web apps, and finally starting them up according to the working plans of the admission campaign of the University.</div>
+<div style="font-weight:bold">Tools and technologies used:</div>
+<ul style="text-align:left">
+<li>Dev OS: Arch Linux, Ubuntu Server LTS x86-64 (VM: QEMU-KVM)</li>
+<li>Server OS: Ubuntu Server LTS x86-64 (VM: VMware ESXi)</li>
+<li>Perl 5, Mojolicious, DBI, Try::Tiny, Mojolicious::Plugin::Authentication, Embedded Perl (as templating), HTML, CSS, YAML, SQL, SSH, SCP, QPDF, Vim</li>
+<li>PostgreSQL</li>
+<li>Mojo::Server::Daemon, Nginx</li>
+</ul></td>
+</tr>
+<tr>
+<td>Jun 2021 &ndash; Jul 2021</td>
+<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">Migrating supplementary and subsidiary websites of the University from one web server to another. Development and deployment of the special backup system to make regular backups of the new web portal of the University</div>
+<div style="margin-bottom:10px"><span style="font-weight:bold">Project description:</span> Migrating five supplementary and subsidiary websites of the University from the Apache HTTP Server to the Nginx web server at the aim of optimizing their performance, simplifying their administering, and load balancing between them. <span style="font-weight:bold">Subproject:</span> Development and deployment of the special backup system to make regular backups of the new web portal of the University (on a separate virtual machine and based on another Nginx web server; please see the previous project).</div>
+<div style="margin-bottom:10px"><span style="font-weight:bold">Personal role in the project:</span> There was a number of consequent tests performed against the Nginx web server for serving high loaded websites of the University. This was crucially important to realize that in peak intervals, where the amount of client requests was relatively big, Nginx showed great performance comparing with the former their web server &ndash; Apache HTTP Server. Thus, based on those tests a common decision was taken &ndash; to replace the Apache web server with Nginx, i.e. to completely migrate all the supplementary and subsidiary websites of the University to Nginx. Such a decision has been finally carried out with further sites' testing and supporting on a brand new web server.</div>
+<div style="margin-bottom:10px">Development and deployment of the special backup system to make regular backups of the new web portal of the University: writing a Shell script and the corresponding FTP client configuration for creating the web portal's CMS tarball and the compressed dump of its accompanied database, and for uploading them to the FTP server of the University using Cron jobs on a daily basis. Creating a scenario for restoring the web portal from any of its backups taken from the University's FTP server.</div>
+<div style="font-weight:bold">Tools and technologies used:</div>
+<ul style="text-align:left">
+<li>Dev OS: Arch Linux, Ubuntu Server LTS x86-64 (VM: QEMU-KVM)</li>
+<li>Server OS: Ubuntu Server LTS x86-64 (VM x 2: VMware ESXi)</li>
+<li>CMS WordPress + MySQL Community Server</li>
+<li>CMS Joomla! + MariaDB</li>
+<li>SSH, SCP, FTP, Bash Shell Script, Cron, Vim</li>
+<li>Apache HTTP Server, Nginx + PHP-FPM</li>
+</ul></td>
+</tr>
+<tr>
+<td style="white-space:nowrap">Mar 2021 &ndash; May 2021</td>
+<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">Analysis and selection of a CMS which is best fitted to the new web portal of the University. Initial development of the new web portal</div>
+<div style="margin-bottom:10px"><span style="font-weight:bold">Project description:</span> Analysis of a series of freely redistributable open source content management systems (CMS), freely available extension modules (plugins) for them which are required for building the new web portal of the University. Selection of one of these CMSs and initial development of the new web portal of the University based on the CMS chosen.</div>
+<div style="margin-bottom:10px"><span style="font-weight:bold">Personal role in the project:</span> Selection of the front-end theme (template) for the new portal. Proving the three selected CMSs in action: installation, configuration, navigation, and minimal content populating to create a set of sample web pages. Namely, these are: October CMS, TYPO3, and Joomla. Installation, fine tuning, and configuring a one of these three CMSs, that is best fitted to the new web portal of the University, for its building and evolving, and for the further management of its parts and components during both development and normal production use. The main requirements are: (1) the CMS needs to provide extended permissions and user roles management functionality out of the box, (2) the existence of rich community and ecosystem having freely available plugins for various purposes, (3) to provide the possibility to perform yet simple content management-related tasks for users having too diversed technical skills. Finally, the CMS chosen was Joomla! and its accompanied RDBMS was MariaDB. Initial development of the new web portal of the University based on this CMS: selection of the front-end theme for the new portal, development of the navigational structure, creating a set of semi-dummy pages written in three languages (Russian, Byelorussian, English). Also two special pages in these three languages were completely designed, created, and populated ("About the University" and "Contacts"). Performing a whole set of tasks regarding the virtual machine maintenance, the web server configuring and other duties (please see for their description in the previous project).</div>
+<div style="font-weight:bold">Tools and technologies used:</div>
+<ul style="text-align:left">
+<li>Dev OS: Arch Linux, Ubuntu Server LTS x86-64 (VM: QEMU-KVM)</li>
+<li>Server OS: Ubuntu Server LTS x86-64 (VM: VMware ESXi)</li>
+<li>October CMS + PostgreSQL</li>
+<li>CMS TYPO3 + PostgreSQL</li>
+<li>CMS Joomla! + MariaDB</li>
+<li>HTML, CSS, JavaScript, SQL, SSH, SCP, FTP, Bash Shell Script, Cron, Composer</li>
+<li>Nginx + PHP-FPM</li>
+<li>Vim, LibreOffice, GIMP</li>
+</ul></td>
+</tr>
+<tr>
+<td>Dec 2020 &ndash; Feb 2021</td>
+<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">Development, deployment, maintenance, and support of the website for one of the faculties of the University (Faculty of professional development and personnel retraining)</div>
+<div style="margin-bottom:10px"><span style="font-weight:bold">Project description:</span> Development, deployment, content management, web mastering, maintenance, and support of the website of the Faculty of professional development and personnel retraining of the University.</div>
+<div style="margin-bottom:10px"><span style="font-weight:bold">Personal role in the project:</span> Development of the logical structure, navigation elements of the website. Adaptation of content elements of web pages for mobile web browsers, doing content populating the web pages and their further editing upon faculty staff requests (content management-related activities). Non-standard or multiple/mass content data changes or special data and metadata changes using database management tools besides CMS (also various DBA-related activities). Regular monitoring of scheduled site's backing up operations and analysis of respective logs and notifications. Analysis of client requests to special and selective web pages and to their respective underlying data, grepping for them in web server access logs. Performing the full cycle of activities regarding updating and upgrading packages of and the operating system itself which is used to run web server, CMS, database, and various vital system services. Updating the CMS and its modules, plugins, translations, etc. Keeping the virtual machine and the respective operating system to adhere to the principles of high availability, reliability, and readiness. SEO-related activities regarding this website.</div>
+<div style="font-weight:bold">Tools and technologies used:</div>
+<ul style="text-align:left">
+<li>Dev OS: Arch Linux, Ubuntu Server LTS x86-64 (VM: QEMU-KVM)</li>
+<li>Server OS: Ubuntu Server LTS x86-64 (VM: VMware ESXi)</li>
+<li>CMS WordPress + MySQL Community Server</li>
+<li>HTML, CSS, JavaScript, SQL, SSH, SCP, FTP</li>
+<li>Apache HTTP Server</li>
+<li>Vim, LibreOffice, GIMP</li>
+</ul></td>
+</tr>
+<tr>
+<td>Sep 2020 &ndash; Nov 2020</td>
+<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">Enhancement, maintenance, and support of supplementary and subsidiary websites of the University</div>
+<div style="margin-bottom:10px"><span style="font-weight:bold">Project description:</span> Design enhancements, content management, web mastering, maintenance, and support of four supplementary and subsidiary websites of the University, which are targeted and used as extra informational resources to complement the main web portal of the University. Namely, these are:</div>
+<ul style="margin-bottom:10px">
+<li>BTEU Academic Staff Personal Pages</li>
+<li>BTEU Admissions</li>
+<li>International Affairs Department of BTEU</li>
+<li>Publishing and Polygraphic Centre "Kopernik" of BTEU</li>
+</ul>
+<div style="margin-bottom:10px"><span style="font-weight:bold">Personal role in the project:</span> Refinement of the overall websites design, adaptation of content elements of web pages for mobile web browsers, doing content populating the new pages, editing the existing pages (content management-related activities). Non-standard or multiple/mass content data changes or special data and metadata changes using database management tools besides CMS (also various DBA-related activities). Regular monitoring of scheduled sites' backing up operations and analysis of respective logs and notifications. Analysis of client requests to special and selective web pages and to their respective underlying data, grepping for them in web server access logs. Performing the full cycle of activities regarding updating and upgrading packages of and the operating system itself which is used to run web server, CMS, database, and various vital system services. Updating the CMS and its modules, plugins, sites' themes, translations, etc. Keeping the virtual machine and the respective operating system to adhere to the principles of high availability, reliability, and readiness. Basic load balancing activities between sites and managed SEO-related activities.</div>
+<div style="font-weight:bold">Tools and technologies used:</div>
+<ul style="text-align:left">
+<li>Dev OS: Arch Linux, Ubuntu Server LTS x86-64 (VM: QEMU-KVM)</li>
+<li>Server OS: Ubuntu Server LTS x86-64 (VM: VMware ESXi)</li>
+<li>CMS WordPress + MySQL Community Server</li>
+<li>HTML, CSS, JavaScript, SQL, SSH, SCP, FTP</li>
+<li>Apache HTTP Server</li>
+<li>Vim, LibreOffice, GIMP</li>
+</ul></td>
+</tr>
+<tr>
+<td colspan="2" class="cv-header">:smiley:</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<%# vim:set nu et ts=4 sw=4: %>
