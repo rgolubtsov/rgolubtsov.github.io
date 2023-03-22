@@ -191,6 +191,22 @@
 </tr>
 <tr>
 <td>Jun 2021 &ndash; Jul 2021</td>
+<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">Migrating supplementary and subsidiary websites of the University from one web server to another. Development and deployment of the special backup system to make regular backups of the new web portal of the University</div>
+<div style="margin-bottom:10px"><span style="font-weight:bold">Project description:</span> Migrating five supplementary and subsidiary websites of the University from the Apache HTTP Server to the Nginx web server at the aim of optimizing their performance, simplifying their administering, and load balancing between them. <span style="font-weight:bold">Subproject:</span> Development and deployment of the special backup system to make regular backups of the new web portal of the University (on a separate virtual machine and based on another Nginx web server; please see the previous project).</div>
+<div style="margin-bottom:10px"><span style="font-weight:bold">Personal role in the project:</span> There was a number of consequent tests performed against the Nginx web server for serving high loaded websites of the University. This was crucially important to realize that in peak intervals, where the amount of client requests was relatively big, Nginx showed great performance comparing with the former their web server &ndash; Apache HTTP Server. Thus, based on those tests a common decision was taken &ndash; to replace the Apache web server with Nginx, i.e. to completely migrate all the supplementary and subsidiary websites of the University to Nginx. Such a decision has been finally carried out with further sites' testing and supporting on a brand new web server.</div>
+<div style="margin-bottom:10px">Development and deployment of the special backup system to make regular backups of the new web portal of the University: writing a Shell script and the corresponding FTP client configuration for creating the web portal's CMS tarball and the compressed dump of its accompanied database, and for uploading them to the FTP server of the University using Cron jobs on a daily basis. Creating a scenario for restoring the web portal from any of its backups taken from the University's FTP server.</div>
+<div style="font-weight:bold">Tools and technologies used:</div>
+<ul style="text-align:left">
+<li>Dev OS: Arch Linux, Ubuntu Server LTS x86-64 (VM: QEMU-KVM)</li>
+<li>Server OS: Ubuntu Server LTS x86-64 (VM x 2: VMware ESXi)</li>
+<li>CMS WordPress + MySQL Community Server</li>
+<li>CMS Joomla! + MariaDB</li>
+<li>SSH, SCP, FTP, Bash Shell Script, Cron, Vim</li>
+<li>Apache HTTP Server, Nginx + PHP-FPM</li>
+</ul></td>
+</tr>
+<tr>
+<td>Mar 2021 &ndash; May 2021</td>
 <td>:smiley:</td>
 </tr>
 </tbody>
