@@ -14,6 +14,13 @@
         "table5_caption" : "Miscellaneous",
         "reverse_order_" : "(in reverse-chronological order)"
     },
+    "cv_en_us_wrk_exp"   : {
+        "layout"         : "../../../_radicchio",
+        "sitename_"      : ": CV: ",
+        "subtitle_"      : "",
+        "preamble1"      : "Main CV sections see ",
+        "preamble2"      : "here"
+    },
     "cv_ru_ru"           : {
         "layout"         : "../../../_radicchio",
         "sitename_"      : ": Curriculum Vitae",
@@ -28,5 +35,12 @@
         "table4_caption" : "Личная информация",
         "table5_caption" : "Разное",
         "reverse_order_" : "(в обратном хронологическом порядке)"
+    },
+    "cv_ru_ru_wrk_exp"   : {
+        "layout"         : "../../../_radicchio",
+        "sitename_"      : ": CV: ",
+        "subtitle_"      : "",
+        "preamble1"      : "Основные разделы CV см. ",
+        "preamble2"      : "здесь"
     }
 }
