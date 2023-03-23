@@ -12,13 +12,15 @@
         "table3_caption" : "Work experience",
         "table4_caption" : "Personal information",
         "table5_caption" : "Miscellaneous",
-        "reverse_order_" : "(in reverse-chronological order)"
+        "reverse_order_" : "(in reverse-chronological order)",
+        "same_tab_hint_" : "Opens on a separate page, in the same window / tab",
+        "new__tab_hint_" : "Opens in a new window / tab"
     },
     "cv_en_us_wrk_exp"   : {
         "layout"         : "../../../_radicchio",
         "sitename_"      : ": CV | Work experience",
         "subtitle_"      : "",
-        "preamble1"      : "Main CV sections see ",
+        "preamble1"      : "For main CV sections see ",
         "preamble2"      : "here"
     },
     "cv_ru_ru"           : {
@@ -34,7 +36,9 @@
         "table3_caption" : "Профессиональный опыт",
         "table4_caption" : "Личная информация",
         "table5_caption" : "Разное",
-        "reverse_order_" : "(в обратном хронологическом порядке)"
+        "reverse_order_" : "(в обратном хронологическом порядке)",
+        "same_tab_hint_" : "Откроется на отдельной странице в этом же окне/вкладке",
+        "new__tab_hint_" : "Откроется в новом окне/вкладке"
     },
     "cv_ru_ru_wrk_exp"   : {
         "layout"         : "../../../_radicchio",
