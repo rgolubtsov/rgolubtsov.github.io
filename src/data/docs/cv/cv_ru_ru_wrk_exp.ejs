@@ -137,6 +137,64 @@
 </ul></td>
 </tr>
 <tr>
+<td colspan="2" class="cv-header">Ноябрь 2017 &ndash; март 2019, работа по разработке ПО в ИООО &laquo;Эксадел&raquo;, (Гомельский филиал), Гомель (1 год и 5 месяцев)</td>
+</tr>
+<tr>
+<td colspan="2">Должность: <span style="font-weight:bold">инженер-программист отдела разработки программного обеспечения № 2</span></td>
+</tr>
+<tr>
+<td>Ноябрь 2018 &ndash;<br />март 2019</td>
+<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">Проект: Barracuda WSG Azure Orchestration Blueprint</div>
+<div style="margin-bottom:10px"><span style="font-weight:bold">Краткое описание:</span> Разработка компонента приложения на основе Flask Blueprint, так называемого Orchestrator, внутри Backend-а прокси-сервера Barracuda Web Security Gateway (WSG), который предназначен для интеграции WSG с облачной платформой Microsoft Azure с целью автоматизации создания виртуальной вычислительной инфраструктуры путем запуска утилиты Terraform с передачей ей конфигурации создаваемой инфраструктуры через очередь задач Celery. WSG и Orchestrator оба написаны на Питоне, и последний использует библиотеку очереди задач Celery для асинхронного выполнения задач Terraform.</div>
+<div style="margin-bottom:10px;white-space:nowrap">(<em>Заказчиком проекта Orchestration Blueprint является компания Barracuda Networks, Inc.</em>)</div>
+<div style="margin-bottom:10px"><span style="font-weight:bold">Роль и выполняемые задачи:</span> Разработка и настройка приложения Orchestrator в части обработки и валидации данных Terraform (переменных конфигурации) и передачи их в очередь задач Celery для дальнейшего выполнения. Разработка функционала отображения результатов выполнения задач и статусов Celery в асинхронном режиме и тестирование приложения Orchestrator на выделенном аккаунте Azure вместе с DevOps-инженером.</div>
+<div style="font-weight:bold">Используемые технологии и средства разработки:</div>
+<ul style="text-align:left">
+<li>Dev OS: Arch Linux, Ubuntu Server amd64 (VM: QEMU-KVM)</li>
+<li>Test OS: Ubuntu Server amd64 (VM: Xen)</li>
+<li>Python 2, Python Standard Library, Flask, Flask Blueprints, Jinja2, Virtualenv</li>
+<li>Werkzeug, Nginx</li>
+<li>Redis, SQLite</li>
+<li>GNU Make, Terraform, curl, Vim</li>
+<li>Git, Bitbucket, JIRA</li>
+</ul></td>
+</tr>
+<tr>
+<td>Май 2018 &ndash;<br />август 2018</td>
+<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">Проект: bTrade secureXchange app (bTrade TDXchange)</div>
+<div style="margin-bottom:10px"><span style="font-weight:bold">Краткое описание:</span> Разработка серверного приложения TDXchange, позволяющего производить безопасную (шифрованную) управляемую передачу файлов между двумя или более участниками обмена файлами с использованием широкого ряда сетевых протоколов и применением методов симметричного и асимметричного шифрования. Оно написано на Java с использованием веб-фреймворка JSF и библиотеки RichFaces с некоторыми заимствованиями методов из библиотеки OmniFaces. Приложение TDXchange может хранить все параметры конфигурации в одной из следующих СУБД, в зависимости от базовой схемы конфигурирования и профиля сборки: Oracle Database, MS SQL Server, H2 Database.</div>
+<div style="margin-bottom:10px;white-space:nowrap">(<em>Заказчиком проекта secureXchange app является компания bTrade LLC</em>)</div>
+<div style="margin-bottom:10px"><span style="font-weight:bold">Роль и выполняемые задачи:</span> Конфигурирование и сборка дистрибутивов приложения для ряда поддерживаемых платформ: Linux x86/x64, Solaris SPARC, IBM AIX 32/64-bit, HP-UX IA-64. Деплоймент и тестирование сборок приложения на удаленных серверах, предоставляющих вышеперечисленные платформы. Устранение выявленных ошибок в исходном коде приложения и документирование различных приемов и трюков в настройке приложения в ходе деплоймента специальных сборок его новых версий.</div>
+<div style="font-weight:bold">Используемые технологии и средства разработки:</div>
+<ul style="text-align:left">
+<li>Dev OS: Ubuntu Server amd64 (VM: Xen)</li>
+<li>Server OS: Red Hat Enterprise Linux x86-64, SUSE Linux Enterprise Server x86-64, Solaris SPARC V9, IBM AIX for PowerPC 32-bit and 64-bit, HP-UX (IA-64)</li>
+<li>Java EE, Java Class Library, JSTL, JSF, RichFaces, XML, XHTML, JavaScript, Bash Shell Script</li>
+<li>WildFly (JBoss) Application Server</li>
+<li>Oracle Database, H2 Database</li>
+<li>Apache Maven, curl, Vim</li>
+<li>Subversion, bTrade's internal bug tracking system</li>
+</ul></td>
+</tr>
+<tr>
+<td>Ноябрь 2017 &ndash;<br />апрель 2018</td>
+<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">Проект: Mercer Enhance: Machine Learning for Job Matching</div>
+<div style="margin-bottom:10px"><span style="font-weight:bold">Краткое описание:</span> Разработка REST API-микросервисов на Питоне, выполняющихся внутри Docker-контейнеров и обменивающихся данными друг с другом посредством REST-интерфейса. Архитектурно они построены как обертки над бизнес-слоем, выполняющим глубокое обучение (машинное обучение) на ряде моделей и возвращают множества структурированных вхождений (предсказаний и точности предсказаний), которые затем передаются в пользовательский интерфейс, представляющий сопоставление имеющихся вакансий работодателей заявленным критериям соискателей.</div>
+<div style="margin-bottom:10px;white-space:nowrap">(<em>Заказчиком проекта Mercer Enhance является компания Mercer LLC</em>)</div>
+<div style="margin-bottom:10px"><span style="font-weight:bold">Роль и выполняемые задачи:</span> Создание и конфигурирование микросервисов при помощи утилиты Docker Compose, тестирование их работы и анализ производительности каждого микросервиса при использовании ряда веб-фреймворков для Питона и соответствующих серверов приложений (см. ниже). Прототипирование асинхронного подхода в модели обмена данными между микросервисами и портирование пары микросервисов с Питона на Go с целью повышения производительности их работы при многочисленных параллельных запросах. Подготовка микросервисов к деплойменту в облаке Amazon AWS. Документирование исходного кода и некоторых архитектурных подходов, которые были применены в создании данных микросервисов.</div>
+<div style="font-weight:bold">Используемые технологии и средства разработки:</div>
+<ul style="text-align:left">
+<li>Dev OS: Ubuntu Server amd64 (VM: QEMU-KVM / Xen)</li>
+<li>Server OS: Ubuntu Cloud amd64 VM</li>
+<li>Docker containers based on Ubuntu and CentOS images</li>
+<li>Python 2/3, Python Standard Library, Twisted Web, Klein, Falcon, Virtualenv</li>
+<li>Gunicorn (Python/WSGI), uWSGI (Python/WSGI), Twisted Reactor app servers</li>
+<li>TensorFlow Serving (machine learning library), Go, Go Standard Library, JSON</li>
+<li>GNU Make, Docker Compose, curl, Vim</li>
+<li>Git, Bitbucket, JIRA</li>
+</ul></td>
+</tr>
+<tr>
 <td colspan="2" class="cv-header">:smiley:</td>
 </tr>
 </tbody>
