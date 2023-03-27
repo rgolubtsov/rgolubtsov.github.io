@@ -353,8 +353,8 @@
 <td colspan="2">Должность: <span style="font-weight:bold">инженер-программист первой категории отдела разработки программного обеспечения</span></td>
 </tr>
 <tr>
-<td colspan="2"><div style="margin-bottom:10px">Все проекты, перечисленные ниже, обособлены лишь условно, и вместе представляют собой непрерывный цикл разработки, модернизирования и поддержки модулей единой рассылочнобиллинговой SMS/IVR-платформы собственной разработки компании &laquo;SMS Online&raquo;. Данная платформа обеспечивает до 90-95% загрузки всех ресурсов компании с сопоставимой (1:1) отдачей.</div>
-<div style="margin-bottom:10px">Ключевые технологии в данных проектах: <span style="font-weight:bold">Perl 5</span>, <span style="font-weight:bold">PostgreSQL</span> и иногда Java EE, ISO C, Asterisk.</div></td>
+<td colspan="2"><div style="margin-bottom:10px">Все проекты, перечисленные ниже, обособлены лишь условно, и вместе представляют собой непрерывный цикл разработки, модернизирования и поддержки модулей единой рассылочно-биллинговой SMS/IVR-платформы собственной разработки компании &laquo;SMS Online&raquo;. Данная платформа обеспечивает до 90-95% загрузки всех ресурсов компании с сопоставимой (1:1) отдачей.</div>
+<div>Ключевые технологии в данных проектах: <span style="font-weight:bold">Perl 5</span>, <span style="font-weight:bold">PostgreSQL</span> и иногда Java EE, ISO C, Asterisk.</div></td>
 </tr>
 <tr>
 <td>Январь 2015 &ndash;<br />апрель 2015</td>
@@ -388,6 +388,126 @@
 <li>Vim</li>
 <li>GNU Make, Apache Maven</li>
 <li>Git (включая работу с дочерними Git-репозиториями), GitLab, Redmine</li>
+</ul></td>
+</tr>
+<tr>
+<td>Июль 2014 &ndash;<br />октябрь 2014</td>
+<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">Проект: Gate Admin CP II (Панель управления платежного шлюза: новый этап модернизации)</div>
+<div style="margin-bottom:10px"><span style="font-weight:bold">Краткое описание:</span> Непрерывная глубокая модернизация <strong>панели управления (ПУ) платежного шлюза</strong>. ПУ представляет собой веб-консоль администрирования, построенную обособленными мини-модулями на основе как устаревающей CGI-технологии, так и новомодного MVC-фреймворка Mojolicious. ПУ используется, главным образом, службой техподдержки компании 24x7. <em><strong>Платежный шлюз</strong> является многокомпонентной программной платформой для осуществления процессинга биллинговых операций над очередями SMS-сообщений, курсирующих между сервисами парнеров и операторов сотовой связи.</em></div>
+<div style="margin-bottom:10px"><span style="font-weight:bold">Роль и выполняемые задачи:</span> Участие в процессе мигрирования ПУ от разрозненных модулей к одному единственному приложению, основанному на фреймворке Mojolicious, и объединяющему весь управленческий функционал в одном веб-приложении. Исправление ошибок в различных устаревающих, но пока еще не вышедших из эксплуатации модулях ПУ. (Пользовательский интерфейс и бизнес-логика.)</div>
+<div style="font-weight:bold">Используемые технологии и средства разработки:</div>
+<ul style="text-align:left">
+<li>Dev OS: Arch Linux x86-64</li>
+<li>Server OS: Debian GNU/Linux amd64 (Cloud VM)</li>
+<li>Perl 5, Mojolicious, Text::Xslate, DBI, CGI, MIME::Lite, YAML::XS, Log::Log4perl, etc.</li>
+<li>YAML, HTML5, CSS, JavaScript, SQL</li>
+<li>Morbo / Hypnotoad, Apache HTTP Server, Nginx</li>
+<li>PostgreSQL, SQLite</li>
+<li>Vim</li>
+<li>GNU Make</li>
+<li>Git, GitLab, Redmine</li>
+</ul></td>
+</tr>
+<tr>
+<td>Март 2014 &ndash;<br />июнь 2014</td>
+<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">Проект: Партнерские сервисы (Городской наземный транспорт Санкт-Петербурга / Петербургский метрополитен)</div>
+<div style="margin-bottom:10px"><span style="font-weight:bold">Краткое описание:</span> Комплексный проект <strong>мобильной коммерции (МК)</strong>, сочетающий в себе два независимых друг от друга подпроекта:</div>
+<ol style="margin-bottom:10px">
+<li>Система МК взаимодействия с порталом общественного транспорта Санкт-Петербурга для оперативного информирования пассажиров о динамике движения маршрутов городского наземного транспорта на основе SMS-запросов. Основные компоненты системы: платежный SMS-шлюз, демон, обрабатывающий входящие сообщения и осуществляющий процессинг GTFS-данных.</li>
+<li>Система МК взаимодействия с банком &laquo;Русский Стандарт&raquo; для активирования и пополнения электронных карт предоплаты &laquo;Подорожник&raquo;, используемых для оплаты проезда в Петербургском метрополитене. Основные компоненты системы: платежный SMS-шлюз, IVR-платформа, встроенный HTTP-сервер быстрой обработки запросов на стороне партнера.</li>
+</ol>
+<div style="font-weight:bold">Роль и выполняемые задачи:</div>
+<ol style="margin-bottom:10px">
+<li>Разработка демона, обрабатывающего входящие SMS-сообщения и осуществляющего процессинг GTFS-данных (GTFS-realtime feed). Разработка велась с использованием внутреннего фреймворка компании для построения Perl-based демонов, работающих в режиме реального времени, а также с использованием GTFS Realtime API.</li>
+<li>Разработка IVR-сервиса с использованием технологии Google Text-To-Speech, работающего на IVR-платформе компании под управлением АТС Asterisk и принимающего в качестве входных данных номер карты предоплаты &ndash; в ответ проговаривающего секретный код для активирования карты предоплаты (Perl). Также в рамках данного проекта велась разработка встроенного HTTP-сервера быстрой обработки запросов, предназначенного для работы в изолированной среде на стороне партнера (ISO C, GNU libmicrohttpd).</li>
+</ol>
+<div style="font-weight:bold">Используемые технологии и средства разработки:</div>
+<ul style="text-align:left">
+<li>Dev OS: Arch Linux x86-64</li>
+<li>Server OS: Debian GNU/Linux amd64 (VM)</li>
+<li>Perl 5, LWP, DBI, AnyEvent, Redis, Asterisk::AGI, Archive::Zip, Text::CSV, YAML::XS, JSON::XS, Log::Log4perl, etc.</li>
+<li>ISO C, GNU C Library (glibc), GNU libmicrohttpd</li>
+<li>YAML, JSON, GTFS Realtime API, Google Text-To-Speech API</li>
+<li>Twiggy, Redis, Asterisk VoIP PBX</li>
+<li>Vim</li>
+<li>GNU Make, GCC, TCC</li>
+<li>Git, GitLab, Redmine</li>
+</ul></td>
+</tr>
+<tr>
+<td>Декабрь 2013 &ndash;<br />февраль 2014</td>
+<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">Проект: Bulk Admin CP (Панель управления платформы рассылок)</div>
+<div style="margin-bottom:10px"><span style="font-weight:bold">Краткое описание:</span> Дальнейшая разработка и модернизация <strong>панели управления (ПУ) платформы рассылок</strong>. ПУ представляет собой веб-консоль администрирования, построенную на основе фреймворка Vaadin. ПУ используется, главным образом, службой техподдержки компании 24x7. <em><strong>Платформа рассылок</strong> является программной платформой для осуществления массовой рассылки сообщений (SMS).</em></div>
+<div style="margin-bottom:10px"><span style="font-weight:bold">Роль и выполняемые задачи:</span> Ответственен за проект в целом (как единственный Java-разработчик в почти полностью Perl-ориентированной компании). Разработка дополнительных элементов управления пользовательского интерфейса согласно новым требованиям техзадания, а также поиск и исправление ошибок во всей кодовой базе проекта. (Только пользовательский интерфейс.)</div>
+<div style="font-weight:bold">Используемые технологии и средства разработки:</div>
+<ul style="text-align:left">
+<li>Dev OS: Arch Linux i686</li>
+<li>Server OS: Debian GNU/Linux amd64 (VM)</li>
+<li>Java EE, Vaadin Framework, JDBC, XML, SQL</li>
+<li>Apache Tomcat</li>
+<li>PostgreSQL</li>
+<li>Vim</li>
+<li>Apache Ant</li>
+<li>Git, Redmine</li>
+</ul></td>
+</tr>
+<tr>
+<td>Март 2013 &ndash;<br />ноябрь 2013</td>
+<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">Проект: Gate Admin CP (Панель управления платежного шлюза)</div>
+<div style="margin-bottom:10px"><span style="font-weight:bold">Краткое описание:</span> Дальнейшая разработка и модернизация <strong>панели управления (ПУ) платежного шлюза</strong>. ПУ представляет собой веб-консоль администрирования, построенную обособленными мини-модулями на основе как устаревающей CGI-технологии, так и новомодного MVC-фреймворка Mojolicious. ПУ используется, главным образом, службой техподдержки компании 24x7. <em><strong>Платежный шлюз</strong> является многокомпонентной программной платформой для осуществления процессинга биллинговых операций над очередями SMS-сообщений, курсирующих между сервисами парнеров и операторов сотовой связи.</em></div>
+<div style="margin-bottom:10px"><span style="font-weight:bold">Роль и выполняемые задачи:</span> Разработка ряда новых модулей ПУ, в т. ч. &laquo;Поиск предпроцессинговых сообщений&raquo;, &laquo;Управление MT-подписками и подписочными сервисами&raquo;, &laquo;Управление пользователями и ролями&raquo;. Участие в мигрировании ПУ с аппаратного FreeBSD-сервера на виртуальную машину под управлением Debian Stable совместно с системными и сетевыми администраторами компании. Исправление ошибок в различных модулях ПУ. Документирование. (Пользовательский интерфейс и бизнес-логика. Эксперт по ролевой авторизации пользователей.)</div>
+<div style="font-weight:bold">Используемые технологии и средства разработки:</div>
+<ul style="text-align:left">
+<li>Dev OS: Arch Linux i686</li>
+<li>Server OS: FreeBSD/amd64 (HW); Debian GNU/Linux amd64 (VM)</li>
+<li>Perl 5, Mojolicious, Text::Xslate, DBI, MIME::Lite, YAML::XS, Log::Log4perl, etc.</li>
+<li>YAML, HTML5, CSS, JavaScript, SQL</li>
+<li>Morbo / Hypnotoad, Apache HTTP Server</li>
+<li>PostgreSQL</li>
+<li>Vim</li>
+<li>GNU Make</li>
+<li>Git, MediaWiki, Redmine</li>
+</ul></td>
+</tr>
+<tr>
+<td>Январь 2013 &ndash;<br />февраль 2013</td>
+<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">Проект: Java Bulk Client (API платформы рассылок для клиентского Java-приложения)</div>
+<div style="margin-bottom:10px"><span style="font-weight:bold">Краткое описание:</span> Разработка <strong>API платформы рассылок</strong> для непосредственного использования внутри <strong>клиентских Java-приложений</strong>, разрабатываемых бизнес-партнерами, с целью доступа к серверу платформы рассылок. <em><strong>Платформа рассылок</strong> является программной платформой для осуществления массовой рассылки сообщений (SMS).</em></div>
+<div style="margin-bottom:10px"><span style="font-weight:bold">Роль и выполняемые задачи:</span> Ответственен за проект в целом (как единственный Java-разработчик в почти полностью Perl-ориентированной компании). Разработка библиотеки API с полным описанием Javadoc и инструкцией по ее установке и использованию. А также разработка тестового (шаблонного) веб-приложения для демонстрирования возможных приемов использования данной библиотеки в клиентских веб-приложениях на Java.</div>
+<div style="font-weight:bold">Используемые технологии и средства разработки:</div>
+<ul style="text-align:left">
+<li>Dev OS: Arch Linux i686</li>
+<li>Server OS: FreeBSD/amd64</li>
+<li>Java EE, Java Class Library, Servlet / JSP API, JSTL, SLF4J</li>
+<li>XML, XHTML, CSS, JavaScript</li>
+<li>Apache Tomcat</li>
+<li>Vim</li>
+<li>Apache Maven</li>
+<li>Git, Redmine</li>
+</ul></td>
+</tr>
+<tr>
+<td colspan="2" class="cv-header">Август 2012 &ndash; октябрь 2012, работа по разработке ПО в ЗАО &laquo;Интервэйл&raquo; (Гомельский филиал), Гомель (3 месяца)</td>
+</tr>
+<tr>
+<td colspan="2">Должность: <span style="font-weight:bold">инженер-программист первой категории отдела разработки решений для мобильного банкинга</span></td>
+</tr>
+<tr>
+<td>Август 2012 &ndash;<br />октябрь 2012</td>
+<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">Проект: Единая платежная система мобильного банкинга Сбербанка России</div>
+<div style="margin-bottom:10px"><span style="font-weight:bold">Краткое описание:</span> Разработка комплексной системы мобильных платежей, непосредственно ориентированной на использование внутри отделений Сбербанка России и предоставляющей клиентам банка возможность проводить платежи посредством различных мобильных устройств (мобильные телефоны с поддержкой технологии Java ME, смартфоны с ОС Symbian, Android и iOS, планшетные устройства, работающие на основе этих же ОС). Данная система разрабатывается при участии нескольких субподрядчиков, одним из которых выступает компания &laquo;Интервэйл&raquo; (проектирование и разработка SMS-шлюза, механизма очередей сообщений и клиентских приложений для мобильных телефонов с Java ME).</div>
+<div style="margin-bottom:10px"><span style="font-weight:bold">Роль и выполняемые задачи:</span> Разработка веб-консоли администрирования для использования операторами и аудиторами банка для контроля и управления активами и бизнес-процессами, которые лежат в основе банковских операций, производимых при непосредственном взаимодействии с SMS-шлюзом и очередями сообщений. Документирование. (Пользовательский интерфейс и (частично) бизнес-логика. Юзабилити и аксессибилити-эксперт. Эксперт по аутентификации и авторизации пользователей.)</div>
+<div style="font-weight:bold">Используемые технологии и средства разработки:</div>
+<ul style="text-align:left">
+<li>Dev OS: Arch Linux x86-64</li>
+<li>Server OS: Microsoft Windows Server 2008 x86-64</li>
+<li>Java EE, Java Class Library, Servlet / JSP API, JSTL, SLF4J</li>
+<li>Spring Web MVC + Spring Security, Apache Struts 2 (первоначально)</li>
+<li>XML, XHTML, CSS, JavaScript, jQuery</li>
+<li>Apache Tomcat, IBM WebSphere Application Server</li>
+<li>Vim</li>
+<li>Apache Maven</li>
+<li>Subversion, Samba</li>
 </ul></td>
 </tr>
 <tr>
