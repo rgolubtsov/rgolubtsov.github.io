@@ -473,7 +473,7 @@
                 * WildFly (JBoss) Application Server
                 * Oracle Database, H2 Database
                 * Apache Maven, curl, Vim
-                * Subversion, bTrade's internal bug tracking system
+                * Subversion, внутренняя система отслеживания ошибок bTrade
 
 -------------------------------------------------------------------------------
 
@@ -509,12 +509,12 @@
                 Используемые технологии и средства разработки:
                 *    Dev OS: Ubuntu Server amd64 (VM: QEMU-KVM / Xen)
                 * Server OS: Ubuntu Cloud amd64 VM
-                * Docker containers based on Ubuntu and CentOS images
+                * Docker-контейнеры, основанные на образах Ubuntu и CentOS
                 * Python 2/3, Python Standard Library, Twisted Web, Klein,
                   Falcon, Virtualenv
-                * Gunicorn (Python/WSGI), uWSGI (Python/WSGI),
-                  Twisted Reactor app servers
-                * TensorFlow Serving (machine learning library),
+                * Серверы приложений Gunicorn(Python/WSGI), uWSGI(Python/WSGI),
+                  Twisted Reactor
+                * TensorFlow Serving (библиотека машинного обучения),
                   Go, Go Standard Library, JSON
                 * GNU Make, Docker Compose, curl, Vim
                 * Git, Bitbucket, JIRA
@@ -583,8 +583,8 @@
                 *    Dev OS: OpenBSD/amd64, Ubuntu Server amd64
                              (все: VM: QEMU-KVM)
                 * Server OS: Ubuntu Server amd64 (Cloud VM)
-                * JavaScript,MEAN stack (MongoDB, Express, AngularJS, Node.js),
-                             HTML, CSS
+                * JavaScript, MEAN-стек (MongoDB, Express, AngularJS, Node.js),
+                              HTML, CSS
                 * Nginx, MongoDB
                 * Vim
                 * Git, Bitbucket, Trello
@@ -667,7 +667,7 @@
                 * Server OS: Ubuntu Server amd64
                 * Python 3, Python Standard Library, Django REST framework,
                               ReportLab PDF Toolkit, Virtualenv
-                * Python/WSGI (uWSGI) application server
+                * Сервер приложений uWSGI (Python/WSGI)
                 * MySQL, PostgreSQL
                 * Vim, Doxygen
                 * Git, GitHub, JIRA
@@ -708,9 +708,9 @@
                 * Java SE, Java Class Library
                 * Python 3, Go (с соответствующими стандартными библиотеками)
                 * Apache HTTP Server
-                * Jenkins (continuous integration service)
-                * Docker (software containers infrastructure)
-                * Koding (cloud-based dev env + VM)
+                * Jenkins (служба непрерывной интеграции)
+                * Docker (система управления контейнеризацией)
+                * Koding (среда разработки в облаке с виртуальной машиной)
                 * Vim
                 * GNU Make, Apache Maven
                 * Git, Bitbucket, JIRA
@@ -766,7 +766,7 @@
                 *    Dev OS: Arch Linux i686; OpenBSD/amd64
                 * Server OS: Debian GNU/Linux amd64 (HW x 2 / Cloud VM)
                 * Perl 5, LWP, DBI, CGI, Asterisk::AGI, YAML::XS,
-                                                         Log::Log4perl, etc.
+                                                         Log::Log4perl и др.
                 * YAML, SQL
                 * Asterisk VoIP PBX, Apache HTTP Server, Nginx
                 * PostgreSQL
@@ -827,7 +827,7 @@
                 *    Dev OS: Arch Linux x86-64
                 * Server OS: Debian GNU/Linux amd64 (Cloud VM)
                 * Perl 5, Mojolicious, Text::Xslate, DBI, CGI, MIME::Lite,
-                                       YAML::XS, Log::Log4perl, etc.
+                                       YAML::XS, Log::Log4perl и др.
                 * YAML, HTML5, CSS, JavaScript, SQL
                 * Morbo / Hypnotoad, Apache HTTP Server, Nginx
                 * PostgreSQL, SQLite
@@ -847,25 +847,25 @@
                    транспорта Санкт-Петербурга для оперативного информирования
                    пассажиров о динамике движения маршрутов городского
                    наземного транспорта на основе SMS-запросов. Основные
-                   компоненты системы: платежный SMS-шлюз, демон,
+                   компоненты системы: платежный SMS-шлюз, даймон,
                    обрабатывающий входящие сообщения и осуществляющий
                    процессинг GTFS-данных.
 
                 2. Система МК взаимодействия с банком "Русский Стандарт" для
                    активирования и пополнения электронных карт предоплаты
-                   "Подорожник", используемых для оплаты проезда в
+                   "Подорожник", используемых пассажирами для оплаты проезда в
                    Петербургском метрополитене. Основные компоненты системы:
                    платежный SMS-шлюз, IVR-платформа, встроенный HTTP-сервер
                    быстрой обработки запросов на стороне партнера.
 
                 Роль и выполняемые задачи:
 
-                1. Разработка демона, обрабатывающего входящие SMS-сообщения и
+                1. Разработка даймона, обрабатывающего входящие SMS-сообщения и
                    осуществляющего процессинг GTFS-данных (GTFS-realtime feed).
                    Разработка велась с использованием внутреннего фреймворка
-                   компании для построения Perl-based демонов, работающих в
-                   режиме реального времени, а также с использованием GTFS
-                   Realtime API.
+                   компании для построения Perl-даймонов, работающих в режиме
+                   реального времени, а также с использованием GTFS Realtime
+                   API.
 
                 2. Разработка IVR-сервиса с использованием технологии Google
                    Text-To-Speech, работающего на IVR-платформе компании под
@@ -882,10 +882,10 @@
                 * Server OS: Debian GNU/Linux amd64 (VM)
                 * Perl 5, LWP, DBI, AnyEvent, Redis, Asterisk::AGI,
                                            Archive::Zip, Text::CSV, YAML::XS,
-                                                JSON::XS, Log::Log4perl, etc.
+                                                JSON::XS, Log::Log4perl и др.
                 * ISO C, GNU C Library (glibc), GNU libmicrohttpd
                 * YAML, JSON, GTFS Realtime API, Google Text-To-Speech API
-                * Twiggy, Redis, Asterisk VoIP PBX
+                * Twiggy, Redis, АТС Asterisk
                 * Vim
                 * GNU Make, GCC, TCC
                 * Git, GitLab, Redmine
@@ -947,7 +947,7 @@
                 *    Dev OS: Arch Linux i686
                 * Server OS: FreeBSD/amd64 (HW); Debian GNU/Linux amd64 (VM)
                 * Perl 5, Mojolicious, Text::Xslate, DBI, MIME::Lite, YAML::XS,
-                                                           Log::Log4perl, etc.
+                                                           Log::Log4perl и др.
                 * YAML, HTML5, CSS, JavaScript, SQL
                 * Morbo / Hypnotoad, Apache HTTP Server
                 * PostgreSQL
