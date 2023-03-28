@@ -173,7 +173,7 @@
 <li>WildFly (JBoss) Application Server</li>
 <li>Oracle Database, H2 Database</li>
 <li>Apache Maven, curl, Vim</li>
-<li>Subversion, bTrade's internal bug tracking system</li>
+<li>Subversion, внутренняя система отслеживания ошибок bTrade</li>
 </ul></td>
 </tr>
 <tr>
@@ -186,10 +186,10 @@
 <ul style="text-align:left">
 <li>Dev OS: Ubuntu Server amd64 (VM: QEMU-KVM / Xen)</li>
 <li>Server OS: Ubuntu Cloud amd64 VM</li>
-<li>Docker containers based on Ubuntu and CentOS images</li>
+<li>Docker-контейнеры, основанные на образах Ubuntu и CentOS</li>
 <li>Python 2/3, Python Standard Library, Twisted Web, Klein, Falcon, Virtualenv</li>
-<li>Gunicorn (Python/WSGI), uWSGI (Python/WSGI), Twisted Reactor app servers</li>
-<li>TensorFlow Serving (machine learning library), Go, Go Standard Library, JSON</li>
+<li>Серверы приложений Gunicorn (Python/WSGI), uWSGI (Python/WSGI), Twisted Reactor</li>
+<li>TensorFlow Serving (библиотека машинного обучения), Go, Go Standard Library, JSON</li>
 <li>GNU Make, Docker Compose, curl, Vim</li>
 <li>Git, Bitbucket, JIRA</li>
 </ul></td>
@@ -231,7 +231,7 @@
 <ul style="text-align:left">
 <li>Dev OS: OpenBSD/amd64, Ubuntu Server amd64 (все: VM: QEMU-KVM)</li>
 <li>Server OS: Ubuntu Server amd64 (Cloud VM)</li>
-<li>JavaScript, MEAN stack (MongoDB, Express, AngularJS, Node.js), HTML, CSS</li>
+<li>JavaScript, MEAN-стек (MongoDB, Express, AngularJS, Node.js), HTML, CSS</li>
 <li>Nginx, MongoDB</li>
 <li>Vim</li>
 <li>Git, Bitbucket, Trello</li>
@@ -270,7 +270,7 @@
 <li>Dev OS: Arch Linux x86-64</li>
 <li>Server OS: Ubuntu Server amd64</li>
 <li>Python 3, Python Standard Library, Django REST framework, ReportLab PDF Toolkit, Virtualenv</li>
-<li>Python/WSGI (uWSGI) application server</li>
+<li>Сервер приложений uWSGI (Python/WSGI)</li>
 <li>MySQL, PostgreSQL</li>
 <li>Vim, Doxygen</li>
 <li>Git, GitHub, JIRA</li>
@@ -291,9 +291,9 @@
 <li>Java SE, Java Class Library</li>
 <li>Python 3, Go (с соответствующими стандартными библиотеками)</li>
 <li>Apache HTTP Server</li>
-<li>Jenkins (continuous integration service)</li>
-<li>Docker (software containers infrastructure)</li>
-<li>Koding (cloud-based dev env + VM)</li>
+<li>Jenkins (служба непрерывной интеграции)</li>
+<li>Docker (система управления контейнеризацией)</li>
+<li>Koding (среда разработки в облаке с виртуальной машиной)</li>
 <li>Vim</li>
 <li>GNU Make, Apache Maven</li>
 <li>Git, Bitbucket, JIRA</li>
@@ -318,7 +318,7 @@
 <ul style="text-align:left">
 <li>Dev OS: Arch Linux i686; OpenBSD/amd64</li>
 <li>Server OS: Debian GNU/Linux amd64 (HW x 2 / Cloud VM)</li>
-<li>Perl 5, LWP, DBI, CGI, Asterisk::AGI, YAML::XS, Log::Log4perl, etc.</li>
+<li>Perl 5, LWP, DBI, CGI, Asterisk::AGI, YAML::XS, Log::Log4perl и др.</li>
 <li>YAML, SQL</li>
 <li>Asterisk VoIP PBX, Apache HTTP Server, Nginx</li>
 <li>PostgreSQL</li>
@@ -352,7 +352,7 @@
 <ul style="text-align:left">
 <li>Dev OS: Arch Linux x86-64</li>
 <li>Server OS: Debian GNU/Linux amd64 (Cloud VM)</li>
-<li>Perl 5, Mojolicious, Text::Xslate, DBI, CGI, MIME::Lite, YAML::XS, Log::Log4perl, etc.</li>
+<li>Perl 5, Mojolicious, Text::Xslate, DBI, CGI, MIME::Lite, YAML::XS, Log::Log4perl и др.</li>
 <li>YAML, HTML5, CSS, JavaScript, SQL</li>
 <li>Morbo / Hypnotoad, Apache HTTP Server, Nginx</li>
 <li>PostgreSQL, SQLite</li>
@@ -364,24 +364,24 @@
 <tr>
 <td>Март 2014 &ndash;<br />июнь 2014</td>
 <td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">Проект: Партнерские сервисы (Городской наземный транспорт Санкт-Петербурга / Петербургский метрополитен)</div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Краткое описание:</span> Комплексный проект <strong>мобильной коммерции (МК)</strong>, сочетающий в себе два независимых друг от друга подпроекта:</div>
+<div><span style="font-weight:bold">Краткое описание:</span> Комплексный проект <strong>мобильной коммерции (МК)</strong>, сочетающий в себе два независимых друг от друга подпроекта:</div>
 <ol style="margin-bottom:10px">
-<li>Система МК взаимодействия с порталом общественного транспорта Санкт-Петербурга для оперативного информирования пассажиров о динамике движения маршрутов городского наземного транспорта на основе SMS-запросов. Основные компоненты системы: платежный SMS-шлюз, демон, обрабатывающий входящие сообщения и осуществляющий процессинг GTFS-данных.</li>
-<li>Система МК взаимодействия с банком &laquo;Русский Стандарт&raquo; для активирования и пополнения электронных карт предоплаты &laquo;Подорожник&raquo;, используемых для оплаты проезда в Петербургском метрополитене. Основные компоненты системы: платежный SMS-шлюз, IVR-платформа, встроенный HTTP-сервер быстрой обработки запросов на стороне партнера.</li>
+<li>Система МК взаимодействия с порталом общественного транспорта Санкт-Петербурга для оперативного информирования пассажиров о динамике движения маршрутов городского наземного транспорта на основе SMS-запросов. Основные компоненты системы: платежный SMS-шлюз, даймон, обрабатывающий входящие сообщения и осуществляющий процессинг GTFS-данных.</li>
+<li>Система МК взаимодействия с банком &laquo;Русский Стандарт&raquo; для активирования и пополнения электронных карт предоплаты &laquo;Подорожник&raquo;, используемых пассажирами для оплаты проезда в Петербургском метрополитене. Основные компоненты системы: платежный SMS-шлюз, IVR-платформа, встроенный HTTP-сервер быстрой обработки запросов на стороне партнера.</li>
 </ol>
 <div style="font-weight:bold">Роль и выполняемые задачи:</div>
 <ol style="margin-bottom:10px">
-<li>Разработка демона, обрабатывающего входящие SMS-сообщения и осуществляющего процессинг GTFS-данных (GTFS-realtime feed). Разработка велась с использованием внутреннего фреймворка компании для построения Perl-based демонов, работающих в режиме реального времени, а также с использованием GTFS Realtime API.</li>
+<li>Разработка даймона, обрабатывающего входящие SMS-сообщения и осуществляющего процессинг GTFS-данных (GTFS-realtime feed). Разработка велась с использованием внутреннего фреймворка компании для построения Perl-даймонов, работающих в режиме реального времени, а также с использованием GTFS Realtime API.</li>
 <li>Разработка IVR-сервиса с использованием технологии Google Text-To-Speech, работающего на IVR-платформе компании под управлением АТС Asterisk и принимающего в качестве входных данных номер карты предоплаты &ndash; в ответ проговаривающего секретный код для активирования карты предоплаты (Perl). Также в рамках данного проекта велась разработка встроенного HTTP-сервера быстрой обработки запросов, предназначенного для работы в изолированной среде на стороне партнера (ISO C, GNU libmicrohttpd).</li>
 </ol>
 <div style="font-weight:bold">Используемые технологии и средства разработки:</div>
 <ul style="text-align:left">
 <li>Dev OS: Arch Linux x86-64</li>
 <li>Server OS: Debian GNU/Linux amd64 (VM)</li>
-<li>Perl 5, LWP, DBI, AnyEvent, Redis, Asterisk::AGI, Archive::Zip, Text::CSV, YAML::XS, JSON::XS, Log::Log4perl, etc.</li>
+<li>Perl 5, LWP, DBI, AnyEvent, Redis, Asterisk::AGI, Archive::Zip, Text::CSV, YAML::XS, JSON::XS, Log::Log4perl и др.</li>
 <li>ISO C, GNU C Library (glibc), GNU libmicrohttpd</li>
 <li>YAML, JSON, GTFS Realtime API, Google Text-To-Speech API</li>
-<li>Twiggy, Redis, Asterisk VoIP PBX</li>
+<li>Twiggy, Redis, АТС Asterisk</li>
 <li>Vim</li>
 <li>GNU Make, GCC, TCC</li>
 <li>Git, GitLab, Redmine</li>
@@ -413,7 +413,7 @@
 <ul style="text-align:left">
 <li>Dev OS: Arch Linux i686</li>
 <li>Server OS: FreeBSD/amd64 (HW); Debian GNU/Linux amd64 (VM)</li>
-<li>Perl 5, Mojolicious, Text::Xslate, DBI, MIME::Lite, YAML::XS, Log::Log4perl, etc.</li>
+<li>Perl 5, Mojolicious, Text::Xslate, DBI, MIME::Lite, YAML::XS, Log::Log4perl и др.</li>
 <li>YAML, HTML5, CSS, JavaScript, SQL</li>
 <li>Morbo / Hypnotoad, Apache HTTP Server</li>
 <li>PostgreSQL</li>
