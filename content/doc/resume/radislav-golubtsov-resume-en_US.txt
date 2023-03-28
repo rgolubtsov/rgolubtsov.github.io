@@ -282,7 +282,7 @@ Feb 2021        of the website for one of the faculties of the University
                 (Faculty of professional development and personnel retraining)
 
                 Project description: Development, deployment, content
-                management, web mastering, maintenance, and support of the
+                management, webmastering, maintenance, and support of the
                 website of the Faculty of professional development and
                 personnel retraining of the University.
 
@@ -321,7 +321,7 @@ Sep 2020 -      Enhancement, maintenance, and support of supplementary
 Nov 2020                     and subsidiary websites of the University
 
                 Project description: Design enhancements, content management,
-                web mastering, maintenance, and support of four supplementary
+                webmastering, maintenance, and support of four supplementary
                 and subsidiary websites of the University, which are targeted
                 and used as extra informational resources to complement the
                 main web portal of the University. Namely, these are:
@@ -657,7 +657,7 @@ Jul 2016
                 * Server OS: Ubuntu Server amd64
                 * Python 3, Python Standard Library, Django REST framework,
                               ReportLab PDF Toolkit, Virtualenv
-                * Python/WSGI (uWSGI) application server
+                * uWSGI (Python/WSGI) application server
                 * MySQL, PostgreSQL
                 * Vim, Doxygen
                 * Git, GitHub, JIRA
@@ -712,7 +712,7 @@ All the projects given below should not be considered as separate projects, but
 in contrary they are functional parts of a consolidated continuous development,
 improvement, and maintenance cycle of modules of the aggregated and unified
 bulk-billing SMS/IVR platform. This platform has been invented and developed
-exclusively by the SMS Online company for its internal ops., and currently it
+exclusively by the SMS Online company for their internal ops, and currently it
 covers up to 90-95% of load for all the resources of the company with the
 comparable (approx. 1:1) throughput.
 
@@ -794,10 +794,10 @@ Oct 2014
                 Project description: Continuous deepest modernization of the
                 SMS Billing Platform Control Panel (CP). The CP is the web
                 administrative console that is built as a series of separate
-                modules written using CGI and Mojolicious MVC-framework. The CP
+                modules written using CGI and Mojolicious MVC framework. The CP
                 is used mostly by the company's tech support group 24x7. SMS
                 Billing is the multi-component composite software platform for
-                processing billing ops. with SMS message queues which are
+                processing billing ops with SMS message queues which are
                 moving between partners' services and mobile network operators.
 
                 Personal role in the project: Participating in the CP migrating
@@ -910,10 +910,10 @@ Nov 2013
                 Project description: Further development and improvement of the
                 SMS Billing Platform Control Panel (CP). The CP is the web
                 administrative console that is built as a series of separate
-                modules written using CGI and Mojolicious MVC-framework. The CP
+                modules written using CGI and Mojolicious MVC framework. The CP
                 is used mostly by the company's tech support group 24x7. SMS
                 Billing is the multi-component composite software platform for
-                processing billing ops. with SMS message queues which are
+                processing billing ops with SMS message queues which are
                 moving between partners' services and mobile network operators.
 
                 Personal role in the project: Development of a bunch of new CP
@@ -1151,7 +1151,7 @@ Jun 2011        PSS Systems, an IBM Company (off-site)
 
                 Personal role in the project: Java modules coding, JavaScript
                 modules coding, Bash scripts coding. The main task is to
-                develop and maintain complex, interactively overloaded web-page
+                develop and maintain complex, interactively overloaded web page
                 "Matter Exceptions and Alerts". Bugfixing in other modules of
                 the application. Also having responsibilities for development
                 of the (auxiliary) patching utility intended to simplify and
