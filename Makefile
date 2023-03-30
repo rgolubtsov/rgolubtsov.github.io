@@ -35,7 +35,8 @@ $(LIB_DIR) $(SRC_DIR):
 	$(CD) $(DAT_DIR)/docs/ubuntusrv                                    && \
 	$(LN) $(LNFLAGS) ../../../utils/oracle-11-2-x-xe-set-kernel-params && \
 	$(CD) -
-	./utils/html-emoji-preproc $(DAT_DIR)
+	./utils/html-emoji-preproc  $(DAT_DIR)
+	./utils/html-lang-preproc ./$(DAT_DIR)/
 	./utils/http-404-preproc
 
 .PHONY: all clean
