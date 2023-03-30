@@ -1,6 +1,12 @@
 #!/usr/bin/env bash
 # utils/html-emoji-preproc
 # =============================================================================
+# A Cup of Radicchio. Version 0.9.9
+# -----------------------------------------------------------------------------
+# A Cup of Radicchio: A personal website of a power looper,
+#                                           a skateboarder,
+#                                       and a coder.
+# =============================================================================
 # This helper script automates replacing emoji character sequences with their
 # image representations.
 #

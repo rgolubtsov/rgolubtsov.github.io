@@ -1,6 +1,12 @@
 #!/usr/bin/env bash
 # utils/html-lang-preproc
 # =============================================================================
+# A Cup of Radicchio. Version 0.9.9
+# -----------------------------------------------------------------------------
+# A Cup of Radicchio: A personal website of a power looper,
+#                                           a skateboarder,
+#                                       and a coder.
+# =============================================================================
 # This helper script automates replacing the default value of the `lang`
 # attribute of the HTML tag <html> with the specified one.
 #

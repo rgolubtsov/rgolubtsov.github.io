@@ -1,6 +1,12 @@
 #!/usr/bin/env bash
 # utils/http-404-preproc
 # =============================================================================
+# A Cup of Radicchio. Version 0.9.9
+# -----------------------------------------------------------------------------
+# A Cup of Radicchio: A personal website of a power looper,
+#                                           a skateboarder,
+#                                       and a coder.
+# =============================================================================
 # This helper script replaces a hyper-reference to a remote resource
 # (to validate CSS for the current static representation
 # of the HTTP 404 Not Found response) with something locally served.

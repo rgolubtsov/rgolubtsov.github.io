@@ -1,6 +1,12 @@
 #!/usr/bin/env bash
 # utils/ttennis-json-enumerate
 # =============================================================================
+# A Cup of Radicchio. Version 0.9.9
+# -----------------------------------------------------------------------------
+# A Cup of Radicchio: A personal website of a power looper,
+#                                           a skateboarder,
+#                                       and a coder.
+# =============================================================================
 # This helper script enumerates matches in the JSON data source,
 # giving them true identity values to eliminate possible enumeration errors
 # previously made by hand.
