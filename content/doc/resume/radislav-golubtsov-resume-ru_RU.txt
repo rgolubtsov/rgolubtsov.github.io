@@ -1070,7 +1070,7 @@
                 Документирование. (Пользовательский интерфейс и бизнес-логика.)
 
                 Используемые технологии и средства разработки:
-                *    Dev OS: Ubuntu amd64 (Window Maker; generic kernel flavor)
+                *    Dev OS: Ubuntu amd64 (Window Maker)
                 * Server OS: FreeBSD/amd64
                 * Java EE, Play! Framework, JDBC, JavaMail, XML, XHTML, CSS,
                                                             JavaScript, SQL
@@ -1099,17 +1099,17 @@
 
                 Подготовительный этап:
                 * Dev OS: CentOS x86_64 (Window Maker);
-                * Ubuntu amd64 (Window Maker)
+                          Ubuntu amd64  (Window Maker)
                 * Objective-C 2.0
                 * GNUstep/Cocoa API, XML
-                * GNUstep object-oriented development kit, vi
+                * GNUstep (объектно-ориентированный инструментарий), vi
 
                 Основная фаза разработки:
-                * Dev OS: Mac OS X Lion (installed on a Mac mini workstation)
+                * Dev OS: Mac OS X Lion (установлена на раб. станции Mac mini)
                 * Objective-C 2.0
                 * OpenGL ES, XML
-                * Apple Xcode IDE (along with additional tools
-                                     and iOS Simulator), MacPorts, vi
+                * Apple Xcode IDE (с дополнительными средствами разработки,
+                                   такими как iOS Simulator), MacPorts, vi
                 * Redmine
 
 ===============================================================================
@@ -1145,7 +1145,7 @@
 
                 Используемые технологии и средства разработки:
                 *    Dev OS: FreeBSD/amd64 (KDE);
-                             Ubuntu amd64 (Window Maker; generic kernel flavor)
+                             Ubuntu amd64 (Window Maker)
                 * Server OS: CentOS x86_64;
                              Red Hat Enterprise Linux Server x86_64
                 * Java SE / EE, ISO C++, Bash Shell Script, Perl 5, XML
@@ -1180,7 +1180,7 @@
                 Policy Atlas.
 
                 Используемые технологии и средства разработки:
-                * Dev OS: Kubuntu i386 (server kernel flavor)
+                * Dev OS: Kubuntu i386
                 * Java EE, Java Servlet, JSP, JSTL, JSF, JDBC, XML, XHTML, CSS,
                                                                            SQL
                 * JavaScript, Bash Shell Script

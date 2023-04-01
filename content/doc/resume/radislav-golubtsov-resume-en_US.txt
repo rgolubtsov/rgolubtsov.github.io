@@ -1048,7 +1048,7 @@ May 2012
                 changes. Documenting. (Presentation and business layers.)
 
                 Tools and technologies used:
-                *    Dev OS: Ubuntu amd64 (Window Maker; generic kernel flavor)
+                *    Dev OS: Ubuntu amd64 (Window Maker)
                 * Server OS: FreeBSD/amd64
                 * Java EE, Play! Framework, JDBC, JavaMail, XML, XHTML, CSS,
                                                             JavaScript, SQL
@@ -1077,7 +1077,7 @@ Feb 2012        XIMAD, Inc.
 
                 Preparation stage:
                 * Dev OS: CentOS x86_64 (Window Maker);
-                * Ubuntu amd64 (Window Maker)
+                          Ubuntu amd64  (Window Maker)
                 * Objective-C 2.0
                 * GNUstep/Cocoa API, XML
                 * GNUstep object-oriented development kit, vi
@@ -1124,7 +1124,7 @@ Dec 2011        (Media Optimizer and Web Optimizer),
 
                 Tools and technologies used:
                 *    Dev OS: FreeBSD/amd64 (KDE);
-                             Ubuntu amd64 (Window Maker; generic kernel flavor)
+                             Ubuntu amd64 (Window Maker)
                 * Server OS: CentOS x86_64;
                              Red Hat Enterprise Linux Server x86_64
                 * Java SE / EE, ISO C++, Bash Shell Script, Perl 5, XML
@@ -1158,7 +1158,7 @@ Jun 2011        PSS Systems, an IBM Company (off-site)
                 accelerate Policy Atlas application deployment.
 
                 Tools and technologies used:
-                * Dev OS: Kubuntu i386 (server kernel flavor)
+                * Dev OS: Kubuntu i386
                 * Java EE, Java Servlet, JSP, JSTL, JSF, JDBC, XML, XHTML, CSS,
                                                                            SQL
                 * JavaScript, Bash Shell Script
