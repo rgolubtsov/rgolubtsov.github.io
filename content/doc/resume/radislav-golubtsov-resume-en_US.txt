@@ -563,8 +563,6 @@ Job position: Software Developer of the Web Development Division
 
 Mar 2017 -      Upmargin
 May 2017
-                Project URL: http://dev.upmargin.com/
-
                 Project description: Development of control panel (CP)
                 components for the web application which is targeted onto
                 the Hotel Booking Services area. The key aspect of this web app
@@ -1021,8 +1019,6 @@ Job position: Senior Software Developer of the Wireless Division
 
 Mar 2012 -      Ad Optimizer, XIMAD, Inc.
 May 2012
-                Project URL: http://devopt.ximad.com/
-
                 Project description: Literally this can be stated as an
                 advertising optimizer. This is a web app that is used by
                 company's managers to reorder and redistribute the ad banners
