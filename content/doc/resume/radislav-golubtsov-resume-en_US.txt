@@ -1017,7 +1017,7 @@ Job position: Senior Software Developer of the Wireless Division
 
 -------------------------------------------------------------------------------
 
-Mar 2012 -      Ad Optimizer, XIMAD, Inc.
+Mar 2012 -      Ad Optimizer, [XIMAD, Inc.]
 May 2012
                 Project description: Literally this can be stated as an
                 advertising optimizer. This is a web app that is used by
@@ -1057,7 +1057,7 @@ May 2012
 -------------------------------------------------------------------------------
 
 Jan 2012 -      Zuma iOS/Zuminja (2D-game for Apple iPhone/iPad/iPod touch),
-Feb 2012        XIMAD, Inc.
+Feb 2012        [XIMAD, Inc.]
 
                 Project description: Development of the 2D-game Zuma iOS
                 (alternate name Zuminja) intended to run on the Apple mobile
@@ -1099,7 +1099,7 @@ Job position: Senior Software Developer of the Web Development Department
 
 Jul 2011 -      Mobility Traffic Mediation Solution
 Dec 2011        (Media Optimizer and Web Optimizer),
-                Openwave Systems Inc. (off-site)
+                [Openwave Systems Inc. (off-site)]
 
                 Project description: Integrated complex project that targets
                 the development of the NGP (Next Generation Proxy) proxy
@@ -1133,7 +1133,7 @@ Dec 2011        (Media Optimizer and Web Optimizer),
 -------------------------------------------------------------------------------
 
 Sep 2010 -      Atlas Information Governance Suite (Policy Atlas),
-Jun 2011        PSS Systems, an IBM Company (off-site)
+Jun 2011        [PSS Systems, an IBM Company (off-site)]
 
                 Project description: Policy Atlas is the web-based management
                 information system that unifies Legal, IT, Records Management,
@@ -1177,7 +1177,7 @@ Job position: Senior Software Developer
 -------------------------------------------------------------------------------
 
 Mar 2009 -      Intellectual automated control system (IACS) "Trainflow",
-Aug 2010        Dubna Technopark
+Aug 2010        [Dubna Technopark]
 
                 Project description: IACS "Trainflow" is the centralized
                 management information system having its purpose to control and
@@ -1214,7 +1214,7 @@ Job position: Senior Software Developer of the E-Business Division
 
 -------------------------------------------------------------------------------
 
-Jul 2008 -      Automated information system "KDT", IBA-Gomel
+Jul 2008 -      Automated information system "KDT", [IBA-Gomel]
 Sep 2008
                 Project description: AIS "KDT" is the management information
                 system having its purpose to control and maintain the process
@@ -1243,7 +1243,7 @@ Sep 2008
 
 -------------------------------------------------------------------------------
 
-May 2008 -      IBM AS RM Metro, IBM Netherlands, IBM Germany (off-site)
+May 2008 -      IBM AS RM Metro, [IBM Netherlands, IBM Germany (off-site)]
 Jul 2008
                 Project description: Web-based application that empowers
                 managers with the ability and functionality to perform capacity
@@ -1267,7 +1267,7 @@ Jul 2008
 
 -------------------------------------------------------------------------------
 
-Feb 2008 -      Automated information system "KDT", IBA-Gomel
+Feb 2008 -      Automated information system "KDT", [IBA-Gomel]
 May 2008
                 Project description: AIS "KDT" is the management information
                 system having its purpose to control and maintain the process
@@ -1290,8 +1290,8 @@ May 2008
 
 -------------------------------------------------------------------------------
 
-May 2006 -      IBM Web Solutions Enabler (WSE), IBM Italy, IBM France
-Feb 2008        (on-site/off-site)
+May 2006 -      IBM Web Solutions Enabler (WSE), [IBM Italy, IBM France
+Feb 2008        (on-site/off-site)]
 
                 Project description: Web-based project that provides functions
                 to allow the creation, maintenance and operation of a number of
@@ -1319,7 +1319,7 @@ Feb 2008        (on-site/off-site)
 -------------------------------------------------------------------------------
 
 Jul 2004 -      GME Engineering Business Systems Sustain (EBSS),
-May 2006        General Motors Europe, IBM Germany (on-site/off-site)
+May 2006        [General Motors Europe, IBM Germany (on-site/off-site)]
 
                 Project description: Provides enterprise business maintenance
                 and sustain for a bunch of applications with the purposes to
@@ -1351,8 +1351,8 @@ May 2006        General Motors Europe, IBM Germany (on-site/off-site)
 
 -------------------------------------------------------------------------------
 
-Feb 2004 -      IBM Web Solutions Enabler (WSE), IBM Italy, IBM France
-Jul 2004        (on-site/off-site)
+Feb 2004 -      IBM Web Solutions Enabler (WSE), [IBM Italy, IBM France
+Jul 2004        (on-site/off-site)]
 
                 Project description: Web-based project that provides functions
                 to allow the creation, maintenance and operation of a number of
@@ -1377,7 +1377,7 @@ Jul 2004        (on-site/off-site)
 
 -------------------------------------------------------------------------------
 
-Nov 2003 -      IBA Business Intelligence System (BIS), IBA-Gomel
+Nov 2003 -      IBA Business Intelligence System (BIS), [IBA-Gomel]
 Feb 2004
                 Project description: Web-based project that allows customers to
                 analyze the intellectual resources of a company, to place
@@ -1402,7 +1402,7 @@ Feb 2004
 
 -------------------------------------------------------------------------------
 
-Sep 2003 -      IBA Database Manager, IBA-Gomel
+Sep 2003 -      IBA Database Manager, [IBA-Gomel]
 Nov 2003
                 Project description: Java AWT and C++ Win32 API GUI front-ends
                 for managing some databases. Advantages: fast adding, viewing
