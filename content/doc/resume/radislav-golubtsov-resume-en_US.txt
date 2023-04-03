@@ -1214,7 +1214,7 @@ Job position: Senior Software Developer of the E-Business Division
 
 -------------------------------------------------------------------------------
 
-Jul 2008 -      Automated information system "KDT", [IBA-Gomel]
+Jul 2008 -      Automated information system (AIS) "KDT", [IBA-Gomel]
 Sep 2008
                 Project description: AIS "KDT" is the management information
                 system having its purpose to control and maintain the process
@@ -1267,7 +1267,7 @@ Jul 2008
 
 -------------------------------------------------------------------------------
 
-Feb 2008 -      Automated information system "KDT", [IBA-Gomel]
+Feb 2008 -      Automated information system (AIS) "KDT", [IBA-Gomel]
 May 2008
                 Project description: AIS "KDT" is the management information
                 system having its purpose to control and maintain the process
