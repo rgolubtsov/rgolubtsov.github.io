@@ -1436,13 +1436,18 @@ Nov 2002 -      Linear and Nonlinear Optimization Toolkit for Study Courses
 Jul 2003        in Operations Research
 
                 Project description: Three packages for seeking optimal
-                solutions: dense linear programming (revised simplex method),
-                quadratic programming (using algorithm by Schittkowski),
-                general nonlinear programming (nonlinearly constrained
-                minimization).
+                solutions:
+
+                * Dense linear programming (revised simplex method)
+
+                * Quadratic programming (using the algorithm
+                  by Prof. Klaus Schittkowski)
+
+                * General nonlinear programming (nonlinearly constrained
+                  minimization)
 
                 Personal role in the project: Test problems formulating,
-                mathematical programming algorithms exploring and C packages
+                mathematical programming algorithms exploring, and C packages
                 coding. Having responsibilities for the whole project.
 
                 Tools and technologies used:
@@ -1465,7 +1470,7 @@ Nov 2002
                   optimization technique.
 
                 Personal role in the project: Test problems formulating,
-                mathematical programming algorithms exploring and Java/C++
+                mathematical programming algorithms exploring, and Java/C++
                 packages coding. Having responsibilities for the whole project.
 
                 Tools and technologies used:
@@ -1480,11 +1485,11 @@ Sep 1999 -      Scientific Data Conversion and Visualizing Utilities
 Dec 1999
                 Project description:
 
-                * The template program for using applied scientific software
+                * A template program for using applied scientific software
                   calculations in AutoCAD system for visualizing numerical
                   data.
 
-                * The utility program for converting applied scientific
+                * A utility program for converting applied scientific
                   software output to AutoCAD DXF format.
 
                 Personal role in the project: Developing appropriate
