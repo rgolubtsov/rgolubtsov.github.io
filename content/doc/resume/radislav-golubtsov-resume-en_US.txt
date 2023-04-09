@@ -65,7 +65,7 @@ Tools             Edition, Oracle JDeveloper, IBM Rational Software Architect
                 * GNU Bash, GNU Screen, GNU Toolchain: GNU Make, GNU Compiler
                   Collection (GCC): gcc, g++, gcc-objc, gfortran; GNU Binutils,
                   GNU Debugger (GDB), GNUstep, sed, etc. Clang (C / C++ /
-                  Objective-C LLVM compiler front-end), TCC (Fabrice Bellard's
+                  Objective-C LLVM compiler front end), TCC (Fabrice Bellard's
                   Tiny C Compiler)
                 * Apache Maven, Apache Ant, Leiningen, Rebar3
 
@@ -391,7 +391,7 @@ Jan 2020
                 management representative (by recording a series of screen
                 videos) how to create knowledge articles and close cases using
                 those knowledge articles. Other activities include bug fixing
-                in backend components of the Flosum app and improving their
+                in back-end components of the Flosum app and improving their
                 developer documentation.
 
                 Tools and technologies used:
@@ -417,7 +417,7 @@ Nov 2018 -      Barracuda WSG Azure Orchestration Blueprint
 Mar 2019
                 Project description: Development of the Flask Blueprint-based
                 application component, so-called Orchestrator, inside
-                the Barracuda Web Security Gateway (WSG) proxy server backend
+                the Barracuda Web Security Gateway (WSG) proxy server back end,
                 which is intended to integrate WSG with the Microsoft Azure
                 cloud platform to automate creating virtual infrastructure
                 appliances by invocating the Terraform tool (along with
@@ -574,7 +574,7 @@ May 2017
                 or their components according to the project guidelines and
                 requirements. Minor bug fixing in a series of web pages
                 of the CP. Building and testing the CP. (Development work
-                covers both frontend and backend layers, which talk to each
+                covers both front-end and back-end layers, which talk to each
                 other by utilizing REST API techniques, and both written
                 in JavaScript.)
 
@@ -599,7 +599,7 @@ Job position: Software Developer of the Software Development Division
 Aug 2016 -      Test Infrastructure (TI): Virtual Linux block device driver
 Sep 2016                           for collecting and measuring I/O latency
 
-                Project description: The backend web service as a TI component
+                Project description: The back-end web service as a TI component
                 (see prev project) operates on DUT (device under test) devices.
                 For character devices there is already such a driver in use,
                 but for block devices there isn't. The project's aim is to
@@ -613,7 +613,7 @@ Sep 2016                           for collecting and measuring I/O latency
                 Personal role in the project: Responsible for the whole project
                 - development of the Linux block device driver and a small
                 utility to test (and debug) its work without any invocations
-                from the TI backend web service. Documenting the source code.
+                from the TI back-end web service. Documenting the source code.
 
                 Tools and technologies used:
                 *    Dev OS: Arch Linux x86-64
@@ -625,19 +625,19 @@ Sep 2016                           for collecting and measuring I/O latency
 
 -------------------------------------------------------------------------------
 
-May 2016 -      Test Infrastructure (TI): REST Backend Service
+May 2016 -      Test Infrastructure (TI): REST Back-end Service
 Jul 2016
-                Project description: The backend web service for TI that
-                communicates with the frontend web service through the use of
+                Project description: The back-end web service for TI that
+                communicates with the front-end web service through the use of
                 REST API calls. The Test Infrastructure consists of two big
-                components: frontend and backend. Whilst the frontend is
+                components: front end and back end. Whilst the front end is
                 responsible for communicating with the QA specialists and
-                written in PHP and JavaScript, the backend is doing its work
+                written in PHP and JavaScript, the back end is doing its work
                 (run single tests or multi-test jobs on DUT (device under test)
                 devices) behind the scenes; it is written mainly in Python with
                 some performance-critical parts written in Go and C. Both
-                frontend and backend components talk to each other by utilizing
-                REST API techniques.
+                front-end and back-end components talk to each other by
+                utilizing REST API techniques.
 
                 (The customer of the TI project is Stellus Technologies,
                 formerly a division of Samsung Electronics.)
@@ -1404,10 +1404,10 @@ Feb 2004
 
 Sep 2003 -      IBA Database Manager, [IBA-Gomel]
 Nov 2003
-                Project description: Java AWT and C++ Win32 API GUI front-ends
-                for managing some databases. Advantages: fast adding, viewing
-                and removing records to/from database tables through JDBC/ODBC
-                interfaces.
+                Project description: Java (AWT) and C++ (Win32 API) GUI front
+                ends for managing some databases. Advantages: fast adding,
+                viewing and removing records to/from database tables through
+                JDBC/ODBC interfaces.
 
                 Personal role in the project: Java and C++ modules coding,
                 database tables creating and modifying. Having responsibilities
