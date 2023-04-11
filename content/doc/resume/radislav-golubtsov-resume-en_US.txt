@@ -1148,7 +1148,7 @@ Jun 2011        [PSS Systems, an IBM Company (off-site)]
                 Personal role in the project: Java modules coding, JavaScript
                 modules coding, Bash scripts coding. The main task is to
                 develop and maintain complex, interactively overloaded web page
-                "Matter Exceptions and Alerts". Bugfixing in other modules of
+                "Matter Exceptions and Alerts". Bug fixing in other modules of
                 the application. Also having responsibilities for development
                 of the (auxiliary) patching utility intended to simplify and
                 accelerate Policy Atlas application deployment.
@@ -1328,7 +1328,7 @@ May 2006        [General Motors Europe, IBM Germany (on-site/off-site)]
                 Adam Opel AG plants. The project is for General Motors Europe.
 
                 Personal role in the project: Java modules coding, modifying
-                existing third-party code, general application bug-fixing and
+                existing third-party code, general application bug fixing and
                 performing related tasks; performing standard operations
                 (password reset, user account management, etc.) in the 24x7
                 schedule. Having responsibilities for maintenance and support
