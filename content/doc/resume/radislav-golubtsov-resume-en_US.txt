@@ -115,14 +115,22 @@ Oct 2001        University (Ph.D. student of the School for Advanced Studies)
 
 ====== Work experience (in reverse-chronological order) =======================
 
-Jul 2022 - Oct 2022, Various activities at Milkavita OJSC regarding improvement
-                     and actualization of the information security policies
-                     pack; optimization and maintenance of the corporate
-                     website; deployment, configuration, and maintenance
-                     of Redmine and Zabbix systems; configuration
-                     and maintenance of Linux servers; supplementary work
-                     on replacement of surveillance cameras and facilities |
-                     Gomel (4 months)
+Jul 2022 - Oct 2022, IT-centric work at Milkavita OJSC, Gomel (4 months)
+                     * Improvement and actualization of the information
+                       security policies pack of the enterprise.
+                     * Administration, maintenance, and optimization
+                       of the corporate website: content management,
+                       webmastering, web design.
+                     * Deployment, configuration,administration,and maintenance
+                       of the project management system Redmine.
+                     * Deployment, configuration,administration,and maintenance
+                       of the network monitoring system Zabbix.
+                     * Configuration, administration, and maintenance
+                       of Linux servers (Ubuntu, Red Hat).
+                     * Supplementary work on replacement of surveillance
+                       cameras and facilities.
+                     * Providing support and consultancy to a sysadmin
+                       of the enterprise on various activities.
 
 Job position: Software Specialist of the Production Processes Automation
               Department
