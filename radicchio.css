@@ -271,7 +271,8 @@ p.cv-left {
 }
 
 #cv-table2 td span.cv-sparse,
-#cv-table3 td span.cv-sparse {
+#cv-table3 td span.cv-sparse,
+#cv-table3 td  div.cv-sparse {
     letter-spacing:   2px;
 }
 
