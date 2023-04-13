@@ -177,6 +177,10 @@ pre code {
 
 /* ------------------------------------------------------------------------- */
 
+p.cv-left {
+    text-align:       left;
+}
+
 #cv-cont0,
 #cv-cont1,
 #cv-cont2,
@@ -248,11 +252,65 @@ pre code {
 
 #cv-table0 td.cv-bold,
 #cv-table1 td.cv-bold,
-#cv-table2 td.cv-bold,
-#cv-table3 td.cv-bold,
 #cv-table4 td.cv-bold,
 #cv-table5 td.cv-bold {
     font-weight:      bold;
+}
+
+#cv-table2 td span.cv-bold,
+#cv-table3 td span.cv-bold,
+#cv-table3 td  div.cv-bold {
+    font-weight:      bold;
+}
+
+#cv-table0 td.cv-sparse,
+#cv-table1 td.cv-sparse,
+#cv-table4 td.cv-sparse,
+#cv-table5 td.cv-sparse {
+    letter-spacing:   2px;
+}
+
+#cv-table2 td span.cv-sparse,
+#cv-table3 td span.cv-sparse {
+    letter-spacing:   2px;
+}
+
+#cv-table0 td.cv-nowrap,
+#cv-table1 td.cv-nowrap,
+#cv-table2 td.cv-nowrap,
+#cv-table3 td.cv-nowrap,
+#cv-table4 td.cv-nowrap,
+#cv-table5 td.cv-nowrap {
+    white-space:      nowrap;
+}
+
+#cv-table3 td div.cv-nowrap {
+    white-space:      nowrap;
+}
+
+#cv-table4 td.cv-width20,
+#cv-table5 td.cv-width20 {
+    width:            20%;
+}
+
+#cv-table4 td.cv-width80,
+#cv-table5 td.cv-width80 {
+    width:            80%;
+}
+
+#cv-table3 td div.cv-bottom10,
+#cv-table3 td  ul.cv-bottom10,
+#cv-table3 td  ol.cv-bottom10 {
+    margin-bottom:    10px;
+}
+
+#cv-table3 td div.cv-lrgr {
+    font-size:        larger;
+}
+
+#cv-table3 td div.cv-left,
+#cv-table3 td  ul.cv-left {
+    text-align:       left;
 }
 
 #cv-table0 td.cv-caption,
@@ -265,11 +323,8 @@ pre code {
 }
 
 #cv-table0 td.cv-header,
-#cv-table1 td.cv-header,
-#cv-table2 td.cv-header,
 #cv-table3 td.cv-header,
-#cv-table4 td.cv-header,
-#cv-table5 td.cv-header {
+#cv-table4 td.cv-header {
     background-color: #5db52a;
 }
 
