@@ -52,19 +52,19 @@
 
 <h1>CV | Work experience</h1>
 <h3>Passionate Software Developer</h3>
-<p style="text-align:left">For main CV sections see <a href="/data/docs/cv/cv_en_us" rel="noreferrer" style="font-weight:bold">here</a></p>
+<p class="cv-left">For main CV sections see <strong><a href="/data/docs/cv/cv_en_us" rel="noreferrer">here</a></strong></p>
 <!-- ====== Work experience =============================================== -->
 <div   id="cv-cont3">
 <table id="cv-table3">
 <tbody>
 <tr>
-<td colspan="2" class="cv-caption"><span style="letter-spacing:2px;font-weight:bold">Work experience</span> (in reverse-chronological order)</td>
+<td colspan="2" class="cv-caption"><span class="cv-sparse cv-bold">Work experience</span> (in reverse-chronological order)</td>
 </tr>
 <tr>
 <td colspan="2" class="cv-header">Jul 2022 &ndash; Oct 2022, IT-centric work at Milkavita OJSC, Gomel (4 months)</td>
 </tr>
 <tr>
-<td colspan="2">Job position: <span style="font-weight:bold">Software Specialist of the Production Processes Automation Department</span></td>
+<td colspan="2">Job position: <span class="cv-bold">Software Specialist of the Production Processes Automation Department</span></td>
 </tr>
 <tr>
 <td>Jul 2022 &ndash; Oct 2022</td>
@@ -82,21 +82,21 @@
 <td colspan="2" class="cv-header">Sep 2020 &ndash; Sep 2021, Software design, development, testing, and maintenance at the Belarusian Trade and Economics University of Consumer Cooperatives, Gomel (1 year)</td>
 </tr>
 <tr>
-<td colspan="2">Job position: <span style="font-weight:bold">Lead Software Developer of the Information Technology Centre</span></td>
+<td colspan="2">Job position: <span class="cv-bold">Lead Software Developer of the Information Technology Centre</span></td>
 </tr>
 <tr>
 <td>Aug 2021 &ndash; Sep 2021</td>
-<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">Web apps for enrollees to get the information regarding entrance exams results and admission decrees</div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Project description:</span> Design, development, testing, and deployment of standalone web applications, targeted enrollees to get the information regarding their entrance exams results and admission decrees. These are the following apps:</div>
-<ul style="margin-bottom:10px">
+<td><div class="cv-bottom10 cv-left cv-lrgr cv-bold">Web apps for enrollees to get the information regarding entrance exams results and admission decrees</div>
+<div class="cv-bottom10"><span class="cv-bold">Project description:</span> Design, development, testing, and deployment of standalone web applications, targeted enrollees to get the information regarding their entrance exams results and admission decrees. These are the following apps:</div>
+<ul  class="cv-bottom10">
 <li>Stage 1 Entrance Exams Results</li>
 <li>Stage 1 Admission Decree</li>
 <li>Magistracy Admission Decree</li>
 </ul>
-<div style="margin-bottom:10px;white-space:nowrap">The customer of the project is the admission committee of the University.</div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Personal role in the project:</span> Creating the database schema and designing the common apps architecture. Development of business logic modules of the apps and corresponding web pages. Implementing the user authentication and authorization mechanism for enrollees to allow them to get access to their personal data regarding entrance exams results and admission decrees. Making configuration changes in the application server, web server, and database server setups. Creating the database and populating it with the enrollees data taken from the admission committee of the University. Testing and deploying the web apps, and finally starting them up according to the working plans of the admission campaign of the University.</div>
-<div style="font-weight:bold">Tools and technologies used:</div>
-<ul style="text-align:left">
+<div class="cv-bottom10 cv-nowrap">(<em>The customer of the project is the admission committee of the University.</em>)</div>
+<div class="cv-bottom10"><span class="cv-bold">Personal role in the project:</span> Creating the database schema and designing the common apps architecture. Development of business logic modules of the apps and corresponding web pages. Implementing the user authentication and authorization mechanism for enrollees to allow them to get access to their personal data regarding entrance exams results and admission decrees. Making configuration changes in the application server, web server, and database server setups. Creating the database and populating it with the enrollees data taken from the admission committee of the University. Testing and deploying the web apps, and finally starting them up according to the working plans of the admission campaign of the University.</div>
+<div class="cv-bold">Tools and technologies used:</div>
+<ul  class="cv-left">
 <li>Dev OS: Arch Linux, Ubuntu Server LTS x86-64 (VM: QEMU-KVM)</li>
 <li>Server OS: Ubuntu Server LTS x86-64 (VM: VMware ESXi)</li>
 <li>Perl 5, Mojolicious, DBI, Try::Tiny, Mojolicious::Plugin::Authentication, Embedded Perl (as templating), HTML, CSS, YAML, SQL, SSH, SCP, QPDF, Vim</li>
@@ -106,12 +106,12 @@
 </tr>
 <tr>
 <td>Jun 2021 &ndash; Jul 2021</td>
-<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">Migrating supplementary and subsidiary websites of the University from one web server to another. Development and deployment of the special backup system to make regular backups of the new web portal of the University</div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Project description:</span> Migrating five supplementary and subsidiary websites of the University from the Apache HTTP Server to the Nginx web server at the aim of optimizing their performance, simplifying their administering, and load balancing between them. <span style="font-weight:bold">Subproject:</span> Development and deployment of the special backup system to make regular backups of the new web portal of the University (on a separate virtual machine and based on another Nginx web server; please see the previous project).</div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Personal role in the project:</span> There was a number of consequent tests performed against the Nginx web server for serving high loaded websites of the University. This was crucially important to realize that in peak intervals, where the amount of client requests was relatively big, Nginx showed great performance comparing with the former their web server &ndash; Apache HTTP Server. Thus, based on those tests a common decision was taken &ndash; to replace the Apache web server with Nginx, i.e. to completely migrate all the supplementary and subsidiary websites of the University to Nginx. Such a decision has been finally carried out with further sites' testing and supporting on a brand new web server.</div>
-<div style="margin-bottom:10px">Development and deployment of the special backup system to make regular backups of the new web portal of the University: writing a Shell script and the corresponding FTP client configuration for creating the web portal's CMS tarball and the compressed dump of its accompanied database, and for uploading them to the FTP server of the University using Cron jobs on a daily basis. Creating a scenario for restoring the web portal from any of its backups taken from the University's FTP server.</div>
-<div style="font-weight:bold">Tools and technologies used:</div>
-<ul style="text-align:left">
+<td><div class="cv-bottom10 cv-left cv-lrgr cv-bold">Migrating supplementary and subsidiary websites of the University from one web server to another. Development and deployment of the special backup system to make regular backups of the new web portal of the University</div>
+<div class="cv-bottom10"><span class="cv-bold">Project description:</span> Migrating five supplementary and subsidiary websites of the University from the Apache HTTP Server to the Nginx web server at the aim of optimizing their performance, simplifying their administering, and load balancing between them. <span class="cv-bold">Subproject:</span> Development and deployment of the special backup system to make regular backups of the new web portal of the University (on a separate virtual machine and based on another Nginx web server; please see the previous project).</div>
+<div class="cv-bottom10"><span class="cv-bold">Personal role in the project:</span> There was a number of consequent tests performed against the Nginx web server for serving high loaded websites of the University. This was crucially important to realize that in peak intervals, where the amount of client requests was relatively big, Nginx showed great performance comparing with the former their web server &ndash; Apache HTTP Server. Thus, based on those tests a common decision was taken &ndash; to replace the Apache web server with Nginx, i.e. to completely migrate all the supplementary and subsidiary websites of the University to Nginx. Such a decision has been finally carried out with further sites' testing and supporting on a brand new web server.</div>
+<div class="cv-bottom10">Development and deployment of the special backup system to make regular backups of the new web portal of the University: writing a Shell script and the corresponding FTP client configuration for creating the web portal's CMS tarball and the compressed dump of its accompanied database, and for uploading them to the FTP server of the University using Cron jobs on a daily basis. Creating a scenario for restoring the web portal from any of its backups taken from the University's FTP server.</div>
+<div class="cv-bold">Tools and technologies used:</div>
+<ul  class="cv-left">
 <li>Dev OS: Arch Linux, Ubuntu Server LTS x86-64 (VM: QEMU-KVM)</li>
 <li>Server OS: Ubuntu Server LTS x86-64 (VM x 2: VMware ESXi)</li>
 <li>CMS WordPress + MySQL Community Server</li>
@@ -121,12 +121,12 @@
 </ul></td>
 </tr>
 <tr>
-<td style="white-space:nowrap">Mar 2021 &ndash; May 2021</td>
-<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">Analysis and selection of a CMS which is best fitted to the new web portal of the University. Initial development of the new web portal</div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Project description:</span> Analysis of a series of freely redistributable open source content management systems (CMS), freely available extension modules (plugins) for them which are required for building the new web portal of the University. Selection of one of these CMSs and initial development of the new web portal of the University based on the CMS chosen.</div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Personal role in the project:</span> Selection of the front-end theme (template) for the new portal. Proving the three selected CMSs in action: installation, configuration, navigation, and minimal content populating to create a set of sample web pages. Namely, these are: October CMS, TYPO3, and Joomla. Installation, fine tuning, and configuring a one of these three CMSs, that is best fitted to the new web portal of the University, for its building and evolving, and for the further management of its parts and components during both development and normal production use. The main requirements are: (1) the CMS needs to provide extended permissions and user roles management functionality out of the box, (2) the existence of rich community and ecosystem having freely available plugins for various purposes, (3) to provide the possibility to perform yet simple content management-related tasks for users having too diversed technical skills. Finally, the CMS chosen was Joomla! and its accompanied RDBMS was MariaDB. Initial development of the new web portal of the University based on this CMS: selection of the front-end theme for the new portal, development of the navigational structure, creating a set of semi-dummy pages written in three languages (Russian, Byelorussian, English). Also two special pages in these three languages were completely designed, created, and populated ("About the University" and "Contacts"). Performing a whole set of tasks regarding the virtual machine maintenance, the web server configuring and other duties (please see for their description in the previous project).</div>
-<div style="font-weight:bold">Tools and technologies used:</div>
-<ul style="text-align:left">
+<td class="cv-nowrap">Mar 2021 &ndash; May 2021</td>
+<td><div class="cv-bottom10 cv-left cv-lrgr cv-bold">Analysis and selection of a CMS which is best fitted to the new web portal of the University. Initial development of the new web portal</div>
+<div class="cv-bottom10"><span class="cv-bold">Project description:</span> Analysis of a series of freely redistributable open source content management systems (CMS), freely available extension modules (plugins) for them which are required for building the new web portal of the University. Selection of one of these CMSs and initial development of the new web portal of the University based on the CMS chosen.</div>
+<div class="cv-bottom10"><span class="cv-bold">Personal role in the project:</span> Selection of the front-end theme (template) for the new portal. Proving the three selected CMSs in action: installation, configuration, navigation, and minimal content populating to create a set of sample web pages. Namely, these are: October CMS, TYPO3, and Joomla. Installation, fine tuning, and configuring a one of these three CMSs, that is best fitted to the new web portal of the University, for its building and evolving, and for the further management of its parts and components during both development and normal production use. The main requirements are: (1) the CMS needs to provide extended permissions and user roles management functionality out of the box, (2) the existence of rich community and ecosystem having freely available plugins for various purposes, (3) to provide the possibility to perform yet simple content management-related tasks for users having too diversed technical skills. Finally, the CMS chosen was Joomla! and its accompanied RDBMS was MariaDB. Initial development of the new web portal of the University based on this CMS: selection of the front-end theme for the new portal, development of the navigational structure, creating a set of semi-dummy pages written in three languages (Russian, Byelorussian, English). Also two special pages in these three languages were completely designed, created, and populated ("About the University" and "Contacts"). Performing a whole set of tasks regarding the virtual machine maintenance, the web server configuring and other duties (please see for their description in the previous project).</div>
+<div class="cv-bold">Tools and technologies used:</div>
+<ul  class="cv-left">
 <li>Dev OS: Arch Linux, Ubuntu Server LTS x86-64 (VM: QEMU-KVM)</li>
 <li>Server OS: Ubuntu Server LTS x86-64 (VM: VMware ESXi)</li>
 <li>October CMS + PostgreSQL</li>
@@ -139,11 +139,11 @@
 </tr>
 <tr>
 <td>Dec 2020 &ndash; Feb 2021</td>
-<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">Development, deployment, maintenance, and support of the website for one of the faculties of the University (Faculty of professional development and personnel retraining)</div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Project description:</span> Development, deployment, content management, webmastering, maintenance, and support of the website of the Faculty of professional development and personnel retraining of the University.</div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Personal role in the project:</span> Development of the logical structure, navigation elements of the website. Adaptation of content elements of web pages for mobile web browsers, doing content populating the web pages and their further editing upon faculty staff requests (content management-related activities). Non-standard or multiple/mass content data changes or special data and metadata changes using database management tools besides CMS (also various DBA-related activities). Regular monitoring of scheduled site's backing up operations and analysis of respective logs and notifications. Analysis of client requests to special and selective web pages and to their respective underlying data, grepping for them in web server access logs. Performing the full cycle of activities regarding updating and upgrading packages of and the operating system itself which is used to run web server, CMS, database, and various vital system services. Updating the CMS and its modules, plugins, translations, etc. Keeping the virtual machine and the respective operating system to adhere to the principles of high availability, reliability, and readiness. SEO-related activities regarding this website.</div>
-<div style="font-weight:bold">Tools and technologies used:</div>
-<ul style="text-align:left">
+<td><div class="cv-bottom10 cv-left cv-lrgr cv-bold">Development, deployment, maintenance, and support of the website for one of the faculties of the University (Faculty of professional development and personnel retraining)</div>
+<div class="cv-bottom10"><span class="cv-bold">Project description:</span> Development, deployment, content management, webmastering, maintenance, and support of the website of the Faculty of professional development and personnel retraining of the University.</div>
+<div class="cv-bottom10"><span class="cv-bold">Personal role in the project:</span> Development of the logical structure, navigation elements of the website. Adaptation of content elements of web pages for mobile web browsers, doing content populating the web pages and their further editing upon faculty staff requests (content management-related activities). Non-standard or multiple/mass content data changes or special data and metadata changes using database management tools besides CMS (also various DBA-related activities). Regular monitoring of scheduled site's backing up operations and analysis of respective logs and notifications. Analysis of client requests to special and selective web pages and to their respective underlying data, grepping for them in web server access logs. Performing the full cycle of activities regarding updating and upgrading packages of and the operating system itself which is used to run web server, CMS, database, and various vital system services. Updating the CMS and its modules, plugins, translations, etc. Keeping the virtual machine and the respective operating system to adhere to the principles of high availability, reliability, and readiness. SEO-related activities regarding this website.</div>
+<div class="cv-bold">Tools and technologies used:</div>
+<ul  class="cv-left">
 <li>Dev OS: Arch Linux, Ubuntu Server LTS x86-64 (VM: QEMU-KVM)</li>
 <li>Server OS: Ubuntu Server LTS x86-64 (VM: VMware ESXi)</li>
 <li>CMS WordPress + MySQL Community Server</li>
@@ -154,17 +154,17 @@
 </tr>
 <tr>
 <td>Sep 2020 &ndash; Nov 2020</td>
-<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">Enhancement, maintenance, and support of supplementary and subsidiary websites of the University</div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Project description:</span> Design enhancements, content management, webmastering, maintenance, and support of four supplementary and subsidiary websites of the University, which are targeted and used as extra informational resources to complement the main web portal of the University. Namely, these are:</div>
-<ul style="margin-bottom:10px">
+<td><div class="cv-bottom10 cv-left cv-lrgr cv-bold">Enhancement, maintenance, and support of supplementary and subsidiary websites of the University</div>
+<div class="cv-bottom10"><span class="cv-bold">Project description:</span> Design enhancements, content management, webmastering, maintenance, and support of four supplementary and subsidiary websites of the University, which are targeted and used as extra informational resources to complement the main web portal of the University. Namely, these are:</div>
+<ul  class="cv-bottom10">
 <li>BTEU Academic Staff Personal Pages</li>
 <li>BTEU Admissions</li>
 <li>International Affairs Department of BTEU</li>
 <li>Publishing and Polygraphic Centre "Kopernik" of BTEU</li>
 </ul>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Personal role in the project:</span> Refinement of the overall websites design, adaptation of content elements of web pages for mobile web browsers, doing content populating the new pages, editing the existing pages (content management-related activities). Non-standard or multiple/mass content data changes or special data and metadata changes using database management tools besides CMS (also various DBA-related activities). Regular monitoring of scheduled sites' backing up operations and analysis of respective logs and notifications. Analysis of client requests to special and selective web pages and to their respective underlying data, grepping for them in web server access logs. Performing the full cycle of activities regarding updating and upgrading packages of and the operating system itself which is used to run web server, CMS, database, and various vital system services. Updating the CMS and its modules, plugins, sites' themes, translations, etc. Keeping the virtual machine and the respective operating system to adhere to the principles of high availability, reliability, and readiness. Basic load balancing activities between sites and managed SEO-related activities.</div>
-<div style="font-weight:bold">Tools and technologies used:</div>
-<ul style="text-align:left">
+<div class="cv-bottom10"><span class="cv-bold">Personal role in the project:</span> Refinement of the overall websites design, adaptation of content elements of web pages for mobile web browsers, doing content populating the new pages, editing the existing pages (content management-related activities). Non-standard or multiple/mass content data changes or special data and metadata changes using database management tools besides CMS (also various DBA-related activities). Regular monitoring of scheduled sites' backing up operations and analysis of respective logs and notifications. Analysis of client requests to special and selective web pages and to their respective underlying data, grepping for them in web server access logs. Performing the full cycle of activities regarding updating and upgrading packages of and the operating system itself which is used to run web server, CMS, database, and various vital system services. Updating the CMS and its modules, plugins, sites' themes, translations, etc. Keeping the virtual machine and the respective operating system to adhere to the principles of high availability, reliability, and readiness. Basic load balancing activities between sites and managed SEO-related activities.</div>
+<div class="cv-bold">Tools and technologies used:</div>
+<ul  class="cv-left">
 <li>Dev OS: Arch Linux, Ubuntu Server LTS x86-64 (VM: QEMU-KVM)</li>
 <li>Server OS: Ubuntu Server LTS x86-64 (VM: VMware ESXi)</li>
 <li>CMS WordPress + MySQL Community Server</li>
@@ -177,16 +177,16 @@
 <td colspan="2" class="cv-header">Nov 2019 &ndash; Jan 2020, Development work at Success Craft, LLC (Gomel branch), Gomel (3 months)</td>
 </tr>
 <tr>
-<td colspan="2">Job position: <span style="font-weight:bold">Salesforce Developer of the Software Development Department</span></td>
+<td colspan="2">Job position: <span class="cv-bold">Salesforce Developer of the Software Development Department</span></td>
 </tr>
 <tr>
 <td>Nov 2019 &ndash; Jan 2020</td>
-<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">Flosum ALM: Application Lifecycle Management Solution</div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Project description:</span> Continuous development of the application lifecycle management solution (Flosum), built on the Salesforce platform, and the Dataplier app &ndash; a data migrator, metadata-driven Salesforce app, aimed at transferring arbitrary data between Salesforce orgs.</div>
-<div style="margin-bottom:10px;white-space:nowrap">(<em>The customer of the project is Flosum, Inc.</em>)</div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Personal role in the project:</span> Testing the workability and documenting the whole process of migrating data, based on the Knowledge Article objects, using the Dataplier app. Creating the Customers Community prototype, a Salesforce community, and making initial development on its main page, including applying the design and partial content to it, taken from the Zendesk support website, dedicated to Flosum. Enabling, activating, and initially populating the knowledge base, targeting the Customers Community. Training the Flosum customers enablement management representative (by recording a series of screen videos) how to create knowledge articles and close cases using those knowledge articles. Other activities include bug fixing in back-end components of the Flosum app and improving their developer documentation.</div>
-<div style="font-weight:bold">Tools and technologies used:</div>
-<ul style="text-align:left">
+<td><div class="cv-bottom10 cv-left cv-lrgr cv-bold">Flosum ALM: Application Lifecycle Management Solution</div>
+<div class="cv-bottom10"><span class="cv-bold">Project description:</span> Continuous development of the application lifecycle management solution (Flosum), built on the Salesforce platform, and the Dataplier app &ndash; a data migrator, metadata-driven Salesforce app, aimed at transferring arbitrary data between Salesforce orgs.</div>
+<div class="cv-bottom10 cv-nowrap">(<em>The customer of the project is Flosum, Inc.</em>)</div>
+<div class="cv-bottom10"><span class="cv-bold">Personal role in the project:</span> Testing the workability and documenting the whole process of migrating data, based on the Knowledge Article objects, using the Dataplier app. Creating the Customers Community prototype, a Salesforce community, and making initial development on its main page, including applying the design and partial content to it, taken from the Zendesk support website, dedicated to Flosum. Enabling, activating, and initially populating the knowledge base, targeting the Customers Community. Training the Flosum customers enablement management representative (by recording a series of screen videos) how to create knowledge articles and close cases using those knowledge articles. Other activities include bug fixing in back-end components of the Flosum app and improving their developer documentation.</div>
+<div class="cv-bold">Tools and technologies used:</div>
+<ul  class="cv-left">
 <li>Dev OS: Arch Linux, Ubuntu Server amd64 (VM: QEMU-KVM) &ndash; solely to run web browsers and local HTML/CSS-based prototyping tasks</li>
 <li>Salesforce Developer Edition, Salesforce Enterprise Edition (CRM in the Cloud)</li>
 <li>Apex, Lightning Aura Components, HTML, CSS, JavaScript</li>
@@ -198,16 +198,16 @@
 <td colspan="2" class="cv-header">Nov 2017 &ndash; Mar 2019, Development work at Exadel, Inc. (Gomel branch), Gomel (1 year, 5 months)</td>
 </tr>
 <tr>
-<td colspan="2">Job position: <span style="font-weight:bold">Software Developer of the Software Development Department 2</span></td>
+<td colspan="2">Job position: <span class="cv-bold">Software Developer of the Software Development Department 2</span></td>
 </tr>
 <tr>
 <td>Nov 2018 &ndash; Mar 2019</td>
-<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">Barracuda WSG Azure Orchestration Blueprint</div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Project description:</span> Development of the Flask Blueprint-based application component, so-called Orchestrator, inside the Barracuda Web Security Gateway (WSG) proxy server back end, which is intended to integrate WSG with the Microsoft Azure cloud platform to automate creating virtual infrastructure appliances by invocating the Terraform tool (along with the given infrastructure configuration) running in a Celery task queue. WSG as well as Orchestrator both are written in Python, and the latter uses the Celery task queue library to asynchronously execute Terraform jobs.</div>
-<div style="margin-bottom:10px;white-space:nowrap">(<em>The customer of the project is Barracuda Networks, Inc.</em>)</div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Personal role in the project:</span> Development and configuration activities in the part of handling and validating Terraform data (configuration variables) and passing them to a Celery task queue for further execution. Also taking part in development of displaying Celery task execution results and statuses on an asynchronous manner and test the Orchestrator against a dedicated Azure account together with a DevOps engineer.</div>
-<div style="font-weight:bold">Tools and technologies used:</div>
-<ul style="text-align:left">
+<td><div class="cv-bottom10 cv-left cv-lrgr cv-bold">Barracuda WSG Azure Orchestration Blueprint</div>
+<div class="cv-bottom10"><span class="cv-bold">Project description:</span> Development of the Flask Blueprint-based application component, so-called Orchestrator, inside the Barracuda Web Security Gateway (WSG) proxy server back end, which is intended to integrate WSG with the Microsoft Azure cloud platform to automate creating virtual infrastructure appliances by invocating the Terraform tool (along with the given infrastructure configuration) running in a Celery task queue. WSG as well as Orchestrator both are written in Python, and the latter uses the Celery task queue library to asynchronously execute Terraform jobs.</div>
+<div class="cv-bottom10 cv-nowrap">(<em>The customer of the project is Barracuda Networks, Inc.</em>)</div>
+<div class="cv-bottom10"><span class="cv-bold">Personal role in the project:</span> Development and configuration activities in the part of handling and validating Terraform data (configuration variables) and passing them to a Celery task queue for further execution. Also taking part in development of displaying Celery task execution results and statuses on an asynchronous manner and test the Orchestrator against a dedicated Azure account together with a DevOps engineer.</div>
+<div class="cv-bold">Tools and technologies used:</div>
+<ul  class="cv-left">
 <li>Dev OS: Arch Linux, Ubuntu Server amd64 (VM: QEMU-KVM)</li>
 <li>Test OS: Ubuntu Server amd64 (VM: Xen)</li>
 <li>Python 2, Python Standard Library, Flask, Flask Blueprints, Jinja2, Virtualenv</li>
@@ -219,12 +219,12 @@
 </tr>
 <tr>
 <td>May 2018 &ndash; Aug 2018</td>
-<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">bTrade secureXchange app (bTrade TDXchange)</div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Project description:</span> Development of the server-based solution (TDXchange) for secure managed file transfer (MFT) between two or more participants (endpoints) using a wide variety of network protocols and incorporating symmetric and asymmetric encryption methods. It is written in Java and incorporates the JSF web application framework and the RichFaces library with some excerpts from the OmniFaces library. It stores all its internal configuration parameters in one of the following RDBMSes, depending on initial configuration and build profile: Oracle Database, MS SQL Server, H2 Database.</div>
-<div style="margin-bottom:10px;white-space:nowrap">(<em>The customer of the project is bTrade LLC</em>)</div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Personal role in the project:</span> Configuring and building application bundles for a series of supported platforms: Linux x86/x64, Solaris SPARC, IBM AIX 32/64-bit, HP-UX IA-64. Deploying and testing application bundles on remote servers having and running the aforementioned platforms. Performing bug fixing operations and documenting various configuration caveats and gotchas found during deployment of new versions or custom builds of the application and its components.</div>
-<div style="font-weight:bold">Tools and technologies used:</div>
-<ul style="text-align:left">
+<td><div class="cv-bottom10 cv-left cv-lrgr cv-bold">bTrade secureXchange app (bTrade TDXchange)</div>
+<div class="cv-bottom10"><span class="cv-bold">Project description:</span> Development of the server-based solution (TDXchange) for secure managed file transfer (MFT) between two or more participants (endpoints) using a wide variety of network protocols and incorporating symmetric and asymmetric encryption methods. It is written in Java and incorporates the JSF web application framework and the RichFaces library with some excerpts from the OmniFaces library. It stores all its internal configuration parameters in one of the following RDBMSes, depending on initial configuration and build profile: Oracle Database, MS SQL Server, H2 Database.</div>
+<div class="cv-bottom10 cv-nowrap">(<em>The customer of the project is bTrade LLC</em>)</div>
+<div class="cv-bottom10"><span class="cv-bold">Personal role in the project:</span> Configuring and building application bundles for a series of supported platforms: Linux x86/x64, Solaris SPARC, IBM AIX 32/64-bit, HP-UX IA-64. Deploying and testing application bundles on remote servers having and running the aforementioned platforms. Performing bug fixing operations and documenting various configuration caveats and gotchas found during deployment of new versions or custom builds of the application and its components.</div>
+<div class="cv-bold">Tools and technologies used:</div>
+<ul  class="cv-left">
 <li>Dev OS: Ubuntu Server amd64 (VM: Xen)</li>
 <li>Server OS: Red Hat Enterprise Linux x86-64, SUSE Linux Enterprise Server x86-64, Solaris SPARC V9, IBM AIX for PowerPC 32-bit and 64-bit, HP-UX (IA-64)</li>
 <li>Java EE, Java Class Library, JSTL, JSF, RichFaces, XML, XHTML, JavaScript, Bash Shell Script</li>
@@ -236,12 +236,12 @@
 </tr>
 <tr>
 <td>Nov 2017 &ndash; Apr 2018</td>
-<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">Mercer Enhance: Machine Learning for Job Matching</div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Project description:</span> Development of REST API microservices in Python running inside Docker containers which are communicate each other through the REST model. They are built on top of business layer that is responsible for deep learning of a series of data models, and returning sets of encumbents (predictions and accuracy) for job matching user infrastructure.</div>
-<div style="margin-bottom:10px;white-space:nowrap">(<em>The customer of the project is Mercer LLC</em>)</div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Personal role in the project:</span> Building and configuring microservices using the Docker Compose tool, testing their work and performance using various Python web app frameworks and servers (see below). Doing prototyping work for experimental development approaches using asynchronous web communication scheme (Python) and porting a couple of microservices into Go (golang) in order to increase their performance. Preparing microservices for pre-deployment stage for Amazon AWS computation environment. Documenting the source code and architectural techniques/approaches which were implemented in various prototyping branches.</div>
-<div style="font-weight:bold">Tools and technologies used:</div>
-<ul style="text-align:left">
+<td><div class="cv-bottom10 cv-left cv-lrgr cv-bold">Mercer Enhance: Machine Learning for Job Matching</div>
+<div class="cv-bottom10"><span class="cv-bold">Project description:</span> Development of REST API microservices in Python running inside Docker containers which are communicate each other through the REST model. They are built on top of business layer that is responsible for deep learning of a series of data models, and returning sets of encumbents (predictions and accuracy) for job matching user infrastructure.</div>
+<div class="cv-bottom10 cv-nowrap">(<em>The customer of the project is Mercer LLC</em>)</div>
+<div class="cv-bottom10"><span class="cv-bold">Personal role in the project:</span> Building and configuring microservices using the Docker Compose tool, testing their work and performance using various Python web app frameworks and servers (see below). Doing prototyping work for experimental development approaches using asynchronous web communication scheme (Python) and porting a couple of microservices into Go (golang) in order to increase their performance. Preparing microservices for pre-deployment stage for Amazon AWS computation environment. Documenting the source code and architectural techniques/approaches which were implemented in various prototyping branches.</div>
+<div class="cv-bold">Tools and technologies used:</div>
+<ul  class="cv-left">
 <li>Dev OS: Ubuntu Server amd64 (VM: QEMU-KVM / Xen)</li>
 <li>Server OS: Ubuntu Cloud amd64 VM</li>
 <li>Docker containers based on Ubuntu and CentOS images</li>
@@ -256,15 +256,15 @@
 <td colspan="2" class="cv-header">Jul 2017 &ndash; Aug 2017, Development work at R-Style Lab, LLC, Minsk (2 months)</td>
 </tr>
 <tr>
-<td colspan="2">Job position: <span style="font-weight:bold">Software Developer of the IoT Development Division</span></td>
+<td colspan="2">Job position: <span class="cv-bold">Software Developer of the IoT Development Division</span></td>
 </tr>
 <tr>
 <td>Jul 2017 &ndash; Aug 2017</td>
-<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">Splink Desktop</div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Project description:</span> Development of the Windows system service to make a continuous screen video capturing and recording it as a sequence of video files, and later on to transmit them to a remote private server.</div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Personal role in the project:</span> Research and development activities on selecting an appropriate third-party framework or library, suitable for fast screen video capturing. Also development of the video files rotating mechanism.</div>
-<div style="font-weight:bold">Tools and technologies used:</div>
-<ul style="text-align:left">
+<td><div class="cv-bottom10 cv-left cv-lrgr cv-bold">Splink Desktop</div>
+<div class="cv-bottom10"><span class="cv-bold">Project description:</span> Development of the Windows system service to make a continuous screen video capturing and recording it as a sequence of video files, and later on to transmit them to a remote private server.</div>
+<div class="cv-bottom10"><span class="cv-bold">Personal role in the project:</span> Research and development activities on selecting an appropriate third-party framework or library, suitable for fast screen video capturing. Also development of the video files rotating mechanism.</div>
+<div class="cv-bold">Tools and technologies used:</div>
+<ul  class="cv-left">
 <li>Dev OS: Microsoft Windows 7 x64, Arch Linux x86-64</li>
 <li>Test OS: Microsoft Windows 7 x64</li>
 <li>ISO C++, Windows API (GDI), FFmpeg</li>
@@ -276,16 +276,16 @@
 <td colspan="2" class="cv-header">Mar 2017 &ndash; May 2017, Development work at Invatechs Software, LLC, Minsk (3 months)</td>
 </tr>
 <tr>
-<td colspan="2">Job position: <span style="font-weight:bold">Software Developer of the Web Development Division</span></td>
+<td colspan="2">Job position: <span class="cv-bold">Software Developer of the Web Development Division</span></td>
 </tr>
 <tr>
 <td>Mar 2017 &ndash; May 2017</td>
-<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">Upmargin</div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Project description:</span> Development of control panel (CP) components for the web application which is targeted onto the Hotel Booking Services area. The key aspect of this web app is the deep integration with the Google AdWords web service.</div>
-<div style="margin-bottom:10px;white-space:nowrap">(<em>The customer of the project is Upmargin Ltd.</em>)</div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Personal role in the project:</span> Development of new web pages or their components according to the project guidelines and requirements. Minor bug fixing in a series of web pages of the CP. Building and testing the CP. (Development work covers both front-end and back-end layers, which talk to each other by utilizing REST API techniques, and both written in JavaScript.)</div>
-<div style="font-weight:bold">Tools and technologies used:</div>
-<ul style="text-align:left">
+<td><div class="cv-bottom10 cv-left cv-lrgr cv-bold">Upmargin</div>
+<div class="cv-bottom10"><span class="cv-bold">Project description:</span> Development of control panel (CP) components for the web application which is targeted onto the Hotel Booking Services area. The key aspect of this web app is the deep integration with the Google AdWords web service.</div>
+<div class="cv-bottom10 cv-nowrap">(<em>The customer of the project is Upmargin Ltd.</em>)</div>
+<div class="cv-bottom10"><span class="cv-bold">Personal role in the project:</span> Development of new web pages or their components according to the project guidelines and requirements. Minor bug fixing in a series of web pages of the CP. Building and testing the CP. (Development work covers both front-end and back-end layers, which talk to each other by utilizing REST API techniques, and both written in JavaScript.)</div>
+<div class="cv-bold">Tools and technologies used:</div>
+<ul  class="cv-left">
 <li>Dev OS: OpenBSD/amd64, Ubuntu Server amd64 (both: VM: QEMU-KVM)</li>
 <li>Server OS: Ubuntu Server amd64 (Cloud VM)</li>
 <li>JavaScript, MEAN stack (MongoDB, Express, AngularJS, Node.js), HTML, CSS</li>
@@ -298,16 +298,16 @@
 <td colspan="2" class="cv-header">Feb 2016 &ndash; Sep 2016, Development work at Devicepros, LLC, Minsk (8 months)</td>
 </tr>
 <tr>
-<td colspan="2">Job position: <span style="font-weight:bold">Software Developer of the Software Development Division</span></td>
+<td colspan="2">Job position: <span class="cv-bold">Software Developer of the Software Development Division</span></td>
 </tr>
 <tr>
 <td>Aug 2016 &ndash; Sep 2016</td>
-<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">Test Infrastructure (TI): Virtual Linux block device driver for collecting and measuring I/O latency</div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Project description:</span> The back-end web service as a TI component (see prev. project) operates on DUT (device under test) devices. For character devices there is already such a driver in use, but for block devices there isn't. The project's aim is to develop a block device driver as a loadable kernel module (LKM) for the Linux kernel that will perform collecting and measuring latency for I/O operations.</div>
-<div style="margin-bottom:10px;white-space:nowrap">(<em>The customer of the TI project is Stellus Technologies, formerly a division of Samsung Electronics.</em>)</div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Personal role in the project:</span> Responsible for the whole project &ndash; development of the Linux block device driver and a small utility to test (and debug) its work without any invocations from the TI back-end web service. Documenting the source code.</div>
-<div style="font-weight:bold">Tools and technologies used:</div>
-<ul style="text-align:left">
+<td><div class="cv-bottom10 cv-left cv-lrgr cv-bold">Test Infrastructure (TI): Virtual Linux block device driver for collecting and measuring I/O latency</div>
+<div class="cv-bottom10"><span class="cv-bold">Project description:</span> The back-end web service as a TI component (see prev. project) operates on DUT (device under test) devices. For character devices there is already such a driver in use, but for block devices there isn't. The project's aim is to develop a block device driver as a loadable kernel module (LKM) for the Linux kernel that will perform collecting and measuring latency for I/O operations.</div>
+<div class="cv-bottom10 cv-nowrap">(<em>The customer of the TI project is Stellus Technologies, formerly a division of Samsung Electronics.</em>)</div>
+<div class="cv-bottom10"><span class="cv-bold">Personal role in the project:</span> Responsible for the whole project &ndash; development of the Linux block device driver and a small utility to test (and debug) its work without any invocations from the TI back-end web service. Documenting the source code.</div>
+<div class="cv-bold">Tools and technologies used:</div>
+<ul  class="cv-left">
 <li>Dev OS: Arch Linux x86-64</li>
 <li>Test OS: Ubuntu Server amd64 (VM: QEMU-KVM)</li>
 <li>ISO C, Linux kernel API, GNU C Library (glibc)</li>
@@ -318,12 +318,12 @@
 </tr>
 <tr>
 <td>May 2016 &ndash; Jul 2016</td>
-<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">Test Infrastructure (TI): REST Back-end Service</div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Project description:</span> The back-end web service for TI that communicates with the front-end web service through the use of REST API calls. The Test Infrastructure consists of two big components: front end and back end. Whilst the front end is responsible for communicating with the QA specialists and written in PHP and JavaScript, the back end is doing its work (run single tests or multi-test jobs on DUT (device under test) devices) behind the scenes; it is written mainly in Python with some performance-critical parts written in Go and C. Both front-end and back-end components talk to each other by utilizing REST API techniques.</div>
-<div style="margin-bottom:10px;white-space:nowrap">(<em>The customer of the TI project is Stellus Technologies, formerly a division of Samsung Electronics.</em>)</div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Personal role in the project:</span> Responsible for development of the report generating facility (agent), which is intended to collect information about all tests and test jobs are being ran or currently running on DUT devices, and to produce consolidated PDF or CSV report for QAs and managers. Other activities include general bug fixing in other parts of the project and documenting the source code.</div>
-<div style="font-weight:bold">Tools and technologies used:</div>
-<ul style="text-align:left">
+<td><div class="cv-bottom10 cv-left cv-lrgr cv-bold">Test Infrastructure (TI): REST Back-end Service</div>
+<div class="cv-bottom10"><span class="cv-bold">Project description:</span> The back-end web service for TI that communicates with the front-end web service through the use of REST API calls. The Test Infrastructure consists of two big components: front end and back end. Whilst the front end is responsible for communicating with the QA specialists and written in PHP and JavaScript, the back end is doing its work (run single tests or multi-test jobs on DUT (device under test) devices) behind the scenes; it is written mainly in Python with some performance-critical parts written in Go and C. Both front-end and back-end components talk to each other by utilizing REST API techniques.</div>
+<div class="cv-bottom10 cv-nowrap">(<em>The customer of the TI project is Stellus Technologies, formerly a division of Samsung Electronics.</em>)</div>
+<div class="cv-bottom10"><span class="cv-bold">Personal role in the project:</span> Responsible for development of the report generating facility (agent), which is intended to collect information about all tests and test jobs are being ran or currently running on DUT devices, and to produce consolidated PDF or CSV report for QAs and managers. Other activities include general bug fixing in other parts of the project and documenting the source code.</div>
+<div class="cv-bold">Tools and technologies used:</div>
+<ul  class="cv-left">
 <li>Dev OS: Arch Linux x86-64</li>
 <li>Server OS: Ubuntu Server amd64</li>
 <li>Python 3, Python Standard Library, Django REST framework, ReportLab PDF Toolkit, Virtualenv</li>
@@ -335,13 +335,13 @@
 </tr>
 <tr>
 <td>Feb 2016 &ndash; Apr 2016</td>
-<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">Test Infrastructure (TI): Simulating Samsung AWS</div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Project description:</span> Building the simulating AWS (Amazon Web Services) environment to develop and test new features for TI locally, instead of using remote Samsung AWS environment.</div>
-<div style="margin-bottom:10px">(Test Infrastructure is the composite software platform aimed at using by developers and QAs to run either single tests or multi-test jobs on DUT (device under test) devices, for example, on SSD drives. It utilizes host/target paradigm to perform its tasks on multiple machines at once.)</div>
-<div style="margin-bottom:10px;white-space:nowrap">(<em>The customer of the TI project is Stellus Technologies, formerly a division of Samsung Electronics.</em>)</div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Personal role in the project:</span> Development of the local build and test environment, vaguely reminiscent of AWS environment used during the Samsung storage software development process by various dev/QA teams. Responsible for creating modules and scripts for cascade execution of build sequences written in a series of programming languages: Perl, Bash Shell Script, Java, Python, Go. Documenting.</div>
-<div style="font-weight:bold">Tools and technologies used:</div>
-<ul style="text-align:left">
+<td><div class="cv-bottom10 cv-left cv-lrgr cv-bold">Test Infrastructure (TI): Simulating Samsung AWS</div>
+<div class="cv-bottom10"><span class="cv-bold">Project description:</span> Building the simulating AWS (Amazon Web Services) environment to develop and test new features for TI locally, instead of using remote Samsung AWS environment.</div>
+<div class="cv-bottom10">(Test Infrastructure is the composite software platform aimed at using by developers and QAs to run either single tests or multi-test jobs on DUT (device under test) devices, for example, on SSD drives. It utilizes host/target paradigm to perform its tasks on multiple machines at once.)</div>
+<div class="cv-bottom10 cv-nowrap">(<em>The customer of the TI project is Stellus Technologies, formerly a division of Samsung Electronics.</em>)</div>
+<div class="cv-bottom10"><span class="cv-bold">Personal role in the project:</span> Development of the local build and test environment, vaguely reminiscent of AWS environment used during the Samsung storage software development process by various dev/QA teams. Responsible for creating modules and scripts for cascade execution of build sequences written in a series of programming languages: Perl, Bash Shell Script, Java, Python, Go. Documenting.</div>
+<div class="cv-bold">Tools and technologies used:</div>
+<ul  class="cv-left">
 <li>Dev OS: Arch Linux x86-64</li>
 <li>Server OS: Ubuntu Server amd64</li>
 <li>Perl 5, Bash Shell Script</li>
@@ -360,19 +360,19 @@
 <td colspan="2" class="cv-header">Jan 2013 &ndash; Apr 2015, Development work at SMS Online, LLC (Gomel branch), Gomel (2 years, 4 months)</td>
 </tr>
 <tr>
-<td colspan="2">Job position: <span style="font-weight:bold">Senior Software Developer of the Software Development Department (Dev Dept)</span></td>
+<td colspan="2">Job position: <span class="cv-bold">Senior Software Developer of the Software Development Department (Dev Dept)</span></td>
 </tr>
 <tr>
-<td colspan="2"><div style="margin-bottom:10px">All the projects given below should not be considered as separate projects, but in contrary they are functional parts of a consolidated continuous development, improvement, and maintenance cycle of modules of the aggregated and unified bulk-billing SMS/IVR platform. This platform has been invented and developed exclusively by the SMS Online company for their internal ops, and currently it covers up to 90-95% of load for all the resources of the company with the comparable (approx. 1:1) throughput.</div>
-<div>Key technologies throughout the projects: <span style="font-weight:bold">Perl 5</span>, <span style="font-weight:bold">PostgreSQL</span>, and occasionally Java EE, ISO C, Asterisk.</div></td>
+<td colspan="2"><div class="cv-bottom10">All the projects given below should not be considered as separate projects, but in contrary they are functional parts of a consolidated continuous development, improvement, and maintenance cycle of modules of the aggregated and unified bulk-billing SMS/IVR platform. This platform has been invented and developed exclusively by the SMS Online company for their internal ops, and currently it covers up to 90-95% of load for all the resources of the company with the comparable (approx. 1:1) throughput.</div>
+<div>Key technologies throughout the projects: <span class="cv-bold">Perl 5</span>, <span class="cv-bold">PostgreSQL</span>, and occasionally Java EE, ISO C, Asterisk.</div></td>
 </tr>
 <tr>
 <td>Jan 2015 &ndash; Apr 2015</td>
-<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">IVR Services: Optimization and Maintenance</div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Project description:</span> Optimization and maintenance of the company's <strong>IVR Services</strong>, analysis of the <strong>IVR statistics</strong> and its periodical recalculation according to the requirements of currently running business processes. <em><strong>IVR Services</strong> are interactive voice response services (something like voice menus) which are running on the dedicated server under the control of the open source <strong>Asterisk VoIP PBX</strong>. They work either in an isolated environment or in a part-to-part intercommunication with the other IVR Services ran by partners and VoIP telecom systems of mobile network operators, and with abonents.</em></div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Personal role in the project:</span> IVR statistics monitoring and analysis, and its periodical recalculation. Modernization of a series of auxiliary IVR services which let main services to work properly in a completely autonomous mode, without changing their source code in situations when IVR contexts are subject to switch. Modernization of web control panels which provide necessary functionality for configuring IVR services and to collect and retrieval of IVR statistics. Taking part in the IVR platform migrating from a hardware server to a cloud-based virtual machine together with the system and network administrators of the company. Carrying out post-migrating activities and tasks, including Cron jobs setup, Asterisk VoIP PBX configuring, IVR traffic and statistics analysis, and deep functional testing of all active IVR services running on the platform. Partially performing tasks as a DBA. Documenting.</div>
-<div style="font-weight:bold">Tools and technologies used:</div>
-<ul style="text-align:left">
+<td><div class="cv-bottom10 cv-left cv-lrgr cv-bold">IVR Services: Optimization and Maintenance</div>
+<div class="cv-bottom10"><span class="cv-bold">Project description:</span> Optimization and maintenance of the company's <strong>IVR Services</strong>, analysis of the <strong>IVR statistics</strong> and its periodical recalculation according to the requirements of currently running business processes. <em><strong>IVR Services</strong> are interactive voice response services (something like voice menus) which are running on the dedicated server under the control of the open source <strong>Asterisk VoIP PBX</strong>. They work either in an isolated environment or in a part-to-part intercommunication with the other IVR Services ran by partners and VoIP telecom systems of mobile network operators, and with abonents.</em></div>
+<div class="cv-bottom10"><span class="cv-bold">Personal role in the project:</span> IVR statistics monitoring and analysis, and its periodical recalculation. Modernization of a series of auxiliary IVR services which let main services to work properly in a completely autonomous mode, without changing their source code in situations when IVR contexts are subject to switch. Modernization of web control panels which provide necessary functionality for configuring IVR services and to collect and retrieval of IVR statistics. Taking part in the IVR platform migrating from a hardware server to a cloud-based virtual machine together with the system and network administrators of the company. Carrying out post-migrating activities and tasks, including Cron jobs setup, Asterisk VoIP PBX configuring, IVR traffic and statistics analysis, and deep functional testing of all active IVR services running on the platform. Partially performing tasks as a DBA. Documenting.</div>
+<div class="cv-bold">Tools and technologies used:</div>
+<ul  class="cv-left">
 <li>Dev OS: Arch Linux i686; OpenBSD/amd64</li>
 <li>Server OS: Debian GNU/Linux amd64 (HW x 2 / Cloud VM)</li>
 <li>Perl 5, LWP, DBI, CGI, Asterisk::AGI, YAML::XS, Log::Log4perl, etc.</li>
@@ -386,11 +386,11 @@
 </tr>
 <tr>
 <td>Nov 2014 &ndash; Dec 2014</td>
-<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">Partner Services (Mobile Subscriptions)</div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Project description:</span> Making and providing landing pages to partners to store company's content on their side (as web services), and processing SMS billing ops according to requirements and conditions of active partner programs.</div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Personal role in the project:</span> Automating the process of creating the WAR archive for a web app (containing a landing page) for its future use during one of endorsed partner programs. Installing, deploying, and testing this WAR archive on supported Java EE app servers.</div>
-<div style="font-weight:bold">Tools and technologies used:</div>
-<ul style="text-align:left">
+<td><div class="cv-bottom10 cv-left cv-lrgr cv-bold">Partner Services (Mobile Subscriptions)</div>
+<div class="cv-bottom10"><span class="cv-bold">Project description:</span> Making and providing landing pages to partners to store company's content on their side (as web services), and processing SMS billing ops according to requirements and conditions of active partner programs.</div>
+<div class="cv-bottom10"><span class="cv-bold">Personal role in the project:</span> Automating the process of creating the WAR archive for a web app (containing a landing page) for its future use during one of endorsed partner programs. Installing, deploying, and testing this WAR archive on supported Java EE app servers.</div>
+<div class="cv-bold">Tools and technologies used:</div>
+<ul  class="cv-left">
 <li>Dev OS: Arch Linux i686</li>
 <li>Server OS: Debian GNU/Linux amd64 (Cloud VM)</li>
 <li>Java EE, Java Class Library, Servlet / JSP API</li>
@@ -402,11 +402,11 @@
 </tr>
 <tr>
 <td>Jul 2014 &ndash; Oct 2014</td>
-<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">Gate Admin CP II (SMS Billing Control Panel: Next Gen)</div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Project description:</span> Continuous deepest modernization of the <strong>SMS Billing Platform Control Panel (CP)</strong>. The CP is the web administrative console that is built as a series of separate modules written using CGI and Mojolicious MVC framework. The CP is used mostly by the company's tech support group 24x7. <em><strong>SMS Billing</strong> is the multi-component composite software platform for processing billing ops with SMS message queues which are moving between partners' services and mobile network operators.</em></div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Personal role in the project:</span> Participating in the CP migrating process from separate CP modules to a single unified Mojolicious-based app combining all the managerial stuff in one web app. General bug fixing in various obsolescent but still active CP modules. (Presentation and business layers.)</div>
-<div style="font-weight:bold">Tools and technologies used:</div>
-<ul style="text-align:left">
+<td><div class="cv-bottom10 cv-left cv-lrgr cv-bold">Gate Admin CP II (SMS Billing Control Panel: Next Gen)</div>
+<div class="cv-bottom10"><span class="cv-bold">Project description:</span> Continuous deepest modernization of the <strong>SMS Billing Platform Control Panel (CP)</strong>. The CP is the web administrative console that is built as a series of separate modules written using CGI and Mojolicious MVC framework. The CP is used mostly by the company's tech support group 24x7. <em><strong>SMS Billing</strong> is the multi-component composite software platform for processing billing ops with SMS message queues which are moving between partners' services and mobile network operators.</em></div>
+<div class="cv-bottom10"><span class="cv-bold">Personal role in the project:</span> Participating in the CP migrating process from separate CP modules to a single unified Mojolicious-based app combining all the managerial stuff in one web app. General bug fixing in various obsolescent but still active CP modules. (Presentation and business layers.)</div>
+<div class="cv-bold">Tools and technologies used:</div>
+<ul  class="cv-left">
 <li>Dev OS: Arch Linux x86-64</li>
 <li>Server OS: Debian GNU/Linux amd64 (Cloud VM)</li>
 <li>Perl 5, Mojolicious, Text::Xslate, DBI, CGI, MIME::Lite, YAML::XS, Log::Log4perl, etc.</li>
@@ -420,19 +420,19 @@
 </tr>
 <tr>
 <td>Mar 2014 &ndash; Jun 2014</td>
-<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">Partner Services (Spb Transport / Spb Subway)</div>
-<div><span style="font-weight:bold">Project description:</span> Composite <strong>mobile commerce (MC)</strong> project consisting of two independent subprojects:</div>
-<ol style="margin-bottom:10px">
+<td><div class="cv-bottom10 cv-left cv-lrgr cv-bold">Partner Services (Spb Transport / Spb Subway)</div>
+<div><span class="cv-bold">Project description:</span> Composite <strong>mobile commerce (MC)</strong> project consisting of two independent subprojects:</div>
+<ol  class="cv-bottom10">
 <li>The MC system to communicate to the St.Petersburg Public Transport Portal for getting information about public transport traffic, timings, stations, etc., and to transmit this information to passengers' PDAs and mobile phones upon SMS requests. Main system components: (1) SMS billing gateway, (2) Daemon for incoming SMS messages; it also processes GTFS data.</li>
 <li>The MC system to communicate to the Russian Standard Bank and to the St.Petersburg Subway Service for activating and recharging the Podorozhnik transport prepaid cards used inside St.Petersburg subway stations, from passengers' PDAs and mobile phones via SMS transactions and IVR interaction. Main system components: (1) SMS billing gateway, (2) IVR platform, (3) Embedded HTTP server with the high-speed request handling mechanism that is running on partner's side.</li>
 </ol>
-<div style="font-weight:bold">Personal role in the project:</div>
-<ol style="margin-bottom:10px">
+<div class="cv-bold">Personal role in the project:</div>
+<ol  class="cv-bottom10">
 <li>Development of the daemon for incoming SMS messages that is also responsible for processing GTFS data (GTFS-realtime feed). To develop this daemon the company's internal Perl-based framework was used. It is tailored especially for constructing such daemons which are considered to be real-time ready. Also during the development of this daemon the third-party GTFS Realtime API was used.</li>
 <li>Development of the IVR service using the third-party Google Text-To-Speech API which is running inside IVR platform under the control of Asterisk VoIP PBX. It operates as follows: as the input data it receives a prepaid card number, as the output data it says a secret code to activate the card (Perl). Also during this project I was responsible for development of the embedded HTTP server with the high-speed request handling mechanism. It was intended to run on partner's side (ISO C, GNU libmicrohttpd).</li>
 </ol>
-<div style="font-weight:bold">Tools and technologies used:</div>
-<ul style="text-align:left">
+<div class="cv-bold">Tools and technologies used:</div>
+<ul  class="cv-left">
 <li>Dev OS: Arch Linux x86-64</li>
 <li>Server OS: Debian GNU/Linux amd64 (VM)</li>
 <li>Perl 5, LWP, DBI, AnyEvent, Redis, Asterisk::AGI, Archive::Zip, Text::CSV, YAML::XS, JSON::XS, Log::Log4perl, etc.</li>
@@ -446,11 +446,11 @@
 </tr>
 <tr>
 <td>Dec 2013 &ndash; Feb 2014</td>
-<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">Bulk Admin CP (SMS Bulk Control Panel)</div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Project description:</span> Further development and improvement of the <strong>SMS Bulk Platform Control Panel (CP)</strong>. The CP is the web administrative console utilizing Vaadin Framework controls and workflow. The CP is used mostly by the company's tech support group 24x7. <em><strong>SMS Bulk</strong> is the software platform for mass messaging.</em></div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Personal role in the project:</span> Responsible for the whole project (as the only Java developer in almost exclusively Perl-oriented company). Development of the additional user controls according to new business requirements and general bug fixing. (Presentation layer.)</div>
-<div style="font-weight:bold">Tools and technologies used:</div>
-<ul style="text-align:left">
+<td><div class="cv-bottom10 cv-left cv-lrgr cv-bold">Bulk Admin CP (SMS Bulk Control Panel)</div>
+<div class="cv-bottom10"><span class="cv-bold">Project description:</span> Further development and improvement of the <strong>SMS Bulk Platform Control Panel (CP)</strong>. The CP is the web administrative console utilizing Vaadin Framework controls and workflow. The CP is used mostly by the company's tech support group 24x7. <em><strong>SMS Bulk</strong> is the software platform for mass messaging.</em></div>
+<div class="cv-bottom10"><span class="cv-bold">Personal role in the project:</span> Responsible for the whole project (as the only Java developer in almost exclusively Perl-oriented company). Development of the additional user controls according to new business requirements and general bug fixing. (Presentation layer.)</div>
+<div class="cv-bold">Tools and technologies used:</div>
+<ul  class="cv-left">
 <li>Dev OS: Arch Linux i686</li>
 <li>Server OS: Debian GNU/Linux amd64 (VM)</li>
 <li>Java EE, Vaadin Framework, JDBC, XML, SQL</li>
@@ -463,11 +463,11 @@
 </tr>
 <tr>
 <td>Mar 2013 &ndash; Nov 2013</td>
-<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">Gate Admin CP (SMS Billing Control Panel)</div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Project description:</span> Further development and improvement of the <strong>SMS Billing Platform Control Panel (CP)</strong>. The CP is the web administrative console that is built as a series of separate modules written using CGI and Mojolicious MVC framework. The CP is used mostly by the company's tech support group 24x7. <em><strong>SMS Billing</strong> is the multi-component composite software platform for processing billing ops with SMS message queues which are moving between partners' services and mobile network operators.</em></div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Personal role in the project:</span> Development of a bunch of new CP modules including the following: "Preprocess Messages Search", "MT-Subscriptions and Services Management", "Users and Roles Management". Taking part in the CP migrating from a hardware FreeBSD-based server to a virtual machine running Debian Stable together with the system and network administrators of the company. General bug fixing in various CP modules. Documenting. (Presentation and business layers. Role-based user authorization-expert.)</div>
-<div style="font-weight:bold">Tools and technologies used:</div>
-<ul style="text-align:left">
+<td><div class="cv-bottom10 cv-left cv-lrgr cv-bold">Gate Admin CP (SMS Billing Control Panel)</div>
+<div class="cv-bottom10"><span class="cv-bold">Project description:</span> Further development and improvement of the <strong>SMS Billing Platform Control Panel (CP)</strong>. The CP is the web administrative console that is built as a series of separate modules written using CGI and Mojolicious MVC framework. The CP is used mostly by the company's tech support group 24x7. <em><strong>SMS Billing</strong> is the multi-component composite software platform for processing billing ops with SMS message queues which are moving between partners' services and mobile network operators.</em></div>
+<div class="cv-bottom10"><span class="cv-bold">Personal role in the project:</span> Development of a bunch of new CP modules including the following: "Preprocess Messages Search", "MT-Subscriptions and Services Management", "Users and Roles Management". Taking part in the CP migrating from a hardware FreeBSD-based server to a virtual machine running Debian Stable together with the system and network administrators of the company. General bug fixing in various CP modules. Documenting. (Presentation and business layers. Role-based user authorization-expert.)</div>
+<div class="cv-bold">Tools and technologies used:</div>
+<ul  class="cv-left">
 <li>Dev OS: Arch Linux i686</li>
 <li>Server OS: FreeBSD/amd64 (HW); Debian GNU/Linux amd64 (VM)</li>
 <li>Perl 5, Mojolicious, Text::Xslate, DBI, MIME::Lite, YAML::XS, Log::Log4perl, etc.</li>
@@ -481,11 +481,11 @@
 </tr>
 <tr>
 <td>Jan 2013 &ndash; Feb 2013</td>
-<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">Java Bulk Client (SMS Bulk Platform API for Java Client)</div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Project description:</span> Development of the <strong>SMS Bulk Platform API</strong> easily accessible from within <strong>Java clients</strong> (used by business partners). <em><strong>SMS Bulk</strong> is the software platform for mass messaging.</em></div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Personal role in the project:</span> Responsible for the whole project (as the only Java developer in almost exclusively Perl-oriented company). Development of the API library with the complete Javadoc and installation/use notes. Also development of the test/sample web app to demonstrate how to use the library inside a client Java web app.</div>
-<div style="font-weight:bold">Tools and technologies used:</div>
-<ul style="text-align:left">
+<td><div class="cv-bottom10 cv-left cv-lrgr cv-bold">Java Bulk Client (SMS Bulk Platform API for Java Client)</div>
+<div class="cv-bottom10"><span class="cv-bold">Project description:</span> Development of the <strong>SMS Bulk Platform API</strong> easily accessible from within <strong>Java clients</strong> (used by business partners). <em><strong>SMS Bulk</strong> is the software platform for mass messaging.</em></div>
+<div class="cv-bottom10"><span class="cv-bold">Personal role in the project:</span> Responsible for the whole project (as the only Java developer in almost exclusively Perl-oriented company). Development of the API library with the complete Javadoc and installation/use notes. Also development of the test/sample web app to demonstrate how to use the library inside a client Java web app.</div>
+<div class="cv-bold">Tools and technologies used:</div>
+<ul  class="cv-left">
 <li>Dev OS: Arch Linux i686</li>
 <li>Server OS: FreeBSD/amd64</li>
 <li>Java EE, Java Class Library, Servlet / JSP API, JSTL, SLF4J</li>
@@ -500,15 +500,15 @@
 <td colspan="2" class="cv-header">Aug 2012 &ndash; Oct 2012, Development work at Intervale, CJSC (Gomel branch), Gomel (3 months)</td>
 </tr>
 <tr>
-<td colspan="2">Job position: <span style="font-weight:bold">Senior Software Developer of the Mobile Banking Solutions Development Department</span></td>
+<td colspan="2">Job position: <span class="cv-bold">Senior Software Developer of the Mobile Banking Solutions Development Department</span></td>
 </tr>
 <tr>
 <td>Aug 2012 &ndash; Oct 2012</td>
-<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">Sberbank of Russia Uniform Mobile Banking Payment System</div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Project description:</span> Development of the complex composite payment system for mobile banking (MB) that targets its area of application to cover all divisions and subsidiaries of Sberbank of Russia with the uniform MB system. This system provides bank clients with the ability to make payments using their various mobile devices (cellular phones with the Java ME technology inside, smartphones, and tablets based on Symbian, Android, and iOS operating systems). This system is developed consolidatedly by a series of companies, one of them is the Intervale company. It is responsible for R&D for building the following components: SMS gateway, message queues, and client apps for Java ME-based mobile phones.</div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Personal role in the project:</span> Responsible for development of the web administrative console intended to use by bank operators and auditors to control and manage the assets and processes which are underlie the SMS gateway and message queues-related operations. Documenting. (Presentation and (partially) business layers. Usability and accessibility-expert. User authentication and authorization-expert.)</div>
-<div style="font-weight:bold">Tools and technologies used:</div>
-<ul style="text-align:left">
+<td><div class="cv-bottom10 cv-left cv-lrgr cv-bold">Sberbank of Russia Uniform Mobile Banking Payment System</div>
+<div class="cv-bottom10"><span class="cv-bold">Project description:</span> Development of the complex composite payment system for mobile banking (MB) that targets its area of application to cover all divisions and subsidiaries of Sberbank of Russia with the uniform MB system. This system provides bank clients with the ability to make payments using their various mobile devices (cellular phones with the Java ME technology inside, smartphones, and tablets based on Symbian, Android, and iOS operating systems). This system is developed consolidatedly by a series of companies, one of them is the Intervale company. It is responsible for R&amp;D for building the following components: SMS gateway, message queues, and client apps for Java ME-based mobile phones.</div>
+<div class="cv-bottom10"><span class="cv-bold">Personal role in the project:</span> Responsible for development of the web administrative console intended to use by bank operators and auditors to control and manage the assets and processes which are underlie the SMS gateway and message queues-related operations. Documenting. (Presentation and (partially) business layers. Usability and accessibility-expert. User authentication and authorization-expert.)</div>
+<div class="cv-bold">Tools and technologies used:</div>
+<ul  class="cv-left">
 <li>Dev OS: Arch Linux x86-64</li>
 <li>Server OS: Microsoft Windows Server 2008 x86-64</li>
 <li>Java EE, Java Class Library, Servlet / JSP API, JSTL, SLF4J</li>
@@ -522,18 +522,18 @@
 </tr>
 <tr>
 <td colspan="2" class="cv-header">Jan 2012 &ndash; May 2012, Development work at XIMAD, Inc. (Gomel branch), Gomel (5 months)<br />
-<span style="font-style:italic;font-size:smaller">XIMAD, Inc. and XIM, Inc. have joint headquarters</span></td>
+<span class="cv-ital cv-smlr">XIMAD, Inc. and XIM, Inc. have joint headquarters</span></td>
 </tr>
 <tr>
-<td colspan="2">Job position: <span style="font-weight:bold">Senior Software Developer of the Wireless Division</span></td>
+<td colspan="2">Job position: <span class="cv-bold">Senior Software Developer of the Wireless Division</span></td>
 </tr>
 <tr>
 <td>Mar 2012 &ndash; May 2012</td>
-<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">Ad Optimizer, <span style="color:#000080">[XIMAD, Inc.]</span></div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Project description:</span> Literally this can be stated as an advertising optimizer. This is a web app that is used by company's managers to reorder and redistribute the ad banners and applets which are displayed on abonents' mobile devices. The items of such ad content (ad banners and applets) are only displayed on those mobile client applications and games which were produced and offered by the company and &ndash; that is very important &ndash; are free of charge to download and use, in other words, which are freeware or at least shareware. These ads are subject to apply the following operations which might be performed over them inside this web app: filter, connect, delete, make active, discard, and reorder using the following criteria: mobile platforms (mobile operating systems) and their versions, mobile apps and games and their versions, and localization parameters, abonents'/mobile devices' geographic location (using the GeoLocation third-party web service API).</div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Personal role in the project:</span> Development of new web pages according to the project guidelines and requirements. Bug fixing in most actively used web pages of the app. Building, testing, and deploying the whole app in a production environment along with making any required database schema changes. Documenting. (Presentation and business layers.)</div>
-<div style="font-weight:bold">Tools and technologies used:</div>
-<ul style="text-align:left">
+<td><div class="cv-bottom10 cv-left cv-lrgr cv-bold">Ad Optimizer, <span class="cv-cust">[XIMAD, Inc.]</span></div>
+<div class="cv-bottom10"><span class="cv-bold">Project description:</span> Literally this can be stated as an advertising optimizer. This is a web app that is used by company's managers to reorder and redistribute the ad banners and applets which are displayed on abonents' mobile devices. The items of such ad content (ad banners and applets) are only displayed on those mobile client applications and games which were produced and offered by the company and &ndash; that is very important &ndash; are free of charge to download and use, in other words, which are freeware or at least shareware. These ads are subject to apply the following operations which might be performed over them inside this web app: filter, connect, delete, make active, discard, and reorder using the following criteria: mobile platforms (mobile operating systems) and their versions, mobile apps and games and their versions, and localization parameters, abonents'/mobile devices' geographic location (using the GeoLocation third-party web service API).</div>
+<div class="cv-bottom10"><span class="cv-bold">Personal role in the project:</span> Development of new web pages according to the project guidelines and requirements. Bug fixing in most actively used web pages of the app. Building, testing, and deploying the whole app in a production environment along with making any required database schema changes. Documenting. (Presentation and business layers.)</div>
+<div class="cv-bold">Tools and technologies used:</div>
+<ul  class="cv-left">
 <li>Dev OS: Ubuntu amd64 (Window Maker)</li>
 <li>Server OS: FreeBSD/amd64</li>
 <li>Java EE, Play! Framework, JDBC, JavaMail, XML, XHTML, CSS, JavaScript, SQL</li>
@@ -546,19 +546,19 @@
 </tr>
 <tr>
 <td>Jan 2012 &ndash; Feb 2012</td>
-<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">Zuma iOS/Zuminja (2D-game for Apple iPhone/iPad/iPod touch), <span style="color:#000080">[XIMAD, Inc.]</span></div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Project description:</span> Development of the 2D-game Zuma iOS (alternate name Zuminja) intended to run on the Apple mobile devices line-up. (The mobile app should look and behave similar to already developed ports for Android- and BlackBerry-based devices.)</div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Personal role in the project:</span> Responsible for the whole project except making game design scenes and related static graphical components.</div>
-<div style="font-weight:bold">Tools and technologies used:</div>
-<div style="letter-spacing:2px"><em>Preparation stage</em>:</div>
-<ul style="margin-bottom:10px;text-align:left">
+<td><div class="cv-bottom10 cv-left cv-lrgr cv-bold">Zuma iOS/Zuminja (2D-game for Apple iPhone/iPad/iPod touch), <span class="cv-cust">[XIMAD, Inc.]</span></div>
+<div class="cv-bottom10"><span class="cv-bold">Project description:</span> Development of the 2D-game Zuma iOS (alternate name Zuminja) intended to run on the Apple mobile devices line-up. (The mobile app should look and behave similar to already developed ports for Android- and BlackBerry-based devices.)</div>
+<div class="cv-bottom10"><span class="cv-bold">Personal role in the project:</span> Responsible for the whole project except making game design scenes and related static graphical components.</div>
+<div class="cv-bold">Tools and technologies used:</div>
+<div class="cv-sparse"><em>Preparation stage</em>:</div>
+<ul  class="cv-bottom10 cv-left">
 <li>Dev OS: CentOS x86_64 (Window Maker); Ubuntu amd64 (Window Maker)</li>
 <li>Objective-C 2.0</li>
 <li>GNUstep/Cocoa API, XML</li>
 <li>GNUstep object-oriented development kit, vi</li>
 </ul>
-<div style="letter-spacing:2px"><em>Active stage</em>:</div>
-<ul style="text-align:left">
+<div class="cv-sparse"><em>Active stage</em>:</div>
+<ul  class="cv-left">
 <li>Dev OS: Mac OS X Lion (installed on a Mac mini workstation)</li>
 <li>Objective-C 2.0</li>
 <li>OpenGL ES, XML</li>
@@ -568,18 +568,18 @@
 </tr>
 <tr>
 <td colspan="2" class="cv-header">Sep 2010 &ndash; Dec 2011, Development work at XIM, Inc. (Gomel branch), Gomel (1 year, 4 months)<br />
-<span style="font-style:italic;font-size:smaller">XIMAD, Inc. and XIM, Inc. have joint headquarters</span></td>
+<span class="cv-ital cv-smlr">XIMAD, Inc. and XIM, Inc. have joint headquarters</span></td>
 </tr>
 <tr>
-<td colspan="2">Job position: <span style="font-weight:bold">Senior Software Developer of the Web Development Department</span></td>
+<td colspan="2">Job position: <span class="cv-bold">Senior Software Developer of the Web Development Department</span></td>
 </tr>
 <tr>
 <td>Jul 2011 &ndash; Dec 2011</td>
-<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">Mobility Traffic Mediation Solution (Media Optimizer and Web Optimizer), <span style="color:#000080">[Openwave Systems Inc. (off-site)]</span></div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Project description:</span> Integrated complex project that targets the development of the NGP (Next Generation Proxy) proxy server. This server together with its plugins Media Optimizer and Web Optimizer is designed as a mediation layer to reduce traffic loads which highly affect the network infrastructures of Internet service providers and mobile network operators when they operate on and transmit dense mobile traffic to the users' and abonents' mobile devices.</div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Personal role in the project:</span> General bug fixing activities in the mainline branch of the Media Optimizer (Java) and Web Optimizer (C++) plugins according to official bug reports issued by the QA team. Mainly, having responsibilities on bug fixing, rebuilding, deploying in a test env., and testing the crucial component of the Media Optimizer plugin called ViDeO (Video Delivery Optimizer). Documenting.</div>
-<div style="font-weight:bold">Tools and technologies used:</div>
-<ul style="text-align:left">
+<td><div class="cv-bottom10 cv-left cv-lrgr cv-bold">Mobility Traffic Mediation Solution (Media Optimizer and Web Optimizer), <span class="cv-cust">[Openwave Systems Inc. (off-site)]</span></div>
+<div class="cv-bottom10"><span class="cv-bold">Project description:</span> Integrated complex project that targets the development of the NGP (Next Generation Proxy) proxy server. This server together with its plugins Media Optimizer and Web Optimizer is designed as a mediation layer to reduce traffic loads which highly affect the network infrastructures of Internet service providers and mobile network operators when they operate on and transmit dense mobile traffic to the users' and abonents' mobile devices.</div>
+<div class="cv-bottom10"><span class="cv-bold">Personal role in the project:</span> General bug fixing activities in the mainline branch of the Media Optimizer (Java) and Web Optimizer (C++) plugins according to official bug reports issued by the QA team. Mainly, having responsibilities on bug fixing, rebuilding, deploying in a test env., and testing the crucial component of the Media Optimizer plugin called ViDeO (Video Delivery Optimizer). Documenting.</div>
+<div class="cv-bold">Tools and technologies used:</div>
+<ul  class="cv-left">
 <li>Dev OS: FreeBSD/amd64 (KDE); Ubuntu amd64 (Window Maker)</li>
 <li>Server OS: CentOS x86_64; Red Hat Enterprise Linux Server x86_64</li>
 <li>Java SE / EE, ISO C++, Bash Shell Script, Perl 5, XML</li>
@@ -591,11 +591,11 @@
 </tr>
 <tr>
 <td>Sep 2010 &ndash; Jun 2011</td>
-<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">Atlas Information Governance Suite (Policy Atlas), <span style="color:#000080">[PSS Systems, an IBM Company (off-site)]</span></div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Project description:</span> Policy Atlas is the web-based management information system that unifies Legal, IT, Records Management, Finance and Lines of Business to eliminate unnecessary discovery and data management risk and cost. The Suite includes enterprise workflow, decision support tools and a unified inventory of assets and their legal obligations and business value. Atlas enables company to meet its duties for legal information governance and to identify and eliminate data with no business value or legal obligation.</div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Personal role in the project:</span> Java modules coding, JavaScript modules coding, Bash scripts coding. The main task is to develop and maintain complex, interactively overloaded web page "Matter Exceptions and Alerts". Bug fixing in other modules of the application. Also having responsibilities for development of the (auxiliary) patching utility intended to simplify and accelerate Policy Atlas application deployment.</div>
-<div style="font-weight:bold">Tools and technologies used:</div>
-<ul style="text-align:left">
+<td><div class="cv-bottom10 cv-left cv-lrgr cv-bold">Atlas Information Governance Suite (Policy Atlas), <span class="cv-cust">[PSS Systems, an IBM Company (off-site)]</span></div>
+<div class="cv-bottom10"><span class="cv-bold">Project description:</span> Policy Atlas is the web-based management information system that unifies Legal, IT, Records Management, Finance and Lines of Business to eliminate unnecessary discovery and data management risk and cost. The Suite includes enterprise workflow, decision support tools and a unified inventory of assets and their legal obligations and business value. Atlas enables company to meet its duties for legal information governance and to identify and eliminate data with no business value or legal obligation.</div>
+<div class="cv-bottom10"><span class="cv-bold">Personal role in the project:</span> Java modules coding, JavaScript modules coding, Bash scripts coding. The main task is to develop and maintain complex, interactively overloaded web page "Matter Exceptions and Alerts". Bug fixing in other modules of the application. Also having responsibilities for development of the (auxiliary) patching utility intended to simplify and accelerate Policy Atlas application deployment.</div>
+<div class="cv-bold">Tools and technologies used:</div>
+<ul  class="cv-left">
 <li>Dev OS: Kubuntu i386</li>
 <li>Java EE, Java Servlet, JSP, JSTL, JSF, JDBC, XML, XHTML, CSS, SQL</li>
 <li>JavaScript, Bash Shell Script</li>
@@ -610,15 +610,15 @@
 <td colspan="2" class="cv-header">Mar 2009 &ndash; Aug 2010, Development work at the Dubna Technopark, Dubna, including development work at the FE Brickbuild (Belarusian branch of Dubna Technopark), Gomel (1 year, 5 months)</td>
 </tr>
 <tr>
-<td colspan="2">Job position: <span style="font-weight:bold">Senior Software Developer of the Expert Systems Development Centre</span></td>
+<td colspan="2">Job position: <span class="cv-bold">Senior Software Developer of the Expert Systems Development Centre</span></td>
 </tr>
 <tr>
 <td>Mar 2009 &ndash; Aug 2010</td>
-<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">Intellectual automated control system (IACS) "Trainflow", <span style="color:#000080">[Dubna Technopark]</span></div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Project description:</span> IACS "Trainflow" is the centralized management information system having its purpose to control and maintain the real-time process of optimal timing and routing the freight trains inside both Russian and Belarusian railway systems with no any constraints.</div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Personal role in the project:</span> G2 and ASP.NET modules coding, JavaScript modules coding, creating, building and mastering the original design for the web part of the application and performing related tasks. Having responsibilities for part of the project belonging to development of the subsystem for dynamic generating the railway system interactive web reports (presentation layer); usability and accessibility-expert.</div>
-<div style="font-weight:bold">Tools and technologies used:</div>
-<ul style="text-align:left">
+<td><div class="cv-bottom10 cv-left cv-lrgr cv-bold">Intellectual automated control system (IACS) "Trainflow", <span class="cv-cust">[Dubna Technopark]</span></div>
+<div class="cv-bottom10"><span class="cv-bold">Project description:</span> IACS "Trainflow" is the centralized management information system having its purpose to control and maintain the real-time process of optimal timing and routing the freight trains inside both Russian and Belarusian railway systems with no any constraints.</div>
+<div class="cv-bottom10"><span class="cv-bold">Personal role in the project:</span> G2 and ASP.NET modules coding, JavaScript modules coding, creating, building and mastering the original design for the web part of the application and performing related tasks. Having responsibilities for part of the project belonging to development of the subsystem for dynamic generating the railway system interactive web reports (presentation layer); usability and accessibility-expert.</div>
+<div class="cv-bold">Tools and technologies used:</div>
+<ul  class="cv-left">
 <li>Gensym G2 Platform</li>
 <li>Gensym G2 Programming Language</li>
 <li>Gensym G2 Server and built-in HTTP Server</li>
@@ -636,15 +636,15 @@
 <td colspan="2" class="cv-header">Sep 2003 &ndash; Sep 2008, Development work at the FE IBA-Gomel, Gomel (5 years)</td>
 </tr>
 <tr>
-<td colspan="2">Job position: <span style="font-weight:bold">Senior Software Developer of the E-Business Division</span></td>
+<td colspan="2">Job position: <span class="cv-bold">Senior Software Developer of the E-Business Division</span></td>
 </tr>
 <tr>
 <td>Jul 2008 &ndash; Sep 2008</td>
-<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">Automated information system (AIS) "KDT", <span style="color:#000080">[IBA-Gomel]</span></div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Project description:</span> AIS "KDT" is the management information system having its purpose to control and maintain the process of delivering the particular groups of commodities inside complex economical systems such as a trade system.</div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Personal role in the project:</span> Java modules coding and performing related tasks. Having responsibilities for part of the project belonging to development of the managing the user accounts portlet for large portal system (business and presentation layers).</div>
-<div style="font-weight:bold">Tools and technologies used:</div>
-<ul style="text-align:left">
+<td><div class="cv-bottom10 cv-left cv-lrgr cv-bold">Automated information system (AIS) "KDT", <span class="cv-cust">[IBA-Gomel]</span></div>
+<div class="cv-bottom10"><span class="cv-bold">Project description:</span> AIS "KDT" is the management information system having its purpose to control and maintain the process of delivering the particular groups of commodities inside complex economical systems such as a trade system.</div>
+<div class="cv-bottom10"><span class="cv-bold">Personal role in the project:</span> Java modules coding and performing related tasks. Having responsibilities for part of the project belonging to development of the managing the user accounts portlet for large portal system (business and presentation layers).</div>
+<div class="cv-bold">Tools and technologies used:</div>
+<ul  class="cv-left">
 <li>Java EE</li>
 <li>Java Portlet, Java Servlet, JSP, JDBC, XML, XHTML, SQL, PUMA SPI</li>
 <li>IBM WebSphere Portal Server</li>
@@ -660,11 +660,11 @@
 </tr>
 <tr>
 <td>May 2008 &ndash; Jul 2008</td>
-<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">IBM AS RM Metro, <span style="color:#000080">[IBM Netherlands, IBM Germany (off-site)]</span></div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Project description:</span> Web-based application that empowers managers with the ability and functionality to perform capacity planning and operational optimizations inside IBM. In other words, this is the tool to manage any and all resource changes.</div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Personal role in the project:</span> Java modules coding and performing related tasks. Having responsibilities for parts of the project belonging to front-end presentation layer, so called "user interaction".</div>
-<div style="font-weight:bold">Tools and technologies used:</div>
-<ul style="text-align:left">
+<td><div class="cv-bottom10 cv-left cv-lrgr cv-bold">IBM AS RM Metro, <span class="cv-cust">[IBM Netherlands, IBM Germany (off-site)]</span></div>
+<div class="cv-bottom10"><span class="cv-bold">Project description:</span> Web-based application that empowers managers with the ability and functionality to perform capacity planning and operational optimizations inside IBM. In other words, this is the tool to manage any and all resource changes.</div>
+<div class="cv-bottom10"><span class="cv-bold">Personal role in the project:</span> Java modules coding and performing related tasks. Having responsibilities for parts of the project belonging to front-end presentation layer, so called "user interaction".</div>
+<div class="cv-bold">Tools and technologies used:</div>
+<ul  class="cv-left">
 <li>Java EE</li>
 <li>Java Servlet, JSP, JDBC, JavaMail, XML, XHTML, SQL</li>
 <li>The Apache Struts Web Application Framework</li>
@@ -677,11 +677,11 @@
 </tr>
 <tr>
 <td>Feb 2008 &ndash; May 2008</td>
-<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">Automated information system (AIS) "KDT", <span style="color:#000080">[IBA-Gomel]</span></div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Project description:</span> AIS "KDT" is the management information system having its purpose to control and maintain the process of delivering the particular groups of commodities inside complex economical systems such as a trade system.</div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Personal role in the project:</span> Java modules coding and performing related tasks. Having responsibilities for part of the project belonging to the common graphical user interface design and development (presentation layer).</div>
-<div style="font-weight:bold">Tools and technologies used:</div>
-<ul style="text-align:left">
+<td><div class="cv-bottom10 cv-left cv-lrgr cv-bold">Automated information system (AIS) "KDT", <span class="cv-cust">[IBA-Gomel]</span></div>
+<div class="cv-bottom10"><span class="cv-bold">Project description:</span> AIS "KDT" is the management information system having its purpose to control and maintain the process of delivering the particular groups of commodities inside complex economical systems such as a trade system.</div>
+<div class="cv-bottom10"><span class="cv-bold">Personal role in the project:</span> Java modules coding and performing related tasks. Having responsibilities for part of the project belonging to the common graphical user interface design and development (presentation layer).</div>
+<div class="cv-bold">Tools and technologies used:</div>
+<ul  class="cv-left">
 <li>Java EE</li>
 <li>Eclipse SWT, JDBC, XML, SQL</li>
 <li>IBM WebSphere Application Server</li>
@@ -693,11 +693,11 @@
 </tr>
 <tr>
 <td>May 2006 &ndash; Feb 2008</td>
-<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">IBM Web Solutions Enabler (WSE), <span style="color:#000080">[IBM Italy, IBM France (on-site/off-site)]</span></div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Project description:</span> Web-based project that provides functions to allow the creation, maintenance and operation of a number of IBM Intranet and Internet solutions (WSE eSolutions) according to the end-users' and customers' needs through the "Application Modeling" and "Application Runtime" interfaces. <em>The project is for IBM Italia S.p.A.</em></div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Personal role in the project:</span> Java modules coding and performing related tasks. Having responsibilities for parts of the project belonging to application configure and runtime stages in preparing certain eSolutions (business and presentation layers).</div>
-<div style="font-weight:bold">Tools and technologies used:</div>
-<ul style="text-align:left">
+<td><div class="cv-bottom10 cv-left cv-lrgr cv-bold">IBM Web Solutions Enabler (WSE), <span class="cv-cust">[IBM Italy, IBM France (on-site/off-site)]</span></div>
+<div class="cv-bottom10"><span class="cv-bold">Project description:</span> Web-based project that provides functions to allow the creation, maintenance and operation of a number of IBM Intranet and Internet solutions (WSE eSolutions) according to the end-users' and customers' needs through the "Application Modeling" and "Application Runtime" interfaces. <em>The project is for IBM Italia S.p.A.</em></div>
+<div class="cv-bottom10"><span class="cv-bold">Personal role in the project:</span> Java modules coding and performing related tasks. Having responsibilities for parts of the project belonging to application configure and runtime stages in preparing certain eSolutions (business and presentation layers).</div>
+<div class="cv-bold">Tools and technologies used:</div>
+<ul  class="cv-left">
 <li>Java EE</li>
 <li>Java Servlet, JSP, JDBC, JavaMail, iText, XML, XHTML, SQL</li>
 <li>The Apache Struts Web Application Framework</li>
@@ -710,11 +710,11 @@
 </tr>
 <tr>
 <td>Jul 2004 &ndash; May 2006</td>
-<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">GME Engineering Business Systems Sustain (EBSS), <span style="color:#000080">[General Motors Europe, IBM Germany (on-site/off-site)]</span></div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Project description:</span> Provides enterprise business maintenance and sustain for a bunch of applications with the purposes to manage and control business processes of production infrastructure on various GME vehicle plants, in particular, on Adam Opel AG plants. <em>The project is for General Motors Europe.</em></div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Personal role in the project:</span> Java modules coding, modifying existing third-party code, general application bug fixing and performing related tasks; performing standard operations (password reset, user account management, etc.) in the 24x7 schedule. Having responsibilities for maintenance and support of the HMCS Global (Hazardous Material Control System) and INFO2000 applications and for performing standard operations in the 24x7 schedule for these two and for three other related applications through the GME Help Desk.</div>
-<div style="font-weight:bold">Tools and technologies used:</div>
-<ul style="text-align:left">
+<td><div class="cv-bottom10 cv-left cv-lrgr cv-bold">GME Engineering Business Systems Sustain (EBSS), <span class="cv-cust">[General Motors Europe, IBM Germany (on-site/off-site)]</span></div>
+<div class="cv-bottom10"><span class="cv-bold">Project description:</span> Provides enterprise business maintenance and sustain for a bunch of applications with the purposes to manage and control business processes of production infrastructure on various GME vehicle plants, in particular, on Adam Opel AG plants. <em>The project is for General Motors Europe.</em></div>
+<div class="cv-bottom10"><span class="cv-bold">Personal role in the project:</span> Java modules coding, modifying existing third-party code, general application bug fixing and performing related tasks; performing standard operations (password reset, user account management, etc.) in the 24x7 schedule. Having responsibilities for maintenance and support of the HMCS Global (Hazardous Material Control System) and INFO2000 applications and for performing standard operations in the 24x7 schedule for these two and for three other related applications through the GME Help Desk.</div>
+<div class="cv-bold">Tools and technologies used:</div>
+<ul  class="cv-left">
 <li>Sun Java 2 Platform Standard Edition (J2SE)</li>
 <li>Sun Java 2 Platform Enterprise Edition (J2EE)</li>
 <li>Java Swing, Java Servlet, JDBC, XML, XHTML, SQL</li>
@@ -729,11 +729,11 @@
 </tr>
 <tr>
 <td>Feb 2004 &ndash; Jul 2004</td>
-<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">IBM Web Solutions Enabler (WSE), <span style="color:#000080">[IBM Italy, IBM France (on-site/off-site)]</span></div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Project description:</span> Web-based project that provides functions to allow the creation, maintenance and operation of a number of IBM Intranet and Internet solutions (WSE eSolutions) according to the end-users' and customers' needs through the "Application Modeling" interface. <em>The project is for IBM Italia S.p.A.</em></div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Personal role in the project:</span> Java modules coding and performing related tasks. Having responsibilities for part of the project belonging to the application configure stage in preparing certain eSolutions (business and presentation layers).</div>
-<div style="font-weight:bold">Tools and technologies used:</div>
-<ul style="text-align:left">
+<td><div class="cv-bottom10 cv-left cv-lrgr cv-bold">IBM Web Solutions Enabler (WSE), <span class="cv-cust">[IBM Italy, IBM France (on-site/off-site)]</span></div>
+<div class="cv-bottom10"><span class="cv-bold">Project description:</span> Web-based project that provides functions to allow the creation, maintenance and operation of a number of IBM Intranet and Internet solutions (WSE eSolutions) according to the end-users' and customers' needs through the "Application Modeling" interface. <em>The project is for IBM Italia S.p.A.</em></div>
+<div class="cv-bottom10"><span class="cv-bold">Personal role in the project:</span> Java modules coding and performing related tasks. Having responsibilities for part of the project belonging to the application configure stage in preparing certain eSolutions (business and presentation layers).</div>
+<div class="cv-bold">Tools and technologies used:</div>
+<ul  class="cv-left">
 <li>Sun Java 2 Platform Enterprise Edition (J2EE)</li>
 <li>Java Servlet, JSP, JDBC, XML, XHTML, SQL</li>
 <li>The Apache Struts Web Application Framework</li>
@@ -745,11 +745,11 @@
 </tr>
 <tr>
 <td>Nov 2003 &ndash; Feb 2004</td>
-<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">IBA Business Intelligence System (BIS), <span style="color:#000080">[IBA-Gomel]</span></div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Project description:</span> Web-based project that allows customers to analyze the intellectual resources of a company, to place orders for software coders with skills needed and to hire new workers.</div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Personal role in the project:</span> Business-logic modeling, Java modules coding and performing related tasks. Having responsibilities for part of the project concerning internal management processes, i.e. managing customers and orders lists, accepting and rejecting customers' profiles processes (business and presentation layers).</div>
-<div style="font-weight:bold">Tools and technologies used:</div>
-<ul style="text-align:left">
+<td><div class="cv-bottom10 cv-left cv-lrgr cv-bold">IBA Business Intelligence System (BIS), <span class="cv-cust">[IBA-Gomel]</span></div>
+<div class="cv-bottom10"><span class="cv-bold">Project description:</span> Web-based project that allows customers to analyze the intellectual resources of a company, to place orders for software coders with skills needed and to hire new workers.</div>
+<div class="cv-bottom10"><span class="cv-bold">Personal role in the project:</span> Business-logic modeling, Java modules coding and performing related tasks. Having responsibilities for part of the project concerning internal management processes, i.e. managing customers and orders lists, accepting and rejecting customers' profiles processes (business and presentation layers).</div>
+<div class="cv-bold">Tools and technologies used:</div>
+<ul  class="cv-left">
 <li>Sun Java 2 Platform Enterprise Edition (J2EE)</li>
 <li>Java Servlet, JSP, JDBC, XML, XHTML, SQL</li>
 <li>The Apache Struts Web Application Framework</li>
@@ -761,11 +761,11 @@
 </tr>
 <tr>
 <td>Sep 2003 &ndash; Nov 2003</td>
-<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">IBA Database Manager, <span style="color:#000080">[IBA-Gomel]</span></div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Project description:</span> Java (AWT) and C++ (Win32 API) GUI front ends for managing some databases. Advantages: fast adding, viewing and removing records to/from database tables through JDBC/ODBC interfaces.</div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Personal role in the project:</span> Java and C++ modules coding, database tables creating and modifying. Having responsibilities for the whole project.</div>
-<div style="font-weight:bold">Tools and technologies used:</div>
-<ul style="text-align:left">
+<td><div class="cv-bottom10 cv-left cv-lrgr cv-bold">IBA Database Manager, <span class="cv-cust">[IBA-Gomel]</span></div>
+<div class="cv-bottom10"><span class="cv-bold">Project description:</span> Java (AWT) and C++ (Win32 API) GUI front ends for managing some databases. Advantages: fast adding, viewing and removing records to/from database tables through JDBC/ODBC interfaces.</div>
+<div class="cv-bottom10"><span class="cv-bold">Personal role in the project:</span> Java and C++ modules coding, database tables creating and modifying. Having responsibilities for the whole project.</div>
+<div class="cv-bold">Tools and technologies used:</div>
+<ul  class="cv-left">
 <li>Sun Java 2 Platform Standard Edition (J2SE)</li>
 <li>Java Abstract Window Toolkit (AWT), JDBC, ODBC, SQL</li>
 <li>GNU Make</li>
@@ -778,36 +778,36 @@
 <td colspan="2" class="cv-header">Sep 1999 &ndash; Jul 2003, Research work at the Pavel Sukhoi Gomel State Technical University, Gomel, including research work at the Abdus Salam International Centre for Theoretical Physics, Trieste, Italy (4 years)</td>
 </tr>
 <tr>
-<td colspan="2">Job position: <span style="font-weight:bold">Research Assistant of the Department of Economics and Management</span></td>
+<td colspan="2">Job position: <span class="cv-bold">Research Assistant of the Department of Economics and Management</span></td>
 </tr>
 <tr>
 <td>Nov 2002 &ndash; Jul 2003</td>
-<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">Linear and Nonlinear Optimization Toolkit for Study Courses in Operations Research</div>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Project description:</span> Three packages for seeking optimal solutions:</div>
-<ul style="margin-bottom:10px">
+<td><div class="cv-bottom10 cv-left cv-lrgr cv-bold">Linear and Nonlinear Optimization Toolkit for Study Courses in Operations Research</div>
+<div class="cv-bottom10"><span class="cv-bold">Project description:</span> Three packages for seeking optimal solutions:</div>
+<ul  class="cv-bottom10">
 <li>Dense linear programming (revised simplex method)</li>
 <li>Quadratic programming (using the algorithm by Prof. Klaus Schittkowski)</li>
 <li>General nonlinear programming (nonlinearly constrained minimization)</li>
 </ul>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Personal role in the project:</span> Test problems formulating, mathematical programming algorithms exploring, and C packages coding. Having responsibilities for the whole project.</div>
-<div style="font-weight:bold">Tools and technologies used:</div>
-<ul style="text-align:left">
+<div class="cv-bottom10"><span class="cv-bold">Personal role in the project:</span> Test problems formulating, mathematical programming algorithms exploring, and C packages coding. Having responsibilities for the whole project.</div>
+<div class="cv-bold">Tools and technologies used:</div>
+<ul  class="cv-left">
 <li>GNU Make</li>
 <li>GNU Compiler Collection (GCC)</li>
 </ul></td>
 </tr>
 <tr>
 <td>Dec 1999 &ndash; Nov 2002</td>
-<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">Nonlinear Optimization Packages for Scientific Work</div>
-<div style="font-weight:bold">Project description:</div>
-<ul style="margin-bottom:10px">
+<td><div class="cv-bottom10 cv-left cv-lrgr cv-bold">Nonlinear Optimization Packages for Scientific Work</div>
+<div class="cv-bold">Project description:</div>
+<ul  class="cv-bottom10">
 <li>Java numerical implementation of the Hooke and Jeeves nonlinear optimization algorithm.</li>
 <li>C++ numerical implementation of the Nelder-Mead simplex method.</li>
 <li>Java numerical implementation of the Quasi-Newton nonlinear optimization technique.</li>
 </ul>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Personal role in the project:</span> Test problems formulating, mathematical programming algorithms exploring, and Java/C++ packages coding. Having responsibilities for the whole project.</div>
-<div style="font-weight:bold">Tools and technologies used:</div>
-<ul style="text-align:left">
+<div class="cv-bottom10"><span class="cv-bold">Personal role in the project:</span> Test problems formulating, mathematical programming algorithms exploring, and Java/C++ packages coding. Having responsibilities for the whole project.</div>
+<div class="cv-bold">Tools and technologies used:</div>
+<ul  class="cv-left">
 <li>Sun Java 2 Platform Standard Edition (J2SE)</li>
 <li>GNU Make</li>
 <li>IBM Jikes Compiler</li>
@@ -816,15 +816,15 @@
 </tr>
 <tr>
 <td>Sep 1999 &ndash; Dec 1999</td>
-<td><div style="margin-bottom:10px;text-align:left;font-size:larger;font-weight:bold">Scientific Data Conversion and Visualizing Utilities</div>
-<div style="font-weight:bold">Project description:</div>
-<ul style="margin-bottom:10px">
+<td><div class="cv-bottom10 cv-left cv-lrgr cv-bold">Scientific Data Conversion and Visualizing Utilities</div>
+<div class="cv-bold">Project description:</div>
+<ul  class="cv-bottom10">
 <li>A template program for using applied scientific software calculations in AutoCAD system for visualizing numerical data.</li>
 <li>A utility program for converting applied scientific software output to AutoCAD DXF format.</li>
 </ul>
-<div style="margin-bottom:10px"><span style="font-weight:bold">Personal role in the project:</span> Developing appropriate algorithms; C and C++ packages coding. Having responsibilities for the whole project.</div>
-<div style="font-weight:bold">Tools and technologies used:</div>
-<ul style="text-align:left">
+<div class="cv-bottom10"><span class="cv-bold">Personal role in the project:</span> Developing appropriate algorithms; C and C++ packages coding. Having responsibilities for the whole project.</div>
+<div class="cv-bold">Tools and technologies used:</div>
+<ul  class="cv-left">
 <li>GNU Make</li>
 <li>GNU Compiler Collection (GCC)</li>
 <li>AutoCAD Development System Runtime Extension (ADSRX)</li>
