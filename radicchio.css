@@ -177,10 +177,6 @@ pre code {
 
 /* ------------------------------------------------------------------------- */
 
-p.cv-left {
-    text-align:       left;
-}
-
 #cv-cont0,
 #cv-cont1,
 #cv-cont2,
@@ -309,6 +305,19 @@ p.cv-left {
     font-size:        larger;
 }
 
+#cv-table3 td span.cv-smlr {
+    font-size:        smaller;
+}
+
+#cv-table3 td span.cv-ital {
+    font-style:       italic;
+}
+
+#cv-table3 td span.cv-cust {
+    color:            #000080;
+}
+
+                p.cv-left,
 #cv-table3 td div.cv-left,
 #cv-table3 td  ul.cv-left {
     text-align:       left;
