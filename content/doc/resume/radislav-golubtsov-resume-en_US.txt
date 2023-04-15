@@ -498,7 +498,7 @@ Aug 2018
 Nov 2017 -      Mercer Enhance: Machine Learning for Job Matching
 Apr 2018
                 Project description: Development of REST API microservices in
-                Python running inside Docker containers which are communicate
+                Python running inside Docker containers which communicate with
                 each other through the REST model. They are built on top of
                 business layer that is responsible for deep learning of a
                 series of data models, and returning sets of encumbents
