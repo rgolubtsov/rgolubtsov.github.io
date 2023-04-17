@@ -15,86 +15,85 @@
                 * IBM PowerPC
                 * Sun SPARCstation
 
-Операционные    Юниксы и их производные (OpenBSD, FreeBSD, Arch Linux, Debian
-системы         GNU/Linux, Ubuntu, Fedora, CentOS, Red Hat Enterprise Linux,
+Операционные    Юниксы и их производные (OpenBSD, FreeBSD, Arch  Linux,  Debian
+системы         GNU/Linux, Ubuntu, Fedora, CentOS, Red  Hat  Enterprise  Linux,
                 Mac OS X, HP-UX, IBM AIX, Sun Solaris). Microsoft Windows
 
-Языки програм-  Java, Clojure, Perl 5, Python, Bash Shell Script, JavaScript
+Языки програм-  Java, Clojure, Perl 5, Python, Bash  Shell  Script,  JavaScript
 мирования       (ES5-6/Node.js), C, Go, GNOME Vala/Genie, Lua, C++,Objective-C,
                 Fortran 95, Erlang, Elixir, LFE (Lisp Flavoured Erlang)
 
-Технологии      * Java SE / EE, Spring Boot, Spring Web MVC, Spring Security,
-                  Java Servlet, JavaServer Pages (JSP), JSP Standard Tag
+Технологии      * Java SE / EE, Spring Boot, Spring Web MVC,  Spring  Security,
+                  Java  Servlet,  JavaServer  Pages  (JSP),  JSP  Standard  Tag
                   Library(JSTL), Java Portlet, Eclipse Vert.x, Play! Framework,
-                  Vaadin Framework, Apache Struts / Struts 2, JavaServer Faces
-                  (JSF), Java Database Connectivity (JDBC), JavaMail,
-                  Java Swing, Eclipse Standard Widget Toolkit (SWT),
-                  iText (Java-PDF Library), JNA (Java Native Access),
-                  SLF4J, Log4j, Syslog4j и др.
-                * Clojure - диалект языка Lisp-1 для JVM, Clojure Standard
-                  Library,HTTP Kit(библиотека HTTP клиент-сервера для Clojure),
-                  Extensible Data Notation (edn)
-                * Perl и связанные модули, библиотеки и фреймворки (DBI, CGI,
-                  LWP, Mojolicious, Text::Xslate, Asterisk::AGI,
+                  Vaadin Framework, Apache Struts / Struts 2, JavaServer  Faces
+                  (JSF), Java  Database  Connectivity  (JDBC),  JavaMail,  Java
+                  Swing, Eclipse Standard Widget Toolkit (SWT), iText (Java-PDF
+                  Library), JNA (Java Native Access),  SLF4J,  Log4j,  Syslog4j
+                  и др.
+                * Clojure - диалект языка  Lisp-1  для  JVM,  Clojure  Standard
+                  Library,  HTTP  Kit  (библиотека  HTTP   клиент-сервера   для
+                  Clojure), Extensible Data Notation (edn)
+                * Perl и связанные модули, библиотеки и фреймворки  (DBI,  CGI,
+                  LWP,      Mojolicious,      Text::Xslate,      Asterisk::AGI,
                   Net::DNS::Native, IO::Select и др.)
-                * Python и связанные модули, библиотеки и фреймворки (Python
-                  Standard Library, Twisted Web, Klein, Falcon, Flask, Celery,
+                * Python и связанные модули, библиотеки  и  фреймворки  (Python
+                  Standard Library, Twisted Web, Klein, Falcon, Flask,  Celery,
                   Django REST framework, ReportLab PDF Toolkit и др.)
-                * Node.js / Luvit, Harpjs.com, EJS, jQuery, HTML, CSS, XML,
-                  YAML, JSON, SQL, HTTP(S), (S)FTP, SSH, SCP,
-                  REST-микросервисы и др.
-                * API ядра Linux, модули ядра Linux (драйвер блочного
+                * Node.js / Luvit, Harpjs.com, EJS,  jQuery,  HTML,  CSS,  XML,
+                  YAML, JSON, SQL, HTTP(S), (S)FTP, SSH, SCP, REST-микросервисы
+                  и др.
+                * API  ядра  Linux,  модули  ядра   Linux   (драйвер   блочного
                   устройства)
                 * IVR (интерактивные голосовые сервисы) на основе АТС Asterisk
-                * GNU C Library (glibc), GNU C++ Library (libstdc++),
-                  GNU libmicrohttpd (C-библиотека для создания легковесного
-                  многопоточного HTTP-сервера), GNUstep / Cocoa API,
-                  GNOME libsoup
-                * GTFS Realtime (General Transit Feed Specification),
+                * GNU  C  Library  (glibc),  GNU   C++   Library   (libstdc++),
+                  GNU libmicrohttpd  (C-библиотека  для  создания  легковесного
+                  многопоточного HTTP-сервера),  GNUstep  /  Cocoa  API,  GNOME
+                  libsoup
+                * GTFS   Realtime   (General   Transit   Feed   Specification),
                   Google Text-To-Speech API
-                * Erlang/OTP, ERTS (Erlang Run-Time System),
-                  Erlang Standard Library
-                * Elixir, Elixir Standard Library, Cowboy (библиотека
-                  веб-сервера для Erlang/OTP)
-                * LFE (Lisp Flavoured Erlang) - диалект языка Lisp-2+
-                  для Erlang VM
+                * Erlang/OTP, ERTS (Erlang Run-Time  System),  Erlang  Standard
+                  Library
+                * Elixir, Elixir  Standard  Library,  Cowboy  (библиотека  веб-
+                  сервера для Erlang/OTP)
+                * LFE (Lisp Flavoured Erlang) - диалект Lisp-2+ для Erlang VM
                 * CMS: WordPress, TYPO3, Joomla!
 
-Средства        * Vim / vi, Eclipse Platform (Eclipse SDK), MyEclipse Blue
-разработки        Edition, Oracle JDeveloper, IBM Rational Software Architect
-                  (RSA),  IBM Rational Application Developer (RAD),
+Средства        * Vim / vi, Eclipse  Platform  (Eclipse  SDK),  MyEclipse  Blue
+разработки        Edition, Oracle JDeveloper, IBM Rational  Software  Architect
+                  (RSA),   IBM   Rational    Application    Developer    (RAD),
                   IBM WebSphere Studio Application Developer (WSAD)
-                * GNU Bash, GNU Screen, GNU Toolchain: GNU Make, GNU Compiler
+                * GNU Bash, GNU Screen, GNU Toolchain: GNU Make,  GNU  Compiler
                   Collection (GCC): gcc, g++, gcc-objc, gfortran; GNU Binutils,
-                  GNU Debugger (GDB), GNUstep, sed и др. Clang (C / C++ /
-                  Objective-C LLVM compiler front end), TCC (Fabrice Bellard's
+                  GNU Debugger (GDB), GNUstep, sed и  др.  Clang  (C  /  C++  /
+                  Objective-C LLVM compiler front end), TCC (Fabrice  Bellard's
                   Tiny C Compiler)
                 * Apache Maven, Apache Ant, Leiningen, Rebar3
 
 СУБД            PostgreSQL, MySQL / MariaDB, Oracle Database, IBM DB2 Universal
                 Database, SQLite, MongoDB, Redis
 
-Серверы         * Netty, Undertow, Apache Tomcat, JBoss Application Server /
-приложений /      WildFly, IBM WebSphere Application Server / Portal Server,
+Серверы         * Netty, Undertow, Apache Tomcat, JBoss  Application  Server  /
+приложений /      WildFly, IBM WebSphere Application Server  /  Portal  Server,
 веб-серверы       Apache Pluto
-                * HTTP Kit (веб-сервер для Clojure),
-                  Cowboy (веб-сервер для Erlang/OTP)
-                * Серверы приложений, основанные на Perl: Twiggy, Hypnotoad,
+                * HTTP  Kit  (веб-сервер  для  Clojure),   Cowboy   (веб-сервер
+                  для Erlang/OTP)
+                * Серверы приложений, основанные на  Perl:  Twiggy,  Hypnotoad,
                   Mojo::Server::Daemon
-                * uWSGI (Python/WSGI, Perl/PSGI), Gunicorn (Python/WSGI),
+                * uWSGI  (Python/WSGI,  Perl/PSGI),   Gunicorn   (Python/WSGI),
                   Twisted Reactor
                 * Node.js, Luvit (Lua), PHP-FPM (FastCGI Process Manager)
                 * Nginx, Apache HTTP Server
 
 Приложения      Git, GitHub, GitLab, Bitbucket, Perforce (P4), Subversion(SVN),
-промежуточного  Concurrent Versions System (CVS), JIRA, Redmine, Trac, Trello,
-слоя / разные   MediaWiki, Doxygen, Samba, Travis CI и Jenkins CI/CD, Docker
+промежуточного  Concurrent Versions System (CVS), JIRA, Redmine, Trac,  Trello,
+слоя / разные   MediaWiki, Doxygen, Samba, Travis CI и  Jenkins  CI/CD,  Docker
                 (и Docker Compose), Cron, QEMU, Zabbix и др.
 
 ====== Языки ==================================================================
 
 Английский      Уровень, достаточный для повседневной работы и общения:
-                * чтение / письмо - свободное владение
+                * чтение / письмо  - свободное владение
                 * разговорная речь - уровень Upper Intermediate (B1-B2)
 
 Русский         Родной язык
@@ -106,32 +105,32 @@
 Май   2002 -    Аспирант Гомельского государственного технического университета
 июль  2003      имени П. О. Сухого
 
-Окт.  2001 -    Магистрант Международного центра теоретической физики
-май   2002      имени Абдуса Салама, Триест, Италия
+Окт.  2001 -    Магистрант Международного  центра  теоретической  физики  имени
+май   2002      Абдуса Салама, Триест, Италия
 
 Нояб. 1999 -    Аспирант Гомельского государственного технического университета
 окт.  2001      имени П. О. Сухого
 
-1994-1999       Студент Гомельского государственного технического университета
+1994-1999       Студент Гомельского государственного технического  университета
                 имени П. О. Сухого, Гомель, Беларусь (диплом "С отличием")
 
 ====== Профессиональный опыт (в обратном хронологическом порядке) =============
 
 Июль 2022 - окт. 2022, работа в ОАО "Милкавита", Гомель (4 месяца)
-                       * Совершенствование и актуализация пакета политик
+                       * Совершенствование  и   актуализация   пакета   политик
                          информационной безопасности предприятия.
                        * Администрирование, сопровождение и доработка (контент-
-                         менеджмент, веб-мастеринг, веб-дизайн) корпоративного
+                         менеджмент, веб-мастеринг, веб-дизайн)  корпоративного
                          веб-сайта.
                        * Установка, настройка,администрирование и сопровождение
                          системы управления проектами и задачами Redmine.
                        * Установка, настройка,администрирование и сопровождение
                          системы мониторинга ЛВС Zabbix.
-                       * Настройка, администрирование и сопровождение
-                         Linux-серверов (Ubuntu, Red Hat).
-                       * Введение в строй новых и замена отказавших камер
+                       * Настройка, администрирование  и  сопровождение  Linux-
+                         серверов (Ubuntu, Red Hat).
+                       * Введение в  строй  новых  и  замена  отказавших  камер
                          видеонаблюдения.
-                       * Оказание необходимой помощи системному администратору
+                       * Оказание необходимой помощи системному  администратору
                          предприятия по различным задачам.
 
 Должность: инженер-программист управления автоматизации производственных
