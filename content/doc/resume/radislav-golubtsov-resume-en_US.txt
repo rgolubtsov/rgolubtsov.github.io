@@ -147,31 +147,31 @@ Job position: Lead Software Developer of the Information Technology Centre
 Aug 2021 -      Web apps for enrollees to get the information regarding
 Sep 2021                   entrance exams results and admission decrees
 
-                Project description: Design, development, testing, and
-                deployment of standalone web applications, targeted enrollees
-                to get the information regarding their entrance exams results
+                Project  description:   Design,   development,   testing,   and
+                deployment of standalone web applications,  targeted  enrollees
+                to get the information regarding their entrance  exams  results
                 and admission decrees. These are the following apps:
 
                 * Stage 1 Entrance Exams Results
                 * Stage 1 Admission Decree
                 * Magistracy Admission Decree
 
-                The customer of the project is the admission committee
+                The  customer  of  the  project  is  the  admission   committee
                 of the University.
 
-                Personal role in the project: Creating the database schema and
+                Personal role in the project: Creating the database schema  and
                 designing the common apps architecture. Development of business
-                logic modules of the apps and corresponding web pages.
-                Implementing the user authentication and authorization
-                mechanism for enrollees to allow them to get access to their
-                personal data regarding entrance exams results and admission
-                decrees. Making configuration changes in the application
-                server, web server, and database server setups. Creating the
-                database and populating it with the enrollees data taken from
-                the admission committee of the University. Testing and
-                deploying the web apps, and finally starting them up according
-                to the working plans of the admission campaign
-                of the University.
+                logic  modules  of  the  apps  and  corresponding  web   pages.
+                Implementing  the   user   authentication   and   authorization
+                mechanism for enrollees to allow them to get  access  to  their
+                personal data regarding entrance exams  results  and  admission
+                decrees.  Making  configuration  changes  in  the   application
+                server, web server, and database server  setups.  Creating  the
+                database and populating it with the enrollees data  taken  from
+                the  admission  committee  of  the  University.   Testing   and
+                deploying the web apps, and finally starting them up  according
+                to  the  working  plans  of  the  admission  campaign  of   the
+                University.
 
                 Tools and technologies used:
                 *    Dev OS: Arch Linux, Ubuntu Server LTS x86-64 (VM:QEMU-KVM)
@@ -190,36 +190,36 @@ Jul 2021        of the University from one web server to another.
                 Development and deployment of the special backup system
                 to make regular backups of the new web portal of the University
 
-                Project description: Migrating five supplementary and
-                subsidiary websites of the University from the Apache HTTP
-                Server to the Nginx web server at the aim of optimizing their
-                performance, simplifying their administering, and load
+                Project   description:   Migrating   five   supplementary   and
+                subsidiary websites of the  University  from  the  Apache  HTTP
+                Server to the Nginx web server at the aim of  optimizing  their
+                performance,  simplifying   their   administering,   and   load
                 balancing between them.
-                Subproject: Development and deployment of the special backup
-                system to make regular backups of the new web portal of the
-                University (on a separate virtual machine and based on another
+                Subproject: Development and deployment of  the  special  backup
+                system to make regular backups of the new  web  portal  of  the
+                University (on a separate virtual machine and based on  another
                 Nginx web server; please see the previous project).
 
-                Personal role in the project: There was a number of consequent
-                tests performed against the Nginx web server for serving high
+                Personal role in the project: There was a number of  consequent
+                tests performed against the Nginx web server for  serving  high
                 loaded websites of the University. This was crucially important
-                to realize that in peak intervals, where the amount of client
-                requests was relatively big, Nginx showed great performance
-                comparing with the former their web server - Apache HTTP
-                Server. Thus, based on those tests a common decision was
-                taken - to replace the Apache web server with Nginx, i.e. to
-                completely migrate all the supplementary and subsidiary
-                websites of the University to Nginx. Such a decision has been
-                finally carried out with further sites' testing and supporting
+                to realize that in peak intervals, where the amount  of  client
+                requests was relatively big,  Nginx  showed  great  performance
+                comparing with the  former  their  web  server  -  Apache  HTTP
+                Server. Thus, based  on  those  tests  a  common  decision  was
+                taken - to replace the Apache web server with  Nginx,  i.e.  to
+                completely  migrate  all  the  supplementary   and   subsidiary
+                websites of the University to Nginx. Such a decision  has  been
+                finally carried out with further sites' testing and  supporting
                 on a brand new web server.
 
                 Development and deployment of the special backup system to make
-                regular backups of the new web portal of the University:
-                writing a Shell script and the corresponding FTP client
+                regular backups of  the  new  web  portal  of  the  University:
+                writing  a  Shell  script  and  the  corresponding  FTP  client
                 configuration for creating the web portal's CMS tarball and the
-                compressed dump of its accompanied database, and for uploading
-                them to the FTP server of the University using Cron jobs on a
-                daily basis. Creating a scenario for restoring the web portal
+                compressed dump of its accompanied database, and for  uploading
+                them to the FTP server of the University using Cron jobs  on  a
+                daily basis. Creating a scenario for restoring the  web  portal
                 from any of its backups taken from the University's FTP server.
 
                 Tools and technologies used:
@@ -236,39 +236,39 @@ Mar 2021 -      Analysis and selection of a CMS which is best fitted
 May 2021        to the new web portal of the University. Initial development
                 of the new web portal
 
-                Project description: Analysis of a series of freely
-                redistributable open source content management systems (CMS),
+                Project  description:  Analysis   of   a   series   of   freely
+                redistributable open source content management  systems  (CMS),
                 freely available extension modules (plugins) for them which are
-                required for building the new web portal of the University.
-                Selection of one of these CMSs and initial development of the
+                required for building the new web  portal  of  the  University.
+                Selection of one of these CMSs and initial development  of  the
                 new web portal of the University based on the CMS chosen.
 
-                Personal role in the project: Selection of the front-end theme
-                (template) for the new portal. Proving the three selected CMSs
+                Personal role in the project: Selection of the front-end  theme
+                (template) for the new portal. Proving the three selected  CMSs
                 in action: installation, configuration, navigation, and minimal
                 content populating to create a set of sample web pages. Namely,
-                these are: October CMS, TYPO3, and Joomla. Installation, fine
+                these are: October CMS, TYPO3, and Joomla.  Installation,  fine
                 tuning, and configuring a one of these three CMSs, that is best
-                fitted to the new web portal of the University, for its
-                building and evolving, and for the further management of its
-                parts and components during both development and normal
+                fitted to the  new  web  portal  of  the  University,  for  its
+                building and evolving, and for the further  management  of  its
+                parts  and  components  during  both  development  and   normal
                 production use. The main requirements are: (1) the CMS needs to
-                provide extended permissions and user roles management
-                functionality out of the box, (2) the existence of rich
-                community and ecosystem having freely available plugins for
+                provide  extended  permissions  and   user   roles   management
+                functionality out  of  the  box,  (2)  the  existence  of  rich
+                community and ecosystem having  freely  available  plugins  for
                 various purposes, (3) to provide the possibility to perform yet
-                simple content management-related tasks for users having too
-                diversed technical skills. Finally, the CMS chosen was Joomla!
-                and its accompanied RDBMS was MariaDB. Initial development of
-                the new web portal of the University based on this CMS:
-                selection of the front-end theme for the new portal,
-                development of the navigational structure, creating a set of
-                semi-dummy pages written in three languages (Russian,
-                Byelorussian, English). Also two special pages in these three
-                languages were completely designed, created, and populated
+                simple content management-related tasks for  users  having  too
+                diversed technical skills. Finally, the CMS chosen was  Joomla!
+                and its accompanied RDBMS was MariaDB. Initial  development  of
+                the new web  portal  of  the  University  based  on  this  CMS:
+                selection  of  the  front-end  theme  for   the   new   portal,
+                development of the navigational structure, creating  a  set  of
+                semi-dummy  pages  written   in   three   languages   (Russian,
+                Byelorussian, English). Also two special pages in  these  three
+                languages were  completely  designed,  created,  and  populated
                 ("About the University" and "Contacts"). Performing a whole set
-                of tasks regarding the virtual machine maintenance, the web
-                server configuring and other duties (please see for their
+                of tasks regarding the virtual  machine  maintenance,  the  web
+                server configuring and  other  duties  (please  see  for  their
                 description in the previous project).
 
                 Tools and technologies used:
@@ -288,30 +288,30 @@ Dec 2020 -      Development, deployment, maintenance, and support
 Feb 2021        of the website for one of the faculties of the University
                 (Faculty of professional development and personnel retraining)
 
-                Project description: Development, deployment, content
-                management, webmastering, maintenance, and support of the
-                website of the Faculty of professional development and
+                Project   description:   Development,    deployment,    content
+                management,  webmastering,  maintenance,  and  support  of  the
+                website  of  the  Faculty  of  professional   development   and
                 personnel retraining of the University.
 
-                Personal role in the project: Development of the logical
-                structure, navigation elements of the website. Adaptation of
-                content elements of web pages for mobile web browsers, doing
+                Personal role  in  the  project:  Development  of  the  logical
+                structure, navigation elements of the  website.  Adaptation  of
+                content elements of web pages for mobile  web  browsers,  doing
                 content populating the web pages and their further editing upon
                 faculty staff requests (content management-related activities).
-                Non-standard or multiple/mass content data changes or special
-                data and metadata changes using database management tools
-                besides CMS (also various DBA-related activities). Regular
-                monitoring of scheduled site's backing up operations and
-                analysis of respective logs and notifications. Analysis of
+                Non-standard or multiple/mass content data changes  or  special
+                data and  metadata  changes  using  database  management  tools
+                besides CMS  (also  various  DBA-related  activities).  Regular
+                monitoring  of  scheduled  site's  backing  up  operations  and
+                analysis of respective  logs  and  notifications.  Analysis  of
                 client requests to special and selective web pages and to their
-                respective underlying data, grepping for them in web server
-                access logs. Performing the full cycle of activities regarding
-                updating and upgrading packages of and the operating system
-                itself which is used to run web server, CMS, database, and
-                various vital system services. Updating the CMS and its
-                modules, plugins, translations, etc. Keeping the virtual
-                machine and the respective operating system to adhere to the
-                principles of high availability, reliability, and readiness.
+                respective underlying data, grepping for  them  in  web  server
+                access logs. Performing the full cycle of activities  regarding
+                updating and upgrading packages of  and  the  operating  system
+                itself which is used to run  web  server,  CMS,  database,  and
+                various  vital  system  services.  Updating  the  CMS  and  its
+                modules,  plugins,  translations,  etc.  Keeping  the   virtual
+                machine and the respective operating system to  adhere  to  the
+                principles of high availability,  reliability,  and  readiness.
                 SEO-related activities regarding this website.
 
                 Tools and technologies used:
@@ -327,10 +327,10 @@ Feb 2021        of the website for one of the faculties of the University
 Sep 2020 -      Enhancement, maintenance, and support of supplementary
 Nov 2020                     and subsidiary websites of the University
 
-                Project description: Design enhancements, content management,
-                webmastering, maintenance, and support of four supplementary
-                and subsidiary websites of the University, which are targeted
-                and used as extra informational resources to complement the
+                Project description: Design enhancements,  content  management,
+                webmastering, maintenance, and support  of  four  supplementary
+                and subsidiary websites of the University, which  are  targeted
+                and used as extra informational  resources  to  complement  the
                 main web portal of the University. Namely, these are:
 
                 * BTEU Academic Staff Personal Pages
@@ -338,25 +338,25 @@ Nov 2020                     and subsidiary websites of the University
                 * International Affairs Department of BTEU
                 * Publishing and Polygraphic Centre "Kopernik" of BTEU
 
-                Personal role in the project: Refinement of the overall
-                websites design, adaptation of content elements of web pages
-                for mobile web browsers, doing content populating the new
-                pages, editing the existing pages (content management-related
+                Personal  role  in  the  project:  Refinement  of  the  overall
+                websites design, adaptation of content elements  of  web  pages
+                for mobile web  browsers,  doing  content  populating  the  new
+                pages, editing the existing pages  (content  management-related
                 activities). Non-standard or multiple/mass content data changes
-                or special data and metadata changes using database management
-                tools besides CMS (also various DBA-related activities).
-                Regular monitoring of scheduled sites' backing up operations
-                and analysis of respective logs and notifications. Analysis of
+                or special data and metadata changes using database  management
+                tools  besides  CMS  (also  various  DBA-related   activities).
+                Regular monitoring of scheduled sites'  backing  up  operations
+                and analysis of respective logs and notifications. Analysis  of
                 client requests to special and selective web pages and to their
-                respective underlying data, grepping for them in web server
-                access logs. Performing the full cycle of activities regarding
-                updating and upgrading packages of and the operating system
-                itself which is used to run web server, CMS, database, and
-                various vital system services. Updating the CMS and its
+                respective underlying data, grepping for  them  in  web  server
+                access logs. Performing the full cycle of activities  regarding
+                updating and upgrading packages of  and  the  operating  system
+                itself which is used to run  web  server,  CMS,  database,  and
+                various  vital  system  services.  Updating  the  CMS  and  its
                 modules, plugins, sites' themes, translations, etc. Keeping the
-                virtual machine and the respective operating system to adhere
-                to the principles of high availability, reliability, and
-                readiness. Basic load balancing activities between sites and
+                virtual machine and the respective operating system  to  adhere
+                to  the  principles  of  high  availability,  reliability,  and
+                readiness. Basic load balancing activities  between  sites  and
                 managed SEO-related activities.
 
                 Tools and technologies used:
@@ -378,27 +378,27 @@ Job position: Salesforce Developer of the Software Development Department
 
 Nov 2019 -      Flosum ALM: Application Lifecycle Management Solution
 Jan 2020
-                Project description: Continuous development of the application
+                Project description: Continuous development of the  application
                 lifecycle management solution (Flosum), built on the Salesforce
-                platform, and the Dataplier app - a data migrator, metadata-
-                driven Salesforce app, aimed at transferring arbitrary data
+                platform, and the Dataplier app - a  data  migrator,  metadata-
+                driven Salesforce app, aimed  at  transferring  arbitrary  data
                 between Salesforce orgs.
 
                 (The customer of the project is Flosum, Inc.)
 
-                Personal role in the project: Testing the workability and
-                documenting the whole process of migrating data, based on the
-                Knowledge Article objects, using the Dataplier app. Creating
-                the Customers Community prototype, a Salesforce community, and
+                Personal role in  the  project:  Testing  the  workability  and
+                documenting the whole process of migrating data, based  on  the
+                Knowledge Article objects, using the  Dataplier  app.  Creating
+                the Customers Community prototype, a Salesforce community,  and
                 making initial development on its main page, including applying
-                the design and partial content to it, taken from the Zendesk
+                the design and partial content to it, taken  from  the  Zendesk
                 support website, dedicated to Flosum. Enabling, activating, and
-                initially populating the knowledge base, targeting the
-                Customers Community. Training the Flosum customers enablement
-                management representative (by recording a series of screen
-                videos) how to create knowledge articles and close cases using
-                those knowledge articles. Other activities include bug fixing
-                in back-end components of the Flosum app and improving their
+                initially  populating  the  knowledge   base,   targeting   the
+                Customers Community. Training the Flosum  customers  enablement
+                management representative (by  recording  a  series  of  screen
+                videos) how to create knowledge articles and close cases  using
+                those knowledge articles. Other activities include  bug  fixing
+                in back-end components of the Flosum app  and  improving  their
                 developer documentation.
 
                 Tools and technologies used:
@@ -1442,19 +1442,19 @@ Job position: Research Assistant of the Department of Economics and Management
 Nov 2002 -      Linear and Nonlinear Optimization Toolkit for Study Courses
 Jul 2003        in Operations Research
 
-                Project description: Three packages for seeking optimal
+                Project  description:  Three  packages  for   seeking   optimal
                 solutions:
 
                 * Dense linear programming (revised simplex method)
 
-                * Quadratic programming (using the algorithm
-                  by Prof. Klaus Schittkowski)
+                * Quadratic programming (using the  algorithm  by  Prof.  Klaus
+                  Schittkowski)
 
-                * General nonlinear programming (nonlinearly constrained
+                * General  nonlinear   programming   (nonlinearly   constrained
                   minimization)
 
-                Personal role in the project: Test problems formulating,
-                mathematical programming algorithms exploring, and C packages
+                Personal  role  in  the  project:  Test  problems  formulating,
+                mathematical programming algorithms exploring, and  C  packages
                 coding. Having responsibilities for the whole project.
 
                 Tools and technologies used:
@@ -1467,17 +1467,17 @@ Dec 1999 -      Nonlinear Optimization Packages for Scientific Work
 Nov 2002
                 Project description:
 
-                * Java numerical implementation of the Hooke and Jeeves
+                * Java  numerical  implementation  of  the  Hooke  and   Jeeves
                   nonlinear optimization algorithm.
 
-                * C++ numerical implementation of the Nelder-Mead simplex
+                * C++  numerical  implementation  of  the  Nelder-Mead  simplex
                   method.
 
-                * Java numerical implementation of the Quasi-Newton nonlinear
+                * Java numerical implementation of the  Quasi-Newton  nonlinear
                   optimization technique.
 
-                Personal role in the project: Test problems formulating,
-                mathematical programming algorithms exploring, and Java/C++
+                Personal  role  in  the  project:  Test  problems  formulating,
+                mathematical programming  algorithms  exploring,  and  Java/C++
                 packages coding. Having responsibilities for the whole project.
 
                 Tools and technologies used:
@@ -1492,15 +1492,15 @@ Sep 1999 -      Scientific Data Conversion and Visualizing Utilities
 Dec 1999
                 Project description:
 
-                * A template program for using applied scientific software
-                  calculations in AutoCAD system for visualizing numerical
+                * A template program  for  using  applied  scientific  software
+                  calculations in  AutoCAD  system  for  visualizing  numerical
                   data.
 
-                * A utility program for converting applied scientific
+                * A  utility  program   for   converting   applied   scientific
                   software output to AutoCAD DXF format.
 
-                Personal role in the project: Developing appropriate
-                algorithms; C and C++ packages coding. Having responsibilities
+                Personal  role   in   the   project:   Developing   appropriate
+                algorithms; C and C++ packages coding. Having  responsibilities
                 for the whole project.
 
                 Tools and technologies used:
