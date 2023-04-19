@@ -156,8 +156,8 @@ Sep 2021                   entrance exams results and admission decrees
                 * Stage 1 Admission Decree
                 * Magistracy Admission Decree
 
-                The  customer  of  the  project  is  the  admission   committee
-                of the University.
+                (The  customer  of  the  project  is  the  admission  committee
+                of the University.)
 
                 Personal role in the project: Creating the database schema  and
                 designing the common apps architecture. Development of business
