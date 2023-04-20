@@ -608,18 +608,18 @@ Sep 2016        for collecting and measuring I/O latency
 
                 Project description: The back-end web service as a TI component
                 (see prev project) operates on DUT (device under test) devices.
-                For character devices there is already such a driver in use,
-                but for block devices there isn't. The project's aim is to
+                For character devices there is already such a  driver  in  use,
+                but for block devices there isn't.  The  project's  aim  is  to
                 develop a block device driver as a loadable kernel module (LKM)
                 for the Linux kernel that will perform collecting and measuring
                 latency for I/O operations.
 
-                (The customer of the TI project is Stellus Technologies,
+                (The customer  of  the  TI  project  is  Stellus  Technologies,
                 formerly a division of Samsung Electronics.)
 
                 Personal role in the project: Responsible for the whole project
-                - development of the Linux block device driver and a small
-                utility to test (and debug) its work without any invocations
+                - development of the Linux block  device  driver  and  a  small
+                utility to test (and debug) its work  without  any  invocations
                 from the TI back-end web service. Documenting the source code.
 
                 Tools and technologies used:
@@ -634,28 +634,28 @@ Sep 2016        for collecting and measuring I/O latency
 
 May 2016 -      Test Infrastructure (TI): REST Back-end Service
 Jul 2016
-                Project description: The back-end web service for TI that
-                communicates with the front-end web service through the use of
-                REST API calls. The Test Infrastructure consists of two big
-                components: front end and back end. Whilst the front end is
-                responsible for communicating with the QA specialists and
-                written in PHP and JavaScript, the back end is doing its work
+                Project description: The  back-end  web  service  for  TI  that
+                communicates with the front-end web service through the use  of
+                REST API calls. The Test Infrastructure  consists  of  two  big
+                components: front end and back end. Whilst  the  front  end  is
+                responsible for  communicating  with  the  QA  specialists  and
+                written in PHP and JavaScript, the back end is doing  its  work
                 (run single tests or multi-test jobs on DUT (device under test)
                 devices) behind the scenes; it is written mainly in Python with
-                some performance-critical parts written in Go and C. Both
-                front-end and back-end components talk to each other by
+                some performance-critical parts  written  in  Go  and  C.  Both
+                front-end  and  back-end  components  talk  to  each  other  by
                 utilizing REST API techniques.
 
-                (The customer of the TI project is Stellus Technologies,
+                (The customer  of  the  TI  project  is  Stellus  Technologies,
                 formerly a division of Samsung Electronics.)
 
-                Personal role in the project: Responsible for development of
-                the report generating facility (agent), which is intended to
+                Personal role in the project: Responsible  for  development  of
+                the report generating facility (agent), which  is  intended  to
                 collect information about all tests and test jobs are being ran
-                or currently running on DUT devices, and to produce
-                consolidated PDF or CSV report for QAs and managers.
-                Other activities include general bug fixing in other parts of
-                the project and documenting the source code.
+                or  currently  running  on  DUT   devices,   and   to   produce
+                consolidated PDF or CSV report  for  QAs  and  managers.  Other
+                activities include general bug fixing in  other  parts  of  the
+                project and documenting the source code.
 
                 Tools and technologies used:
                 *    Dev OS: Arch Linux x86-64
@@ -671,23 +671,24 @@ Jul 2016
 
 Feb 2016 -      Test Infrastructure (TI): Simulating Samsung AWS
 Apr 2016
-                Project description: Building the simulating AWS (Amazon Web
-                Services) environment to develop and test new features for TI
+                Project description: Building the simulating  AWS  (Amazon  Web
+                Services) environment to develop and test new features  for  TI
                 locally, instead of using remote Samsung AWS environment.
 
-                (Test Infrastructure is the composite software platform aimed
-                at using by developers and QAs to run either single tests or
-                multi-test jobs on DUT (device under test) devices, for
-                example, on SSD drives. It utilizes host/target paradigm
-                to perform its tasks on multiple machines at once. The customer
-                of the TI project is Stellus Technologies, formerly a division
-                of Samsung Electronics.)
+                (Test Infrastructure is the composite software  platform  aimed
+                at using by developers and QAs to run either  single  tests  or
+                multi-test  jobs  on  DUT  (device  under  test)  devices,  for
+                example,  on  SSD  drives.  It  utilizes  host/target  paradigm
+                to perform its tasks on multiple machines at once.)
 
-                Personal role in the project: Development of the local build
-                and test environment, vaguely reminiscent of AWS environment
-                used during the Samsung storage software development process
-                by various dev/QA teams. Responsible for creating modules and
-                scripts for cascade execution of build sequences written in a
+                (The customer  of  the  TI  project  is  Stellus  Technologies,
+                formerly a division of Samsung Electronics.)
+
+                Personal role in the project: Development of  the  local  build
+                and test environment, vaguely reminiscent  of  AWS  environment
+                used during the Samsung storage  software  development  process
+                by various dev/QA teams. Responsible for creating  modules  and
+                scripts for cascade execution of build sequences written  in  a
                 series of programming languages: Perl, Bash Shell Script, Java,
                 Python, Go. Documenting.
 
@@ -715,13 +716,13 @@ Job position: Senior Software Developer of the Software Development Department
 
 All the projects given below should not be considered as separate projects, but
 in contrary they are functional parts of a consolidated continuous development,
-improvement, and maintenance cycle of modules of the aggregated and unified
-bulk-billing SMS/IVR platform. This platform has been invented and developed
-exclusively by the SMS Online company for their internal ops, and currently it
-covers up to 90-95% of load for all the resources of the company with the
+improvement, and maintenance cycle of modules of  the  aggregated  and  unified
+bulk-billing SMS/IVR platform. This platform has been  invented  and  developed
+exclusively by the SMS Online company for their internal ops, and currently  it
+covers up to 90-95% of load for all the  resources  of  the  company  with  the
 comparable (approx. 1:1) throughput.
 
-Key technologies throughout the projects: Perl 5, PostgreSQL, and occasionally
+Key technologies throughout the projects: Perl 5, PostgreSQL, and  occasionally
                                           Java EE, ISO C, Asterisk.
 
 -------------------------------------------------------------------------------
