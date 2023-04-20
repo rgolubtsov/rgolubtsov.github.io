@@ -145,7 +145,7 @@ Job position: Lead Software Developer of the Information Technology Centre
 -------------------------------------------------------------------------------
 
 Aug 2021 -      Web apps for enrollees to get the information regarding
-Sep 2021                   entrance exams results and admission decrees
+Sep 2021        entrance exams results and admission decrees
 
                 Project  description:   Design,   development,   testing,   and
                 deployment of standalone web applications,  targeted  enrollees
@@ -232,9 +232,9 @@ Jul 2021        of the University from one web server to another.
 
 -------------------------------------------------------------------------------
 
-Mar 2021 -      Analysis and selection of a CMS which is best fitted
-May 2021        to the new web portal of the University. Initial development
-                of the new web portal
+Mar 2021 -      Analysis and selection of a CMS which is best fitted to the new
+May 2021        web portal of the University. Initial development of the new
+                web portal
 
                 Project  description:  Analysis   of   a   series   of   freely
                 redistributable open source content management  systems  (CMS),
@@ -325,7 +325,7 @@ Feb 2021        of the website for one of the faculties of the University
 -------------------------------------------------------------------------------
 
 Sep 2020 -      Enhancement, maintenance, and support of supplementary
-Nov 2020                     and subsidiary websites of the University
+Nov 2020        and subsidiary websites of the University
 
                 Project description: Design enhancements,  content  management,
                 webmastering, maintenance, and support  of  four  supplementary
@@ -469,7 +469,7 @@ Aug 2018
                 RDBMSes, depending on initial configuration and build  profile:
                 Oracle Database, MS SQL Server, H2 Database.
 
-                (The customer of the project is bTrade LLC)
+                (The customer of the project is bTrade LLC.)
 
                 Personal  role  in  the  project:  Configuring   and   building
                 application  bundles  for  a  series  of  supported  platforms:
@@ -504,7 +504,7 @@ Apr 2018
                 (predictions  and  accuracy)  for  job  matching  user   infra-
                 structure.
 
-                (The customer of the project is Mercer LLC)
+                (The customer of the project is Mercer LLC.)
 
                 Personal  role  in  the  project:  Building   and   configuring
                 microservices using the Docker Compose tool, testing their work
@@ -604,7 +604,7 @@ Job position: Software Developer of the Software Development Division
 -------------------------------------------------------------------------------
 
 Aug 2016 -      Test Infrastructure (TI): Virtual Linux block device driver
-Sep 2016                           for collecting and measuring I/O latency
+Sep 2016        for collecting and measuring I/O latency
 
                 Project description: The back-end web service as a TI component
                 (see prev project) operates on DUT (device under test) devices.
@@ -1178,8 +1178,8 @@ Mar 2009 - Aug 2010, Development work at the Dubna Technopark, Dubna,
                      (Belarusian branch of Dubna Technopark),
                      Gomel (1 year, 5 months)
 
-Job position: Senior Software Developer
-              of the Expert Systems Development Centre
+Job position: Senior Software Developer of the Expert Systems Development
+              Centre
 
 -------------------------------------------------------------------------------
 
