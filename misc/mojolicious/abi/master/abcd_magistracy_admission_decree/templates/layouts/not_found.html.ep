@@ -19,7 +19,7 @@
 <meta       name="description"     content="<%= $title1 %> - <%= $title2 %>" />
 <meta       name="author"          content="Radislav (Radicchio) Golubtsov" />
 <title><%= $title1 %> &mdash; <%= $title2 %></title>
-<link href="//xn--90a8ad3b.xn--90ais/images/favicon.png" type="image/png" rel="shortcut icon" />
+<link href="/favicon.ico" type="image/png" rel="icon" />
 <style>
 body {
     margin:           0;
