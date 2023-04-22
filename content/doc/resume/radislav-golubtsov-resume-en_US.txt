@@ -729,32 +729,32 @@ Key technologies throughout the projects: Perl 5, PostgreSQL, and  occasionally
 
 Jan 2015 -      IVR Services: Optimization and Maintenance
 Apr 2015
-                Project description: Optimization and maintenance of the
-                company's IVR Services, analysis of the IVR statistics and its
-                periodical recalculation according to the requirements of
-                currently running business processes. IVR Services are
-                interactive voice response services (something like voice
-                menus) which are running on the dedicated server under the
-                control of the open source Asterisk VoIP PBX. They work either
-                in an isolated environment or in a part-to-part
-                intercommunication with the other IVR Services ran by partners
-                and VoIP telecom systems of mobile network operators, and with
+                Project  description:  Optimization  and  maintenance  of   the
+                company's IVR Services, analysis of the IVR statistics and  its
+                periodical  recalculation  according  to  the  requirements  of
+                currently  running  business  processes.   IVR   Services   are
+                interactive  voice  response  services  (something  like  voice
+                menus) which are running on  the  dedicated  server  under  the
+                control of the open source Asterisk VoIP PBX. They work  either
+                in  an  isolated  environment  or  in  a  part-to-part   inter-
+                communication with the other IVR Services ran by  partners  and
+                VoIP telecom systems of  mobile  network  operators,  and  with
                 abonents.
 
-                Personal role in the project: IVR statistics monitoring and
-                analysis, and its periodical recalculation. Modernization of a
-                series of auxiliary IVR services which let main services to
+                Personal role in the project:  IVR  statistics  monitoring  and
+                analysis, and its periodical recalculation. Modernization of  a
+                series of auxiliary IVR services which  let  main  services  to
                 work properly in a completely autonomous mode, without changing
-                their source code in situations when IVR contexts are subject
-                to switch. Modernization of web control panels which provide
-                necessary functionality for configuring IVR services and to
+                their source code in situations when IVR contexts  are  subject
+                to switch. Modernization of web control  panels  which  provide
+                necessary functionality for configuring  IVR  services  and  to
                 collect and retrieval of IVR statistics. Taking part in the IVR
-                platform migrating from a hardware server to a cloud-based
-                virtual machine together with the system and network
-                administrators of the company. Carrying out post-migrating
-                activities and tasks, including Cron jobs setup, Asterisk VoIP
-                PBX configuring, IVR traffic and statistics analysis, and deep
-                functional testing of all active IVR services running on the
+                platform migrating from a  hardware  server  to  a  cloud-based
+                virtual  machine  together  with   the   system   and   network
+                administrators of  the  company.  Carrying  out  post-migrating
+                activities and tasks, including Cron jobs setup, Asterisk  VoIP
+                PBX configuring, IVR traffic and statistics analysis, and  deep
+                functional testing of all active IVR services  running  on  the
                 platform. Partially performing tasks as a DBA. Documenting.
 
                 Tools and technologies used:
@@ -773,15 +773,15 @@ Apr 2015
 
 Nov 2014 -      Partner Services (Mobile Subscriptions)
 Dec 2014
-                Project description: Making and providing landing pages
-                to partners to store company's content on their side
-                (as web services), and processing SMS billing ops according
+                Project  description:  Making  and  providing   landing   pages
+                to  partners  to  store  company's  content   on   their   side
+                (as web services), and processing  SMS  billing  ops  according
                 to requirements and conditions of active partner programs.
 
-                Personal role in the project: Automating the process of
-                creating the WAR archive for a web app (containing a landing
-                page) for its future use during one of endorsed partner
-                programs. Installing, deploying, and testing this WAR archive
+                Personal  role  in  the  project:  Automating  the  process  of
+                creating the WAR archive for a web app  (containing  a  landing
+                page) for  its  future  use  during  one  of  endorsed  partner
+                programs. Installing, deploying, and testing this  WAR  archive
                 on supported Java EE app servers.
 
                 Tools and technologies used:
@@ -797,19 +797,19 @@ Dec 2014
 
 Jul 2014 -      Gate Admin CP II (SMS Billing Control Panel: Next Gen)
 Oct 2014
-                Project description: Continuous deepest modernization of the
-                SMS Billing Platform Control Panel (CP). The CP is the web
-                administrative console that is built as a series of separate
+                Project description: Continuous deepest  modernization  of  the
+                SMS Billing Platform Control Panel (CP).  The  CP  is  the  web
+                administrative console that is built as a  series  of  separate
                 modules written using CGI and Mojolicious MVC framework. The CP
-                is used mostly by the company's tech support group 24x7. SMS
-                Billing is the multi-component composite software platform for
-                processing billing ops with SMS message queues which are
+                is used mostly by the company's tech support  group  24x7.  SMS
+                Billing is the multi-component composite software platform  for
+                processing billing  ops  with  SMS  message  queues  which  are
                 moving between partners' services and mobile network operators.
 
                 Personal role in the project: Participating in the CP migrating
-                process from separate CP modules to a single unified
+                process  from  separate  CP  modules  to   a   single   unified
                 Mojolicious-based app combining all the managerial stuff in one
-                web app. General bug fixing in various obsolescent but still
+                web app. General bug fixing in various  obsolescent  but  still
                 active CP modules. (Presentation and business layers.)
 
                 Tools and technologies used:
@@ -831,42 +831,42 @@ Jun 2014
                 Project description: Composite mobile commerce (MC) project
                 consisting of two independent subprojects:
 
-                1. The MC system to communicate to the St.Petersburg Public
-                   Transport Portal for getting information about public
-                   transport traffic, timings, stations, etc., and to transmit
-                   this information to passengers' PDAs and mobile phones upon
-                   SMS requests. Main system components: (1) SMS billing
-                   gateway, (2) Daemon for incoming SMS messages; it also
+                1. The MC system to communicate  to  the  St.Petersburg  Public
+                   Transport  Portal  for  getting  information  about   public
+                   transport traffic, timings, stations, etc., and to  transmit
+                   this information to passengers' PDAs and mobile phones  upon
+                   SMS  requests.  Main  system  components:  (1)  SMS  billing
+                   gateway, (2) Daemon  for  incoming  SMS  messages;  it  also
                    processes GTFS data.
 
-                2. The MC system to communicate to the Russian Standard Bank
-                   and to the St.Petersburg Subway Service for activating and
-                   recharging the Podorozhnik transport prepaid cards used
-                   inside St.Petersburg subway stations, from passengers' PDAs
-                   and mobile phones via SMS transactions and IVR interaction.
-                   Main system components: (1) SMS billing gateway, (2) IVR
-                   platform, (3) Embedded HTTP server with the high-speed
-                   request handling mechanism that is running on partner's
+                2. The MC system to communicate to the  Russian  Standard  Bank
+                   and to the St.Petersburg Subway Service for  activating  and
+                   recharging the  Podorozhnik  transport  prepaid  cards  used
+                   inside St.Petersburg subway stations, from passengers'  PDAs
+                   and mobile phones via SMS transactions and IVR  interaction.
+                   Main system components: (1) SMS  billing  gateway,  (2)  IVR
+                   platform, (3)  Embedded  HTTP  server  with  the  high-speed
+                   request handling mechanism  that  is  running  on  partner's
                    side.
 
                 Personal role in the project:
 
-                1. Development of the daemon for incoming SMS messages that is
-                   also responsible for processing GTFS data (GTFS-realtime
-                   feed). To develop this daemon the company's internal Perl-
-                   based framework was used. It is tailored especially for
-                   constructing such daemons which are considered to be real-
-                   time ready. Also during the development of this daemon the
+                1. Development of the daemon for incoming SMS messages that  is
+                   also responsible for  processing  GTFS  data  (GTFS-realtime
+                   feed). To develop this daemon the company's  internal  Perl-
+                   based framework was used.  It  is  tailored  especially  for
+                   constructing such daemons which are considered to  be  real-
+                   time ready. Also during the development of this  daemon  the
                    third-party GTFS Realtime API was used.
 
-                2. Development of the IVR service using the third-party Google
-                   Text-To-Speech API which is running inside IVR platform
-                   under the control of Asterisk VoIP PBX. It operates as
-                   follows: as the input data it receives a prepaid card
+                2. Development of the IVR service using the third-party  Google
+                   Text-To-Speech API which  is  running  inside  IVR  platform
+                   under the control of  Asterisk  VoIP  PBX.  It  operates  as
+                   follows: as the  input  data  it  receives  a  prepaid  card
                    number, as the output data it says a secret code to activate
-                   the card (Perl). Also during this project I was responsible
-                   for development of the embedded HTTP server with the high-
-                   speed request handling mechanism. It was intended to run on
+                   the card (Perl). Also during this project I was  responsible
+                   for development of the embedded HTTP server with  the  high-
+                   speed request handling mechanism. It was intended to run  on
                    partner's side (ISO C, GNU libmicrohttpd).
 
                 Tools and technologies used:
@@ -887,16 +887,16 @@ Jun 2014
 Dec 2013 -      Bulk Admin CP (SMS Bulk Control Panel)
 Feb 2014
                 Project description: Further development and improvement of the
-                SMS Bulk Platform Control Panel (CP). The CP is the web
-                administrative console utilizing Vaadin Framework controls and
-                workflow. The CP is used mostly by the company's tech support
-                group 24x7. SMS Bulk is the software platform for mass
+                SMS Bulk Platform  Control  Panel  (CP).  The  CP  is  the  web
+                administrative console utilizing Vaadin Framework controls  and
+                workflow. The CP is used mostly by the company's  tech  support
+                group  24x7.  SMS  Bulk  is  the  software  platform  for  mass
                 messaging.
 
                 Personal role in the project: Responsible for the whole project
                 (as the only Java developer in almost exclusively Perl-oriented
                 company). Development of the additional user controls according
-                to new business requirements and general bug fixing.
+                to  new  business  requirements   and   general   bug   fixing.
                 (Presentation layer.)
 
                 Tools and technologies used:
@@ -914,22 +914,22 @@ Feb 2014
 Mar 2013 -      Gate Admin CP (SMS Billing Control Panel)
 Nov 2013
                 Project description: Further development and improvement of the
-                SMS Billing Platform Control Panel (CP). The CP is the web
-                administrative console that is built as a series of separate
+                SMS Billing Platform Control Panel (CP).  The  CP  is  the  web
+                administrative console that is built as a  series  of  separate
                 modules written using CGI and Mojolicious MVC framework. The CP
-                is used mostly by the company's tech support group 24x7. SMS
-                Billing is the multi-component composite software platform for
-                processing billing ops with SMS message queues which are
+                is used mostly by the company's tech support  group  24x7.  SMS
+                Billing is the multi-component composite software platform  for
+                processing billing  ops  with  SMS  message  queues  which  are
                 moving between partners' services and mobile network operators.
 
-                Personal role in the project: Development of a bunch of new CP
-                modules including the following: "Preprocess Messages Search",
-                "MT-Subscriptions and Services Management", "Users and Roles
-                Management". Taking part in the CP migrating from a hardware
+                Personal role in the project: Development of a bunch of new  CP
+                modules including the following: "Preprocess Messages  Search",
+                "MT-Subscriptions and Services Management",  "Users  and  Roles
+                Management". Taking part in the CP migrating  from  a  hardware
                 FreeBSD-based server to a virtual machine running Debian Stable
-                together with the system and network administrators of the
+                together with the system  and  network  administrators  of  the
                 company. General bug fixing in various CP modules. Documenting.
-                (Presentation and business layers. Role-based user
+                (Presentation   and   business    layers.    Role-based    user
                 authorization-expert.)
 
                 Tools and technologies used:
@@ -948,16 +948,16 @@ Nov 2013
 
 Jan 2013 -      Java Bulk Client (SMS Bulk Platform API for Java Client)
 Feb 2013
-                Project description: Development of the SMS Bulk Platform API
-                easily accessible from within Java clients (used by business
-                partners). SMS Bulk is the software platform for mass
+                Project description: Development of the SMS Bulk  Platform  API
+                easily accessible from within Java clients  (used  by  business
+                partners).  SMS  Bulk  is  the  software  platform   for   mass
                 messaging.
 
                 Personal role in the project: Responsible for the whole project
                 (as the only Java developer in almost exclusively Perl-oriented
-                company). Development of the API library with the complete
-                Javadoc and installation/use notes. Also development of the
-                test/sample web app to demonstrate how to use the library
+                company). Development of the  API  library  with  the  complete
+                Javadoc and installation/use notes.  Also  development  of  the
+                test/sample web app to  demonstrate  how  to  use  the  library
                 inside a client Java web app.
 
                 Tools and technologies used:
@@ -982,25 +982,25 @@ Job position: Senior Software Developer of the Mobile Banking Solutions
 
 Aug 2012 -      Sberbank of Russia Uniform Mobile Banking Payment System
 Oct 2012
-                Project description: Development of the complex composite
+                Project  description:  Development  of  the  complex  composite
                 payment system for mobile banking (MB) that targets its area of
                 application to cover all divisions and subsidiaries of Sberbank
                 of Russia with the uniform MB system. This system provides bank
-                clients with the ability to make payments using their various
-                mobile devices (cellular phones with the Java ME technology
+                clients with the ability to make payments using  their  various
+                mobile devices (cellular phones with  the  Java  ME  technology
                 inside, smartphones, and tablets based on Symbian, Android, and
                 iOS operating systems). This system is developed consolidatedly
                 by a series of companies, one of them is the Intervale company.
-                It is responsible for R&D for building the following
-                components: SMS gateway, message queues, and client apps for
+                It  is  responsible  for  R&D  for   building   the   following
+                components: SMS gateway, message queues, and  client  apps  for
                 Java ME-based mobile phones.
 
-                Personal role in the project: Responsible for development of
-                the web administrative console intended to use by bank
-                operators and auditors to control and manage the assets and
-                processes which are underlie the SMS gateway and message
-                queues-related operations. Documenting. (Presentation and
-                (partially) business layers. Usability and accessibility-
+                Personal role in the project: Responsible  for  development  of
+                the  web  administrative  console  intended  to  use  by   bank
+                operators and auditors to control and  manage  the  assets  and
+                processes which  are  underlie  the  SMS  gateway  and  message
+                queues-related  operations.  Documenting.   (Presentation   and
+                (partially)  business  layers.  Usability  and   accessibility-
                 expert. User authentication and authorization-expert.)
 
                 Tools and technologies used:
