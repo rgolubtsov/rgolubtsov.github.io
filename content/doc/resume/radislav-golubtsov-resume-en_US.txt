@@ -828,7 +828,7 @@ Oct 2014
 
 Mar 2014 -      Partner Services (Spb Transport / Spb Subway)
 Jun 2014
-                Project description: Composite mobile commerce (MC) project
+                Project description: Composite  mobile  commerce  (MC)  project
                 consisting of two independent subprojects:
 
                 1. The MC system to communicate  to  the  St.Petersburg  Public
@@ -1027,28 +1027,28 @@ Job position: Senior Software Developer of the Wireless Division
 
 Mar 2012 -      Ad Optimizer, [XIMAD, Inc.]
 May 2012
-                Project description: Literally this can be stated as an
-                advertising optimizer. This is a web app that is used by
-                company's managers to reorder and redistribute the ad banners
-                and applets which are displayed on abonents' mobile devices.
-                The items of such ad content (ad banners and applets) are only
-                displayed on those mobile client applications and games which
-                were produced and offered by the company and - that is very
-                important - are free of charge to download and use, in other
-                words, which are freeware or at least shareware. These ads are
-                subject to apply the following operations which might be
-                performed over them inside this web app: filter, connect,
-                delete, make active, discard, and reorder using the following
+                Project  description:  Literally  this  can  be  stated  as  an
+                advertising optimizer. This is  a  web  app  that  is  used  by
+                company's managers to reorder and redistribute the  ad  banners
+                and applets which are displayed on  abonents'  mobile  devices.
+                The items of such ad content (ad banners and applets) are  only
+                displayed on those mobile client applications and  games  which
+                were produced and offered by the company and  -  that  is  very
+                important - are free of charge to download and  use,  in  other
+                words, which are freeware or at least shareware. These ads  are
+                subject to  apply  the  following  operations  which  might  be
+                performed over them  inside  this  web  app:  filter,  connect,
+                delete, make active, discard, and reorder using  the  following
                 criteria: mobile platforms (mobile operating systems) and their
-                versions, mobile apps and games and their versions, and
-                localization parameters, abonents'/mobile devices' geographic
+                versions,  mobile  apps  and  games  and  their  versions,  and
+                localization parameters, abonents'/mobile  devices'  geographic
                 location (using the GeoLocation third-party web service API).
 
-                Personal role in the project: Development of new web pages
-                according to the project guidelines and requirements. Bug
-                fixing in most actively used web pages of the app. Building,
-                testing, and deploying the whole app in a production
-                environment along with making any required database schema
+                Personal role in the project:  Development  of  new  web  pages
+                according to  the  project  guidelines  and  requirements.  Bug
+                fixing in most actively used web pages of  the  app.  Building,
+                testing,  and  deploying  the  whole  app   in   a   production
+                environment along with  making  any  required  database  schema
                 changes. Documenting. (Presentation and business layers.)
 
                 Tools and technologies used:
@@ -1067,14 +1067,14 @@ May 2012
 Jan 2012 -      Zuma iOS/Zuminja (2D-game for Apple iPhone/iPad/iPod touch),
 Feb 2012        [XIMAD, Inc.]
 
-                Project description: Development of the 2D-game Zuma iOS
-                (alternate name Zuminja) intended to run on the Apple mobile
+                Project  description:  Development  of  the  2D-game  Zuma  iOS
+                (alternate name Zuminja) intended to run on  the  Apple  mobile
                 devices line-up. (The mobile app should look and behave similar
-                to already developed ports for Android- and BlackBerry-based
+                to already developed ports for  Android-  and  BlackBerry-based
                 devices.)
 
                 Personal role in the project: Responsible for the whole project
-                except making game design scenes and related static graphical
+                except making game design scenes and related  static  graphical
                 components.
 
                 Tools and technologies used:
@@ -1109,21 +1109,21 @@ Jul 2011 -      Mobility Traffic Mediation Solution
 Dec 2011        (Media Optimizer and Web Optimizer),
                 [Openwave Systems Inc. (off-site)]
 
-                Project description: Integrated complex project that targets
-                the development of the NGP (Next Generation Proxy) proxy
-                server. This server together with its plugins Media Optimizer
-                and Web Optimizer is designed as a mediation layer to reduce
-                traffic loads which highly affect the network infrastructures
+                Project description: Integrated complex  project  that  targets
+                the development  of  the  NGP  (Next  Generation  Proxy)  proxy
+                server. This server together with its plugins  Media  Optimizer
+                and Web Optimizer is designed as a mediation  layer  to  reduce
+                traffic loads which highly affect the  network  infrastructures
                 of Internet service providers and mobile network operators when
                 they operate on and transmit dense mobile traffic to the users'
                 and abonents' mobile devices.
 
-                Personal role in the project: General bug fixing activities in
-                the mainline branch of the Media Optimizer (Java) and Web
-                Optimizer (C++) plugins according to official bug reports
-                issued by the QA team. Mainly, having responsibilities on bug
-                fixing, rebuilding, deploying in a test env., and testing the
-                crucial component of the Media Optimizer plugin called ViDeO
+                Personal role in the project: General bug fixing activities  in
+                the mainline branch of  the  Media  Optimizer  (Java)  and  Web
+                Optimizer (C++)  plugins  according  to  official  bug  reports
+                issued by the QA team. Mainly, having responsibilities  on  bug
+                fixing, rebuilding, deploying in a test env., and  testing  the
+                crucial component of the Media Optimizer  plugin  called  ViDeO
                 (Video Delivery Optimizer). Documenting.
 
                 Tools and technologies used:
@@ -1143,22 +1143,22 @@ Dec 2011        (Media Optimizer and Web Optimizer),
 Sep 2010 -      Atlas Information Governance Suite (Policy Atlas),
 Jun 2011        [PSS Systems, an IBM Company (off-site)]
 
-                Project description: Policy Atlas is the web-based management
-                information system that unifies Legal, IT, Records Management,
-                Finance and Lines of Business to eliminate unnecessary
+                Project description: Policy Atlas is the  web-based  management
+                information system that unifies Legal, IT, Records  Management,
+                Finance  and  Lines  of  Business  to   eliminate   unnecessary
                 discovery and data management risk and cost. The Suite includes
-                enterprise workflow, decision support tools and a unified
-                inventory of assets and their legal obligations and business
-                value. Atlas enables company to meet its duties for legal
-                information governance and to identify and eliminate data with
+                enterprise workflow,  decision  support  tools  and  a  unified
+                inventory of assets and their legal  obligations  and  business
+                value. Atlas enables company  to  meet  its  duties  for  legal
+                information governance and to identify and eliminate data  with
                 no business value or legal obligation.
 
-                Personal role in the project: Java modules coding, JavaScript
-                modules coding, Bash scripts coding. The main task is to
+                Personal role in the project: Java modules  coding,  JavaScript
+                modules coding, Bash  scripts  coding.  The  main  task  is  to
                 develop and maintain complex, interactively overloaded web page
-                "Matter Exceptions and Alerts". Bug fixing in other modules of
-                the application. Also having responsibilities for development
-                of the (auxiliary) patching utility intended to simplify and
+                "Matter Exceptions and Alerts". Bug fixing in other modules  of
+                the application. Also having responsibilities  for  development
+                of the (auxiliary) patching utility intended  to  simplify  and
                 accelerate Policy Atlas application deployment.
 
                 Tools and technologies used:
@@ -1187,18 +1187,18 @@ Job position: Senior Software Developer of the Expert Systems Development
 Mar 2009 -      Intellectual automated control system (IACS) "Trainflow",
 Aug 2010        [Dubna Technopark]
 
-                Project description: IACS "Trainflow" is the centralized
+                Project  description:  IACS  "Trainflow"  is  the   centralized
                 management information system having its purpose to control and
-                maintain the real-time process of optimal timing and routing
-                the freight trains inside both Russian and Belarusian railway
+                maintain the real-time process of optimal  timing  and  routing
+                the freight trains inside both Russian and  Belarusian  railway
                 systems with no any constraints.
 
-                Personal role in the project: G2 and ASP.NET modules coding,
+                Personal role in the project: G2 and  ASP.NET  modules  coding,
                 JavaScript modules coding, creating, building and mastering the
-                original design for the web part of the application and
-                performing related tasks. Having responsibilities for part of
-                the project belonging to development of the subsystem for
-                dynamic generating the railway system interactive web reports
+                original design  for  the  web  part  of  the  application  and
+                performing related tasks. Having responsibilities for  part  of
+                the project belonging  to  development  of  the  subsystem  for
+                dynamic generating the railway system interactive  web  reports
                 (presentation layer); usability and accessibility-expert.
 
                 Tools and technologies used:
