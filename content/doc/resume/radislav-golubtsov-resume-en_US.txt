@@ -1224,15 +1224,15 @@ Job position: Senior Software Developer of the E-Business Division
 
 Jul 2008 -      Automated information system (AIS) "KDT", [IBA-Gomel]
 Sep 2008
-                Project description: AIS "KDT" is the management information
-                system having its purpose to control and maintain the process
-                of delivering the particular groups of commodities inside
+                Project description: AIS "KDT" is  the  management  information
+                system having its purpose to control and maintain  the  process
+                of delivering  the  particular  groups  of  commodities  inside
                 complex economical systems such as a trade system.
 
-                Personal role in the project: Java modules coding and
-                performing related tasks. Having responsibilities for part of
-                the project belonging to development of the managing the user
-                accounts portlet for large portal system (business and
+                Personal  role  in  the  project:  Java  modules   coding   and
+                performing related tasks. Having responsibilities for  part  of
+                the project belonging to development of the managing  the  user
+                accounts  portlet  for  large  portal  system   (business   and
                 presentation layers).
 
                 Tools and technologies used:
@@ -1253,14 +1253,14 @@ Sep 2008
 
 May 2008 -      IBM AS RM Metro, [IBM Netherlands, IBM Germany (off-site)]
 Jul 2008
-                Project description: Web-based application that empowers
+                Project  description:  Web-based  application   that   empowers
                 managers with the ability and functionality to perform capacity
-                planning and operational optimizations inside IBM. In other
+                planning and operational optimizations  inside  IBM.  In  other
                 words, this is the tool to manage any and all resource changes.
 
-                Personal role in the project: Java modules coding and
-                performing related tasks. Having responsibilities for parts of
-                the project belonging to front-end presentation layer, so
+                Personal  role  in  the  project:  Java  modules   coding   and
+                performing related tasks. Having responsibilities for parts  of
+                the project  belonging  to  front-end  presentation  layer,  so
                 called "user interaction".
 
                 Tools and technologies used:
@@ -1277,14 +1277,14 @@ Jul 2008
 
 Feb 2008 -      Automated information system (AIS) "KDT", [IBA-Gomel]
 May 2008
-                Project description: AIS "KDT" is the management information
-                system having its purpose to control and maintain the process
-                of delivering the particular groups of commodities inside
+                Project description: AIS "KDT" is  the  management  information
+                system having its purpose to control and maintain  the  process
+                of delivering  the  particular  groups  of  commodities  inside
                 complex economical systems such as a trade system.
 
-                Personal role in the project: Java modules coding and
-                performing related tasks. Having responsibilities for part of
-                the project belonging to the common graphical user interface
+                Personal  role  in  the  project:  Java  modules   coding   and
+                performing related tasks. Having responsibilities for  part  of
+                the project belonging to the common  graphical  user  interface
                 design and development (presentation layer).
 
                 Tools and technologies used:
@@ -1301,17 +1301,17 @@ May 2008
 May 2006 -      IBM Web Solutions Enabler (WSE), [IBM Italy, IBM France
 Feb 2008        (on-site/off-site)]
 
-                Project description: Web-based project that provides functions
+                Project description: Web-based project that provides  functions
                 to allow the creation, maintenance and operation of a number of
-                IBM Intranet and Internet solutions (WSE eSolutions) according
+                IBM Intranet and Internet solutions (WSE eSolutions)  according
                 to the end-users' and customers' needs through the "Application
-                Modeling" and "Application Runtime" interfaces. The project is
+                Modeling" and "Application Runtime" interfaces. The project  is
                 for IBM Italia S.p.A.
 
-                Personal role in the project: Java modules coding and
-                performing related tasks. Having responsibilities for parts of
-                the project belonging to application configure and runtime
-                stages in preparing certain eSolutions (business and
+                Personal  role  in  the  project:  Java  modules   coding   and
+                performing related tasks. Having responsibilities for parts  of
+                the project belonging  to  application  configure  and  runtime
+                stages  in   preparing   certain   eSolutions   (business   and
                 presentation layers).
 
                 Tools and technologies used:
@@ -1329,20 +1329,20 @@ Feb 2008        (on-site/off-site)]
 Jul 2004 -      GME Engineering Business Systems Sustain (EBSS),
 May 2006        [General Motors Europe, IBM Germany (on-site/off-site)]
 
-                Project description: Provides enterprise business maintenance
-                and sustain for a bunch of applications with the purposes to
-                manage and control business processes of production
-                infrastructure on various GME vehicle plants, in particular, on
+                Project description: Provides enterprise  business  maintenance
+                and sustain for a bunch of applications with  the  purposes  to
+                manage and control  business  processes  of  production  infra-
+                structure on various GME  vehicle  plants,  in  particular,  on
                 Adam Opel AG plants. The project is for General Motors Europe.
 
-                Personal role in the project: Java modules coding, modifying
-                existing third-party code, general application bug fixing and
-                performing related tasks; performing standard operations
-                (password reset, user account management, etc.) in the 24x7
-                schedule. Having responsibilities for maintenance and support
-                of the HMCS Global (Hazardous Material Control System) and
+                Personal role in the project: Java  modules  coding,  modifying
+                existing third-party code, general application bug  fixing  and
+                performing  related  tasks;  performing   standard   operations
+                (password reset, user account management,  etc.)  in  the  24x7
+                schedule. Having responsibilities for maintenance  and  support
+                of the HMCS Global  (Hazardous  Material  Control  System)  and
                 INFO2000 applications and for performing standard operations in
-                the 24x7 schedule for these two and for three other related
+                the 24x7 schedule for these two and  for  three  other  related
                 applications through the GME Help Desk.
 
                 Tools and technologies used:
@@ -1362,16 +1362,16 @@ May 2006        [General Motors Europe, IBM Germany (on-site/off-site)]
 Feb 2004 -      IBM Web Solutions Enabler (WSE), [IBM Italy, IBM France
 Jul 2004        (on-site/off-site)]
 
-                Project description: Web-based project that provides functions
+                Project description: Web-based project that provides  functions
                 to allow the creation, maintenance and operation of a number of
-                IBM Intranet and Internet solutions (WSE eSolutions) according
+                IBM Intranet and Internet solutions (WSE eSolutions)  according
                 to the end-users' and customers' needs through the "Application
                 Modeling" interface. The project is for IBM Italia S.p.A.
 
-                Personal role in the project: Java modules coding and
-                performing related tasks. Having responsibilities for part of
-                the project belonging to the application configure stage in
-                preparing certain eSolutions (business and presentation
+                Personal  role  in  the  project:  Java  modules   coding   and
+                performing related tasks. Having responsibilities for  part  of
+                the project belonging to the  application  configure  stage  in
+                preparing  certain  eSolutions   (business   and   presentation
                 layers).
 
                 Tools and technologies used:
@@ -1388,13 +1388,13 @@ Jul 2004        (on-site/off-site)]
 Nov 2003 -      IBA Business Intelligence System (BIS), [IBA-Gomel]
 Feb 2004
                 Project description: Web-based project that allows customers to
-                analyze the intellectual resources of a company, to place
-                orders for software coders with skills needed and to hire new
+                analyze the intellectual  resources  of  a  company,  to  place
+                orders for software coders with skills needed and to  hire  new
                 workers.
 
-                Personal role in the project: Business-logic modeling, Java
-                modules coding and performing related tasks. Having
-                responsibilities for part of the project concerning internal
+                Personal role in the  project:  Business-logic  modeling,  Java
+                modules   coding   and   performing   related   tasks.   Having
+                responsibilities for part of the  project  concerning  internal
                 management processes, i.e. managing customers and orders lists,
                 accepting and rejecting customers' profiles processes (business
                 and presentation layers).
@@ -1412,12 +1412,12 @@ Feb 2004
 
 Sep 2003 -      IBA Database Manager, [IBA-Gomel]
 Nov 2003
-                Project description: Java (AWT) and C++ (Win32 API) GUI front
-                ends for managing some databases. Advantages: fast adding,
-                viewing and removing records to/from database tables through
+                Project description: Java (AWT) and C++ (Win32 API)  GUI  front
+                ends for managing  some  databases.  Advantages:  fast  adding,
+                viewing and removing records to/from  database  tables  through
                 JDBC/ODBC interfaces.
 
-                Personal role in the project: Java and C++ modules coding,
+                Personal role in the project:  Java  and  C++  modules  coding,
                 database tables creating and modifying. Having responsibilities
                 for the whole project.
 
