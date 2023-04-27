@@ -949,8 +949,8 @@ Nov 2013
 Jan 2013 -      Java Bulk Client (SMS Bulk Platform API for Java Client)
 Feb 2013
                 Project description: Development of the SMS Bulk  Platform  API
-                easily accessible from within Java clients  (used  by  business
-                partners).  SMS  Bulk  is  the  software  platform   for   mass
+                easily  accessible  from  within  Java  client  apps  (used  by
+                business partners). SMS Bulk is the software platform for  mass
                 messaging.
 
                 Personal role in the project: Responsible for the whole project
