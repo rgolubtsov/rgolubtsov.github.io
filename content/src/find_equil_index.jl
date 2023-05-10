@@ -84,6 +84,36 @@ EQUIL_INDEX_MSG = "==> The equilibrium index of A is "
 
 # The solution function.
 function solution(A)
+    num_of_A = length(A)
+
+    sum_of_A   = 0 # <== The complete sum of elements of A.
+    sum_of_A_1 = 0 # <== The sum of elements of lower  indices of A.
+    sum_of_A_2 = 0 # <== The sum of elements of higher indices of A.
+
+    # Calculating the complete sum of elements of A.
+    for i in eachindex(num_of_A)
+        sum_of_A += A[i]
+    end
+
+    # Searching for the equilibrium index of A.
+    for i in eachindex(num_of_A)
+        sum_of_A_2  = sum_of_A - sum_of_A_1
+        sum_of_A_2 -= A[i]
+
+        if (sum_of_A_1 == sum_of_A_2)
+            return i # Okay, the equilibrium index found.
+        end
+
+        sum_of_A_1 += A[i]
+    end
+
+    -1 # Returning -1 if there's no such an equilibrium index exist.
 end
+
+A = [-1, 3, -4, 5, 1, -6, 2, 1]
+
+i = solution(A)
+
+println("$NEW_LINE$EQUIL_INDEX_MSG$i$NEW_LINE")
 
 # vim:set nu et ts=4 sw=4:
