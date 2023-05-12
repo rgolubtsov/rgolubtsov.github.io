@@ -82,7 +82,7 @@
 NEW_LINE        = "\n"
 EQUIL_INDEX_MSG = "==> The equilibrium index of A is "
 
-# The solution function.
+"The solution function."
 function solution(A)
     num_of_A = length(A)
 
