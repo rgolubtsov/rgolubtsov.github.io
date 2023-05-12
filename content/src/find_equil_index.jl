@@ -91,17 +91,22 @@ function solution(A)
     sum_of_A_2 = 0 # <== The sum of elements of higher indices of A.
 
     # Calculating the complete sum of elements of A.
-    for i in eachindex(num_of_A)
+    for i = 1 : num_of_A
         sum_of_A += A[i]
     end
 
     # Searching for the equilibrium index of A.
-    for i in eachindex(num_of_A)
+    for i = 1 : num_of_A
         sum_of_A_2  = sum_of_A - sum_of_A_1
         sum_of_A_2 -= A[i]
 
+        println(string("==> sum_of_A_1: ",  sum_of_A_1,
+                      " ==> sum_of_A_2: ",  sum_of_A_2,
+                      " ==> i: ",           i - 1,
+                      " ==> A[$(i - 1)]: ", A[i]))
+
         if (sum_of_A_1 == sum_of_A_2)
-            return i # Okay, the equilibrium index found.
+            return i - 1 # Okay, the equilibrium index found.
         end
 
         sum_of_A_1 += A[i]
