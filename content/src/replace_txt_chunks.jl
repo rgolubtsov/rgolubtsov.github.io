@@ -39,7 +39,7 @@ function replace(text, pos, subst)
     for i = 1 : text_ary_len
         text_ary_i_len = length(text_ary[i])
 
-        println(DBG_PREF, text_ary[i])
+#       println(DBG_PREF, text_ary[i])
 
         if ((pos <= text_ary_i_len)
             && (text_ary[i][pos:end] != COMMA)
@@ -49,11 +49,11 @@ function replace(text, pos, subst)
                                          text_ary[i][    pos:end] => subst),
                                          text_ary[i][1 + pos:end])
 
-            println(DBG_PREF,     text__     )
+#           println(DBG_PREF,     text__     )
 
             text_ = string(text_, text__     )
         else
-            println(DBG_PREF,     text_ary[i])
+#           println(DBG_PREF,     text_ary[i])
 
             text_ = string(text_, text_ary[i])
         end
