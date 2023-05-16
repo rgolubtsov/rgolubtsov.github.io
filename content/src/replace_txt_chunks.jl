@@ -24,11 +24,44 @@
 
 # Helper constants.
 EMPTY_STRING =     ""
+SPACE        =    " "
+COMMA        =    ","
+POINT        =    "."
 NEW_LINE     =   "\n"
 DBG_PREF     = "==> "
 
 "The replace function."
 function replace(text, pos, subst)
+    text_        = EMPTY_STRING
+    text_ary     = split(text, SPACE)
+    text_ary_len = length(text_ary)
+
+    for i = 1 : text_ary_len
+        text_ary_i_len = length(text_ary[i])
+
+        println(DBG_PREF, text_ary[i])
+
+        if ((pos <= text_ary_i_len)
+            && (text_ary[i][pos:end] != COMMA)
+            && (text_ary[i][pos:end] != POINT))
+
+            text__ = string(Base.replace(text_ary[i],
+                                         text_ary[i][    pos:end] => subst),
+                                         text_ary[i][1 + pos:end])
+
+            println(DBG_PREF,     text__     )
+
+            text_ = string(text_, text__     )
+        else
+            println(DBG_PREF,     text_ary[i])
+
+            text_ = string(text_, text_ary[i])
+        end
+
+        text_ = string(text_, SPACE)
+    end
+
+    text_
 end
 
 text  = "\
