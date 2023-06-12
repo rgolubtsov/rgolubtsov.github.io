@@ -21,13 +21,8 @@
 
 "use strict";
 
-// === 1977-06-27 ===
-var YY_OF_BIRTH = 1977;
-var MM_OF_BIRTH = 6;
-var DD_OF_BIRTH = 27;
-
 // Calculates the current age based on the date of birth.
-var get_age   = function() {
+var get_age   = function(YY_OF_BIRTH, MM_OF_BIRTH, DD_OF_BIRTH) {
     var date  = new Date();
     var year  = date.getFullYear();
     var month = date.getMonth();
@@ -48,6 +43,6 @@ var get_age   = function() {
     return age;
 };
 
-console.log(get_age());
+console.log(get_age(1977, 6, 27)); // <== 1977-06-27.
 
 // vim:set nu et ts=4 sw=4:
