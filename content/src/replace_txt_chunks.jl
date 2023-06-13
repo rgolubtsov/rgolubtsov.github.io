@@ -20,7 +20,7 @@
  * Copyright (C) 2023 Radislav (Radicchio) Golubtsov
  *
  * (See the LICENSE file at the top of the source tree.)
-=#
+ =#
 
 # Helper constants.
 EMPTY_STRING =     ""
