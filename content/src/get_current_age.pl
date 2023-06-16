@@ -3,8 +3,8 @@
 # =============================================================================
 # Usage:
 #   $ curl -sO http://rgolubtsov.github.io/srcs/get_current_age.pl && \
-#       chmod 700                                 get_current_age.pl && \
-#                                               ./get_current_age.pl; echo $?
+#     chmod 700                                 get_current_age.pl && \
+#                                             ./get_current_age.pl; echo $?
 # =============================================================================
 # This is a demo script. It has to be run in the Perl 5 (5.10+) runtime
 # environment. Tested and known to run exactly the same way on modern versions
@@ -24,20 +24,20 @@ use warnings;
 use utf8;
 use v5.10;
 
+use Time::Piece;
+
 # Calculates the current age based on the date of birth.
 sub get_age {
     my $YY_OF_BIRTH = shift();
     my $MM_OF_BIRTH = shift();
     my $DD_OF_BIRTH = shift();
 
-    my $date  = 0;#new Date();
-    my $year  = 0;#$date.getFullYear();
-    my $month = 0;#$date.getMonth();
-    my $day   = 0;#$date.getDate();
+    my $date  = localtime;
+    my $year  = $date->year;
+    my $month = $date->mon;
+    my $day   = $date->mday;
 
     my $age = $year - $YY_OF_BIRTH;
-
-    $month++;
 
     if ($month < $MM_OF_BIRTH) {
         $age--;
