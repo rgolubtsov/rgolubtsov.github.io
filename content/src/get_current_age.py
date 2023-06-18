@@ -19,13 +19,15 @@
 # (See the LICENSE file at the top of the source tree.)
 #
 
+from datetime import date
+
 def get_age(YY_OF_BIRTH, MM_OF_BIRTH, DD_OF_BIRTH):
     """Calculates the current age based on the date of birth."""
 
-    date  = 0#localtime
-    year  = 0#date->year
-    month = 0#date->mon
-    day   = 0#date->mday
+    date_ = date.today()
+    year  = date_.year
+    month = date_.month
+    day   = date_.day
 
     age = year - YY_OF_BIRTH
 
