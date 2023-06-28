@@ -22,9 +22,8 @@
 
 #include <stdio.h>
 #include <time.h>
-#include <stdlib.h>
 
-/* Calculates the current age based on the date of birth. */
+// Calculates the current age based on the date of birth.
 int get_age(const int YY_OF_BIRTH,
             const int MM_OF_BIRTH,
             const int DD_OF_BIRTH) {
@@ -47,11 +46,9 @@ int get_age(const int YY_OF_BIRTH,
     return age;
 }
 
-/* The script entry point. */
+// The script entry point.
 int main() {
-    printf("%d\n", get_age(1977, 6, 27)); /* <== 1977-06-27. */
-
-    return EXIT_SUCCESS;
+    printf("%d\n", get_age(1977, 6, 27)); // <== 1977-06-27.
 }
 
-/* vim:set nu et ts=4 sw=4: */
+// vim:set nu et ts=4 sw=4:
