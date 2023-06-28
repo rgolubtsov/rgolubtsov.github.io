@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 # content/src/get_current_age.sh
-# ============================================================================
+# =============================================================================
 # Usage:
 #   $ curl -sO http://rgolubtsov.github.io/srcs/get_current_age.sh && \
 #     chmod 700                                 get_current_age.sh && \
 #                                             ./get_current_age.sh; echo $?
-# ============================================================================
+# =============================================================================
 # This is a demo script. It has to be run using the Bash 3.1+ shell.
 # Tested and known to run exactly the same way on modern versions
 # of Ubuntu Server LTS x86-64 and Arch Linux operating systems.
@@ -13,7 +13,7 @@
 # The script contains a function that calculates the current age
 # based on the date of birth, given in args. It then simply returns
 # the age calculated - nothing special.
-# ============================================================================
+# =============================================================================
 # Copyright (C) 2023 Radislav (Radicchio) Golubtsov
 #
 # (See the LICENSE file at the top of the source tree.)
