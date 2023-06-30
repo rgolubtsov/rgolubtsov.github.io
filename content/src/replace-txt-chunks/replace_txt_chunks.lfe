@@ -2,9 +2,9 @@
 #| content/src/replace-txt-chunks/replace_txt_chunks.lfe
  | ============================================================================
  | Usage:
- | $ curl -sO http://rgolubtsov.github.io/srcs/replace-txt-chunks/replace_txt_chunks.lfe && \
-     chmod 700                                 replace_txt_chunks.lfe && \
-                                             ./replace_txt_chunks.lfe; echo $?
+ |   $ SRCS=http://rgolubtsov.github.io/srcs; \
+       curl  -sO ${SRCS}/replace-txt-chunks/replace_txt_chunks.lfe   && \
+       chmod 700 replace_txt_chunks.lfe;  ./replace_txt_chunks.lfe;  echo $?
  | ============================================================================
  | This is a demo script. It has to be run in the LFE (Lisp Flavoured Erlang)
  | runtime environment. Tested and known to run exactly the same way on modern

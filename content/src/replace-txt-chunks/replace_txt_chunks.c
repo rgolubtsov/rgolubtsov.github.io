@@ -2,9 +2,9 @@
 /* content/src/replace-txt-chunks/replace_txt_chunks.c
  * ============================================================================
  * Usage:
- * $ curl -sO http://rgolubtsov.github.io/srcs/replace-txt-chunks/replace_txt_chunks.c && \
-     chmod 700                                 replace_txt_chunks.c && \
-                                             ./replace_txt_chunks.c; echo $?
+ *   $ SRCS=http://rgolubtsov.github.io/srcs; \
+       curl  -sO ${SRCS}/replace-txt-chunks/replace_txt_chunks.c   && \
+       chmod 700 replace_txt_chunks.c;    ./replace_txt_chunks.c;  echo $?
  * ============================================================================
  * This is a demo script. It has to be run as a C script using TCC
  * (Fabrice Bellard's Tiny C Compiler). Tested and known to run

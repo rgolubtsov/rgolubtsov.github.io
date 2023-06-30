@@ -2,9 +2,9 @@
 /* content/src/get-current-age/get_current_age.c
  * ============================================================================
  * Usage:
- *   $ curl -sO http://rgolubtsov.github.io/srcs/get-current-age/get_current_age.c && \
-       chmod 700                                 get_current_age.c && \
-                                               ./get_current_age.c; echo $?
+ *   $ SRCS=http://rgolubtsov.github.io/srcs; \
+       curl  -sO ${SRCS}/get-current-age/get_current_age.c   && \
+       chmod 700 get_current_age.c;    ./get_current_age.c;  echo $?
  * ============================================================================
  * This is a demo script. It has to be run as a C script using TCC
  * (Fabrice Bellard's Tiny C Compiler). Tested and known to run

@@ -2,9 +2,9 @@
 # content/src/get-current-age/get_current_age.py
 # =============================================================================
 # Usage:
-#   $ curl -sO http://rgolubtsov.github.io/srcs/get-current-age/get_current_age.py && \
-#     chmod 700                                 get_current_age.py && \
-#                                             ./get_current_age.py; echo $?
+#   $ SRCS=http://rgolubtsov.github.io/srcs; \
+#     curl  -sO ${SRCS}/get-current-age/get_current_age.py   && \
+#     chmod 700 get_current_age.py;   ./get_current_age.py;  echo $?
 # =============================================================================
 # This is a demo script. It has to be run in the Python 3 runtime environment.
 # Tested and known to run exactly the same way on modern versions

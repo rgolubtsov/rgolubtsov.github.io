@@ -2,9 +2,9 @@
 /* content/src/find-equil-index/find_equil_index.groovy
  * ============================================================================
  * Usage:
- * $ curl -sO http://rgolubtsov.github.io/srcs/find-equil-index/find_equil_index.groovy && \
-     chmod 700                                 find_equil_index.groovy && \
-                                             ./find_equil_index.groovy; echo $?
+ *   $ SRCS=http://rgolubtsov.github.io/srcs; \
+       curl  -sO    ${SRCS}/find-equil-index/find_equil_index.groovy   && \
+       chmod 700 find_equil_index.groovy;  ./find_equil_index.groovy;  echo $?
  * ============================================================================
  * This is a demo script. It has to be run in the Groovy (JVM) runtime
  * environment. Tested and known to run exactly the same way on modern versions

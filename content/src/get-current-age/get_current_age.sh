@@ -2,9 +2,9 @@
 # content/src/get-current-age/get_current_age.sh
 # =============================================================================
 # Usage:
-#   $ curl -sO http://rgolubtsov.github.io/srcs/get-current-age/get_current_age.sh && \
-#     chmod 700                                 get_current_age.sh && \
-#                                             ./get_current_age.sh; echo $?
+#   $ SRCS=http://rgolubtsov.github.io/srcs; \
+#     curl  -sO ${SRCS}/get-current-age/get_current_age.sh   && \
+#     chmod 700 get_current_age.sh;   ./get_current_age.sh;  echo $?
 # =============================================================================
 # This is a demo script. It has to be run using the Bash 3.1+ shell.
 # Tested and known to run exactly the same way on modern versions
