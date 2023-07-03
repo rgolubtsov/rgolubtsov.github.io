@@ -40,7 +40,7 @@ def replace(text, pos, subst) {
     for (i in 0 .. (text_ary_len - 1)) {
         def text_ary_i_len = text_ary[i].size()
 
-//      println(DBG_PREF + text_ary[i])
+//      println("$DBG_PREF${text_ary[i]}")
 
         if ((pos - 1 < text_ary_i_len)
             && (text_ary[i].substring(pos - 1) != COMMA)
@@ -50,11 +50,11 @@ def replace(text, pos, subst) {
             .replace(text_ary[i].substring(pos - 1), subst) +
                      text_ary[i].substring(pos    )
 
-//          println(DBG_PREF + text__     )
+//          println("$DBG_PREF$text__"       )
 
             text_ += text__
         } else {
-//          println(DBG_PREF + text_ary[i])
+//          println("$DBG_PREF${text_ary[i]}")
 
             text_ += text_ary[i]
         }
@@ -78,12 +78,12 @@ final pos   = 3 // <== Can be set to either from 1 to infinity.
 //final subst = "+-="
 final subst = "|"
 
-println(DBG_PREF + pos             )
-println(DBG_PREF + subst + NEW_LINE)
+println("$DBG_PREF$pos"           )
+println("$DBG_PREF$subst$NEW_LINE")
 
 def text_ = replace(text, pos, subst)
 
-println(NEW_LINE + DBG_PREF + text )
-println(           DBG_PREF + text_)
+println("$NEW_LINE$DBG_PREF$text" )
+println(         "$DBG_PREF$text_")
 
 // vim:set nu et ts=4 sw=4:

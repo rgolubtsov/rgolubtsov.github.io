@@ -100,10 +100,10 @@ def solution(A) {
         sum_of_A_2  = sum_of_A - sum_of_A_1
         sum_of_A_2 -= A[i]
 
-        println("==> sum_of_A_1: "   + sum_of_A_1
-             + " ==> sum_of_A_2: "   + sum_of_A_2
-             + " ==> i: "            + i
-             + " ==> A[" + i + "]: " + A[i])
+        println("==> sum_of_A_1: $sum_of_A_1 "
+              + "==> sum_of_A_2: $sum_of_A_2 "
+              + "==> i: $i "
+              + "==> A[$i]: ${A[i]}")
 
         if (sum_of_A_1 == sum_of_A_2) {
             return i // Okay, the equilibrium index found.
@@ -119,6 +119,6 @@ final A = [-1, 3, -4, 5, 1, -6, 2, 1]
 
 def   i = solution(A)
 
-println(NEW_LINE + EQUIL_INDEX_MSG + i + NEW_LINE)
+println("$NEW_LINE$EQUIL_INDEX_MSG$i$NEW_LINE")
 
 // vim:set nu et ts=4 sw=4:
