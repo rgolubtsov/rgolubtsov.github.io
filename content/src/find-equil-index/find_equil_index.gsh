@@ -1,10 +1,10 @@
 #!/usr/bin/env groovy
-/* content/src/find-equil-index/find_equil_index.groovy
+/* content/src/find-equil-index/find_equil_index.gsh
  * ============================================================================
  * Usage:
  *   $ SRCS=http://rgolubtsov.github.io/srcs; \
-       curl  -sO    ${SRCS}/find-equil-index/find_equil_index.groovy   && \
-       chmod 700 find_equil_index.groovy;  ./find_equil_index.groovy;  echo $?
+       curl  -sO ${SRCS}/find-equil-index/find_equil_index.gsh   && \
+       chmod 700 find_equil_index.gsh;  ./find_equil_index.gsh;  echo $?
  * ============================================================================
  * This is a demo script. It has to be run in the Groovy (JVM) runtime
  * environment. Tested and known to run exactly the same way on modern versions

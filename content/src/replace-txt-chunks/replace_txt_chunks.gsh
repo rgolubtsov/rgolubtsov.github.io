@@ -1,10 +1,10 @@
 #!/usr/bin/env groovy
-/* content/src/replace-txt-chunks/replace_txt_chunks.groovy
+/* content/src/replace-txt-chunks/replace_txt_chunks.gsh
  * ============================================================================
  * Usage:
- * $ SRCS=http://rgolubtsov.github.io/srcs; \
-     curl  -sO   ${SRCS}/replace-txt-chunks/replace_txt_chunks.groovy   && \
-     chmod 700 replace_txt_chunks.groovy; ./replace_txt_chunks.groovy;  echo $?
+ *   $ SRCS=http://rgolubtsov.github.io/srcs; \
+       curl  -sO ${SRCS}/replace-txt-chunks/replace_txt_chunks.gsh   && \
+       chmod 700 replace_txt_chunks.gsh;  ./replace_txt_chunks.gsh;  echo $?
  * ============================================================================
  * This is a demo script. It has to be run in the Groovy (JVM) runtime
  * environment. Tested and known to run exactly the same way on modern versions
