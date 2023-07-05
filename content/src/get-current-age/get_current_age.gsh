@@ -19,12 +19,14 @@
  * (See the LICENSE file at the top of the source tree.)
  */
 
+import java.time.LocalDate
+
 // Calculates the current age based on the date of birth.
 def get_age(YY_OF_BIRTH, MM_OF_BIRTH, DD_OF_BIRTH) {
-    def date  = 0;//new Date()
-    def year  = 0;//date.getYear()
-    def month = 0;//date.getMonth()
-    def day   = 0;//date.getDate()
+    def date  = LocalDate.now()
+    def year  = date.getYear()
+    def month = date.getMonthValue()
+    def day   = date.getDayOfMonth()
 
     def age = year - YY_OF_BIRTH
 
