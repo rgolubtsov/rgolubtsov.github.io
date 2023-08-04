@@ -5448,5 +5448,30 @@
         },{ "gid"   : 7,
             "score" : ""
         }]
+    },
+    {
+        "mid"       : 219,
+        "year"      : "2023",
+        "month"     : "August",
+        "day"       : 4,
+        "weekday"   : "Fr",
+        "winner"    : "Radicchio",
+        "result"    : "0-4",
+        "games"     : [{
+            "gid"   : 1,
+            "score" : "8:11"
+        },{ "gid"   : 2,
+            "score" : "9:11"
+        },{ "gid"   : 3,
+            "score" : "5:11"
+        },{ "gid"   : 4,
+            "score" : "10:12"
+        },{ "gid"   : 5,
+            "score" : ""
+        },{ "gid"   : 6,
+            "score" : ""
+        },{ "gid"   : 7,
+            "score" : ""
+        }]
     }]
 }
