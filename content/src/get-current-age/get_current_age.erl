@@ -21,27 +21,28 @@
 
 %% @doc Calculates the current age based on the date of birth.
 get_age(YY_OF_BIRTH, MM_OF_BIRTH, DD_OF_BIRTH) ->
-    date  = 0,%Dates.today(),
-    year  = 0,%Dates.year(date),
-    month = 0,%Dates.month(date),
-    day   = 0,%Dates.day(date),
+    Date  = calendar:local_time(),
+    Year  = element(1, element(1, Date)),
+    Month = element(2, element(1, Date)),
+    Day   = element(3, element(1, Date)),
 
-    age = year - YY_OF_BIRTH,
+    Age = Year - YY_OF_BIRTH,
 
-    if (month < MM_OF_BIRTH) ->
-        age = age - 1;
+    if (Month < MM_OF_BIRTH) ->
+        Age - 1;
        (true) ->
-        if (month =:= MM_OF_BIRTH) ->
-            if (day < DD_OF_BIRTH) ->
-                age = age - 1;
-               (true) -> false
+        if (Month =:= MM_OF_BIRTH) ->
+            if (Day < DD_OF_BIRTH) ->
+                Age - 1;
+               (true) -> Age
             end;
-           (true) -> false
+           (true) -> Age
         end
     end.
 
 %% @doc The script entry point.
 main(_) ->
-    io:put_chars(get_age(1977, 6, 27)). % <== 1977-06-27.
+    io:put_chars(integer_to_list(get_age(1977, 6, 27))), % <== 1977-06-27.
+    io:nl().
 
 % vim:set nu et ts=4 sw=4:
