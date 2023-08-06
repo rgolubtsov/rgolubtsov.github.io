@@ -21,10 +21,10 @@
 
 %% @doc Calculates the current age based on the date of birth.
 get_age(YY_OF_BIRTH, MM_OF_BIRTH, DD_OF_BIRTH) ->
-    Date  = calendar:local_time(),
-    Year  = element(1, element(1, Date)),
-    Month = element(2, element(1, Date)),
-    Day   = element(3, element(1, Date)),
+    Date  = element(1, calendar:local_time()),
+    Year  = element(1, Date),
+    Month = element(2, Date),
+    Day   = element(3, Date),
 
     Age = Year - YY_OF_BIRTH,
 
