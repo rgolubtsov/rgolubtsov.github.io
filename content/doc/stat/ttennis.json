@@ -5498,5 +5498,30 @@
         },{ "gid"   : 7,
             "score" : ""
         }]
+    },
+    {
+        "mid"       : 221,
+        "year"      : "2023",
+        "month"     : "August",
+        "day"       : 8,
+        "weekday"   : "Tu",
+        "winner"    : "Yaro",
+        "result"    : "4-2",
+        "games"     : [{
+            "gid"   : 1,
+            "score" : "11:9"
+        },{ "gid"   : 2,
+            "score" : "8:11"
+        },{ "gid"   : 3,
+            "score" : "5:11"
+        },{ "gid"   : 4,
+            "score" : "11:7"
+        },{ "gid"   : 5,
+            "score" : "11:6"
+        },{ "gid"   : 6,
+            "score" : "11:8"
+        },{ "gid"   : 7,
+            "score" : ""
+        }]
     }]
 }
