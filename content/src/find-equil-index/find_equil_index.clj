@@ -4,7 +4,8 @@
 ; Usage:
 ;   $ SRCS=http://rgolubtsov.github.io/srcs; \
 ;     curl  -sO ${SRCS}/find-equil-index/find_equil_index.clj   && \
-;     chmod 700 find_equil_index.clj;  ./find_equil_index.clj;  echo $?
+;     chmod 700 find_equil_index.clj;  ./find_equil_index.clj 2>&1 \
+;   | sed '/WARNING/d'; echo $?
 ; =============================================================================
 ; This is a demo script. It has to be run in the Clojure (JVM) runtime
 ; environment. Tested and known to run exactly the same way on modern versions

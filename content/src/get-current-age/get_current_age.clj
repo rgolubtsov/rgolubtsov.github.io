@@ -3,8 +3,9 @@
 ; =============================================================================
 ; Usage:
 ;   $ SRCS=http://rgolubtsov.github.io/srcs; \
-;       curl  -sO ${SRCS}/get-current-age/get_current_age.clj   && \
-;       chmod 700 get_current_age.clj;  ./get_current_age.clj;  echo $?
+;     curl  -sO ${SRCS}/get-current-age/get_current_age.clj   && \
+;     chmod 700 get_current_age.clj;  ./get_current_age.clj 2>&1 \
+;   | sed '/WARNING/d'; echo $?
 ; =============================================================================
 ; This is a demo script. It has to be run in the Clojure (JVM) runtime
 ; environment. Tested and known to run exactly the same way on modern versions
