@@ -1,0 +1,163 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="x-ua-compatible" content="IE=edge" />
+<meta       name="viewport"        content="width=device-width,initial-scale=1" />
+<meta       name="description"     content="A personal website of a power looper, a skateboarder, and a coder" />
+<meta       name="keywords"        content="Radislav Golubtsov Radicchio personal website power looper skateboarder coder passionate software developer" />
+<meta       name="motto"           content="Be a power looper, love a fighter chick." />
+<meta       name="alter"           content="No pockets in a shroud." />
+<meta       name="author"          content="Radislav (Radicchio) Golubtsov" />
+<meta       name="copyright"       content="Copyright (C) 2016-2023 Radislav (Radicchio) Golubtsov" />
+<title>A Cup of Radicchio: Install Ubuntu Server 22.04 LTS in WSL 2/Hyper-V</title>
+<link href="/radicchio.css" type="text/css"  rel="stylesheet" />
+<link href="/favicon.ico"   type="image/png" rel="icon" />
+<link href="https://fonts.googleapis.com"    rel="preconnect" />
+<link href="https://fonts.gstatic.com"       rel="preconnect" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+</head>
+<body id="radicchio">
+<table id="header">
+<tbody>
+<tr id="title">
+<td rowspan="2" id="v-bar-h"></td>
+<td id="title-td">A Cup of Radicchio: Install Ubuntu Server 22.04 LTS in WSL 2/Hyper-V<br />
+<span id="subtitle">A personal website of a power looper, a skateboarder, and a coder</span></td>
+</tr>
+<tr id="navbar">
+<td id="navbar-td"><a href="/" id="nav-home">&nbsp;Home&nbsp;</a><a href="/data/docs/" id="nav-docs">&nbsp;Docs&nbsp;</a><a href="/data/srcs/" id="nav-srcs">&nbsp;Sources&nbsp;</a><a href="/data/blog/" id="nav-blog">&nbsp;Blog&nbsp;</a><a href="https://github.com/rgolubtsov" id="nav-ghub" target="_blank" rel="nofollow noopener noreferrer">&nbsp;GitHub&nbsp;</a></td>
+</tr>
+</tbody>
+</table>
+<h1>Install Ubuntu Server 22.04 LTS in WSL 2/Hyper-V</h1><h3>A short essay on how to install and configure Ubuntu Server 22.04 LTS by means of WSL 2, backed by Microsoft Hyper-V</h3><p><em>28th of October, 2023</em></p>
+<p><strong>Beware:</strong> These are specifically tailored instructions &ndash; your mileage may vary.</p>
+<p>Currently one may find here only raw, simply dumped, bare CLI commands, one-by-one. But their execution sequences will definitely be accompanied with instructions, comments, and explanations a little bit later. &ndash; Think of this article as in progress for a while. <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f603.png" class="emoji" alt="" /></p>
+<p>Create a specific user account for daily operations and provide it power user privileges:</p>
+<pre><code>$ sudo adduser &lt;username&gt;
+Adding user `&lt;username&gt;&#39; ...
+Adding new group `&lt;username&gt;&#39; (1001) ...
+Adding new user `&lt;username&gt;&#39; (1001) with group `&lt;username&gt;&#39; ...
+Creating home directory `/home/&lt;username&gt;&#39; ...
+Copying files from `/etc/skel&#39; ...
+New password:
+Retype new password:
+passwd: password updated successfully
+Changing the user information for &lt;username&gt;
+Enter the new value, or press ENTER for the default
+        Full Name []: [first_name] [last_name]
+        Room Number []:
+        Work Phone []:
+        Home Phone []:
+        Other []:
+Is the information correct? [Y/n]
+$
+$ sudo usermod -a -G adm,dialout,cdrom,floppy,sudo,audio,dip,video,plugdev,netdev &lt;username&gt;
+</code></pre>
+<p>Do relogin and check out that the newly created user has the ownership in those additionally assigned it user groups:</p>
+<pre><code>$ id
+uid=1001(&lt;username&gt;) gid=1001(&lt;usergroup&gt;) groups=1001(&lt;usergroup&gt;),4(adm),20(dialout),24(cdrom),25(floppy),27(sudo),29(audio),30(dip),44(video),46(plugdev),116(netdev)
+$
+$ groups
+&lt;usergroup&gt; adm dialout cdrom floppy sudo audio dip video plugdev netdev
+</code></pre>
+<p>[ Packages ]</p>
+<pre><code>$ sudo apt-get install build-essential tcc bc
+...
+$
+$ sudo apt-get install zip unzip unrar p7zip tree colordiff dos2unix lynx elinks net-tools
+...
+$
+$ sudo apt-get install erlang-nox erlang-dev
+...
+$
+$ sudo apt-get install x11-apps ffmpeg mpg321 mplayer xine-console
+...
+$
+$ sudo apt-get install mlocate
+...
+</code></pre>
+<p>[ Perl ]</p>
+<pre><code>$ sudo apt-get install cpanminus
+...
+$
+$ sudo cpanm App::cpanminus
+...
+$
+$ sudo cpanm App::cpanoutdated
+...
+$
+$ cpan-outdated -p | sudo cpanm
+...
+$
+$ sudo cpanm Mojolicious Net::DNS::Native
+...
+$
+$ sudo cpanm Twiggy
+...
+$
+$ mojo version
+CORE
+  Perl        (v5.34.0, linux)
+  Mojolicious (9.34, Waffle)
+
+OPTIONAL
+  Cpanel::JSON::XS 4.09+   (4.37)
+  EV 4.32+                 (n/a)
+  IO::Socket::Socks 0.64+  (n/a)
+  IO::Socket::SSL 2.009+   (n/a)
+  Net::DNS::Native 0.15+   (0.22)
+  Role::Tiny 2.000001+     (2.002004)
+  Future::AsyncAwait 0.52+ (n/a)
+
+This version is up to date, have fun!
+$
+$ twiggy -v
+Twiggy 0.1026
+</code></pre>
+<p>[ Rebar3 + LFE ]</p>
+<pre><code>$ rebar3 -v
+rebar 3.22.1 on Erlang/OTP 24 Erts 12.2.1
+$
+$ rebar3 lfe repl
+===&gt; Verifying dependencies...
+Erlang/OTP 24 [erts-12.2.1] [source] [64-bit] [smp:16:16] [ds:16:16:10] [async-threads:1] [jit]
+
+   ..-~.~_~---..
+  (      \\     )    |   A Lisp-2+ on the Erlang VM
+  |`-.._/_\\_.-&#39;:    |   Type (help) for usage info.
+  |         g |_ \   |
+  |        n    | |  |   Docs: http://docs.lfe.io/
+  |       a    / /   |   Source: http://github.com/lfe/lfe
+   \     l    |_/    |
+    \   r     /      |   LFE v2.1.2 (abort with ^C; enter JCL with ^G)
+     `-E___.-&#39;
+
+lfe&gt;
+lfe&gt; (halt)
+</code></pre>
+<p><strong>TBD</strong></p>
+
+<table id="footer">
+<tbody><tr><td id="v-bar-f"></td><td id="footer-td"><a href="https://anybrowser.org/campaign/" target="_blank" rel="nofollow noopener"><img style="border:0;width:88px;height:31px" src="/static/img/misc/vwab" alt="Viewable With Any Browser" /></a><a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank" rel="nofollow noopener"><img style="border:0;width:88px;height:31px" src="/static/img/misc/vcss" alt="Valid CSS!" /></a></td></tr></tbody>
+</table>
+<script src="/radicchio.js"></script>
+</body>
+</html>
