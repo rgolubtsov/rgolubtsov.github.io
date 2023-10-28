@@ -49,7 +49,7 @@
 </table>
 <h1>Install Ubuntu Server 22.04 LTS in WSL 2/Hyper-V</h1><h3>A short essay on how to install and configure Ubuntu Server 22.04 LTS by means of WSL 2, backed by Microsoft Hyper-V</h3><p><em>28th of October, 2023</em></p>
 <p><strong>Beware:</strong> These are specifically tailored instructions &ndash; your mileage may vary.</p>
-<p>Currently one may find here only raw, simply dumped, bare CLI commands, one-by-one. But their execution sequences will definitely be accompanied with instructions, comments, and explanations a little bit later. &ndash; Think of this article as in progress for a while. <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f603.png" class="emoji" alt="" /></p>
+<p><em>Currently one may find here only raw, simply dumped, bare CLI commands, one-by-one. But their execution sequences will definitely be accompanied with instructions, comments, and explanations a little bit later. &ndash; Think of this article as in progress for a while.</em></p>
 <p>Create a specific user account for daily operations and provide it power user privileges:</p>
 <pre><code>$ sudo adduser &lt;username&gt;
 Adding user `&lt;username&gt;&#39; ...
@@ -78,7 +78,7 @@ $
 $ groups
 &lt;usergroup&gt; adm dialout cdrom floppy sudo audio dip video plugdev netdev
 </code></pre>
-<p>[ Packages ]</p>
+<p><strong>[ Packages ]</strong></p>
 <pre><code>$ sudo apt-get install build-essential tcc bc
 ...
 $
@@ -94,7 +94,7 @@ $
 $ sudo apt-get install mlocate
 ...
 </code></pre>
-<p>[ Perl ]</p>
+<p><strong>[ Perl ]</strong></p>
 <pre><code>$ sudo apt-get install cpanminus
 ...
 $
@@ -132,7 +132,7 @@ $
 $ twiggy -v
 Twiggy 0.1026
 </code></pre>
-<p>[ Rebar3 + LFE ]</p>
+<p><strong>[ Rebar3 + LFE ]</strong></p>
 <pre><code>$ rebar3 -v
 rebar 3.22.1 on Erlang/OTP 24 Erts 12.2.1
 $

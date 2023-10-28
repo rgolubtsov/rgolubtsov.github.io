@@ -71,11 +71,11 @@ $ ssh -C &lt;vmusername&gt;@&lt;vmhostname&gt;
 </code></pre>
 <p>The fifth one is a series of requests for getting statuses of power supply sensors on a laptop in any modern Linux distro like Arch Linux or Ubuntu:</p>
 <pre><code>$ # Query AC adapter.
-$ cat /sys/class/power_supply/ACAD/online
+$ cat /sys/class/power_supply/AC+(AD|1)/online
 $ # Query the battery.
-$ cat /sys/class/power_supply/BAT1/charge_full
-$ cat /sys/class/power_supply/BAT1/charge_now
-$ cat /sys/class/power_supply/BAT1/current_now
+$ cat /sys/class/power_supply/BAT1/+(charge|energy)_full
+$ cat /sys/class/power_supply/BAT1/+(charge|energy)_now
+$ cat /sys/class/power_supply/BAT1/+(current|power)_now
 </code></pre>
 <p>The sixth one is an infrequent, from time to time procedure of adjusting the Hardware Clock and the System Clock in the same time:</p>
 <pre><code>$ # Set the Hardware Clock and the System Clock unconditionally, non-synced.
