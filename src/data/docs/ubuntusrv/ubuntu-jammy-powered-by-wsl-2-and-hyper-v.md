@@ -6,7 +6,7 @@
 
 **Beware:** These are specifically tailored instructions &ndash; your mileage may vary.
 
-Currently one may find here only raw, simply dumped, bare CLI commands, one-by-one. But their execution sequences will definitely be accompanied with instructions, comments, and explanations a little bit later. &ndash; Think of this article as in progress for a while. :smiley:
+*Currently one may find here only raw, simply dumped, bare CLI commands, one-by-one. But their execution sequences will definitely be accompanied with instructions, comments, and explanations a little bit later. &ndash; Think of this article as in progress for a while.*
 
 Create a specific user account for daily operations and provide it power user privileges:
 
@@ -42,7 +42,7 @@ $ groups
 <usergroup> adm dialout cdrom floppy sudo audio dip video plugdev netdev
 ```
 
-[ Packages ]
+**[ Packages ]**
 
 ```
 $ sudo apt-get install build-essential tcc bc
@@ -61,7 +61,7 @@ $ sudo apt-get install mlocate
 ...
 ```
 
-[ Perl ]
+**[ Perl ]**
 
 ```
 $ sudo apt-get install cpanminus
@@ -102,7 +102,7 @@ $ twiggy -v
 Twiggy 0.1026
 ```
 
-[ Rebar3 + LFE ]
+**[ Rebar3 + LFE ]**
 
 ```
 $ rebar3 -v
