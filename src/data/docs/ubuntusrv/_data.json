@@ -28,5 +28,10 @@
         "layout"                                              : "../../../_radicchio",
         "sitename_"                                           : ": Restore Joomla! website from backup on Ubuntu Server 20.04 LTS",
         "subtitle_"                                           : ""
+    },
+    "ubuntu-jammy-powered-by-wsl-2-and-hyper-v"               : {
+        "layout"                                              : "../../../_radicchio",
+        "sitename_"                                           : ": Install Ubuntu Server 22.04 LTS in WSL 2/Hyper-V",
+        "subtitle_"                                           : ""
     }
 }
