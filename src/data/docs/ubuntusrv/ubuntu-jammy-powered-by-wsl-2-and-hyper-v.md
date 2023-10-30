@@ -4,11 +4,11 @@
 
 *28th of October, 2023*
 
-**Beware:** These are specifically tailored instructions &ndash; your mileage may vary.
+**Beware:** These are relatively custom-tailored instructions &ndash; your mileage may vary.
 
 *Currently one may find here only raw, simply dumped, bare CLI commands, one-by-one. But their execution sequences will definitely be accompanied with instructions, comments, and explanations a little bit later. &ndash; Think of this article as in progress for a while.*
 
-Create a specific user account for daily operations and provide it power user privileges:
+Create a specific user account for daily operations and provide it with power user privileges:
 
 ```
 $ sudo adduser <username>
