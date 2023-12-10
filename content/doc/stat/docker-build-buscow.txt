@@ -1,9 +1,13 @@
 $ sudo docker build -ttransroutownish/buscow .
-Sending build context to Docker daemon  1.653MB
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  28.63MB
 Step 1/19 : FROM       erlang:alpine AS build
- ---> da7fd9a99648
+ ---> 41ffd9d7cd03
 Step 2/19 : RUN        ["apk", "add", "gcc"     ]
- ---> Running in 47baf2b04b5a
+ ---> Running in 99953dfd4658
 fetch https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/APKINDEX.tar.gz
 fetch https://dl-cdn.alpinelinux.org/alpine/v3.18/community/x86_64/APKINDEX.tar.gz
 (1/9) Installing zstd-libs (1.5.5-r4)
@@ -15,42 +19,42 @@ fetch https://dl-cdn.alpinelinux.org/alpine/v3.18/community/x86_64/APKINDEX.tar.
 (7/9) Installing mpfr4 (4.2.0_p12-r0)
 (8/9) Installing mpc1 (1.3.1-r1)
 (9/9) Installing gcc (12.2.1_git20220924-r10)
-Executing busybox-1.36.1-r2.trigger
+Executing busybox-1.36.1-r5.trigger
 OK: 143 MiB in 34 packages
-Removing intermediate container 47baf2b04b5a
- ---> 35dc5a7add21
+Removing intermediate container 99953dfd4658
+ ---> 224e3b1ae910
 Step 3/19 : RUN        ["apk", "add", "musl-dev"]
- ---> Running in 6fab3535c754
-(1/1) Installing musl-dev (1.2.4-r1)
+ ---> Running in b9d6ac713164
+(1/1) Installing musl-dev (1.2.4-r2)
 OK: 153 MiB in 35 packages
-Removing intermediate container 6fab3535c754
- ---> 8c6d9fe330ba
+Removing intermediate container b9d6ac713164
+ ---> fe6ba197b4b2
 Step 4/19 : WORKDIR    var/tmp
- ---> Running in 7f50e7ded5c9
-Removing intermediate container 7f50e7ded5c9
- ---> 1c6bb54ced70
+ ---> Running in a9182068ec9f
+Removing intermediate container a9182068ec9f
+ ---> e9bf88716f70
 Step 5/19 : RUN        ["mkdir", "-p", "bus/apps", "bus/config", "bus/data"]
- ---> Running in b64fa3fa6b2f
-Removing intermediate container b64fa3fa6b2f
- ---> 1177c07313ef
+ ---> Running in 986dd3d0629e
+Removing intermediate container 986dd3d0629e
+ ---> bd7afed5b905
 Step 6/19 : COPY       apps         bus/apps/
- ---> aad5f5d50d90
+ ---> d64b3bb67c87
 Step 7/19 : COPY       config       bus/config/
- ---> 1e21b0332b8a
+ ---> 81dd6e4e386e
 Step 8/19 : COPY       data         bus/data/
- ---> da5c2fdb6187
+ ---> c0a422b13781
 Step 9/19 : COPY       rebar.config bus/
- ---> 00e203afa5f3
+ ---> d7a13b02ff66
 Step 10/19 : WORKDIR    bus
- ---> Running in b042634f8aa2
-Removing intermediate container b042634f8aa2
- ---> 46ccd193434d
+ ---> Running in 432a457be926
+Removing intermediate container 432a457be926
+ ---> 262edaf9d702
 Step 11/19 : ENV        HOME=.
- ---> Running in f7d78f94a331
-Removing intermediate container f7d78f94a331
- ---> e48f7d1a6470
+ ---> Running in b826c41b7c0e
+Removing intermediate container b826c41b7c0e
+ ---> a79879957ebc
 Step 12/19 : RUN        ["rebar3", "as", "prod", "release"]
- ---> Running in 6d9bd1e35b02
+ ---> Running in 79e86725d016
 ===> Verifying dependencies...
 ===> Fetching cowboy v2.10.0
 ===> Fetching jsx v3.1.0
@@ -70,42 +74,46 @@ Step 12/19 : RUN        ["rebar3", "as", "prod", "release"]
 ===> Linking priv/syslog_drv.so
 ===> Analyzing applications...
 ===> Compiling bus
-Solving Release bus-0.3.4Resolved bus-0.3.4release: bus-0.3.4
-     erts: 14.0.2
+Solving Release bus-0.3.5Resolved bus-0.3.5release: bus-0.3.5
+     erts: 14.1.1
      goals:
           bus
      applications:
-          {kernel,"9.0.2"}
-          {stdlib,"5.0.2"}
-          {crypto,"5.2"}
+          {kernel,"9.1"}
+          {stdlib,"5.1.1"}
+          {crypto,"5.3"}
           {cowlib,"2.12.1"}
-          {asn1,"5.1"}
-          {public_key,"1.14"}
-          {ssl,"11.0.2"}
+          {asn1,"5.2"}
+          {public_key,"1.14.1"}
+          {ssl,"11.0.3"}
           {ranch,"1.8.0"}
           {cowboy,"2.10.0"}
           {syslog,"1.1.0"}
           {jsx,"3.1.0"}
-          {bus,"0.3.4"}
-Assembling release bus-0.3.4...Release output dir /var/tmp/bus/_build/prod/rel/busRewriting .app file: /var/tmp/bus/_build/prod/rel/bus/lib/kernel-9.0.2/ebin/kernel.appRewriting .app file: /var/tmp/bus/_build/prod/rel/bus/lib/stdlib-5.0.2/ebin/stdlib.appRewriting .app file: /var/tmp/bus/_build/prod/rel/bus/lib/crypto-5.2/ebin/crypto.appRewriting .app file: /var/tmp/bus/_build/prod/rel/bus/lib/cowlib-2.12.1/ebin/cowlib.appRewriting .app file: /var/tmp/bus/_build/prod/rel/bus/lib/asn1-5.1/ebin/asn1.appRewriting .app file: /var/tmp/bus/_build/prod/rel/bus/lib/public_key-1.14/ebin/public_key.appRewriting .app file: /var/tmp/bus/_build/prod/rel/bus/lib/ssl-11.0.2/ebin/ssl.appRewriting .app file: /var/tmp/bus/_build/prod/rel/bus/lib/ranch-1.8.0/ebin/ranch.appRewriting .app file: /var/tmp/bus/_build/prod/rel/bus/lib/cowboy-2.10.0/ebin/cowboy.appRewriting .app file: /var/tmp/bus/_build/prod/rel/bus/lib/syslog-1.1.0/ebin/syslog.appRewriting .app file: /var/tmp/bus/_build/prod/rel/bus/lib/jsx-3.1.0/ebin/jsx.appRewriting .app file: /var/tmp/bus/_build/prod/rel/bus/lib/bus-0.3.4/ebin/bus.appIncluding Erts from /usr/local/lib/erlangWarnings generating release:
-*WARNING* Missing application sasl. Can not upgrade with this releaserelease start script createdRelease successfully assembled: _build/prod/rel/busStripping release beam filesRemoving intermediate container 6d9bd1e35b02
- ---> 055f850f3967
+          {bus,"0.3.5"}
+Assembling release bus-0.3.5...Release output dir /var/tmp/bus/_build/prod/rel/busRewriting .app file: /var/tmp/bus/_build/prod/rel/bus/lib/kernel-9.1/ebin/kernel.appRewriting .app file: /var/tmp/bus/_build/prod/rel/bus/lib/stdlib-5.1.1/ebin/stdlib.appRewriting .app file: /var/tmp/bus/_build/prod/rel/bus/lib/crypto-5.3/ebin/crypto.appRewriting .app file: /var/tmp/bus/_build/prod/rel/bus/lib/cowlib-2.12.1/ebin/cowlib.appRewriting .app file: /var/tmp/bus/_build/prod/rel/bus/lib/asn1-5.2/ebin/asn1.appRewriting .app file: /var/tmp/bus/_build/prod/rel/bus/lib/public_key-1.14.1/ebin/public_key.appRewriting .app file: /var/tmp/bus/_build/prod/rel/bus/lib/ssl-11.0.3/ebin/ssl.appRewriting .app file: /var/tmp/bus/_build/prod/rel/bus/lib/ranch-1.8.0/ebin/ranch.appRewriting .app file: /var/tmp/bus/_build/prod/rel/bus/lib/cowboy-2.10.0/ebin/cowboy.appRewriting .app file: /var/tmp/bus/_build/prod/rel/bus/lib/syslog-1.1.0/ebin/syslog.appRewriting .app file: /var/tmp/bus/_build/prod/rel/bus/lib/jsx-3.1.0/ebin/jsx.appRewriting .app file: /var/tmp/bus/_build/prod/rel/bus/lib/bus-0.3.5/ebin/bus.appIncluding Erts from /usr/local/lib/erlangWarnings generating release:
+*WARNING* Missing application sasl. Can not upgrade with this releaserelease start script createdRelease successfully assembled: _build/prod/rel/busStripping release beam filesRemoving intermediate container 79e86725d016
+ ---> 09f6ce8bd277
 Step 13/19 : FROM       alpine
  ---> 042a816809aa
 Step 14/19 : RUN        ["apk", "add", "ncurses-libs"]
+ ---> Using cache
  ---> 414c176cef86
 Step 15/19 : RUN        ["apk", "add", "libstdc++"   ]
+ ---> Using cache
  ---> 8963ad41a22e
 Step 16/19 : RUN        ["apk", "add", "libcrypto1.1"]
+ ---> Using cache
  ---> 0cb59fb46ea5
 Step 17/19 : WORKDIR    var/tmp
+ ---> Using cache
  ---> 4c712f9c60ac
 Step 18/19 : COPY       --from=build var/tmp/bus/_build/prod/rel ./
- ---> 53f1c0bc9665
+ ---> 15428be049ef
 Step 19/19 : ENTRYPOINT ["bus/bin/bus", "foreground"]
- ---> Running in 404c3268de8b
-Removing intermediate container 404c3268de8b
- ---> 160612badb0e
-Successfully built 160612badb0e
+ ---> Running in 6574e3d4c8de
+Removing intermediate container 6574e3d4c8de
+ ---> a3c89b842cbf
+Successfully built a3c89b842cbf
 Successfully tagged transroutownish/buscow:latest
 $
