@@ -1,0 +1,53 @@
+$ sudo docker build -ttransroutownish/bus .
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  25.47MB
+Step 1/15 : FROM       azul/zulu-openjdk-alpine:17-jre-headless-latest AS layers
+ ---> 0c99375e5ab4
+Step 2/15 : USER       nobody
+ ---> Running in df32b4caf88c
+Removing intermediate container df32b4caf88c
+ ---> 83d7e89fec35
+Step 3/15 : WORKDIR    var/tmp
+ ---> Running in b6aa017f1da9
+Removing intermediate container b6aa017f1da9
+ ---> dc70ba5dfd6b
+Step 4/15 : COPY       target/*.jar bus.jar
+ ---> 2fd906989e46
+Step 5/15 : RUN        ["java", "-Djarmode=layertools", "-jar", "bus.jar", "extract", "--destination", "layers"]
+ ---> Running in 2e09b4dcabf6
+Removing intermediate container 2e09b4dcabf6
+ ---> c289e13e6e0f
+Step 6/15 : FROM       azul/zulu-openjdk-alpine:17-jre-headless-latest
+ ---> 0c99375e5ab4
+Step 7/15 : USER       daemon
+ ---> Running in 885bd7d2f828
+Removing intermediate container 885bd7d2f828
+ ---> abfa4050aa59
+Step 8/15 : WORKDIR    var/tmp
+ ---> Running in 49cc6dda4633
+Removing intermediate container 49cc6dda4633
+ ---> 01d9b31af196
+Step 9/15 : ARG        LAYERS=var/tmp/layers
+ ---> Running in 16c9335cd85f
+Removing intermediate container 16c9335cd85f
+ ---> a5bfbf9f2277
+Step 10/15 : COPY       --from=layers ${LAYERS}/dependencies          ./
+ ---> ecd1793dfe5f
+Step 11/15 : COPY       --from=layers ${LAYERS}/spring-boot-loader    ./
+ ---> 170c2a20f9dd
+Step 12/15 : COPY       --from=layers ${LAYERS}/snapshot-dependencies ./
+ ---> 1ec6ea5da490
+Step 13/15 : COPY       --from=layers ${LAYERS}/application           ./
+ ---> b842b300a2e5
+Step 14/15 : COPY       data data/
+ ---> 320f06e9958b
+Step 15/15 : ENTRYPOINT ["java", "org.springframework.boot.loader.JarLauncher"]
+ ---> Running in a29d4cfa7c1d
+Removing intermediate container a29d4cfa7c1d
+ ---> 945417c46bae
+Successfully built 945417c46bae
+Successfully tagged transroutownish/bus:latest
+$
