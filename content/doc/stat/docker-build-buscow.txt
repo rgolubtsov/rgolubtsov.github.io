@@ -3,11 +3,11 @@ DEPRECATED: The legacy builder is deprecated and will be removed in a future rel
             Install the buildx component to build images with BuildKit:
             https://docs.docker.com/go/buildx/
 
-Sending build context to Docker daemon  28.63MB
+Sending build context to Docker daemon   1.77MB
 Step 1/19 : FROM       erlang:alpine AS build
  ---> 41ffd9d7cd03
 Step 2/19 : RUN        ["apk", "add", "gcc"     ]
- ---> Running in 99953dfd4658
+ ---> Running in a079503458a0
 fetch https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/APKINDEX.tar.gz
 fetch https://dl-cdn.alpinelinux.org/alpine/v3.18/community/x86_64/APKINDEX.tar.gz
 (1/9) Installing zstd-libs (1.5.5-r4)
@@ -21,40 +21,40 @@ fetch https://dl-cdn.alpinelinux.org/alpine/v3.18/community/x86_64/APKINDEX.tar.
 (9/9) Installing gcc (12.2.1_git20220924-r10)
 Executing busybox-1.36.1-r5.trigger
 OK: 143 MiB in 34 packages
-Removing intermediate container 99953dfd4658
- ---> 224e3b1ae910
+Removing intermediate container a079503458a0
+ ---> beb022c22997
 Step 3/19 : RUN        ["apk", "add", "musl-dev"]
- ---> Running in b9d6ac713164
+ ---> Running in 3a39d70ba074
 (1/1) Installing musl-dev (1.2.4-r2)
 OK: 153 MiB in 35 packages
-Removing intermediate container b9d6ac713164
- ---> fe6ba197b4b2
+Removing intermediate container 3a39d70ba074
+ ---> 9cba31468d7e
 Step 4/19 : WORKDIR    var/tmp
- ---> Running in a9182068ec9f
-Removing intermediate container a9182068ec9f
- ---> e9bf88716f70
+ ---> Running in 99d23aaa64d5
+Removing intermediate container 99d23aaa64d5
+ ---> 6d1ab7b39f66
 Step 5/19 : RUN        ["mkdir", "-p", "bus/apps", "bus/config", "bus/data"]
- ---> Running in 986dd3d0629e
-Removing intermediate container 986dd3d0629e
- ---> bd7afed5b905
+ ---> Running in 367808fe6daa
+Removing intermediate container 367808fe6daa
+ ---> 984cfbca60ac
 Step 6/19 : COPY       apps         bus/apps/
- ---> d64b3bb67c87
+ ---> 6f34de227a12
 Step 7/19 : COPY       config       bus/config/
- ---> 81dd6e4e386e
+ ---> 47f418b61c12
 Step 8/19 : COPY       data         bus/data/
- ---> c0a422b13781
+ ---> 9267755c8e4e
 Step 9/19 : COPY       rebar.config bus/
- ---> d7a13b02ff66
+ ---> 87e0e4064a0d
 Step 10/19 : WORKDIR    bus
- ---> Running in 432a457be926
-Removing intermediate container 432a457be926
- ---> 262edaf9d702
+ ---> Running in 374800e16a3f
+Removing intermediate container 374800e16a3f
+ ---> 24a0815474af
 Step 11/19 : ENV        HOME=.
- ---> Running in b826c41b7c0e
-Removing intermediate container b826c41b7c0e
- ---> a79879957ebc
+ ---> Running in baefa885b2bb
+Removing intermediate container baefa885b2bb
+ ---> 64a9f6b20790
 Step 12/19 : RUN        ["rebar3", "as", "prod", "release"]
- ---> Running in 79e86725d016
+ ---> Running in a1eb919aa49f
 ===> Verifying dependencies...
 ===> Fetching cowboy v2.10.0
 ===> Fetching jsx v3.1.0
@@ -92,28 +92,50 @@ Solving Release bus-0.3.5Resolved bus-0.3.5release: bus-0.3.5
           {jsx,"3.1.0"}
           {bus,"0.3.5"}
 Assembling release bus-0.3.5...Release output dir /var/tmp/bus/_build/prod/rel/busRewriting .app file: /var/tmp/bus/_build/prod/rel/bus/lib/kernel-9.1/ebin/kernel.appRewriting .app file: /var/tmp/bus/_build/prod/rel/bus/lib/stdlib-5.1.1/ebin/stdlib.appRewriting .app file: /var/tmp/bus/_build/prod/rel/bus/lib/crypto-5.3/ebin/crypto.appRewriting .app file: /var/tmp/bus/_build/prod/rel/bus/lib/cowlib-2.12.1/ebin/cowlib.appRewriting .app file: /var/tmp/bus/_build/prod/rel/bus/lib/asn1-5.2/ebin/asn1.appRewriting .app file: /var/tmp/bus/_build/prod/rel/bus/lib/public_key-1.14.1/ebin/public_key.appRewriting .app file: /var/tmp/bus/_build/prod/rel/bus/lib/ssl-11.0.3/ebin/ssl.appRewriting .app file: /var/tmp/bus/_build/prod/rel/bus/lib/ranch-1.8.0/ebin/ranch.appRewriting .app file: /var/tmp/bus/_build/prod/rel/bus/lib/cowboy-2.10.0/ebin/cowboy.appRewriting .app file: /var/tmp/bus/_build/prod/rel/bus/lib/syslog-1.1.0/ebin/syslog.appRewriting .app file: /var/tmp/bus/_build/prod/rel/bus/lib/jsx-3.1.0/ebin/jsx.appRewriting .app file: /var/tmp/bus/_build/prod/rel/bus/lib/bus-0.3.5/ebin/bus.appIncluding Erts from /usr/local/lib/erlangWarnings generating release:
-*WARNING* Missing application sasl. Can not upgrade with this releaserelease start script createdRelease successfully assembled: _build/prod/rel/busStripping release beam filesRemoving intermediate container 79e86725d016
- ---> 09f6ce8bd277
-Step 13/19 : FROM       alpine
- ---> 042a816809aa
+*WARNING* Missing application sasl. Can not upgrade with this releaserelease start script createdRelease successfully assembled: _build/prod/rel/busStripping release beam filesRemoving intermediate container a1eb919aa49f
+ ---> a4b2dc482b69
+Step 13/19 : FROM       alpine:3.18
+3.18: Pulling from library/alpine
+c926b61bad3b: Already exists
+Digest: sha256:34871e7290500828b39e22294660bee86d966bc0017544e848dd9a255cdf59e0
+Status: Downloaded newer image for alpine:3.18
+ ---> b541f2080109
 Step 14/19 : RUN        ["apk", "add", "ncurses-libs"]
- ---> Using cache
- ---> 414c176cef86
+ ---> Running in 81035de62330
+fetch https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/APKINDEX.tar.gz
+fetch https://dl-cdn.alpinelinux.org/alpine/v3.18/community/x86_64/APKINDEX.tar.gz
+(1/6) Installing ncurses-terminfo-base (6.4_p20230506-r0)
+(2/6) Installing libncursesw (6.4_p20230506-r0)
+(3/6) Installing libformw (6.4_p20230506-r0)
+(4/6) Installing libmenuw (6.4_p20230506-r0)
+(5/6) Installing libpanelw (6.4_p20230506-r0)
+(6/6) Installing ncurses-libs (6.4_p20230506-r0)
+OK: 8 MiB in 21 packages
+Removing intermediate container 81035de62330
+ ---> 547c885d0003
 Step 15/19 : RUN        ["apk", "add", "libstdc++"   ]
- ---> Using cache
- ---> 8963ad41a22e
+ ---> Running in 0b4f506bafee
+(1/2) Installing libgcc (12.2.1_git20220924-r10)
+(2/2) Installing libstdc++ (12.2.1_git20220924-r10)
+OK: 10 MiB in 23 packages
+Removing intermediate container 0b4f506bafee
+ ---> 9299526414c8
 Step 16/19 : RUN        ["apk", "add", "libcrypto1.1"]
- ---> Using cache
- ---> 0cb59fb46ea5
+ ---> Running in 3f2da19482bf
+(1/1) Installing libcrypto1.1 (1.1.1u-r1)
+OK: 13 MiB in 24 packages
+Removing intermediate container 3f2da19482bf
+ ---> 5a771b227173
 Step 17/19 : WORKDIR    var/tmp
- ---> Using cache
- ---> 4c712f9c60ac
+ ---> Running in 007f83cd1ae1
+Removing intermediate container 007f83cd1ae1
+ ---> 6484f6fdb5e3
 Step 18/19 : COPY       --from=build var/tmp/bus/_build/prod/rel ./
- ---> 15428be049ef
+ ---> c374a704a577
 Step 19/19 : ENTRYPOINT ["bus/bin/bus", "foreground"]
- ---> Running in 6574e3d4c8de
-Removing intermediate container 6574e3d4c8de
- ---> a3c89b842cbf
-Successfully built a3c89b842cbf
+ ---> Running in 1666f06f5deb
+Removing intermediate container 1666f06f5deb
+ ---> 191416dd399a
+Successfully built 191416dd399a
 Successfully tagged transroutownish/buscow:latest
 $
