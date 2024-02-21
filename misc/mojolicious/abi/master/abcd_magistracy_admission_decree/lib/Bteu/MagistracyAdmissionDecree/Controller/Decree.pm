@@ -4,7 +4,7 @@
 # Magistracy Admission Decree.
 # Приказ о зачислении в магистратуру.
 # =============================================================================
-# Written by Radislav (Radicchio) Golubtsov, 2021-2023
+# Written by Radislav (Radicchio) Golubtsov, 2021-2024
 #
 
 package Bteu::MagistracyAdmissionDecree::Controller::Decree;

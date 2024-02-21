@@ -15,7 +15,7 @@
 # and makes replacements against the language attribute globally: currently
 # this affects the top-level <html> element only.
 # =============================================================================
-# Copyright (C) 2023 Radislav (Radicchio) Golubtsov
+# Copyright (C) 2023-2024 Radislav (Radicchio) Golubtsov
 #
 # (See the LICENSE file at the top of the source tree.)
 #

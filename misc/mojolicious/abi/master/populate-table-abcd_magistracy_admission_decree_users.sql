@@ -4,7 +4,7 @@
 -- Magistracy Admission Decree - Users Realm.
 -- Приказ о зачислении в магистратуру.
 -- ============================================================================
--- Written by Radislav (Radicchio) Golubtsov, 2021-2023
+-- Written by Radislav (Radicchio) Golubtsov, 2021-2024
 --
 
 insert into abcd_magistracy_admission_decree_users (username, given_name, password, studying_form) values ('FamilyName1', 'GivenName1', '1234567', 1);

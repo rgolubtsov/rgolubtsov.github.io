@@ -60,4 +60,4 @@
 И твое преображенство!
 
 <br />*22nd-23rd of September, 2019*<br />
-&copy; 2019-2023 Radislav (Radicchio) Golubtsov
+&copy; 2019-2024 Radislav (Radicchio) Golubtsov
