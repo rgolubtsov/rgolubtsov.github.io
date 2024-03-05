@@ -84,5 +84,10 @@
         "layout"    : "../../../_radicchio",
         "sitename_" : ": To Eugene Ponizovsky and Andrew Asyakin on their paired birthday",
         "subtitle_" : ""
+    },
+    "svetlana-golubtsova-happy-new-year-congrat-2024-ru" : {
+        "layout"    : "../../../_radicchio",
+        "sitename_" : ": To Svetlana Golubtsova: Happy New Year!",
+        "subtitle_" : ""
     }
 }
