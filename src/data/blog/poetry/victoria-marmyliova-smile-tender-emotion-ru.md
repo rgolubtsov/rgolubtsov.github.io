@@ -45,7 +45,7 @@
 
 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\* \* \*
 
-<br />Виктория, скажу вам честно:<br />
+Виктория, скажу вам честно:<br />
 Мне с вами очень интересно!<br />
 В улыбку вашу я влюблен<br />
 И добротой ее пленен!&raquo;

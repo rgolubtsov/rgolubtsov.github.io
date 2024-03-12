@@ -30,7 +30,7 @@
 
 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\* \* \*
 
-<br />Таня, Танечка, Татьяна!<br />
+Таня, Танечка, Татьяна!<br />
 Не подумай, что я пьяный,<br />
 Ведь живу всегда мечтою<br />
 И дышу одной тобою!<br />
