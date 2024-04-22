@@ -94,5 +94,10 @@
         "layout"    : "../../../_radicchio",
         "sitename_" : ": To Elizabeth Golubtsova: 4yo real story dedication",
         "subtitle_" : ""
+    },
+    "to-whom-it-may-concern-weekend-quatrain-ru" : {
+        "layout"    : "../../../_radicchio",
+        "sitename_" : ": Weekend Quatrain For Those To Whom It May Concern",
+        "subtitle_" : ""
     }
 }
