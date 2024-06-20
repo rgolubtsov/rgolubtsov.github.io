@@ -4,7 +4,7 @@
 
 ---
 
-The website might be rebuilt using **GNU Make** and **[Harp](https://harpjs.com "Harp, the static web server with built-in preprocessing")**: `$ make clean && make all`.
+The website might be built using **GNU Make** and **[Harp](https://harpjs.com "Harp, the static web server with built-in preprocessing")**: `$ make clean && make all`.
 
 Install **Harp** on **OpenBSD/amd64**:
 
