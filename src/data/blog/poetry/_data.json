@@ -99,5 +99,10 @@
         "layout"    : "../../../_radicchio",
         "sitename_" : ": A motto-quatrain without rhyme: I Will Love Your Feet",
         "subtitle_" : ""
+    },
+    "ladies-ladies-you-are-greatest" : {
+        "layout"    : "../../../_radicchio",
+        "sitename_" : ": Ladies, ladies, you are greatest!",
+        "subtitle_" : ""
     }
 }
