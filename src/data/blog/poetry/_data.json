@@ -104,5 +104,10 @@
         "layout"    : "../../../_radicchio",
         "sitename_" : ": Ladies, ladies, you are greatest!",
         "subtitle_" : ""
+    },
+    "airborne-forces-day-congrat-20240802-ru" : {
+        "layout"    : "../../../_radicchio",
+        "sitename_" : ": A congratulation with Airborne Forces Day",
+        "subtitle_" : ""
     }
 }
