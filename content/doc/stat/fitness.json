@@ -1450,5 +1450,17 @@
             "day"     : 5,
             "weekday" : "Su"
         }]
+    },
+    {
+        "pid"         : 62,
+        "year"        : "2024",
+        "month"       : "October",
+        "name"        : "Level GYM",
+        "subscrn"     : false,
+        "sessions"    : [{
+            "sid"     : 1,
+            "day"     : 12,
+            "weekday" : "Sa"
+        }]
     }]
 }
