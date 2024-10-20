@@ -27,7 +27,7 @@
 <br />Приди! &mdash; Я хочу обнять!<br />
 Примчись! &mdash; Я хочу любить!<br />
 &mdash; Спина &mdash; чтоб обаять<br />
-&mdash; И &laquo;лайм&raquo; &mdash; чтоб убедить.
+&mdash; И &laquo;лайм&raquo; &mdash; чтоб убедить. :raising_hand:
 
 <br />*Circa middle of Summer 2019*<br />
 &copy; 2019-2024 Radislav (Radicchio) Golubtsov

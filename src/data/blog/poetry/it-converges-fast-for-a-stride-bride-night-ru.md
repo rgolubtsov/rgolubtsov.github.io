@@ -14,14 +14,14 @@
 Время помчалось вспять.
 
 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v
 
 &laquo;Вспять оно не вернется, &mdash;<br />
 Не о чем тут мечтать,&raquo; &mdash;<br />
 Только Луна улыбнется:<br />
-&laquo;Нужно ложиться спать.&raquo;
+&laquo;Нужно ложиться спать.&raquo; &#127765;
 
-<br />---&gt;Лечь и уснуть так сладко<br />
+<br />&mdash;&gt; Лечь и уснуть так сладко<br />
 И, позабыв обо всем,<br />
 Новое счастье, украдкой,<br />
 Встретить вчерашним днем!
