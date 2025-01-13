@@ -24,4 +24,4 @@
 И свети нам всегда, дорогая!
 
 <br />*19th of November, 2018*<br />
-&copy; 2018-2024 Radislav (Radicchio) Golubtsov
+&copy; 2018-2025 Radislav (Radicchio) Golubtsov

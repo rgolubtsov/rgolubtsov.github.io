@@ -18,4 +18,4 @@ And feel like Bolt in a stunning cutie! :blue_heart:
 <br />First appeared publicly [here](https://instagram.com/p/B6EYOH4Hto_).
 
 <br />*Circa middle of December, 2019*<br />
-&copy; 2019-2024 Radislav (Radicchio) Golubtsov
+&copy; 2019-2025 Radislav (Radicchio) Golubtsov

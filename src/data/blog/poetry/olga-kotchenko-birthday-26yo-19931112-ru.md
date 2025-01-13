@@ -53,4 +53,4 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Пацаны. :smiley:
 
 <br />*11th-12th of November, 2019*<br />
-&copy; 2019-2024 Radislav (Radicchio) Golubtsov
+&copy; 2019-2025 Radislav (Radicchio) Golubtsov

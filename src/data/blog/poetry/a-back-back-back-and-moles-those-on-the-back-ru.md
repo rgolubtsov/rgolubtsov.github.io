@@ -30,4 +30,4 @@
 &mdash; И &laquo;лайм&raquo; &mdash; чтоб убедить. :raising_hand:
 
 <br />*24th of March, 2019*<br />
-&copy; 2019-2024 Radislav (Radicchio) Golubtsov
+&copy; 2019-2025 Radislav (Radicchio) Golubtsov

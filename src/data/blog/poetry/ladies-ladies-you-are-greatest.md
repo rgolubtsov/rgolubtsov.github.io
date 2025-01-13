@@ -31,4 +31,4 @@ We will want you'll blossom springs,<br />
 Showed your fingers shined in rings! :ring:
 
 <br />*7th of March, 2020*<br />
-&copy; 2020-2024 Radislav (Radicchio) Golubtsov
+&copy; 2020-2025 Radislav (Radicchio) Golubtsov

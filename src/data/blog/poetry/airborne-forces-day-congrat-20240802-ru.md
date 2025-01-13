@@ -30,4 +30,4 @@
 ^АКМС &mdash; Автомат Калашникова модифицированный складной.
 
 <br />*2nd of August, 2024*<br />
-&copy; 2024 Radislav (Radicchio) Golubtsov
+&copy; 2024-2025 Radislav (Radicchio) Golubtsov

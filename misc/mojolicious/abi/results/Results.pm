@@ -4,7 +4,7 @@
 # Stage 1 Entrance Exams Results.
 # Результаты вступительных испытаний.
 # =============================================================================
-# Written by Radislav (Radicchio) Golubtsov, 2021-2024
+# Written by Radislav (Radicchio) Golubtsov, 2021-2025
 #
 
 package Bteu::Stage1EntranceExamsResults::Controller::Results;

@@ -9,4 +9,4 @@
 Вопрос задам ехидный:
 
 <br />*20th of April, 2024*<br />
-&copy; 2024 Radislav (Radicchio) Golubtsov
+&copy; 2024-2025 Radislav (Radicchio) Golubtsov

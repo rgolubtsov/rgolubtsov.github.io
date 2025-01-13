@@ -4,7 +4,7 @@
 %# Magistracy Admission Decree.
 %# Приказ о зачислении в магистратуру.
 %# ============================================================================
-%# Written by Radislav (Radicchio) Golubtsov, 2021-2024
+%# Written by Radislav (Radicchio) Golubtsov, 2021-2025
 %#
 
 % layout "login";
@@ -26,4 +26,4 @@
 </form>
 </div>
 </div>
-<div id="footer">Powered by 2021-2024 <a href="//mojolicio.us" target="_blank"><strong>Mojolicious</strong></a></div>
+<div id="footer">Powered by 2021-2025 <a href="//mojolicio.us" target="_blank"><strong>Mojolicious</strong></a></div>

@@ -47,4 +47,4 @@
 Здравствуй, Настя! &mdash; Вспомнил я!
 
 <br />*Circa beginning of September, 2019*<br />
-&copy; 2019-2024 Radislav (Radicchio) Golubtsov
+&copy; 2019-2025 Radislav (Radicchio) Golubtsov

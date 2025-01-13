@@ -7,7 +7,7 @@
  *                                           a skateboarder,
  *                                       and a coder.
  * ============================================================================
- * Copyright (C) 2020-2024 Radislav (Radicchio) Golubtsov
+ * Copyright (C) 2020-2025 Radislav (Radicchio) Golubtsov
  */
 
 "use strict";

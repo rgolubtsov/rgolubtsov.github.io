@@ -4,7 +4,7 @@
 -- Stage 1 Entrance Exams Results.
 -- Результаты вступительных испытаний.
 -- ============================================================================
--- Written by Radislav (Radicchio) Golubtsov, 2021-2024
+-- Written by Radislav (Radicchio) Golubtsov, 2021-2025
 --
 
 insert into abcd_stage1_entrance_exams_results_users (username, given_name, password, studying_form_id, subject1_id, date1_id, subject2_id, date2_id) values ('FamilyName1', 'GivenName1', '1234567', 1, 2, 2, 1, 1);
