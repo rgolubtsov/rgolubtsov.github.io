@@ -1,0 +1,65 @@
+$ sudo docker build -tcustomersapi/api-lite .
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  42.28MB
+Step 1/18 : FROM       azul/zulu-openjdk-alpine:17-jre-headless-latest AS layers
+ ---> 7e8bf5b78ee5
+Step 2/18 : USER       nobody
+ ---> Running in 374327b7b17c
+ ---> Removed intermediate container 374327b7b17c
+ ---> ed2d00e7ce21
+Step 3/18 : WORKDIR    var/tmp
+ ---> Running in 4fbce39ea45f
+ ---> Removed intermediate container 4fbce39ea45f
+ ---> d65635b8eea1
+Step 4/18 : COPY       build/libs/customers-api-lite-0.3.0.jar api-lite.jar
+ ---> 05322db7a660
+Step 5/18 : RUN        ["java", "-Djarmode=tools", "-jar", "api-lite.jar", "extract", "--layers", "--launcher", "--destination", "layers"]
+ ---> Running in f546cafd05da
+ ---> Removed intermediate container f546cafd05da
+ ---> aad8465adc95
+Step 6/18 : FROM       azul/zulu-openjdk-alpine:17-jre-headless-latest
+ ---> 7e8bf5b78ee5
+Step 7/18 : USER       daemon
+ ---> Running in 62a62a040296
+ ---> Removed intermediate container 62a62a040296
+ ---> 4a03386113cb
+Step 8/18 : WORKDIR    var/tmp
+ ---> Running in c1a85c63e533
+ ---> Removed intermediate container c1a85c63e533
+ ---> 1d6c1c66bdf7
+Step 9/18 : ARG        LAYERS=var/tmp/layers
+ ---> Running in ba6c16959526
+ ---> Removed intermediate container ba6c16959526
+ ---> e340b29bd259
+Step 10/18 : COPY       --from=layers ${LAYERS}/dependencies          ./
+ ---> 912ee11bae9f
+Step 11/18 : COPY       --from=layers ${LAYERS}/spring-boot-loader    ./
+ ---> 69b93dd9d00b
+Step 12/18 : COPY       --from=layers ${LAYERS}/snapshot-dependencies ./
+ ---> 1c50aeb027d7
+Step 13/18 : COPY       --from=layers ${LAYERS}/application           ./
+ ---> 8a01ce055918
+Step 14/18 : COPY       data/db data/db/
+ ---> a78e0d7e630e
+Step 15/18 : USER       root
+ ---> Running in 564db39e8db4
+ ---> Removed intermediate container 564db39e8db4
+ ---> 3410fd2b31b9
+Step 16/18 : RUN        ["chown", "-R", "daemon:daemon", "data"]
+ ---> Running in 320cd8a9a0e1
+ ---> Removed intermediate container 320cd8a9a0e1
+ ---> 20c47c7e4c9b
+Step 17/18 : USER       daemon
+ ---> Running in 5a0cfc635b8f
+ ---> Removed intermediate container 5a0cfc635b8f
+ ---> 8c505236cfbe
+Step 18/18 : ENTRYPOINT ["java", "org.springframework.boot.loader.launch.JarLauncher"]
+ ---> Running in d8e373ac28fb
+ ---> Removed intermediate container d8e373ac28fb
+ ---> 9f153011bcca
+Successfully built 9f153011bcca
+Successfully tagged customersapi/api-lite:latest
+$
