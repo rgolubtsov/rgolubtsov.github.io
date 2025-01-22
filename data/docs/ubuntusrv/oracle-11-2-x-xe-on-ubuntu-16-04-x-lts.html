@@ -101,8 +101,8 @@ Processing triggers for mime-support (3.59ubuntu1) ...
 </code></pre>
 <p><strong>(4) Configure the installed Oracle Database 11.2.X XE</strong></p>
 <p>Adjust Kernel parameters&#39; defaults using <a href="/data/docs/ubuntusrv/oracle-11-2-x-xe-set-kernel-params" title="Adjust Kernel parameters required by the Oracle Database instance binary.">this Bash script</a> because it is required by the Oracle Database instance binary to run properly:</p>
-<pre><code>$ curl  -O http://rgolubtsov.github.io/data/docs/ubuntusrv/oracle-11-2-x-xe-set-kernel-params &amp;&amp; \
-  chmod -v 700 oracle-11-2-x-xe-set-kernel-params                                             &amp;&amp; \
+<pre><code>$ curl -Ok https://rgolubtsov.github.io/data/docs/ubuntusrv/oracle-11-2-x-xe-set-kernel-params &amp;&amp; \
+  chmod -v 700 oracle-11-2-x-xe-set-kernel-params                                              &amp;&amp; \
   sudo       ./oracle-11-2-x-xe-set-kernel-params
 ...
 mode of &#39;oracle-11-2-x-xe-set-kernel-params&#39; changed from 0644 (rw-r--r--) to 0700 (rwx------)
