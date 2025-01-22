@@ -17,20 +17,19 @@ SRC_DIR = src
 DAT_DIR = data
 
 # Specify flags and other vars here.
-HARP      = harp
-#HARPFLAGS= compile
-CP        = cp
-CPFLAGS   = -vRf
-CD        = cd
-LN        = ln
-LNFLAGS   = -sfn
-RMFLAGS   = -vR
+HARP    = harp
+CP      = cp
+CPFLAGS = -vRf
+CD      = cd
+LN      = ln
+LNFLAGS = -sfn
+RMFLAGS = -vR
 
 # Making the target.
 $(LIB_DIR) $(SRC_DIR):
 	./utils/fitness-json-enumerate docs/stat/fitness.json
 	./utils/ttennis-json-enumerate docs/stat/ttennis.json
-	$(HARP) $(HARPFLAGS) $(SRC_DIR) $(LIB_DIR)
+	$(HARP) $(SRC_DIR) $(LIB_DIR)
 	$(CP) $(CPFLAGS) $(LIB_DIR)/* $(LIB_DIR)/..
 	$(CD) $(DAT_DIR)/docs/ubuntusrv                                    && \
 	$(LN) $(LNFLAGS) ../../../utils/oracle-11-2-x-xe-set-kernel-params && \
