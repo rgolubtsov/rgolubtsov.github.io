@@ -1,0 +1,254 @@
+$ sudo docker build -ttransroutownish/busc99 .
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  5.466MB
+Step 1/21 : FROM       alpine:edge
+ ---> 9885b58a3a7b
+Step 2/21 : RUN        ["apk", "add", "make"           ] #         +----------+
+ ---> Running in 82ed5a694626
+fetch https://dl-cdn.alpinelinux.org/alpine/edge/main/x86_64/APKINDEX.tar.gz
+fetch https://dl-cdn.alpinelinux.org/alpine/edge/community/x86_64/APKINDEX.tar.gz
+(1/1) Installing make (4.4.1-r2)
+Executing busybox-1.36.1-r31.trigger
+OK: 8 MiB in 15 packages
+Removing intermediate container 82ed5a694626
+ ---> 5c0d8390723c
+Step 3/21 : RUN        ["apk", "add", "gcc"            ] #         |  Alpine  |
+ ---> Running in 0c717f44f3a8
+(1/12) Installing libgcc (14.2.0-r2)
+(2/12) Installing jansson (2.14-r4)
+(3/12) Installing libstdc++ (14.2.0-r2)
+(4/12) Installing zstd-libs (1.5.6-r1)
+(5/12) Installing binutils (2.43.1-r0)
+(6/12) Installing libgomp (14.2.0-r2)
+(7/12) Installing libatomic (14.2.0-r2)
+(8/12) Installing gmp (6.3.0-r2)
+(9/12) Installing isl26 (0.26-r1)
+(10/12) Installing mpfr4 (4.2.1-r0)
+(11/12) Installing mpc1 (1.3.1-r1)
+(12/12) Installing gcc (14.2.0-r2)
+Executing busybox-1.36.1-r31.trigger
+OK: 165 MiB in 27 packages
+Removing intermediate container 0c717f44f3a8
+ ---> 31d436272903
+Step 4/21 : RUN        ["apk", "add", "pkgconf"        ] #         |  Linux   |
+ ---> Running in 37338b965b5e
+(1/1) Installing pkgconf (2.3.0-r0)
+Executing busybox-1.36.1-r31.trigger
+OK: 165 MiB in 28 packages
+Removing intermediate container 37338b965b5e
+ ---> d8d37ed4710b
+Step 5/21 : RUN        ["apk", "add", "musl-dev"       ] #         +----------+
+ ---> Running in 7c027307d212
+(1/2) Upgrading musl (1.2.5-r1 -> 1.2.5-r2)
+(2/2) Installing musl-dev (1.2.5-r2)
+OK: 175 MiB in 29 packages
+Removing intermediate container 7c027307d212
+ ---> 703ef7677cfb
+Step 6/21 : RUN        ["apk", "add", "libsoup3-dev"   ] #         |          |
+ ---> Running in 965b4bad4ee6
+(1/110) Installing ca-certificates (20240705-r0)
+(2/110) Installing gsettings-desktop-schemas (46.1-r0)
+(3/110) Installing libffi (3.4.6-r0)
+(4/110) Installing libintl (0.22.5-r0)
+(5/110) Installing libeconf (0.6.3-r0)
+(6/110) Installing libblkid (2.40.2-r0)
+(7/110) Installing libmount (2.40.2-r0)
+(8/110) Installing pcre2 (10.43-r0)
+(9/110) Installing glib (2.80.4-r0)
+(10/110) Installing nettle (3.10-r0)
+(11/110) Installing libunistring (1.2-r0)
+(12/110) Installing libidn2 (2.3.7-r0)
+(13/110) Installing libtasn1 (4.19.0-r2)
+(14/110) Installing p11-kit (0.25.5-r0)
+(15/110) Installing gnutls (3.8.5-r0)
+(16/110) Installing brotli-libs (1.1.0-r2)
+(17/110) Installing c-ares (1.33.1-r0)
+(18/110) Installing nghttp2-libs (1.62.1-r0)
+(19/110) Installing libpsl (0.21.5-r2)
+(20/110) Installing libcurl (8.9.1-r1)
+(21/110) Installing duktape (2.7.0-r1)
+(22/110) Installing libproxy (0.5.8-r0)
+(23/110) Installing glib-networking (2.80.0-r0)
+(24/110) Installing sqlite-libs (3.46.1-r0)
+(25/110) Installing libsoup3 (3.6.0-r0)
+(26/110) Installing libbz2 (1.0.8-r6)
+(27/110) Installing bzip2-dev (1.0.8-r6)
+(28/110) Installing xz-libs (5.6.2-r0)
+(29/110) Installing libxml2 (2.12.8-r0)
+(30/110) Installing libxml2-utils (2.12.8-r0)
+(31/110) Installing docbook-xml (4.5-r9)
+Executing docbook-xml-4.5-r9.post-install
+(32/110) Installing libgpg-error (1.50-r0)
+(33/110) Installing libgcrypt (1.10.3-r0)
+(34/110) Installing libxslt (1.1.39-r1)
+(35/110) Installing docbook-xsl (1.79.2-r9)
+Executing docbook-xsl-1.79.2-r9.post-install
+(36/110) Installing xz (5.6.2-r0)
+(37/110) Installing gettext-asprintf (0.22.5-r0)
+(38/110) Installing ncurses-terminfo-base (6.5_p20240601-r0)
+(39/110) Installing libncursesw (6.5_p20240601-r0)
+(40/110) Installing gettext-libs (0.22.5-r0)
+(41/110) Installing gettext-envsubst (0.22.5-r0)
+(42/110) Installing gettext (0.22.5-r0)
+(43/110) Installing gettext-dev (0.22.5-r0)
+(44/110) Installing libexpat (2.6.3-r0)
+(45/110) Installing gdbm (1.24-r0)
+(46/110) Installing mpdecimal (4.0.0-r0)
+(47/110) Installing libpanelw (6.5_p20240601-r0)
+(48/110) Installing readline (8.2.13-r0)
+(49/110) Installing python3 (3.12.5-r1)
+(50/110) Installing python3-pycache-pyc0 (3.12.5-r1)
+(51/110) Installing pyc (3.12.5-r1)
+(52/110) Installing python3-pyc (3.12.5-r1)
+(53/110) Installing py3-parsing (3.1.2-r1)
+(54/110) Installing py3-parsing-pyc (3.1.2-r1)
+(55/110) Installing py3-packaging (24.1-r0)
+(56/110) Installing py3-packaging-pyc (24.1-r0)
+(57/110) Installing linux-headers (6.6-r0)
+(58/110) Installing libffi-dev (3.4.6-r0)
+(59/110) Installing bsd-compat-headers (0.7.2-r6)
+(60/110) Installing libformw (6.5_p20240601-r0)
+(61/110) Installing libmenuw (6.5_p20240601-r0)
+(62/110) Installing libncurses++ (6.5_p20240601-r0)
+(63/110) Installing ncurses-dev (6.5_p20240601-r0)
+(64/110) Installing libedit (20240808.3.1-r0)
+(65/110) Installing libedit-dev (20240808.3.1-r0)
+(66/110) Installing zlib-dev (1.3.1-r1)
+(67/110) Installing libpcre2-16 (10.43-r0)
+(68/110) Installing libpcre2-32 (10.43-r0)
+(69/110) Installing pcre2-dev (10.43-r0)
+(70/110) Installing libuuid (2.40.2-r0)
+(71/110) Installing libfdisk (2.40.2-r0)
+(72/110) Installing libsmartcols (2.40.2-r0)
+(73/110) Installing sqlite (3.46.1-r0)
+(74/110) Installing sqlite-dev (3.46.1-r0)
+(75/110) Installing util-linux (2.40.2-r0)
+(76/110) Installing dmesg (2.40.2-r0)
+(77/110) Installing setarch (2.40.2-r0)
+(78/110) Installing util-linux-misc (2.40.2-r0)
+(79/110) Installing skalibs (2.14.2.0-r0)
+(80/110) Installing utmps-libs (0.1.2.2-r1)
+(81/110) Installing linux-pam (1.6.1-r0)
+(82/110) Installing runuser (2.40.2-r0)
+(83/110) Installing mount (2.40.2-r0)
+(84/110) Installing losetup (2.40.2-r0)
+(85/110) Installing hexdump (2.40.2-r0)
+(86/110) Installing uuidgen (2.40.2-r0)
+(87/110) Installing blkid (2.40.2-r0)
+(88/110) Installing sfdisk (2.40.2-r0)
+(89/110) Installing mcookie (2.40.2-r0)
+(90/110) Installing agetty (2.40.2-r0)
+(91/110) Installing wipefs (2.40.2-r0)
+(92/110) Installing cfdisk (2.40.2-r0)
+(93/110) Installing umount (2.40.2-r0)
+(94/110) Installing flock (2.40.2-r0)
+(95/110) Installing lsblk (2.40.2-r0)
+(96/110) Installing libcap-ng (0.8.5-r0)
+(97/110) Installing setpriv (2.40.2-r0)
+(98/110) Installing logger (2.40.2-r0)
+(99/110) Installing partx (2.40.2-r0)
+(100/110) Installing fstrim (2.40.2-r0)
+(101/110) Installing findmnt (2.40.2-r0)
+(102/110) Installing util-linux-dev (2.40.2-r0)
+(103/110) Installing glib-dev (2.80.4-r0)
+(104/110) Installing brotli (1.1.0-r2)
+(105/110) Installing brotli-dev (1.1.0-r2)
+(106/110) Installing nghttp2-dev (1.62.1-r0)
+(107/110) Installing libpsl-utils (0.21.5-r2)
+(108/110) Installing libidn2-dev (2.3.7-r0)
+(109/110) Installing libpsl-dev (0.21.5-r2)
+(110/110) Installing libsoup3-dev (3.6.0-r0)
+Executing busybox-1.36.1-r31.trigger
+Executing ca-certificates-20240705-r0.trigger
+Executing glib-2.80.4-r0.trigger
+Warning: Schema ?org.gnome.system.locale? has path ?/system/locale/?.  Paths starting with ?/apps/?, ?/desktop/? or ?/system/? are deprecated.
+Warning: Schema ?org.gnome.system.proxy? has path ?/system/proxy/?.  Paths starting with ?/apps/?, ?/desktop/? or ?/system/? are deprecated.
+Warning: Schema ?org.gnome.system.proxy.http? has path ?/system/proxy/http/?.  Paths starting with ?/apps/?, ?/desktop/? or ?/system/? are deprecated.
+Warning: Schema ?org.gnome.system.proxy.https? has path ?/system/proxy/https/?.  Paths starting with ?/apps/?, ?/desktop/? or ?/system/? are deprecated.
+Warning: Schema ?org.gnome.system.proxy.ftp? has path ?/system/proxy/ftp/?.  Paths starting with ?/apps/?, ?/desktop/? or ?/system/? are deprecated.
+Warning: Schema ?org.gnome.system.proxy.socks? has path ?/system/proxy/socks/?.  Paths starting with ?/apps/?, ?/desktop/? or ?/system/? are deprecated.
+OK: 295 MiB in 139 packages
+Removing intermediate container 965b4bad4ee6
+ ---> 477031373ae5
+Step 7/21 : RUN        ["apk", "add", "json-glib-dev"  ] #         V          V
+ ---> Running in 8d7f2058328e
+(1/2) Installing json-glib (1.8.0-r1)
+(2/2) Installing json-glib-dev (1.8.0-r1)
+Executing busybox-1.36.1-r31.trigger
+OK: 296 MiB in 141 packages
+Removing intermediate container 8d7f2058328e
+ ---> 82cd3b145340
+Step 8/21 : RUN        echo 'https://dl-cdn.alpinelinux.org/alpine/edge/testing' >> /etc/apk/repositories
+ ---> Running in fcd00adf0b7f
+Removing intermediate container fcd00adf0b7f
+ ---> 192f0638b619
+Step 9/21 : RUN        ["apk", "add", "tcc"            ]
+ ---> Running in 203402a2bd29
+fetch https://dl-cdn.alpinelinux.org/alpine/edge/testing/x86_64/APKINDEX.tar.gz
+(1/2) Installing tcc-libs (0.9.27_git20240117-r0)
+(2/2) Installing tcc (0.9.27_git20240117-r0)
+Executing busybox-1.36.1-r31.trigger
+OK: 297 MiB in 143 packages
+Removing intermediate container 203402a2bd29
+ ---> a37ad5dfb999
+Step 10/21 : RUN        ["apk", "add", "tcc-libs-static"]
+ ---> Running in 4b734a9bcb6a
+(1/1) Installing tcc-libs-static (0.9.27_git20240117-r0)
+OK: 297 MiB in 144 packages
+Removing intermediate container 4b734a9bcb6a
+ ---> a53ed9939b8c
+Step 11/21 : USER       daemon
+ ---> Running in d02a87b2a60a
+Removing intermediate container d02a87b2a60a
+ ---> d1b8c03f0659
+Step 12/21 : WORKDIR    var/tmp
+ ---> Running in 19a43e6e9c95
+Removing intermediate container 19a43e6e9c95
+ ---> 7ff80e5ecce3
+Step 13/21 : RUN        ["mkdir", "-p", "bus/src", "bus/etc", "bus/data"]
+ ---> Running in b5cabd922d38
+Removing intermediate container b5cabd922d38
+ ---> b18aa34c30a5
+Step 14/21 : COPY       src      bus/src/
+ ---> 807ad7135549
+Step 15/21 : COPY       etc      bus/etc/
+ ---> 487068b7b24f
+Step 16/21 : COPY       data     bus/data/
+ ---> ef9c7fa79499
+Step 17/21 : COPY       Makefile bus/
+ ---> 1ca4da761b59
+Step 18/21 : WORKDIR    bus
+ ---> Running in f943bcb3992c
+Removing intermediate container f943bcb3992c
+ ---> 215fd2684163
+Step 19/21 : RUN        ["make", "clean"]
+ ---> Running in b77f8e45c86d
+rm -f -vR bin src/bus-core.o src/bus-controller.o src/bus-handler.o src/bus-helper.o
+removed 'src/bus-core.o'
+removed 'src/bus-controller.o'
+removed 'src/bus-handler.o'
+removed 'src/bus-helper.o'
+Removing intermediate container b77f8e45c86d
+ ---> b524b28eab06
+Step 20/21 : RUN        ["make", "all"  ]
+ ---> Running in ff290119fc2f
+cc -Wall -std=c99 -march=x86-64 -O3 -pipe -c `pkg-config --cflags-only-I libsoup-3.0 json-glib-1.0` src/bus-core.c -o src/bus-core.o
+cc -Wall -std=c99 -march=x86-64 -O3 -pipe -c `pkg-config --cflags-only-I libsoup-3.0 json-glib-1.0` src/bus-controller.c -o src/bus-controller.o
+cc -Wall -std=c99 -march=x86-64 -O3 -pipe -c `pkg-config --cflags-only-I libsoup-3.0 json-glib-1.0` src/bus-handler.c -o src/bus-handler.o
+cc -Wall -std=c99 -march=x86-64 -O3 -pipe -c `pkg-config --cflags-only-I libsoup-3.0 json-glib-1.0` src/bus-helper.c -o src/bus-helper.o
+if [ ! -d bin ]; then \
+    mkdir bin; \
+fi
+tcc `pkg-config   --libs-only-l libsoup-3.0 json-glib-1.0` -o bin/busd src/bus-core.o src/bus-controller.o src/bus-handler.o src/bus-helper.o
+Removing intermediate container ff290119fc2f
+ ---> 29681b789f86
+Step 21/21 : ENTRYPOINT ["bin/busd"]
+ ---> Running in 45a75e54e534
+Removing intermediate container 45a75e54e534
+ ---> e82f09ff8aa0
+Successfully built e82f09ff8aa0
+Successfully tagged transroutownish/busc99:latest
+$
