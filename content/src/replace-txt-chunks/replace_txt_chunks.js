@@ -2,8 +2,8 @@
 /* content/src/replace-txt-chunks/replace_txt_chunks.js
  * ============================================================================
  * Usage:
- *   $ SRCS=http://rgolubtsov.github.io/srcs; \
-       curl  -sO ${SRCS}/replace-txt-chunks/replace_txt_chunks.js   && \
+ *   $ SRCS=https://rgolubtsov.github.io/srcs; \
+       curl -sOk ${SRCS}/replace-txt-chunks/replace_txt_chunks.js   && \
        chmod 700 replace_txt_chunks.js;   ./replace_txt_chunks.js;  echo $?
  * ============================================================================
  * This is a demo script. It has to be run in the Node.js runtime environment.

@@ -2,8 +2,8 @@
 --[[ content/src/replace-txt-chunks/replace_txt_chunks.lua
  * ============================================================================
  * Usage:
- *   $ SRCS=http://rgolubtsov.github.io/srcs; \
-       curl  -sO ${SRCS}/replace-txt-chunks/replace_txt_chunks.lua   && \
+ *   $ SRCS=https://rgolubtsov.github.io/srcs; \
+       curl -sOk ${SRCS}/replace-txt-chunks/replace_txt_chunks.lua   && \
        chmod 700 replace_txt_chunks.lua;  ./replace_txt_chunks.lua;  echo $?
  * ============================================================================
  * This is a demo script. It has to be run in the Lua 5.2 runtime environment.

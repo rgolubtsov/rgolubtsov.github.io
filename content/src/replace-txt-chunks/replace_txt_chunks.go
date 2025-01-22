@@ -2,8 +2,8 @@
 /* content/src/replace-txt-chunks/replace_txt_chunks.go
  * ============================================================================
  * Usage:
- *   $ SRCS=http://rgolubtsov.github.io/srcs; \
-       curl  -sO ${SRCS}/replace-txt-chunks/replace_txt_chunks.go   && \
+ *   $ SRCS=https://rgolubtsov.github.io/srcs; \
+       curl -sOk ${SRCS}/replace-txt-chunks/replace_txt_chunks.go   && \
        chmod 700 replace_txt_chunks.go;   ./replace_txt_chunks.go;  echo $?
  * ============================================================================
  * This is a demo script. It has to be run as a Go script using the Go tool's

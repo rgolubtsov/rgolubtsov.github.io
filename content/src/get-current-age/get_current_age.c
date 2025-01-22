@@ -2,8 +2,8 @@
 /* content/src/get-current-age/get_current_age.c
  * ============================================================================
  * Usage:
- *   $ SRCS=http://rgolubtsov.github.io/srcs; \
-       curl  -sO ${SRCS}/get-current-age/get_current_age.c   && \
+ *   $ SRCS=https://rgolubtsov.github.io/srcs; \
+       curl -sOk ${SRCS}/get-current-age/get_current_age.c   && \
        chmod 700 get_current_age.c;    ./get_current_age.c;  echo $?
  * ============================================================================
  * This is a demo script. It has to be run as a C script using TCC

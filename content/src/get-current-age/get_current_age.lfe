@@ -2,8 +2,8 @@
 #| content/src/get-current-age/get_current_age.lfe
  | ============================================================================
  | Usage:
- |   $ SRCS=http://rgolubtsov.github.io/srcs; \
-       curl  -sO ${SRCS}/get-current-age/get_current_age.lfe   && \
+ |   $ SRCS=https://rgolubtsov.github.io/srcs; \
+       curl -sOk ${SRCS}/get-current-age/get_current_age.lfe   && \
        chmod 700 get_current_age.lfe;  ./get_current_age.lfe;  echo $?
  | ============================================================================
  | This is a demo script. It has to be run in the LFE (Lisp Flavoured Erlang)

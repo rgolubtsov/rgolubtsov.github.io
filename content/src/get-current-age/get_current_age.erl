@@ -2,8 +2,8 @@
 % content/src/get-current-age/get_current_age.erl
 % =============================================================================
 % Usage:
-%   $ SRCS=http://rgolubtsov.github.io/srcs; \
-%     curl  -sO ${SRCS}/get-current-age/get_current_age.erl   && \
+%   $ SRCS=https://rgolubtsov.github.io/srcs; \
+%     curl -sOk ${SRCS}/get-current-age/get_current_age.erl   && \
 %     chmod 700 get_current_age.erl;  ./get_current_age.erl;  echo $?
 % =============================================================================
 % This is a demo script. It has to be run in the Erlang/OTP runtime

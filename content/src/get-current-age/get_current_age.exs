@@ -2,8 +2,8 @@
 # content/src/get-current-age/get_current_age.exs
 # =============================================================================
 # Usage:
-#   $ SRCS=http://rgolubtsov.github.io/srcs; \
-#     curl  -sO ${SRCS}/get-current-age/get_current_age.exs   && \
+#   $ SRCS=https://rgolubtsov.github.io/srcs; \
+#     curl -sOk ${SRCS}/get-current-age/get_current_age.exs   && \
 #     chmod 700 get_current_age.exs;  ./get_current_age.exs;  echo $?
 # =============================================================================
 # This is a demo script. It has to be run in the Elixir runtime environment.

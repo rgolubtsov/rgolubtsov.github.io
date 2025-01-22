@@ -2,8 +2,8 @@
 /* content/src/find-equil-index/find_equil_index.gsh
  * ============================================================================
  * Usage:
- *   $ SRCS=http://rgolubtsov.github.io/srcs; \
-       curl  -sO ${SRCS}/find-equil-index/find_equil_index.gsh   && \
+ *   $ SRCS=https://rgolubtsov.github.io/srcs; \
+       curl -sOk ${SRCS}/find-equil-index/find_equil_index.gsh   && \
        chmod 700 find_equil_index.gsh;  ./find_equil_index.gsh 2>&1 \
      | sed '/OPTIONS/d'; echo $?
  * ============================================================================

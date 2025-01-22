@@ -2,8 +2,8 @@
 #= content/src/get-current-age/get_current_age.jl
  * ============================================================================
  * Usage:
- *   $ SRCS=http://rgolubtsov.github.io/srcs; \
-       curl  -sO ${SRCS}/get-current-age/get_current_age.jl   && \
+ *   $ SRCS=https://rgolubtsov.github.io/srcs; \
+       curl -sOk ${SRCS}/get-current-age/get_current_age.jl   && \
        chmod 700 get_current_age.jl;   ./get_current_age.jl;  echo $?
  * ============================================================================
  * This is a demo script. It has to be run as a **script** in the Julia runtime

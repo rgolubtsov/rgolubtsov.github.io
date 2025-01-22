@@ -2,8 +2,8 @@
 /* content/src/replace-txt-chunks/replace_txt_chunks.c
  * ============================================================================
  * Usage:
- *   $ SRCS=http://rgolubtsov.github.io/srcs; \
-       curl  -sO ${SRCS}/replace-txt-chunks/replace_txt_chunks.c   && \
+ *   $ SRCS=https://rgolubtsov.github.io/srcs; \
+       curl -sOk ${SRCS}/replace-txt-chunks/replace_txt_chunks.c   && \
        chmod 700 replace_txt_chunks.c;    ./replace_txt_chunks.c;  echo $?
  * ============================================================================
  * This is a demo script. It has to be run as a C script using TCC

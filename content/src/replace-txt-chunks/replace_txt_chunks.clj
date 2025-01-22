@@ -2,8 +2,8 @@
 ; content/src/replace-txt-chunks/replace_txt_chunks.clj
 ; =============================================================================
 ; Usage:
-;   $ SRCS=http://rgolubtsov.github.io/srcs; \
-;     curl  -sO ${SRCS}/replace-txt-chunks/replace_txt_chunks.clj   && \
+;   $ SRCS=https://rgolubtsov.github.io/srcs; \
+;     curl -sOk ${SRCS}/replace-txt-chunks/replace_txt_chunks.clj   && \
 ;     chmod 700 replace_txt_chunks.clj;  ./replace_txt_chunks.clj 2>&1 \
 ;   | sed '/WARNING/d'; echo $?
 ; =============================================================================

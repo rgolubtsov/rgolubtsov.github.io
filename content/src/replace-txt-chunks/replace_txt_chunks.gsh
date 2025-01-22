@@ -2,8 +2,8 @@
 /* content/src/replace-txt-chunks/replace_txt_chunks.gsh
  * ============================================================================
  * Usage:
- *   $ SRCS=http://rgolubtsov.github.io/srcs; \
-       curl  -sO ${SRCS}/replace-txt-chunks/replace_txt_chunks.gsh   && \
+ *   $ SRCS=https://rgolubtsov.github.io/srcs; \
+       curl -sOk ${SRCS}/replace-txt-chunks/replace_txt_chunks.gsh   && \
        chmod 700 replace_txt_chunks.gsh;  ./replace_txt_chunks.gsh 2>&1 \
      | sed '/OPTIONS/d'; echo $?
  * ============================================================================

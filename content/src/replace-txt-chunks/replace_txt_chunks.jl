@@ -2,8 +2,8 @@
 #= content/src/replace-txt-chunks/replace_txt_chunks.jl
  * ============================================================================
  * Usage:
- *   $ SRCS=http://rgolubtsov.github.io/srcs; \
-       curl  -sO ${SRCS}/replace-txt-chunks/replace_txt_chunks.jl   && \
+ *   $ SRCS=https://rgolubtsov.github.io/srcs; \
+       curl -sOk ${SRCS}/replace-txt-chunks/replace_txt_chunks.jl   && \
        chmod 700 replace_txt_chunks.jl;   ./replace_txt_chunks.jl;  echo $?
  * ============================================================================
  * This is a demo script. It has to be run as a **script** in the Julia runtime

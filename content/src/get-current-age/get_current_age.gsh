@@ -2,8 +2,8 @@
 /* content/src/get-current-age/get_current_age.gsh
  * ============================================================================
  * Usage:
- *   $ SRCS=http://rgolubtsov.github.io/srcs; \
-       curl  -sO ${SRCS}/get-current-age/get_current_age.gsh   && \
+ *   $ SRCS=https://rgolubtsov.github.io/srcs; \
+       curl -sOk ${SRCS}/get-current-age/get_current_age.gsh   && \
        chmod 700 get_current_age.gsh;  ./get_current_age.gsh 2>&1 \
      | sed '/OPTIONS/d'; echo $?
  * ============================================================================

@@ -2,8 +2,8 @@
 # content/src/replace-txt-chunks/replace_txt_chunks.pl
 # =============================================================================
 # Usage:
-#   $ SRCS=http://rgolubtsov.github.io/srcs; \
-#     curl  -sO ${SRCS}/replace-txt-chunks/replace_txt_chunks.pl   && \
+#   $ SRCS=https://rgolubtsov.github.io/srcs; \
+#     curl -sOk ${SRCS}/replace-txt-chunks/replace_txt_chunks.pl   && \
 #     chmod 700 replace_txt_chunks.pl;   ./replace_txt_chunks.pl;  echo $?
 # =============================================================================
 # This is a demo script. It has to be run in the Perl 5 (5.10+) runtime

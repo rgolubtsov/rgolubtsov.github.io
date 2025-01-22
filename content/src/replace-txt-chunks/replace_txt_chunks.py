@@ -2,8 +2,8 @@
 # content/src/replace-txt-chunks/replace_txt_chunks.py
 # =============================================================================
 # Usage:
-#   $ SRCS=http://rgolubtsov.github.io/srcs; \
-#     curl  -sO ${SRCS}/replace-txt-chunks/replace_txt_chunks.py   && \
+#   $ SRCS=https://rgolubtsov.github.io/srcs; \
+#     curl -sOk ${SRCS}/replace-txt-chunks/replace_txt_chunks.py   && \
 #     chmod 700 replace_txt_chunks.py;   ./replace_txt_chunks.py;  echo $?
 # =============================================================================
 # This is a demo script. It has to be run in the Python 3 runtime environment.

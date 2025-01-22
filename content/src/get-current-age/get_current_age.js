@@ -2,8 +2,8 @@
 /* content/src/get-current-age/get_current_age.js
  * ============================================================================
  * Usage:
- *   $ SRCS=http://rgolubtsov.github.io/srcs; \
-       curl  -sO ${SRCS}/get-current-age/get_current_age.js   && \
+ *   $ SRCS=https://rgolubtsov.github.io/srcs; \
+       curl -sOk ${SRCS}/get-current-age/get_current_age.js   && \
        chmod 700 get_current_age.js;   ./get_current_age.js;  echo $?
  * ============================================================================
  * This is a demo script. It has to be run in the Node.js runtime environment.

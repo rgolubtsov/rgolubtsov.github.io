@@ -2,8 +2,8 @@
 /* content/src/get-current-age/get_current_age.go
  * ============================================================================
  * Usage:
- *   $ SRCS=http://rgolubtsov.github.io/srcs; \
-       curl  -sO ${SRCS}/get-current-age/get_current_age.go   && \
+ *   $ SRCS=https://rgolubtsov.github.io/srcs; \
+       curl -sOk ${SRCS}/get-current-age/get_current_age.go   && \
        chmod 700 get_current_age.go;   ./get_current_age.go;  echo $?
  * ============================================================================
  * This is a demo script. It has to be run as a Go script using the Go tool's

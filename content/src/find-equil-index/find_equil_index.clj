@@ -2,8 +2,8 @@
 ; content/src/find-equil-index/find_equil_index.clj
 ; =============================================================================
 ; Usage:
-;   $ SRCS=http://rgolubtsov.github.io/srcs; \
-;     curl  -sO ${SRCS}/find-equil-index/find_equil_index.clj   && \
+;   $ SRCS=https://rgolubtsov.github.io/srcs; \
+;     curl -sOk ${SRCS}/find-equil-index/find_equil_index.clj   && \
 ;     chmod 700 find_equil_index.clj;  ./find_equil_index.clj 2>&1 \
 ;   | sed '/WARNING/d'; echo $?
 ; =============================================================================

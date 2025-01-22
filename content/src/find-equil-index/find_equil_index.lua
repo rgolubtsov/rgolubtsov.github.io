@@ -2,8 +2,8 @@
 --[[ content/src/find-equil-index/find_equil_index.lua
  * ============================================================================
  * Usage:
- *   $ SRCS=http://rgolubtsov.github.io/srcs; \
-       curl  -sO ${SRCS}/find-equil-index/find_equil_index.lua   && \
+ *   $ SRCS=https://rgolubtsov.github.io/srcs; \
+       curl -sOk ${SRCS}/find-equil-index/find_equil_index.lua   && \
        chmod 700 find_equil_index.lua;  ./find_equil_index.lua;  echo $?
  * ============================================================================
  * This is a demo script. It has to be run in the Lua 5.2 runtime environment.

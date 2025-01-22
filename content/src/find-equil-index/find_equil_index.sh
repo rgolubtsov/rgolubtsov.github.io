@@ -2,8 +2,8 @@
 # content/src/find-equil-index/find_equil_index.sh
 # =============================================================================
 # Usage:
-#   $ SRCS=http://rgolubtsov.github.io/srcs; \
-#     curl  -sO ${SRCS}/find-equil-index/find_equil_index.sh   && \
+#   $ SRCS=https://rgolubtsov.github.io/srcs; \
+#     curl -sOk ${SRCS}/find-equil-index/find_equil_index.sh   && \
 #     chmod 700 find_equil_index.sh;   ./find_equil_index.sh;  echo $?
 # =============================================================================
 # This is a demo script. It has to be run using the Bash 3.1+ shell.

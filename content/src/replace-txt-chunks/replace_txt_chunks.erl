@@ -2,8 +2,8 @@
 % content/src/replace-txt-chunks/replace_txt_chunks.erl
 % =============================================================================
 % Usage:
-%   $ SRCS=http://rgolubtsov.github.io/srcs; \
-%     curl  -sO ${SRCS}/replace-txt-chunks/replace_txt_chunks.erl   && \
+%   $ SRCS=https://rgolubtsov.github.io/srcs; \
+%     curl -sOk ${SRCS}/replace-txt-chunks/replace_txt_chunks.erl   && \
 %     chmod 700 replace_txt_chunks.erl;  ./replace_txt_chunks.erl;  echo $?
 % =============================================================================
 % This is a demo script. It has to be run in the Erlang/OTP runtime

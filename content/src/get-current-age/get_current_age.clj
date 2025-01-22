@@ -2,8 +2,8 @@
 ; content/src/get-current-age/get_current_age.clj
 ; =============================================================================
 ; Usage:
-;   $ SRCS=http://rgolubtsov.github.io/srcs; \
-;     curl  -sO ${SRCS}/get-current-age/get_current_age.clj   && \
+;   $ SRCS=https://rgolubtsov.github.io/srcs; \
+;     curl -sOk ${SRCS}/get-current-age/get_current_age.clj   && \
 ;     chmod 700 get_current_age.clj;  ./get_current_age.clj 2>&1 \
 ;   | sed '/WARNING/d'; echo $?
 ; =============================================================================
