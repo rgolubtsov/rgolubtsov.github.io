@@ -4,14 +4,15 @@
 
 A series of scripts located [here](https://github.com/rgolubtsov/rgolubtsov.github.io/tree/master/content/src "Assorted sources on GitHub"), written in various programming languages, is meant at demonstrating techniques to directly port the code from one programming language to another. This is very beneficial when learning new programming languages based on those already learned and used previously or using currently.
 
-For the moment there are two independent algorithms were chosen and implemented as scripts:
+For the moment there are three independent algorithms were chosen and implemented as scripts:
 
 1. To search for and return an equilibrium index of a given array of integers.
 2. To make replacements in words of a given sentence and return an updated sentence.
+3. To calculate the current age based on a date of birth provided.
 
-Both algorithms are implemented in the same set of programming languages, sequentially. Or sometimes simultaneously.
+All these algorithms are implemented in the same set of programming languages, sequentially. Or sometimes simultaneously.
 
-Historically, the first programming language chosen to write a script implementing those two aforementioned algorithms was JavaScript, targeting the [Node.js](https://nodejs.org "JavaScript runtime built on Chrome's V8 JavaScript engine") runtime environment. But actually the `find_equil_index.js` script (1) was the first and the only complete program that was resided in this repo alone for a year or so. Later on it was a decision to enrich the repo with similar snippets or pieces of code that might be considered like standalone and independent scripts, but resembling the original one (1) as with their inputs as well with their outputs.
+Historically, the first programming language chosen to write a script implementing those three aforementioned algorithms was JavaScript, targeting the [Node.js](https://nodejs.org "JavaScript runtime built on Chrome's V8 JavaScript engine") runtime environment. But actually the `find_equil_index.js` script (1) was the first and the only complete program that was resided in this repo alone for a year or so. Later on it was a decision to enrich the repo with similar snippets or pieces of code that might be considered like standalone and independent scripts, but resembling the original one (1) as with their inputs as well with their outputs.
 
 However, prior to this there was a new script born, of course written again in JavaScript. It has implemented the second algorithm (2) &ndash; `replace_txt_chunks.js`. And right after that both directions were eloborated deeper by learning new programming languages and following the educational paradigm commonly known as **learning by doing**. :smiley:
 
@@ -24,6 +25,8 @@ In general, each subsequent script in both directions is based on their respecti
                                   |
                                   +---> LFE ---> Clojure
 ```
+
+The `get_current_age.js` script (3) was added here far more later than (1) and (2), and it also ported to the same set of programming languages showing how to basically work with dates.
 
 Scripts written in the following programming languages are presented here:
 
