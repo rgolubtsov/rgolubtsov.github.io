@@ -48,13 +48,14 @@
 </tbody>
 </table>
 <h1>Assorted sources</h1><h3><code>srcs -&gt; content/src</code></h3><p>A series of scripts located <a href="https://github.com/rgolubtsov/rgolubtsov.github.io/tree/master/content/src" title="Assorted sources on GitHub">here</a>, written in various programming languages, is meant at demonstrating techniques to directly port the code from one programming language to another. This is very beneficial when learning new programming languages based on those already learned and used previously or using currently.</p>
-<p>For the moment there are two independent algorithms were chosen and implemented as scripts:</p>
+<p>For the moment there are three independent algorithms were chosen and implemented as scripts:</p>
 <ol>
 <li>To search for and return an equilibrium index of a given array of integers.</li>
 <li>To make replacements in words of a given sentence and return an updated sentence.</li>
+<li>To calculate the current age based on a date of birth provided.</li>
 </ol>
-<p>Both algorithms are implemented in the same set of programming languages, sequentially. Or sometimes simultaneously.</p>
-<p>Historically, the first programming language chosen to write a script implementing those two aforementioned algorithms was JavaScript, targeting the <a href="https://nodejs.org" title="JavaScript runtime built on Chrome&#39;s V8 JavaScript engine">Node.js</a> runtime environment. But actually the <code>find_equil_index.js</code> script (1) was the first and the only complete program that was resided in this repo alone for a year or so. Later on it was a decision to enrich the repo with similar snippets or pieces of code that might be considered like standalone and independent scripts, but resembling the original one (1) as with their inputs as well with their outputs.</p>
+<p>All these algorithms are implemented in the same set of programming languages, sequentially. Or sometimes simultaneously.</p>
+<p>Historically, the first programming language chosen to write a script implementing those three aforementioned algorithms was JavaScript, targeting the <a href="https://nodejs.org" title="JavaScript runtime built on Chrome&#39;s V8 JavaScript engine">Node.js</a> runtime environment. But actually the <code>find_equil_index.js</code> script (1) was the first and the only complete program that was resided in this repo alone for a year or so. Later on it was a decision to enrich the repo with similar snippets or pieces of code that might be considered like standalone and independent scripts, but resembling the original one (1) as with their inputs as well with their outputs.</p>
 <p>However, prior to this there was a new script born, of course written again in JavaScript. It has implemented the second algorithm (2) &ndash; <code>replace_txt_chunks.js</code>. And right after that both directions were eloborated deeper by learning new programming languages and following the educational paradigm commonly known as <strong>learning by doing</strong>. <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f603.png" class="emoji" alt="" /></p>
 <p>In general, each subsequent script in both directions is based on their respective JavaScript implementation, an initial one. But this is commonly true only for imperative/OOP languages; as with functional languages, there was made the following porting chain:</p>
 <pre><code>        JavaScript ---&gt; . . .
@@ -63,6 +64,7 @@
                                   |
                                   +---&gt; LFE ---&gt; Clojure
 </code></pre>
+<p>The <code>get_current_age.js</code> script (3) was added here far more later than (1) and (2), and it also ported to the same set of programming languages showing how to basically work with dates.</p>
 <p>Scripts written in the following programming languages are presented here:</p>
 <ol>
 <li>JavaScript (ES5/Node.js)</li>
