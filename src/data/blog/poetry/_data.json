@@ -119,5 +119,10 @@
         "layout"    : "../../../_radicchio",
         "sitename_" : ": A back, back, back, and moles those on the back...",
         "subtitle_" : ""
+    },
+    "roman-zaitsev-birthday-24yo-20250305-ru" : {
+        "layout"    : "../../../_radicchio",
+        "sitename_" : ": To Roman Zaitsev on his birthday, 24yo",
+        "subtitle_" : ""
     }
 }
