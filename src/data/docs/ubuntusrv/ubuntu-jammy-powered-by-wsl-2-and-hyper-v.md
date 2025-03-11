@@ -4,9 +4,7 @@
 
 *28th of October, 2023*
 
-**Beware:** These are relatively custom-tailored instructions &ndash; your mileage may vary.
-
-*Currently one may find here only raw, simply dumped, bare CLI commands, one-by-one. But their execution sequences will definitely be accompanied with instructions, comments, and explanations a little bit later. &ndash; Think of this article as in progress for a while.*
+**Beware:** These are relatively custom-tailored instructions &ndash; **YMMV** (your mileage may vary).
 
 Create a specific user account for daily operations and provide it with power user privileges:
 
@@ -126,4 +124,4 @@ lfe>
 lfe> (halt)
 ```
 
-**TBD**
+Feel yourself at home in Ubuntu, even got with Windows yer laptop ! :+1:
