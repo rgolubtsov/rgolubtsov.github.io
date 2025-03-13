@@ -47,8 +47,11 @@ $
 $ file radicv760openbsd76amd6400
 radicv760openbsd76amd6400: DOS/MBR boot sector; partition 4 : ID=0xa6, active, start-CHS (0x0,1,2), end-CHS (0x3ff,254,63), startsector 64, 41942976 sectors
 $
-$ qemu-system-x86_64 -m 1.2G -enable-kvm -cpu host -smp 2 -net nic,macaddr=52:54:00:12:34:57,model=virtio -net vde -drive file=/opt/radicv760/radicv760openbsd76amd6400,format=raw,if=virtio > /dev/null 2>&1 &
+$ qemu-system-x86_64 -m 1.8G -enable-kvm -cpu host -smp 2      \
+  -net nic,macaddr=52:54:00:12:34:57,model=virtio  -net vde    \
+  -drive file=radicv760openbsd76amd6400,format=raw,if=virtio > \
+  /dev/null 2>&1 &
 ...
 ```
 
-**TBD** &#1f4c0;
+**TBD** &#128192;
