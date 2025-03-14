@@ -4,7 +4,7 @@
 
 *14th of March, 2025*
 
-These installation instructions aim at showing up how to simply install and initially set up a VM server running the latest stable OpenBSD release as the guest OS. Arch Linux was chosen as the host OS, and QEMU-KVM &ndash; as a hypervisor that manages and runs the VM. (QEMU is already installed and configured properly on an Arch Linux host.)
+These installation instructions aim at showing up how to simply install and initially set up a VM server running the latest stable OpenBSD release as the guest OS. Arch Linux was chosen as the host OS, and QEMU-KVM &ndash; as a hypervisor that manages and runs the VM. (Prerequisite: QEMU is already installed and configured properly on an Arch Linux host.)
 
 **(1) Download the ISO image of the OpenBSD operating system (amd64) along with SHA-256 checksums**
 
@@ -51,14 +51,14 @@ $ ls -al <hdd-image-for-openbsd76>
 
 **(4) Run QEMU using the OpenBSD ISO image in bootable mode**
 
-OpenBSD will run in a separate window: after booting the kernel, an interactive CLI installer launches and pesents a user with its first prompt (asks for a selection).
-
 ```
 $ qemu-system-x86_64 -m 1G -enable-kvm -cpu host  -smp 2   \
   -net nic,macaddr=52:54:00:12:34:57,model=virtio -net vde \
   -cdrom install76.iso -boot order=d                       \
   -drive file=<hdd-image-for-openbsd76>,format=raw,if=virtio
 ```
+
+OpenBSD will boot up in a separate window: after booting the kernel, an interactive CLI installer launches and pesents a user with its first prompt (asks for a selection).
 
 From now on all the initial system installation configurations will be managed by the OpenBSD installer through a dialog with a user. The following selective settings were chosen and applied during the current (described) install:
 
@@ -69,7 +69,7 @@ From now on all the initial system installation configurations will be managed b
 
 Other configuration settings are omitted here for brevity.
 
-**(5) Inspect the new OpenBSD virtual HDD image after completing the installation process (optional)
+**(5) Inspect the new OpenBSD virtual HDD image after completing the installation process (optional)**
 
 ```
 $ ls -al <hdd-image-for-openbsd76>
