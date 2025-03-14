@@ -8,5 +8,10 @@
         "layout"       : "../../../_radicchio",
         "sitename_"    : ": OpenBSD 6.6 to 6.7 Upgrade Gotchas",
         "subtitle_"    : ""
+    },
+    "install-76"       : {
+        "layout"       : "../../../_radicchio",
+        "sitename_"    : ": Install OpenBSD 7.6 (QEMU-KVM) on Arch Linux",
+        "subtitle_"    : ""
     }
 }
