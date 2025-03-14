@@ -58,7 +58,7 @@ $ qemu-system-x86_64 -m 1G -enable-kvm -cpu host  -smp 2   \
   -drive file=<hdd-image-for-openbsd76>,format=raw,if=virtio
 ```
 
-OpenBSD will boot up in a separate window: after booting the kernel, an interactive CLI installer launches and pesents a user with its first prompt (asks for a selection).
+OpenBSD will boot up in a separate window: after booting the kernel, an interactive CLI installer launches and presents a user with its first prompt (asks for a selection).
 
 From now on all the initial system installation configurations will be managed by the OpenBSD installer through a dialog with a user. The following selective settings were chosen and applied during the current (described) install:
 
