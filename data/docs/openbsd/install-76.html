@@ -48,7 +48,7 @@
 </tbody>
 </table>
 <h1>Install OpenBSD 7.6 (QEMU-KVM) on Arch Linux</h1><h3>OpenBSD/amd64 7.6 (QEMU-KVM) on Arch Linux Brief Installation Instructions</h3><p><em>14th of March, 2025</em></p>
-<p>These installation instructions aim at showing up how to simply install and initially set up a VM server running the latest stable OpenBSD release as the guest OS. Arch Linux was chosen as the host OS, and QEMU-KVM &ndash; as a hypervisor that manages and runs the VM. (QEMU is already installed and configured properly on an Arch Linux host.)</p>
+<p>These installation instructions aim at showing up how to simply install and initially set up a VM server running the latest stable OpenBSD release as the guest OS. Arch Linux was chosen as the host OS, and QEMU-KVM &ndash; as a hypervisor that manages and runs the VM. (Prerequisite: QEMU is already installed and configured properly on an Arch Linux host.)</p>
 <p><strong>(1) Download the ISO image of the OpenBSD operating system (amd64) along with SHA-256 checksums</strong></p>
 <pre><code>$ curl -sOk https://cdn.openbsd.org/pub/OpenBSD/7.6/amd64/install76.iso \
         -Ok https://cdn.openbsd.org/pub/OpenBSD/7.6/amd64/SHA256        \
@@ -84,12 +84,12 @@ $ ls -al &lt;hdd-image-for-openbsd76&gt;
 -rw------- 1 &lt;username&gt; &lt;usergroup&gt; 21474836480 Mar 11 20:10 &lt;hdd-image-for-openbsd76&gt;
 </code></pre>
 <p><strong>(4) Run QEMU using the OpenBSD ISO image in bootable mode</strong></p>
-<p>OpenBSD will run in a separate window: after booting the kernel, an interactive CLI installer launches and pesents a user with its first prompt (asks for a selection).</p>
 <pre><code>$ qemu-system-x86_64 -m 1G -enable-kvm -cpu host  -smp 2   \
   -net nic,macaddr=52:54:00:12:34:57,model=virtio -net vde \
   -cdrom install76.iso -boot order=d                       \
   -drive file=&lt;hdd-image-for-openbsd76&gt;,format=raw,if=virtio
 </code></pre>
+<p>OpenBSD will boot up in a separate window: after booting the kernel, an interactive CLI installer launches and presents a user with its first prompt (asks for a selection).</p>
 <p>From now on all the initial system installation configurations will be managed by the OpenBSD installer through a dialog with a user. The following selective settings were chosen and applied during the current (described) install:</p>
 <ul>
 <li><strong>Disk layout:</strong> 20G: root (<code>/</code>) partition 18G, swap partition 2G</li>
@@ -98,7 +98,7 @@ $ ls -al &lt;hdd-image-for-openbsd76&gt;
 <li><strong>Run OpenSSH daemon on boot:</strong> yes</li>
 </ul>
 <p>Other configuration settings are omitted here for brevity.</p>
-<p>**(5) Inspect the new OpenBSD virtual HDD image after completing the installation process (optional)</p>
+<p><strong>(5) Inspect the new OpenBSD virtual HDD image after completing the installation process (optional)</strong></p>
 <pre><code>$ ls -al &lt;hdd-image-for-openbsd76&gt;
 -rw------- 1 &lt;username&gt; &lt;usergroup&gt; 21474836480 Mar 11 21:00 &lt;hdd-image-for-openbsd76&gt;
 $
