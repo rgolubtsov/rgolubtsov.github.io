@@ -4,7 +4,7 @@
 
 *14th of March, 2025*
 
-These installation instructions aim at showing up how to simply install and initially set up a VM server running the latest stable OpenBSD release as the guest OS. Arch Linux was chosen as the host OS, and QEMU-KVM &ndash; as a hypervisor that manages and runs the VM. (Prerequisite: QEMU is already installed and configured properly on an Arch Linux host.)
+These installation instructions aim at showing how to simply install and initially set up a VM server running the latest stable OpenBSD release as the guest OS. Arch Linux was chosen as the host OS, and QEMU-KVM &ndash; as a hypervisor that manages and runs the VM. (Prerequisite: QEMU is already installed and configured properly on an Arch Linux host.)
 
 **(1) Download the ISO image of the OpenBSD operating system (amd64) along with SHA-256 checksums**
 
