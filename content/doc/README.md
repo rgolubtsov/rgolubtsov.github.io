@@ -30,7 +30,7 @@ And in Russian:
 * [Curriculum Vitae, ru-RU, text](/docs/cv/radislav-golubtsov-resume-ru_RU.txt)
 * [Curriculum Vitae, ru-RU, PDF](/docs/cv/radislav-golubtsov-resume-ru_RU.pdf)
 
-Radicchio is using **[Window Maker](https://windowmaker.org "Window Maker: Window Manager for X")** as the only window manager on his desktops (Arch Linux / Arch Linux 32) and on OpenBSD VM-box when running of X Window System on the latter is required.
+Radicchio is using **[Window Maker](https://windowmaker.org "Window Maker: Window Manager for X")** as the only window manager on his laptop (Arch Linux) and on OpenBSD VM box when running of X Window System on the latter is required.
 
 **Q:** Why to use **Window Maker** if there is a series of high quality sophisticated comprehensive desktop environments (DE) full of daily-handy features and visual attractiveness available for both Arch Linux and OpenBSD?
 
