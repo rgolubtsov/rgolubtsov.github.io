@@ -89,4 +89,19 @@ $ qemu-system-x86_64 -m 1.8G -enable-kvm -cpu host -smp 2      \
 ...
 ```
 
+---
+
+```
+-bash-5.2# chpass
+...
+-bash-5.2# chpass <username>
+...
+-bash-5.2# pkg_add -r sudo vim lynx
+...
+-bash-5.2# visudo
+...
+-bash-5.2# syspatch
+...
+```
+
 **TBD** &#128192;
