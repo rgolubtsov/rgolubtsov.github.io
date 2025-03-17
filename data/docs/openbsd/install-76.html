@@ -47,7 +47,7 @@
 </tr>
 </tbody>
 </table>
-<h1>Install OpenBSD 7.6 (QEMU-KVM) on Arch Linux</h1><h3>OpenBSD/amd64 7.6 (QEMU-KVM) on Arch Linux Brief Installation Instructions</h3><p><em>14th of March, 2025</em></p>
+<h1>Install OpenBSD 7.6 (QEMU-KVM) on Arch Linux</h1><h3>OpenBSD/amd64 7.6 (QEMU-KVM) on Arch Linux Brief Installation Instructions</h3><p><em>18th of March, 2025</em></p>
 <p>These installation instructions aim at showing how to simply install and initially set up a VM server running the latest stable OpenBSD release as the guest OS. Arch Linux was chosen as the host OS, and QEMU-KVM &ndash; as a hypervisor that manages and runs the VM. (Prerequisite: QEMU is already installed and configured properly on an Arch Linux host.)</p>
 <p><strong>(1) Download the ISO image of the OpenBSD operating system (amd64) along with SHA-256 checksums</strong></p>
 <pre><code>$ curl -sOk https://cdn.openbsd.org/pub/OpenBSD/7.6/amd64/install76.iso \
@@ -112,7 +112,117 @@ $ file &lt;hdd-image-for-openbsd76&gt;
   /dev/null 2&gt;&amp;1 &amp;
 ...
 </code></pre>
-<p><strong>TBD</strong> &#128192;</p>
+<p>OpenBSD will boot up in a separate window.</p>
+<p><strong>(7) Log in as <code>root</code> (superuser)</strong></p>
+<p>Install Bash (GNU Bourne Again Shell): <code># pkg_add -r bash</code>. Change the login shell: <code># chpass</code>, and set the <code>Shell</code> entry to <code>/usr/local/bin/bash</code>. Do relogin after that. Now the active shell should be Bash.</p>
+<p>Also it should be worth to change the login shell to Bash for a regular user account if it was created during the installation process: <code>-bash-5.2# chpass &lt;username&gt;</code> &ndash; do the same as in the previous step.</p>
+<p>Install a small set of supplementary packages for day-to-day administrative purposes (they may vary in choice but for now the next three are quite sufficient):</p>
+<pre><code>-bash-5.2# pkg_add -r sudo vim lynx
+...
+</code></pre>
+<p>Add a regular user account to <em>sudoers</em> to give it superuser privileges: <code>-bash-5.2# visudo</code>, and insert the following line somewhere at the end of the file:</p>
+<pre><code>&lt;username&gt; ALL=(ALL) SETENV: ALL
+</code></pre>
+<p>Finally, run the system update process to install binary updates: <code>-bash-5.2# syspatch</code>.</p>
+<p><strong>(8) Log in as a regular user (<code>&lt;username&gt;</code>)</strong></p>
+<pre><code>...
+Mon Mar 17 16:50:00 +03 2025
+
+OpenBSD/amd64 (&lt;hostname&gt;.my.domain) (ttyC0)
+
+login: &lt;username&gt;
+Password:
+OpenBSD 7.6 (GENERIC.MP) #1: Mon Feb 10 00:14:14 MST 2025
+
+Welcome to OpenBSD: The proactively secure Unix-like operating system.
+
+Please use the sendbug(1) utility to report bugs in the system.
+Before reporting a bug, please try to reproduce it with the latest
+version of the code.  With bug reports, please try to ensure that
+enough information to reproduce the problem is enclosed, and if a
+known fix for it exists, include that as well.
+
+-bash-5.2$
+</code></pre>
+<p>Now the new operating system is quite ready for daily use in general, but to be really useful and productive, it needs to be fine tuned (adjust system properties and variables like various limits and thresholds, manage to start up some vital daemons on boot) and equipped with a series of essential (and simply handy) packages installed which are responsible for getting things done. Although all these preparation tasks can be performed in this QEMU window and the current login session, they are generally considered more suitable to do over the remote session(s) via SSH.</p>
+<p>Let&#39;s log in to the new OpenBSD box via SSH and install some additional packages that are already prebuilt by OpenBSD developers and released along with the OS:</p>
+<pre><code>$ ssh -C &lt;hostname&gt;
+Last login: Mon Mar 17 22:20:00 2025
+OpenBSD 7.6 (GENERIC.MP) #1: Mon Feb 10 00:14:14 MST 2025
+
+Welcome to OpenBSD: The proactively secure Unix-like operating system.
+
+Please use the sendbug(1) utility to report bugs in the system.
+Before reporting a bug, please try to reproduce it with the latest
+version of the code.  With bug reports, please try to ensure that
+enough information to reproduce the problem is enclosed, and if a
+known fix for it exists, include that as well.
+
+-bash-5.2$ uname -a
+OpenBSD &lt;hostname&gt;.my.domain 7.6 GENERIC.MP#1 amd64
+-bash-5.2$
+-bash-5.2$ # These packages were installed previously. Some of them - as dependencies:
+-bash-5.2$
+-bash-5.2$ pkg_info
+bash-5.2.32         GNU Bourne Again Shell
+gettext-runtime-0.22.5 GNU gettext runtime libraries and programs
+intel-firmware-20250211v0 microcode update binaries for Intel CPUs
+libiconv-1.17       character set conversion library
+libsodium-1.0.20    library for network communications and cryptography
+lynx-2.9.2          text web browser
+quirks-7.50         exceptions to pkg_add rules
+sudo-1.9.15.5p0     execute a command as another user
+updatedb-0p0        pkg_add speed up cache
+vim-9.1.1006-no_x11 vi clone, many additional features
+vmm-firmware-1.16.3p0 firmware binary images for vmm(4) driver
+-bash-5.2$
+</code></pre>
+<p>So install Tiny C Compiler, bzip2/bzip3, XZ Utils, Zstandard, Zip/UnZip, and 7-Zip archivers. Then install <code>tree</code>, <code>colordiff</code>, <code>dos2unix</code>, and <code>curl</code> utilities. And finally (at least for now), install bash-completion and Git:</p>
+<pre><code>-bash-5.2$ sudo pkg_add -vr tcc bzip2 bzip3 xz zstd zip unzip p7zip
+...
+-bash-5.2$ sudo pkg_add -vr tree colordiff dos2unix curl
+...
+-bash-5.2$ sudo pkg_add -vr bash-completion git
+...
+</code></pre>
+<p>After that the package database can be checked again &ndash; to inspect the list of newly installed packages along with their dependencies:</p>
+<pre><code>-bash-5.2$ pkg_info
+bash-5.2.32         GNU Bourne Again Shell
+bash-completion-2.14.0 programmable completion functions for bash
+bzip2-1.0.8p0       block-sorting file compressor, unencumbered
+bzip3-1.4.0         compress and decompress bzip3 files
+colordiff-1.0.21    colorized diff tool
+curl-8.12.0         transfer files with FTP, HTTP, HTTPS, etc.
+cvsps-2.1p3         generate patchsets from CVS repositories
+dos2unix-7.5.2      convert DOS/MAC files to UNIX (line-endings/charset)
+gettext-runtime-0.22.5 GNU gettext runtime libraries and programs
+git-2.46.1          distributed version control system
+gitwrapper-0.105    invoke an appropriate Git repository server
+intel-firmware-20250211v0 microcode update binaries for Intel CPUs
+libiconv-1.17       character set conversion library
+libsodium-1.0.20    library for network communications and cryptography
+lynx-2.9.2          text web browser
+lz4-1.10.0          fast BSD-licensed data compression
+nghttp2-1.63.0      library for HTTP/2
+nghttp3-1.5.0       implementation of HTTP/3
+ngtcp2-1.7.0        implementation of the RFC 9000 QUIC protocol
+p5-Error-0.17029    error/exception handling in an OO-ish way
+p5-Mail-Tools-2.21p0 modules for handling mail with perl
+p5-Time-TimeDate-2.33 library for parsing and formatting dates and times
+p7zip-16.02p7       file archiver with high compression ratio
+quirks-7.50         exceptions to pkg_add rules
+sudo-1.9.15.5p0     execute a command as another user
+tcc-0.9.27.20230705 tiny C compiler
+tree-0.62           print ascii formatted tree of a directory structure
+unzip-6.0p17        extract, list &amp; test files in a ZIP archive
+updatedb-0p0        pkg_add speed up cache
+vim-9.1.1006-no_x11 vi clone, many additional features
+vmm-firmware-1.16.3p0 firmware binary images for vmm(4) driver
+xz-5.6.2            library and tools for XZ and LZMA compressed files
+zip-3.0p2           create/update ZIP files compatible with PKZip(tm)
+zstd-1.5.6          zstandard fast real-time compression algorithm
+</code></pre>
+<p>Happy OpenBSD-ing over Linux ! <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f44d.png" class="emoji" alt="" /></p>
 
 <table id="footer">
 <tbody><tr><td id="v-bar-f"></td><td id="footer-td"><a href="https://anybrowser.org/campaign/" target="_blank" rel="nofollow noopener"><img style="border:0;width:88px;height:31px" src="/static/img/misc/vwab" alt="Viewable With Any Browser" /></a><a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank" rel="nofollow noopener"><img style="border:0;width:88px;height:31px" src="/static/img/misc/vcss" alt="Valid CSS!" /></a></td></tr></tbody>
