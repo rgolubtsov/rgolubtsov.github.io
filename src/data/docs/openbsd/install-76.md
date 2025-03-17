@@ -155,7 +155,7 @@ known fix for it exists, include that as well.
 -bash-5.2$ uname -a
 OpenBSD <hostname>.my.domain 7.6 GENERIC.MP#1 amd64
 -bash-5.2$
--bash-5.2$ # These packages were installed previously. Some of them - as dependencies.
+-bash-5.2$ # These packages were installed previously. Some of them - as dependencies:
 -bash-5.2$
 -bash-5.2$ pkg_info
 bash-5.2.32         GNU Bourne Again Shell
@@ -172,13 +172,55 @@ vmm-firmware-1.16.3p0 firmware binary images for vmm(4) driver
 -bash-5.2$
 ```
 
-So install Tiny C Compiler, bzip2/bzip3, XZ Utils, Zstandard, Zip/UnZip, and 7-Zip archivers. Then install `tree`, `colordiff`, `dos2unix`, and `curl` utilities:
+So install Tiny C Compiler, bzip2/bzip3, XZ Utils, Zstandard, Zip/UnZip, and 7-Zip archivers. Then install `tree`, `colordiff`, `dos2unix`, and `curl` utilities. And finally (at least for now), install bash-completion and Git:
 
 ```
 -bash-5.2$ sudo pkg_add -vr tcc bzip2 bzip3 xz zstd zip unzip p7zip
 ...
 -bash-5.2$ sudo pkg_add -vr tree colordiff dos2unix curl
 ...
+-bash-5.2$ sudo pkg_add -vr bash-completion git
+...
 ```
 
-**TBD** &#128192;
+After that the package database can be checked again &ndash; to inspect the list of newly installed packages along with their dependencies:
+
+```
+-bash-5.2$ pkg_info
+bash-5.2.32         GNU Bourne Again Shell
+bash-completion-2.14.0 programmable completion functions for bash
+bzip2-1.0.8p0       block-sorting file compressor, unencumbered
+bzip3-1.4.0         compress and decompress bzip3 files
+colordiff-1.0.21    colorized diff tool
+curl-8.12.0         transfer files with FTP, HTTP, HTTPS, etc.
+cvsps-2.1p3         generate patchsets from CVS repositories
+dos2unix-7.5.2      convert DOS/MAC files to UNIX (line-endings/charset)
+gettext-runtime-0.22.5 GNU gettext runtime libraries and programs
+git-2.46.1          distributed version control system
+gitwrapper-0.105    invoke an appropriate Git repository server
+intel-firmware-20250211v0 microcode update binaries for Intel CPUs
+libiconv-1.17       character set conversion library
+libsodium-1.0.20    library for network communications and cryptography
+lynx-2.9.2          text web browser
+lz4-1.10.0          fast BSD-licensed data compression
+nghttp2-1.63.0      library for HTTP/2
+nghttp3-1.5.0       implementation of HTTP/3
+ngtcp2-1.7.0        implementation of the RFC 9000 QUIC protocol
+p5-Error-0.17029    error/exception handling in an OO-ish way
+p5-Mail-Tools-2.21p0 modules for handling mail with perl
+p5-Time-TimeDate-2.33 library for parsing and formatting dates and times
+p7zip-16.02p7       file archiver with high compression ratio
+quirks-7.50         exceptions to pkg_add rules
+sudo-1.9.15.5p0     execute a command as another user
+tcc-0.9.27.20230705 tiny C compiler
+tree-0.62           print ascii formatted tree of a directory structure
+unzip-6.0p17        extract, list & test files in a ZIP archive
+updatedb-0p0        pkg_add speed up cache
+vim-9.1.1006-no_x11 vi clone, many additional features
+vmm-firmware-1.16.3p0 firmware binary images for vmm(4) driver
+xz-5.6.2            library and tools for XZ and LZMA compressed files
+zip-3.0p2           create/update ZIP files compatible with PKZip(tm)
+zstd-1.5.6          zstandard fast real-time compression algorithm
+```
+
+Happy OpenBSD-ing over Linux ! :+1:
