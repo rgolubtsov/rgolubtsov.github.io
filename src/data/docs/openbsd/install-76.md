@@ -223,4 +223,6 @@ zip-3.0p2           create/update ZIP files compatible with PKZip(tm)
 zstd-1.5.6          zstandard fast real-time compression algorithm
 ```
 
+**Note:** In order to reboot the OpenBSD box, use either `$ sudo reboot` or `$ sudo shutdown -r now` commands. In order to shutdown (and *power off*) the OpenBSD box, use either `$ sudo halt -p` or `$ sudo shutdown -p now` commands. (The `shutdown` command is in fact executing either `reboot` or `halt` commands under the hood, depending on the option passed in: `-r` or `-p`, respectively.)
+
 Happy OpenBSD-ing over Linux ! :+1:
