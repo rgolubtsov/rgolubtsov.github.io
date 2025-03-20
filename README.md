@@ -9,16 +9,16 @@ The website might be built using **GNU Make** and **[Harp](https://github.com/si
 Install **Harp** on **OpenBSD/amd64**:
 
 ```
-$ sudo CXX=c++ LIBSASS_EXT="no" npm i harp -g --unsafe-perm
-/usr/local/bin/harp -> /usr/local/lib/node_modules/harp/bin/harp
-...
+$ sudo npm i harp -g --unsafe-perm --ignore-scripts
 
-+ harp@0.46.1
-updated 1 package in 20.627s
+changed 84 packages in 18s
+
+5 packages are looking for funding
+  run `npm fund` for details
 $
 $ ls -al /usr/local/bin/harp /usr/local/lib/node_modules/harp/bin/harp
-lrwxr-xr-x  1 root  wheel    33 Jul  1 17:10 /usr/local/bin/harp -> ../lib/node_modules/harp/bin/harp
--rwxr-xr-x  1 root  wheel  4070 Oct 26  1985 /usr/local/lib/node_modules/harp/bin/harp
+lrwxr-xr-x  1 root  wheel    33 Mar 20 22:30 /usr/local/bin/harp -> ../lib/node_modules/harp/bin/harp
+-rwxr-xr-x  1 root  wheel  4070 Mar 20 22:30 /usr/local/lib/node_modules/harp/bin/harp
 $
 $ harp -v
 v0.46.1
