@@ -93,7 +93,7 @@ OpenBSD will boot up in a separate window.
 
 **(7) Log in as `root` (superuser)**
 
-Install Bash (GNU Bourne Again Shell): `# pkg_add -r bash`. Change the login shell: `# chpass`, and set the `Shell` entry to `/usr/local/bin/bash`. Do relogin after that. Now the active shell should be Bash.
+Install Bash (GNU Bourne-Again SHell): `# pkg_add -r bash`. Change the login shell: `# chpass`, and set the `Shell` entry to `/usr/local/bin/bash`. Do relogin after that. Now the active shell should be Bash.
 
 Also it should be worth to change the login shell to Bash for a regular user account if it was created during the installation process: `-bash-5.2# chpass <username>` &ndash; do the same as in the previous step.
 
