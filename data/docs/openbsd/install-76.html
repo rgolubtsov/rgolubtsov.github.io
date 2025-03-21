@@ -114,7 +114,7 @@ $ file &lt;hdd-image-for-openbsd76&gt;
 </code></pre>
 <p>OpenBSD will boot up in a separate window.</p>
 <p><strong>(7) Log in as <code>root</code> (superuser)</strong></p>
-<p>Install Bash (GNU Bourne Again Shell): <code># pkg_add -r bash</code>. Change the login shell: <code># chpass</code>, and set the <code>Shell</code> entry to <code>/usr/local/bin/bash</code>. Do relogin after that. Now the active shell should be Bash.</p>
+<p>Install Bash (GNU Bourne-Again SHell): <code># pkg_add -r bash</code>. Change the login shell: <code># chpass</code>, and set the <code>Shell</code> entry to <code>/usr/local/bin/bash</code>. Do relogin after that. Now the active shell should be Bash.</p>
 <p>Also it should be worth to change the login shell to Bash for a regular user account if it was created during the installation process: <code>-bash-5.2# chpass &lt;username&gt;</code> &ndash; do the same as in the previous step.</p>
 <p>Install a small set of supplementary packages for day-to-day administrative purposes (they may vary in choice but for now the next three are quite sufficient):</p>
 <pre><code>-bash-5.2# pkg_add -r sudo vim lynx
