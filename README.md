@@ -4,7 +4,7 @@
 
 ---
 
-The website might be built using **GNU Make** and **[Harp](https://github.com/sintaxi/harp "Harp, the static web server with built-in preprocessing")**: `$ make clean && make all`. :blue_heart:
+The website might be built using **GNU Make** and **[Harp](https://github.com/sintaxi/harp "Harp, the static web server with built-in preprocessing")**: `$ make clean && make all`.
 
 Install **Harp** on **OpenBSD/amd64**:
 
