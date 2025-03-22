@@ -8,7 +8,7 @@
  | ============================================================================
  | This is a demo script. It has to be run in the LFE (Lisp Flavoured Erlang)
  | runtime environment. Tested and known to run exactly the same way on modern
- | versions of OpenBSD/amd64, Ubuntu Server LTS x86-64, Arch Linux
+ | versions of OpenBSD/amd64, Ubuntu Server LTS x86-64, and Arch Linux
  | operating systems.
  |
  | The script contains a function that calculates the current age
