@@ -8,8 +8,13 @@
 % =============================================================================
 % This is a demo script. It has to be run in the Erlang/OTP runtime
 % environment. Tested and known to run exactly the same way on modern versions
-% of OpenBSD/amd64, Ubuntu Server LTS x86-64, Arch Linux / Arch Linux 32
-% operating systems.
+% of OpenBSD/amd64, Ubuntu Server LTS x86-64, and Arch Linux operating systems.
+% Note: On OpenBSD one may need to symlink
+%       `/usr/local/bin/escriptXX` to `/usr/local/bin/escript` first,
+%       e.g. `$ sudo ln -sfn /usr/local/bin/escript27 /usr/local/bin/escript`
+%       since there are might be more than one Erlang/OTP release installed
+%       side-by-side and it needs to pick one to be able to run this script
+%       unmodified.
 %
 % Create a function that will take a String value as the first parameter,
 % a Number value as the second parameter, and a String value as the third one.
