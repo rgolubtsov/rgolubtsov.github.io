@@ -7,9 +7,15 @@
        chmod 700 replace_txt_chunks.c;    ./replace_txt_chunks.c;  echo $?
  * ============================================================================
  * This is a demo script. It has to be run as a C script using TCC
- * (Fabrice Bellard's Tiny C Compiler). Tested and known to run
- * exactly the same way on modern versions of Ubuntu Server LTS x86-64,
- * Arch Linux / Arch Linux 32 operating systems.
+ * (Fabrice Bellard's Tiny C Compiler). Tested and known to run exactly
+ * the same way on modern versions of OpenBSD/amd64, Ubuntu Server LTS x86-64,
+ * and Arch Linux operating systems.
+ * Note: On OpenBSD one may need to symlink
+ *       `/usr/local/bin/tcc` to `/usr/bin/tcc` first,
+ *       e.g. `$ sudo ln -sfn /usr/local/bin/tcc /usr/bin/tcc` since their
+ *       domestic `env` utility doesn't have the `-S` option and therefore
+ *       cannot be used in shebang to invoke TCC in the form like this:
+ *       `#!/usr/bin/env -S tcc -run`, though it can be used on Linux.
  *
  * Create a function that will take a String value as the first parameter,
  * a Number value as the second parameter, and a String value as the third one.

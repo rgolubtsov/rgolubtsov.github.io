@@ -7,9 +7,15 @@
        chmod 700 get_current_age.c;    ./get_current_age.c;  echo $?
  * ============================================================================
  * This is a demo script. It has to be run as a C script using TCC
- * (Fabrice Bellard's Tiny C Compiler). Tested and known to run
- * exactly the same way on modern versions of Ubuntu Server LTS x86-64
+ * (Fabrice Bellard's Tiny C Compiler). Tested and known to run exactly
+ * the same way on modern versions of OpenBSD/amd64, Ubuntu Server LTS x86-64,
  * and Arch Linux operating systems.
+ * Note: On OpenBSD one may need to symlink
+ *       `/usr/local/bin/tcc` to `/usr/bin/tcc` first,
+ *       e.g. `$ sudo ln -sfn /usr/local/bin/tcc /usr/bin/tcc` since their
+ *       domestic `env` utility doesn't have the `-S` option and therefore
+ *       cannot be used in shebang to invoke TCC in the form like this:
+ *       `#!/usr/bin/env -S tcc -run`, though it can be used on Linux.
  *
  * The script contains a function that calculates the current age
  * based on the date of birth, given in args. It then simply returns
