@@ -44,21 +44,19 @@ $ harp -v
 v0.46.1
 ```
 
-Install **Harp** on **Arch Linux** / **Arch Linux 32**:
+Install **Harp** on **Arch Linux**:
 
 ```
-$ sudo LIBSASS_EXT="no" npm i harp -g --unsafe-perm
+$ sudo npm i harp -g --unsafe-perm
 
-changed 84 packages, and audited 85 packages in 3s
+changed 84 packages in 13s
 
-4 packages are looking for funding
+5 packages are looking for funding
   run `npm fund` for details
-
-found 0 vulnerabilities
 $
 $ ls -al /usr/bin/harp /usr/lib/node_modules/harp/bin/harp
-lrwxrwxrwx 1 root root   33 Apr 12 19:40 /usr/bin/harp -> ../lib/node_modules/harp/bin/harp
--rwxr-xr-x 1 root root 4070 Apr 12 19:40 /usr/lib/node_modules/harp/bin/harp
+lrwxrwxrwx 1 root root   33 Mar 23 11:50 /usr/bin/harp -> ../lib/node_modules/harp/bin/harp
+-rwxr-xr-x 1 root root 4070 Mar 23 11:50 /usr/lib/node_modules/harp/bin/harp
 $
 $ harp -v
 v0.46.1
