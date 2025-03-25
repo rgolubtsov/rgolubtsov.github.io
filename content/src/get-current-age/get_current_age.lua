@@ -1,4 +1,4 @@
-#!/usr/bin/env lua5.2
+#!/usr/bin/env lua5.4
 --[[ content/src/get-current-age/get_current_age.lua
  * ============================================================================
  * Usage:
@@ -6,9 +6,13 @@
        curl -sOk ${SRCS}/get-current-age/get_current_age.lua   && \
        chmod 700 get_current_age.lua;  ./get_current_age.lua;  echo $?
  * ============================================================================
- * This is a demo script. It has to be run in the Lua 5.2 runtime environment.
- * Tested and known to run exactly the same way on modern versions
- * of OpenBSD/amd64, Ubuntu Server LTS x86-64, Arch Linux operating systems.
+ * This is a demo script. It has to be run in the Lua 5.4 runtime environment.
+ * Tested and known to run exactly the same way on modern versions of
+ * OpenBSD/amd64, Ubuntu Server LTS x86-64, and Arch Linux operating systems.
+ * Note: On OpenBSD one may need to symlink
+ *       `/usr/local/bin/lua54` to `/usr/local/bin/lua5.4` first,
+ *       e.g. `$ sudo ln -sfn /usr/local/bin/lua54 /usr/local/bin/lua5.4`
+ *       since it is named a little bit differently than on Linux.
  *
  * The script contains a function that calculates the current age
  * based on the date of birth, given in args. It then simply returns
