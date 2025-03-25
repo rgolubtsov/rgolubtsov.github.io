@@ -8,7 +8,7 @@
 # =============================================================================
 # This is a demo script. It has to be run using the Bash 3.1+ shell.
 # Tested and known to run exactly the same way on modern versions
-# of OpenBSD/amd64, Ubuntu Server LTS x86-64, Arch Linux operating systems.
+# of OpenBSD/amd64, Ubuntu Server LTS x86-64, and Arch Linux operating systems.
 #
 # The script contains a function that calculates the current age
 # based on the date of birth, given in args. It then simply returns
