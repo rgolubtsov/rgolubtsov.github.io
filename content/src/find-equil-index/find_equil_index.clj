@@ -9,8 +9,7 @@
 ; =============================================================================
 ; This is a demo script. It has to be run in the Clojure (JVM) runtime
 ; environment. Tested and known to run exactly the same way on modern versions
-; of OpenBSD/amd64, Ubuntu Server LTS x86-64, Arch Linux / Arch Linux 32
-; operating systems.
+; of OpenBSD/amd64, Ubuntu Server LTS x86-64, and Arch Linux operating systems.
 ;
 ; A zero-indexed array A consisting of N integers is given. An equilibrium
 ; index of this array is any integer P such that 0 <= P < N and the sum
