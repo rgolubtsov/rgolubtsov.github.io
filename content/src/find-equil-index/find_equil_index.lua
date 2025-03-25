@@ -1,4 +1,4 @@
-#!/usr/bin/env lua5.2
+#!/usr/bin/env lua5.4
 --[[ content/src/find-equil-index/find_equil_index.lua
  * ============================================================================
  * Usage:
@@ -6,10 +6,13 @@
        curl -sOk ${SRCS}/find-equil-index/find_equil_index.lua   && \
        chmod 700 find_equil_index.lua;  ./find_equil_index.lua;  echo $?
  * ============================================================================
- * This is a demo script. It has to be run in the Lua 5.2 runtime environment.
- * Tested and known to run exactly the same way on modern versions
- * of OpenBSD/amd64, Ubuntu Server LTS x86-64, Arch Linux / Arch Linux 32
- * operating systems.
+ * This is a demo script. It has to be run in the Lua 5.4 runtime environment.
+ * Tested and known to run exactly the same way on modern versions of
+ * OpenBSD/amd64, Ubuntu Server LTS x86-64, and Arch Linux operating systems.
+ * Note: On OpenBSD one may need to symlink
+ *       `/usr/local/bin/lua54` to `/usr/local/bin/lua5.4` first,
+ *       e.g. `$ sudo ln -sfn /usr/local/bin/lua54 /usr/local/bin/lua5.4`
+ *       since it is named a little bit differently than on Linux.
  *
  * A zero-indexed array A consisting of N integers is given. An equilibrium
  * index of this array is any integer P such that 0 <= P < N and the sum
