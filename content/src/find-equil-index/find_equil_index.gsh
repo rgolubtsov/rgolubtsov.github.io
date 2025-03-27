@@ -9,7 +9,15 @@
  * ============================================================================
  * This is a demo script. It has to be run in the Groovy (JVM) runtime
  * environment. Tested and known to run exactly the same way on modern versions
- * of Ubuntu Server LTS x86-64 and Arch Linux operating systems.
+ * of OpenBSD/amd64, Ubuntu Server LTS x86-64, and Arch Linux
+ * operating systems.
+ * Note: On OpenBSD one may need to install Groovy first, e.g.:
+ *       `$ curl -sOk https://downloads.apache.org/groovy/<version>/distribution/apache-groovy-binary-<version>.zip
+ *        $ unzip apache-groovy-binary-<version>.zip && \
+ *          ln -sfn groovy-<version> groovy && \
+ *          sed -i 's/$HOME\/bin/$HOME\/bin:$HOME\/groovy\/bin/g' ~/.bashrc`
+ *       and then propagate the `JAVA_HOME` env var, e.g.:
+ *       `$ export JAVA_HOME=/usr/local/jdk-21`.
  *
  * A zero-indexed array A consisting of N integers is given. An equilibrium
  * index of this array is any integer P such that 0 <= P < N and the sum
