@@ -18,10 +18,20 @@
 <td colspan="6"><a href="/data/blog/poetry">Assorted poetry</a></td>
 </tr>
 <tr>
-<td>Installed packages on OpenBSD VM box:</td>
+<td rowspan="2">Installed packages on OpenBSD VM box:</td>
 <% for (var i  = OPENBSD_MINOR_VERSION_S;
             i <= OPENBSD_MINOR_VERSION_E; i++) { -%>
 <td class="p-year-td"><a href="/data/blog/pkg_info/<%- OPENBSD_MAJOR_VERSION %><%- i %>"><%- OPENBSD_MAJOR_VERSION %>.<%- i %></a></td>
+<% } -%>
+</tr>
+<tr>
+<% for (var i  = OPENBSD_MINOR_VERSION_S_;
+            i <= OPENBSD_MINOR_VERSION_E_; i++) { -%>
+<% if  (    i == OPENBSD_MINOR_VERSION_E_) { -%>
+<td colspan="<%- (11 - i) %>"></td>
+<% break; -%>
+<% } -%>
+<td class="p-year-td"><a href="/data/blog/pkg_info/<%- OPENBSD_MAJOR_VERSION_ %><%- i %>"><%- OPENBSD_MAJOR_VERSION_ %>.<%- i %></a></td>
 <% } -%>
 </tr>
 </tbody>
