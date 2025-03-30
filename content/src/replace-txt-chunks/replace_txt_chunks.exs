@@ -43,11 +43,11 @@ defmodule R do
 #           IO.puts(R._DBG_PREF <> word)
 
             text_ <> if ((pos - 1 < word_len)
-                and (String.slice(word, pos - 1 .. -1) !== R._COMMA)
-                and (String.slice(word, pos - 1 .. -1) !== R._POINT)) do
+                and (String.slice(word, (pos - 1)..-1//1) !== R._COMMA)
+                and (String.slice(word, (pos - 1)..-1//1) !== R._POINT)) do
 
-                word_ = String.replace(word, String.slice(word, pos - 1 .. -1),
-                                 subst) <>   String.slice(word, pos     .. -1)
+                word_ = String.replace(word, String.slice(word,(pos-1)..-1//1),
+                                 subst) <>   String.slice(word,(pos  )..-1//1)
 
 #               IO.puts(R._DBG_PREF <> word_)
 
