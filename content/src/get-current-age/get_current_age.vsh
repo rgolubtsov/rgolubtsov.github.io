@@ -8,7 +8,8 @@
  * ============================================================================
  * This is a demo script. It has to be run as a V script using the V tool's
  * runtime facility. Tested and known to run exactly the same way on modern
- * versions of Ubuntu Server LTS x86-64 and Arch Linux operating systems.
+ * versions of OpenBSD/amd64, Ubuntu Server LTS x86-64, and Arch Linux
+ * operating systems.
  *
  * The script contains a function that calculates the current age
  * based on the date of birth, given in args. It then simply returns
