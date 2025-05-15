@@ -47,7 +47,7 @@
 </tr>
 </tbody>
 </table>
-<h1>Utilize sndio server on Arch Linux host in OpenBSD VM guest</h1><h3>Play music on OpenBSD/amd64 (QEMU-KVM) through the <code>sndiod</code> server running on Arch Linux host</h3><p><em>5th of May, 2025</em></p>
+<h1>Utilize sndio server on Arch Linux host in OpenBSD VM guest</h1><h3>Play music on OpenBSD/amd64 (QEMU-KVM) through the <code>sndiod</code> server running on Arch Linux host</h3><p><em>15th of May, 2025</em></p>
 <p>In Arch Linux do:</p>
 <pre><code>$ sudo pacman -Syu sndio
 ...
@@ -65,6 +65,20 @@ $ sndioctl
 output.level=1.000
 server.device=0
 </code></pre>
+<p>or:</p>
+<pre><code>$ sndioctl -d
+002:output.level=0..127 (127)
+003:server.device=0
+004:server.device=1
+005:server.device=2
+006:server.device=3
+001:mpg0.level=0..127 (127)
+$
+$ sndioctl
+output.level=1.000
+server.device=0
+app/mpg0.level=1.000
+</code></pre>
 <p>In OpenBSD do:</p>
 <pre><code>$ export AUDIODEVICE=snd@10.0.2.1/0
 $
@@ -76,7 +90,7 @@ output.level=1.000
 $
 $ mpg123 -v &lt;music_filename&gt;.mp3
 High Performance MPEG 1.0/2.0/2.5 Audio Player for Layers 1, 2 and 3
-        version 1.32.8; written and copyright by Michael Hipp and others
+        version 1.32.10; written and copyright by Michael Hipp and others
         free software (LGPL) without any warranty but with best wishes
 Decoder: x86-64 (AVX)
 Trying output module: sndio, device: &lt;nil&gt;
@@ -91,6 +105,15 @@ MPEG 1.0 L III vbr 48000 j-s
 
 &gt; 6133+0000  02:27.16+00:00.00 --- 100=100 320 kb/s  960 B acc    0 clip p+0.000
 [2:27] Decoding of &lt;music_filename&gt;.mp3 finished.
+</code></pre>
+<p>or:</p>
+<pre><code>$ sndioctl -d
+002:output.level=0..127 (127)
+001:mpg0.level=0..127 (127)
+$
+$ sndioctl
+output.level=1.000
+app/mpg0.level=1.000
 </code></pre>
 <p><strong>TBD</strong> &#128192;</p>
 
