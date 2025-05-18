@@ -47,10 +47,13 @@
 </tr>
 </tbody>
 </table>
-<h1>Installed packages on OpenBSD 7.7 VM box</h1><h3>OpenBSD/amd64 7.7 <code>$ pkg_info</code> at <code>radicv760.my.domain</code></h3><p>The following packages have been installed/upgraded as of 17th of May, 2025:</p>
+<h1>Installed packages on OpenBSD 7.7 VM box</h1><h3>OpenBSD/amd64 7.7 <code>$ pkg_info</code> at <code>radicv760.my.domain</code></h3><p>The following packages have been installed/upgraded as of 19th of May, 2025:</p>
 <pre><code>$ pkg_info
+adwaita-icon-theme-47.0p0 base icon theme for GNOME
+adwaita-icon-theme-legacy-46.2p0 legacy icon theme for GNOME
 aom-3.12.0          Alliance for Open Media AV1 video codec
 at-spi2-core-2.54.1 service interface for assistive technologies
+avahi-libs-0.8p5    libraries and common data files for avahi
 bash-5.2.37         GNU Bourne Again Shell
 bash-completion-2.16.0p0 programmable completion functions for bash
 boehm-gc-8.2.4      garbage collection and memory leak detection for C and C++
@@ -60,17 +63,21 @@ bzip3-1.5.1         compress and decompress bzip3 files
 cairo-1.18.4        vector graphics library
 cantarell-fonts-0.303.1p0 humanist sans-serif font family
 cdparanoia-3.a9.8p5 CDDA reading utility with extra data verification features
+chromium-135.0.7049.52p0 Chromium browser
 clojure-1.11.4.1474 Lisp-1 dialect for the Java Virtual Machine
 colordiff-1.0.21    colorized diff tool
 crystal-1.15.1      statically typed object oriented language
+cups-libs-2.4.11p0  CUPS libraries and headers
 curl-8.13.0         transfer files with FTP, HTTP, HTTPS, etc.
 cvsps-2.1p3         generate patchsets from CVS repositories
 dav1d-1.5.1         small and fast AV1 decoder
 dbus-1.16.2v0       message bus system
+dconf-0.40.0p2      configuration backend system
 desktop-file-utils-0.28p0 utilities for dot.desktop entries
 dos2unix-7.5.2      convert DOS/MAC files to UNIX (line-endings/charset)
 elixir-1.18.3       functional language for building scalable applications
 enca-1.19p0         detect character set and encoding of text files
+epoll-shim-0.0.20240608 small epoll implementation using kqueue
 erlang-26.2.5.11v0  real-time, concurrent and distributed functional language
 erlang-27.3.3v0     real-time, concurrent and distributed functional language
 ffmpeg-6.1.2p1v1    audio/video converter and streamer
@@ -91,6 +98,8 @@ go-1.24.1           Go programming language
 graphite2-1.3.14    rendering for complex writing systems
 gsm-1.0.22          GSM audio codec library and converter
 gtk+2-2.24.33p6     multi-platform graphical toolkit
+gtk+3-3.24.49       multi-platform graphical toolkit
+gtk+3-cups-3.24.49  gtk+3 CUPS print backend
 gtk4-update-icon-cache-4.18.3 gtk+ icon theme caching utility
 harfbuzz-11.0.0     text shaping library
 hicolor-icon-theme-0.18 fallback theme of the icon theme specification
@@ -116,6 +125,7 @@ libdvdnav-6.1.1v0   DVD navigation library
 libdvdread-6.1.3    accessing DVD files
 liberation-fonts-2.00.1p1 substitute for MS TTF core fonts
 libevent-2.1.12p1   event notification library
+libexif-0.6.25      extract digital camera info tags from JPEG images
 libffi-3.4.7p1      Foreign Function Interface
 libiconv-1.17       character set conversion library
 libmng-1.0.10p3     Multiple-image Network Graphics (MNG) reference library
@@ -127,6 +137,7 @@ libsndfile-1.2.2p0  library to handle various audio file formats
 libsodium-1.0.20    library for network communications and cryptography
 libssh2-1.11.0      library implementing the SSH2 protocol
 libtheora-1.2.20190601p0 open video codec
+libudev-openbsd-20230921p0 library to access udev device information
 libudfread-1.1.2    library for reading UDF from raw devices and image files
 libunibreak-5.1     implementation of the line and word breaking
 libuv-1.50.0p0      multi-platform library for asynchronous I/O
@@ -135,7 +146,9 @@ libvidstab-1.1.0    video stabilization library
 libvorbis-1.3.7     audio compression codec library
 libvpx-1.15.0v0     Google VP8/VP9 video codec
 libwebp-1.4.0       Google WebP image format conversion tool
+libxkbcommon-1.8.1  library to handle keyboard descriptions
 libxml-2.13.8       XML parsing library
+libxslt-1.1.43p0    XSLT C Library for GNOME
 libyaml-0.2.5       YAML 1.1 parser and emitter written in C
 llvm-17.0.6p12      modular, fast C/C++/ObjC compiler, static analyzer and tools
 llvm-18.1.8p3       modular, fast C/C++/ObjC compiler, static analyzer and tools
@@ -151,11 +164,14 @@ nghttp2-1.65.0      library for HTTP/2
 nghttp3-1.8.0       implementation of HTTP/3
 ngtcp2-1.11.0       implementation of the RFC 9000 QUIC protocol
 nmap-7.92p1         scan ports and fingerprint stack of network hosts
-node-22.14.0v0      JavaScript runtime built on Chrome&#39;s V8 JavaScript engine
+node-22.15.1v0      JavaScript runtime built on Chrome&#39;s V8 JavaScript engine
 noto-cjk-20240730   east asian fonts for the noto font family
 noto-emoji-20241002 emoji fonts for the noto font family
 noto-fonts-24.9.1v0 pan-unicode font family
+nspr-4.36           Netscape Portable Runtime
+nss-3.110           libraries to support development of security-enabled apps
 openbsd-backgrounds-3.1 pictures for your background by OpenBSD developers
+openh264-2.6.0      Cisco implementation of H.264 codec
 openssl-3.3.3p0v0   TLS/SSL library and tools
 opus-1.5.2p0        IETF audio codec
 p5-Error-0.17029    error/exception handling in an OO-ish way
@@ -191,12 +207,14 @@ updatedb-0p0        pkg_add speed up cache
 v-0.4.5             simple, fast, safe, compiled language
 vim-9.1.1265-no_x11 vi clone, many additional features
 vmm-firmware-1.16.3p0 firmware binary images for vmm(4) driver
+wayland-1.23.1      Display server protocol
 windowmaker-0.96.0p0 window manager that emulates NEXTSTEP(tm)
 windowmaker-extra-0.1p3 themes and icons for Window Maker
 wmclockmon-0.8.1p1  WindowMaker dock.app clock
 wmnetload-1.3p6     wm-dockapp; simple network interface monitoring tool
 x264-20241229       free H.264/MPEG-4 AVC encoder
 x265-4.1p0          free H.265/HEVC encoder
+xdg-utils-1.2.1     utilities to assist desktop integration tasks
 xpdf3-3.04          PDF viewer for X11
 xvidcore-1.3.7      ISO MPEG-4 compliant video codec
 xwallpaper-0.7.6    wallpaper setting utility for X
