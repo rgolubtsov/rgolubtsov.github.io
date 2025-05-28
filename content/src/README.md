@@ -44,6 +44,7 @@ Scripts written in the following programming languages are presented here:
 12. Groovy
 13. Julia
 14. V script ([V](https://vlang.io "The V Programming Language"))
+15. Crystal
 
 They are all tailored and treated exactly as scripts, that means they are interpreted or compiled on the fly and executed using their respective interpreter/compiler and runtime environment/virtual machine.
 
