@@ -17,7 +17,7 @@ $ grep -Rl '&lt;regex_to_replace&gt;' | xargs perl -pi -e 's/&lt;regex_to_replac
 </code></pre>
 <p>The fourth one is a one-time procedure of logging into a VM box or any other remote host, using SSH public key authentication:</p>
 <pre><code>$ # Run SSH agent in the background and add a private key.
-$ eval `ssh-agent -s` &amp;&amp; ssh-add ~/.ssh/id_rsa
+$ eval `ssh-agent -s` &amp;&amp; ssh-add ~/.ssh/id_ed25519
 $ # Log into a running VM box by means of SSH client.
 $ ssh -C &lt;vmusername&gt;@&lt;vmhostname&gt;
 </code></pre>
