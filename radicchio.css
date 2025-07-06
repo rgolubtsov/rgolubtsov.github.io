@@ -175,7 +175,7 @@ pre code {
     font-family:      "Roboto Mono", monospace;
 }
 
-div .chevron {
+div.chevron {
     margin-bottom:    60px;
     margin-right:     13px;
     position:         fixed;
@@ -184,13 +184,18 @@ div .chevron {
     z-index:          1;
 }
 
-button .chevron {
+button.chevron {
     width:            32px;
     height:           32px;
     border:           1px solid #69df06;
     border-radius:    50%;
     background-color: #5db52a;
     cursor:           pointer;
+}
+
+svg.chevron {
+    width:            16px;
+    height:           16px;
 }
 
 /* ------------------------------------------------------------------------- */
