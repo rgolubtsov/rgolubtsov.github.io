@@ -28,7 +28,6 @@ EMPTY_STRING =     ""
 COMMA        =    ","
 POINT        =    "."
 SPACE        =    " "
-NEW_LINE     =   "\n"
 DBG_PREF     = "==> "
 
 # The replace function.
@@ -79,12 +78,12 @@ pos   = 3 # <== Can be set to either from 1 to infinity.
 #subst = "+-="
 subst = "|"
 
-puts("#{DBG_PREF}#{pos  }"           )
-puts("#{DBG_PREF}#{subst}#{NEW_LINE}")
+puts("#{DBG_PREF}#{pos  }"      )
+puts("#{DBG_PREF}#{subst}#{EOL}")
 
 text_ = replace(text, pos, subst)
 
-puts("#{NEW_LINE}#{DBG_PREF}#{text }")
-puts(           "#{DBG_PREF}#{text_}")
+puts("#{EOL}#{DBG_PREF}#{text }")
+puts(      "#{DBG_PREF}#{text_}")
 
 # vim:set nu et ts=4 sw=4:
