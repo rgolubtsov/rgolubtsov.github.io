@@ -80,7 +80,6 @@
 #
 
 # Helper constants.
-NEW_LINE        = "\n"
 EQUIL_INDEX_MSG = "==> The equilibrium index of A is "
 
 # The solution function.
@@ -120,6 +119,6 @@ A = [-1, 3, -4, 5, 1, -6, 2, 1]
 
 i = solution(A)
 
-puts(NEW_LINE + EQUIL_INDEX_MSG + "#{i}"); puts()
+puts(EOL + EQUIL_INDEX_MSG + "#{i}"); puts()
 
 # vim:set nu et ts=4 sw=4:
