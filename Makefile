@@ -37,6 +37,7 @@ $(LIB_DIR) $(SRC_DIR):
 	./utils/html-emoji-preproc  $(DAT_DIR)
 	./utils/html-lang-preproc ./$(DAT_DIR)/
 	./utils/http-404-preproc
+	./utils/html-chevron-preproc
 
 .PHONY: all clean
 
