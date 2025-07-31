@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+# utils/html-chevron-preproc
+# =============================================================================
+# A Cup of Radicchio. Version 0.9.9
+# -----------------------------------------------------------------------------
+# A Cup of Radicchio: A personal website of a power looper,
+#                                           a skateboarder,
+#                                       and a coder.
+# =============================================================================
+# This helper script hides a so-called "Scroll to top" chevron on those
+# site pages where it is not needed to appear and be activated
+# (e.g. 404 Not Found, editor page).
+# =============================================================================
+# Copyright (C) 2025 Radislav (Radicchio) Golubtsov
+#
+# (See the LICENSE file at the top of the source tree.)
+#
+
+# Helper constants.
+declare -r EXIT_FAILURE=1 #    Failing exit status.
+declare -r EXIT_SUCCESS=0 # Successful exit status.
+
+declare -r CHEV_B="div\ class=\"chevron" # <== Chevron block - Begin.
+declare -r CHEV_E="svg><\/button><\/div" # <== Chevron block - End.
+
+declare -r PAGES="404.html \
+    data/blog/index.html \
+    data/blog/editor.html"
+
+echo "=== Deactivating the ..:: Scroll to top ::.. chevron on selective web pages."
+
+sed -i -e "s/${CHEV_B}/!--${CHEV_B}/g" ${PAGES}
+sed -i -e "s/${CHEV_E}/${CHEV_E}--/g"  ${PAGES}
+
+# If there is an error -- telling the OS about this.
+if [ $? -eq ${EXIT_FAILURE} ]; then
+    exit    ${EXIT_FAILURE}
+fi
+
+exit        ${EXIT_SUCCESS}
+
+# vim:set nu et ts=4 sw=4:
