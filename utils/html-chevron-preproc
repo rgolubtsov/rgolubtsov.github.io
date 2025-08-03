@@ -25,7 +25,12 @@ declare -r CHEV_E="svg><\/button><\/div" # <== Chevron block - End.
 
 declare -r PAGES="404.html \
     data/blog/index.html \
-    data/blog/editor.html"
+    data/blog/editor.html \
+    data/blog/poetry/to-whom-it-may-concern-bed-quatrain-ru.html \
+    data/blog/poetry/sometimes-a-gayme-is-over-basta.html \
+    data/blog/poetry/svetlana-golubtsova-happy-new-year-congrat-2024-ru.html \
+    data/blog/poetry/to-whom-it-may-concern-weekend-quatrain-ru.html \
+    data/blog/poetry/i-will-love-your-feet-quatrain-without-rhyme-motto-ru.html"
 
 echo "=== Deactivating the ..:: Scroll to top ::.. chevron on selective web pages."
 
