@@ -26,5 +26,13 @@
 Пробудившись, он побрился,<br />
 А затем опохмелился! :smiley:
 
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\* \* \*
+
+**UPDATE-2:** (*6th of August, 2025*)<br />
+После нового запоя<br />
+Задался вопросом &laquo;Кто я?!..&raquo; &mdash;<br />
+И просев по всем ресурсам,<br />
+Устремился прежним курсом.
+
 <br />*6th of December, 2022*<br />
 &copy; 2022-2025 Radislav (Radicchio) Golubtsov
