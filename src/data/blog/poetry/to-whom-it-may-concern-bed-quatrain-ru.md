@@ -9,4 +9,4 @@
 Мы с тобой в твоей кроватке!
 
 <br />*Circa end of December, 2019*<br />
-&copy; 2019-2025 Radislav (Radicchio) Golubtsov
+&copy; 2019-2026 Radislav (Radicchio) Golubtsov

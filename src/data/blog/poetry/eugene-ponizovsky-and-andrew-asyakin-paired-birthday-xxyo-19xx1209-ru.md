@@ -58,4 +58,4 @@ Codename:       n/a
 ```
 
 <br />*9th of December, 2022*<br />
-&copy; 2022-2025 Radislav (Radicchio) Golubtsov
+&copy; 2022-2026 Radislav (Radicchio) Golubtsov

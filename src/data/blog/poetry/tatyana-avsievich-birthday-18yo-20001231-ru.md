@@ -42,4 +42,4 @@
 Забирай меня и властвуй!&raquo;
 
 <br />*Circa end of December, 2018*<br />
-&copy; 2018-2025 Radislav (Radicchio) Golubtsov
+&copy; 2018-2026 Radislav (Radicchio) Golubtsov

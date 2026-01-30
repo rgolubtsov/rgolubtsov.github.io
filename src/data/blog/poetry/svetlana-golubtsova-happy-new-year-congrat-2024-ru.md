@@ -20,4 +20,4 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Тебе одной гирлянды зажигать! :blue_heart:
 
 <br />*1st of January, 2024*<br />
-&copy; 2024-2025 Radislav (Radicchio) Golubtsov
+&copy; 2024-2026 Radislav (Radicchio) Golubtsov

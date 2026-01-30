@@ -9,4 +9,4 @@
 Я буду ваши ноги целовать!
 
 <br />*Circa somewhen in between 2020-2022*<br />
-&copy; 2024-2025 Radislav (Radicchio) Golubtsov
+&copy; 2024-2026 Radislav (Radicchio) Golubtsov

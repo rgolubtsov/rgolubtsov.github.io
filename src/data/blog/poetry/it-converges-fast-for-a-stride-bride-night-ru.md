@@ -27,4 +27,4 @@
 Встретить вчерашним днем!
 
 <br />*Circa beginning of Spring 2019*<br />
-&copy; 2019-2025 Radislav (Radicchio) Golubtsov
+&copy; 2019-2026 Radislav (Radicchio) Golubtsov

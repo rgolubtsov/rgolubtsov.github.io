@@ -64,4 +64,4 @@
 К тебе твой образ Счастья прилетит!
 
 <br />*13th-14th of November, 2021*<br />
-&copy; 2021-2025 Radislav (Radicchio) Golubtsov
+&copy; 2021-2026 Radislav (Radicchio) Golubtsov

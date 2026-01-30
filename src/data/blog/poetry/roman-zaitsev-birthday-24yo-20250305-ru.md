@@ -43,4 +43,4 @@
 ^^^^ Шаурма (&laquo;шава&raquo;).
 
 <br />*5th of March, 2025*<br />
-&copy; 2025 Radislav (Radicchio) Golubtsov
+&copy; 2025-2026 Radislav (Radicchio) Golubtsov
