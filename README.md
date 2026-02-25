@@ -29,19 +29,17 @@ Install **Harp** on **Ubuntu Server LTS x86-64**:
 ```
 $ sudo npm i harp -g --unsafe-perm
 
-changed 84 packages, and audited 85 packages in 8s
+changed 82 packages in 4s
 
-4 packages are looking for funding
+6 packages are looking for funding
   run `npm fund` for details
-
-found 0 vulnerabilities
 $
 $ ls -al /usr/local/bin/harp /usr/local/lib/node_modules/harp/bin/harp
-lrwxrwxrwx 1 root root   33 Apr 12 19:30 /usr/local/bin/harp -> ../lib/node_modules/harp/bin/harp
--rwxr-xr-x 1 root root 4070 Apr 12 19:30 /usr/local/lib/node_modules/harp/bin/harp
+lrwxrwxrwx 1 root root   33 Feb 25 18:00 /usr/local/bin/harp -> ../lib/node_modules/harp/bin/harp
+-rwxr-xr-x 1 root root 4070 Feb 25 18:00 /usr/local/lib/node_modules/harp/bin/harp
 $
 $ harp -v
-v0.46.1
+v0.47.2
 ```
 
 Install **Harp** on **Arch Linux**:
