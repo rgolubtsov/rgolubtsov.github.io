@@ -4,7 +4,7 @@
 
 *18th of April, 2019*
 
-Consider a situation when during installation of **[Harp](https://harpjs.com "Harp, the static web server with built-in preprocessing")**, it collects and installs all its dependencies and, at the time of installing Node Sass, it complains to unable fulfilling this procedure because Node Sass has to be built using `node-gyp`, but the latter causes segfault just after launching it.
+Consider a situation when during installation of **[Harp](https://harp.sh "Harp, the static web server with built-in preprocessing")**, it collects and installs all its dependencies and, at the time of installing Node Sass, it complains to unable fulfilling this procedure because Node Sass has to be built using `node-gyp`, but the latter causes segfault just after launching it.
 
 The aforementioned error may occur during installation of **Harp** on a machine with limited system resources running **Arch Linux 32**. The following command/log entry shows this (intermediate output omitted):
 

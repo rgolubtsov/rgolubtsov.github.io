@@ -4,7 +4,8 @@
 
 ---
 
-The website might be built using **GNU Make** and **[Harp](https://github.com/sintaxi/harp "Harp, the static web server with built-in preprocessing")**: `$ make clean && make all`. (On **OpenBSD** it needs to use `gmake` instead of `make`, i.e. `$ gmake clean && gmake all`.)
+The website might be built using **GNU Make** and **[Harp](https://harp.sh "Harp, the static web server with built-in preprocessing")**: `$ make clean && make all`.
+On **OpenBSD** it needs to use `gmake` instead of `make`, i.e. `$ gmake clean && gmake all`.
 
 Install **Harp** on **OpenBSD/amd64**:
 
