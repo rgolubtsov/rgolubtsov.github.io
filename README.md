@@ -5,7 +5,7 @@
 ---
 
 The website might be built using **GNU Make** and **[Harp](https://harp.sh "Harp, the static web server with built-in preprocessing")**: `$ make clean && make all`.
-On **OpenBSD** it needs to use `gmake` instead of `make`, i.e. `$ gmake clean && gmake all`.
+<br />On **OpenBSD** it needs to use `gmake` instead of `make`, i.e. `$ gmake clean && gmake all`.
 
 Install **Harp** on **OpenBSD/amd64**:
 
@@ -46,17 +46,17 @@ v0.47.2
 Install **Harp** on **Arch Linux**:
 
 ```
-$ sudo npm i harp -g --unsafe-perm
+$ sudo npm i harp -g
 
-changed 84 packages in 13s
+changed 82 packages in 2s
 
-5 packages are looking for funding
+6 packages are looking for funding
   run `npm fund` for details
 $
 $ ls -al /usr/bin/harp /usr/lib/node_modules/harp/bin/harp
-lrwxrwxrwx 1 root root   33 Mar 23 11:50 /usr/bin/harp -> ../lib/node_modules/harp/bin/harp
--rwxr-xr-x 1 root root 4070 Mar 23 11:50 /usr/lib/node_modules/harp/bin/harp
+lrwxrwxrwx 1 root root   33 Feb 25 21:00 /usr/bin/harp -> ../lib/node_modules/harp/bin/harp
+-rwxr-xr-x 1 root root 4070 Feb 25 21:00 /usr/lib/node_modules/harp/bin/harp
 $
 $ harp -v
-v0.46.1
+v0.47.2
 ```
