@@ -29,8 +29,6 @@ int get_age(int YY_OF_BIRTH, int MM_OF_BIRTH, int DD_OF_BIRTH) {
 
     var age = year - YY_OF_BIRTH;
 
-    month++;
-
     if (month < MM_OF_BIRTH) {
         age--;
     } else if (month == MM_OF_BIRTH) {
