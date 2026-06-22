@@ -20,6 +20,8 @@
  * (See the LICENSE file at the top of the source tree.)
  */
 
+const string NEW_LINE = "\n";
+
 // Calculates the current age based on the date of birth.
 int get_age(int YY_OF_BIRTH, int MM_OF_BIRTH, int DD_OF_BIRTH) {
     var date  = new DateTime.now_local();
@@ -41,8 +43,8 @@ int get_age(int YY_OF_BIRTH, int MM_OF_BIRTH, int DD_OF_BIRTH) {
 }
 
 // The script entry point.
-int main() {
-    return get_age(1977, 6, 27); // <== 1977-06-27.
+void main() {
+    print(get_age(1977, 6, 27).to_string() + NEW_LINE); // <== 1977-06-27.
 }
 
 // vim:set nu et ts=4 sw=4:
