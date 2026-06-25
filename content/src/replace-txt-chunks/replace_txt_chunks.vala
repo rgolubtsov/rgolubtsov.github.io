@@ -41,7 +41,7 @@ string replace(string text, int pos, string subst) {
     for (var i = 0; i < text_ary_len; i++) {
         var text_ary_i_len = text_ary[i].length;
 
-        print(DBG_PREF + text_ary[i] + NEW_LINE);
+//      print(DBG_PREF + text_ary[i] + NEW_LINE);
 
         if ((pos - 1 < text_ary_i_len)
             && (text_ary[i].substring(pos - 1) != COMMA)
@@ -51,11 +51,11 @@ string replace(string text, int pos, string subst) {
             .replace(text_ary[i].substring(pos - 1), subst)
             +        text_ary[i].substring(pos    );
 
-            print(DBG_PREF + text__      + NEW_LINE);
+//          print(DBG_PREF + text__      + NEW_LINE);
 
             text_ += text__;
         } else {
-            print(DBG_PREF + text_ary[i] + NEW_LINE);
+//          print(DBG_PREF + text_ary[i] + NEW_LINE);
 
             text_ += text_ary[i];
         }
@@ -80,13 +80,13 @@ void main() {
 //  var subst = "+-=";
     var subst = "|";
 
-    print(DBG_PREF + pos.to_string()  + NEW_LINE);
-    print(DBG_PREF + subst + NEW_LINE + NEW_LINE);
+    print(@"$DBG_PREF$pos$NEW_LINE"           );
+    print(@"$DBG_PREF$subst$NEW_LINE$NEW_LINE");
 
     var text_ = replace(text, pos, subst);
 
-    print(NEW_LINE + DBG_PREF + text  + NEW_LINE);
-    print(           DBG_PREF + text_ + NEW_LINE);
+    print(@"$NEW_LINE$DBG_PREF$text$NEW_LINE" );
+    print(         @"$DBG_PREF$text_$NEW_LINE");
 }
 
 // vim:set nu et ts=4 sw=4:
