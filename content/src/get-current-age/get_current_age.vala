@@ -11,7 +11,7 @@
  * on modern versions of Ubuntu Server LTS x86-64 and Arch Linux
  * operating systems.
  *
- * The script contains a function that calculates the current age
+ * The script contains a method that calculates the current age
  * based on the date of birth, given in args. It then simply returns
  * the age calculated - nothing special.
  * ============================================================================

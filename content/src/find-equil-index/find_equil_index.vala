@@ -83,7 +83,7 @@
 const string NEW_LINE        = "\n";
 const string EQUIL_INDEX_MSG = "==> The equilibrium index of A is ";
 
-// The solution function.
+// The solution method.
 int solution(int[] A) {
     var num_of_A = A.length;
 

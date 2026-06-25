@@ -31,7 +31,7 @@ const string POINT        =    ".";
 const string NEW_LINE     =   "\n";
 const string DBG_PREF     = "==> ";
 
-// The replace function.
+// The replace method.
 string replace(string text, int pos, string subst) {
     var text_        = EMPTY_STRING;
     var text__       = EMPTY_STRING;
