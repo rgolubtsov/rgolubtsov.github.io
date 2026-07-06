@@ -7,9 +7,8 @@
        chmod 700 get_current_age.vala; ./get_current_age.vala;  echo $?
  * ============================================================================
  * This is a demo script. It has to be run as a Vala script using the Vala
- * tool's runtime facility. Tested and known to run exactly the same way
- * on modern versions of Ubuntu Server LTS x86-64 and Arch Linux
- * operating systems.
+ * interpreter. Tested and known to run exactly the same way on modern versions
+ * of Ubuntu Server LTS x86-64 and Arch Linux operating systems.
  *
  * The script contains a method that calculates the current age
  * based on the date of birth, given in args. It then simply returns

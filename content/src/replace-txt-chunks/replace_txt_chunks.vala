@@ -7,9 +7,8 @@
        chmod 700 replace_txt_chunks.vala; ./replace_txt_chunks.vala;  echo $?
  * ============================================================================
  * This is a demo script. It has to be run as a Vala script using the Vala
- * tool's runtime facility. Tested and known to run exactly the same way
- * on modern versions of Ubuntu Server LTS x86-64 and Arch Linux
- * operating systems.
+ * interpreter. Tested and known to run exactly the same way on modern versions
+ * of Ubuntu Server LTS x86-64 and Arch Linux operating systems.
  *
  * Create a function that will take a String value as the first parameter,
  * a Number value as the second parameter, and a String value as the third one.
