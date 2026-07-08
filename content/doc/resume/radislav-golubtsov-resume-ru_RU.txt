@@ -19,8 +19,8 @@
 системы         GNU/Linux, Ubuntu, Fedora, CentOS, Red  Hat  Enterprise  Linux,
                 Mac OS X, HP-UX, IBM AIX, Sun Solaris). Microsoft Windows
 
-Языки програм-  Java, Clojure, Perl 5, Python, Bash  Shell  Script,  JavaScript
-мирования       (ES5-6/Node.js), C, Go, GNOME Vala/Genie, Lua, C++,Objective-C,
+Языки програм-  Java, Groovy, Clojure,  Perl  5,  Python,  Bash  Shell  Script,
+мирования       JavaScript, C, V, Go, Crystal, Vala/Genie, Lua,C++,Objective-C,
                 Fortran 95, Erlang, Elixir, LFE (Lisp Flavoured Erlang)
 
 Технологии      * Java SE / EE, Spring Boot, Spring Web MVC,  Spring  Security,
@@ -68,7 +68,7 @@
                   GNU Debugger (GDB), GNUstep, sed и  др.  Clang  (C  /  C++  /
                   Objective-C LLVM compiler front end), TCC (Fabrice  Bellard's
                   Tiny C Compiler)
-                * Apache Maven, Apache Ant, Leiningen, Rebar3
+                * Apache Maven, Apache Ant, Gradle, Leiningen, Rebar3, Shards
 
 СУБД            PostgreSQL, MySQL / MariaDB, Oracle Database, IBM DB2 Universal
                 Database, SQLite, MongoDB, Redis
