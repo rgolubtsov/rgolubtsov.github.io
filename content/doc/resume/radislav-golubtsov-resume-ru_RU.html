@@ -60,7 +60,6 @@ h1 {
 #cv-table4,
 #cv-table5 {
     width:            100%;
-/*  margin-left:      -1px;*/
     border-collapse:  collapse;
 }
 
@@ -123,21 +122,16 @@ h1 {
     letter-spacing:   2px;
 }
 
-/*#cv-table3 td div.cv-nowrap {
-    white-space:      nowrap;
-}*/
-
-#cv-table4 td.cv-width20,
-#cv-table5 td.cv-width20 {
-    width:            20%;
-}
-
+#cv-table0 td.cv-width80,
+#cv-table1 td.cv-width80,
+#cv-table2 td.cv-width80,
 #cv-table4 td.cv-width80,
 #cv-table5 td.cv-width80 {
     width:            80%;
 }
 
                 p.cv-left,
+#cv-table0     td.cv-left,
 #cv-table1     td.cv-left,
 #cv-table1 td  ul.cv-left,
 #cv-table2     td.cv-left,
@@ -185,11 +179,11 @@ h1 {
 <td colspan="2" class="cv-caption cv-sparse cv-bold">РЕЗЮМЕ</td>
 </tr>
 <tr>
-<td colspan="2" class="cv-header">Суммарный опыт работы в сфере ИТ &ndash; более 20 лет | IT-мультилингвист</td>
+<td colspan="2" class="cv-header cv-left">Суммарный опыт работы в сфере ИТ &ndash; более 20 лет | IT-мультилингвист</td>
 </tr>
 <tr>
-<td class="cv-bold">Вычислительные<br />платформы</td>
-<td><ul>
+<td class="cv-bold" style="padding-right:1px">Вычислительные<br />платформы</td>
+<td class="cv-width80"><ul>
 <li>Intel x86 (i686 / x86-64)</li>
 <li>HP PA-RISC</li>
 <li>IBM PowerPC</li>
@@ -201,7 +195,7 @@ h1 {
 <td>Юниксы и их производные (OpenBSD, FreeBSD, Arch Linux, Debian GNU/Linux, Ubuntu, Fedora, CentOS, Red Hat Enterprise Linux, Mac OS X, HP-UX, IBM AIX, Sun Solaris). Microsoft Windows</td>
 </tr>
 <tr>
-<td class="cv-bold">Языки<br />программирования</td>
+<td class="cv-bold" style="padding-right:1px;letter-spacing:-1px">Языки<br />программирования</td>
 <td>Java, Clojure, Perl 5, Python, Bash Shell Script, JavaScript (ES5-6/Node.js), C, Go, GNOME Vala/Genie, Lua, C++, Objective-C, Fortran 95, Erlang, Elixir, LFE (Lisp Flavoured Erlang)</td>
 </tr>
 <tr>
@@ -246,7 +240,7 @@ h1 {
 </ul></td>
 </tr>
 <tr>
-<td class="cv-bold">Приложения<br />промежуточного<br />слоя / разные</td>
+<td class="cv-bold" style="padding-right:1px;letter-spacing:-1px">Приложения<br />промежуточного<br />слоя / разные</td>
 <td>Git, GitHub, GitLab, Bitbucket, Perforce (P4), Subversion (SVN), Concurrent Versions System (CVS), JIRA, Redmine, Trac, Trello, MediaWiki, Doxygen, Samba, Travis CI и Jenkins CI/CD, Docker (и Docker Compose), Cron, QEMU, Zabbix и др.</td>
 </tr>
 </tbody>
@@ -261,7 +255,7 @@ h1 {
 </tr>
 <tr>
 <td class="cv-bold">Английский</td>
-<td class="cv-left">Уровень, достаточный для повседневной работы и общения:<br /><ul class="cv-left">
+<td class="cv-width80 cv-left">Уровень, достаточный для повседневной работы и общения:<br /><ul class="cv-left">
 <li>чтение / письмо &ndash; свободное владение</li>
 <li>разговорная речь &ndash; уровень Upper Intermediate (B1-B2)</li>
 </ul></td>
@@ -282,22 +276,22 @@ h1 {
 <table id="cv-table2">
 <tbody>
 <tr>
-<td colspan="2" class="cv-caption"><span class="cv-sparse cv-bold">Образование</span> (в обратном хронологическом порядке)</td>
+<td colspan="2" class="cv-caption cv-left"><span class="cv-sparse cv-bold">Образование</span> (в обратном хронологическом порядке)</td>
 </tr>
 <tr>
-<td>Май 2002 &ndash; июль 2003</td>
-<td class="cv-left">Аспирант Гомельского государственного технического университета имени П. О. Сухого</td>
+<td class="cv-left">Май 2002 &ndash; июль 2003</td>
+<td class="cv-width80 cv-left">Аспирант Гомельского государственного технического университета имени П. О. Сухого</td>
 </tr>
 <tr>
-<td>Октябрь 2001 &ndash; май 2002</td>
+<td class="cv-left">Октябрь 2001 &ndash; май 2002</td>
 <td class="cv-left">Магистрант Международного центра теоретической физики имени Абдуса Салама, Триест, Италия</td>
 </tr>
 <tr>
-<td style="white-space:nowrap">Ноябрь 1999 &ndash; октябрь 2001</td>
+<td class="cv-left">Ноябрь 1999 &ndash; октябрь 2001</td>
 <td class="cv-left">Аспирант Гомельского государственного технического университета имени П. О. Сухого</td>
 </tr>
 <tr>
-<td>1994 &ndash; 1999</td>
+<td class="cv-left">1994 &ndash; 1999</td>
 <td class="cv-left">Студент Гомельского государственного технического университета имени П. О. Сухого, Гомель, Беларусь (диплом &laquo;С отличием&raquo;)</td>
 </tr>
 </tbody>
@@ -317,14 +311,14 @@ h1 {
 </tr>
 <tr>
 <td>Дата рождения</td>
-<td class="cv-width80 cv-left">27 июня 1977 г. (49 лет)</td>
+<td class="cv-width80">27 июня 1977 г. (49 лет)</td>
 </tr>
 <tr>
 <td>Знак зодиака</td>
 <td>Рак / Огненная Змея</td>
 </tr>
 <tr>
-<td class="cv-width20 cv-nowrap">Семейное положение</td>
+<td>Семейное положение</td>
 <td>Холост</td>
 </tr>
 </tbody>
@@ -342,7 +336,7 @@ h1 {
 <td><a href="https://github.com/rgolubtsov" target="_blank" rel="nofollow noreferrer" title="Откроется в новом окне/вкладке">https://github.com/rgolubtsov</a></td>
 </tr>
 <tr>
-<td class="cv-width20">Спортивные<br />предпочтения</td>
+<td>Спортивные<br />предпочтения</td>
 <td class="cv-width80"><ul class="cv-left">
 <li>Настольный теннис</li>
 <li>Уличный скейтбординг</li>
