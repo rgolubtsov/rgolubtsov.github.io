@@ -20,27 +20,29 @@ To read/clear/set metadata in a PDF document, one may use the [ExifTool](https:/
 ```
 $ exiftool -all:all *.pdf
 ======== radislav-golubtsov-resume-en_US.pdf
-ExifTool Version Number         : 11.88
+ExifTool Version Number         : 13.55
 File Name                       : radislav-golubtsov-resume-en_US.pdf
 ...
 MIME Type                       : application/pdf
-PDF Version                     : 1.6
+PDF Version                     : 1.4
 Linearized                      : No
-Page Count                      : 20
-Language                        : en-US
-Creator                         : Writer
-Producer                        : LibreOffice 7.3
+Page Count                      : 4
+Title                           : Radislav Golubtsov | Curriculum Vitae
+Creator                         : Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+Producer                        : Skia/PDF m147
+...
 ======== radislav-golubtsov-resume-ru_RU.pdf
-ExifTool Version Number         : 11.88
+ExifTool Version Number         : 13.55
 File Name                       : radislav-golubtsov-resume-ru_RU.pdf
 ...
 MIME Type                       : application/pdf
-PDF Version                     : 1.6
+PDF Version                     : 1.4
 Linearized                      : No
-Page Count                      : 22
-Language                        : en-US
-Creator                         : Writer
-Producer                        : LibreOffice 7.3
+Page Count                      : 4
+Title                           : Радислав Голубцов | Curriculum Vitae
+Creator                         : Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+Producer                        : Skia/PDF m147
+...
     2 image files read
 ```
 
@@ -58,31 +60,29 @@ Warning: [minor] ExifTool PDF edits are reversible. Deleted tags may be recovere
 ```
 $ rm -f *.pdf_original && exiftool -all:all *.pdf
 ======== radislav-golubtsov-resume-en_US.pdf
-ExifTool Version Number         : 11.88
+ExifTool Version Number         : 13.55
 File Name                       : radislav-golubtsov-resume-en_US.pdf
 ...
 MIME Type                       : application/pdf
-PDF Version                     : 1.6
+PDF Version                     : 1.4
 Linearized                      : No
-Page Count                      : 20
-Language                        : en-US
+Page Count                      : 4
 ======== radislav-golubtsov-resume-ru_RU.pdf
-ExifTool Version Number         : 11.88
+ExifTool Version Number         : 13.55
 File Name                       : radislav-golubtsov-resume-ru_RU.pdf
 ...
 MIME Type                       : application/pdf
-PDF Version                     : 1.6
+PDF Version                     : 1.4
 Linearized                      : No
-Page Count                      : 22
-Language                        : en-US
+Page Count                      : 4
     2 image files read
 ```
 
 4. **Set** titles for the docs:
 
 ```
-$ exiftool -Title="Radislav Golubtsov Resume | en_US" radislav-golubtsov-resume-en_US.pdf && \
-  exiftool -Title="Radislav Golubtsov Resume | ru_RU" radislav-golubtsov-resume-ru_RU.pdf
+$ exiftool -Title="Radislav Golubtsov | Curriculum Vitae" radislav-golubtsov-resume-en_US.pdf && \
+  exiftool -Title="Радислав Голубцов | Curriculum Vitae"  radislav-golubtsov-resume-ru_RU.pdf
     1 image files updated
     1 image files updated
 ```
@@ -92,56 +92,56 @@ $ exiftool -Title="Radislav Golubtsov Resume | en_US" radislav-golubtsov-resume-
 ```
 $ rm -f *.pdf_original && exiftool -all:all *.pdf
 ======== radislav-golubtsov-resume-en_US.pdf
-ExifTool Version Number         : 11.88
+ExifTool Version Number         : 13.55
 File Name                       : radislav-golubtsov-resume-en_US.pdf
 ...
 MIME Type                       : application/pdf
-PDF Version                     : 1.6
+PDF Version                     : 1.4
 Linearized                      : No
-Page Count                      : 20
-Language                        : en-US
-XMP Toolkit                     : Image::ExifTool 11.88
-Title                           : Radislav Golubtsov Resume | en_US
+Page Count                      : 4
+XMP Toolkit                     : Image::ExifTool 13.55
+Title                           : Radislav Golubtsov | Curriculum Vitae
+Title                           : Radislav Golubtsov | Curriculum Vitae
 ======== radislav-golubtsov-resume-ru_RU.pdf
-ExifTool Version Number         : 11.88
+ExifTool Version Number         : 13.55
 File Name                       : radislav-golubtsov-resume-ru_RU.pdf
 ...
 MIME Type                       : application/pdf
-PDF Version                     : 1.6
+PDF Version                     : 1.4
 Linearized                      : No
-Page Count                      : 22
-Language                        : en-US
-XMP Toolkit                     : Image::ExifTool 11.88
-Title                           : Radislav Golubtsov Resume | ru_RU
+Page Count                      : 4
+XMP Toolkit                     : Image::ExifTool 13.55
+Title                           : Радислав Голубцов | Curriculum Vitae
+Title                           : Радислав Голубцов | Curriculum Vitae
     2 image files read
 ```
 
-6. **Linearize** the docs (see dedicated section above) and (7) **read** metadata again:
+6. **Linearize** the docs (*see dedicated section at the top of the page*) and **read** metadata again:
 
 ```
 $ exiftool -all:all *.pdf
 ======== radislav-golubtsov-resume-en_US.pdf
-ExifTool Version Number         : 11.88
+ExifTool Version Number         : 13.55
 File Name                       : radislav-golubtsov-resume-en_US.pdf
 ...
 MIME Type                       : application/pdf
-PDF Version                     : 1.6
+PDF Version                     : 1.4
 Linearized                      : Yes                 <== That's one!
-Language                        : en-US
-XMP Toolkit                     : Image::ExifTool 11.88
-Title                           : Radislav Golubtsov Resume | en_US
-Page Count                      : 20
+Title                           : Radislav Golubtsov | Curriculum Vitae
+XMP Toolkit                     : Image::ExifTool 13.55
+Title                           : Radislav Golubtsov | Curriculum Vitae
+Page Count                      : 4
 ======== radislav-golubtsov-resume-ru_RU.pdf
-ExifTool Version Number         : 11.88
+ExifTool Version Number         : 13.55
 File Name                       : radislav-golubtsov-resume-ru_RU.pdf
 ...
 MIME Type                       : application/pdf
-PDF Version                     : 1.6
+PDF Version                     : 1.4
 Linearized                      : Yes                 <== That's two!
-Language                        : en-US
-XMP Toolkit                     : Image::ExifTool 11.88
-Title                           : Radislav Golubtsov Resume | ru_RU
-Page Count                      : 22
+Title                           : Радислав Голубцов | Curriculum Vitae
+XMP Toolkit                     : Image::ExifTool 13.55
+Title                           : Радислав Голубцов | Curriculum Vitae
+Page Count                      : 4
     2 image files read
 ```
 
