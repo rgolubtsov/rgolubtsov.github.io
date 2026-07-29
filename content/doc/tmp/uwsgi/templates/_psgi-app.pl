@@ -1,5 +1,5 @@
 #
-# content/src/_templates/_psgi-app.pl
+# content/doc/tmp/uwsgi/templates/_psgi-app.pl
 # =============================================================================
 # PSGI application template.
 # Usage:
