@@ -44,8 +44,8 @@ def replace(text:string, pos:int, subst:string):string
 //		print(DBG_PREF + text_ary[i])
 
 		if ((pos - 1 < text_ary_i_len)
-			&& (text_ary[i].substring(pos - 1) != COMMA)
-			&& (text_ary[i].substring(pos - 1) != POINT))
+			&& (text_ary[i].substring(pos - 1) is not COMMA)
+			&& (text_ary[i].substring(pos - 1) is not POINT))
 
 			text__ = (text_ary[i].replace(text_ary[i].substring(pos - 1), subst)
 										+ text_ary[i].substring(pos    ))
