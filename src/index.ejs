@@ -40,6 +40,14 @@ $ #    hh - Hour             ||      +----------------------------------------+ 
 $ #    mm - Minute           |+---------------------- Century ---------------------+|
 $ #    ss - Second           +------------------------------------------------------+
 </code></pre>
+<p>The seventh one is a...:</p>
+<pre><code>$ lsof -iTCP -sTCP:LISTEN -nP
+COMMAND     PID       USER FD   TYPE DEVICE SIZE/OFF NODE NAME
+epmd     &lt;pid1&gt; &lt;username&gt;  3u  IPv4 377060      0t0  TCP *:4369 (LISTEN)
+epmd     &lt;pid1&gt; &lt;username&gt;  4u  IPv6 377061      0t0  TCP *:4369 (LISTEN)
+beam.smp &lt;pid2&gt; &lt;username&gt; 17u  IPv4 390816      0t0  TCP *:44937 (LISTEN)
+beam.smp &lt;pid2&gt; &lt;username&gt; 22u  IPv4 390819      0t0  TCP *:8765 (LISTEN)
+</code></pre>
 <p style="text-align:left">Drink with <strong>pleasure</strong>, consume <strong>responsibly</strong>, at leisure! <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f37a.png" class="emoji" alt="(Beer!))" /></p>
 
 <%# vim:set nu et ts=4 sw=4: %>
