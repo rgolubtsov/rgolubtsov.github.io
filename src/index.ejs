@@ -40,7 +40,7 @@ $ #    hh - Hour             ||      +----------------------------------------+ 
 $ #    mm - Minute           |+---------------------- Century ---------------------+|
 $ #    ss - Second           +------------------------------------------------------+
 </code></pre>
-<p>The seventh one is an attempt to discover open TCP ports at which daemons are actively listening on. This seems useful when developing microservices running web servers, e.g.:</p>
+<p>The seventh one is an attempt to discover open TCP ports at which daemons are actively listening on. This seems useful when developing microservices running servers, e.g.:</p>
 <pre><code>$ # Watch the Erlang BEAM node is listening for connections on two TCP IPv4 ports,
 $ # one of them (8765) in this particular case is used by the Cowboy web server.
 $ lsof -iTCP -sTCP:LISTEN -nP
