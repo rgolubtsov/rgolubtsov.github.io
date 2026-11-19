@@ -4,7 +4,7 @@
 
 *18th of March, 2025*
 
-These installation instructions aim at showing how to simply install and initially set up a VM server running the latest stable OpenBSD release as the guest OS. Arch Linux was chosen as the host OS, and QEMU-KVM &ndash; as a hypervisor that manages and runs the VM. (Prerequisite: QEMU is already installed and configured properly on an Arch Linux host.)
+These installation instructions aim at showing how to simply install and initially set up a VM server running the latest stable OpenBSD release as the guest OS. Arch Linux was chosen as the host OS, and QEMU-KVM&mdash;as a hypervisor that manages and runs the VM. (Prerequisite: QEMU is already installed and configured properly on an Arch Linux host.)
 
 **(1) Download the ISO image of the OpenBSD operating system (amd64) along with SHA-256 checksums**
 
@@ -95,7 +95,7 @@ OpenBSD will boot up in a separate window.
 
 Install Bash (GNU Bourne-Again SHell): `# pkg_add -r bash`. Change the login shell: `# chpass`, and set the `Shell` entry to `/usr/local/bin/bash`. Do relogin after that. Now the active shell should be Bash.
 
-Also it should be worth to change the login shell to Bash for a regular user account if it was created during the installation process: `-bash-5.2# chpass <username>` &ndash; do the same as in the previous step.
+Also it should be worth to change the login shell to Bash for a regular user account if it was created during the installation process: `-bash-5.2# chpass <username>`&mdash;do the same as in the previous step.
 
 Install a small set of supplementary packages for day-to-day administrative purposes (they may vary in choice but for now the next three are quite sufficient):
 
@@ -183,7 +183,7 @@ So install Tiny C Compiler, bzip2/bzip3, XZ Utils, Zstandard, Zip/UnZip, and 7-Z
 ...
 ```
 
-After that the package database can be checked again &ndash; to inspect the list of newly installed packages along with their dependencies:
+After that the package database can be checked again&mdash;to inspect the list of newly installed packages along with their dependencies:
 
 ```
 -bash-5.2$ pkg_info

@@ -4,7 +4,7 @@
 
 *28th of October, 2023*
 
-**Beware:** These are relatively custom-tailored instructions &ndash; **YMMV** (your mileage may vary).
+**Beware:** These are relatively custom-tailored instructions&mdash;**YMMV** (your mileage may vary).
 
 Create a specific user account for daily operations and provide it with power user privileges:
 

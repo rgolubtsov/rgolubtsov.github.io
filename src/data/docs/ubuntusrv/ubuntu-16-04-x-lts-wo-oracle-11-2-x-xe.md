@@ -77,4 +77,4 @@ $ groups
 <usergroup> dba
 ```
 
-Happy deliverance from Oracle in Ubuntu ! :+1: &ndash; Because **PostgreSQL** will rule the Universe ! :blue_heart:
+Happy deliverance from Oracle in Ubuntu ! :+1:&mdash;Because **PostgreSQL** will rule the Universe ! :blue_heart:

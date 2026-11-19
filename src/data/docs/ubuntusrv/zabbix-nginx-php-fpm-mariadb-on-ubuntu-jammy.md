@@ -4,7 +4,7 @@
 
 *2nd of September, 2022*
 
-The main prerequisite here is to have MariaDB and Nginx servers already installed, configured, and run on the same host where Zabbix supposed being installed. Thus, the following instructions are based on what was installed and configured earlier, for the Redmine-carrying Ubuntu server &ndash; clearly described in [this article](/data/docs/ubuntusrv/redmine-nginx-passenger-mariadb-on-ubuntu-jammy "Install Redmine 5.0.2 + Nginx/Passenger + MariaDB on Ubuntu Server 22.04 LTS").
+The main prerequisite here is to have MariaDB and Nginx servers already installed, configured, and run on the same host where Zabbix supposed being installed. Thus, the following instructions are based on what was installed and configured earlier, for the Redmine-carrying Ubuntu server&mdash;clearly described in [this article](/data/docs/ubuntusrv/redmine-nginx-passenger-mariadb-on-ubuntu-jammy "Install Redmine 5.0.2 + Nginx/Passenger + MariaDB on Ubuntu Server 22.04 LTS").
 
 **(1) Install the necessary dependencies**<br />
 **(2) Install MariaDB Server and Nginx**

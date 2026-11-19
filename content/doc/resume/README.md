@@ -145,4 +145,4 @@ Page Count                      : 4
     2 image files read
 ```
 
-Play with PDFs that way! &mdash; Have fun! :smiley:
+Play with PDFs that way!&mdash;Have fun! :smiley:

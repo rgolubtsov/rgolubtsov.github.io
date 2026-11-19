@@ -4,11 +4,11 @@
 
 *18th of November, 2022*
 
-Once having the Zabbix 6.0.8 LTS release running (after upgrading from the 6.0.7 LTS release), a one unexpected thing might occur during the monitoring process in a series of screens in Zabbix frontend (web interface). And this weird thing will appear repeatedly, again and again on some monitoring screens for a long time. What is this actually? &ndash; Well, this is very slow scanning and updating, for example, the list of hosts, host groups, and triggers... that's saying unacceptably slow scanning.
+Once having the Zabbix 6.0.8 LTS release running (after upgrading from the 6.0.7 LTS release), a one unexpected thing might occur during the monitoring process in a series of screens in Zabbix frontend (web interface). And this weird thing will appear repeatedly, again and again on some monitoring screens for a long time. What is this actually?&mdash;Well, this is very slow scanning and updating, for example, the list of hosts, host groups, and triggers... that's saying unacceptably slow scanning.
 
 The root cause of this misbehavior seems to be in a communication between Zabbix frontend (running on Nginx/PHP-FPM) and Zabbix database backend (actually MariaDB database server). All the underlying carriers and stack regarding the analyzed setup are clearly described in [this article](/data/docs/ubuntusrv/zabbix-nginx-php-fpm-mariadb-on-ubuntu-jammy "Install Zabbix 6.0.7 + Nginx/PHP-FPM + MariaDB on Ubuntu Server 22.04 LTS"). So this is not necessary to recount them here.
 
-Go ahead `==>` and see what's going on there. &ndash; First of all, MariaDB server is almost continuously consuming 90% to 100% CPU usage when scanning the list of hosts is underway. At the same time Zabbix server log complains about slow queries. On the MariaDB side this is actually seen as the following:
+Go ahead `==>` and see what's going on there.&mdash;First of all, MariaDB server is almost continuously consuming 90% to 100% CPU usage when scanning the list of hosts is underway. At the same time Zabbix server log complains about slow queries. On the MariaDB side this is actually seen as the following:
 
 ```
 MariaDB [zabbix]> show full processlist;
@@ -171,7 +171,7 @@ MariaDB [zabbix]> show index in graphs_items;
 5 rows in set (0.000 sec)
 ```
 
-The *narrow* outcome after recreating of these indexes is given below &ndash; notice the execution time of the one of aforementioned problematic SQL queries:
+The *narrow* outcome after recreating of these indexes is given below&mdash;notice the execution time of the one of aforementioned problematic SQL queries:
 
 ```
 MariaDB [zabbix]> select distinct g.graphid,g.name,g.width,g.height,g.yaxismin,g.yaxismax,g.show_work_period,g.show_triggers,g.graphtype,g.show_legend,g.show_3d,g.percent_left,g.percent_right,g.ymin_type,g.ymin_itemid,g.ymax_type,g.ymax_itemid,g.discover from graphs g,graphs_items gi,items i,item_discovery id where g.graphid=gi.graphid and gi.itemid=i.itemid and i.itemid=id.itemid and id.parent_itemid=44069;
@@ -180,4 +180,4 @@ Empty set (0.016 sec)
 
 The *wide* result concludes in moderate to low consuming CPU usage by the database in a whole and, of course, clearly visible in fast scanning and updating the list of hosts, host groups, triggers, whatever in Zabbix frontend, on a user side.
 
-Don't let your LAN to die, man ! &ndash; Bring it to manage again ! :+1:
+Don't let your LAN to die, man !&mdash;Bring it to manage again ! :+1:

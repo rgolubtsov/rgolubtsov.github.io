@@ -162,4 +162,4 @@ drwxr-xr-x 20 www-data www-data  4096 Jul  1 16:35 components
 
 **Веб-сайт полностью восстановлен и доступен для работы. Можно логиниться и заходить в панель управления Joomla!**
 
-Restore website, refresh your mind ! &ndash; To publish bright, to be alright ! :+1:
+Restore website, refresh your mind !&mdash;To publish bright, to be alright ! :+1:
