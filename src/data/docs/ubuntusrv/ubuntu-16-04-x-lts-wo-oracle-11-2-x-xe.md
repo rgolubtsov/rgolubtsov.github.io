@@ -70,7 +70,7 @@ $ groups
 <usergroup>
 ```
 
-&ndash; It previously was looked like the following:
+&mdash;It previously was looked like the following:
 
 ```
 $ groups
