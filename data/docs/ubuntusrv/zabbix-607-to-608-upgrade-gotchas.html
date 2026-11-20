@@ -48,9 +48,9 @@
 </tbody>
 </table>
 <h1>Zabbix 6.0.7 to 6.0.8 Upgrade Gotchas</h1><h3>Zabbix 6.0.7 to 6.0.8 upgrade gotchas regarding slow MariaDB SQL queries</h3><p><em>18th of November, 2022</em></p>
-<p>Once having the Zabbix 6.0.8 LTS release running (after upgrading from the 6.0.7 LTS release), a one unexpected thing might occur during the monitoring process in a series of screens in Zabbix frontend (web interface). And this weird thing will appear repeatedly, again and again on some monitoring screens for a long time. What is this actually? &ndash; Well, this is very slow scanning and updating, for example, the list of hosts, host groups, and triggers... that&#39;s saying unacceptably slow scanning.</p>
+<p>Once having the Zabbix 6.0.8 LTS release running (after upgrading from the 6.0.7 LTS release), a one unexpected thing might occur during the monitoring process in a series of screens in Zabbix frontend (web interface). And this weird thing will appear repeatedly, again and again on some monitoring screens for a long time. What is this actually?&mdash;Well, this is very slow scanning and updating, for example, the list of hosts, host groups, and triggers... that&#39;s saying unacceptably slow scanning.</p>
 <p>The root cause of this misbehavior seems to be in a communication between Zabbix frontend (running on Nginx/PHP-FPM) and Zabbix database backend (actually MariaDB database server). All the underlying carriers and stack regarding the analyzed setup are clearly described in <a href="/data/docs/ubuntusrv/zabbix-nginx-php-fpm-mariadb-on-ubuntu-jammy" title="Install Zabbix 6.0.7 + Nginx/PHP-FPM + MariaDB on Ubuntu Server 22.04 LTS">this article</a>. So this is not necessary to recount them here.</p>
-<p>Go ahead <code>==&gt;</code> and see what&#39;s going on there. &ndash; First of all, MariaDB server is almost continuously consuming 90% to 100% CPU usage when scanning the list of hosts is underway. At the same time Zabbix server log complains about slow queries. On the MariaDB side this is actually seen as the following:</p>
+<p>Go ahead <code>==&gt;</code> and see what&#39;s going on there.&mdash;First of all, MariaDB server is almost continuously consuming 90% to 100% CPU usage when scanning the list of hosts is underway. At the same time Zabbix server log complains about slow queries. On the MariaDB side this is actually seen as the following:</p>
 <pre><code>MariaDB [zabbix]&gt; show full processlist;
 +------+--------+-----------+--------+---------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------+
 | Id   | User   | Host      | db     | Command | Time | State        | Info                                                                                                                                                                                                                                                                                                                                                                                                     | Progress |
@@ -185,12 +185,12 @@ Records: 0  Duplicates: 0  Warnings: 0
 +--------------+------------+------------------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+---------+
 5 rows in set (0.000 sec)
 </code></pre>
-<p>The <em>narrow</em> outcome after recreating of these indexes is given below &ndash; notice the execution time of the one of aforementioned problematic SQL queries:</p>
+<p>The <em>narrow</em> outcome after recreating of these indexes is given below&mdash;notice the execution time of the one of aforementioned problematic SQL queries:</p>
 <pre><code>MariaDB [zabbix]&gt; select distinct g.graphid,g.name,g.width,g.height,g.yaxismin,g.yaxismax,g.show_work_period,g.show_triggers,g.graphtype,g.show_legend,g.show_3d,g.percent_left,g.percent_right,g.ymin_type,g.ymin_itemid,g.ymax_type,g.ymax_itemid,g.discover from graphs g,graphs_items gi,items i,item_discovery id where g.graphid=gi.graphid and gi.itemid=i.itemid and i.itemid=id.itemid and id.parent_itemid=44069;
 Empty set (0.016 sec)
 </code></pre>
 <p>The <em>wide</em> result concludes in moderate to low consuming CPU usage by the database in a whole and, of course, clearly visible in fast scanning and updating the list of hosts, host groups, triggers, whatever in Zabbix frontend, on a user side.</p>
-<p>Don&#39;t let your LAN to die, man ! &ndash; Bring it to manage again ! <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f44d.png" class="emoji" alt="" /></p>
+<p>Don&#39;t let your LAN to die, man !&mdash;Bring it to manage again ! <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f44d.png" class="emoji" alt="" /></p>
 
 <div class="chevron"><button class="chevron" onclick="window.scrollTo({top:0,behavior:'smooth'});"><svg class="chevron"><path d="M2 11 l6 -6 l6 6 Z" fill="#69df06" /></svg></button></div>
 <table id="footer">

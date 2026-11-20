@@ -69,7 +69,7 @@ Password:
 Remote system type is Windows_NT.
 ftp&gt;
 </code></pre>
-<p>Далее нужно скачать требующуюся версию бэкапа. Бэкапы делаются <em>каждую ночь в 02:30</em>. Идентифицируем необходимый нам бэкап &ndash; просто смотрим листинг каталога, где они размещены:</p>
+<p>Далее нужно скачать требующуюся версию бэкапа. Бэкапы делаются <em>каждую ночь в 02:30</em>. Идентифицируем необходимый нам бэкап &mdash; просто смотрим листинг каталога, где они размещены:</p>
 <pre><code>ftp&gt; cd tmp/abcd
 250 CWD command successful.
 ftp&gt;
@@ -92,7 +92,7 @@ ftp&gt; ls
 06-29-21  02:00PM                61300 xabcdjoomla3db-192.168.0.&lt;WEB&gt;-20210629-0230.sql.xz
 226 Transfer complete.
 </code></pre>
-<p>Здесь <code>*.txz</code> &ndash; тарболы каталога веб-сайта (полной установки <strong>Joomla!</strong>), <code>*.sql.xz</code> &ndash; сжатые дампы базы данных веб-сайта. Выбираем, например, бэкапы <em>от 29 июня 2021 года</em> &ndash; ими будут следующие файлы:</p>
+<p>Здесь <code>*.txz</code> &mdash; тарболы каталога веб-сайта (полной установки <strong>Joomla!</strong>), <code>*.sql.xz</code> &mdash; сжатые дампы базы данных веб-сайта. Выбираем, например, бэкапы <em>от 29 июня 2021 года</em> &mdash; ими будут следующие файлы:</p>
 <pre><code>x-abcd-joomla3-192.168.0.&lt;WEB&gt;-20210629-0230.txz
 xabcdjoomla3db-192.168.0.&lt;WEB&gt;-20210629-0230.sql.xz
 </code></pre>
@@ -116,7 +116,7 @@ local: xabcdjoomla3db-192.168.0.&lt;WEB&gt;-20210629-0230.sql.xz remote: xabcdjo
 226 Transfer complete.
 61300 bytes received in 0.00 secs (48.0759 MB/s)
 </code></pre>
-<p>Оба бэкапа скачаны, можно выйти из FTP-клиента &ndash; комбинация клавиш <code>&lt;Ctrl-D&gt;</code> или команда <code>by</code>:</p>
+<p>Оба бэкапа скачаны, можно выйти из FTP-клиента &mdash; комбинация клавиш <code>&lt;Ctrl-D&gt;</code> или команда <code>by</code>:</p>
 <pre><code>ftp&gt; by
 ftp&gt; 221 Goodbye.
 </code></pre>
@@ -170,7 +170,7 @@ drwxr-xr-x 20 www-data www-data  4096 Jul  1 16:35 components
 ...
 </code></pre>
 <p><strong>Веб-сайт полностью восстановлен и доступен для работы. Можно логиниться и заходить в панель управления Joomla!</strong></p>
-<p>Restore website, refresh your mind ! &ndash; To publish bright, to be alright ! <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f44d.png" class="emoji" alt="" /></p>
+<p>Restore website, refresh your mind !&mdash;To publish bright, to be alright ! <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f44d.png" class="emoji" alt="" /></p>
 
 <div class="chevron"><button class="chevron" onclick="window.scrollTo({top:0,behavior:'smooth'});"><svg class="chevron"><path d="M2 11 l6 -6 l6 6 Z" fill="#69df06" /></svg></button></div>
 <table id="footer">
