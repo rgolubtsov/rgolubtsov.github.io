@@ -20,10 +20,10 @@ We believe in love forever!
 
 <br />What was driven us decide,<br />
 That you're glorious, why're you right?!<br />
-&mdash; Wonderly! &mdash; We know the answer &mdash;<br />
+&mdash;Wonderly!&mdash;We know the answer&mdash;<br />
 It's because (of) your clever mind:<br />
 We are head, but you are neck,<br />
-You direct us! &mdash; We just make.
+You direct us!&mdash;We just make.
 
 <br />And tonight, tomorrow... after,<br />
 You'll be blessed (by) your own Crafter,<br />

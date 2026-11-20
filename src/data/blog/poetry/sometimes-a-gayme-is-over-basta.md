@@ -1,11 +1,11 @@
 <style>p{text-align:left}</style>
-# Sometimes a GAYME is over. &mdash; Basta!
+# Sometimes a GAYME is over.&mdash;Basta!
 
-### ...But NEVER MIND &mdash; it's just a GAYME
+### ...But NEVER MIND&mdash;it's just a GAYME
 
-Sometimes a GAYME is over. &mdash; Basta!<br />
+Sometimes a GAYME is over.&mdash;Basta!<br />
 Somewhen a GAYMER feels disaster...<br />
-But NEVER MIND &mdash; it's just a GAYME,<br />
+But NEVER MIND&mdash;it's just a GAYME,<br />
 The GAYME, one's fierically played. :smiley:
 
 <br />Today, tomorrow, after a year<br />
