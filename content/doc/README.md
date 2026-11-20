@@ -2,7 +2,7 @@
 
 ### `docs -> content/doc`
 
-Various documents collected here were written to show the essence of how important to have certain instructions / guides in one place and at hand. Some of them may not be related closely to IT or CS somehow, but most of them did, and those are published first. Below are hyperlinks to these documents which are accessible on this site, and they are also located [on GitHub](https://github.com/rgolubtsov/rgolubtsov.github.io/tree/master/src/data/docs "Assorted docs on GitHub") for convenience.
+Various documents collected here were written to show the essence of how important to have certain instructions/guides in one place and at hand. Some of them may not be related closely to IT or CS somehow, but most of them did, and those are published first. Below are hyperlinks to these documents which are accessible on this site, and they are also located [on GitHub](https://github.com/rgolubtsov/rgolubtsov.github.io/tree/master/src/data/docs "Assorted docs on GitHub") for convenience.
 
 * [Utilize sndio server on Arch Linux host in OpenBSD VM guest](/data/docs/openbsd/sndio-on-linux-host)
 * [Install OpenBSD 7.6 (QEMU-KVM) on Arch Linux](/data/docs/openbsd/install-76)
