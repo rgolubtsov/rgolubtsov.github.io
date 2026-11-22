@@ -38,6 +38,7 @@ declare -r EMOJI_CHARS=(
     raising_hand
     metal
     beer
+    ring
 )
 declare -r EMOJI_CODES=(
     1f44d
@@ -46,6 +47,7 @@ declare -r EMOJI_CODES=(
     1f64b
     1f918
     1f37a
+    1f48d
 )
 
 DIR=.
