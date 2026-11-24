@@ -43,7 +43,7 @@ html, body {
 #header #title-td {
     padding:          14px 20px 8px 6px;
     line-height:      28px;
-    background-image: url("/static/img/misc/background-795x195.png");
+    background-image: url("/assets/img/misc/background-795x195.png");
 }
 
 #subtitle {
@@ -75,7 +75,7 @@ html, body {
 #footer #footer-td {
     height:           39px;
     text-align:       right;
-    background-image: url("/static/img/misc/background-795x195.png");
+    background-image: url("/assets/img/misc/background-795x195.png");
 }
 
 /*
